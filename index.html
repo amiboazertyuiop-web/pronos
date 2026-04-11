@@ -417,6 +417,11 @@ nav{
   font-family:'DM Mono',monospace;font-size:13px;font-weight:800;
   color:var(--gold);flex-shrink:0;
 }
+.cdc-combo-reco-line{
+  font-size:11px;color:var(--muted);text-align:center;
+  margin-bottom:10px;letter-spacing:0.3px;
+}
+.cdc-combo-reco-line span{color:var(--green);font-weight:800;}
 .cdc-combo-bet-btn{
   width:100%;background:linear-gradient(135deg,var(--gold),var(--gold2));
   color:#000;border:none;border-radius:10px;padding:12px 18px;
@@ -3136,6 +3141,8 @@ function renderCoupDeCoeurCombos() {
   grid.innerHTML = combos.map((c, idx) => {
     const strategyClass = c.strategy === 'safe' ? 'safe' : 'value';
     const strategyLabel = c.strategy === 'safe' ? '🛡 Sûr' : '💎 Value';
+    const recoMise = calculateRecommendedComboStake(c.total_cote, c.strategy);
+    const gainReco = (recoMise * (c.total_cote - 1)).toFixed(2);
     const legsHtml = (c.legs || []).map(l =>
       '<div class="cdc-combo-leg">' +
         '<div class="cdc-combo-leg-info">' +
@@ -3160,21 +3167,37 @@ function renderCoupDeCoeurCombos() {
         '</div>' +
         '<div class="cdc-combo-reason">' + esc(c.reasoning) + '</div>' +
         '<div class="cdc-combo-legs">' + legsHtml + '</div>' +
-        '<button class="cdc-combo-bet-btn" onclick="placeClaudeCombo(' + idx + ')">+ Parier ce combiné</button>' +
+        '<div class="cdc-combo-reco-line">Pour ' + recoMise + ' € → profit potentiel <span>+' + gainReco + ' €</span></div>' +
+        '<button class="cdc-combo-bet-btn" onclick="placeClaudeCombo(' + idx + ')">+ Parier ' + recoMise + '€ sur ce combiné</button>' +
       '</div>';
   }).join('');
 }
 
+// Recommended stake for a combo. Combos compound variance, so we use HALF of
+// the user's Kelly fraction and cap the output at 5 € (vs 10 € for singles).
+function calculateRecommendedComboStake(totalCote, strategy) {
+  const init = getInit();
+  const kellyFrac = getKellyFrac();
+  const implicit = 1 / totalCote;
+  // Small edge bump: safer combos get slightly more edge credit
+  const edgeBump = strategy === 'safe' ? 0.04 : 0.02;
+  const prob = Math.min(0.95, implicit + edgeBump);
+  const realEdge = prob * totalCote - 1;
+  if (realEdge <= 0) return 1;
+  const kelly = realEdge / (totalCote - 1);
+  const raw = kelly * init * kellyFrac * 0.5; // half-Kelly for combos
+  return Math.min(5, Math.max(1, Math.round(raw)));
+}
+
 async function placeClaudeCombo(comboIndex) {
+  if (!currentUserId) { toast('Connecte-toi pour parier', 'err'); return; }
   if (!pronosData || !pronosData.combos || !pronosData.combos[comboIndex]) {
     toast('Combiné introuvable', 'err');
     return;
   }
   const combo = pronosData.combos[comboIndex];
-  const miseStr = prompt('Mise pour ce combiné (cote totale ' + combo.total_cote + '×) :', '5');
-  if (miseStr == null) return;
-  const mise = parseFloat(miseStr);
-  if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
+  // One-click: use the Kelly-recommended combo stake directly, no prompt
+  const mise = calculateRecommendedComboStake(combo.total_cote, combo.strategy);
 
   const legs = (combo.legs || []).map(l => ({
     match: l.match,
