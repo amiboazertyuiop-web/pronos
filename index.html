@@ -245,6 +245,21 @@ nav{
 .jblock-badge.ufc{background:linear-gradient(135deg,var(--red),#dc2626);}
 .jblock-badge.tennis{background:linear-gradient(135deg,var(--green),#059669);}
 .pronos-body{display:flex;flex-direction:column;gap:16px;}
+.pc-cote{
+  display:inline-block;margin-left:8px;
+  background:rgba(240,192,64,0.13);color:var(--gold);
+  border:1px solid rgba(240,192,64,0.35);
+  border-radius:6px;padding:2px 8px;
+  font-family:'DM Mono',monospace;font-size:12px;font-weight:800;
+  vertical-align:middle;
+}
+.bet-auto-hint{
+  font-size:11px;color:var(--muted);
+  font-style:italic;letter-spacing:0.3px;
+  padding:6px 10px;
+  display:inline-flex;align-items:center;
+  flex:1;
+}
 /* ===================== COUP DE COEUR ===================== */
 .cdc-layout{max-width:1000px;margin:0 auto;padding:40px 24px;}
 .cdc-header{text-align:center;margin-bottom:36px;}
@@ -2082,13 +2097,48 @@ async function addBet(){
   toast('✅ Pari ajouté !','ok');
 }
 
-async function resolveBet(id,status){
-  const ok = await updateBetInCloud(id, { status });
-  if (!ok) return;
-  bets=bets.map(b=>b.id===id?{...b,status}:b);
-  localStorage.setItem('lcp-bets',JSON.stringify(bets));
-  refreshBankroll();
-  toast(status==='won'?'Pari gagné !':'Pari perdu','');
+// Resolution automatique : chaque pari est résolu par le workflow GitHub
+// Actions qui met à jour pronos.json.history[]. La fonction syncBetsWithHistory()
+// (en bas) fait le cross-match au chargement de la page et met à jour Supabase.
+async function syncBetsWithHistory() {
+  if (!pronosData || !Array.isArray(pronosData.history) || !currentUserId) return;
+  const pending = bets.filter(b => b.status === 'pending');
+  if (!pending.length) return;
+
+  // Lookup (match|pari) → history entry with terminal status
+  const byKey = new Map();
+  for (const h of pronosData.history) {
+    if (h.status !== 'won' && h.status !== 'lost' && h.status !== 'void') continue;
+    const key = (h.match || '') + '|' + (h.pari || '');
+    if (!byKey.has(key)) byKey.set(key, h);
+  }
+  // Also check the live pronos that got resolved but not yet archived
+  for (const sport of Object.values(pronosData.sports || {})) {
+    for (const league of sport.leagues || []) {
+      for (const p of league.pronos || []) {
+        if (p.status !== 'won' && p.status !== 'lost' && p.status !== 'void') continue;
+        const key = (p.match || '') + '|' + (p.pari || '');
+        if (!byKey.has(key)) byKey.set(key, p);
+      }
+    }
+  }
+
+  let updated = 0;
+  for (const bet of pending) {
+    const key = (bet.match || '') + '|' + (bet.pari || '');
+    const h = byKey.get(key);
+    if (!h) continue;
+    const ok = await updateBetInCloud(bet.id, { status: h.status });
+    if (ok) {
+      bet.status = h.status;
+      updated++;
+    }
+  }
+  if (updated > 0) {
+    localStorage.setItem('lcp-bets', JSON.stringify(bets));
+    refreshBankroll();
+    toast('🎯 ' + updated + ' pari' + (updated > 1 ? 's' : '') + ' résolu' + (updated > 1 ? 's' : '') + ' automatiquement', 'ok');
+  }
 }
 
 async function deleteBet(id){
@@ -2328,12 +2378,10 @@ function renderBets(){
     const gainClass=b.status==='won'?'pos':b.status==='lost'?'neg':'pend';
     const gainStr=gain!==null?(gain>=0?'+':'')+gain.toFixed(2)+' €':'en attente';
     const actionsHtml = b.status==='pending'
-      ? `<button class="bet-resolve win" onclick="resolveBet(${b.id},'won')">✓ Gagné</button>
-         <button class="bet-resolve lose" onclick="resolveBet(${b.id},'lost')">✗ Perdu</button>
+      ? `<span class="bet-auto-hint">⏳ Résolution automatique après le match</span>
          <button class="bet-resolve edit" onclick="openEditBet(${b.id})">✎ Éditer</button>
          <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`
-      : `<span class="bet-resolved-tag ${b.status}">${b.status==='won'?'🎉 Gagné':'😔 Perdu'}</span>
-         <button class="bet-resolve edit" onclick="openEditBet(${b.id})">✎ Éditer</button>
+      : `<span class="bet-resolved-tag ${b.status}">${b.status==='won'?'🎉 Gagné':b.status==='lost'?'😔 Perdu':'⏸ Remboursé'}</span>
          <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`;
     const legsHtml = b.isCombo && b.legs ? `<div class="bet-combo-legs">${b.legs.map(l => `<div class="bc-leg"><span>${l.sport.charAt(0)} ${l.match}</span><span class="bc-leg-cote">${l.cote.toFixed(2)}</span></div>`).join('')}</div>` : '';
     return `<div class="bet-item${b.isCombo?' is-combo':''}">
@@ -2686,6 +2734,8 @@ async function loadAndRenderPronos() {
     syncBetButtons();
     renderToday();
     renderCoupDeCoeur();
+    // Cross-check user bets against pronos history to auto-resolve them
+    syncBetsWithHistory().catch(err => console.error('syncBetsWithHistory error', err));
   } catch (e) {
     console.error('Failed to load pronos.json', e);
     const container = document.getElementById('dynamic-panels');
@@ -2894,6 +2944,9 @@ function renderMatchCard(p, sportKey, outcomeCount) {
   const timeDisplay = p.time_display || '';
   const scoreText = p.score_prevu ? ' — ' + esc(p.score_prevu) : '';
   const analyse = p.analyse ? '<div class="pc-reason">' + esc(p.analyse) + '</div>' : '';
+  const coteBadge = p.cote_retenue
+    ? ' <span class="pc-cote">@ ' + p.cote_retenue + '</span>'
+    : '';
 
   return '<div class="mc' + featuredCls + statusCls + '" data-event-id="' + esc(p.event_id) + '">' +
     '<div class="mc-top">' +
@@ -2905,7 +2958,7 @@ function renderMatchCard(p, sportKey, outcomeCount) {
     '<div class="prono-row">' +
       '<span class="ptag ' + ptagClass + '">' + esc(ptagLabel) + '</span>' +
       '<div>' +
-        '<div class="pc-result">' + esc(p.pari) + scoreText + '</div>' +
+        '<div class="pc-result">' + esc(p.pari) + coteBadge + scoreText + '</div>' +
         analyse +
         '<div class="dots">' + dotsHtml + '</div>' +
         actualLine +
