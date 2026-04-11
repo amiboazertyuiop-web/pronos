@@ -244,9 +244,26 @@ nav{
 .jblock-badge.nba{background:linear-gradient(135deg,var(--red),var(--orange));}
 .jblock-badge.ufc{background:linear-gradient(135deg,var(--red),#dc2626);}
 .jblock-badge.tennis{background:linear-gradient(135deg,var(--green),#059669);}
-.jblock-badge.rugby{background:linear-gradient(135deg,#7c3aed,var(--purple));}
-.jblock-badge.f1{background:linear-gradient(135deg,#dc2626,#991b1b);}
 .jblock-badge.import{background:linear-gradient(135deg,#6366f1,var(--purple));}
+.pronos-body{display:flex;flex-direction:column;gap:16px;}
+.sidebar-empty{
+  padding:10px 12px;font-size:11px;color:var(--muted);
+  font-style:italic;letter-spacing:0.5px;
+}
+.pronos-loading,.pronos-error,.pronos-empty{
+  padding:40px 20px;text-align:center;color:var(--muted);
+  font-size:13px;letter-spacing:1px;text-transform:uppercase;font-weight:700;
+}
+.pronos-error{color:var(--red);}
+.pronos-meta-updated{
+  font-size:10px;color:var(--muted);text-align:right;
+  padding:4px 8px;letter-spacing:1px;
+}
+.mc.mc-won{border-color:rgba(16,185,129,0.45);background:linear-gradient(140deg,var(--s2),rgba(16,185,129,0.05));}
+.mc.mc-lost{border-color:rgba(244,63,94,0.4);background:linear-gradient(140deg,var(--s2),rgba(244,63,94,0.05));opacity:0.75;}
+.pc-actual{margin-top:6px;font-size:11px;font-weight:700;letter-spacing:0.5px;}
+.pc-actual.win{color:var(--green);}
+.pc-actual.loss{color:var(--red);}
 .jblock-title{font-size:16px;font-weight:700;}
 .jblock-date{font-size:11px;color:var(--muted);margin-left:auto;letter-spacing:1px;}
 
@@ -1249,8 +1266,6 @@ nav{
       <button class="today-filter" data-sport="🏀 NBA" onclick="filterToday('🏀 NBA',this)">🏀 NBA</button>
       <button class="today-filter" data-sport="🥊 UFC" onclick="filterToday('🥊 UFC',this)">🥊 UFC</button>
       <button class="today-filter" data-sport="🎾 Tennis" onclick="filterToday('🎾 Tennis',this)">🎾 Tennis</button>
-      <button class="today-filter" data-sport="🏉 Rugby" onclick="filterToday('🏉 Rugby',this)">🏉 Rugby</button>
-      <button class="today-filter" data-sport="🏎️ F1" onclick="filterToday('🏎️ F1',this)">🏎️ F1</button>
       <button class="today-filter combo-toggle" id="combo-toggle" onclick="toggleComboMode()">🔗 Mode Combiné</button>
     </div>
     <!-- Combinés suggérés automatiquement -->
@@ -1301,47 +1316,17 @@ nav{
   <div class="sports-layout">
     <!-- Sidebar -->
     <div class="sports-sidebar">
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-foot">
         <div class="sidebar-label">Football</div>
-        <div class="sidebar-item active" id="sb-foot" onclick="showSport('foot')">
-          <span class="s-icon">⚽</span> Ligue 1
-          <span class="sidebar-badge">10</span>
-        </div>
       </div>
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-nba">
         <div class="sidebar-label">Basketball</div>
-        <div class="sidebar-item" id="sb-nba" onclick="showSport('nba')">
-          <span class="s-icon">🏀</span> NBA
-          <span class="sidebar-badge">5</span>
-        </div>
       </div>
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-ufc">
         <div class="sidebar-label">MMA</div>
-        <div class="sidebar-item" id="sb-ufc" onclick="showSport('ufc')">
-          <span class="s-icon">🥊</span> UFC 327
-          <span class="sidebar-badge">4</span>
-        </div>
       </div>
-      <div class="sidebar-section">
+      <div class="sidebar-section" id="sidebar-tennis">
         <div class="sidebar-label">Tennis</div>
-        <div class="sidebar-item" id="sb-tennis" onclick="showSport('tennis')">
-          <span class="s-icon">🎾</span> ATP Monte-Carlo
-          <span class="sidebar-badge">5</span>
-        </div>
-      </div>
-      <div class="sidebar-section">
-        <div class="sidebar-label">Rugby</div>
-        <div class="sidebar-item" id="sb-rugby" onclick="showSport('rugby')">
-          <span class="s-icon">🏉</span> Top 14
-          <span class="sidebar-badge">4</span>
-        </div>
-      </div>
-      <div class="sidebar-section">
-        <div class="sidebar-label">Formule 1</div>
-        <div class="sidebar-item" id="sb-f1" onclick="showSport('f1')">
-          <span class="s-icon">🏎️</span> GP du Bahreïn
-          <span class="sidebar-badge">3</span>
-        </div>
       </div>
       <div class="sidebar-section">
         <div class="sidebar-label">Import</div>
@@ -1354,651 +1339,9 @@ nav{
     <!-- Content -->
     <div class="sports-content">
 
-      <!-- ===== FOOTBALL ===== -->
-      <div class="sport-panel active" id="panel-foot">
-        <div class="panel-header">
-          <div class="panel-title">⚽ Ligue 1</div>
-          <div class="panel-meta">Journées 29 & 30 · Avril 2026 · Source cotes : Sportytrader</div>
-        </div>
+      <div id="dynamic-panels"></div>
 
-        <!-- J29 -->
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge foot">J29</span>
-            <span class="jblock-title">29ème Journée</span>
-            <span class="jblock-date">11–12 Avril 2026</span>
-          </div>
-
-          <!-- Auxerre vs Nantes -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">AJ Auxerre</div><div class="mc-sub">16e · 23 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 19h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">FC Nantes</div><div class="mc-sub">17e · 18 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:2.02;--fw-n:3.30;--fw-e:3.85;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">2.02</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.30</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.85</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Auxerre</span>
-              <div><div class="pc-result">Victoire Auxerre — 2-1</div><div class="pc-reason">Duel de relégables décisif. Auxerre avec l'avantage du terrain et un point d'avance crucial. Nantes en déplacement est fébrile.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Rennes vs Angers -->
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Stade Rennais</div><div class="mc-sub">7e · 47 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Angers SCO</div><div class="mc-sub">13e · 33 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.36;--fw-n:5.10;--fw-e:7.50;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.36</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">5.10</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">7.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Rennes</span>
-              <div><div class="pc-result">Victoire Rennes — 3-0</div><div class="pc-reason">Rennes en grande forme (4-0 vs Nice). Angers irrégulier en déplacement. Domination totale attendue — cote 1.36 très révélatrice.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Nice vs Le Havre -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">OGC Nice</div><div class="mc-sub">15e · 27 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 17h15</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Le Havre AC</div><div class="mc-sub">14e · 28 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.92;--fw-n:3.40;--fw-e:4.30;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.92</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.40</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.30</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Le Havre</span>
-              <div><div class="pc-result">Victoire Le Havre — 0-1</div><div class="pc-reason">Nice est en plein effondrement psychologique (0-4 vs Rennes, 0-4 vs PSG, zéro créativité offensive). Le Havre, 14e avec 28 pts, est défensivement costaud et a les ressources pour tenir un 1-0 à l'extérieur. Je vois un Nice incapable de marquer contre un bloc bas. Upset crédible malgré la cote.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Toulouse vs Lille -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Toulouse FC</div><div class="mc-sub">10e · 37 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 17h15</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Lille OSC</div><div class="mc-sub">4e · 50 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:3.10;--fw-n:3.25;--fw-e:2.30;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">3.10</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.25</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">2.30</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Lille</span>
-              <div><div class="pc-result">Victoire Lille — 1-2</div><div class="pc-reason">Lille sur une lancée impressionnante (3-0 vs Lens). Toulouse sans réel enjeu. Le LOSC impose sa qualité sur la durée.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Lyon vs Lorient -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Olympique Lyon</div><div class="mc-sub">6e · 48 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 20h45</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">FC Lorient</div><div class="mc-sub">9e · 38 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.68;--fw-n:3.85;--fw-e:5.30;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.68</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.85</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.30</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Lyon</span>
-              <div><div class="pc-result">Victoire Lyon — 2-0</div><div class="pc-reason">OL régulier à domicile. Lorient en dents de scie. Cote 1.68 qui confirme la prédominance de l'OL.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- J30 -->
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge foot">J30</span>
-            <span class="jblock-title">30ème Journée</span>
-            <span class="jblock-date">17–19 Avril 2026</span>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">RC Lens</div><div class="mc-sub">2e · 59 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Ven. 20h45</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Toulouse FC</div><div class="mc-sub">10e · 37 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.00;--fw-e:4.95;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.00</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.95</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Lens</span>
-              <div><div class="pc-result">Victoire Lens — 2-0</div><div class="pc-reason">À Bollaert face à un Toulouse sans enjeu, Lens se ressaisira après la défaite face à Lille. Cote 1.56 très claire.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">FC Lorient</div><div class="mc-sub">9e · 38 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 17h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Olympique Marseille</div><div class="mc-sub">3e · 52 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:3.70;--fw-n:3.60;--fw-e:1.82;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">3.70</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.60</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">1.82</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Marseille</span>
-              <div><div class="pc-result">Victoire Marseille — 1-3</div><div class="pc-reason">L'OM en confiance (3-1 vs Metz). Cote extérieur à 1.82 confirme la domination marseillaise attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Angers SCO</div><div class="mc-sub">13e · 33 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 19h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Le Havre AC</div><div class="mc-sub">14e · 28 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:2.77;--fw-n:3.00;--fw-e:2.50;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">2.77</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.00</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">2.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag draw">Nul</span>
-              <div><div class="pc-result">Match nul — 1-1</div><div class="pc-reason">Cotes ultra-serrées (2.77/3.00/2.50) reflétant l'incertitude totale. Choc de prudence entre deux équipes qui jouent le maintien.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Lille OSC</div><div class="mc-sub">4e · 50 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">OGC Nice</div><div class="mc-sub">15e · 27 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.00;--fw-e:5.50;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.00</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Lille</span>
-              <div><div class="pc-result">Victoire Lille — 3-0</div><div class="pc-reason">Nice en délabrement complet. Cote extérieur à 5.50 dit tout. Victoire large de Lille au Pierre-Mauroy.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">AS Monaco</div><div class="mc-sub">5e · 49 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 15h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">AJ Auxerre</div><div class="mc-sub">16e · 23 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.20;--fw-e:5.80;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.20</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.80</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Monaco</span>
-              <div><div class="pc-result">Victoire Monaco — 3-1</div><div class="pc-reason">Monaco doit réagir après le 4-1 encaissé à Paris FC. À Louis II face à Auxerre relégable, les Monégasques ne peuvent se permettre un faux pas.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== NBA ===== -->
-      <div class="sport-panel" id="panel-nba">
-        <div class="panel-header">
-          <div class="panel-title">🏀 NBA</div>
-          <div class="panel-meta">Fin de saison régulière · 11–12 Avril 2026</div>
-        </div>
-        <div class="nba-disclaimer">⚠️ <div>La NBA est extrêmement difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. Ces pronos restent indicatifs. <strong>La bankroll recommandée sur NBA est 30% inférieure au foot.</strong></div></div>
-
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge nba">NBA</span>
-            <span class="jblock-title">Nuit du 11 au 12 Avril</span>
-            <span class="jblock-date">À partir de 01h00 (heure fr.)</span>
-          </div>
-
-          <!-- OKC vs DEN (top picks) -->
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Denver Nuggets</div><div class="mc-sub">W52-L28 · 2e Ouest</div></div>
-              <div class="mc-center"><div class="mc-time">03h00 FR</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">OKC Thunder</div><div class="mc-sub">W64-L16 · 1er Ouest</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:2.20;--fw-n:1;--fw-e:1.70;">
-              <div class="cs fav"><span class="cs-lbl">Denver</span><span class="cs-val">~2.20</span></div>
-              <div class="cs und"><span class="cs-lbl">OKC</span><span class="cs-val">~1.70</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Denver</span>
-              <div><div class="pc-result">Victoire Denver Nuggets</div><div class="pc-reason">OKC a déjà sécurisé la 1e place à l'Ouest et va lever le pied — les stars seront probablement ménagées en vue des playoffs. Denver, à la Ball Arena et avec Jokic motivé pour la 2e place, a tout à jouer. L'enjeu est du côté des Nuggets, pas du Thunder. Upset crédible contre le marché.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Boston vs NOP -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Boston Celtics</div><div class="mc-sub">W54-L26 · 1er Est</div></div>
-              <div class="mc-center"><div class="mc-time">01h30 FR</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">New Orleans</div><div class="mc-sub">W26-L54 · Lanterne</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.07;--fw-n:1;--fw-e:10.0;">
-              <div class="cs fav"><span class="cs-lbl">Boston</span><span class="cs-val">~1.07</span></div>
-              <div class="cs und"><span class="cs-lbl">NOP</span><span class="cs-val">~10.0</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Boston</span>
-              <div><div class="pc-result">Victoire Boston Celtics</div><div class="pc-reason">Boston à 93% de probabilité de victoire selon les données. NOP en fond de classement. Victoire quasi-certaine des Celtics.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Indiana vs Philly -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Indiana Pacers</div><div class="mc-sub">W19-L61 · Bas Est</div></div>
-              <div class="mc-center"><div class="mc-time">01h30 FR</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Philadelphia 76ers</div><div class="mc-sub">W43-L37 · 4e Est</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:8.00;--fw-n:1;--fw-e:1.10;">
-              <div class="cs fav"><span class="cs-lbl">Indiana</span><span class="cs-val">~8.00</span></div>
-              <div class="cs und"><span class="cs-lbl">Philly</span><span class="cs-val">~1.10</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Philly</span>
-              <div><div class="pc-result">Victoire Philadelphia 76ers</div><div class="pc-reason">Indiana est la pire équipe de l'Est (19 victoires). Philly à 90,7% de probabilité. Victoire confortable des Sixers.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- San Antonio vs Dallas -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">San Antonio Spurs</div><div class="mc-sub">W61-L19 · 1er SudO.</div></div>
-              <div class="mc-center"><div class="mc-time">02h00 FR</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Dallas Mavericks</div><div class="mc-sub">W25-L55 · Dernier SO</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.04;--fw-n:1;--fw-e:14.0;">
-              <div class="cs fav"><span class="cs-lbl">San Antonio</span><span class="cs-val">~1.04</span></div>
-              <div class="cs und"><span class="cs-lbl">Dallas</span><span class="cs-val">~14.0</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">San Antonio</span>
-              <div><div class="pc-result">Victoire Spurs</div><div class="pc-reason">San Antonio est à 94% de probabilité — le match le plus sûr de la nuit. Dallas est la pire équipe de l'Ouest cette saison (25 victoires).</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Milwaukee vs Brooklyn -->
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Milwaukee Bucks</div><div class="mc-sub">W31-L49 · Mid Est</div></div>
-              <div class="mc-center"><div class="mc-time">02h00 FR</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Brooklyn Nets</div><div class="mc-sub">W20-L60 · Bas Est</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:4.50;">
-              <div class="cs fav"><span class="cs-lbl">Milwaukee</span><span class="cs-val">~1.25</span></div>
-              <div class="cs und"><span class="cs-lbl">Brooklyn</span><span class="cs-val">~4.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Milwaukee</span>
-              <div><div class="pc-result">Victoire Bucks</div><div class="pc-reason">Les Bucks à 81.5% de probabilité face aux Nets (20-60). Brooklyn en reconstruction totale, aucune résistance attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== UFC ===== -->
-      <div class="sport-panel" id="panel-ufc">
-        <div class="panel-header">
-          <div class="panel-title">🥊 UFC 327</div>
-          <div class="panel-meta">Kaseya Center, Miami · 11-12 Avril 2026 · Carte principale à 03h00 (heure fr.)</div>
-        </div>
-
-        <div class="nba-disclaimer" style="--orange:var(--red);border-color:rgba(244,63,94,0.25);background:rgba(244,63,94,0.06);">
-          ⚠️ <div>L'UFC reste le sport le plus imprévisible — un seul coup peut tout changer. Confiance maximale 3/5. Ne misez jamais plus de 1-2% de votre bankroll par combat UFC.</div>
-        </div>
-
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge ufc">UFC 327</span>
-            <span class="jblock-title">Carte Principale</span>
-            <span class="jblock-date">Dim. 03h00 (fr.)</span>
-          </div>
-
-          <!-- MAIN EVENT -->
-          <div class="ufc-card main-event">
-            <div class="ufc-top">
-              <div class="ufc-f red"><div class="ufc-fname">Jiří Procházka</div><div class="ufc-fsub">🇨🇿 32-5-1 · Ancien champion</div></div>
-              <div class="ufc-center"><div class="ufc-cat">TITRE VACANT</div><div class="ufc-octagon">🏆</div><div class="ufc-weight">Mi-Lourds · 205 lbs</div></div>
-              <div class="ufc-f blue-corner"><div class="ufc-fname">Carlos Ulberg</div><div class="ufc-fsub">🇳🇿 14-1 · 9 victoires consécutives</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.85;--fw-n:1;--fw-e:2.00;">
-              <div class="cs fav"><span class="cs-lbl">Procházka</span><span class="cs-val">~1.85</span></div>
-              <div class="cs und"><span class="cs-lbl">Ulberg</span><span class="cs-val">~2.00</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Ulberg</span>
-              <div><div class="pc-result">Victoire Ulberg par décision unanime</div><div class="pc-reason">Ulberg est sur 9 victoires consécutives et progresse à chaque sortie — un momentum rare chez les mi-lourds. Procházka est brillant mais son style chaotique l'a déjà coûté plusieurs fois. Sur 5 rounds, le striking méthodique et le jeu de jambes d'Ulberg vont user le Tchèque. Le Néo-Zélandais est le futur du poids et je le vois prendre la ceinture.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- CO-MAIN -->
-          <div class="ufc-card">
-            <div class="ufc-top">
-              <div class="ufc-f red"><div class="ufc-fname">Paulo Costa</div><div class="ufc-fsub">🇧🇷 14-3 · Monté chez les MI-L.</div></div>
-              <div class="ufc-center"><div class="ufc-cat">CO-MAIN EVENT</div><div class="ufc-octagon">⚔️</div><div class="ufc-weight">Mi-Lourds</div></div>
-              <div class="ufc-f blue-corner"><div class="ufc-fname">Azamat Murzakanov</div><div class="ufc-fsub">🇷🇺 13-0 · Invaincu professionnel</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.50;--fw-n:1;--fw-e:2.60;">
-              <div class="cs fav"><span class="cs-lbl">Murzakanov</span><span class="cs-val">~1.50</span></div>
-              <div class="cs und"><span class="cs-lbl">Costa</span><span class="cs-val">~2.60</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Murzakanov</span>
-              <div><div class="pc-result">Victoire Murzakanov par déc. unanime</div><div class="pc-reason">Murzakanov invaincu (13-0) et favori logique. Costa monte de catégorie, désavantagé physiquement. L'invaincu devrait tenir la distance et dominer aux points.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Blaydes vs Hokit -->
-          <div class="ufc-card">
-            <div class="ufc-top">
-              <div class="ufc-f red"><div class="ufc-fname">Curtis Blaydes</div><div class="ufc-fsub">🇺🇸 18-4 · Vétéran UFC</div></div>
-              <div class="ufc-center"><div class="ufc-cat">POIDS LOURDS</div><div class="ufc-octagon">👊</div><div class="ufc-weight">265 lbs</div></div>
-              <div class="ufc-f blue-corner"><div class="ufc-fname">Josh Hokit</div><div class="ufc-fsub">🇺🇸 Outsider</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:4.50;">
-              <div class="cs fav"><span class="cs-lbl">Blaydes</span><span class="cs-val">~1.25</span></div>
-              <div class="cs und"><span class="cs-lbl">Hokit</span><span class="cs-val">~4.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Blaydes</span>
-              <div><div class="pc-result">Victoire Blaydes par TKO</div><div class="pc-reason">Blaydes est un top contender chez les lourds avec un excellent ground game. Hokit est trop inexpérimenté à ce niveau pour concurrencer l'expérience de Blaydes.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <!-- Sterling vs Zalal -->
-          <div class="ufc-card">
-            <div class="ufc-top">
-              <div class="ufc-f red"><div class="ufc-fname">Aljamain Sterling</div><div class="ufc-fsub">🇺🇸 24-5 · Ex-champion bantam</div></div>
-              <div class="ufc-center"><div class="ufc-cat">POIDS LÉGER</div><div class="ufc-octagon">⚡</div><div class="ufc-weight">155 lbs</div></div>
-              <div class="ufc-f blue-corner"><div class="ufc-fname">Esteban Ribovics</div><div class="ufc-fsub">🇦🇷 En montée</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.40;--fw-n:1;--fw-e:3.10;">
-              <div class="cs fav"><span class="cs-lbl">Sterling</span><span class="cs-val">~1.40</span></div>
-              <div class="cs und"><span class="cs-lbl">Ribovics</span><span class="cs-val">~3.10</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Ribovics</span>
-              <div><div class="pc-result">Victoire Ribovics par décision</div><div class="pc-reason">Sterling a du mal à s'adapter aux légers depuis sa montée — il n'a plus son explosivité d'ancien champion bantam. Ribovics, plus jeune et plus agressif, est invaincu dans l'octogone récemment. Son striking offensif et son cardio feront la différence contre un Sterling vieillissant. Upset contre le marché.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== TENNIS ===== -->
-      <div class="sport-panel" id="panel-tennis">
-        <div class="panel-header">
-          <div class="panel-title">🎾 ATP Monte-Carlo 2026</div>
-          <div class="panel-meta">Masters 1000 · Terre battue · 11–19 Avril 2026</div>
-        </div>
-        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
-          ✅ <div>Le tennis est l'un des sports les <strong>plus fiables</strong> à pronostiquer : pas d'effet d'équipe, écart de niveau énorme entre têtes de série et qualifiés. Les gros favoris passent en moyenne 85-90% des tours au premier tour d'un Masters 1000.</div>
-        </div>
-
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge tennis">ATP 1000</span>
-            <span class="jblock-title">1/8e de finale</span>
-            <span class="jblock-date">14–15 Avril 2026</span>
-          </div>
-
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Jannik Sinner</div><div class="mc-sub">🇮🇹 N°1 mondial · Tenant</div></div>
-              <div class="mc-center"><div class="mc-time">Mar. 14h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Grigor Dimitrov</div><div class="mc-sub">🇧🇬 N°16 · Vétéran</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.15;--fw-n:1;--fw-e:5.80;">
-              <div class="cs fav"><span class="cs-lbl">Sinner</span><span class="cs-val">~1.15</span></div>
-              <div class="cs und"><span class="cs-lbl">Dimitrov</span><span class="cs-val">~5.80</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Sinner</span>
-              <div><div class="pc-result">Victoire Sinner 2 sets à 0</div><div class="pc-reason">Sinner en patron sur terre battue depuis sa victoire à Rome. Dimitrov irrégulier physiquement. Cote 1.15 qui reflète la domination écrasante attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Carlos Alcaraz</div><div class="mc-sub">🇪🇸 N°2 mondial</div></div>
-              <div class="mc-center"><div class="mc-time">Mar. 16h30</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Stefanos Tsitsipas</div><div class="mc-sub">🇬🇷 N°11 · Spécialiste terre</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.35;--fw-n:1;--fw-e:3.20;">
-              <div class="cs fav"><span class="cs-lbl">Alcaraz</span><span class="cs-val">~1.35</span></div>
-              <div class="cs und"><span class="cs-lbl">Tsitsipas</span><span class="cs-val">~3.20</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Tsitsipas</span>
-              <div><div class="pc-result">Victoire Tsitsipas en 3 sets serrés</div><div class="pc-reason">Tsitsipas est double vainqueur de Monte-Carlo (2021, 2022) — c'est littéralement SON tournoi. Sur cette terre monégasque qu'il connaît par cœur, face à un Alcaraz qui n'a jamais vraiment brillé ici, le Grec a l'avantage mental et technique. Match accroché mais le spécialiste des lieux passe.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Alexander Zverev</div><div class="mc-sub">🇩🇪 N°3 mondial</div></div>
-              <div class="mc-center"><div class="mc-time">Mer. 14h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Hubert Hurkacz</div><div class="mc-sub">🇵🇱 N°14 · Serveur</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.45;--fw-n:1;--fw-e:2.80;">
-              <div class="cs fav"><span class="cs-lbl">Zverev</span><span class="cs-val">~1.45</span></div>
-              <div class="cs und"><span class="cs-lbl">Hurkacz</span><span class="cs-val">~2.80</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Zverev</span>
-              <div><div class="pc-result">Victoire Zverev 2-0</div><div class="pc-reason">Hurkacz beaucoup moins à l'aise sur terre battue (son service passe moins bien). Zverev plus complet en fond de court. Victoire nette attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Novak Djokovic</div><div class="mc-sub">🇷🇸 N°5 · 24 GC</div></div>
-              <div class="mc-center"><div class="mc-time">Mer. 16h30</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Casper Ruud</div><div class="mc-sub">🇳🇴 N°8 · Finaliste RG</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.60;--fw-n:1;--fw-e:2.35;">
-              <div class="cs fav"><span class="cs-lbl">Djokovic</span><span class="cs-val">~1.60</span></div>
-              <div class="cs und"><span class="cs-lbl">Ruud</span><span class="cs-val">~2.35</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">Ruud</span>
-              <div><div class="pc-result">Victoire Ruud en 3 sets</div><div class="pc-reason">Ruud est l'un des meilleurs terriens du circuit : 2× finaliste de Roland-Garros, spécialiste de la surface lente. Djokovic, à 38 ans, peine physiquement sur la longueur des matchs en 3 sets gagnants — surtout sur terre. Le Norvégien a les jambes, la patience et les coups pour faire durer les échanges jusqu'à épuiser Novak. Upset historique possible.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Daniil Medvedev</div><div class="mc-sub">🇷🇺 N°4 mondial</div></div>
-              <div class="mc-center"><div class="mc-time">Mer. 18h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Alex de Minaur</div><div class="mc-sub">🇦🇺 N°9 · Jeune en forme</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.70;--fw-n:1;--fw-e:2.15;">
-              <div class="cs fav"><span class="cs-lbl">Medvedev</span><span class="cs-val">~1.70</span></div>
-              <div class="cs und"><span class="cs-lbl">de Minaur</span><span class="cs-val">~2.15</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-away">de Minaur</span>
-              <div><div class="pc-result">Victoire de Minaur en 3 sets</div><div class="pc-reason">Medvedev est historiquement très faible sur terre battue (ses pires résultats de l'année). De Minaur, très athlétique, a l'opportunité de créer la surprise. Value bet intéressante.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== RUGBY ===== -->
-      <div class="sport-panel" id="panel-rugby">
-        <div class="panel-header">
-          <div class="panel-title">🏉 TOP 14</div>
-          <div class="panel-meta">22ème Journée · 11–12 Avril 2026</div>
-        </div>
-        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
-          ✅ <div>Le Top 14 est <strong>très prédictible à domicile</strong> : les équipes reçoivant gagnent dans plus de 75% des cas. L'écart de niveau entre le top et le bas du classement est l'un des plus marqués du sport français.</div>
-        </div>
-
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge rugby">J22</span>
-            <span class="jblock-title">22ème Journée</span>
-            <span class="jblock-date">11–12 Avril 2026</span>
-          </div>
-
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Stade Toulousain</div><div class="mc-sub">1er · 72 pts · Tenants</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Castres Olympique</div><div class="mc-sub">11e · 38 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.12;--fw-n:18.0;--fw-e:7.50;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.12</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">18.0</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">7.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Toulouse</span>
-              <div><div class="pc-result">Victoire Toulouse avec bonus offensif</div><div class="pc-reason">Ernest-Wallon est une forteresse cette saison (12/12 à domicile). Castres est solide mais ne peut rien face au rouleau compresseur toulousain. Victoire large attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">UBB Bordeaux</div><div class="mc-sub">2e · 65 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Sam. 17h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Section Paloise</div><div class="mc-sub">9e · 42 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:15.0;--fw-e:4.50;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.25</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">15.0</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">UBB</span>
-              <div><div class="pc-result">Victoire Bordeaux-Bègles</div><div class="pc-reason">Bordeaux en pleine dynamique avec un pack conquérant. Pau lutte pour éviter la relégation mais manque de ressources offensives en déplacement.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Stade Rochelais</div><div class="mc-sub">5e · 58 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 15h15</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Lyon LOU</div><div class="mc-sub">10e · 40 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.40;--fw-n:16.0;--fw-e:3.10;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.40</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">16.0</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.10</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">La Rochelle</span>
-              <div><div class="pc-result">Victoire La Rochelle</div><div class="pc-reason">Marcel-Deflandre est une enceinte bouillante. La Rochelle joue les play-offs et ne peut plus perdre. Lyon irrégulier en déplacement, surtout contre les gros.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Racing 92</div><div class="mc-sub">6e · 55 pts</div></div>
-              <div class="mc-center"><div class="mc-time">Dim. 17h00</div><div class="mc-vs">VS</div></div>
-              <div class="mc-team away"><div class="mc-name">Montpellier HR</div><div class="mc-sub">13e · 30 pts</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.32;--fw-n:16.0;--fw-e:3.60;">
-              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.32</span></div>
-              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">16.0</span></div>
-              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.60</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Racing 92</span>
-              <div><div class="pc-result">Victoire Racing 92</div><div class="pc-reason">Racing joue sa qualification. Montpellier en perdition totale cette saison, l'une des pires équipes en déplacement. Victoire sans suspense à Paris La Défense Arena.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== FORMULE 1 ===== -->
-      <div class="sport-panel" id="panel-f1">
-        <div class="panel-header">
-          <div class="panel-title">🏎️ Grand Prix du Bahreïn</div>
-          <div class="panel-meta">Manche 4/24 · Circuit de Sakhir · 12 Avril 2026</div>
-        </div>
-        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
-          ✅ <div>La <strong>Formule 1</strong> est l'un des sports les plus faciles à pronostiquer en tête de course : les 3 premiers sur la grille finissent dans le top 5 dans 80% des GP. Parier sur un podium d'un top team est très sûr.</div>
-        </div>
-
-        <div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge f1">GP 4</span>
-            <span class="jblock-title">Course dimanche · 18h00 (fr.)</span>
-            <span class="jblock-date">12 Avril 2026</span>
-          </div>
-
-          <div class="mc featured">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Max Verstappen</div><div class="mc-sub">🇳🇱 Red Bull · Tenant</div></div>
-              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">POLE?</div></div>
-              <div class="mc-team away"><div class="mc-name">Plateau complet</div><div class="mc-sub">20 pilotes au départ</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.90;--fw-n:1;--fw-e:1.95;">
-              <div class="cs fav"><span class="cs-lbl">Verstappen vainqueur</span><span class="cs-val">~1.90</span></div>
-              <div class="cs und"><span class="cs-lbl">Autre pilote</span><span class="cs-val">~1.95</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Verstappen Podium</span>
-              <div><div class="pc-result">Verstappen sur le podium (Top 3)</div><div class="pc-reason">Max finit 90% de ses courses dans le top 3. Pari beaucoup plus sûr que de parier sur la victoire. Cote 1.20 typique pour un podium — combinaison sûreté/rendement idéal.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Lando Norris</div><div class="mc-sub">🇬🇧 McLaren · 2e saison pass.</div></div>
-              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">TOP 6?</div></div>
-              <div class="mc-team away"><div class="mc-name">Points garantis</div><div class="mc-sub">McLaren en forme</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.15;--fw-n:1;--fw-e:4.50;">
-              <div class="cs fav"><span class="cs-lbl">Norris Top 6</span><span class="cs-val">~1.15</span></div>
-              <div class="cs und"><span class="cs-lbl">Hors Top 6</span><span class="cs-val">~4.50</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">Norris Top 6</span>
-              <div><div class="pc-result">Lando Norris dans les 6 premiers</div><div class="pc-reason">McLaren est la 2ème force du plateau. Norris termine dans les points à presque chaque course. Un top 6 est quasi-garanti sauf abandon mécanique.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
-            </div>
-          </div>
-
-          <div class="mc">
-            <div class="mc-top">
-              <div class="mc-team home"><div class="mc-name">Ferrari</div><div class="mc-sub">🇮🇹 Leclerc / Hamilton</div></div>
-              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">POINTS?</div></div>
-              <div class="mc-team away"><div class="mc-name">Double arrivée</div><div class="mc-sub">Deux pilotes dans les points</div></div>
-            </div>
-            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:3.80;">
-              <div class="cs fav"><span class="cs-lbl">Les 2 Ferrari dans pts</span><span class="cs-val">~1.25</span></div>
-              <div class="cs und"><span class="cs-lbl">Au moins 1 hors pts</span><span class="cs-val">~3.80</span></div>
-            </div>
-            <div class="prono-row">
-              <span class="ptag win-home">2 Ferrari points</span>
-              <div><div class="pc-result">Les deux Ferrari terminent dans les points</div><div class="pc-reason">Ferrari est la 3ème équipe du plateau. Leurs deux pilotes (Leclerc + Hamilton) marquent dans 85% des courses. Pari fiable sauf incident mécanique.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ===== IMPORT ===== -->
+            <!-- ===== IMPORT ===== -->
       <div class="sport-panel" id="panel-import">
         <div class="panel-header">
           <div class="panel-title">📂 Import JSON</div>
@@ -2158,8 +1501,6 @@ nav{
             <option value="🏀 NBA">🏀 NBA</option>
             <option value="🥊 UFC">🥊 UFC</option>
             <option value="🎾 Tennis">🎾 Tennis</option>
-            <option value="🏉 Rugby">🏉 Rugby</option>
-            <option value="🏎️ F1">🏎️ F1</option>
           </select>
         </div>
         <div class="adv-f">
@@ -2366,8 +1707,6 @@ nav{
           <option value="🏀 NBA">🏀 NBA</option>
           <option value="🥊 UFC">🥊 UFC</option>
           <option value="🎾 Tennis">🎾 Tennis</option>
-          <option value="🏉 Rugby">🏉 Rugby</option>
-          <option value="🏎️ F1">🏎️ F1</option>
           <option value="🎯 Autre">🎯 Autre</option>
         </select>
       </div>
@@ -3173,8 +2512,6 @@ function estimateProbability(cote, sport) {
   else if (s.includes('nba'))    edge = 0.03;
   else if (s.includes('foot'))   edge = 0.05;
   else if (s.includes('tennis')) edge = 0.08;
-  else if (s.includes('rugby'))  edge = 0.07;
-  else if (s.includes('f1'))     edge = 0.06;
   return Math.min(0.95, implicit + edge);
 }
 
@@ -3222,8 +2559,6 @@ function buildRecoReason(cote, sport) {
   if (s.includes('ufc'))         parts.push('UFC volatil');
   else if (s.includes('nba'))    parts.push('NBA volatil');
   else if (s.includes('tennis')) parts.push('tennis fiable');
-  else if (s.includes('rugby'))  parts.push('rugby fiable');
-  else if (s.includes('f1'))     parts.push('F1 fiable');
   return parts.join(' · ');
 }
 
@@ -3350,86 +2685,265 @@ document.addEventListener('keydown', e => {
 });
 
 // ===================== INJECT QUICK BET BUTTONS =====================
-function injectBetButtons() {
-  const configs = [
-    // ⚽ FOOT J29 — les .mc sont enfants directs du .journee-block:first-child
-    { panel:'foot', block:0, idx:0, match:'AJ Auxerre vs FC Nantes', pari:'Victoire Auxerre', cote:2.02, sport:'⚽ Foot', cls:'win-home', lbl:'Auxerre' },
-    { panel:'foot', block:0, idx:1, match:'Stade Rennais vs Angers SCO', pari:'Victoire Rennes', cote:1.36, sport:'⚽ Foot', cls:'win-home', lbl:'Rennes' },
-    { panel:'foot', block:0, idx:2, match:'OGC Nice vs Le Havre AC', pari:'Victoire Le Havre', cote:4.30, sport:'⚽ Foot', cls:'win-away', lbl:'Le Havre' },
-    { panel:'foot', block:0, idx:3, match:'Toulouse FC vs Lille OSC', pari:'Victoire Lille', cote:2.30, sport:'⚽ Foot', cls:'win-away', lbl:'Lille' },
-    { panel:'foot', block:0, idx:4, match:'Olympique Lyon vs FC Lorient', pari:'Victoire Lyon', cote:1.68, sport:'⚽ Foot', cls:'win-home', lbl:'Lyon' },
-    // ⚽ FOOT J30
-    { panel:'foot', block:1, idx:0, match:'RC Lens vs Toulouse FC', pari:'Victoire Lens', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Lens' },
-    { panel:'foot', block:1, idx:1, match:'FC Lorient vs Olympique Marseille', pari:'Victoire Marseille', cote:1.82, sport:'⚽ Foot', cls:'win-away', lbl:'Marseille' },
-    { panel:'foot', block:1, idx:2, match:'Angers SCO vs Le Havre AC', pari:'Match Nul', cote:3.00, sport:'⚽ Foot', cls:'draw', lbl:'Nul' },
-    { panel:'foot', block:1, idx:3, match:'Lille OSC vs OGC Nice', pari:'Victoire Lille', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Lille' },
-    { panel:'foot', block:1, idx:4, match:'AS Monaco vs AJ Auxerre', pari:'Victoire Monaco', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Monaco' },
-    // 🏀 NBA
-    { panel:'nba', block:0, idx:0, match:'Denver Nuggets vs OKC Thunder', pari:'Victoire Denver', cote:2.20, sport:'🏀 NBA', cls:'win-home', lbl:'Denver' },
-    { panel:'nba', block:0, idx:1, match:'Boston Celtics vs New Orleans', pari:'Victoire Boston', cote:1.07, sport:'🏀 NBA', cls:'win-home', lbl:'Boston' },
-    { panel:'nba', block:0, idx:2, match:'Indiana Pacers vs Philadelphia', pari:'Victoire Philly', cote:1.10, sport:'🏀 NBA', cls:'win-away', lbl:'Philly' },
-    { panel:'nba', block:0, idx:3, match:'San Antonio Spurs vs Dallas Mavericks', pari:'Victoire Spurs', cote:1.04, sport:'🏀 NBA', cls:'win-home', lbl:'Spurs' },
-    { panel:'nba', block:0, idx:4, match:'Milwaukee Bucks vs Brooklyn Nets', pari:'Victoire Bucks', cote:1.25, sport:'🏀 NBA', cls:'win-home', lbl:'Bucks' },
-    // 🎾 TENNIS ATP Monte-Carlo
-    { panel:'tennis', block:0, idx:0, match:'Sinner vs Dimitrov', pari:'Victoire Sinner', cote:1.15, sport:'🎾 Tennis', cls:'win-home', lbl:'Sinner' },
-    { panel:'tennis', block:0, idx:1, match:'Alcaraz vs Tsitsipas', pari:'Victoire Tsitsipas', cote:3.20, sport:'🎾 Tennis', cls:'win-away', lbl:'Tsitsipas' },
-    { panel:'tennis', block:0, idx:2, match:'Zverev vs Hurkacz', pari:'Victoire Zverev', cote:1.45, sport:'🎾 Tennis', cls:'win-home', lbl:'Zverev' },
-    { panel:'tennis', block:0, idx:3, match:'Djokovic vs Ruud', pari:'Victoire Ruud', cote:2.35, sport:'🎾 Tennis', cls:'win-away', lbl:'Ruud' },
-    { panel:'tennis', block:0, idx:4, match:'Medvedev vs de Minaur', pari:'Victoire de Minaur', cote:2.15, sport:'🎾 Tennis', cls:'win-away', lbl:'de Minaur' },
-    // 🏉 RUGBY Top 14
-    { panel:'rugby', block:0, idx:0, match:'Toulouse vs Castres', pari:'Victoire Toulouse', cote:1.12, sport:'🏉 Rugby', cls:'win-home', lbl:'Toulouse' },
-    { panel:'rugby', block:0, idx:1, match:'UBB Bordeaux vs Pau', pari:'Victoire UBB', cote:1.25, sport:'🏉 Rugby', cls:'win-home', lbl:'UBB' },
-    { panel:'rugby', block:0, idx:2, match:'La Rochelle vs Lyon', pari:'Victoire La Rochelle', cote:1.40, sport:'🏉 Rugby', cls:'win-home', lbl:'La Rochelle' },
-    { panel:'rugby', block:0, idx:3, match:'Racing 92 vs Montpellier', pari:'Victoire Racing 92', cote:1.32, sport:'🏉 Rugby', cls:'win-home', lbl:'Racing 92' },
-    // 🏎️ FORMULE 1
-    { panel:'f1', block:0, idx:0, match:'GP Bahreïn — Verstappen', pari:'Verstappen Podium', cote:1.20, sport:'🏎️ F1', cls:'win-home', lbl:'Verstappen' },
-    { panel:'f1', block:0, idx:1, match:'GP Bahreïn — Norris', pari:'Norris Top 6', cote:1.15, sport:'🏎️ F1', cls:'win-home', lbl:'Norris' },
-    { panel:'f1', block:0, idx:2, match:'GP Bahreïn — 2 Ferrari points', pari:'Les 2 Ferrari dans les points', cote:1.25, sport:'🏎️ F1', cls:'win-home', lbl:'Ferrari' },
-  ];
+// ===================== CHARGEMENT DES PRONOS (pronos.json) =====================
+// Les pronos sont stockés dans pronos.json à la racine du repo et régénérés
+// automatiquement par scripts/generate-pronos.js. Au chargement, on construit
+// la sidebar et les panels dynamiquement depuis data.sports.<sport>.leagues[].
+let pronosData = null;
 
-  configs.forEach(c => {
-    const panel = document.getElementById('panel-' + c.panel);
-    if (!panel) return;
-    const blocks = panel.querySelectorAll('.journee-block');
-    const block = blocks[c.block];
-    if (!block) return;
-    const cards = block.querySelectorAll('.mc');
-    const card = cards[c.idx];
-    if (!card) return;
-    appendBetBtn(card, c);
-  });
-
-  // UFC cards : querySelectorAll direct
-  const ufcConfigs = [
-    { match:'UFC 327 — Procházka vs Ulberg', pari:'Victoire Ulberg (décision)', cote:2.00, sport:'🥊 UFC', cls:'win-away', lbl:'Ulberg' },
-    { match:'UFC 327 — Costa vs Murzakanov', pari:'Victoire Murzakanov', cote:1.50, sport:'🥊 UFC', cls:'win-away', lbl:'Murzakanov' },
-    { match:'UFC 327 — Blaydes vs Hokit', pari:'Victoire Blaydes (TKO)', cote:1.25, sport:'🥊 UFC', cls:'win-home', lbl:'Blaydes' },
-    { match:'UFC 327 — Sterling vs Ribovics', pari:'Victoire Ribovics (décision)', cote:3.10, sport:'🥊 UFC', cls:'win-away', lbl:'Ribovics' },
-  ];
-  const ufcCards = document.querySelectorAll('#panel-ufc .ufc-card');
-  ufcCards.forEach((card, i) => {
-    if (ufcConfigs[i]) appendBetBtn(card, ufcConfigs[i]);
-  });
+async function loadAndRenderPronos() {
+  const cacheBust = '?t=' + Date.now();
+  try {
+    const res = await fetch('./pronos.json' + cacheBust, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    pronosData = await res.json();
+    buildSidebarAndPanels();
+    syncBetButtons();
+    renderToday();
+  } catch (e) {
+    console.error('Failed to load pronos.json', e);
+    const container = document.getElementById('dynamic-panels');
+    if (container) {
+      container.innerHTML = '<div class="sport-panel active"><div class="pronos-error">⚠️ Impossible de charger les pronos. Vérifie ta connexion ou réessaie plus tard.</div></div>';
+    }
+  }
 }
+
+function buildSidebarAndPanels() {
+  if (!pronosData || !pronosData.sports) return;
+
+  const container = document.getElementById('dynamic-panels');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const sportOrder = ['foot', 'nba', 'ufc', 'tennis'];
+  let firstId = null;
+
+  for (const sportKey of sportOrder) {
+    const sport = pronosData.sports[sportKey];
+    if (!sport) continue;
+
+    // Clear existing sidebar children (keep the label)
+    const sidebar = document.getElementById('sidebar-' + sportKey);
+    if (sidebar) {
+      Array.from(sidebar.children).forEach(c => {
+        if (!c.classList || !c.classList.contains('sidebar-label')) c.remove();
+      });
+    }
+
+    const leagues = sport.leagues || [];
+    if (!leagues.length) {
+      if (sidebar) {
+        const empty = document.createElement('div');
+        empty.className = 'sidebar-empty';
+        empty.textContent = 'Aucun match';
+        sidebar.appendChild(empty);
+      }
+      continue;
+    }
+
+    for (const league of leagues) {
+      const uid = sportKey + '-' + league.key;
+      const pronoCount = (league.pronos || []).length;
+
+      // Sidebar item
+      if (sidebar) {
+        const item = document.createElement('div');
+        item.className = 'sidebar-item';
+        item.id = 'sb-' + uid;
+        item.setAttribute('onclick', "showSport('" + uid + "')");
+        item.innerHTML =
+          '<span class="s-icon">' + (league.flag || '') + '</span> ' +
+          esc(league.label) +
+          (pronoCount ? ' <span class="sidebar-badge">' + pronoCount + '</span>' : '');
+        sidebar.appendChild(item);
+      }
+
+      // Panel
+      const panel = document.createElement('div');
+      panel.className = 'sport-panel';
+      panel.id = 'panel-' + uid;
+      let disclaimerHtml = '';
+      if (sport.disclaimer_html) {
+        const style = sport.disclaimer_style ? ' style="' + sport.disclaimer_style + '"' : '';
+        disclaimerHtml = '<div class="nba-disclaimer"' + style + '>' + sport.disclaimer_html + '</div>';
+      }
+      panel.innerHTML =
+        '<div class="panel-header">' +
+          '<div class="panel-title">' + esc(league.panel_title || league.label) + '</div>' +
+          '<div class="panel-meta">' + esc(league.panel_meta || '') + '</div>' +
+        '</div>' +
+        disclaimerHtml +
+        '<div class="pronos-body"></div>';
+      container.appendChild(panel);
+
+      renderLeaguePanel(panel, league, sport.outcome_count, sport.badge, sportKey);
+
+      if (!firstId) firstId = uid;
+    }
+  }
+
+  // Show the first league by default — unless an import panel is already active
+  if (firstId) {
+    const anyActive = document.querySelector('.sport-panel.active');
+    if (!anyActive) showSport(firstId);
+  }
+}
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+function jsSafe(s) {
+  return String(s == null ? '' : s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+}
+
+function renderLeaguePanel(panel, league, outcomeCount, badge, sportKey) {
+  const body = panel.querySelector('.pronos-body');
+  if (!body) return;
+  const list = league.pronos || [];
+  if (!list.length) {
+    body.innerHTML = '<div class="pronos-empty">Aucun pronostic pour les 3 prochains jours.</div>';
+    return;
+  }
+
+  // Group by calendar day (UTC)
+  const groups = new Map();
+  for (const p of list) {
+    const day = (p.commence_time || '').slice(0, 10);
+    if (!groups.has(day)) groups.set(day, []);
+    groups.get(day).push(p);
+  }
+  const daysSorted = [...groups.keys()].sort();
+  const jours = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+  const mois = ['janv.','févr.','mars','avril','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+
+  const html = daysSorted.map(day => {
+    const date = new Date(day + 'T00:00:00Z');
+    const title = jours[date.getUTCDay()];
+    const dateStr = date.getUTCDate() + ' ' + mois[date.getUTCMonth()] + ' ' + date.getUTCFullYear();
+    const pronos = groups.get(day);
+    return '<div class="journee-block">' +
+      '<div class="jblock-header">' +
+        '<span class="jblock-badge ' + badge + '">' + pronos.length + '</span>' +
+        '<span class="jblock-title">' + title + '</span>' +
+        '<span class="jblock-date">' + dateStr + '</span>' +
+      '</div>' +
+      pronos.map(p => renderMatchCard(p, sportKey, outcomeCount)).join('') +
+    '</div>';
+  }).join('');
+
+  const stamp = pronosData && pronosData.meta && pronosData.meta.generated_at
+    ? '<div class="pronos-meta-updated">↻ MAJ ' + new Date(pronosData.meta.generated_at).toLocaleString('fr-FR') + '</div>'
+    : '';
+  body.innerHTML = html + stamp;
+}
+
+const SPORT_LABELS = {
+  foot: '⚽ Foot', nba: '🏀 NBA', ufc: '🥊 UFC', tennis: '🎾 Tennis',
+};
+
+function renderMatchCard(p, sportKey, outcomeCount) {
+  const sportLabel = SPORT_LABELS[sportKey] || sportKey;
+  const featuredCls = p.featured ? ' featured' : '';
+  const statusCls = p.status === 'won' ? ' mc-won' : p.status === 'lost' ? ' mc-lost' : '';
+  const dotsHtml = Array.from({length:5}, (_,i) => '<span class="dot' + (i < (p.confiance||3) ? ' on' : '') + '"></span>').join('');
+
+  let cotesBar = '';
+  if (outcomeCount === 3 && p.cotes && p.cotes.nul != null) {
+    cotesBar =
+      '<div class="cotes-bar" style="--fw-d:' + p.cotes.domicile + ';--fw-n:' + p.cotes.nul + ';--fw-e:' + p.cotes.exterieur + ';">' +
+        '<div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">' + p.cotes.domicile + '</span></div>' +
+        '<div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">' + p.cotes.nul + '</span></div>' +
+        '<div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">' + p.cotes.exterieur + '</span></div>' +
+      '</div>';
+  } else {
+    cotesBar =
+      '<div class="cotes-bar" style="--fw-d:' + p.cotes.domicile + ';--fw-n:1;--fw-e:' + p.cotes.exterieur + ';">' +
+        '<div class="cs fav"><span class="cs-lbl">' + esc(p.home) + '</span><span class="cs-val">' + p.cotes.domicile + '</span></div>' +
+        '<div class="cs und"><span class="cs-lbl">' + esc(p.away) + '</span><span class="cs-val">' + p.cotes.exterieur + '</span></div>' +
+      '</div>';
+  }
+
+  const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
+  const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+
+  let actualLine = '';
+  if (p.status === 'won') actualLine = '<div class="pc-actual win">✓ Gagné' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
+  else if (p.status === 'lost') actualLine = '<div class="pc-actual loss">✗ Perdu' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
+
+  const gain10 = (10 * (p.cote_retenue - 1)).toFixed(2);
+  const buttonHtml =
+    '<div class="quick-bet-row">' +
+      '<div class="gain-preview">Pour 10 € → profit <span>+' + gain10 + ' €</span></div>' +
+      '<button class="btn-quick-bet" ' +
+        'data-match="' + esc(p.match) + '" ' +
+        'data-pari="' + esc(p.pari) + '" ' +
+        'data-cote="' + p.cote_retenue + '" ' +
+        'data-sport="' + esc(sportLabel) + '" ' +
+        'data-cls="' + ptagClass + '" ' +
+        'data-lbl="' + esc(ptagLabel) + '" ' +
+        'data-conf="' + (p.confiance || 3) + '" ' +
+        "onclick=\"openMiseModal('" + jsSafe(p.match) + "','" + jsSafe(p.pari) + "'," + p.cote_retenue + ",'" + jsSafe(sportLabel) + "','" + ptagClass + "','" + jsSafe(ptagLabel) + "'," + (p.confiance || 3) + ")\">" +
+        '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
+        ' Parier' +
+      '</button>' +
+    '</div>';
+
+  const timeDisplay = p.time_display || '';
+  const scoreText = p.score_prevu ? ' — ' + esc(p.score_prevu) : '';
+  const analyse = p.analyse ? '<div class="pc-reason">' + esc(p.analyse) + '</div>' : '';
+
+  return '<div class="mc' + featuredCls + statusCls + '" data-event-id="' + esc(p.event_id) + '">' +
+    '<div class="mc-top">' +
+      '<div class="mc-team home"><div class="mc-name">' + esc(p.home) + '</div></div>' +
+      '<div class="mc-center"><div class="mc-time">' + esc(timeDisplay) + '</div><div class="mc-vs">VS</div></div>' +
+      '<div class="mc-team away"><div class="mc-name">' + esc(p.away) + '</div></div>' +
+    '</div>' +
+    cotesBar +
+    '<div class="prono-row">' +
+      '<span class="ptag ' + ptagClass + '">' + esc(ptagLabel) + '</span>' +
+      '<div>' +
+        '<div class="pc-result">' + esc(p.pari) + scoreText + '</div>' +
+        analyse +
+        '<div class="dots">' + dotsHtml + '</div>' +
+        actualLine +
+      '</div>' +
+    '</div>' +
+    buttonHtml +
+  '</div>';
+}
+
+// Legacy placeholder for old init code
+function injectBetButtons() { /* replaced by loadAndRenderPronos */ }
 
 // ===================== PAGE AUJOURD'HUI =====================
 let todaySportFilter = 'all';
 
 function collectAllPronos() {
-  // Récupère tous les boutons data-match générés par injectBetButtons
-  // avec leur carte parente pour la confiance déjà lue
+  // Reads from pronosData (populated by loadAndRenderPronos) so we see
+  // every league's pronos even when only one league panel is in the DOM.
+  if (!pronosData || !pronosData.sports) return [];
   const list = [];
-  document.querySelectorAll('.btn-quick-bet[data-match]').forEach(btn => {
-    list.push({
-      match: btn.dataset.match,
-      pari: btn.dataset.pari,
-      cote: parseFloat(btn.dataset.cote),
-      sport: btn.dataset.sport,
-      cls: btn.dataset.cls,
-      lbl: btn.dataset.lbl,
-      conf: parseInt(btn.dataset.conf) || 3,
-    });
-  });
+  for (const [sportKey, sport] of Object.entries(pronosData.sports)) {
+    const sportLabel = SPORT_LABELS[sportKey] || sport.label || sportKey;
+    for (const league of sport.leagues || []) {
+      for (const p of league.pronos || []) {
+        const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
+        const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+        list.push({
+          match: p.match,
+          pari: p.pari,
+          cote: p.cote_retenue,
+          sport: sportLabel,
+          cls: ptagClass,
+          lbl: ptagLabel,
+          conf: p.confiance || 3,
+        });
+      }
+    }
+  }
   return list;
 }
 
@@ -3732,31 +3246,6 @@ async function confirmCombo() {
   renderToday();
   toast('✅ Combiné créé (cote ' + combinedCote.toFixed(2) + ')', 'ok');
 }
-
-function appendBetBtn(card, c) {
-  const gain10 = (10 * (c.cote - 1)).toFixed(2);
-  // Niveau de confiance lu depuis les dots du DOM (1-5)
-  const conf = card.querySelectorAll('.dot.on').length || 3;
-  const row = document.createElement('div');
-  row.className = 'quick-bet-row';
-  const safe = s => s.replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
-  row.innerHTML = `
-    <div class="gain-preview">Pour 10 € → profit <span>+${gain10} €</span></div>
-    <button class="btn-quick-bet"
-      data-match="${safe(c.match)}"
-      data-pari="${safe(c.pari)}"
-      data-cote="${c.cote}"
-      data-sport="${safe(c.sport)}"
-      data-cls="${c.cls}"
-      data-lbl="${safe(c.lbl)}"
-      data-conf="${conf}"
-      onclick="openMiseModal('${safe(c.match)}','${safe(c.pari)}',${c.cote},'${safe(c.sport)}','${c.cls}','${safe(c.lbl)}',${conf})">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-      Parier
-    </button>`;
-  card.appendChild(row);
-}
-
 
 // ===================== KELLY =====================
 function updateKelly() {
@@ -4065,8 +3554,7 @@ document.getElementById('cfg-goal').value = localStorage.getItem('lcp-goal') || 
 document.getElementById('cfg-stoploss').value = localStorage.getItem('lcp-stoploss') || '';
 refreshBankroll();
 renderPerf();
-injectBetButtons();
-syncBetButtons();
+loadAndRenderPronos();
 renderPerf();
 </script>
 </body>
