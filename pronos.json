@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated_at": "2026-04-11T13:08:08.893Z",
+    "generated_at": "2026-04-11T13:38:15.926Z",
     "generator": "scripts/generate-pronos.js",
     "version": "3.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-11T13:08:08.893Z",
+    "last_results_update": "2026-04-11T13:38:15.926Z",
     "resolved_last_run": 0,
     "archived_last_run": 0
   },
@@ -46,6 +46,7 @@
                 "nul": 3.46,
                 "exterieur": 4.27
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -54,7 +55,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775402100,
+                    "tournament": "L1",
+                    "home": "Le Havre",
+                    "away": "Auxerre",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775402100,
+                    "tournament": "L1",
+                    "home": "Metz",
+                    "away": "Nantes",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1774208700,
+                    "tournament": "L1",
+                    "home": "Nantes",
+                    "away": "Strasbourg",
+                    "score": "2-3"
+                  },
+                  {
+                    "timestamp": 1774116000,
+                    "tournament": "L1",
+                    "home": "Auxerre",
+                    "away": "Brest",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1773431100,
+                    "tournament": "L1",
+                    "home": "Marseille",
+                    "away": "Auxerre",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772906400,
+                    "tournament": "L1",
+                    "home": "Auxerre",
+                    "away": "Strasbourg",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1772899200,
+                    "tournament": "L1",
+                    "home": "Nantes",
+                    "away": "Angers",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772381700,
+                    "tournament": "L1",
+                    "home": "Lorient",
+                    "away": "Auxerre",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772381700,
+                    "tournament": "L1",
+                    "home": "Lille",
+                    "away": "Nantes",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1771776900,
+                    "tournament": "L1",
+                    "home": "Nantes",
+                    "away": "Le Havre",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1771768800,
+                    "tournament": "L1",
+                    "home": "Auxerre",
+                    "away": "Rennes",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1771172100,
+                    "tournament": "L1",
+                    "home": "Metz",
+                    "away": "Auxerre",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1771013100,
+                    "tournament": "L1",
+                    "home": "Monaco",
+                    "away": "Nantes",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1770567300,
+                    "tournament": "L1",
+                    "home": "Auxerre",
+                    "away": "Paris FC",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1770494700,
+                    "tournament": "L1",
+                    "home": "Nantes",
+                    "away": "Lyon",
+                    "score": "0-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.95,
+                  "draw": 3.33,
+                  "away": 4.2
+                },
+                "double_chance": {
+                  "12": 1.31,
+                  "1X": 1.22,
+                  "X2": 1.83
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.4,
+                    "under": 2.8
+                  },
+                  "2.5": {
+                    "over": 2.25,
+                    "under": 1.64
+                  },
+                  "3.5": {
+                    "over": 4.27,
+                    "under": 1.2
+                  }
+                },
+                "btts": {
+                  "yes": 2,
+                  "no": 1.75
+                },
+                "draw_no_bet": {
+                  "home": 1.36,
+                  "away": 2.87
+                }
+              }
             },
             {
               "event_id": "YDpNZQ14",
@@ -77,6 +220,7 @@
                 "nul": 5.39,
                 "exterieur": 9.85
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -193,6 +337,40 @@
                     "score": "1-0"
                   }
                 ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.33,
+                  "draw": 5,
+                  "away": 9.5
+                },
+                "double_chance": {
+                  "12": 1.16,
+                  "1X": 1.07,
+                  "X2": 3.23
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.18,
+                    "under": 4.5
+                  },
+                  "2.5": {
+                    "over": 1.62,
+                    "under": 2.27
+                  },
+                  "3.5": {
+                    "over": 2.52,
+                    "under": 1.46
+                  }
+                },
+                "btts": {
+                  "yes": 1.94,
+                  "no": 1.81
+                },
+                "draw_no_bet": {
+                  "home": 1.09,
+                  "away": 6
+                }
               }
             }
           ]
@@ -221,12 +399,13 @@
               "match": "Burnley vs Brighton",
               "prono": "win-away",
               "pari": "Victoire Brighton",
-              "cote_retenue": 1.68,
+              "cote_retenue": 1.66,
               "cotes": {
-                "domicile": 5.18,
-                "nul": 4.42,
-                "exterieur": 1.68
+                "domicile": 5.43,
+                "nul": 4.4,
+                "exterieur": 1.66
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -235,7 +414,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1774105200,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "Burnley",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1774096200,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Liverpool",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1773500400,
+                    "tournament": "PL",
+                    "home": "Burnley",
+                    "away": "Bournemouth",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773500400,
+                    "tournament": "PL",
+                    "home": "Sunderland",
+                    "away": "Brighton",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Arsenal",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772566200,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Burnley",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Nottingham",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772290800,
+                    "tournament": "PL",
+                    "home": "Burnley",
+                    "away": "Brentford",
+                    "score": "3-4"
+                  },
+                  {
+                    "timestamp": 1771686000,
+                    "tournament": "PL",
+                    "home": "Chelsea",
+                    "away": "Burnley",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1771686000,
+                    "tournament": "PL",
+                    "home": "Brentford",
+                    "away": "Brighton",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1771099200,
+                    "tournament": "FAC",
+                    "home": "Liverpool",
+                    "away": "Brighton",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1771081200,
+                    "tournament": "FAC",
+                    "home": "Burnley",
+                    "away": "Mansfield",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1770838200,
+                    "tournament": "PL",
+                    "home": "Crystal Palace",
+                    "away": "Burnley",
+                    "score": "2-3"
+                  },
+                  {
+                    "timestamp": 1770838200,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "Brighton",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1770559200,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Crystal Palace",
+                    "score": "0-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 5.1,
+                  "draw": 4.2,
+                  "away": 1.62
+                },
+                "double_chance": {
+                  "12": 1.22,
+                  "1X": 2.24,
+                  "X2": 1.17
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.21,
+                    "under": 4.27
+                  },
+                  "2.5": {
+                    "over": 1.67,
+                    "under": 2.2
+                  },
+                  "3.5": {
+                    "over": 2.61,
+                    "under": 1.44
+                  }
+                },
+                "btts": {
+                  "yes": 1.68,
+                  "no": 2.08
+                },
+                "draw_no_bet": {
+                  "home": 3.7,
+                  "away": 1.24
+                }
+              }
             },
             {
               "event_id": "AoUBFW6k",
@@ -255,9 +576,10 @@
               "cote_retenue": 2.26,
               "cotes": {
                 "domicile": 2.26,
-                "nul": 3.49,
-                "exterieur": 3.49
+                "nul": 3.5,
+                "exterieur": 3.5
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -266,7 +588,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1774123200,
+                    "tournament": "PL",
+                    "home": "Leeds",
+                    "away": "Brentford",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1774114200,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Chelsea",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1773691200,
+                    "tournament": "PL",
+                    "home": "Brentford",
+                    "away": "Wolves",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1773509400,
+                    "tournament": "PL",
+                    "home": "Arsenal",
+                    "away": "Everton",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1773084600,
+                    "tournament": "FAC",
+                    "home": "West Ham",
+                    "away": "Brentford",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1772566200,
+                    "tournament": "PL",
+                    "home": "Bournemouth",
+                    "away": "Brentford",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1772566200,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Burnley",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1772290800,
+                    "tournament": "PL",
+                    "home": "Burnley",
+                    "away": "Brentford",
+                    "score": "3-4"
+                  },
+                  {
+                    "timestamp": 1772290800,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Everton",
+                    "score": "2-3"
+                  },
+                  {
+                    "timestamp": 1771876800,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Manchester Utd",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1771686000,
+                    "tournament": "PL",
+                    "home": "Brentford",
+                    "away": "Brighton",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1771270200,
+                    "tournament": "FAC",
+                    "home": "Macclesfield",
+                    "away": "Brentford",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1770926400,
+                    "tournament": "PL",
+                    "home": "Brentford",
+                    "away": "Arsenal",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1770751800,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Bournemouth",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1770485400,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Brentford",
+                    "score": "2-3"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.2,
+                  "draw": 3.35,
+                  "away": 3.4
+                },
+                "double_chance": {
+                  "12": 1.33,
+                  "1X": 1.3,
+                  "X2": 1.65
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.29,
+                    "under": 3.5
+                  },
+                  "2.5": {
+                    "over": 1.91,
+                    "under": 1.88
+                  },
+                  "3.5": {
+                    "over": 3.2,
+                    "under": 1.31
+                  }
+                },
+                "btts": {
+                  "yes": 1.71,
+                  "no": 2.05
+                },
+                "draw_no_bet": {
+                  "home": 1.53,
+                  "away": 2.3
+                }
+              }
             },
             {
               "event_id": "jJ4pUVLr",
@@ -289,6 +753,7 @@
                 "nul": 4.41,
                 "exterieur": 4.93
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -297,7 +762,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775674800,
+                    "tournament": "CL",
+                    "home": "PSG",
+                    "away": "Liverpool",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1775303100,
+                    "tournament": "FAC",
+                    "home": "Manchester City",
+                    "away": "Liverpool",
+                    "score": "4-0"
+                  },
+                  {
+                    "timestamp": 1774105200,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "Burnley",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1774096200,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Liverpool",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1773864000,
+                    "tournament": "CL",
+                    "home": "Liverpool",
+                    "away": "Galatasaray",
+                    "score": "4-0"
+                  },
+                  {
+                    "timestamp": 1773592200,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "Tottenham",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Nottingham",
+                    "away": "Fulham",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773164700,
+                    "tournament": "CL",
+                    "home": "Galatasaray",
+                    "away": "Liverpool",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772971200,
+                    "tournament": "FAC",
+                    "home": "Fulham",
+                    "away": "Southampton",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772827200,
+                    "tournament": "FAC",
+                    "home": "Wolves",
+                    "away": "Liverpool",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "West Ham",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772568900,
+                    "tournament": "PL",
+                    "home": "Wolves",
+                    "away": "Liverpool",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "Tottenham",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772290800,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "West Ham",
+                    "score": "5-2"
+                  },
+                  {
+                    "timestamp": 1771768800,
+                    "tournament": "PL",
+                    "home": "Nottingham",
+                    "away": "Liverpool",
+                    "score": "0-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.67,
+                  "draw": 4.22,
+                  "away": 4.63
+                },
+                "double_chance": {
+                  "12": 1.22,
+                  "1X": 1.18,
+                  "X2": 2.2
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.13,
+                    "under": 5.38
+                  },
+                  "2.5": {
+                    "over": 1.47,
+                    "under": 2.58
+                  },
+                  "3.5": {
+                    "over": 2.2,
+                    "under": 1.64
+                  }
+                },
+                "btts": {
+                  "yes": 1.52,
+                  "no": 2.41
+                },
+                "draw_no_bet": {
+                  "home": 1.28,
+                  "away": 3.4
+                }
+              }
             },
             {
               "event_id": "WYNDZibL",
@@ -314,12 +921,13 @@
               "match": "Crystal Palace vs Newcastle",
               "prono": "win-away",
               "pari": "Victoire Newcastle",
-              "cote_retenue": 2.33,
+              "cote_retenue": 2.32,
               "cotes": {
-                "domicile": 3.21,
+                "domicile": 3.23,
                 "nul": 3.64,
-                "exterieur": 2.33
+                "exterieur": 2.32
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -328,38 +936,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
-            },
-            {
-              "event_id": "pxlmliDE",
-              "flashscore_id": "pxlmliDE",
-              "home_team_id": "WSzc94ws",
-              "away_team_id": "UDg08Ohm",
-              "tournament_id": "oeeq9yvp",
-              "tournament_url": "/football/england/premier-league/",
-              "sport_key": "flashscore_football_epl",
-              "commence_time": "2026-04-12T13:00:00.000Z",
-              "time_display": "Dim. 13h00 UTC",
-              "home": "Sunderland",
-              "away": "Tottenham",
-              "match": "Sunderland vs Tottenham",
-              "prono": "win-home",
-              "pari": "Victoire Sunderland",
-              "cote_retenue": 2.72,
-              "cotes": {
-                "domicile": 2.72,
-                "nul": 3.5,
-                "exterieur": 2.76
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "UECL",
+                    "home": "Crystal Palace",
+                    "away": "Fiorentina",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1774180800,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Sunderland",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1773942300,
+                    "tournament": "UECL",
+                    "home": "AEK Larnaca",
+                    "away": "Crystal Palace",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1773855900,
+                    "tournament": "CL",
+                    "home": "Barcelona",
+                    "away": "Newcastle",
+                    "score": "7-2"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Crystal Palace",
+                    "away": "Leeds",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773509400,
+                    "tournament": "PL",
+                    "home": "Chelsea",
+                    "away": "Newcastle",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773345600,
+                    "tournament": "UECL",
+                    "home": "Crystal Palace",
+                    "away": "AEK Larnaca",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773172800,
+                    "tournament": "CL",
+                    "home": "Newcastle",
+                    "away": "Barcelona",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1772913600,
+                    "tournament": "FAC",
+                    "home": "Newcastle",
+                    "away": "Manchester City",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1772740800,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Crystal Palace",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1772655300,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Manchester Utd",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Manchester Utd",
+                    "away": "Crystal Palace",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772290800,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Everton",
+                    "score": "2-3"
+                  },
+                  {
+                    "timestamp": 1772136000,
+                    "tournament": "UECL",
+                    "home": "Crystal Palace",
+                    "away": "Zrinjski",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1771963200,
+                    "tournament": "CL",
+                    "home": "Newcastle",
+                    "away": "Qarabag",
+                    "score": "3-2"
+                  }
+                ]
               },
-              "analyse": "",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null
+              "markets": {
+                "1x2": {
+                  "home": 3.05,
+                  "draw": 3.5,
+                  "away": 2.25
+                },
+                "double_chance": {
+                  "12": 1.3,
+                  "1X": 1.62,
+                  "X2": 1.37
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.22,
+                    "under": 4.15
+                  },
+                  "2.5": {
+                    "over": 1.73,
+                    "under": 2.06
+                  },
+                  "3.5": {
+                    "over": 2.75,
+                    "under": 1.4
+                  }
+                },
+                "btts": {
+                  "yes": 1.61,
+                  "no": 2.24
+                },
+                "draw_no_bet": {
+                  "home": 2.1,
+                  "away": 1.65
+                }
+              }
             },
             {
               "event_id": "IVe1QmL7",
@@ -382,6 +1101,7 @@
                 "nul": 3.41,
                 "exterieur": 2.73
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -390,7 +1110,323 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "EL",
+                    "home": "FC Porto",
+                    "away": "Nottingham",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "EL",
+                    "home": "Bologna",
+                    "away": "Aston Villa",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1774607400,
+                    "tournament": "CF",
+                    "home": "Aston Villa",
+                    "away": "Elche",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1774188900,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Nottingham",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1774188900,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "West Ham",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1773950400,
+                    "tournament": "EL",
+                    "home": "Aston Villa",
+                    "away": "Lille",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1773942300,
+                    "tournament": "EL",
+                    "home": "Midtjylland",
+                    "away": "Nottingham",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Nottingham",
+                    "away": "Fulham",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Manchester Utd",
+                    "away": "Aston Villa",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1773345600,
+                    "tournament": "EL",
+                    "home": "Nottingham",
+                    "away": "Midtjylland",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773337500,
+                    "tournament": "EL",
+                    "home": "Lille",
+                    "away": "Aston Villa",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Manchester City",
+                    "away": "Nottingham",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "Chelsea",
+                    "score": "1-4"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Nottingham",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772222400,
+                    "tournament": "PL",
+                    "home": "Wolves",
+                    "away": "Aston Villa",
+                    "score": "2-0"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.64,
+                  "draw": 3.33,
+                  "away": 2.65
+                },
+                "double_chance": {
+                  "12": 1.31,
+                  "1X": 1.45,
+                  "X2": 1.48
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.29,
+                    "under": 3.4
+                  },
+                  "2.5": {
+                    "over": 1.91,
+                    "under": 1.85
+                  },
+                  "3.5": {
+                    "over": 3.3,
+                    "under": 1.31
+                  }
+                },
+                "btts": {
+                  "yes": 1.71,
+                  "no": 2.04
+                },
+                "draw_no_bet": {
+                  "home": 1.83,
+                  "away": 1.85
+                }
+              }
+            },
+            {
+              "event_id": "pxlmliDE",
+              "flashscore_id": "pxlmliDE",
+              "home_team_id": "WSzc94ws",
+              "away_team_id": "UDg08Ohm",
+              "tournament_id": "oeeq9yvp",
+              "tournament_url": "/football/england/premier-league/",
+              "sport_key": "flashscore_football_epl",
+              "commence_time": "2026-04-12T13:00:00.000Z",
+              "time_display": "Dim. 13h00 UTC",
+              "home": "Sunderland",
+              "away": "Tottenham",
+              "match": "Sunderland vs Tottenham",
+              "prono": "win-home",
+              "pari": "Victoire Sunderland",
+              "cote_retenue": 2.76,
+              "cotes": {
+                "domicile": 2.76,
+                "nul": 3.44,
+                "exterieur": 2.77
+              },
+              "pick_category": "1x2",
+              "analyse": "",
+              "confiance": 2,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1774188900,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Nottingham",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1774180800,
+                    "tournament": "PL",
+                    "home": "Newcastle",
+                    "away": "Sunderland",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1773864000,
+                    "tournament": "CL",
+                    "home": "Tottenham",
+                    "away": "Atl. Madrid",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1773592200,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "Tottenham",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773500400,
+                    "tournament": "PL",
+                    "home": "Sunderland",
+                    "away": "Brighton",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773172800,
+                    "tournament": "CL",
+                    "home": "Atl. Madrid",
+                    "away": "Tottenham",
+                    "score": "5-2"
+                  },
+                  {
+                    "timestamp": 1772976600,
+                    "tournament": "FAC",
+                    "home": "Port Vale",
+                    "away": "Sunderland",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772740800,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Crystal Palace",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1772566200,
+                    "tournament": "PL",
+                    "home": "Leeds",
+                    "away": "Sunderland",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "Tottenham",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772281800,
+                    "tournament": "PL",
+                    "home": "Bournemouth",
+                    "away": "Sunderland",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1771777800,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Arsenal",
+                    "score": "1-4"
+                  },
+                  {
+                    "timestamp": 1771768800,
+                    "tournament": "PL",
+                    "home": "Sunderland",
+                    "away": "Fulham",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1771164000,
+                    "tournament": "FAC",
+                    "home": "Oxford Utd",
+                    "away": "Sunderland",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1770840900,
+                    "tournament": "PL",
+                    "home": "Sunderland",
+                    "away": "Liverpool",
+                    "score": "0-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.64,
+                  "draw": 3.3,
+                  "away": 2.7
+                },
+                "double_chance": {
+                  "12": 1.32,
+                  "1X": 1.46,
+                  "X2": 1.44
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.29,
+                    "under": 3.4
+                  },
+                  "2.5": {
+                    "over": 1.94,
+                    "under": 1.84
+                  },
+                  "3.5": {
+                    "over": 3.4,
+                    "under": 1.29
+                  }
+                },
+                "btts": {
+                  "yes": 1.72,
+                  "no": 2.05
+                },
+                "draw_no_bet": {
+                  "home": 1.83,
+                  "away": 1.85
+                }
+              }
             }
           ]
         },
@@ -418,12 +1454,13 @@
               "match": "Elche vs Valencia",
               "prono": "win-home",
               "pari": "Victoire Elche",
-              "cote_retenue": 2.63,
+              "cote_retenue": 2.71,
               "cotes": {
-                "domicile": 2.63,
-                "nul": 3.46,
-                "exterieur": 2.89
+                "domicile": 2.71,
+                "nul": 3.56,
+                "exterieur": 2.73
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -432,7 +1469,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775398500,
+                    "tournament": "LL",
+                    "home": "Valencia",
+                    "away": "Celta Vigo",
+                    "score": "2-3"
+                  },
+                  {
+                    "timestamp": 1775242800,
+                    "tournament": "LL",
+                    "home": "Rayo Vallecano",
+                    "away": "Elche",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1774607400,
+                    "tournament": "CF",
+                    "home": "Aston Villa",
+                    "away": "Elche",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1774123200,
+                    "tournament": "LL",
+                    "home": "Sevilla",
+                    "away": "Valencia",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1774098000,
+                    "tournament": "LL",
+                    "home": "Elche",
+                    "away": "Mallorca",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1773518400,
+                    "tournament": "LL",
+                    "home": "Real Madrid",
+                    "away": "Elche",
+                    "score": "4-1"
+                  },
+                  {
+                    "timestamp": 1773509400,
+                    "tournament": "LL",
+                    "home": "Oviedo",
+                    "away": "Valencia",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1773000000,
+                    "tournament": "LL",
+                    "home": "Valencia",
+                    "away": "Alaves",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1772974800,
+                    "tournament": "LL",
+                    "home": "Villarreal",
+                    "away": "Elche",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772378100,
+                    "tournament": "LL",
+                    "home": "Valencia",
+                    "away": "Osasuna",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772370000,
+                    "tournament": "LL",
+                    "home": "Elche",
+                    "away": "Espanyol",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1771790400,
+                    "tournament": "LL",
+                    "home": "Villarreal",
+                    "away": "Valencia",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1771617600,
+                    "tournament": "LL",
+                    "home": "Ath Bilbao",
+                    "away": "Elche",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1771176600,
+                    "tournament": "LL",
+                    "home": "Levante",
+                    "away": "Valencia",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1771012800,
+                    "tournament": "LL",
+                    "home": "Elche",
+                    "away": "Osasuna",
+                    "score": "0-0"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.5,
+                  "draw": 3.38,
+                  "away": 2.71
+                },
+                "double_chance": {
+                  "12": 1.31,
+                  "1X": 1.44,
+                  "X2": 1.5
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.22,
+                    "under": 3.77
+                  },
+                  "2.5": {
+                    "over": 1.75,
+                    "under": 1.98
+                  },
+                  "3.5": {
+                    "over": 2.88,
+                    "under": 1.37
+                  }
+                },
+                "btts": {
+                  "yes": 1.62,
+                  "no": 2.17
+                },
+                "draw_no_bet": {
+                  "home": 1.77,
+                  "away": 1.9
+                }
+              }
             },
             {
               "event_id": "O69fxvw8",
@@ -452,9 +1631,10 @@
               "cote_retenue": 1.41,
               "cotes": {
                 "domicile": 1.41,
-                "nul": 5.64,
-                "exterieur": 7.75
+                "nul": 5.59,
+                "exterieur": 7.85
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -571,6 +1751,40 @@
                     "score": "3-0"
                   }
                 ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.36,
+                  "draw": 5.45,
+                  "away": 7.63
+                },
+                "double_chance": {
+                  "12": 1.15,
+                  "1X": 1.1,
+                  "X2": 3.1
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.1,
+                    "under": 6
+                  },
+                  "2.5": {
+                    "over": 1.38,
+                    "under": 2.84
+                  },
+                  "3.5": {
+                    "over": 2,
+                    "under": 1.79
+                  }
+                },
+                "btts": {
+                  "yes": 1.63,
+                  "no": 2.17
+                },
+                "draw_no_bet": {
+                  "home": 1.12,
+                  "away": 6
+                }
               }
             },
             {
@@ -594,6 +1808,7 @@
                 "nul": 3.46,
                 "exterieur": 3.35
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -602,7 +1817,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775674800,
+                    "tournament": "CL",
+                    "home": "Barcelona",
+                    "away": "Atl. Madrid",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1775406600,
+                    "tournament": "LL",
+                    "home": "Oviedo",
+                    "away": "Sevilla",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1775329200,
+                    "tournament": "LL",
+                    "home": "Atl. Madrid",
+                    "away": "Barcelona",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1774209600,
+                    "tournament": "LL",
+                    "home": "Real Madrid",
+                    "away": "Atl. Madrid",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1774123200,
+                    "tournament": "LL",
+                    "home": "Sevilla",
+                    "away": "Valencia",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1773864000,
+                    "tournament": "CL",
+                    "home": "Tottenham",
+                    "away": "Atl. Madrid",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1773587700,
+                    "tournament": "LL",
+                    "home": "Barcelona",
+                    "away": "Sevilla",
+                    "score": "5-2"
+                  },
+                  {
+                    "timestamp": 1773501300,
+                    "tournament": "LL",
+                    "home": "Atl. Madrid",
+                    "away": "Getafe",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1773172800,
+                    "tournament": "CL",
+                    "home": "Atl. Madrid",
+                    "away": "Tottenham",
+                    "score": "5-2"
+                  },
+                  {
+                    "timestamp": 1772991000,
+                    "tournament": "LL",
+                    "home": "Sevilla",
+                    "away": "Rayo Vallecano",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1772904600,
+                    "tournament": "LL",
+                    "home": "Atl. Madrid",
+                    "away": "Real Sociedad",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1772568000,
+                    "tournament": "CDR",
+                    "home": "Barcelona",
+                    "away": "Atl. Madrid",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1772386200,
+                    "tournament": "LL",
+                    "home": "Betis",
+                    "away": "Sevilla",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772308800,
+                    "tournament": "LL",
+                    "home": "Oviedo",
+                    "away": "Atl. Madrid",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1771955100,
+                    "tournament": "CL",
+                    "home": "Atl. Madrid",
+                    "away": "Club Brugge KV",
+                    "score": "4-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.27,
+                  "draw": 3.38,
+                  "away": 3.15
+                },
+                "double_chance": {
+                  "12": 1.32,
+                  "1X": 1.35,
+                  "X2": 1.61
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.29,
+                    "under": 3.43
+                  },
+                  "2.5": {
+                    "over": 1.95,
+                    "under": 1.85
+                  },
+                  "3.5": {
+                    "over": 3.35,
+                    "under": 1.3
+                  }
+                },
+                "btts": {
+                  "yes": 1.72,
+                  "no": 2.04
+                },
+                "draw_no_bet": {
+                  "home": 1.57,
+                  "away": 2.23
+                }
+              }
             },
             {
               "event_id": "QXQotset",
@@ -625,6 +1982,7 @@
                 "nul": 3.64,
                 "exterieur": 3.3
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -633,7 +1991,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775666700,
+                    "tournament": "EL",
+                    "home": "Braga",
+                    "away": "Betis",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775415600,
+                    "tournament": "LL",
+                    "home": "Alaves",
+                    "away": "Osasuna",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1775320200,
+                    "tournament": "LL",
+                    "home": "Betis",
+                    "away": "Espanyol",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1774200600,
+                    "tournament": "LL",
+                    "home": "Ath Bilbao",
+                    "away": "Betis",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1774114200,
+                    "tournament": "LL",
+                    "home": "Osasuna",
+                    "away": "Girona",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1773950400,
+                    "tournament": "EL",
+                    "home": "Betis",
+                    "away": "Panathinaikos",
+                    "score": "4-0"
+                  },
+                  {
+                    "timestamp": 1773604800,
+                    "tournament": "LL",
+                    "home": "Real Sociedad",
+                    "away": "Osasuna",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1773595800,
+                    "tournament": "LL",
+                    "home": "Betis",
+                    "away": "Celta Vigo",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773337500,
+                    "tournament": "EL",
+                    "home": "Panathinaikos",
+                    "away": "Betis",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772982900,
+                    "tournament": "LL",
+                    "home": "Getafe",
+                    "away": "Betis",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1772888400,
+                    "tournament": "LL",
+                    "home": "Osasuna",
+                    "away": "Mallorca",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772386200,
+                    "tournament": "LL",
+                    "home": "Betis",
+                    "away": "Sevilla",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772378100,
+                    "tournament": "LL",
+                    "home": "Valencia",
+                    "away": "Osasuna",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1771695000,
+                    "tournament": "LL",
+                    "home": "Osasuna",
+                    "away": "Real Madrid",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1771686900,
+                    "tournament": "LL",
+                    "home": "Betis",
+                    "away": "Rayo Vallecano",
+                    "score": "1-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.2,
+                  "draw": 3.4,
+                  "away": 3.23
+                },
+                "double_chance": {
+                  "12": 1.3,
+                  "1X": 1.35,
+                  "X2": 1.65
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.27,
+                    "under": 3.5
+                  },
+                  "2.5": {
+                    "over": 1.88,
+                    "under": 1.92
+                  },
+                  "3.5": {
+                    "over": 3.2,
+                    "under": 1.33
+                  }
+                },
+                "btts": {
+                  "yes": 1.7,
+                  "no": 2.05
+                },
+                "draw_no_bet": {
+                  "home": 1.6,
+                  "away": 2.23
+                }
+              }
             }
           ]
         },
@@ -667,6 +2167,7 @@
                 "nul": 4.93,
                 "exterieur": 7.6
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -783,6 +2284,40 @@
                     "score": "1-2"
                   }
                 ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.4,
+                  "draw": 4.5,
+                  "away": 8.05
+                },
+                "double_chance": {
+                  "12": 1.19,
+                  "1X": 1.08,
+                  "X2": 2.84
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.25,
+                    "under": 3.81
+                  },
+                  "2.5": {
+                    "over": 1.81,
+                    "under": 1.98
+                  },
+                  "3.5": {
+                    "over": 2.98,
+                    "under": 1.35
+                  }
+                },
+                "btts": {
+                  "yes": 2.05,
+                  "no": 1.71
+                },
+                "draw_no_bet": {
+                  "home": 1.11,
+                  "away": 6
+                }
               }
             },
             {
@@ -806,6 +2341,7 @@
                 "nul": 3.6,
                 "exterieur": 2.31
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -814,7 +2350,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775491200,
+                    "tournament": "SA",
+                    "home": "Juventus",
+                    "away": "Genoa",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1775480400,
+                    "tournament": "SA",
+                    "home": "Lecce",
+                    "away": "Atalanta",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1774188000,
+                    "tournament": "SA",
+                    "home": "Atalanta",
+                    "away": "Verona",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1774122300,
+                    "tournament": "SA",
+                    "home": "Juventus",
+                    "away": "Sassuolo",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773864000,
+                    "tournament": "CL",
+                    "home": "Bayern Munich",
+                    "away": "Atalanta",
+                    "score": "4-1"
+                  },
+                  {
+                    "timestamp": 1773517500,
+                    "tournament": "SA",
+                    "home": "Udinese",
+                    "away": "Juventus",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773496800,
+                    "tournament": "SA",
+                    "home": "Inter",
+                    "away": "Atalanta",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773172800,
+                    "tournament": "CL",
+                    "home": "Atalanta",
+                    "away": "Bayern Munich",
+                    "score": "1-6"
+                  },
+                  {
+                    "timestamp": 1772912700,
+                    "tournament": "SA",
+                    "home": "Juventus",
+                    "away": "Pisa",
+                    "score": "4-0"
+                  },
+                  {
+                    "timestamp": 1772902800,
+                    "tournament": "SA",
+                    "home": "Atalanta",
+                    "away": "Udinese",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772654400,
+                    "tournament": "COP",
+                    "home": "Lazio",
+                    "away": "Atalanta",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772394300,
+                    "tournament": "SA",
+                    "home": "AS Roma",
+                    "away": "Juventus",
+                    "score": "3-3"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Atalanta",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772049600,
+                    "tournament": "CL",
+                    "home": "Juventus",
+                    "away": "Galatasaray",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1772041500,
+                    "tournament": "CL",
+                    "home": "Atalanta",
+                    "away": "Dortmund",
+                    "score": "4-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 3.17,
+                  "draw": 3.4,
+                  "away": 2.24
+                },
+                "double_chance": {
+                  "12": 1.3,
+                  "1X": 1.62,
+                  "X2": 1.36
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.2,
+                    "under": 4.22
+                  },
+                  "2.5": {
+                    "over": 1.71,
+                    "under": 2.13
+                  },
+                  "3.5": {
+                    "over": 2.64,
+                    "under": 1.44
+                  }
+                },
+                "btts": {
+                  "yes": 1.57,
+                  "no": 2.3
+                },
+                "draw_no_bet": {
+                  "home": 2.2,
+                  "away": 1.6
+                }
+              }
             },
             {
               "event_id": "SQE9QnQ1",
@@ -837,6 +2515,7 @@
                 "nul": 3.43,
                 "exterieur": 3.75
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 2,
               "featured": false,
@@ -845,7 +2524,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775491200,
+                    "tournament": "SA",
+                    "home": "Juventus",
+                    "away": "Genoa",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1775307600,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Cagliari",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1774122300,
+                    "tournament": "SA",
+                    "home": "Juventus",
+                    "away": "Sassuolo",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1774035900,
+                    "tournament": "SA",
+                    "home": "Genoa",
+                    "away": "Udinese",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Bologna",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773574200,
+                    "tournament": "SA",
+                    "home": "Verona",
+                    "away": "Genoa",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1773085500,
+                    "tournament": "SA",
+                    "home": "Lazio",
+                    "away": "Sassuolo",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772989200,
+                    "tournament": "SA",
+                    "home": "Genoa",
+                    "away": "AS Roma",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Atalanta",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772307900,
+                    "tournament": "SA",
+                    "home": "Inter",
+                    "away": "Genoa",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1771759800,
+                    "tournament": "SA",
+                    "home": "Genoa",
+                    "away": "Torino",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1771616700,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Verona",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1771164000,
+                    "tournament": "SA",
+                    "home": "Cremonese",
+                    "away": "Genoa",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1771155000,
+                    "tournament": "SA",
+                    "home": "Udinese",
+                    "away": "Sassuolo",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1770570000,
+                    "tournament": "SA",
+                    "home": "Sassuolo",
+                    "away": "Inter",
+                    "score": "0-5"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.15,
+                  "draw": 3.27,
+                  "away": 3.5
+                },
+                "double_chance": {
+                  "12": 1.33,
+                  "1X": 1.3,
+                  "X2": 1.67
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.35,
+                    "under": 3.05
+                  },
+                  "2.5": {
+                    "over": 2.13,
+                    "under": 1.71
+                  },
+                  "3.5": {
+                    "over": 3.85,
+                    "under": 1.24
+                  }
+                },
+                "btts": {
+                  "yes": 1.85,
+                  "no": 1.87
+                },
+                "draw_no_bet": {
+                  "home": 1.5,
+                  "away": 2.4
+                }
+              }
             },
             {
               "event_id": "Uke4nUnL",
@@ -868,6 +2689,7 @@
                 "nul": 4.03,
                 "exterieur": 1.65
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -876,7 +2698,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775501100,
+                    "tournament": "SA",
+                    "home": "Napoli",
+                    "away": "AC Milan",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1775328300,
+                    "tournament": "SA",
+                    "home": "Lazio",
+                    "away": "Parma",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1774101600,
+                    "tournament": "SA",
+                    "home": "Parma",
+                    "away": "Cremonese",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1774027800,
+                    "tournament": "SA",
+                    "home": "Cagliari",
+                    "away": "Napoli",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773507600,
+                    "tournament": "SA",
+                    "home": "Napoli",
+                    "away": "Lecce",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1773431100,
+                    "tournament": "SA",
+                    "home": "Torino",
+                    "away": "Parma",
+                    "score": "4-1"
+                  },
+                  {
+                    "timestamp": 1772978400,
+                    "tournament": "SA",
+                    "home": "Fiorentina",
+                    "away": "Parma",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1772826300,
+                    "tournament": "SA",
+                    "home": "Napoli",
+                    "away": "Torino",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772298000,
+                    "tournament": "SA",
+                    "home": "Verona",
+                    "away": "Napoli",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1772221500,
+                    "tournament": "SA",
+                    "home": "Parma",
+                    "away": "Cagliari",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1771779600,
+                    "tournament": "SA",
+                    "home": "AC Milan",
+                    "away": "Parma",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1771768800,
+                    "tournament": "SA",
+                    "home": "Atalanta",
+                    "away": "Napoli",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1771184700,
+                    "tournament": "SA",
+                    "home": "Napoli",
+                    "away": "AS Roma",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1771164000,
+                    "tournament": "SA",
+                    "home": "Parma",
+                    "away": "Verona",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1770753600,
+                    "tournament": "COP",
+                    "home": "Napoli",
+                    "away": "Como",
+                    "score": "1-2"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 6.12,
+                  "draw": 3.8,
+                  "away": 1.61
+                },
+                "double_chance": {
+                  "12": 1.25,
+                  "1X": 2.31,
+                  "X2": 1.13
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.36,
+                    "under": 2.94
+                  },
+                  "2.5": {
+                    "over": 2.17,
+                    "under": 1.67
+                  },
+                  "3.5": {
+                    "over": 4,
+                    "under": 1.23
+                  }
+                },
+                "btts": {
+                  "yes": 2.16,
+                  "no": 1.65
+                },
+                "draw_no_bet": {
+                  "home": 4.2,
+                  "away": 1.18
+                }
+              }
             }
           ]
         },
@@ -889,238 +2853,6 @@
           "panel_title": "🇩🇪 Bundesliga — Allemagne",
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
-            {
-              "event_id": "OAmZQPbL",
-              "flashscore_id": "OAmZQPbL",
-              "home_team_id": "KbS1suSm",
-              "away_team_id": "88HSzjDr",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-11T13:30:00.000Z",
-              "time_display": "Sam. 13h30 UTC",
-              "home": "RB Leipzig",
-              "away": "B. Monchengladbach",
-              "match": "RB Leipzig vs B. Monchengladbach",
-              "prono": "win-home",
-              "pari": "Victoire RB Leipzig",
-              "cote_retenue": 1.49,
-              "cotes": {
-                "domicile": 1.49,
-                "nul": 5.03,
-                "exterieur": 6.8
-              },
-              "analyse": "",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775309400,
-                    "tournament": "BUN",
-                    "home": "Werder Bremen",
-                    "away": "RB Leipzig",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775309400,
-                    "tournament": "BUN",
-                    "home": "B. Monchengladbach",
-                    "away": "Heidenheim",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1774546200,
-                    "tournament": "CF",
-                    "home": "VfL Osnabruck",
-                    "away": "B. Monchengladbach",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1774103400,
-                    "tournament": "BUN",
-                    "home": "FC Koln",
-                    "away": "B. Monchengladbach",
-                    "score": "3-3"
-                  },
-                  {
-                    "timestamp": 1774035000,
-                    "tournament": "BUN",
-                    "home": "RB Leipzig",
-                    "away": "Hoffenheim",
-                    "score": "5-0"
-                  },
-                  {
-                    "timestamp": 1773599400,
-                    "tournament": "BUN",
-                    "home": "Stuttgart",
-                    "away": "RB Leipzig",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1773430200,
-                    "tournament": "BUN",
-                    "home": "B. Monchengladbach",
-                    "away": "St. Pauli",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772893800,
-                    "tournament": "BUN",
-                    "home": "RB Leipzig",
-                    "away": "Augsburg",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772825400,
-                    "tournament": "BUN",
-                    "home": "Bayern Munich",
-                    "away": "B. Monchengladbach",
-                    "score": "4-1"
-                  },
-                  {
-                    "timestamp": 1772389800,
-                    "tournament": "BUN",
-                    "home": "Hamburger SV",
-                    "away": "RB Leipzig",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772289000,
-                    "tournament": "BUN",
-                    "home": "B. Monchengladbach",
-                    "away": "Union Berlin",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1771770600,
-                    "tournament": "BUN",
-                    "home": "Freiburg",
-                    "away": "B. Monchengladbach",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1771695000,
-                    "tournament": "BUN",
-                    "home": "RB Leipzig",
-                    "away": "Dortmund",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1771173000,
-                    "tournament": "BUN",
-                    "home": "RB Leipzig",
-                    "away": "Wolfsburg",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1771079400,
-                    "tournament": "BUN",
-                    "home": "Eintracht Frankfurt",
-                    "away": "B. Monchengladbach",
-                    "score": "3-0"
-                  }
-                ]
-              }
-            },
-            {
-              "event_id": "zk7v5rx2",
-              "flashscore_id": "zk7v5rx2",
-              "home_team_id": "nP1i5US1",
-              "away_team_id": "4jcj2zMd",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-11T13:30:00.000Z",
-              "time_display": "Sam. 13h30 UTC",
-              "home": "Dortmund",
-              "away": "Bayer Leverkusen",
-              "match": "Dortmund vs Bayer Leverkusen",
-              "prono": "win-home",
-              "pari": "Victoire Dortmund",
-              "cote_retenue": 2.03,
-              "cotes": {
-                "domicile": 2.03,
-                "nul": 3.98,
-                "exterieur": 3.68
-              },
-              "analyse": "",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null
-            },
-            {
-              "event_id": "dGT9w3rR",
-              "flashscore_id": "dGT9w3rR",
-              "home_team_id": "KWixEVWi",
-              "away_team_id": "pzHW4oaE",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-11T13:30:00.000Z",
-              "time_display": "Sam. 13h30 UTC",
-              "home": "Heidenheim",
-              "away": "Union Berlin",
-              "match": "Heidenheim vs Union Berlin",
-              "prono": "win-away",
-              "pari": "Victoire Union Berlin",
-              "cote_retenue": 2.59,
-              "cotes": {
-                "domicile": 2.87,
-                "nul": 3.56,
-                "exterieur": 2.59
-              },
-              "analyse": "",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null
-            },
-            {
-              "event_id": "Eef6Jsie",
-              "flashscore_id": "Eef6Jsie",
-              "home_team_id": "nwkTahLL",
-              "away_team_id": "8vndvXTk",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-11T13:30:00.000Z",
-              "time_display": "Sam. 13h30 UTC",
-              "home": "Wolfsburg",
-              "away": "Eintracht Frankfurt",
-              "match": "Wolfsburg vs Eintracht Frankfurt",
-              "prono": "win-home",
-              "pari": "Victoire Wolfsburg",
-              "cote_retenue": 2.6,
-              "cotes": {
-                "domicile": 2.6,
-                "nul": 3.7,
-                "exterieur": 2.77
-              },
-              "analyse": "",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null
-            },
             {
               "event_id": "2Hz1uPDE",
               "flashscore_id": "2Hz1uPDE",
@@ -1136,12 +2868,13 @@
               "match": "St. Pauli vs Bayern Munich",
               "prono": "win-away",
               "pari": "Victoire Bayern Munich",
-              "cote_retenue": 1.46,
+              "cote_retenue": 1.48,
               "cotes": {
-                "domicile": 7.31,
-                "nul": 5.13,
-                "exterieur": 1.46
+                "domicile": 7.11,
+                "nul": 5.08,
+                "exterieur": 1.48
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -1258,6 +2991,214 @@
                     "score": "3-2"
                   }
                 ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 7,
+                  "draw": 5,
+                  "away": 1.42
+                },
+                "double_chance": {
+                  "12": 1.17,
+                  "1X": 2.83,
+                  "X2": 1.1
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.15,
+                    "under": 5.13
+                  },
+                  "2.5": {
+                    "over": 1.5,
+                    "under": 2.49
+                  },
+                  "3.5": {
+                    "over": 2.27,
+                    "under": 1.61
+                  }
+                },
+                "btts": {
+                  "yes": 1.67,
+                  "no": 2.11
+                },
+                "draw_no_bet": {
+                  "home": 5,
+                  "away": 1.14
+                }
+              }
+            },
+            {
+              "event_id": "hnFuYt6l",
+              "flashscore_id": "hnFuYt6l",
+              "home_team_id": "WG9pOTse",
+              "away_team_id": "Ig1f1fy3",
+              "tournament_id": "8uyeqfid",
+              "tournament_url": "/football/germany/bundesliga/",
+              "sport_key": "flashscore_football_bundes",
+              "commence_time": "2026-04-12T13:30:00.000Z",
+              "time_display": "Dim. 13h30 UTC",
+              "home": "FC Koln",
+              "away": "Werder Bremen",
+              "match": "FC Koln vs Werder Bremen",
+              "prono": "win-home",
+              "pari": "Victoire FC Koln",
+              "cote_retenue": 2.28,
+              "cotes": {
+                "domicile": 2.28,
+                "nul": 3.62,
+                "exterieur": 3.34
+              },
+              "pick_category": "1x2",
+              "analyse": "",
+              "confiance": 2,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775403000,
+                    "tournament": "BUN",
+                    "home": "Eintracht Frankfurt",
+                    "away": "FC Koln",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1775309400,
+                    "tournament": "BUN",
+                    "home": "Werder Bremen",
+                    "away": "RB Leipzig",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1774103400,
+                    "tournament": "BUN",
+                    "home": "FC Koln",
+                    "away": "B. Monchengladbach",
+                    "score": "3-3"
+                  },
+                  {
+                    "timestamp": 1774103400,
+                    "tournament": "BUN",
+                    "home": "Wolfsburg",
+                    "away": "Werder Bremen",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773585000,
+                    "tournament": "BUN",
+                    "home": "Werder Bremen",
+                    "away": "Mainz",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1773509400,
+                    "tournament": "BUN",
+                    "home": "Hamburger SV",
+                    "away": "FC Koln",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1772987400,
+                    "tournament": "BUN",
+                    "home": "Union Berlin",
+                    "away": "Werder Bremen",
+                    "score": "1-4"
+                  },
+                  {
+                    "timestamp": 1772904600,
+                    "tournament": "BUN",
+                    "home": "FC Koln",
+                    "away": "Dortmund",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1772289000,
+                    "tournament": "BUN",
+                    "home": "Werder Bremen",
+                    "away": "Heidenheim",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1772220600,
+                    "tournament": "BUN",
+                    "home": "Augsburg",
+                    "away": "FC Koln",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1771777800,
+                    "tournament": "BUN",
+                    "home": "St. Pauli",
+                    "away": "Werder Bremen",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1771684200,
+                    "tournament": "BUN",
+                    "home": "FC Koln",
+                    "away": "Hoffenheim",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1771090200,
+                    "tournament": "BUN",
+                    "home": "Stuttgart",
+                    "away": "FC Koln",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1771079400,
+                    "tournament": "BUN",
+                    "home": "Werder Bremen",
+                    "away": "Bayern Munich",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1770561000,
+                    "tournament": "BUN",
+                    "home": "FC Koln",
+                    "away": "RB Leipzig",
+                    "score": "1-2"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.23,
+                  "draw": 3.48,
+                  "away": 3.15
+                },
+                "double_chance": {
+                  "12": 1.29,
+                  "1X": 1.36,
+                  "X2": 1.65
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.2,
+                    "under": 4.15
+                  },
+                  "2.5": {
+                    "over": 1.7,
+                    "under": 2.1
+                  },
+                  "3.5": {
+                    "over": 2.73,
+                    "under": 1.41
+                  }
+                },
+                "btts": {
+                  "yes": 1.58,
+                  "no": 2.26
+                },
+                "draw_no_bet": {
+                  "home": 1.6,
+                  "away": 2.2
+                }
               }
             }
           ]
@@ -1286,12 +3227,13 @@
               "match": "FAR Rabat vs Berkane",
               "prono": "win-home",
               "pari": "Victoire FAR Rabat",
-              "cote_retenue": 1.98,
+              "cote_retenue": 1.97,
               "cotes": {
-                "domicile": 1.98,
-                "nul": 2.91,
-                "exterieur": 4.46
+                "domicile": 1.97,
+                "nul": 2.95,
+                "exterieur": 4.41
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1300,7 +3242,149 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775415600,
+                    "tournament": "BOT",
+                    "home": "Kawkab Marrakech",
+                    "away": "FAR Rabat",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1775408400,
+                    "tournament": "BOT",
+                    "home": "Berkane",
+                    "away": "Maghreb Fez",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775156400,
+                    "tournament": "BOT",
+                    "home": "FAR Rabat",
+                    "away": "Dcheira",
+                    "score": "3-2"
+                  },
+                  {
+                    "timestamp": 1775070000,
+                    "tournament": "BOT",
+                    "home": "Olympique de Safi",
+                    "away": "Berkane",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1774195200,
+                    "tournament": "CL",
+                    "home": "Al-Hilal Omdurman",
+                    "away": "Berkane",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1774108800,
+                    "tournament": "CL",
+                    "home": "Pyramids",
+                    "away": "FAR Rabat",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1773525600,
+                    "tournament": "CL",
+                    "home": "Berkane",
+                    "away": "Al-Hilal Omdurman",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773439200,
+                    "tournament": "CL",
+                    "home": "FAR Rabat",
+                    "away": "Pyramids",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1773007200,
+                    "tournament": "BOT",
+                    "home": "Berkane",
+                    "away": "Difaa El Jadidi",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772920800,
+                    "tournament": "BOT",
+                    "home": "Renaissance Zemamra",
+                    "away": "FAR Rabat",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1772661600,
+                    "tournament": "BOT",
+                    "home": "Wydad AC",
+                    "away": "FAR Rabat",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1772661600,
+                    "tournament": "BOT",
+                    "home": "Berkane",
+                    "away": "Hassania Agadir",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772402400,
+                    "tournament": "BOT",
+                    "home": "Wydad AC",
+                    "away": "Berkane",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1772229600,
+                    "tournament": "BOT",
+                    "home": "FAR Rabat",
+                    "away": "COD Meknes",
+                    "score": "3-0"
+                  },
+                  {
+                    "timestamp": 1772056800,
+                    "tournament": "BOT",
+                    "home": "Berkane",
+                    "away": "Raja Casablanca",
+                    "score": "1-1"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 1.91,
+                  "draw": 2.98,
+                  "away": 4.1
+                },
+                "double_chance": {
+                  "12": 1.35,
+                  "1X": 1.18,
+                  "X2": 1.8
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.54,
+                    "under": 2.3
+                  },
+                  "2.5": {
+                    "over": 2.7,
+                    "under": 1.42
+                  },
+                  "3.5": {
+                    "over": 5.5,
+                    "under": 1.13
+                  }
+                },
+                "btts": {
+                  "yes": 2.3,
+                  "no": 1.54
+                },
+                "draw_no_bet": {
+                  "home": 1.36,
+                  "away": 2.9
+                }
+              }
             }
           ]
         }
@@ -1347,6 +3431,7 @@
                 "domicile": 1.72,
                 "exterieur": 2.02
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1355,7 +3440,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "3e5a41b29a55bd8847e9411193cf0c3b",
@@ -1373,6 +3459,7 @@
                 "domicile": 1.68,
                 "exterieur": 2.06
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1381,7 +3468,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "17ff58cfa3b4f58c46c17fbc8aceeccf",
@@ -1399,6 +3487,7 @@
                 "domicile": 1.83,
                 "exterieur": 2
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1407,7 +3496,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "fc9a3545e67ccf49e8087b25a96d0e51",
@@ -1425,6 +3515,7 @@
                 "domicile": 1.11,
                 "exterieur": 6.1
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -1433,7 +3524,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "28596f69618f6d9d720975b48732624a",
@@ -1451,6 +3543,7 @@
                 "domicile": 2.1,
                 "exterieur": 1.66
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1459,7 +3552,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "879b4d6d230c047a9a82a9579ba7ca0b",
@@ -1477,6 +3571,7 @@
                 "domicile": 4.35,
                 "exterieur": 1.19
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -1485,7 +3580,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "096caea60a71ba97e65721c0f8155d82",
@@ -1503,6 +3599,7 @@
                 "domicile": 1.1,
                 "exterieur": 6.5
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -1511,7 +3608,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "48f3771c88ec8b215ff0e6fa793bdfe2",
@@ -1529,6 +3627,7 @@
                 "domicile": 1.68,
                 "exterieur": 2.06
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1537,7 +3636,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "850311506989850541d048da6f04270c",
@@ -1555,6 +3655,7 @@
                 "domicile": 2.25,
                 "exterieur": 1.56
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1563,7 +3664,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "67b9e6675b55acac4441a96d5eae9d2e",
@@ -1581,6 +3683,7 @@
                 "domicile": 2.38,
                 "exterieur": 1.51
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1589,7 +3692,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "26a4609cba6b8188209b601f6a88ee0d",
@@ -1607,6 +3711,7 @@
                 "domicile": 1.55,
                 "exterieur": 2.32
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1615,7 +3720,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "e1a88113ce26c2849bcb987ea6463441",
@@ -1633,6 +3739,7 @@
                 "domicile": 1.05,
                 "exterieur": 10
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -1641,7 +3748,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "df4c7a2223c7c87f2362ed8adf3bd852",
@@ -1659,6 +3767,7 @@
                 "domicile": 2.48,
                 "exterieur": 1.56
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1667,7 +3776,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "03e1eb3464693591fb48ba2d10324c85",
@@ -1685,6 +3795,7 @@
                 "domicile": 1.32,
                 "exterieur": 3.2
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": true,
@@ -1693,7 +3804,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "33864092ce8719bc01d1de774da42b9d",
@@ -1711,6 +3823,7 @@
                 "domicile": 1.22,
                 "exterieur": 4
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -1719,7 +3832,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "cc516754b7f214e8dc3a18f02340dc6b",
@@ -1737,6 +3851,7 @@
                 "domicile": 1.47,
                 "exterieur": 2.55
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -1745,7 +3860,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "4d9eb5cc9ea7eeb377eb4449e732ffa7",
@@ -1763,6 +3879,7 @@
                 "domicile": 3.3,
                 "exterieur": 1.3
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": true,
@@ -1771,7 +3888,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "84bf8d807020123cea016cf9e2b91cc2",
@@ -1789,6 +3907,7 @@
                 "domicile": 1.73,
                 "exterieur": 2.02
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1797,7 +3916,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "34332d9f17f33de55894e0600e1bc652",
@@ -1815,6 +3935,7 @@
                 "domicile": 1.36,
                 "exterieur": 3.15
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -1823,7 +3944,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "6bf4fc0bba19e1ea558ab2f46c948412",
@@ -1839,8 +3961,9 @@
               "cote_retenue": 1.61,
               "cotes": {
                 "domicile": 1.61,
-                "exterieur": 2.35
+                "exterieur": 2.34
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1849,7 +3972,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "be7b989f2b7330c07e0eb878018f2fa2",
@@ -1867,6 +3991,7 @@
                 "domicile": 2.9,
                 "exterieur": 1.36
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -1875,7 +4000,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "adae4d1891b5e9741c40e90c517ad01d",
@@ -1893,6 +4019,7 @@
                 "domicile": 1.66,
                 "exterieur": 2.3
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1901,7 +4028,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "e2b8cc72bbde949daf00b6bb8f1d9f6c",
@@ -1919,6 +4047,7 @@
                 "domicile": 1.51,
                 "exterieur": 2.65
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1927,7 +4056,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "d1850ee847740c905e24a4edab17afdd",
@@ -1945,6 +4075,7 @@
                 "domicile": 1.91,
                 "exterieur": 1.91
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -1953,7 +4084,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "0d5143d82dd8d5dcdf30429fc5e7983f",
@@ -1971,6 +4103,7 @@
                 "domicile": 3.3,
                 "exterieur": 1.38
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -1979,7 +4112,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "43faf700596c8828519af18a465cbd65",
@@ -1997,6 +4131,7 @@
                 "domicile": 4.6,
                 "exterieur": 1.18
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -2005,7 +4140,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "6186668d62f54d4efde51fbda71f276b",
@@ -2023,6 +4159,7 @@
                 "domicile": 1.11,
                 "exterieur": 6.5
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -2031,7 +4168,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "bf752c7e220013ce6a0efd47c093d06c",
@@ -2049,6 +4187,7 @@
                 "domicile": 1.88,
                 "exterieur": 1.92
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2057,7 +4196,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "e2751d5f6d632a0c17de5483ac6f4623",
@@ -2075,6 +4215,7 @@
                 "domicile": 1.8,
                 "exterieur": 1.94
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2083,7 +4224,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "1f28b3497dfc9681164807d22cfe3826",
@@ -2101,6 +4243,7 @@
                 "domicile": 1.66,
                 "exterieur": 2.26
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2109,7 +4252,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "11320d3cad472e2847dcb325bad8a418",
@@ -2127,6 +4271,7 @@
                 "domicile": 1.36,
                 "exterieur": 2.9
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -2134,8 +4279,9 @@
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null
+              "coup_de_coeur": true,
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "2e3d69a2feacffcd73618b609edfdda1",
@@ -2153,6 +4299,7 @@
                 "domicile": 1.83,
                 "exterieur": 1.98
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2161,7 +4308,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "ac34b8b619b25f164bbfcff7427862c5",
@@ -2179,6 +4327,7 @@
                 "domicile": 1.63,
                 "exterieur": 2.16
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2187,7 +4336,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "bda044197e03b957a21fb394bb18adb5",
@@ -2203,8 +4353,9 @@
               "cote_retenue": 1.44,
               "cotes": {
                 "domicile": 1.44,
-                "exterieur": 2.87
+                "exterieur": 2.88
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 4,
               "featured": false,
@@ -2213,7 +4364,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
-              "stats": null
+              "stats": null,
+              "markets": null
             },
             {
               "event_id": "6fe9759f877d00a6399d8e3d0a81b818",
@@ -2231,6 +4383,7 @@
                 "domicile": 1.87,
                 "exterieur": 1.93
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 3,
               "featured": false,
@@ -2239,7 +4392,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             }
           ]
         }
@@ -2266,18 +4420,19 @@
               "event_id": "68a72ee51f61b8b2670206e53915b58f",
               "flashscore_id": null,
               "sport_key": "tennis_atp_monte_carlo_masters",
-              "commence_time": "2026-04-11T13:30:00Z",
-              "time_display": "Sam. 13h30 UTC",
+              "commence_time": "2026-04-11T13:45:00Z",
+              "time_display": "Sam. 13h45 UTC",
               "home": "Carlos Alcaraz",
               "away": "Valentin Vacherot",
               "match": "Carlos Alcaraz vs Valentin Vacherot",
               "prono": "win-home",
               "pari": "Victoire Carlos Alcaraz",
-              "cote_retenue": 1.06,
+              "cote_retenue": 1.05,
               "cotes": {
-                "domicile": 1.06,
-                "exterieur": 10
+                "domicile": 1.05,
+                "exterieur": 10.5
               },
+              "pick_category": "1x2",
               "analyse": "",
               "confiance": 5,
               "featured": true,
@@ -2286,7 +4441,8 @@
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
-              "stats": null
+              "stats": null,
+              "markets": null
             }
           ]
         }
@@ -2294,16 +4450,16 @@
     }
   },
   "coup_de_coeur": [
-    "OAmZQPbL",
+    "2Hz1uPDE",
     "YN1eljI8",
     "cc516754b7f214e8dc3a18f02340dc6b",
-    "2Hz1uPDE",
     "bda044197e03b957a21fb394bb18adb5",
     "O69fxvw8",
     "0d5143d82dd8d5dcdf30429fc5e7983f",
     "YDpNZQ14",
     "34332d9f17f33de55894e0600e1bc652",
-    "be7b989f2b7330c07e0eb878018f2fa2"
+    "be7b989f2b7330c07e0eb878018f2fa2",
+    "11320d3cad472e2847dcb325bad8a418"
   ],
   "history": []
 }

@@ -183,6 +183,7 @@ async function fetchFootMatches(windowStartMs, windowEndMs) {
         pari: `Victoire ${pickName}`,
         cote_retenue: cote,
         cotes: { domicile: cHome, nul: cDraw || null, exterieur: cAway },
+        pick_category: '1x2', // "1x2" | "ou" | "btts" | "dc" | "dnb" — agent can change
         analyse: '', // filled by the Claude agent
         confiance: confidenceFromCote(cote),
         featured: cote < 1.35,
@@ -191,7 +192,8 @@ async function fetchFootMatches(windowStartMs, windowEndMs) {
         actual_score: null,
         actual_result: null,
         coup_de_coeur: false,
-        stats: null, // filled later for the top picks
+        stats: null,   // filled later for foot matches
+        markets: null, // filled later for foot matches
       };
     });
 
@@ -263,6 +265,7 @@ function pickForOddsApiEvent(event, outcomeCount, sportLabel) {
     pari: `Victoire ${pickName}`,
     cote_retenue: cote,
     cotes: { domicile: cHome, exterieur: cAway },
+    pick_category: '1x2',
     analyse: '',
     confiance: confidenceFromCote(cote),
     featured: cote < 1.35,
@@ -272,6 +275,7 @@ function pickForOddsApiEvent(event, outcomeCount, sportLabel) {
     actual_result: null,
     coup_de_coeur: false,
     stats: null,
+    markets: null,
   };
 }
 
@@ -499,18 +503,169 @@ function computeCoupDeCoeur(allPronos) {
 // Capped as a safety net in case the fixture list is unexpectedly huge.
 const MAX_FOOT_ENRICHMENTS = 40;
 
+// ---------------------------------------------------------------------------
+// Parse the /matches/odds response into a compact, agent-friendly markets
+// structure covering the betting markets that matter for a curated daily feed.
+//
+// Input: array of bookmakers, each with .odds[] of markets. We aggregate
+// across bookmakers by taking the median value for each distinct outcome.
+//
+// Output shape:
+//   {
+//     "1x2":          { home, draw, away },
+//     "double_chance":{ "1X", "12", "X2" },
+//     "over_under":   { "1.5": {over, under}, "2.5": {...}, "3.5": {...} },
+//     "btts":         { yes, no },
+//     "draw_no_bet":  { home, away }
+//   }
+// Any market that isn't returned by the bookmakers is simply omitted.
+// ---------------------------------------------------------------------------
+function round2(v) {
+  return v && isFinite(v) ? parseFloat(v.toFixed(2)) : null;
+}
+
+function parseMarkets(raw, knownHome1X2, knownAway1X2) {
+  if (!Array.isArray(raw) || raw.length === 0) return null;
+
+  // Step 1: determine which eventParticipantId is home and which is away,
+  // by comparing each participant's median HOME_DRAW_AWAY odds to the known
+  // 1X2 cotes we already have from the match list endpoint.
+  const partOddsMap = new Map();
+  for (const bm of raw) {
+    for (const m of bm.odds || []) {
+      if (m.bettingType !== 'HOME_DRAW_AWAY' || m.bettingScope !== 'FULL_TIME') continue;
+      for (const o of m.odds || []) {
+        if (!o.eventParticipantId) continue; // skip draw (null)
+        const v = parseFloat(o.value);
+        if (!isFinite(v)) continue;
+        if (!partOddsMap.has(o.eventParticipantId)) partOddsMap.set(o.eventParticipantId, []);
+        partOddsMap.get(o.eventParticipantId).push(v);
+      }
+    }
+  }
+  if (partOddsMap.size < 2) return null;
+
+  let homeId = null, awayId = null;
+  let minHomeDist = Infinity, minAwayDist = Infinity;
+  for (const [id, vals] of partOddsMap) {
+    const med = median(vals);
+    if (med == null) continue;
+    const dh = Math.abs(med - knownHome1X2);
+    const da = Math.abs(med - knownAway1X2);
+    if (dh < minHomeDist) { minHomeDist = dh; homeId = id; }
+    if (da < minAwayDist) { minAwayDist = da; awayId = id; }
+  }
+  if (homeId === awayId) {
+    // Tie-break by insertion order
+    const ids = [...partOddsMap.keys()];
+    [homeId, awayId] = ids;
+  }
+
+  // Step 2: bucket raw odds per market + outcome across all bookmakers
+  const buckets = {
+    h_home: [], h_draw: [], h_away: [],
+    dc_1x: [], dc_12: [], dc_x2: [],
+    ou: {}, // { "2.5": { over: [], under: [] } }
+    btts_yes: [], btts_no: [],
+    dnb_home: [], dnb_away: [],
+  };
+
+  for (const bm of raw) {
+    for (const m of bm.odds || []) {
+      if (m.bettingScope !== 'FULL_TIME') continue;
+      const type = m.bettingType;
+      for (const o of m.odds || []) {
+        const v = parseFloat(o.value);
+        if (!isFinite(v)) continue;
+
+        if (type === 'HOME_DRAW_AWAY') {
+          if (o.eventParticipantId === homeId) buckets.h_home.push(v);
+          else if (o.eventParticipantId === awayId) buckets.h_away.push(v);
+          else if (o.eventParticipantId == null) buckets.h_draw.push(v);
+        } else if (type === 'DOUBLE_CHANCE') {
+          // null participant = "12" (no draw)
+          // home participant = "1X" (home or draw)
+          // away participant = "X2" (away or draw)
+          if (o.eventParticipantId === homeId) buckets.dc_1x.push(v);
+          else if (o.eventParticipantId === awayId) buckets.dc_x2.push(v);
+          else if (o.eventParticipantId == null) buckets.dc_12.push(v);
+        } else if (type === 'OVER_UNDER') {
+          const line = o.handicap && o.handicap.value;
+          if (!line) continue;
+          if (!buckets.ou[line]) buckets.ou[line] = { over: [], under: [] };
+          if (o.selection === 'OVER') buckets.ou[line].over.push(v);
+          else if (o.selection === 'UNDER') buckets.ou[line].under.push(v);
+        } else if (type === 'BOTH_TEAMS_TO_SCORE') {
+          if (o.bothTeamsToScore === true) buckets.btts_yes.push(v);
+          else if (o.bothTeamsToScore === false) buckets.btts_no.push(v);
+        } else if (type === 'DRAW_NO_BET') {
+          if (o.eventParticipantId === homeId) buckets.dnb_home.push(v);
+          else if (o.eventParticipantId === awayId) buckets.dnb_away.push(v);
+        }
+        // Skip ASIAN_HANDICAP, EUROPEAN_HANDICAP, CORRECT_SCORE,
+        // HALF_FULL_TIME, ODD_OR_EVEN — too niche for the daily picks list.
+      }
+    }
+  }
+
+  const out = {};
+
+  // 1X2 (only if we got data)
+  if (buckets.h_home.length) {
+    out['1x2'] = {
+      home: round2(median(buckets.h_home)),
+      draw: round2(median(buckets.h_draw)),
+      away: round2(median(buckets.h_away)),
+    };
+  }
+
+  // Double chance
+  if (buckets.dc_1x.length) {
+    out.double_chance = {
+      '1X': round2(median(buckets.dc_1x)),
+      '12': round2(median(buckets.dc_12)),
+      'X2': round2(median(buckets.dc_x2)),
+    };
+  }
+
+  // Over/Under 1.5, 2.5, 3.5 (skip other lines)
+  const ou = {};
+  for (const line of ['1.5', '2.5', '3.5']) {
+    const b = buckets.ou[line];
+    if (b && b.over.length && b.under.length) {
+      ou[line] = { over: round2(median(b.over)), under: round2(median(b.under)) };
+    }
+  }
+  if (Object.keys(ou).length) out.over_under = ou;
+
+  // BTTS
+  if (buckets.btts_yes.length) {
+    out.btts = {
+      yes: round2(median(buckets.btts_yes)),
+      no: round2(median(buckets.btts_no)),
+    };
+  }
+
+  // Draw No Bet
+  if (buckets.dnb_home.length) {
+    out.draw_no_bet = {
+      home: round2(median(buckets.dnb_home)),
+      away: round2(median(buckets.dnb_away)),
+    };
+  }
+
+  return out;
+}
+
 async function enrichAllFoot(allPronos) {
   // Enrich EVERY foot match (not just coup-de-cœur) so that every prono on
-  // the site has real H2H + form data to write an analysis from.
+  // the site has real H2H + form data + all available markets for the agent.
   const footMatches = allPronos.filter((p) => p.flashscore_id).slice(0, MAX_FOOT_ENRICHMENTS);
   let done = 0;
   for (const p of footMatches) {
+    // Recent matches (H2H + form combined)
     try {
-      console.log(`    h2h: ${p.match}`);
       const h2h = await fsFetch(`/matches/h2h?match_id=${p.flashscore_id}`);
-      // The Flashscore /matches/h2h endpoint returns recent matches involving
-      // EITHER team (it's not pure head-to-head). Treated as a combined form +
-      // H2H signal. We keep the 15 most recent entries per match.
       const recent = Array.isArray(h2h)
         ? h2h.slice(0, 15).map((m) => ({
             timestamp: m.timestamp,
@@ -521,10 +676,21 @@ async function enrichAllFoot(allPronos) {
           }))
         : [];
       p.stats = { recent_matches: recent };
-      done++;
     } catch (e) {
-      console.error('    [WARN] h2h:', e.message);
+      console.error('    [WARN] h2h:', p.match, '-', e.message);
     }
+
+    // All betting markets
+    try {
+      const oddsRaw = await fsFetch(`/matches/odds?match_id=${p.flashscore_id}`);
+      const markets = parseMarkets(oddsRaw, p.cotes.domicile, p.cotes.exterieur);
+      if (markets) p.markets = markets;
+    } catch (e) {
+      console.error('    [WARN] odds:', p.match, '-', e.message);
+    }
+
+    console.log(`    enriched: ${p.match}`);
+    done++;
   }
   return done;
 }

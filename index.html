@@ -412,6 +412,10 @@ nav{
 .ptag.win-home,.ptag.fav{background:rgba(16,185,129,0.15);color:var(--green);border:1px solid rgba(16,185,129,0.3);}
 .ptag.win-away{background:rgba(79,142,247,0.15);color:var(--blue);border:1px solid rgba(79,142,247,0.3);}
 .ptag.draw{background:rgba(245,158,11,0.13);color:var(--draw);border:1px solid rgba(245,158,11,0.3);}
+.ptag.market-ou{background:rgba(139,92,246,0.15);color:var(--purple);border:1px solid rgba(139,92,246,0.3);}
+.ptag.market-btts{background:rgba(236,72,153,0.15);color:#f472b6;border:1px solid rgba(236,72,153,0.3);}
+.ptag.market-dc{background:rgba(14,165,233,0.15);color:#38bdf8;border:1px solid rgba(14,165,233,0.3);}
+.ptag.market-dnb{background:rgba(240,192,64,0.13);color:var(--gold);border:1px solid rgba(240,192,64,0.3);}
 .ptag.over{background:rgba(240,192,64,0.1);color:var(--gold);border:1px solid rgba(240,192,64,0.3);}
 .pc-result{font-weight:700;font-size:14px;margin-bottom:3px;}
 .pc-reason{font-size:12px;color:var(--muted);line-height:1.55;}
@@ -2975,8 +2979,22 @@ function renderMatchCard(p, sportKey, outcomeCount) {
       '</div>';
   }
 
-  const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
-  const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+  // Pick category → ptag styling. "1x2" uses the classic home/draw/away colors;
+  // other categories use dedicated market colors. The label inside the ptag is
+  // a short code for non-1X2 picks so the full pari text can live in pc-result.
+  const cat = p.pick_category || '1x2';
+  let ptagClass, ptagLabel;
+  if (cat === '1x2') {
+    ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
+    ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+  } else {
+    ptagClass = 'market-' + cat;
+    ptagLabel = cat === 'ou' ? 'O/U'
+             : cat === 'btts' ? 'BTTS'
+             : cat === 'dc' ? 'Double chance'
+             : cat === 'dnb' ? 'DNB'
+             : cat.toUpperCase();
+  }
 
   let actualLine = '';
   if (p.status === 'won') actualLine = '<div class="pc-actual win">✓ Gagné' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
@@ -3100,8 +3118,15 @@ function renderCoupDeCoeur() {
     const dotsHtml = Array.from({ length: 5 }, (_, i) =>
       '<span class="dot' + (i < (p.confiance || 3) ? ' on' : '') + '"></span>'
     ).join('');
-    const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
-    const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+    const cat = p.pick_category || '1x2';
+    let ptagClass, ptagLabel;
+    if (cat === '1x2') {
+      ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
+      ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+    } else {
+      ptagClass = 'market-' + cat;
+      ptagLabel = cat === 'ou' ? 'O/U' : cat === 'btts' ? 'BTTS' : cat === 'dc' ? 'Double chance' : cat === 'dnb' ? 'DNB' : cat.toUpperCase();
+    }
     const analyseHtml = p.analyse
       ? '<div class="cdc-analyse">' + esc(p.analyse) + '</div>'
       : '<div class="cdc-analyse cdc-analyse-empty">Analyse en cours de rédaction par le Coach — elle apparaîtra au prochain run de 7h.</div>';
