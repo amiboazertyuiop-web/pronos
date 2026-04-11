@@ -379,109 +379,14 @@ async function fetchNonFoot(windowStartMs, windowEndMs) {
 }
 
 // ---------------------------------------------------------------------------
-// Step 2: update status of still-pending pronos from yesterday
+// Note: result resolution and history archiving are now owned exclusively by
+// scripts/hourly-refresh.js. The daily run only builds new pronos and
+// preserves the existing history[] untouched. This keeps concerns cleanly
+// separated and avoids duplicate/conflicting resolution logic.
 // ---------------------------------------------------------------------------
-async function updatePendingResults(existing) {
-  if (!existing || !existing.sports) return 0;
-  const now = Date.now();
-  const pendingBySport = new Map();
-  for (const sport of Object.values(existing.sports)) {
-    for (const league of sport.leagues || []) {
-      for (const p of league.pronos || []) {
-        if (p.status !== 'pending') continue;
-        const ms = new Date(p.commence_time).getTime();
-        if (ms > now) continue;
-        // Foot: resolve via Flashscore (free once match is in our day range)
-        if (p.flashscore_id) {
-          try {
-            const detail = await fsFetch(`/matches/details?match_id=${p.flashscore_id}`);
-            if (detail?.match_status?.is_finished) {
-              const hs = detail.scores.home;
-              const as = detail.scores.away;
-              const homeWins = hs > as;
-              const draw = hs === as;
-              let status;
-              if (draw) status = p.prono === 'draw' ? 'won' : 'lost';
-              else if (p.prono === 'win-home') status = homeWins ? 'won' : 'lost';
-              else if (p.prono === 'win-away') status = !homeWins ? 'won' : 'lost';
-              else status = 'void';
-              p.status = status;
-              p.actual_score = `${hs}-${as}`;
-              p.actual_result = homeWins ? 'home' : draw ? 'draw' : 'away';
-              console.log(`    resolved ${p.match}: ${p.actual_score} (${status})`);
-            }
-          } catch (e) { console.error('    [WARN] foot resolve:', e.message); }
-          continue;
-        }
-        // Non-foot: group by sport_key for one bulk Odds API call
-        if (!pendingBySport.has(p.sport_key)) pendingBySport.set(p.sport_key, []);
-        pendingBySport.get(p.sport_key).push(p);
-      }
-    }
-  }
-
-  let resolved = 0;
-  for (const [sportKey, pronos] of pendingBySport) {
-    try {
-      const events = await oddsFetch(`/sports/${sportKey}/scores/?daysFrom=3&dateFormat=iso`);
-      const byId = new Map(events.map((e) => [e.id, e]));
-      for (const p of pronos) {
-        const evt = byId.get(p.event_id);
-        if (!evt || !evt.completed || !evt.scores) continue;
-        const hScore = parseInt(evt.scores.find((s) => s.name === p.home)?.score, 10);
-        const aScore = parseInt(evt.scores.find((s) => s.name === p.away)?.score, 10);
-        if (Number.isNaN(hScore) || Number.isNaN(aScore)) continue;
-        const homeWins = hScore > aScore;
-        const draw = hScore === aScore;
-        let status;
-        if (draw) status = 'void';
-        else if (p.prono === 'win-home') status = homeWins ? 'won' : 'lost';
-        else if (p.prono === 'win-away') status = !homeWins ? 'won' : 'lost';
-        else status = 'void';
-        p.status = status;
-        p.actual_score = `${hScore}-${aScore}`;
-        p.actual_result = homeWins ? 'home' : draw ? 'draw' : 'away';
-        resolved++;
-        console.log(`    resolved ${p.match}: ${p.actual_score} (${status})`);
-      }
-    } catch (e) { console.error('    [WARN]', sportKey, e.message); }
-  }
-  return resolved;
-}
 
 // ---------------------------------------------------------------------------
-// Step 3: archive resolved pronos to history[]
-// ---------------------------------------------------------------------------
-function archiveResolved(existing) {
-  if (!existing || !existing.sports) return { history: [], archived: 0 };
-  const history = existing.history || [];
-  let archived = 0;
-  for (const sport of Object.values(existing.sports)) {
-    for (const league of sport.leagues || []) {
-      const keep = [];
-      for (const p of league.pronos || []) {
-        if (p.status === 'won' || p.status === 'lost' || p.status === 'void') {
-          history.push({
-            ...p,
-            sport_label: sport.label,
-            league_label: league.label,
-            archived_at: new Date().toISOString(),
-          });
-          archived++;
-        } else {
-          keep.push(p);
-        }
-      }
-      league.pronos = keep;
-    }
-  }
-  // Cap history to last 500 entries to keep file size reasonable
-  if (history.length > 500) history.splice(0, history.length - 500);
-  return { history, archived };
-}
-
-// ---------------------------------------------------------------------------
-// Step 6 + 7: compute coup-de-cœur (ranking) then enrich foot picks with H2H
+// Compute coup-de-cœur (ranking) then enrich foot picks with H2H
 // ---------------------------------------------------------------------------
 // Selection priority (within cote >= 1.25 filter):
 //   1. confidence DESC (safer picks first)
@@ -699,34 +604,19 @@ async function enrichAllFoot(allPronos) {
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
-  console.log(`→ generate-pronos v3 — window: next ${WINDOW_HOURS}h`);
+  console.log(`→ generate-pronos v4 — window: next ${WINDOW_HOURS}h (daily generator)`);
+  console.log('  (result resolution + archiving is now owned by hourly-refresh.js)');
   const now = Date.now();
   const windowEnd = now + WINDOW_HOURS * 60 * 60 * 1000;
 
-  // 1. Load existing
+  // 1. Load existing (only to inherit history[] — we don't touch pronos)
   let existing = null;
   try { existing = JSON.parse(fs.readFileSync(JSON_PATH, 'utf8')); } catch {}
+  const history = existing && Array.isArray(existing.history) ? existing.history : [];
+  console.log(`  carrying over history[] with ${history.length} entries`);
 
-  // 2. Update pending results
-  let resolvedCount = 0;
-  if (existing) {
-    console.log('[2] update pending results');
-    resolvedCount = await updatePendingResults(existing);
-  }
-
-  // 3. Archive resolved
-  let history = [];
-  let archivedCount = 0;
-  if (existing) {
-    console.log('[3] archive resolved to history');
-    const archived = archiveResolved(existing);
-    history = archived.history;
-    archivedCount = archived.archived;
-    console.log(`    archived ${archivedCount}, history now has ${history.length}`);
-  }
-
-  // 4. Fetch new fixtures
-  console.log('[4] fetch new fixtures');
+  // 2. Fetch new fixtures
+  console.log('[2] fetch new fixtures');
   const footLeagues = await fetchFootMatches(now, windowEnd);
   const nonFoot = await fetchNonFoot(now, windowEnd);
 
@@ -777,28 +667,26 @@ async function main() {
   }
   console.log(`    total pronos: ${allPronos.length}`);
 
-  // 6. Coup-de-cœur selection (before enrichment so we know which to enrich)
-  console.log('[6] coup-de-cœur selection');
+  // 4. Coup-de-cœur selection (before enrichment so we know which to enrich)
+  console.log('[4] coup-de-cœur selection');
   const coupDeCoeurIds = computeCoupDeCoeur(allPronos);
   console.log(`    selected ${coupDeCoeurIds.length}`);
 
-  // 7. Enrich ALL foot matches with recent matches / H2H (Pro plan allows it)
+  // 5. Enrich ALL foot matches with recent matches / H2H (Pro plan allows it)
   if (allPronos.length) {
-    console.log('[7] enrich ALL foot matches with recent matches (up to ' + MAX_FOOT_ENRICHMENTS + ')');
+    console.log('[5] enrich ALL foot matches with recent matches (up to ' + MAX_FOOT_ENRICHMENTS + ')');
     const enriched = await enrichAllFoot(allPronos);
     console.log(`    enriched ${enriched} foot matches`);
   }
 
-  // 8. Write
+  // 6. Write — inherit history[] from the previous file untouched
   const data = {
     meta: {
       generated_at: new Date().toISOString(),
       generator: 'scripts/generate-pronos.js',
-      version: '3.0',
+      version: '4.0',
       window_hours: WINDOW_HOURS,
-      last_results_update: new Date().toISOString(),
-      resolved_last_run: resolvedCount,
-      archived_last_run: archivedCount,
+      last_results_update: existing && existing.meta ? existing.meta.last_results_update : null,
     },
     sports,
     coup_de_coeur: coupDeCoeurIds,
