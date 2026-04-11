@@ -244,7 +244,6 @@ nav{
 .jblock-badge.nba{background:linear-gradient(135deg,var(--red),var(--orange));}
 .jblock-badge.ufc{background:linear-gradient(135deg,var(--red),#dc2626);}
 .jblock-badge.tennis{background:linear-gradient(135deg,var(--green),#059669);}
-.jblock-badge.import{background:linear-gradient(135deg,#6366f1,var(--purple));}
 .pronos-body{display:flex;flex-direction:column;gap:16px;}
 /* ===================== COUP DE COEUR ===================== */
 .cdc-layout{max-width:1000px;margin:0 auto;padding:40px 24px;}
@@ -455,24 +454,6 @@ nav{
 }
 
 /* ===================== IMPORT SECTION ===================== */
-.import-toolbar{
-  display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;
-}
-.imp-btn{
-  display:inline-flex;align-items:center;gap:8px;
-  border:none;border-radius:10px;padding:10px 18px;
-  font-family:'Syne',sans-serif;font-size:12px;font-weight:700;cursor:pointer;
-  transition:all .2s;letter-spacing:.5px;
-}
-.imp-btn svg{width:14px;height:14px;}
-.imp-btn.primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 4px 16px rgba(79,142,247,0.3);}
-.imp-btn.primary:hover{box-shadow:0 8px 24px rgba(79,142,247,0.5);transform:translateY(-1px);}
-.imp-btn.secondary{background:rgba(240,192,64,0.1);color:var(--gold);border:1px solid rgba(240,192,64,0.3);}
-.imp-btn.secondary:hover{background:rgba(240,192,64,0.18);}
-#file-input{display:none;}
-#import-zone{display:none;}
-#import-zone.visible{display:block;}
-
 /* ===================== BANKROLL ===================== */
 .bankroll-layout{max-width:900px;margin:0 auto;padding:32px 24px 80px;}
 .bk-header{margin-bottom:32px;}
@@ -1439,38 +1420,12 @@ nav{
       <div class="sidebar-section" id="sidebar-tennis">
         <div class="sidebar-label">Tennis</div>
       </div>
-      <div class="sidebar-section">
-        <div class="sidebar-label">Import</div>
-        <div class="sidebar-item" id="sb-import" onclick="showSport('import')">
-          <span class="s-icon">📂</span> Import JSON
-        </div>
-      </div>
     </div>
 
     <!-- Content -->
     <div class="sports-content">
 
       <div id="dynamic-panels"></div>
-
-            <!-- ===== IMPORT ===== -->
-      <div class="sport-panel" id="panel-import">
-        <div class="panel-header">
-          <div class="panel-title">📂 Import JSON</div>
-          <div class="panel-meta">Intègre les futurs pronostics générés par le Coach</div>
-        </div>
-        <div class="import-toolbar">
-          <button class="imp-btn secondary" onclick="downloadTemplate()">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-            Télécharger le template JSON
-          </button>
-          <button class="imp-btn primary" onclick="document.getElementById('file-input').click()">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-            Importer un fichier de pronos
-          </button>
-          <input type="file" id="file-input" accept=".json" onchange="importJSON(event)">
-        </div>
-        <div id="import-zone"></div>
-      </div>
 
     </div><!-- /sports-content -->
   </div><!-- /sports-layout -->
@@ -2438,88 +2393,6 @@ function drawChart(init,allBets){
     <circle cx="${toX(0)}" cy="${toY(points[0].v)}" r="4" fill="${color}"/>
     <circle cx="${lastPt.split(',')[0]}" cy="${lastPt.split(',')[1]}" r="5" fill="${color}"/>
   `;
-}
-
-// ===================== IMPORT JSON =====================
-function importJSON(e){
-  const file=e.target.files[0];if(!file)return;
-  const r=new FileReader();
-  r.onload=function(ev){
-    try{
-      const data=JSON.parse(ev.target.result);
-      if(!data.journees||!Array.isArray(data.journees))throw new Error();
-      const zone=document.getElementById('import-zone');
-      zone.innerHTML='';
-      let total=0;
-      data.journees.forEach(j=>{
-        if(!j.matchs?.length)return;
-        zone.innerHTML+=`<div class="journee-block">
-          <div class="jblock-header">
-            <span class="jblock-badge import">${j.numero||'J??'}</span>
-            <span class="jblock-title">${j.label||''}</span>
-            <span class="jblock-date">${j.periode||''}</span>
-          </div>${j.matchs.map(m=>buildCard(m)).join('')}
-        </div>`;
-        total+=j.matchs.length;
-      });
-      document.getElementById('import-zone').classList.add('visible');
-      toast('✅ '+total+' pronos importés !','ok');
-    }catch{toast('❌ Fichier JSON invalide','err');}
-    e.target.value='';
-  };
-  r.readAsText(file);
-}
-
-function buildCard(m){
-  const tagClass=m.prono==='win-home'?'win-home':m.prono==='win-away'?'win-away':'draw';
-  const label=m.prono==='win-home'?'Domicile':m.prono==='win-away'?'Extérieur':'Match Nul';
-  const result=m.prono==='win-home'?`Victoire ${m.domicile}`:m.prono==='win-away'?`Victoire ${m.exterieur}`:'Match Nul';
-  const c=m.cotes||{};
-  const cotesBar=c.domicile?`<div class="cotes-bar" style="--fw-d:${c.domicile};--fw-n:${c.nul};--fw-e:${c.exterieur};">
-    <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">${c.domicile}</span></div>
-    <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">${c.nul}</span></div>
-    <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">${c.exterieur}</span></div>
-  </div>`:'';
-  let dots='';for(let i=1;i<=5;i++)dots+=`<span class="dot${i<=(m.confiance||3)?' on':''}"></span>`;
-  return `<div class="mc${m.featured?' featured':''}">
-    <div class="mc-top">
-      <div class="mc-team home"><div class="mc-name">${m.domicile}</div>${m.rang_domicile?`<div class="mc-sub">${m.rang_domicile}</div>`:''}</div>
-      <div class="mc-center"><div class="mc-time">${m.heure||''}</div><div class="mc-vs">VS</div></div>
-      <div class="mc-team away"><div class="mc-name">${m.exterieur}</div>${m.rang_exterieur?`<div class="mc-sub">${m.rang_exterieur}</div>`:''}</div>
-    </div>
-    ${cotesBar}
-    <div class="prono-row">
-      <span class="ptag ${tagClass}">${label}</span>
-      <div><div class="pc-result">${result}${m.score_prevu?' — '+m.score_prevu:''}</div>${m.analyse?`<div class="pc-reason">${m.analyse}</div>`:''}<div class="dots">${dots}</div></div>
-    </div>
-    <div class="quick-bet-row">
-      <div class="gain-preview">Pour 10 € misés → retour <span>+${(10*(parseFloat(c.domicile||c.exterieur||2)-1)).toFixed(2)} €</span></div>
-      <button class="btn-quick-bet" onclick='openMiseModal(${JSON.stringify(m.domicile+" vs "+m.exterieur)},${JSON.stringify(result)},${m.prono==="win-home"?c.domicile:m.prono==="win-away"?c.exterieur:c.nul||3},"⚽ Foot",${JSON.stringify(tagClass)},${JSON.stringify(label)})'>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        Parier
-      </button>
-    </div>
-  </div>`;
-}
-
-function downloadTemplate(){
-  const tpl={
-    meta:{generated_by:"Le Coach Parie",version:"2.0"},
-    journees:[{
-      numero:"J31",label:"31ème Journée",periode:"25–26 Avril 2026",
-      matchs:[{
-        domicile:"Équipe Dom.",exterieur:"Équipe Ext.",heure:"Sam. 21h05",
-        rang_domicile:"3e · 52 pts",rang_exterieur:"7e · 44 pts",
-        prono:"win-home",score_prevu:"2-1",
-        analyse:"Analyse du match ici.",confiance:4,
-        cotes:{domicile:1.75,nul:3.60,exterieur:4.20},featured:false
-      }]
-    }]
-  };
-  const a=document.createElement('a');
-  a.href=URL.createObjectURL(new Blob([JSON.stringify(tpl,null,2)],{type:'application/json'}));
-  a.download='template_pronos_j31.json';a.click();
-  toast('📥 Template téléchargé !','ok');
 }
 
 // ===================== SYNC BOUTONS PARIER/ANNULER =====================
