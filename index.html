@@ -1,0 +1,3772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Coach Parie — Pronostics & Bankroll</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080a0f;
+  --s1: #0d1018;
+  --s2: #131720;
+  --s3: #1a202c;
+  --border: #1f2738;
+  --border2: #2a3347;
+  --gold: #f0c040;
+  --gold2: #d4a820;
+  --blue: #4f8ef7;
+  --purple: #8b5cf6;
+  --red: #f43f5e;
+  --green: #10b981;
+  --orange: #f97316;
+  --text: #e2e8f0;
+  --muted: #64748b;
+  --subtle: #2d3748;
+  --win: #10b981;
+  --draw: #f59e0b;
+  --loss: #f43f5e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Syne',sans-serif;min-height:100vh;overflow-x:hidden;}
+
+/* ===================== NOISE OVERLAY ===================== */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:0;opacity:.5;
+}
+
+/* ===================== AUTH OVERLAY ===================== */
+.auth-overlay{
+  position:fixed;inset:0;z-index:9999;
+  background:radial-gradient(ellipse at center, var(--s1) 0%, var(--bg) 100%);
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;
+}
+.auth-overlay.hidden{display:none;}
+.auth-modal{
+  background:var(--s2);border:1px solid var(--border2);border-radius:18px;
+  padding:40px 36px;max-width:420px;width:100%;
+  box-shadow:0 30px 90px rgba(0,0,0,0.6), 0 0 60px rgba(240,192,64,0.08);
+  animation:authFadeIn .4s ease;
+}
+@keyframes authFadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.auth-logo{
+  font-family:'Bebas Neue',sans-serif;font-size:36px;
+  color:var(--gold);letter-spacing:3px;text-align:center;
+  margin-bottom:6px;
+  background:linear-gradient(135deg, #fff 40%, var(--gold) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.auth-subtitle{
+  color:var(--muted);font-size:11px;letter-spacing:2px;
+  text-transform:uppercase;text-align:center;margin-bottom:32px;font-weight:700;
+}
+.auth-form{display:flex;flex-direction:column;gap:14px;}
+.auth-field{display:flex;flex-direction:column;gap:6px;}
+.auth-field label{
+  font-size:10px;font-weight:700;color:var(--gold);
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+.auth-form input{
+  background:var(--s1);border:1px solid var(--border);
+  border-radius:10px;padding:13px 16px;
+  color:var(--text);font-family:'Syne',sans-serif;
+  font-size:14px;outline:none;transition:all .2s;
+}
+.auth-form input:focus{border-color:var(--gold);background:var(--s3);}
+.auth-btn{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;border:none;border-radius:10px;
+  padding:14px;font-family:'Syne',sans-serif;font-size:13px;
+  font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+  cursor:pointer;margin-top:10px;transition:all .2s;
+  box-shadow:0 4px 20px rgba(240,192,64,0.2);
+}
+.auth-btn:hover{background:#fff;transform:translateY(-1px);box-shadow:0 6px 25px rgba(240,192,64,0.3);}
+.auth-btn:active{transform:translateY(0);}
+.auth-error{
+  color:var(--red);font-size:12px;text-align:center;
+  min-height:18px;font-weight:700;margin-top:4px;
+}
+.auth-footer{
+  margin-top:24px;padding-top:20px;border-top:1px solid var(--border);
+  font-size:10px;color:var(--muted);text-align:center;letter-spacing:1px;
+}
+.nav-logout{
+  background:transparent;border:1px solid var(--border);border-radius:8px;
+  padding:6px 10px;cursor:pointer;font-size:14px;
+  color:var(--muted);transition:all .15s;margin-left:4px;
+}
+.nav-logout:hover{border-color:var(--red);color:var(--red);background:rgba(244,63,94,0.08);}
+
+/* ===================== NAVBAR ===================== */
+nav{
+  position:fixed;top:0;left:0;right:0;
+  background:rgba(8,10,15,0.92);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  z-index:100;
+  display:flex;align-items:center;
+  padding:0 24px;height:60px;gap:8px;
+}
+.nav-logo{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:22px;letter-spacing:2px;
+  color:var(--gold);margin-right:auto;
+  display:flex;align-items:center;gap:8px;cursor:pointer;
+}
+.nav-logo span{font-size:20px;}
+.nav-tab{
+  font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:8px 16px;border-radius:8px;cursor:pointer;
+  border:1px solid transparent;
+  transition:all .2s;color:var(--muted);
+}
+.nav-tab:hover{color:var(--text);background:var(--s2);}
+.nav-tab.active{color:var(--gold);background:rgba(240,192,64,0.1);border-color:rgba(240,192,64,0.25);}
+.nav-tab .tab-icon{margin-right:6px;}
+
+/* ===================== PAGES ===================== */
+.page{display:none;padding-top:60px;min-height:100vh;position:relative;z-index:1;}
+.page.active{display:block;}
+
+/* ===================== ACCUEIL ===================== */
+.hero{
+  min-height:100vh;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:80px 24px 60px;text-align:center;
+  background:
+    radial-gradient(ellipse 70% 50% at 30% 20%, rgba(79,142,247,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 70% 80%, rgba(240,192,64,0.07) 0%, transparent 60%);
+}
+.hero-eyebrow{
+  font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+  border:1px solid rgba(240,192,64,0.3);
+  padding:6px 16px;border-radius:20px;
+  background:rgba(240,192,64,0.07);
+  display:inline-block;
+}
+.hero-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(56px,10vw,110px);
+  letter-spacing:4px;line-height:.9;
+  background:linear-gradient(135deg, #fff 30%, var(--gold) 100%);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:24px;
+}
+.hero-sub{font-size:16px;color:var(--muted);max-width:460px;line-height:1.6;margin-bottom:48px;}
+.hero-stats{
+  display:flex;gap:40px;margin-bottom:56px;flex-wrap:wrap;justify-content:center;
+}
+.stat-item{text-align:center;}
+.stat-num{
+  font-family:'Bebas Neue',sans-serif;font-size:42px;letter-spacing:2px;
+  background:linear-gradient(135deg,var(--gold),var(--orange));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.stat-label{font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;}
+.cta-btn{
+  font-family:'Syne',sans-serif;font-size:13px;font-weight:700;
+  padding:14px 28px;border-radius:12px;cursor:pointer;
+  letter-spacing:.5px;transition:all .25s;border:none;
+  display:flex;align-items:center;gap:8px;
+}
+.cta-primary{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));color:#000;
+  box-shadow:0 4px 24px rgba(240,192,64,0.3);
+}
+.cta-primary:hover{box-shadow:0 8px 36px rgba(240,192,64,0.5);transform:translateY(-2px);}
+.cta-secondary{background:var(--s2);color:var(--text);border:1px solid var(--border2);}
+.cta-secondary:hover{background:var(--s3);transform:translateY(-2px);}
+
+.hero-sports{
+  display:flex;gap:16px;margin-top:60px;flex-wrap:wrap;justify-content:center;
+}
+.sport-pill{
+  display:flex;align-items:center;gap:10px;
+  background:var(--s2);border:1px solid var(--border);
+  padding:12px 20px;border-radius:12px;cursor:pointer;
+  transition:all .2s;
+}
+.sport-pill:hover{border-color:var(--border2);background:var(--s3);transform:translateY(-2px);}
+.sport-pill .emoji{font-size:20px;}
+.sport-pill .name{font-size:13px;font-weight:700;}
+.sport-pill .count{font-size:11px;color:var(--muted);}
+
+/* ===================== SPORTS PAGE ===================== */
+.sports-layout{display:flex;min-height:calc(100vh - 60px);}
+.sports-sidebar{
+  width:220px;flex-shrink:0;
+  background:var(--s1);
+  border-right:1px solid var(--border);
+  padding:24px 0;
+  position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;
+}
+.sidebar-section{padding:0 16px;margin-bottom:8px;}
+.sidebar-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);padding:0 8px;margin-bottom:8px;}
+.sidebar-item{
+  display:flex;align-items:center;gap:10px;
+  padding:10px 12px;border-radius:10px;cursor:pointer;
+  transition:all .15s;font-size:13px;font-weight:600;color:var(--muted);
+  margin-bottom:2px;
+}
+.sidebar-item:hover{background:var(--s2);color:var(--text);}
+.sidebar-item.active{background:rgba(240,192,64,0.1);color:var(--gold);border:1px solid rgba(240,192,64,0.2);}
+.sidebar-item .s-icon{font-size:16px;width:20px;text-align:center;}
+.sidebar-badge{margin-left:auto;font-size:10px;background:var(--s3);padding:2px 7px;border-radius:10px;color:var(--muted);}
+
+.sports-content{flex:1;padding:32px;max-width:860px;}
+
+/* ===================== SPORT PANELS ===================== */
+.sport-panel{display:none;}
+.sport-panel.active{display:block;}
+
+.panel-header{margin-bottom:28px;}
+.panel-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;display:flex;align-items:center;gap:12px;}
+.panel-meta{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:1px;}
+
+/* ===================== SECTION JOURNÉE ===================== */
+.journee-block{margin-bottom:36px;}
+.jblock-header{
+  display:flex;align-items:center;gap:12px;margin-bottom:14px;
+  padding-bottom:12px;border-bottom:1px solid var(--border);
+}
+.jblock-badge{
+  font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;
+  padding:3px 10px;border-radius:5px;color:#fff;
+}
+.jblock-badge.foot{background:linear-gradient(135deg,var(--blue),#6366f1);}
+.jblock-badge.nba{background:linear-gradient(135deg,var(--red),var(--orange));}
+.jblock-badge.ufc{background:linear-gradient(135deg,var(--red),#dc2626);}
+.jblock-badge.tennis{background:linear-gradient(135deg,var(--green),#059669);}
+.jblock-badge.rugby{background:linear-gradient(135deg,#7c3aed,var(--purple));}
+.jblock-badge.f1{background:linear-gradient(135deg,#dc2626,#991b1b);}
+.jblock-badge.import{background:linear-gradient(135deg,#6366f1,var(--purple));}
+.jblock-title{font-size:16px;font-weight:700;}
+.jblock-date{font-size:11px;color:var(--muted);margin-left:auto;letter-spacing:1px;}
+
+/* ===================== MATCH CARD ===================== */
+.mc{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:14px;padding:18px 20px 14px;
+  margin-bottom:10px;transition:transform .2s,border-color .2s;
+  position:relative;overflow:hidden;
+}
+.mc:hover{transform:translateY(-1px);border-color:var(--border2);}
+.mc.featured{border-color:rgba(240,192,64,0.3);background:linear-gradient(140deg,var(--s2),rgba(240,192,64,0.03));}
+.mc.featured::after{
+  content:'⭐ Coup de cœur';
+  position:absolute;top:10px;right:14px;
+  font-size:10px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;font-weight:700;
+}
+.mc-top{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:12px;}
+.mc-team{display:flex;flex-direction:column;gap:2px;}
+.mc-team.home{text-align:left;}
+.mc-team.away{text-align:right;}
+.mc-name{font-weight:700;font-size:15px;}
+.mc-sub{font-size:11px;color:var(--muted);}
+.mc-center{text-align:center;}
+.mc-time{font-size:11px;color:var(--muted);letter-spacing:1px;margin-bottom:3px;}
+.mc-vs{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--subtle);letter-spacing:2px;}
+
+/* ===================== COTES BAR ===================== */
+.cotes-bar{
+  display:flex;border-radius:8px;overflow:hidden;
+  height:30px;border:1px solid var(--border);margin-bottom:12px;
+}
+.cs{display:flex;align-items:center;justify-content:center;gap:5px;font-size:12px;font-weight:700;cursor:default;transition:filter .2s;}
+.cs:hover{filter:brightness(1.2);}
+.cs.dom{background:rgba(16,185,129,0.15);color:var(--green);flex:var(--fw-d);}
+.cs.nul{background:rgba(245,158,11,0.13);color:var(--draw);flex:var(--fw-n);}
+.cs.ext{background:rgba(79,142,247,0.15);color:var(--blue);flex:var(--fw-e);}
+.cs.fav{background:rgba(16,185,129,0.15);color:var(--green);flex:var(--fw-d);}
+.cs.und{background:rgba(244,63,94,0.13);color:var(--red);flex:var(--fw-e);}
+.cs-lbl{font-size:10px;font-weight:400;opacity:.75;}
+.cs-val{font-size:13px;}
+
+/* ===================== PRONO ROW ===================== */
+.prono-row{
+  border-top:1px solid var(--border);padding-top:12px;
+  display:flex;align-items:flex-start;gap:12px;
+}
+.ptag{
+  font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;
+}
+.ptag.win-home,.ptag.fav{background:rgba(16,185,129,0.15);color:var(--green);border:1px solid rgba(16,185,129,0.3);}
+.ptag.win-away{background:rgba(79,142,247,0.15);color:var(--blue);border:1px solid rgba(79,142,247,0.3);}
+.ptag.draw{background:rgba(245,158,11,0.13);color:var(--draw);border:1px solid rgba(245,158,11,0.3);}
+.ptag.over{background:rgba(240,192,64,0.1);color:var(--gold);border:1px solid rgba(240,192,64,0.3);}
+.pc-result{font-weight:700;font-size:14px;margin-bottom:3px;}
+.pc-reason{font-size:12px;color:var(--muted);line-height:1.55;}
+.dots{display:flex;gap:3px;margin-top:5px;}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--border);}
+.dot.on{background:var(--gold);}
+
+/* ===================== UFC CARD ===================== */
+.ufc-card{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:14px;padding:18px 20px 14px;
+  margin-bottom:10px;transition:transform .2s,border-color .2s;
+  position:relative;
+}
+.ufc-card:hover{transform:translateY(-1px);border-color:var(--border2);}
+.ufc-card.main-event{border-color:rgba(244,63,94,0.4);background:linear-gradient(140deg,var(--s2),rgba(244,63,94,0.04));}
+.ufc-card.main-event::after{
+  content:'🏆 MAIN EVENT';position:absolute;top:10px;right:14px;
+  font-size:10px;color:var(--red);letter-spacing:1.5px;font-weight:700;
+}
+.ufc-top{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;margin-bottom:12px;}
+.ufc-f{display:flex;flex-direction:column;gap:2px;}
+.ufc-f.red{text-align:left;}
+.ufc-f.blue-corner{text-align:right;}
+.ufc-fname{font-weight:700;font-size:15px;}
+.ufc-fsub{font-size:11px;color:var(--muted);}
+.ufc-center{text-align:center;}
+.ufc-cat{font-size:10px;color:var(--muted);letter-spacing:1px;margin-bottom:2px;}
+.ufc-octagon{font-size:24px;}
+.ufc-weight{font-size:11px;color:var(--muted);}
+
+/* ===================== NBA CARD ===================== */
+.nba-disclaimer{
+  background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.25);
+  border-radius:10px;padding:12px 16px;margin-bottom:20px;
+  font-size:12px;color:var(--orange);line-height:1.5;display:flex;gap:10px;align-items:flex-start;
+}
+
+/* ===================== IMPORT SECTION ===================== */
+.import-toolbar{
+  display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;
+}
+.imp-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  border:none;border-radius:10px;padding:10px 18px;
+  font-family:'Syne',sans-serif;font-size:12px;font-weight:700;cursor:pointer;
+  transition:all .2s;letter-spacing:.5px;
+}
+.imp-btn svg{width:14px;height:14px;}
+.imp-btn.primary{background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;box-shadow:0 4px 16px rgba(79,142,247,0.3);}
+.imp-btn.primary:hover{box-shadow:0 8px 24px rgba(79,142,247,0.5);transform:translateY(-1px);}
+.imp-btn.secondary{background:rgba(240,192,64,0.1);color:var(--gold);border:1px solid rgba(240,192,64,0.3);}
+.imp-btn.secondary:hover{background:rgba(240,192,64,0.18);}
+#file-input{display:none;}
+#import-zone{display:none;}
+#import-zone.visible{display:block;}
+
+/* ===================== BANKROLL ===================== */
+.bankroll-layout{max-width:900px;margin:0 auto;padding:32px 24px 80px;}
+.bk-header{margin-bottom:32px;}
+.bk-title{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:2px;display:flex;align-items:center;gap:12px;}
+.bk-sub{font-size:13px;color:var(--muted);margin-top:4px;}
+
+/* KPI Cards */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:32px;}
+.kpi-card{
+  background:var(--s2);border:1px solid var(--border);border-radius:14px;
+  padding:20px 18px;position:relative;overflow:hidden;
+}
+.kpi-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,var(--kpi-color, rgba(240,192,64,0.05)) 0%, transparent 60%);
+}
+.kpi-label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.kpi-val{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;color:var(--kpi-color,var(--gold));}
+.kpi-change{font-size:11px;color:var(--muted);margin-top:4px;}
+.kpi-card.profit{--kpi-color:var(--green);}
+.kpi-card.loss-kpi{--kpi-color:var(--red);}
+.kpi-card.rate{--kpi-color:var(--blue);}
+.kpi-card.pending{--kpi-color:var(--orange);}
+
+/* Add bet form */
+.add-bet-form{
+  background:var(--s2);border:1px solid var(--border);border-radius:16px;
+  padding:24px;margin-bottom:28px;
+}
+.form-title{font-size:14px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:8px;color:var(--gold);}
+.form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:16px;}
+.form-group{display:flex;flex-direction:column;gap:6px;}
+.form-group label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+.form-group input,.form-group select{
+  background:var(--s1);border:1px solid var(--border);border-radius:8px;
+  padding:10px 12px;color:var(--text);
+  font-family:'Syne',sans-serif;font-size:13px;outline:none;
+  transition:border-color .2s;
+}
+.form-group input:focus,.form-group select:focus{border-color:var(--gold);}
+.form-group select option{background:var(--s1);}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;}
+.form-full{grid-column:1/-1;}
+.btn-add-bet{
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;border:none;border-radius:10px;padding:12px 24px;
+  font-family:'Syne',sans-serif;font-size:13px;font-weight:700;cursor:pointer;
+  transition:all .2s;width:100%;
+}
+.btn-add-bet:hover{box-shadow:0 4px 20px rgba(240,192,64,0.4);transform:translateY(-1px);}
+
+/* Bet list */
+.bet-list-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:16px;
+}
+.bet-list-title{font-size:14px;font-weight:700;}
+.bet-filters{display:flex;gap:8px;}
+.filter-btn{
+  font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  padding:5px 12px;border-radius:6px;border:1px solid var(--border);
+  background:transparent;color:var(--muted);cursor:pointer;transition:all .15s;
+}
+.filter-btn.active{background:var(--s2);color:var(--text);border-color:var(--border2);}
+
+.adv-filters{
+  background:var(--s2);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin-bottom:16px;
+}
+.adv-filters-header{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11px;font-weight:700;color:var(--muted);letter-spacing:1.5px;
+  text-transform:uppercase;margin-bottom:12px;
+}
+.adv-reset{
+  background:transparent;border:1px solid var(--border);color:var(--muted);
+  padding:4px 10px;border-radius:6px;cursor:pointer;font-size:10px;
+  font-weight:700;letter-spacing:1px;transition:all .15s;
+}
+.adv-reset:hover{color:var(--red);border-color:rgba(244,63,94,0.4);}
+.adv-filters-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;
+}
+.adv-f{display:flex;flex-direction:column;gap:4px;}
+.adv-f label{font-size:9px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;}
+.adv-f select,.adv-f input{
+  background:var(--s1);border:1px solid var(--border);border-radius:6px;
+  padding:6px 10px;color:var(--text);font-family:'Syne',sans-serif;
+  font-size:12px;outline:none;transition:border-color .2s;
+}
+.adv-f select:focus,.adv-f input:focus{border-color:var(--gold);}
+
+.bet-item{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:12px;padding:14px 16px;margin-bottom:8px;
+  transition:all .2s;
+}
+.bet-item:hover{border-color:var(--border2);}
+.bet-item-top{
+  display:grid;grid-template-columns:auto 1fr auto auto;
+  gap:14px;align-items:center;margin-bottom:10px;
+}
+.bet-status-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.bet-status-dot.pending{background:var(--orange);}
+.bet-status-dot.won{background:var(--green);}
+.bet-status-dot.lost{background:var(--red);}
+.bet-info{}
+.bet-match{font-weight:700;font-size:14px;margin-bottom:2px;}
+.bet-detail{font-size:11px;color:var(--muted);}
+.bet-stake{text-align:right;flex-shrink:0;}
+.bet-mise{font-size:13px;font-weight:700;color:var(--text);}
+.bet-cote{font-size:11px;color:var(--muted);}
+.bet-gain{text-align:right;min-width:80px;flex-shrink:0;}
+.bet-gain-val{font-family:'DM Mono',monospace;font-size:14px;font-weight:600;}
+.bet-gain-val.pos{color:var(--green);}
+.bet-gain-val.neg{color:var(--red);}
+.bet-gain-val.pend{color:var(--orange);}
+.bet-actions{
+  display:flex;gap:8px;padding-top:8px;
+  border-top:1px solid var(--border);
+  justify-content:flex-end;
+}
+.bet-resolve{
+  font-size:12px;font-weight:700;padding:6px 14px;border-radius:8px;
+  border:none;cursor:pointer;transition:all .15s;letter-spacing:.3px;
+}
+.bet-resolve.win{background:rgba(16,185,129,0.15);color:var(--green);border:1px solid rgba(16,185,129,0.25);}
+.bet-resolve.win:hover{background:rgba(16,185,129,0.3);}
+.bet-resolve.lose{background:rgba(244,63,94,0.15);color:var(--red);border:1px solid rgba(244,63,94,0.25);}
+.bet-resolve.lose:hover{background:rgba(244,63,94,0.3);}
+.bet-resolve.del{background:rgba(100,116,139,0.1);color:var(--muted);border:1px solid var(--border);}
+.bet-resolve.del:hover{background:rgba(100,116,139,0.2);color:var(--text);}
+.bet-resolve.edit{background:rgba(240,192,64,0.12);color:var(--gold);border:1px solid rgba(240,192,64,0.25);}
+.bet-resolve.edit:hover{background:rgba(240,192,64,0.22);}
+.bet-item.is-combo{border-color:rgba(139,92,246,0.35);background:linear-gradient(135deg,var(--s2),rgba(139,92,246,0.04));}
+.bet-combo-legs{
+  margin:10px 0 0 22px;padding:8px 12px;
+  background:var(--s1);border-radius:8px;border-left:3px solid var(--purple);
+}
+.bc-leg{display:flex;justify-content:space-between;font-size:11px;padding:3px 0;color:var(--muted);}
+.bc-leg:not(:last-child){border-bottom:1px dashed var(--border);}
+.bc-leg-cote{color:var(--gold);font-family:'DM Mono',monospace;font-weight:700;}
+.bet-resolved-tag{
+  font-size:11px;font-weight:700;padding:4px 12px;border-radius:6px;letter-spacing:.5px;
+}
+.bet-resolved-tag.won{background:rgba(16,185,129,0.12);color:var(--green);border:1px solid rgba(16,185,129,0.2);}
+.bet-resolved-tag.lost{background:rgba(244,63,94,0.1);color:var(--red);border:1px solid rgba(244,63,94,0.2);}
+
+.no-bets{text-align:center;padding:48px;color:var(--muted);font-size:14px;}
+
+/* Chart area */
+.chart-area{
+  background:var(--s2);border:1px solid var(--border);
+  border-radius:16px;padding:24px;margin-bottom:24px;
+}
+.chart-title{font-size:13px;font-weight:700;margin-bottom:20px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+.chart-svg-wrap{width:100%;overflow:hidden;}
+
+/* Mise initiale */
+.bankroll-setup{
+  background:linear-gradient(135deg,rgba(240,192,64,0.08),rgba(79,142,247,0.05));
+  border:1px solid rgba(240,192,64,0.25);border-radius:14px;
+  padding:20px;margin-bottom:24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+}
+.bankroll-setup label{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;white-space:nowrap;}
+.bankroll-input{
+  background:var(--s1);border:1px solid var(--border);border-radius:8px;
+  padding:8px 14px;color:var(--text);font-family:'Syne',sans-serif;
+  font-size:15px;font-weight:700;outline:none;width:140px;
+  transition:border-color .2s;
+}
+.bankroll-input:focus{border-color:var(--gold);}
+.bankroll-setup small{color:var(--muted);font-size:12px;}
+
+/* Paramètres bankroll */
+.bk-settings{
+  background:var(--s2);border:1px solid var(--border);border-radius:14px;
+  padding:20px;margin-bottom:24px;
+}
+.bk-settings-title{font-size:12px;font-weight:700;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;}
+.bk-settings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
+.bks-item{display:flex;flex-direction:column;gap:6px;}
+.bks-item label{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:1px;text-transform:uppercase;}
+.bks-item select,.bks-item input{
+  background:var(--s1);border:1px solid var(--border);border-radius:8px;
+  padding:10px 12px;color:var(--text);font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:600;outline:none;transition:border-color .2s;
+}
+.bks-item select:focus,.bks-item input:focus{border-color:var(--gold);}
+.bks-hint{font-size:10px;color:var(--muted);margin-top:2px;}
+
+/* Objectif bankroll */
+.goal-card{
+  background:linear-gradient(135deg,rgba(16,185,129,0.08),rgba(79,142,247,0.05));
+  border:1px solid rgba(16,185,129,0.25);border-radius:14px;
+  padding:18px 22px;margin-bottom:24px;
+}
+.goal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.goal-title{font-size:13px;font-weight:700;color:var(--green);letter-spacing:1px;text-transform:uppercase;}
+.goal-values{font-family:'DM Mono',monospace;font-size:13px;color:var(--muted);}
+.goal-values .gv-current{color:var(--text);font-weight:700;}
+.goal-values .gv-target{color:var(--green);font-weight:700;}
+.goal-bar-wrap{height:12px;background:var(--s1);border-radius:20px;overflow:hidden;border:1px solid var(--border);}
+.goal-bar-fill{
+  height:100%;background:linear-gradient(90deg,var(--green),var(--blue));
+  border-radius:20px;transition:width .6s ease;
+  box-shadow:0 0 20px rgba(16,185,129,0.4);
+}
+.goal-pct{text-align:center;font-size:12px;color:var(--muted);margin-top:8px;font-weight:600;}
+
+/* Bannières d'alerte */
+.alert-banner{
+  border-radius:12px;padding:14px 18px;margin-bottom:16px;
+  display:flex;align-items:center;gap:12px;
+  font-size:13px;font-weight:600;
+}
+.alert-banner .ab-icon{font-size:22px;flex-shrink:0;}
+.alert-banner .ab-content{flex:1;}
+.alert-banner .ab-title{font-weight:800;margin-bottom:2px;font-size:13px;}
+.alert-banner .ab-msg{font-size:12px;opacity:.9;}
+.alert-banner.stoploss{background:rgba(244,63,94,0.1);border:1px solid rgba(244,63,94,0.4);color:var(--red);}
+.alert-banner.tilt{background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.4);color:var(--orange);}
+.alert-banner.success{background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.4);color:var(--green);}
+.alerts-zone{display:flex;flex-direction:column;gap:10px;}
+
+/* Mini goal sur accueil */
+.home-goal{
+  margin-top:20px;padding:14px 20px;
+  background:rgba(16,185,129,0.05);border:1px solid rgba(16,185,129,0.2);
+  border-radius:10px;max-width:460px;width:100%;
+}
+.home-goal-header{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;font-weight:700;}
+.home-goal-bar{height:8px;background:var(--s1);border-radius:20px;overflow:hidden;}
+.home-goal-fill{height:100%;background:linear-gradient(90deg,var(--green),var(--blue));border-radius:20px;transition:width .6s;}
+
+/* Toast */
+.toast{
+  position:fixed;bottom:24px;left:50%;
+  transform:translateX(-50%) translateY(80px);
+  background:var(--s2);border:1px solid var(--border);
+  color:var(--text);padding:10px 22px;border-radius:50px;
+  font-size:13px;font-weight:600;transition:transform .3s;z-index:999;
+  box-shadow:0 8px 32px rgba(0,0,0,.5);
+}
+.toast.show{transform:translateX(-50%) translateY(0);}
+.toast.ok{border-color:rgba(16,185,129,.4);}
+.toast.err{border-color:rgba(244,63,94,.4);color:var(--red);}
+
+/* ===================== QUICK BET BUTTON ===================== */
+.quick-bet-row{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-top:12px;padding-top:10px;border-top:1px solid var(--border);
+}
+.gain-preview{font-size:11px;color:var(--muted);}
+.gain-preview span{color:var(--green);font-weight:700;font-family:'DM Mono',monospace;}
+.btn-quick-bet{
+  display:inline-flex;align-items:center;gap:6px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;border:none;border-radius:8px;
+  padding:7px 14px;font-family:'Syne',sans-serif;
+  font-size:11px;font-weight:700;cursor:pointer;letter-spacing:.5px;
+  transition:all .2s;white-space:nowrap;
+}
+.btn-quick-bet:hover{box-shadow:0 4px 16px rgba(240,192,64,0.45);transform:translateY(-1px);}
+.btn-quick-bet svg{width:12px;height:12px;}
+.btn-quick-bet.cancel{
+  background:rgba(244,63,94,0.12);
+  color:var(--red);
+  border:1px solid rgba(244,63,94,0.3);
+}
+.btn-quick-bet.cancel:hover{
+  background:rgba(244,63,94,0.25);
+  box-shadow:0 4px 16px rgba(244,63,94,0.25);
+  transform:translateY(-1px);
+}
+
+/* ===================== MISE MODAL ===================== */
+.mise-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);
+  z-index:200;align-items:center;justify-content:center;padding:20px;
+}
+.mise-overlay.open{display:flex;animation:fadeUp .2s ease;}
+.mise-modal{
+  background:var(--s2);border:1px solid var(--border2);
+  border-radius:20px;padding:28px;width:100%;max-width:400px;
+  position:relative;
+  box-shadow:0 24px 80px rgba(0,0,0,.8);
+}
+.mise-modal-header{margin-bottom:20px;}
+.mise-modal-title{
+  font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;
+  color:var(--gold);margin-bottom:4px;
+}
+.mise-modal-sub{font-size:12px;color:var(--muted);line-height:1.5;}
+.mise-match-recap{
+  background:var(--s1);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin-bottom:20px;
+}
+.mise-match-name{font-weight:700;font-size:14px;margin-bottom:4px;}
+.mise-prono-row{display:flex;align-items:center;gap:8px;margin-bottom:4px;}
+.mise-cote-badge{
+  font-family:'DM Mono',monospace;font-size:12px;font-weight:600;
+  background:rgba(240,192,64,0.12);color:var(--gold);
+  padding:3px 8px;border-radius:6px;border:1px solid rgba(240,192,64,0.3);
+}
+.mise-sport-badge{font-size:11px;color:var(--muted);}
+
+.mise-control{margin-bottom:20px;}
+.mise-control label{
+  display:block;font-size:10px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--muted);margin-bottom:10px;
+}
+.mise-amount-row{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.mise-input{
+  flex:1;background:var(--s1);border:1px solid var(--border2);border-radius:10px;
+  padding:12px 16px;color:var(--text);font-family:'DM Mono',monospace;
+  font-size:22px;font-weight:600;outline:none;text-align:center;
+  transition:border-color .2s;
+}
+.mise-input:focus{border-color:var(--gold);}
+.mise-unit{font-size:16px;color:var(--muted);font-weight:700;}
+.mise-presets{display:flex;gap:8px;flex-wrap:wrap;}
+.preset-btn{
+  flex:1;min-width:52px;
+  background:var(--s1);border:1px solid var(--border);border-radius:8px;
+  padding:8px 4px;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;
+  color:var(--muted);cursor:pointer;text-align:center;transition:all .15s;
+}
+.preset-btn:hover{border-color:var(--gold);color:var(--gold);background:rgba(240,192,64,0.08);}
+.preset-btn.active{border-color:var(--gold);color:var(--gold);background:rgba(240,192,64,0.12);}
+.preset-btn.reco{
+  border-color:rgba(16,185,129,0.4);color:var(--green);
+  background:rgba(16,185,129,0.08);position:relative;
+}
+.preset-btn.reco::before{
+  content:'★';position:absolute;top:-6px;right:-4px;
+  font-size:11px;color:var(--gold);
+}
+.preset-btn.reco:hover{border-color:var(--green);background:rgba(16,185,129,0.15);}
+.preset-btn.reco.active{border-color:var(--green);background:rgba(16,185,129,0.18);}
+.reco-hint{
+  font-size:10px;color:var(--green);font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;margin-top:6px;text-align:center;
+  opacity:.85;
+}
+
+.mise-calc{
+  background:var(--s1);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin-bottom:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;
+}
+.calc-item{text-align:center;}
+.calc-label{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.calc-val{font-family:'DM Mono',monospace;font-size:15px;font-weight:700;}
+.calc-val.retour{color:var(--green);}
+.calc-val.profit{color:var(--gold);}
+.calc-val.risk{color:var(--red);}
+
+.mise-actions{display:flex;gap:10px;}
+.btn-mise-cancel{
+  flex:1;padding:13px;border-radius:10px;border:1px solid var(--border);
+  background:transparent;color:var(--muted);font-family:'Syne',sans-serif;
+  font-size:13px;font-weight:700;cursor:pointer;transition:all .2s;
+}
+.btn-mise-cancel:hover{background:var(--s3);color:var(--text);}
+.btn-mise-confirm{
+  flex:2;padding:13px;border-radius:10px;border:none;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer;
+  transition:all .2s;
+}
+.btn-mise-confirm:hover{box-shadow:0 6px 24px rgba(240,192,64,0.4);transform:translateY(-1px);}
+.btn-mise-confirm:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none;}
+.mise-close{
+  position:absolute;top:16px;right:16px;
+  background:none;border:none;color:var(--muted);font-size:20px;cursor:pointer;
+  width:32px;height:32px;border-radius:8px;transition:all .15s;
+  display:flex;align-items:center;justify-content:center;
+}
+.mise-close:hover{background:var(--s3);color:var(--text);}
+
+
+/* ===================== PERFORMANCE PAGE ===================== */
+.perf-layout{max-width:960px;margin:0 auto;padding:32px 24px 80px;}
+.perf-header{margin-bottom:28px;}
+.perf-title{font-family:'Bebas Neue',sans-serif;font-size:40px;letter-spacing:2px;display:flex;align-items:center;gap:12px;}
+.perf-sub{font-size:13px;color:var(--muted);margin-top:4px;}
+
+/* Stats par sport */
+.sport-stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:32px;}
+.sport-stat-card{
+  background:var(--s2);border:1px solid var(--border);border-radius:14px;
+  padding:18px 20px;position:relative;overflow:hidden;
+}
+.sport-stat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--sc,rgba(79,142,247,0.05)) 0%,transparent 60%);}
+.ssc-sport{font-size:20px;margin-bottom:8px;}
+.ssc-name{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:12px;}
+.ssc-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.ssc-stat{text-align:center;}
+.ssc-val{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:1px;color:var(--sc,var(--blue));}
+.ssc-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+.ssc-taux-bar{height:4px;background:var(--border);border-radius:2px;margin-top:12px;overflow:hidden;}
+.ssc-taux-fill{height:100%;border-radius:2px;background:var(--sc,var(--blue));transition:width .6s ease;}
+
+/* Graphiques performance */
+.perf-charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;}
+.perf-chart-card{background:var(--s2);border:1px solid var(--border);border-radius:14px;padding:20px;}
+.perf-chart-card.full{grid-column:1/-1;}
+.pcc-title{font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+.perf-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.pbr-label{font-size:12px;font-weight:600;min-width:80px;color:var(--text);}
+.pbr-bar{flex:1;height:20px;background:var(--s1);border-radius:6px;overflow:hidden;position:relative;}
+.pbr-fill{height:100%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:10px;font-weight:700;transition:width .6s ease;}
+.pbr-fill.won{background:linear-gradient(90deg,rgba(16,185,129,.3),rgba(16,185,129,.6));color:var(--green);}
+.pbr-fill.lost{background:linear-gradient(90deg,rgba(244,63,94,.3),rgba(244,63,94,.5));color:var(--red);}
+.pbr-val{font-family:'DM Mono',monospace;font-size:12px;font-weight:600;min-width:60px;text-align:right;}
+
+/* Tags */
+.tag-chip{
+  display:inline-flex;align-items:center;gap:4px;
+  font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+  padding:3px 8px;border-radius:20px;cursor:pointer;transition:all .15s;
+  border:1px solid transparent;
+}
+.tag-chip:hover{filter:brightness(1.2);}
+.tag-chip.sure{background:rgba(16,185,129,.15);color:var(--green);border-color:rgba(16,185,129,.3);}
+.tag-chip.value{background:rgba(240,192,64,.12);color:var(--gold);border-color:rgba(240,192,64,.3);}
+.tag-chip.risky{background:rgba(244,63,94,.12);color:var(--red);border-color:rgba(244,63,94,.3);}
+.tag-chip.combo{background:rgba(139,92,246,.15);color:var(--purple);border-color:rgba(139,92,246,.3);}
+.tag-chip.coeur{background:rgba(249,115,22,.12);color:var(--orange);border-color:rgba(249,115,22,.3);}
+.tag-chips-row{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;}
+
+.auto-tag-display{
+  background:var(--s1);border:1px solid var(--border);border-radius:10px;
+  padding:10px 14px;display:flex;align-items:center;gap:12px;
+}
+.auto-tag-display .tag-chip{font-size:11px;padding:5px 12px;margin:0;}
+.auto-tag-reason{font-size:10px;color:var(--muted);flex:1;line-height:1.4;}
+
+/* Streak */
+.streak-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.streak-dot{width:18px;height:18px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;}
+.streak-dot.w{background:rgba(16,185,129,.25);color:var(--green);}
+.streak-dot.l{background:rgba(244,63,94,.2);color:var(--red);}
+.streak-dot.p{background:rgba(245,158,11,.15);color:var(--draw);}
+
+/* Serie actuelle */
+.serie-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;
+}
+.serie-badge.hot{background:rgba(16,185,129,.15);color:var(--green);border:1px solid rgba(16,185,129,.3);}
+.serie-badge.cold{background:rgba(244,63,94,.12);color:var(--red);border:1px solid rgba(244,63,94,.2);}
+.serie-badge.neutral{background:var(--s3);color:var(--muted);border:1px solid var(--border);}
+
+/* Stats summary row */
+.stats-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:24px;}
+.ss-item{background:var(--s2);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center;}
+.ss-val{font-family:'DM Mono',monospace;font-size:18px;font-weight:700;margin-bottom:2px;}
+.ss-lbl{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
+
+/* Export */
+.export-bar{display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap;}
+.export-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--s2);border:1px solid var(--border);color:var(--muted);
+  border-radius:10px;padding:10px 18px;font-family:'Syne',sans-serif;
+  font-size:12px;font-weight:700;cursor:pointer;transition:all .2s;
+}
+.export-btn:hover{border-color:var(--border2);color:var(--text);background:var(--s3);}
+
+/* Kelly dans modal */
+.kelly-section{
+  background:linear-gradient(135deg,rgba(240,192,64,.07),rgba(79,142,247,.05));
+  border:1px solid rgba(240,192,64,.2);border-radius:12px;
+  padding:14px 16px;margin-bottom:16px;
+}
+.kelly-title{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.kelly-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.kelly-row label{font-size:11px;color:var(--muted);white-space:nowrap;min-width:120px;}
+.kelly-input{
+  flex:1;background:var(--s1);border:1px solid var(--border);border-radius:8px;
+  padding:8px 12px;color:var(--text);font-family:'DM Mono',monospace;
+  font-size:13px;outline:none;transition:border-color .2s;
+}
+.kelly-input:focus{border-color:var(--gold);}
+.kelly-result{
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--s1);border-radius:8px;padding:8px 12px;margin-top:4px;
+}
+.kelly-mise-label{font-size:11px;color:var(--muted);}
+.kelly-mise-val{font-family:'DM Mono',monospace;font-size:16px;font-weight:700;color:var(--gold);}
+.kelly-apply-btn{
+  font-size:11px;font-weight:700;padding:5px 12px;border-radius:6px;border:none;
+  background:rgba(240,192,64,.15);color:var(--gold);cursor:pointer;transition:all .15s;
+  border:1px solid rgba(240,192,64,.3);
+}
+.kelly-apply-btn:hover{background:rgba(240,192,64,.3);}
+
+/* Alert de risque */
+.risk-alert{
+  display:none;background:rgba(244,63,94,.1);border:1px solid rgba(244,63,94,.3);
+  border-radius:8px;padding:8px 12px;margin-bottom:12px;
+  font-size:12px;color:var(--red);
+}
+.risk-alert.show{display:flex;gap:8px;align-items:flex-start;}
+
+/* Tags dans la modale de mise */
+.tag-select-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+.tag-select-row .tag-chip{opacity:.5;}
+.tag-select-row .tag-chip.selected{opacity:1;}
+
+/* Page Aujourd'hui */
+.today-layout{max-width:1200px;margin:0 auto;padding:40px 24px;}
+.today-header{margin-bottom:24px;}
+.today-title{font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:2px;color:var(--gold);margin-bottom:6px;}
+.today-sub{color:var(--muted);font-size:13px;}
+.today-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+.today-filter{
+  padding:8px 16px;border-radius:8px;border:1px solid var(--border);
+  background:var(--s2);color:var(--muted);cursor:pointer;transition:all .15s;
+  font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;
+}
+.today-filter:hover{border-color:var(--gold);color:var(--gold);}
+.today-filter.active{background:rgba(240,192,64,0.12);border-color:var(--gold);color:var(--gold);}
+.today-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;}
+.today-grid-title{
+  font-size:12px;font-weight:700;color:var(--muted);letter-spacing:2px;
+  text-transform:uppercase;margin:30px 0 14px;
+}
+
+/* Section combinés auto */
+.auto-combos-section{margin-bottom:10px;}
+.auto-combos-header{margin-bottom:16px;}
+.auto-combos-title{
+  font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;
+  color:var(--purple);margin-bottom:4px;
+}
+.auto-combos-sub{font-size:11px;color:var(--muted);}
+.auto-combos-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px;
+}
+.auto-combo-card{
+  background:linear-gradient(135deg,var(--s2),rgba(139,92,246,0.08));
+  border:1px solid rgba(139,92,246,0.35);border-radius:14px;padding:18px;
+  transition:all .2s;display:flex;flex-direction:column;
+}
+.auto-combo-card:hover{
+  border-color:var(--purple);transform:translateY(-2px);
+  box-shadow:0 8px 30px rgba(139,92,246,0.15);
+}
+.acc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.acc-name{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;color:var(--purple);}
+.acc-cote{
+  font-family:'DM Mono',monospace;font-size:20px;color:var(--gold);font-weight:700;
+  background:rgba(240,192,64,0.08);padding:4px 12px;border-radius:8px;
+  border:1px solid rgba(240,192,64,0.25);
+}
+.acc-desc{font-size:11px;color:var(--muted);margin-bottom:12px;font-style:italic;}
+.acc-legs{
+  background:var(--s1);border-radius:8px;padding:10px 12px;
+  margin-bottom:12px;flex:1;
+}
+.acc-leg{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11px;padding:5px 0;border-bottom:1px dashed var(--border);
+  gap:8px;
+}
+.acc-leg:last-child{border-bottom:none;}
+.acc-leg-info{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.acc-leg-pari{color:var(--muted);font-size:10px;margin-top:2px;}
+.acc-leg-cote{
+  color:var(--gold);font-family:'DM Mono',monospace;font-weight:700;
+  flex-shrink:0;
+}
+.acc-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.acc-gain{font-size:11px;color:var(--muted);}
+.acc-gain span{color:var(--green);font-weight:800;font-family:'DM Mono',monospace;font-size:13px;}
+.acc-play{
+  background:var(--purple);color:#fff;border:none;border-radius:8px;
+  padding:10px 18px;font-family:'Syne',sans-serif;font-size:11px;font-weight:800;
+  cursor:pointer;letter-spacing:1px;text-transform:uppercase;transition:all .2s;
+}
+.acc-play:hover{background:#7c3aed;transform:translateY(-1px);}
+.today-card{
+  background:var(--s2);border:1px solid var(--border);border-radius:14px;
+  padding:16px;transition:all .2s;
+}
+.today-card:hover{border-color:var(--border2);transform:translateY(-2px);}
+.tc-top{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.tc-sport{font-size:18px;}
+.tc-sport-name{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-weight:700;}
+.tc-conf{margin-left:auto;color:var(--gold);font-size:11px;letter-spacing:1px;}
+.tc-match{font-size:14px;font-weight:700;margin-bottom:8px;}
+.tc-pari{font-size:12px;color:var(--muted);margin-bottom:12px;}
+.tc-bottom{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.tc-cote{
+  font-family:'DM Mono',monospace;font-size:18px;font-weight:700;color:var(--gold);
+  background:rgba(240,192,64,0.08);border:1px solid rgba(240,192,64,0.25);
+  padding:6px 14px;border-radius:8px;
+}
+.tc-btn{
+  flex:1;padding:10px 14px;border-radius:8px;border:none;
+  background:var(--gold);color:#000;font-family:'Syne',sans-serif;
+  font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;
+  cursor:pointer;transition:all .2s;
+}
+.tc-btn:hover{background:#fff;transform:translateY(-1px);}
+.tc-btn.cancel{background:var(--red);color:#fff;}
+.tc-btn.cancel:hover{background:#fff;color:var(--red);}
+
+/* Mode combiné */
+.today-filter.combo-toggle{margin-left:auto;border-color:rgba(139,92,246,0.4);color:var(--purple);}
+.today-filter.combo-toggle.active{background:rgba(139,92,246,0.15);border-color:var(--purple);color:var(--purple);}
+.today-card.combo-mode{cursor:pointer;}
+.today-card.combo-mode:hover{border-color:var(--purple);transform:translateY(-2px);}
+.today-card.combo-selected{border-color:var(--purple);background:rgba(139,92,246,0.06);}
+.today-card.combo-selected::before{
+  content:'✓';position:absolute;top:10px;right:12px;
+  width:26px;height:26px;background:var(--purple);color:#fff;
+  border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;
+}
+.today-card{position:relative;}
+
+.combo-bar{
+  position:fixed;bottom:-400px;left:50%;transform:translateX(-50%);
+  width:calc(100% - 48px);max-width:720px;
+  background:var(--s2);border:1px solid var(--purple);border-radius:16px;
+  box-shadow:0 20px 60px rgba(139,92,246,0.3);
+  padding:18px 22px;z-index:200;
+  transition:bottom .3s ease;
+}
+.combo-bar.show{bottom:24px;}
+.combo-bar-inner{display:flex;flex-direction:column;gap:12px;}
+.cb-header{display:flex;justify-content:space-between;align-items:center;}
+.cb-title{font-size:13px;font-weight:800;color:var(--purple);letter-spacing:1px;text-transform:uppercase;}
+.cb-count{font-size:11px;color:var(--muted);}
+.cb-legs{
+  display:flex;flex-direction:column;gap:6px;
+  max-height:140px;overflow-y:auto;
+  background:var(--s1);border-radius:8px;padding:8px 10px;
+}
+.cb-leg{
+  display:flex;justify-content:space-between;align-items:center;
+  font-size:11px;padding:4px 0;border-bottom:1px solid var(--border);
+}
+.cb-leg:last-child{border-bottom:none;}
+.cb-leg-info{flex:1;}
+.cb-leg-match{font-weight:700;color:var(--text);}
+.cb-leg-pari{color:var(--muted);font-size:10px;}
+.cb-leg-cote{font-family:'DM Mono',monospace;color:var(--gold);font-weight:700;margin-right:8px;}
+.cb-leg-remove{
+  background:transparent;border:none;color:var(--red);cursor:pointer;
+  font-size:14px;padding:0 4px;
+}
+.cb-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+.cb-stat{text-align:center;background:var(--s1);border-radius:8px;padding:8px;}
+.cb-stat-label{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;}
+.cb-stat-val{font-family:'DM Mono',monospace;font-size:16px;font-weight:700;}
+.cb-cote{color:var(--purple);}
+.cb-gain{color:var(--green);}
+.cb-mise-input{
+  width:100%;background:transparent;border:1px solid var(--border);
+  border-radius:6px;padding:6px;color:var(--text);
+  font-family:'DM Mono',monospace;font-size:14px;font-weight:700;
+  text-align:center;outline:none;
+}
+.cb-mise-input:focus{border-color:var(--gold);}
+.cb-actions{display:flex;gap:8px;}
+.cb-cancel,.cb-confirm{
+  flex:1;padding:10px;border-radius:8px;border:none;
+  font-family:'Syne',sans-serif;font-size:12px;font-weight:800;
+  letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all .2s;
+}
+.cb-cancel{background:transparent;border:1px solid var(--border);color:var(--muted);}
+.cb-cancel:hover{color:var(--text);border-color:var(--border2);}
+.cb-confirm{background:var(--purple);color:#fff;}
+.cb-confirm:hover:not(:disabled){background:#7c3aed;}
+.cb-confirm:disabled{opacity:.4;cursor:not-allowed;}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.animate{animation:fadeUp .4s ease both;}
+
+@media(max-width:700px){
+  .sports-sidebar{display:none;}
+  .sports-content{padding:20px 16px;}
+  nav{padding:0 12px;}
+  .nav-tab{padding:6px 10px;font-size:11px;}
+  .mc-top{gap:4px;}
+  .mc-name{font-size:13px;}
+  .bet-item{grid-template-columns:auto 1fr;gap:10px;}
+  .bet-stake,.bet-gain{display:none;}
+  .kpi-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media print {
+  nav, .toolbar, .mise-overlay, .export-bar { display: none !important; }
+  .page { display: block !important; }
+  #page-home, #page-sports, #page-bankroll { display: none !important; }
+  #page-perf { display: block !important; padding-top: 0; }
+  body { background: white; color: black; }
+  .perf-chart-card, .sport-stat-card, .ss-item { background: #f5f5f5; border-color: #ddd; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== AUTH OVERLAY ===================== -->
+<div class="auth-overlay" id="auth-overlay">
+  <div class="auth-modal">
+    <div class="auth-logo">🏆 LE COACH PARIE</div>
+    <div class="auth-subtitle">Connexion requise</div>
+    <form class="auth-form" onsubmit="handleLogin(event)">
+      <div class="auth-field">
+        <label>Identifiant</label>
+        <input type="text" id="auth-user" autocomplete="username" required autofocus>
+      </div>
+      <div class="auth-field">
+        <label>Mot de passe</label>
+        <input type="password" id="auth-pass" autocomplete="current-password" required>
+      </div>
+      <button type="submit" class="auth-btn">Se connecter</button>
+      <div class="auth-error" id="auth-error"></div>
+    </form>
+    <div class="auth-footer">🔒 Accès protégé · Session locale au navigateur</div>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')"><span>🏆</span> LE COACH PARIE</div>
+  <div class="nav-tab active" id="tab-home" onclick="showPage('home')"><span class="tab-icon">🏠</span>Accueil</div>
+  <div class="nav-tab" id="tab-today" onclick="showPage('today')"><span class="tab-icon">📅</span>Aujourd'hui</div>
+  <div class="nav-tab" id="tab-sports" onclick="showPage('sports')"><span class="tab-icon">🎯</span>Sports</div>
+  <div class="nav-tab" id="tab-bankroll" onclick="showPage('bankroll')"><span class="tab-icon">💰</span>Bankroll</div>
+  <div class="nav-tab" id="tab-perf" onclick="showPage('perf')"><span class="tab-icon">📊</span>Perfs</div>
+  <button class="nav-logout" onclick="logout()" title="Déconnexion">🚪</button>
+</nav>
+
+<!-- ===================== PAGE : ACCUEIL ===================== -->
+<div class="page active" id="page-home">
+  <div class="hero animate">
+    <div class="hero-eyebrow">⚡ Saison 2025/26 — Mis à jour le 11 Avril</div>
+    <h1 class="hero-title">LE COACH<br>PARIE</h1>
+    <p class="hero-sub">Pronostics football, NBA & UFC analysés en détail. Gérez votre bankroll et suivez vos performances en temps réel.</p>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num" id="hs-total">—</div><div class="stat-label">Paris joués</div></div>
+      <div class="stat-item"><div class="stat-num" id="hs-taux">—</div><div class="stat-label">Taux de réussite</div></div>
+      <div class="stat-item"><div class="stat-num" id="hs-roi">—</div><div class="stat-label">ROI</div></div>
+    </div>
+    <div class="home-goal" id="home-goal" style="display:none;">
+      <div class="home-goal-header">
+        <span>🎯 Objectif</span>
+        <span id="home-goal-val">— / — €</span>
+      </div>
+      <div class="home-goal-bar"><div class="home-goal-fill" id="home-goal-fill" style="width:0%"></div></div>
+    </div>
+    <div class="alerts-zone" id="home-alerts" style="max-width:460px;width:100%;margin-top:16px;"></div>
+    <div class="hero-ctas">
+      <button class="cta-btn cta-primary" onclick="showPage('sports')">🎯 Voir les pronos</button>
+      <button class="cta-btn cta-secondary" onclick="showPage('bankroll')">💰 Ma Bankroll</button>
+    </div>
+    <div class="hero-sports">
+      <div class="sport-pill" onclick="showPage('perf')">
+        <span class="emoji">📊</span>
+        <div><div class="name">Performances</div><div class="count">Stats & analyses</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE : AUJOURD'HUI ===================== -->
+<div class="page" id="page-today">
+  <div class="today-layout">
+    <div class="today-header">
+      <div class="today-title">📅 Tous les pronos du moment</div>
+      <div class="today-sub">Vue cross-sport unifiée — tous les matchs de la semaine, triés par cote.</div>
+    </div>
+    <div class="today-filters">
+      <button class="today-filter active" data-sport="all" onclick="filterToday('all',this)">Tous</button>
+      <button class="today-filter" data-sport="⚽ Foot" onclick="filterToday('⚽ Foot',this)">⚽ Foot</button>
+      <button class="today-filter" data-sport="🏀 NBA" onclick="filterToday('🏀 NBA',this)">🏀 NBA</button>
+      <button class="today-filter" data-sport="🥊 UFC" onclick="filterToday('🥊 UFC',this)">🥊 UFC</button>
+      <button class="today-filter" data-sport="🎾 Tennis" onclick="filterToday('🎾 Tennis',this)">🎾 Tennis</button>
+      <button class="today-filter" data-sport="🏉 Rugby" onclick="filterToday('🏉 Rugby',this)">🏉 Rugby</button>
+      <button class="today-filter" data-sport="🏎️ F1" onclick="filterToday('🏎️ F1',this)">🏎️ F1</button>
+      <button class="today-filter combo-toggle" id="combo-toggle" onclick="toggleComboMode()">🔗 Mode Combiné</button>
+    </div>
+    <!-- Combinés suggérés automatiquement -->
+    <div class="auto-combos-section" id="auto-combos-section">
+      <div class="auto-combos-header">
+        <div class="auto-combos-title">🤖 Combinés suggérés automatiquement</div>
+        <div class="auto-combos-sub">Sélection basée sur la cote, l'edge Kelly et la diversification</div>
+      </div>
+      <div class="auto-combos-grid" id="auto-combos"></div>
+    </div>
+
+    <div class="today-grid-title">📋 Tous les pronos individuels</div>
+    <div class="today-grid" id="today-grid"></div>
+  </div>
+</div>
+
+<!-- Barre flottante combiné -->
+<div class="combo-bar" id="combo-bar">
+  <div class="combo-bar-inner">
+    <div class="cb-header">
+      <span class="cb-title">🔗 Combiné en cours</span>
+      <span class="cb-count" id="cb-count">0 pari(s)</span>
+    </div>
+    <div class="cb-legs" id="cb-legs"></div>
+    <div class="cb-stats">
+      <div class="cb-stat">
+        <div class="cb-stat-label">Cote combinée</div>
+        <div class="cb-stat-val cb-cote" id="cb-cote">—</div>
+      </div>
+      <div class="cb-stat">
+        <div class="cb-stat-label">Mise</div>
+        <input type="number" class="cb-mise-input" id="cb-mise" value="5" min="1" step="1" oninput="updateComboStats()">
+      </div>
+      <div class="cb-stat">
+        <div class="cb-stat-label">Gain potentiel</div>
+        <div class="cb-stat-val cb-gain" id="cb-gain">—</div>
+      </div>
+    </div>
+    <div class="cb-actions">
+      <button class="cb-cancel" onclick="clearCombo()">Vider</button>
+      <button class="cb-confirm" id="cb-confirm" onclick="confirmCombo()" disabled>✓ Créer le combiné</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE : SPORTS ===================== -->
+<div class="page" id="page-sports">
+  <div class="sports-layout">
+    <!-- Sidebar -->
+    <div class="sports-sidebar">
+      <div class="sidebar-section">
+        <div class="sidebar-label">Football</div>
+        <div class="sidebar-item active" id="sb-foot" onclick="showSport('foot')">
+          <span class="s-icon">⚽</span> Ligue 1
+          <span class="sidebar-badge">10</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Basketball</div>
+        <div class="sidebar-item" id="sb-nba" onclick="showSport('nba')">
+          <span class="s-icon">🏀</span> NBA
+          <span class="sidebar-badge">5</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">MMA</div>
+        <div class="sidebar-item" id="sb-ufc" onclick="showSport('ufc')">
+          <span class="s-icon">🥊</span> UFC 327
+          <span class="sidebar-badge">4</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Tennis</div>
+        <div class="sidebar-item" id="sb-tennis" onclick="showSport('tennis')">
+          <span class="s-icon">🎾</span> ATP Monte-Carlo
+          <span class="sidebar-badge">5</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Rugby</div>
+        <div class="sidebar-item" id="sb-rugby" onclick="showSport('rugby')">
+          <span class="s-icon">🏉</span> Top 14
+          <span class="sidebar-badge">4</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Formule 1</div>
+        <div class="sidebar-item" id="sb-f1" onclick="showSport('f1')">
+          <span class="s-icon">🏎️</span> GP du Bahreïn
+          <span class="sidebar-badge">3</span>
+        </div>
+      </div>
+      <div class="sidebar-section">
+        <div class="sidebar-label">Import</div>
+        <div class="sidebar-item" id="sb-import" onclick="showSport('import')">
+          <span class="s-icon">📂</span> Import JSON
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="sports-content">
+
+      <!-- ===== FOOTBALL ===== -->
+      <div class="sport-panel active" id="panel-foot">
+        <div class="panel-header">
+          <div class="panel-title">⚽ Ligue 1</div>
+          <div class="panel-meta">Journées 29 & 30 · Avril 2026 · Source cotes : Sportytrader</div>
+        </div>
+
+        <!-- J29 -->
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge foot">J29</span>
+            <span class="jblock-title">29ème Journée</span>
+            <span class="jblock-date">11–12 Avril 2026</span>
+          </div>
+
+          <!-- Auxerre vs Nantes -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">AJ Auxerre</div><div class="mc-sub">16e · 23 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 19h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">FC Nantes</div><div class="mc-sub">17e · 18 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:2.02;--fw-n:3.30;--fw-e:3.85;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">2.02</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.30</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.85</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Auxerre</span>
+              <div><div class="pc-result">Victoire Auxerre — 2-1</div><div class="pc-reason">Duel de relégables décisif. Auxerre avec l'avantage du terrain et un point d'avance crucial. Nantes en déplacement est fébrile.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Rennes vs Angers -->
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Stade Rennais</div><div class="mc-sub">7e · 47 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Angers SCO</div><div class="mc-sub">13e · 33 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.36;--fw-n:5.10;--fw-e:7.50;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.36</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">5.10</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">7.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Rennes</span>
+              <div><div class="pc-result">Victoire Rennes — 3-0</div><div class="pc-reason">Rennes en grande forme (4-0 vs Nice). Angers irrégulier en déplacement. Domination totale attendue — cote 1.36 très révélatrice.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Nice vs Le Havre -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">OGC Nice</div><div class="mc-sub">15e · 27 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 17h15</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Le Havre AC</div><div class="mc-sub">14e · 28 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.92;--fw-n:3.40;--fw-e:4.30;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.92</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.40</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.30</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Le Havre</span>
+              <div><div class="pc-result">Victoire Le Havre — 0-1</div><div class="pc-reason">Nice est en plein effondrement psychologique (0-4 vs Rennes, 0-4 vs PSG, zéro créativité offensive). Le Havre, 14e avec 28 pts, est défensivement costaud et a les ressources pour tenir un 1-0 à l'extérieur. Je vois un Nice incapable de marquer contre un bloc bas. Upset crédible malgré la cote.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Toulouse vs Lille -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Toulouse FC</div><div class="mc-sub">10e · 37 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 17h15</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Lille OSC</div><div class="mc-sub">4e · 50 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:3.10;--fw-n:3.25;--fw-e:2.30;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">3.10</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.25</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">2.30</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Lille</span>
+              <div><div class="pc-result">Victoire Lille — 1-2</div><div class="pc-reason">Lille sur une lancée impressionnante (3-0 vs Lens). Toulouse sans réel enjeu. Le LOSC impose sa qualité sur la durée.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Lyon vs Lorient -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Olympique Lyon</div><div class="mc-sub">6e · 48 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 20h45</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">FC Lorient</div><div class="mc-sub">9e · 38 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.68;--fw-n:3.85;--fw-e:5.30;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.68</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.85</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.30</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Lyon</span>
+              <div><div class="pc-result">Victoire Lyon — 2-0</div><div class="pc-reason">OL régulier à domicile. Lorient en dents de scie. Cote 1.68 qui confirme la prédominance de l'OL.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- J30 -->
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge foot">J30</span>
+            <span class="jblock-title">30ème Journée</span>
+            <span class="jblock-date">17–19 Avril 2026</span>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">RC Lens</div><div class="mc-sub">2e · 59 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Ven. 20h45</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Toulouse FC</div><div class="mc-sub">10e · 37 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.00;--fw-e:4.95;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.00</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.95</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Lens</span>
+              <div><div class="pc-result">Victoire Lens — 2-0</div><div class="pc-reason">À Bollaert face à un Toulouse sans enjeu, Lens se ressaisira après la défaite face à Lille. Cote 1.56 très claire.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">FC Lorient</div><div class="mc-sub">9e · 38 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 17h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Olympique Marseille</div><div class="mc-sub">3e · 52 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:3.70;--fw-n:3.60;--fw-e:1.82;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">3.70</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.60</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">1.82</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Marseille</span>
+              <div><div class="pc-result">Victoire Marseille — 1-3</div><div class="pc-reason">L'OM en confiance (3-1 vs Metz). Cote extérieur à 1.82 confirme la domination marseillaise attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Angers SCO</div><div class="mc-sub">13e · 33 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 19h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Le Havre AC</div><div class="mc-sub">14e · 28 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:2.77;--fw-n:3.00;--fw-e:2.50;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">2.77</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">3.00</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">2.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag draw">Nul</span>
+              <div><div class="pc-result">Match nul — 1-1</div><div class="pc-reason">Cotes ultra-serrées (2.77/3.00/2.50) reflétant l'incertitude totale. Choc de prudence entre deux équipes qui jouent le maintien.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Lille OSC</div><div class="mc-sub">4e · 50 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">OGC Nice</div><div class="mc-sub">15e · 27 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.00;--fw-e:5.50;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.00</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Lille</span>
+              <div><div class="pc-result">Victoire Lille — 3-0</div><div class="pc-reason">Nice en délabrement complet. Cote extérieur à 5.50 dit tout. Victoire large de Lille au Pierre-Mauroy.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">AS Monaco</div><div class="mc-sub">5e · 49 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 15h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">AJ Auxerre</div><div class="mc-sub">16e · 23 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.56;--fw-n:4.20;--fw-e:5.80;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.56</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">4.20</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">5.80</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Monaco</span>
+              <div><div class="pc-result">Victoire Monaco — 3-1</div><div class="pc-reason">Monaco doit réagir après le 4-1 encaissé à Paris FC. À Louis II face à Auxerre relégable, les Monégasques ne peuvent se permettre un faux pas.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== NBA ===== -->
+      <div class="sport-panel" id="panel-nba">
+        <div class="panel-header">
+          <div class="panel-title">🏀 NBA</div>
+          <div class="panel-meta">Fin de saison régulière · 11–12 Avril 2026</div>
+        </div>
+        <div class="nba-disclaimer">⚠️ <div>La NBA est extrêmement difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. Ces pronos restent indicatifs. <strong>La bankroll recommandée sur NBA est 30% inférieure au foot.</strong></div></div>
+
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge nba">NBA</span>
+            <span class="jblock-title">Nuit du 11 au 12 Avril</span>
+            <span class="jblock-date">À partir de 01h00 (heure fr.)</span>
+          </div>
+
+          <!-- OKC vs DEN (top picks) -->
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Denver Nuggets</div><div class="mc-sub">W52-L28 · 2e Ouest</div></div>
+              <div class="mc-center"><div class="mc-time">03h00 FR</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">OKC Thunder</div><div class="mc-sub">W64-L16 · 1er Ouest</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:2.20;--fw-n:1;--fw-e:1.70;">
+              <div class="cs fav"><span class="cs-lbl">Denver</span><span class="cs-val">~2.20</span></div>
+              <div class="cs und"><span class="cs-lbl">OKC</span><span class="cs-val">~1.70</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Denver</span>
+              <div><div class="pc-result">Victoire Denver Nuggets</div><div class="pc-reason">OKC a déjà sécurisé la 1e place à l'Ouest et va lever le pied — les stars seront probablement ménagées en vue des playoffs. Denver, à la Ball Arena et avec Jokic motivé pour la 2e place, a tout à jouer. L'enjeu est du côté des Nuggets, pas du Thunder. Upset crédible contre le marché.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Boston vs NOP -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Boston Celtics</div><div class="mc-sub">W54-L26 · 1er Est</div></div>
+              <div class="mc-center"><div class="mc-time">01h30 FR</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">New Orleans</div><div class="mc-sub">W26-L54 · Lanterne</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.07;--fw-n:1;--fw-e:10.0;">
+              <div class="cs fav"><span class="cs-lbl">Boston</span><span class="cs-val">~1.07</span></div>
+              <div class="cs und"><span class="cs-lbl">NOP</span><span class="cs-val">~10.0</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Boston</span>
+              <div><div class="pc-result">Victoire Boston Celtics</div><div class="pc-reason">Boston à 93% de probabilité de victoire selon les données. NOP en fond de classement. Victoire quasi-certaine des Celtics.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Indiana vs Philly -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Indiana Pacers</div><div class="mc-sub">W19-L61 · Bas Est</div></div>
+              <div class="mc-center"><div class="mc-time">01h30 FR</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Philadelphia 76ers</div><div class="mc-sub">W43-L37 · 4e Est</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:8.00;--fw-n:1;--fw-e:1.10;">
+              <div class="cs fav"><span class="cs-lbl">Indiana</span><span class="cs-val">~8.00</span></div>
+              <div class="cs und"><span class="cs-lbl">Philly</span><span class="cs-val">~1.10</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Philly</span>
+              <div><div class="pc-result">Victoire Philadelphia 76ers</div><div class="pc-reason">Indiana est la pire équipe de l'Est (19 victoires). Philly à 90,7% de probabilité. Victoire confortable des Sixers.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- San Antonio vs Dallas -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">San Antonio Spurs</div><div class="mc-sub">W61-L19 · 1er SudO.</div></div>
+              <div class="mc-center"><div class="mc-time">02h00 FR</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Dallas Mavericks</div><div class="mc-sub">W25-L55 · Dernier SO</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.04;--fw-n:1;--fw-e:14.0;">
+              <div class="cs fav"><span class="cs-lbl">San Antonio</span><span class="cs-val">~1.04</span></div>
+              <div class="cs und"><span class="cs-lbl">Dallas</span><span class="cs-val">~14.0</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">San Antonio</span>
+              <div><div class="pc-result">Victoire Spurs</div><div class="pc-reason">San Antonio est à 94% de probabilité — le match le plus sûr de la nuit. Dallas est la pire équipe de l'Ouest cette saison (25 victoires).</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Milwaukee vs Brooklyn -->
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Milwaukee Bucks</div><div class="mc-sub">W31-L49 · Mid Est</div></div>
+              <div class="mc-center"><div class="mc-time">02h00 FR</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Brooklyn Nets</div><div class="mc-sub">W20-L60 · Bas Est</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:4.50;">
+              <div class="cs fav"><span class="cs-lbl">Milwaukee</span><span class="cs-val">~1.25</span></div>
+              <div class="cs und"><span class="cs-lbl">Brooklyn</span><span class="cs-val">~4.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Milwaukee</span>
+              <div><div class="pc-result">Victoire Bucks</div><div class="pc-reason">Les Bucks à 81.5% de probabilité face aux Nets (20-60). Brooklyn en reconstruction totale, aucune résistance attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== UFC ===== -->
+      <div class="sport-panel" id="panel-ufc">
+        <div class="panel-header">
+          <div class="panel-title">🥊 UFC 327</div>
+          <div class="panel-meta">Kaseya Center, Miami · 11-12 Avril 2026 · Carte principale à 03h00 (heure fr.)</div>
+        </div>
+
+        <div class="nba-disclaimer" style="--orange:var(--red);border-color:rgba(244,63,94,0.25);background:rgba(244,63,94,0.06);">
+          ⚠️ <div>L'UFC reste le sport le plus imprévisible — un seul coup peut tout changer. Confiance maximale 3/5. Ne misez jamais plus de 1-2% de votre bankroll par combat UFC.</div>
+        </div>
+
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge ufc">UFC 327</span>
+            <span class="jblock-title">Carte Principale</span>
+            <span class="jblock-date">Dim. 03h00 (fr.)</span>
+          </div>
+
+          <!-- MAIN EVENT -->
+          <div class="ufc-card main-event">
+            <div class="ufc-top">
+              <div class="ufc-f red"><div class="ufc-fname">Jiří Procházka</div><div class="ufc-fsub">🇨🇿 32-5-1 · Ancien champion</div></div>
+              <div class="ufc-center"><div class="ufc-cat">TITRE VACANT</div><div class="ufc-octagon">🏆</div><div class="ufc-weight">Mi-Lourds · 205 lbs</div></div>
+              <div class="ufc-f blue-corner"><div class="ufc-fname">Carlos Ulberg</div><div class="ufc-fsub">🇳🇿 14-1 · 9 victoires consécutives</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.85;--fw-n:1;--fw-e:2.00;">
+              <div class="cs fav"><span class="cs-lbl">Procházka</span><span class="cs-val">~1.85</span></div>
+              <div class="cs und"><span class="cs-lbl">Ulberg</span><span class="cs-val">~2.00</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Ulberg</span>
+              <div><div class="pc-result">Victoire Ulberg par décision unanime</div><div class="pc-reason">Ulberg est sur 9 victoires consécutives et progresse à chaque sortie — un momentum rare chez les mi-lourds. Procházka est brillant mais son style chaotique l'a déjà coûté plusieurs fois. Sur 5 rounds, le striking méthodique et le jeu de jambes d'Ulberg vont user le Tchèque. Le Néo-Zélandais est le futur du poids et je le vois prendre la ceinture.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- CO-MAIN -->
+          <div class="ufc-card">
+            <div class="ufc-top">
+              <div class="ufc-f red"><div class="ufc-fname">Paulo Costa</div><div class="ufc-fsub">🇧🇷 14-3 · Monté chez les MI-L.</div></div>
+              <div class="ufc-center"><div class="ufc-cat">CO-MAIN EVENT</div><div class="ufc-octagon">⚔️</div><div class="ufc-weight">Mi-Lourds</div></div>
+              <div class="ufc-f blue-corner"><div class="ufc-fname">Azamat Murzakanov</div><div class="ufc-fsub">🇷🇺 13-0 · Invaincu professionnel</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.50;--fw-n:1;--fw-e:2.60;">
+              <div class="cs fav"><span class="cs-lbl">Murzakanov</span><span class="cs-val">~1.50</span></div>
+              <div class="cs und"><span class="cs-lbl">Costa</span><span class="cs-val">~2.60</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Murzakanov</span>
+              <div><div class="pc-result">Victoire Murzakanov par déc. unanime</div><div class="pc-reason">Murzakanov invaincu (13-0) et favori logique. Costa monte de catégorie, désavantagé physiquement. L'invaincu devrait tenir la distance et dominer aux points.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Blaydes vs Hokit -->
+          <div class="ufc-card">
+            <div class="ufc-top">
+              <div class="ufc-f red"><div class="ufc-fname">Curtis Blaydes</div><div class="ufc-fsub">🇺🇸 18-4 · Vétéran UFC</div></div>
+              <div class="ufc-center"><div class="ufc-cat">POIDS LOURDS</div><div class="ufc-octagon">👊</div><div class="ufc-weight">265 lbs</div></div>
+              <div class="ufc-f blue-corner"><div class="ufc-fname">Josh Hokit</div><div class="ufc-fsub">🇺🇸 Outsider</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:4.50;">
+              <div class="cs fav"><span class="cs-lbl">Blaydes</span><span class="cs-val">~1.25</span></div>
+              <div class="cs und"><span class="cs-lbl">Hokit</span><span class="cs-val">~4.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Blaydes</span>
+              <div><div class="pc-result">Victoire Blaydes par TKO</div><div class="pc-reason">Blaydes est un top contender chez les lourds avec un excellent ground game. Hokit est trop inexpérimenté à ce niveau pour concurrencer l'expérience de Blaydes.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <!-- Sterling vs Zalal -->
+          <div class="ufc-card">
+            <div class="ufc-top">
+              <div class="ufc-f red"><div class="ufc-fname">Aljamain Sterling</div><div class="ufc-fsub">🇺🇸 24-5 · Ex-champion bantam</div></div>
+              <div class="ufc-center"><div class="ufc-cat">POIDS LÉGER</div><div class="ufc-octagon">⚡</div><div class="ufc-weight">155 lbs</div></div>
+              <div class="ufc-f blue-corner"><div class="ufc-fname">Esteban Ribovics</div><div class="ufc-fsub">🇦🇷 En montée</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.40;--fw-n:1;--fw-e:3.10;">
+              <div class="cs fav"><span class="cs-lbl">Sterling</span><span class="cs-val">~1.40</span></div>
+              <div class="cs und"><span class="cs-lbl">Ribovics</span><span class="cs-val">~3.10</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Ribovics</span>
+              <div><div class="pc-result">Victoire Ribovics par décision</div><div class="pc-reason">Sterling a du mal à s'adapter aux légers depuis sa montée — il n'a plus son explosivité d'ancien champion bantam. Ribovics, plus jeune et plus agressif, est invaincu dans l'octogone récemment. Son striking offensif et son cardio feront la différence contre un Sterling vieillissant. Upset contre le marché.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== TENNIS ===== -->
+      <div class="sport-panel" id="panel-tennis">
+        <div class="panel-header">
+          <div class="panel-title">🎾 ATP Monte-Carlo 2026</div>
+          <div class="panel-meta">Masters 1000 · Terre battue · 11–19 Avril 2026</div>
+        </div>
+        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
+          ✅ <div>Le tennis est l'un des sports les <strong>plus fiables</strong> à pronostiquer : pas d'effet d'équipe, écart de niveau énorme entre têtes de série et qualifiés. Les gros favoris passent en moyenne 85-90% des tours au premier tour d'un Masters 1000.</div>
+        </div>
+
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge tennis">ATP 1000</span>
+            <span class="jblock-title">1/8e de finale</span>
+            <span class="jblock-date">14–15 Avril 2026</span>
+          </div>
+
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Jannik Sinner</div><div class="mc-sub">🇮🇹 N°1 mondial · Tenant</div></div>
+              <div class="mc-center"><div class="mc-time">Mar. 14h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Grigor Dimitrov</div><div class="mc-sub">🇧🇬 N°16 · Vétéran</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.15;--fw-n:1;--fw-e:5.80;">
+              <div class="cs fav"><span class="cs-lbl">Sinner</span><span class="cs-val">~1.15</span></div>
+              <div class="cs und"><span class="cs-lbl">Dimitrov</span><span class="cs-val">~5.80</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Sinner</span>
+              <div><div class="pc-result">Victoire Sinner 2 sets à 0</div><div class="pc-reason">Sinner en patron sur terre battue depuis sa victoire à Rome. Dimitrov irrégulier physiquement. Cote 1.15 qui reflète la domination écrasante attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Carlos Alcaraz</div><div class="mc-sub">🇪🇸 N°2 mondial</div></div>
+              <div class="mc-center"><div class="mc-time">Mar. 16h30</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Stefanos Tsitsipas</div><div class="mc-sub">🇬🇷 N°11 · Spécialiste terre</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.35;--fw-n:1;--fw-e:3.20;">
+              <div class="cs fav"><span class="cs-lbl">Alcaraz</span><span class="cs-val">~1.35</span></div>
+              <div class="cs und"><span class="cs-lbl">Tsitsipas</span><span class="cs-val">~3.20</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Tsitsipas</span>
+              <div><div class="pc-result">Victoire Tsitsipas en 3 sets serrés</div><div class="pc-reason">Tsitsipas est double vainqueur de Monte-Carlo (2021, 2022) — c'est littéralement SON tournoi. Sur cette terre monégasque qu'il connaît par cœur, face à un Alcaraz qui n'a jamais vraiment brillé ici, le Grec a l'avantage mental et technique. Match accroché mais le spécialiste des lieux passe.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Alexander Zverev</div><div class="mc-sub">🇩🇪 N°3 mondial</div></div>
+              <div class="mc-center"><div class="mc-time">Mer. 14h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Hubert Hurkacz</div><div class="mc-sub">🇵🇱 N°14 · Serveur</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.45;--fw-n:1;--fw-e:2.80;">
+              <div class="cs fav"><span class="cs-lbl">Zverev</span><span class="cs-val">~1.45</span></div>
+              <div class="cs und"><span class="cs-lbl">Hurkacz</span><span class="cs-val">~2.80</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Zverev</span>
+              <div><div class="pc-result">Victoire Zverev 2-0</div><div class="pc-reason">Hurkacz beaucoup moins à l'aise sur terre battue (son service passe moins bien). Zverev plus complet en fond de court. Victoire nette attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Novak Djokovic</div><div class="mc-sub">🇷🇸 N°5 · 24 GC</div></div>
+              <div class="mc-center"><div class="mc-time">Mer. 16h30</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Casper Ruud</div><div class="mc-sub">🇳🇴 N°8 · Finaliste RG</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.60;--fw-n:1;--fw-e:2.35;">
+              <div class="cs fav"><span class="cs-lbl">Djokovic</span><span class="cs-val">~1.60</span></div>
+              <div class="cs und"><span class="cs-lbl">Ruud</span><span class="cs-val">~2.35</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">Ruud</span>
+              <div><div class="pc-result">Victoire Ruud en 3 sets</div><div class="pc-reason">Ruud est l'un des meilleurs terriens du circuit : 2× finaliste de Roland-Garros, spécialiste de la surface lente. Djokovic, à 38 ans, peine physiquement sur la longueur des matchs en 3 sets gagnants — surtout sur terre. Le Norvégien a les jambes, la patience et les coups pour faire durer les échanges jusqu'à épuiser Novak. Upset historique possible.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Daniil Medvedev</div><div class="mc-sub">🇷🇺 N°4 mondial</div></div>
+              <div class="mc-center"><div class="mc-time">Mer. 18h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Alex de Minaur</div><div class="mc-sub">🇦🇺 N°9 · Jeune en forme</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.70;--fw-n:1;--fw-e:2.15;">
+              <div class="cs fav"><span class="cs-lbl">Medvedev</span><span class="cs-val">~1.70</span></div>
+              <div class="cs und"><span class="cs-lbl">de Minaur</span><span class="cs-val">~2.15</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-away">de Minaur</span>
+              <div><div class="pc-result">Victoire de Minaur en 3 sets</div><div class="pc-reason">Medvedev est historiquement très faible sur terre battue (ses pires résultats de l'année). De Minaur, très athlétique, a l'opportunité de créer la surprise. Value bet intéressante.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== RUGBY ===== -->
+      <div class="sport-panel" id="panel-rugby">
+        <div class="panel-header">
+          <div class="panel-title">🏉 TOP 14</div>
+          <div class="panel-meta">22ème Journée · 11–12 Avril 2026</div>
+        </div>
+        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
+          ✅ <div>Le Top 14 est <strong>très prédictible à domicile</strong> : les équipes reçoivant gagnent dans plus de 75% des cas. L'écart de niveau entre le top et le bas du classement est l'un des plus marqués du sport français.</div>
+        </div>
+
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge rugby">J22</span>
+            <span class="jblock-title">22ème Journée</span>
+            <span class="jblock-date">11–12 Avril 2026</span>
+          </div>
+
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Stade Toulousain</div><div class="mc-sub">1er · 72 pts · Tenants</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 21h05</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Castres Olympique</div><div class="mc-sub">11e · 38 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.12;--fw-n:18.0;--fw-e:7.50;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.12</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">18.0</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">7.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Toulouse</span>
+              <div><div class="pc-result">Victoire Toulouse avec bonus offensif</div><div class="pc-reason">Ernest-Wallon est une forteresse cette saison (12/12 à domicile). Castres est solide mais ne peut rien face au rouleau compresseur toulousain. Victoire large attendue.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">UBB Bordeaux</div><div class="mc-sub">2e · 65 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Sam. 17h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Section Paloise</div><div class="mc-sub">9e · 42 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:15.0;--fw-e:4.50;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.25</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">15.0</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">4.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">UBB</span>
+              <div><div class="pc-result">Victoire Bordeaux-Bègles</div><div class="pc-reason">Bordeaux en pleine dynamique avec un pack conquérant. Pau lutte pour éviter la relégation mais manque de ressources offensives en déplacement.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Stade Rochelais</div><div class="mc-sub">5e · 58 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 15h15</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Lyon LOU</div><div class="mc-sub">10e · 40 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.40;--fw-n:16.0;--fw-e:3.10;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.40</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">16.0</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.10</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">La Rochelle</span>
+              <div><div class="pc-result">Victoire La Rochelle</div><div class="pc-reason">Marcel-Deflandre est une enceinte bouillante. La Rochelle joue les play-offs et ne peut plus perdre. Lyon irrégulier en déplacement, surtout contre les gros.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Racing 92</div><div class="mc-sub">6e · 55 pts</div></div>
+              <div class="mc-center"><div class="mc-time">Dim. 17h00</div><div class="mc-vs">VS</div></div>
+              <div class="mc-team away"><div class="mc-name">Montpellier HR</div><div class="mc-sub">13e · 30 pts</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.32;--fw-n:16.0;--fw-e:3.60;">
+              <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">1.32</span></div>
+              <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">16.0</span></div>
+              <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">3.60</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Racing 92</span>
+              <div><div class="pc-result">Victoire Racing 92</div><div class="pc-reason">Racing joue sa qualification. Montpellier en perdition totale cette saison, l'une des pires équipes en déplacement. Victoire sans suspense à Paris La Défense Arena.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== FORMULE 1 ===== -->
+      <div class="sport-panel" id="panel-f1">
+        <div class="panel-header">
+          <div class="panel-title">🏎️ Grand Prix du Bahreïn</div>
+          <div class="panel-meta">Manche 4/24 · Circuit de Sakhir · 12 Avril 2026</div>
+        </div>
+        <div class="nba-disclaimer" style="--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);">
+          ✅ <div>La <strong>Formule 1</strong> est l'un des sports les plus faciles à pronostiquer en tête de course : les 3 premiers sur la grille finissent dans le top 5 dans 80% des GP. Parier sur un podium d'un top team est très sûr.</div>
+        </div>
+
+        <div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge f1">GP 4</span>
+            <span class="jblock-title">Course dimanche · 18h00 (fr.)</span>
+            <span class="jblock-date">12 Avril 2026</span>
+          </div>
+
+          <div class="mc featured">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Max Verstappen</div><div class="mc-sub">🇳🇱 Red Bull · Tenant</div></div>
+              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">POLE?</div></div>
+              <div class="mc-team away"><div class="mc-name">Plateau complet</div><div class="mc-sub">20 pilotes au départ</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.90;--fw-n:1;--fw-e:1.95;">
+              <div class="cs fav"><span class="cs-lbl">Verstappen vainqueur</span><span class="cs-val">~1.90</span></div>
+              <div class="cs und"><span class="cs-lbl">Autre pilote</span><span class="cs-val">~1.95</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Verstappen Podium</span>
+              <div><div class="pc-result">Verstappen sur le podium (Top 3)</div><div class="pc-reason">Max finit 90% de ses courses dans le top 3. Pari beaucoup plus sûr que de parier sur la victoire. Cote 1.20 typique pour un podium — combinaison sûreté/rendement idéal.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Lando Norris</div><div class="mc-sub">🇬🇧 McLaren · 2e saison pass.</div></div>
+              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">TOP 6?</div></div>
+              <div class="mc-team away"><div class="mc-name">Points garantis</div><div class="mc-sub">McLaren en forme</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.15;--fw-n:1;--fw-e:4.50;">
+              <div class="cs fav"><span class="cs-lbl">Norris Top 6</span><span class="cs-val">~1.15</span></div>
+              <div class="cs und"><span class="cs-lbl">Hors Top 6</span><span class="cs-val">~4.50</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">Norris Top 6</span>
+              <div><div class="pc-result">Lando Norris dans les 6 premiers</div><div class="pc-reason">McLaren est la 2ème force du plateau. Norris termine dans les points à presque chaque course. Un top 6 est quasi-garanti sauf abandon mécanique.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div></div>
+            </div>
+          </div>
+
+          <div class="mc">
+            <div class="mc-top">
+              <div class="mc-team home"><div class="mc-name">Ferrari</div><div class="mc-sub">🇮🇹 Leclerc / Hamilton</div></div>
+              <div class="mc-center"><div class="mc-time">18h00 FR</div><div class="mc-vs">POINTS?</div></div>
+              <div class="mc-team away"><div class="mc-name">Double arrivée</div><div class="mc-sub">Deux pilotes dans les points</div></div>
+            </div>
+            <div class="cotes-bar" style="--fw-d:1.25;--fw-n:1;--fw-e:3.80;">
+              <div class="cs fav"><span class="cs-lbl">Les 2 Ferrari dans pts</span><span class="cs-val">~1.25</span></div>
+              <div class="cs und"><span class="cs-lbl">Au moins 1 hors pts</span><span class="cs-val">~3.80</span></div>
+            </div>
+            <div class="prono-row">
+              <span class="ptag win-home">2 Ferrari points</span>
+              <div><div class="pc-result">Les deux Ferrari terminent dans les points</div><div class="pc-reason">Ferrari est la 3ème équipe du plateau. Leurs deux pilotes (Leclerc + Hamilton) marquent dans 85% des courses. Pari fiable sauf incident mécanique.</div><div class="dots"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== IMPORT ===== -->
+      <div class="sport-panel" id="panel-import">
+        <div class="panel-header">
+          <div class="panel-title">📂 Import JSON</div>
+          <div class="panel-meta">Intègre les futurs pronostics générés par le Coach</div>
+        </div>
+        <div class="import-toolbar">
+          <button class="imp-btn secondary" onclick="downloadTemplate()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            Télécharger le template JSON
+          </button>
+          <button class="imp-btn primary" onclick="document.getElementById('file-input').click()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Importer un fichier de pronos
+          </button>
+          <input type="file" id="file-input" accept=".json" onchange="importJSON(event)">
+        </div>
+        <div id="import-zone"></div>
+      </div>
+
+    </div><!-- /sports-content -->
+  </div><!-- /sports-layout -->
+</div><!-- /page-sports -->
+
+<!-- ===================== PAGE : BANKROLL ===================== -->
+<div class="page" id="page-bankroll">
+  <div class="bankroll-layout">
+    <div class="bk-header">
+      <div class="bk-title">💰 Gestion Bankroll</div>
+      <div class="bk-sub">Suivez vos paris, vos gains et votre ROI en temps réel</div>
+    </div>
+
+    <!-- Mise de départ -->
+    <div class="bankroll-setup">
+      <label>Bankroll initiale (€)</label>
+      <input type="number" class="bankroll-input" id="bankroll-init" value="100" min="0" step="10" oninput="saveAndRefresh()">
+      <small>Définissez votre capital de départ pour calculer votre ROI et votre progression.</small>
+    </div>
+
+    <!-- Paramètres avancés -->
+    <div class="bk-settings">
+      <div class="bk-settings-title">⚙️ Paramètres avancés</div>
+      <div class="bk-settings-grid">
+        <div class="bks-item">
+          <label>Stratégie Kelly</label>
+          <select id="cfg-kelly-frac" onchange="saveKellyFrac()">
+            <option value="1">Kelly plein (agressif)</option>
+            <option value="0.5">½ Kelly (recommandé)</option>
+            <option value="0.25">¼ Kelly (prudent)</option>
+          </select>
+          <div class="bks-hint">Fraction appliquée au calcul Kelly et à la mise recommandée.</div>
+        </div>
+        <div class="bks-item">
+          <label>Objectif bankroll (€)</label>
+          <input type="number" id="cfg-goal" placeholder="ex: 200" min="0" step="10" oninput="saveGoal()">
+          <div class="bks-hint">Montant à atteindre. Laisser vide pour désactiver.</div>
+        </div>
+        <div class="bks-item">
+          <label>Stop-loss (%)</label>
+          <input type="number" id="cfg-stoploss" placeholder="ex: 20" min="0" max="100" step="5" oninput="saveStopLoss()">
+          <div class="bks-hint">Alerte si la bankroll perd plus de X% du capital initial.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zone alertes (tilt / stop-loss / objectif) -->
+    <div class="alerts-zone" id="bk-alerts"></div>
+
+    <!-- Objectif de bankroll -->
+    <div class="goal-card" id="goal-card" style="display:none;">
+      <div class="goal-header">
+        <div class="goal-title">🎯 Objectif bankroll</div>
+        <div class="goal-values"><span class="gv-current" id="gv-current">—</span> / <span class="gv-target" id="gv-target">—</span> €</div>
+      </div>
+      <div class="goal-bar-wrap"><div class="goal-bar-fill" id="goal-bar-fill" style="width:0%"></div></div>
+      <div class="goal-pct" id="goal-pct">0% atteint</div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-grid">
+      <div class="kpi-card"><div class="kpi-label">Bankroll actuelle</div><div class="kpi-val" id="kpi-current">100 €</div><div class="kpi-change" id="kpi-current-delta">—</div></div>
+      <div class="kpi-card profit"><div class="kpi-label">Gains nets</div><div class="kpi-val" id="kpi-gain">0 €</div><div class="kpi-change" id="kpi-gain-detail">—</div></div>
+      <div class="kpi-card rate"><div class="kpi-label">Taux de réussite</div><div class="kpi-val" id="kpi-taux">—</div><div class="kpi-change" id="kpi-taux-detail">0 paris résolus</div></div>
+      <div class="kpi-card"><div class="kpi-label">ROI</div><div class="kpi-val" id="kpi-roi">0%</div><div class="kpi-change" id="kpi-roi-detail">—</div></div>
+      <div class="kpi-card pending"><div class="kpi-label">En attente</div><div class="kpi-val" id="kpi-pending">0 €</div><div class="kpi-change" id="kpi-pending-count">0 pari(s)</div></div>
+    </div>
+
+    <!-- Courbe -->
+    <div class="chart-area">
+      <div class="chart-title">📈 Évolution de la bankroll</div>
+      <div class="chart-svg-wrap" id="chart-wrap">
+        <svg id="bank-chart" width="100%" height="160" viewBox="0 0 800 160" preserveAspectRatio="none">
+          <text x="400" y="85" text-anchor="middle" fill="#64748b" font-size="14" font-family="Syne">Aucun pari résolu pour l'instant</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Add bet form -->
+    <div class="add-bet-form">
+      <div class="form-title">➕ Ajouter un pari</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Match / Événement</label>
+          <input type="text" id="f-match" placeholder="ex: Nice vs Le Havre">
+        </div>
+        <div class="form-group">
+          <label>Mon Pari</label>
+          <input type="text" id="f-pari" placeholder="ex: Match Nul">
+        </div>
+        <div class="form-group">
+          <label>Cote</label>
+          <input type="number" id="f-cote" placeholder="ex: 3.40" step="0.01" min="1">
+        </div>
+        <div class="form-group">
+          <label>Mise (€)</label>
+          <input type="number" id="f-mise" placeholder="ex: 10" step="1" min="1">
+        </div>
+        <div class="form-group">
+          <label>Sport</label>
+          <select id="f-sport">
+            <option value="⚽ Foot">⚽ Football</option>
+            <option value="🏀 NBA">🏀 NBA</option>
+            <option value="🥊 UFC">🥊 UFC</option>
+            <option value="🎯 Autre">🎯 Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="f-date">
+        </div>
+      </div>
+      <button class="btn-add-bet" onclick="addBet()">💾 Enregistrer le pari</button>
+    </div>
+
+    <!-- Bet list -->
+    <div class="bet-list-header">
+      <div class="bet-list-title">Historique des paris</div>
+      <div class="bet-filters">
+        <button class="filter-btn active" onclick="filterBets('all',this)">Tous</button>
+        <button class="filter-btn" onclick="filterBets('pending',this)">En attente</button>
+        <button class="filter-btn" onclick="filterBets('won',this)">Gagnés</button>
+        <button class="filter-btn" onclick="filterBets('lost',this)">Perdus</button>
+      </div>
+    </div>
+
+    <!-- Filtres avancés -->
+    <div class="adv-filters">
+      <div class="adv-filters-header">
+        <span>🔍 Filtres avancés</span>
+        <button class="adv-reset" onclick="resetAdvFilters()">✕ Réinitialiser</button>
+      </div>
+      <div class="adv-filters-grid">
+        <div class="adv-f">
+          <label>Sport</label>
+          <select id="af-sport" onchange="renderBets()">
+            <option value="">Tous</option>
+            <option value="⚽ Foot">⚽ Foot</option>
+            <option value="🏀 NBA">🏀 NBA</option>
+            <option value="🥊 UFC">🥊 UFC</option>
+            <option value="🎾 Tennis">🎾 Tennis</option>
+            <option value="🏉 Rugby">🏉 Rugby</option>
+            <option value="🏎️ F1">🏎️ F1</option>
+          </select>
+        </div>
+        <div class="adv-f">
+          <label>Tag</label>
+          <select id="af-tag" onchange="renderBets()">
+            <option value="">Tous</option>
+            <option value="sure">✅ Valeur sûre</option>
+            <option value="value">💎 Value bet</option>
+            <option value="risky">🎲 Risqué</option>
+            <option value="combo">🔗 Combiné</option>
+          </select>
+        </div>
+        <div class="adv-f">
+          <label>Date début</label>
+          <input type="date" id="af-date-from" onchange="renderBets()">
+        </div>
+        <div class="adv-f">
+          <label>Date fin</label>
+          <input type="date" id="af-date-to" onchange="renderBets()">
+        </div>
+        <div class="adv-f">
+          <label>Cote min</label>
+          <input type="number" id="af-cote-min" placeholder="1.00" step="0.1" min="1" onchange="renderBets()">
+        </div>
+        <div class="adv-f">
+          <label>Cote max</label>
+          <input type="number" id="af-cote-max" placeholder="10.00" step="0.1" min="1" onchange="renderBets()">
+        </div>
+      </div>
+    </div>
+
+    <div id="bet-list"></div>
+  </div>
+</div>
+
+<!-- ===================== MODAL MISE RAPIDE ===================== -->
+
+<!-- ===================== PAGE : PERFORMANCE ===================== -->
+<div class="page" id="page-perf">
+  <div class="perf-layout">
+    <div class="perf-header">
+      <div class="perf-title">&#x1F4CA; Performances</div>
+      <div class="perf-sub">Statistiques detaillees, analyse par sport et historique visuel</div>
+    </div>
+
+    <!-- Export -->
+    <div class="export-bar">
+      <button class="export-btn" onclick="exportCSV()">&#x1F4E5; Exporter CSV</button>
+      <button class="export-btn" onclick="exportJSON()">&#x1F4C4; Exporter JSON</button>
+      <button class="export-btn" onclick="printPerf()">&#x1F5A8;&#xFE0F; Imprimer</button>
+    </div>
+
+    <!-- Stats globales -->
+    <div class="stats-summary" id="perf-summary"></div>
+
+    <!-- Serie en cours -->
+    <div style="margin-bottom:24px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:10px;">Serie en cours</div>
+      <div id="perf-serie"></div>
+      <div class="streak-row" id="perf-streak" style="margin-top:10px;"></div>
+    </div>
+
+    <!-- Stats par sport -->
+    <div style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-bottom:14px;">Par sport</div>
+    <div class="sport-stats-grid" id="sport-stats-grid"></div>
+
+    <!-- Graphiques -->
+    <div class="perf-charts">
+      <div class="perf-chart-card full">
+        <div class="pcc-title">&#x1F4C8; Evolution de la bankroll</div>
+        <svg id="perf-chart-main" width="100%" height="180" viewBox="0 0 900 180" preserveAspectRatio="none">
+          <text x="450" y="95" text-anchor="middle" fill="#64748b" font-size="13" font-family="Syne">Aucun pari resolu</text>
+        </svg>
+      </div>
+      <div class="perf-chart-card">
+        <div class="pcc-title">&#x1F3AF; Resultats par sport</div>
+        <div id="sport-bars"></div>
+      </div>
+      <div class="perf-chart-card">
+        <div class="pcc-title">&#x1F3F7;&#xFE0F; Resultats par tag</div>
+        <div id="tag-bars"></div>
+      </div>
+    </div>
+
+    <!-- Stats detaillees par cote -->
+    <div class="perf-chart-card" style="margin-bottom:16px;">
+      <div class="pcc-title">&#x1F4B0; Performance par fourchette de cotes</div>
+      <div id="cote-bars"></div>
+    </div>
+
+    <!-- Stats par niveau de confiance -->
+    <div class="perf-chart-card" style="margin-bottom:16px;">
+      <div class="pcc-title">&#x2B50; Performance par niveau de confiance</div>
+      <div id="conf-bars"></div>
+      <div id="conf-insight" style="margin-top:12px;font-size:11px;color:var(--muted);font-style:italic;"></div>
+    </div>
+
+    <!-- Meilleures/pires cotes jouees -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="perf-chart-card">
+        <div class="pcc-title">&#x1F3C6; Meilleurs paris</div>
+        <div id="best-bets"></div>
+      </div>
+      <div class="perf-chart-card">
+        <div class="pcc-title">&#x1F4A5; Paris les plus perdants</div>
+        <div id="worst-bets"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mise-overlay" id="mise-overlay" onclick="closeMiseModal(event)">
+  <div class="mise-modal" style="max-height:90vh;overflow-y:auto;">
+    <button class="mise-close" onclick="closeMiseModal()">&#x2715;</button>
+    <div class="mise-modal-header">
+      <div class="mise-modal-title">&#x1F4B0; Placer un pari</div>
+      <div class="mise-modal-sub">Ajuste ta mise, puis confirme pour l'ajouter a ta bankroll.</div>
+    </div>
+    <div class="mise-match-recap">
+      <div class="mise-match-name" id="mm-match">&#x2014;</div>
+      <div class="mise-prono-row">
+        <span class="ptag" id="mm-ptag-el">&#x2014;</span>
+        <span class="mise-cote-badge" id="mm-cote">&#x2014;</span>
+        <span class="mise-sport-badge" id="mm-sport">&#x2014;</span>
+      </div>
+    </div>
+    <div class="kelly-section">
+      <div class="kelly-title">&#x1F9EE; Critere de Kelly (mises 1-10 €)</div>
+      <div class="kelly-row">
+        <label>Ma proba estimee (%)</label>
+        <input type="number" class="kelly-input" id="kelly-prob" min="1" max="99" step="1" placeholder="ex: 60" oninput="updateKelly()">
+      </div>
+      <div class="kelly-result">
+        <span class="kelly-mise-label">Mise recommandee</span>
+        <span class="kelly-mise-val" id="kelly-val">&#x2014;</span>
+        <button class="kelly-apply-btn" onclick="applyKelly()">Appliquer</button>
+      </div>
+    </div>
+    <div class="risk-alert" id="risk-alert">&#x26A0;&#xFE0F; <span id="risk-msg">Cette mise depasse 10% de ta bankroll !</span></div>
+    <div class="mise-control">
+      <label>Montant de la mise</label>
+      <div class="mise-amount-row">
+        <input type="number" class="mise-input" id="mm-mise" value="5" min="1" max="10" step="1" oninput="updateMiseCalc()">
+        <span class="mise-unit">&#x20AC;</span>
+      </div>
+      <div class="mise-presets">
+        <button class="preset-btn reco" id="preset-reco" onclick="setPresetReco()">&#x2014; &#x20AC;</button>
+        <button class="preset-btn" onclick="setPreset(1)">1 &#x20AC;</button>
+        <button class="preset-btn" onclick="setPreset(2)">2 &#x20AC;</button>
+        <button class="preset-btn" onclick="setPreset(5)">5 &#x20AC;</button>
+        <button class="preset-btn" onclick="setPreset(10)">10 &#x20AC;</button>
+        <button class="preset-btn" id="preset-pct" onclick="setPresetPct()">5% BK</button>
+      </div>
+      <div class="reco-hint" id="reco-hint">&#x2605; Mise recommandee : <span id="reco-value">&#x2014;</span> &#x20AC; &#x2014; <span id="reco-reason">calcul en cours</span></div>
+    </div>
+    <div class="mise-calc">
+      <div class="calc-item"><div class="calc-label">Mise</div><div class="calc-val risk" id="cc-mise">5 &#x20AC;</div></div>
+      <div class="calc-item"><div class="calc-label">Retour total</div><div class="calc-val retour" id="cc-retour">&#x2014;</div></div>
+      <div class="calc-item"><div class="calc-label">Profit net</div><div class="calc-val profit" id="cc-profit">&#x2014;</div></div>
+    </div>
+    <div style="margin-bottom:14px;">
+      <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;">Classement auto</div>
+      <div class="auto-tag-display">
+        <span class="tag-chip" id="auto-tag-chip">&#x2014;</span>
+        <div class="auto-tag-reason" id="auto-tag-reason">Classement basé sur la cote et l'edge Kelly</div>
+      </div>
+    </div>
+    <div class="mise-actions">
+      <button class="btn-mise-cancel" onclick="closeMiseModal()">Annuler</button>
+      <button class="btn-mise-confirm" id="btn-mise-confirm" onclick="confirmMise()">&#x2713; Confirmer le pari</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MODAL EDIT BET ===================== -->
+<div class="mise-overlay" id="edit-overlay" onclick="closeEditBet(event)">
+  <div class="mise-modal">
+    <button class="mise-close" onclick="closeEditBet()">&#x2715;</button>
+    <div class="mise-modal-header">
+      <div class="mise-modal-title">&#x270E; Editer le pari</div>
+      <div class="mise-modal-sub">Modifie les details du pari. Les stats seront recalculees.</div>
+    </div>
+    <div class="form-grid" style="grid-template-columns:1fr 1fr;gap:12px;">
+      <div class="form-group" style="grid-column:1/-1;">
+        <label>Match</label>
+        <input type="text" id="edit-match">
+      </div>
+      <div class="form-group" style="grid-column:1/-1;">
+        <label>Pari</label>
+        <input type="text" id="edit-pari">
+      </div>
+      <div class="form-group">
+        <label>Cote</label>
+        <input type="number" id="edit-cote" step="0.01" min="1">
+      </div>
+      <div class="form-group">
+        <label>Mise (€)</label>
+        <input type="number" id="edit-mise" step="1" min="1">
+      </div>
+      <div class="form-group">
+        <label>Sport</label>
+        <select id="edit-sport">
+          <option value="⚽ Foot">⚽ Foot</option>
+          <option value="🏀 NBA">🏀 NBA</option>
+          <option value="🥊 UFC">🥊 UFC</option>
+          <option value="🎾 Tennis">🎾 Tennis</option>
+          <option value="🏉 Rugby">🏉 Rugby</option>
+          <option value="🏎️ F1">🏎️ F1</option>
+          <option value="🎯 Autre">🎯 Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" id="edit-date">
+      </div>
+      <div class="form-group">
+        <label>Tag (override manuel)</label>
+        <select id="edit-tag">
+          <option value="sure">✅ Valeur sûre</option>
+          <option value="value">💎 Value bet</option>
+          <option value="risky">🎲 Risqué</option>
+          <option value="combo">🔗 Combiné</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Confiance (1-5)</label>
+        <input type="number" id="edit-conf" min="1" max="5" step="1">
+      </div>
+    </div>
+    <div class="mise-actions" style="margin-top:18px;">
+      <button class="btn-mise-cancel" onclick="closeEditBet()">Annuler</button>
+      <button class="btn-mise-confirm" onclick="saveEditBet()">&#x2713; Sauvegarder</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ===================== AUTHENTIFICATION =====================
+// Hashes SHA-256 precalcules. Ni le login ni le mot de passe n'apparaissent en clair.
+// Protection cosmetique contre les visiteurs casuels — pas une vraie securite
+// (anyone avec devtools peut bypasser, car le code tourne cote client).
+const AUTH_USER_HASH = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
+const AUTH_PASS_HASH = '384a80dd5b22bcd517d64f3dfd789e81117c3d2d8ab22fe38cf9b753d3ba059d';
+
+async function sha256(str) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+}
+
+async function handleLogin(e) {
+  e.preventDefault();
+  const user = document.getElementById('auth-user').value.trim();
+  const pass = document.getElementById('auth-pass').value;
+  const errEl = document.getElementById('auth-error');
+  errEl.textContent = '';
+  try {
+    const [uH, pH] = await Promise.all([sha256(user), sha256(pass)]);
+    if (uH === AUTH_USER_HASH && pH === AUTH_PASS_HASH) {
+      localStorage.setItem('lcp-auth', 'true');
+      document.getElementById('auth-overlay').classList.add('hidden');
+      document.getElementById('auth-pass').value = '';
+    } else {
+      errEl.textContent = '❌ Identifiant ou mot de passe incorrect';
+      // Petit delay anti-brute-force naif (ralentit les tentatives auto)
+      document.querySelector('.auth-btn').disabled = true;
+      setTimeout(() => document.querySelector('.auth-btn').disabled = false, 800);
+    }
+  } catch (err) {
+    errEl.textContent = '❌ Erreur technique : ' + err.message;
+  }
+}
+
+function logout() {
+  if (!confirm('Se déconnecter ?')) return;
+  localStorage.removeItem('lcp-auth');
+  location.reload();
+}
+
+// Verification au chargement — si deja connecte, on cache l'overlay
+if (localStorage.getItem('lcp-auth') === 'true') {
+  document.getElementById('auth-overlay').classList.add('hidden');
+}
+
+// ===================== NAVIGATION =====================
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.getElementById('tab-'+id).classList.add('active');
+  if(id==='perf') renderPerf();
+  if(id==='today') renderToday();
+  window.scrollTo(0, 0);
+}
+
+function showSport(id){
+  document.querySelectorAll('.sport-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.sidebar-item').forEach(s=>s.classList.remove('active'));
+  document.getElementById('panel-'+id).classList.add('active');
+  document.getElementById('sb-'+id).classList.add('active');
+}
+
+// ===================== TOAST =====================
+function toast(msg,type=''){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast show '+(type);
+  setTimeout(()=>t.className='toast',3000);
+}
+
+// ===================== BANKROLL =====================
+let bets=JSON.parse(localStorage.getItem('lcp-bets')||'[]');
+let currentFilter='all';
+
+function saveAndRefresh(){
+  localStorage.setItem('lcp-init',document.getElementById('bankroll-init').value);
+  refreshBankroll();
+}
+
+function getInit(){return parseFloat(localStorage.getItem('lcp-init')||100);}
+
+function addBet(){
+  const match=document.getElementById('f-match').value.trim();
+  const pari=document.getElementById('f-pari').value.trim();
+  const cote=parseFloat(document.getElementById('f-cote').value);
+  const mise=parseFloat(document.getElementById('f-mise').value);
+  const sport=document.getElementById('f-sport').value;
+  const date=document.getElementById('f-date').value||new Date().toISOString().slice(0,10);
+  if(!match||!pari||!cote||!mise){toast('⚠️ Remplis tous les champs','err');return;}
+  if(cote<1){toast('❌ Cote invalide','err');return;}
+  bets.push({id:Date.now(),match,pari,cote,mise,sport,date,status:'pending'});
+  localStorage.setItem('lcp-bets',JSON.stringify(bets));
+  ['f-match','f-pari','f-cote','f-mise'].forEach(id=>document.getElementById(id).value='');
+  refreshBankroll();
+  toast('✅ Pari ajouté !','ok');
+}
+
+function resolveBet(id,status){
+  bets=bets.map(b=>b.id===id?{...b,status}:b);
+  localStorage.setItem('lcp-bets',JSON.stringify(bets));
+  refreshBankroll();
+  toast(status==='won'?'Pari gagne !':'Pari perdu','');
+}
+
+function deleteBet(id){
+  bets=bets.filter(b=>b.id!==id);
+  localStorage.setItem('lcp-bets',JSON.stringify(bets));
+  refreshBankroll();
+}
+
+// ===================== EDITER UN PARI =====================
+let editingBetId = null;
+function openEditBet(id) {
+  const b = bets.find(x => x.id === id);
+  if (!b) return;
+  editingBetId = id;
+  document.getElementById('edit-match').value = b.match || '';
+  document.getElementById('edit-pari').value = b.pari || '';
+  document.getElementById('edit-cote').value = b.cote || '';
+  document.getElementById('edit-mise').value = b.mise || '';
+  document.getElementById('edit-sport').value = b.sport || '⚽ Foot';
+  document.getElementById('edit-date').value = b.date || '';
+  document.getElementById('edit-tag').value = b.tag || 'sure';
+  document.getElementById('edit-conf').value = b.confidence || 3;
+  document.getElementById('edit-overlay').classList.add('open');
+}
+
+function closeEditBet(e) {
+  if (e && e.target !== document.getElementById('edit-overlay')) return;
+  document.getElementById('edit-overlay').classList.remove('open');
+  editingBetId = null;
+}
+
+function saveEditBet() {
+  if (!editingBetId) return;
+  const idx = bets.findIndex(b => b.id === editingBetId);
+  if (idx === -1) return;
+  const match = document.getElementById('edit-match').value.trim();
+  const pari = document.getElementById('edit-pari').value.trim();
+  const cote = parseFloat(document.getElementById('edit-cote').value);
+  const mise = parseFloat(document.getElementById('edit-mise').value);
+  const sport = document.getElementById('edit-sport').value;
+  const date = document.getElementById('edit-date').value;
+  const tag = document.getElementById('edit-tag').value;
+  const confidence = Math.max(1, Math.min(5, parseInt(document.getElementById('edit-conf').value) || 3));
+  if (!match || !pari || !cote || !mise || cote < 1 || mise <= 0) {
+    toast('❌ Champs invalides', 'err');
+    return;
+  }
+  bets[idx] = { ...bets[idx], match, pari, cote, mise, sport, date, tag, confidence };
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+  document.getElementById('edit-overlay').classList.remove('open');
+  editingBetId = null;
+  refreshBankroll();
+  toast('✅ Pari modifié', 'ok');
+}
+
+function filterBets(f,btn){
+  currentFilter=f;
+  document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  renderBets();
+}
+
+function refreshBankroll(){
+  const init=getInit();
+  const won=bets.filter(b=>b.status==='won');
+  const lost=bets.filter(b=>b.status==='lost');
+  const pending=bets.filter(b=>b.status==='pending');
+  const totalGain=won.reduce((s,b)=>s+b.mise*(b.cote-1),0);
+  const totalLoss=lost.reduce((s,b)=>s+b.mise,0);
+  const net=totalGain-totalLoss;
+  const pendingAmount=pending.reduce((s,b)=>s+b.mise,0);
+  const resolved=won.length+lost.length;
+  const taux=resolved>0?Math.round(won.length/resolved*100):null;
+  const current=init+net;
+  const roi=resolved>0?(net/bets.filter(b=>b.status!=='pending').reduce((s,b)=>s+b.mise,0)*100):0;
+
+  document.getElementById('kpi-current').textContent=current.toFixed(2)+' €';
+  document.getElementById('kpi-current-delta').textContent=(net>=0?'+':'')+net.toFixed(2)+' € depuis le départ';
+  document.getElementById('kpi-gain').textContent=net.toFixed(2)+' €';
+  document.getElementById('kpi-gain-detail').textContent='+'+totalGain.toFixed(2)+' G / -'+totalLoss.toFixed(2)+' P';
+  document.getElementById('kpi-taux').textContent=taux!==null?taux+'%':'—';
+  document.getElementById('kpi-taux-detail').textContent=resolved+' pari(s) résolu(s)';
+  document.getElementById('kpi-roi').textContent=(resolved>0?(roi>=0?'+':'')+roi.toFixed(1)+'%':'0%');
+  document.getElementById('kpi-roi-detail').textContent='Sur les paris résolus';
+  document.getElementById('kpi-pending').textContent=pendingAmount.toFixed(2)+' €';
+  document.getElementById('kpi-pending-count').textContent=pending.length+' pari(s) en cours';
+
+  // Stats accueil
+  document.getElementById('hs-total').textContent=bets.length||'—';
+  document.getElementById('hs-taux').textContent=taux!==null?taux+'%':'—';
+  document.getElementById('hs-roi').textContent=resolved>0?(roi>=0?'+':'')+roi.toFixed(1)+'%':'—';
+
+  drawChart(init,bets);
+  renderBets();
+  renderPerf();
+  renderGoal(current, init);
+  renderAlerts(current, init);
+}
+
+// ===================== OBJECTIF BANKROLL =====================
+function renderGoal(current, init) {
+  const goal = getGoal();
+  const cardEl = document.getElementById('goal-card');
+  const homeEl = document.getElementById('home-goal');
+  if (!goal || goal <= init) {
+    cardEl.style.display = 'none';
+    if (homeEl) homeEl.style.display = 'none';
+    return;
+  }
+  cardEl.style.display = 'block';
+  if (homeEl) homeEl.style.display = 'block';
+  // Progression : 0% a init, 100% a goal
+  const progress = Math.max(0, Math.min(100, ((current - init) / (goal - init)) * 100));
+  document.getElementById('gv-current').textContent = current.toFixed(2);
+  document.getElementById('gv-target').textContent = goal.toFixed(0);
+  document.getElementById('goal-bar-fill').style.width = progress + '%';
+  const reached = progress >= 100;
+  document.getElementById('goal-pct').textContent = reached
+    ? '🏆 Objectif atteint ! (+' + (current - goal).toFixed(2) + ' €)'
+    : progress.toFixed(1) + '% atteint — reste ' + (goal - current).toFixed(2) + ' €';
+  if (homeEl) {
+    document.getElementById('home-goal-val').textContent = current.toFixed(0) + ' / ' + goal.toFixed(0) + ' € (' + progress.toFixed(0) + '%)';
+    document.getElementById('home-goal-fill').style.width = progress + '%';
+  }
+}
+
+// ===================== DETECTION TILT / STOP-LOSS =====================
+function detectTilt() {
+  // 1. 3 defaites consecutives
+  const resolved = [...bets].filter(b => b.status !== 'pending').sort((a,b) => b.id - a.id);
+  let lostStreak = 0;
+  for (const b of resolved) {
+    if (b.status === 'lost') lostStreak++;
+    else break;
+  }
+  // 2. 4+ paris crees dans la derniere heure
+  const oneHourAgo = Date.now() - 3600000;
+  const recentCount = bets.filter(b => b.id >= oneHourAgo).length;
+  return { lostStreak, recentCount, isTilting: lostStreak >= 3 || recentCount >= 4 };
+}
+
+function renderAlerts(current, init) {
+  const alerts = [];
+  // Stop-loss
+  const stopLoss = getStopLoss();
+  if (stopLoss) {
+    const lossPct = ((init - current) / init) * 100;
+    if (lossPct >= stopLoss) {
+      alerts.push({
+        type: 'stoploss',
+        icon: '🛑',
+        title: 'Stop-loss déclenché',
+        msg: 'Tu as perdu ' + lossPct.toFixed(1) + '% de ta bankroll (seuil : ' + stopLoss + '%). Pause fortement recommandée.'
+      });
+    }
+  }
+  // Tilt
+  const tilt = detectTilt();
+  if (tilt.lostStreak >= 3) {
+    alerts.push({
+      type: 'tilt',
+      icon: '🔥',
+      title: 'Série de défaites',
+      msg: tilt.lostStreak + ' défaites consécutives détectées. Respire, analyse et reviens à froid.'
+    });
+  }
+  if (tilt.recentCount >= 4) {
+    alerts.push({
+      type: 'tilt',
+      icon: '⚡',
+      title: 'Rythme élevé détecté',
+      msg: tilt.recentCount + ' paris créés dans la dernière heure. Attention à ne pas jouer sous émotion.'
+    });
+  }
+  // Objectif atteint
+  const goal = getGoal();
+  if (goal && current >= goal && goal > init) {
+    alerts.push({
+      type: 'success',
+      icon: '🏆',
+      title: 'Objectif bankroll atteint !',
+      msg: 'Tu as atteint ton objectif de ' + goal + ' €. Pense à sécuriser tes gains.'
+    });
+  }
+  const html = alerts.map(a =>
+    `<div class="alert-banner ${a.type}"><div class="ab-icon">${a.icon}</div><div class="ab-content"><div class="ab-title">${a.title}</div><div class="ab-msg">${a.msg}</div></div></div>`
+  ).join('');
+  document.getElementById('bk-alerts').innerHTML = html;
+  const homeAlerts = document.getElementById('home-alerts');
+  if (homeAlerts) homeAlerts.innerHTML = html;
+}
+
+function getAdvFilters() {
+  return {
+    sport: document.getElementById('af-sport')?.value || '',
+    tag: document.getElementById('af-tag')?.value || '',
+    dateFrom: document.getElementById('af-date-from')?.value || '',
+    dateTo: document.getElementById('af-date-to')?.value || '',
+    coteMin: parseFloat(document.getElementById('af-cote-min')?.value) || null,
+    coteMax: parseFloat(document.getElementById('af-cote-max')?.value) || null,
+  };
+}
+
+function resetAdvFilters() {
+  ['af-sport','af-tag','af-date-from','af-date-to','af-cote-min','af-cote-max'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  renderBets();
+}
+
+function applyAdvFilters(list) {
+  const f = getAdvFilters();
+  return list.filter(b => {
+    if (f.sport && b.sport !== f.sport) return false;
+    if (f.tag && (b.tag || 'sure') !== f.tag) return false;
+    if (f.dateFrom && b.date < f.dateFrom) return false;
+    if (f.dateTo && b.date > f.dateTo) return false;
+    if (f.coteMin !== null && b.cote < f.coteMin) return false;
+    if (f.coteMax !== null && b.cote > f.coteMax) return false;
+    return true;
+  });
+}
+
+function renderBets(){
+  const list=document.getElementById('bet-list');
+  let filtered=currentFilter==='all'?bets:bets.filter(b=>b.status===currentFilter);
+  filtered = applyAdvFilters(filtered);
+  if(!filtered.length){list.innerHTML='<div class="no-bets">Aucun pari ne correspond aux filtres.</div>';syncBetButtons();return;}
+  list.innerHTML=[...filtered].reverse().map(b=>{
+    const gain=b.status==='won'?+(b.mise*(b.cote-1)).toFixed(2):b.status==='lost'?-b.mise:null;
+    const gainClass=b.status==='won'?'pos':b.status==='lost'?'neg':'pend';
+    const gainStr=gain!==null?(gain>=0?'+':'')+gain.toFixed(2)+' €':'en attente';
+    const actionsHtml = b.status==='pending'
+      ? `<button class="bet-resolve win" onclick="resolveBet(${b.id},'won')">✓ Gagné</button>
+         <button class="bet-resolve lose" onclick="resolveBet(${b.id},'lost')">✗ Perdu</button>
+         <button class="bet-resolve edit" onclick="openEditBet(${b.id})">✎ Éditer</button>
+         <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`
+      : `<span class="bet-resolved-tag ${b.status}">${b.status==='won'?'🎉 Gagné':'😔 Perdu'}</span>
+         <button class="bet-resolve edit" onclick="openEditBet(${b.id})">✎ Éditer</button>
+         <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`;
+    const legsHtml = b.isCombo && b.legs ? `<div class="bet-combo-legs">${b.legs.map(l => `<div class="bc-leg"><span>${l.sport.charAt(0)} ${l.match}</span><span class="bc-leg-cote">${l.cote.toFixed(2)}</span></div>`).join('')}</div>` : '';
+    return `<div class="bet-item${b.isCombo?' is-combo':''}">
+      <div class="bet-item-top">
+        <div class="bet-status-dot ${b.status}"></div>
+        <div class="bet-info">
+          <div class="bet-match">${b.sport} ${b.match}</div>
+          <div class="bet-detail">${b.pari} · Cote ${b.cote} · ${b.date}${b.tag ? ' · ' + ({sure:'✅',value:'💎',risky:'🎲',combo:'🔗',coeur:'❤️'}[b.tag] || '') : ''}</div>
+        </div>
+        <div class="bet-stake"><div class="bet-mise">${b.mise} €</div><div class="bet-cote">× ${b.cote}</div></div>
+        <div class="bet-gain"><div class="bet-gain-val ${gainClass}">${gainStr}</div></div>
+      </div>
+      ${legsHtml}
+      <div class="bet-actions">${actionsHtml}</div>
+    </div>`;
+  }).join('');
+  // Sync boutons Parier/Annuler sur les cards pronos
+  syncBetButtons();
+  renderPerf();
+}
+
+function drawChart(init,allBets){
+  const resolved=[...allBets].filter(b=>b.status!=='pending').sort((a,b)=>a.id-b.id);
+  if(resolved.length===0){
+    document.getElementById('bank-chart').innerHTML='<text x="400" y="85" text-anchor="middle" fill="#64748b" font-size="14" font-family="Syne">Aucun pari résolu pour l\'instant</text>';
+    return;
+  }
+  const points=[{x:0,v:init}];
+  let cur=init;
+  resolved.forEach((b,i)=>{
+    if(b.status==='won') cur+=b.mise*(b.cote-1);
+    else cur-=b.mise;
+    points.push({x:(i+1),v:cur});
+  });
+  const W=800,H=160,pad=20;
+  const xs=points.map(p=>p.x),ys=points.map(p=>p.v);
+  const minY=Math.min(...ys),maxY=Math.max(...ys);
+  const rangeY=maxY-minY||1;
+  const toX=x=>pad+x/(xs.length-1||1)*(W-2*pad);
+  const toY=y=>H-pad-(y-minY)/rangeY*(H-2*pad);
+  const pts=points.map(p=>`${toX(p.x)},${toY(p.v)}`).join(' ');
+  const isPos=cur>=init;
+  const color=isPos?'#10b981':'#f43f5e';
+  const fill=isPos?'rgba(16,185,129,0.12)':'rgba(244,63,94,0.12)';
+  const firstPt=`${toX(0)},${toY(points[0].v)}`;
+  const lastPt=`${toX(points[points.length-1].x)},${toY(points[points.length-1].v)}`;
+  const areaPath=`M ${firstPt} L ${pts} L ${toX(points[points.length-1].x)},${H} L ${toX(0)},${H} Z`;
+  document.getElementById('bank-chart').innerHTML=`
+    <defs>
+      <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${color}" stop-opacity=".3"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="${areaPath}" fill="url(#cg)"/>
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${toX(0)}" cy="${toY(points[0].v)}" r="4" fill="${color}"/>
+    <circle cx="${lastPt.split(',')[0]}" cy="${lastPt.split(',')[1]}" r="5" fill="${color}"/>
+  `;
+}
+
+// ===================== IMPORT JSON =====================
+function importJSON(e){
+  const file=e.target.files[0];if(!file)return;
+  const r=new FileReader();
+  r.onload=function(ev){
+    try{
+      const data=JSON.parse(ev.target.result);
+      if(!data.journees||!Array.isArray(data.journees))throw new Error();
+      const zone=document.getElementById('import-zone');
+      zone.innerHTML='';
+      let total=0;
+      data.journees.forEach(j=>{
+        if(!j.matchs?.length)return;
+        zone.innerHTML+=`<div class="journee-block">
+          <div class="jblock-header">
+            <span class="jblock-badge import">${j.numero||'J??'}</span>
+            <span class="jblock-title">${j.label||''}</span>
+            <span class="jblock-date">${j.periode||''}</span>
+          </div>${j.matchs.map(m=>buildCard(m)).join('')}
+        </div>`;
+        total+=j.matchs.length;
+      });
+      document.getElementById('import-zone').classList.add('visible');
+      toast('✅ '+total+' pronos importés !','ok');
+    }catch{toast('❌ Fichier JSON invalide','err');}
+    e.target.value='';
+  };
+  r.readAsText(file);
+}
+
+function buildCard(m){
+  const tagClass=m.prono==='win-home'?'win-home':m.prono==='win-away'?'win-away':'draw';
+  const label=m.prono==='win-home'?'Domicile':m.prono==='win-away'?'Extérieur':'Match Nul';
+  const result=m.prono==='win-home'?`Victoire ${m.domicile}`:m.prono==='win-away'?`Victoire ${m.exterieur}`:'Match Nul';
+  const c=m.cotes||{};
+  const cotesBar=c.domicile?`<div class="cotes-bar" style="--fw-d:${c.domicile};--fw-n:${c.nul};--fw-e:${c.exterieur};">
+    <div class="cs dom"><span class="cs-lbl">Dom.</span><span class="cs-val">${c.domicile}</span></div>
+    <div class="cs nul"><span class="cs-lbl">Nul</span><span class="cs-val">${c.nul}</span></div>
+    <div class="cs ext"><span class="cs-lbl">Ext.</span><span class="cs-val">${c.exterieur}</span></div>
+  </div>`:'';
+  let dots='';for(let i=1;i<=5;i++)dots+=`<span class="dot${i<=(m.confiance||3)?' on':''}"></span>`;
+  return `<div class="mc${m.featured?' featured':''}">
+    <div class="mc-top">
+      <div class="mc-team home"><div class="mc-name">${m.domicile}</div>${m.rang_domicile?`<div class="mc-sub">${m.rang_domicile}</div>`:''}</div>
+      <div class="mc-center"><div class="mc-time">${m.heure||''}</div><div class="mc-vs">VS</div></div>
+      <div class="mc-team away"><div class="mc-name">${m.exterieur}</div>${m.rang_exterieur?`<div class="mc-sub">${m.rang_exterieur}</div>`:''}</div>
+    </div>
+    ${cotesBar}
+    <div class="prono-row">
+      <span class="ptag ${tagClass}">${label}</span>
+      <div><div class="pc-result">${result}${m.score_prevu?' — '+m.score_prevu:''}</div>${m.analyse?`<div class="pc-reason">${m.analyse}</div>`:''}<div class="dots">${dots}</div></div>
+    </div>
+    <div class="quick-bet-row">
+      <div class="gain-preview">Pour 10 € misés → retour <span>+${(10*(parseFloat(c.domicile||c.exterieur||2)-1)).toFixed(2)} €</span></div>
+      <button class="btn-quick-bet" onclick='openMiseModal(${JSON.stringify(m.domicile+" vs "+m.exterieur)},${JSON.stringify(result)},${m.prono==="win-home"?c.domicile:m.prono==="win-away"?c.exterieur:c.nul||3},"⚽ Foot",${JSON.stringify(tagClass)},${JSON.stringify(label)})'>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Parier
+      </button>
+    </div>
+  </div>`;
+}
+
+function downloadTemplate(){
+  const tpl={
+    meta:{generated_by:"Le Coach Parie",version:"2.0"},
+    journees:[{
+      numero:"J31",label:"31ème Journée",periode:"25–26 Avril 2026",
+      matchs:[{
+        domicile:"Équipe Dom.",exterieur:"Équipe Ext.",heure:"Sam. 21h05",
+        rang_domicile:"3e · 52 pts",rang_exterieur:"7e · 44 pts",
+        prono:"win-home",score_prevu:"2-1",
+        analyse:"Analyse du match ici.",confiance:4,
+        cotes:{domicile:1.75,nul:3.60,exterieur:4.20},featured:false
+      }]
+    }]
+  };
+  const a=document.createElement('a');
+  a.href=URL.createObjectURL(new Blob([JSON.stringify(tpl,null,2)],{type:'application/json'}));
+  a.download='template_pronos_j31.json';a.click();
+  toast('📥 Template téléchargé !','ok');
+}
+
+// ===================== SYNC BOUTONS PARIER/ANNULER =====================
+// Chaque bouton "Parier" a data-match. On regarde si un pari pending existe pour ce match.
+function syncBetButtons(){
+  const pendingMatches = new Set(
+    bets.filter(b=>b.status==='pending').map(b=>b.match)
+  );
+  document.querySelectorAll('.btn-quick-bet[data-match]').forEach(btn=>{
+    const match = btn.dataset.match;
+    const betId = bets.find(b=>b.status==='pending' && b.match===match)?.id;
+    if(pendingMatches.has(match)){
+      btn.classList.add('cancel');
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Annuler`;
+      btn.onclick = () => cancelBetByMatch(match);
+    } else {
+      btn.classList.remove('cancel');
+      // Récupérer les données originales depuis data-* attributes
+      const pari = btn.dataset.pari;
+      const cote = parseFloat(btn.dataset.cote);
+      const sport = btn.dataset.sport;
+      const cls = btn.dataset.cls;
+      const lbl = btn.dataset.lbl;
+      const conf = parseInt(btn.dataset.conf) || 3;
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Parier`;
+      btn.onclick = () => openMiseModal(match, pari, cote, sport, cls, lbl, conf);
+    }
+  });
+}
+
+function cancelBetByMatch(match){
+  const bet = bets.find(b=>b.status==='pending' && b.match===match);
+  if(!bet) return;
+  bets = bets.filter(b=>b.id!==bet.id);
+  localStorage.setItem('lcp-bets',JSON.stringify(bets));
+  refreshBankroll();
+  toast('🗑 Pari annulé','');
+}
+
+// ===================== MODAL MISE RAPIDE =====================
+let miseContext = null;
+
+// ===================== PARAMETRES UTILISATEUR =====================
+function getKellyFrac() {
+  const v = parseFloat(localStorage.getItem('lcp-kelly-frac') || '0.5');
+  return isNaN(v) ? 0.5 : v;
+}
+function saveKellyFrac() {
+  localStorage.setItem('lcp-kelly-frac', document.getElementById('cfg-kelly-frac').value);
+  refreshBankroll();
+}
+function getGoal() {
+  const v = parseFloat(localStorage.getItem('lcp-goal') || '');
+  return isNaN(v) || v <= 0 ? null : v;
+}
+function saveGoal() {
+  const val = document.getElementById('cfg-goal').value;
+  if (val) localStorage.setItem('lcp-goal', val);
+  else localStorage.removeItem('lcp-goal');
+  refreshBankroll();
+}
+function getStopLoss() {
+  const v = parseFloat(localStorage.getItem('lcp-stoploss') || '');
+  return isNaN(v) || v <= 0 ? null : v;
+}
+function saveStopLoss() {
+  const val = document.getElementById('cfg-stoploss').value;
+  if (val) localStorage.setItem('lcp-stoploss', val);
+  else localStorage.removeItem('lcp-stoploss');
+  refreshBankroll();
+}
+
+// ===================== MISE RECOMMANDEE =====================
+// Calcule une mise entiere recommandee en utilisant EXACTEMENT la meme formule
+// que l'encart "Critere de Kelly", avec la probabilite auto-estimee a partir de
+// la cote et du sport. Ainsi la mise recommandee et la mise Kelly sont toujours
+// identiques a l'ouverture de la modale. La fraction Kelly (½ ou ¼) est appliquee.
+function calculateRecommendedStake(cote, sport) {
+  const init = getInit();
+  const prob = estimateProbability(cote, sport);
+  const edge = prob * cote - 1;
+  if (edge <= 0) return 1;
+  const kelly = edge / (cote - 1);
+  const raw = kelly * init * getKellyFrac();
+  return Math.min(10, Math.max(1, Math.round(raw)));
+}
+
+// Estime la probabilite reelle d'un pari a partir de la cote et du sport.
+// On part de la probabilite implicite du marche (1/cote) a laquelle on ajoute
+// un "edge" qui depend de la volatilite du sport. Plus le sport est fiable,
+// plus l'edge est grand.
+function estimateProbability(cote, sport) {
+  const implicit = 1 / cote;
+  const s = (sport || '').toLowerCase();
+  let edge = 0.05;
+  if (s.includes('ufc'))         edge = 0.02;
+  else if (s.includes('nba'))    edge = 0.03;
+  else if (s.includes('foot'))   edge = 0.05;
+  else if (s.includes('tennis')) edge = 0.08;
+  else if (s.includes('rugby'))  edge = 0.07;
+  else if (s.includes('f1'))     edge = 0.06;
+  return Math.min(0.95, implicit + edge);
+}
+
+// ===================== CLASSIFICATION AUTOMATIQUE =====================
+// Assigne un tag automatiquement selon la cote et l'edge Kelly.
+// - sure   : cote < 1.50 (gros favori, faible variance)
+// - value  : 1.50 <= cote < 2.50 ET edge >= 10% (cote equilibree + value)
+// - risky  : cote >= 2.50 OU edge < 5% (haute variance ou pas de value)
+function autoClassifyBet(cote, sport) {
+  const prob = estimateProbability(cote, sport);
+  const edge = prob * cote - 1;
+  let tag, label, reason;
+  if (cote < 1.50) {
+    tag = 'sure';
+    label = '✅ Valeur sûre';
+    reason = 'Cote < 1.50, gros favori à faible variance. Safe money.';
+  } else if (cote < 2.50 && edge >= 0.10) {
+    tag = 'value';
+    label = '💎 Value bet';
+    reason = 'Cote équilibrée et edge ' + (edge*100).toFixed(1) + '% — le marché sous-estime ce pari.';
+  } else if (cote >= 2.50 || edge < 0.05) {
+    tag = 'risky';
+    label = '🎲 Risqué';
+    reason = cote >= 2.50
+      ? 'Cote ≥ 2.50 — haute variance, à traiter avec prudence.'
+      : 'Edge < 5% — pas de vrai avantage sur le marché.';
+  } else {
+    // Cas intermediaire : cote 1.5-2.5 avec edge 5-10%
+    tag = 'value';
+    label = '💎 Value bet';
+    reason = 'Edge ' + (edge*100).toFixed(1) + '% sur une cote équilibrée.';
+  }
+  return { tag, label, reason, edge };
+}
+
+function buildRecoReason(cote, sport) {
+  const parts = [];
+  if (cote < 1.3)       parts.push('gros favori');
+  else if (cote < 1.6)  parts.push('favori clair');
+  else if (cote < 2.0)  parts.push('favori');
+  else if (cote < 2.5)  parts.push('equilibre');
+  else if (cote < 3.5)  parts.push('outsider');
+  else                  parts.push('gros outsider');
+  const s = (sport || '').toLowerCase();
+  if (s.includes('ufc'))         parts.push('UFC volatil');
+  else if (s.includes('nba'))    parts.push('NBA volatil');
+  else if (s.includes('tennis')) parts.push('tennis fiable');
+  else if (s.includes('rugby'))  parts.push('rugby fiable');
+  else if (s.includes('f1'))     parts.push('F1 fiable');
+  return parts.join(' · ');
+}
+
+function openMiseModal(match, pari, cote, sport, ptagClass, ptagLabel, conf) {
+  miseContext = { match, pari, cote: parseFloat(cote), sport, ptagClass, ptagLabel, conf: parseInt(conf) || 3 };
+  document.getElementById('mm-match').textContent = match;
+  const ptagEl = document.getElementById('mm-ptag-el');
+  ptagEl.textContent = ptagLabel;
+  ptagEl.className = 'ptag ' + ptagClass;
+  document.getElementById('mm-cote').textContent = 'Cote ' + cote;
+  document.getElementById('mm-sport').textContent = sport;
+  // Mise recommandee pre-remplie (entier uniquement)
+  const reco = calculateRecommendedStake(parseFloat(cote), sport);
+  miseContext.reco = reco;
+  document.getElementById('mm-mise').value = reco;
+  document.getElementById('preset-reco').textContent = reco + ' €';
+  document.getElementById('preset-reco').classList.add('active');
+  document.getElementById('reco-value').textContent = reco;
+  document.getElementById('reco-reason').textContent = buildRecoReason(parseFloat(cote), sport);
+  document.getElementById('preset-pct').textContent = '5% BK';
+  // Reset autres presets (desactivation)
+  document.querySelectorAll('.preset-btn').forEach(b => {
+    if (b.id !== 'preset-reco') b.classList.remove('active');
+  });
+  // Pre-remplissage Kelly : probabilite estimee a partir de la cote + edge sport
+  const estProb = Math.round(estimateProbability(parseFloat(cote), sport) * 100);
+  document.getElementById('kelly-prob').value = estProb;
+  updateKelly();
+  // Classification automatique basee sur cote + edge Kelly
+  const classification = autoClassifyBet(parseFloat(cote), sport);
+  miseContext.autoTag = classification.tag;
+  const chipEl = document.getElementById('auto-tag-chip');
+  chipEl.className = 'tag-chip ' + classification.tag;
+  chipEl.textContent = classification.label;
+  document.getElementById('auto-tag-reason').textContent = classification.reason;
+  // Reset alerte
+  document.getElementById('risk-alert').classList.remove('show');
+  updateMiseCalc();
+  document.getElementById('mise-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('mm-mise').focus(), 100);
+}
+
+function setPresetReco() {
+  if (!miseContext || !miseContext.reco) return;
+  document.getElementById('mm-mise').value = miseContext.reco;
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('preset-reco').classList.add('active');
+  updateMiseCalc();
+}
+
+function closeMiseModal(e) {
+  if (e && e.target !== document.getElementById('mise-overlay')) return;
+  document.getElementById('mise-overlay').classList.remove('open');
+  miseContext = null;
+}
+
+function setPreset(val) {
+  document.getElementById('mm-mise').value = val;
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  updateMiseCalc();
+}
+
+function setPresetPct() {
+  const init = getInit();
+  const val = Math.min(10, Math.max(1, Math.round(init * 0.05)));
+  document.getElementById('mm-mise').value = val;
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('preset-pct').classList.add('active');
+  updateMiseCalc();
+}
+
+function updateMiseCalc() {
+  const mise = parseFloat(document.getElementById('mm-mise').value) || 0;
+  const cote = miseContext ? miseContext.cote : 1;
+  const retour = mise * cote;
+  const profit = mise * (cote - 1);
+  document.getElementById('cc-mise').textContent = mise.toFixed(2) + ' €';
+  document.getElementById('cc-retour').textContent = retour.toFixed(2) + ' €';
+  document.getElementById('cc-profit').textContent = '+' + profit.toFixed(2) + ' €';
+  document.getElementById('btn-mise-confirm').disabled = mise <= 0;
+  // Alerte si mise > 10% bankroll
+  const init = getInit();
+  const pct = mise / init * 100;
+  const alert = document.getElementById('risk-alert');
+  if (pct > 10) {
+    document.getElementById('risk-msg').textContent = 'Cette mise represente ' + pct.toFixed(1) + '% de ta bankroll — au-dessus du seuil recommande de 10%.';
+    alert.classList.add('show');
+  } else {
+    alert.classList.remove('show');
+  }
+}
+
+function confirmMise() {
+  if (!miseContext) return;
+  const mise = parseFloat(document.getElementById('mm-mise').value);
+  if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
+  const today = new Date().toISOString().slice(0, 10);
+  bets.push({
+    id: Date.now(),
+    match: miseContext.match,
+    pari: miseContext.pari,
+    cote: miseContext.cote,
+    mise: mise,
+    sport: miseContext.sport,
+    date: today,
+    status: 'pending',
+    tag: miseContext.autoTag || 'sure',
+    confidence: miseContext.conf || 3
+  });
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+  document.getElementById('mise-overlay').classList.remove('open');
+  miseContext = null;
+  refreshBankroll();
+  renderPerf();
+  toast('Pari de ' + mise + ' EUR ajoute a la bankroll !', 'ok');
+}
+
+// Fermer avec Escape
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('mise-overlay').classList.remove('open');
+});
+
+// ===================== INJECT QUICK BET BUTTONS =====================
+function injectBetButtons() {
+  const configs = [
+    // ⚽ FOOT J29 — les .mc sont enfants directs du .journee-block:first-child
+    { panel:'foot', block:0, idx:0, match:'AJ Auxerre vs FC Nantes', pari:'Victoire Auxerre', cote:2.02, sport:'⚽ Foot', cls:'win-home', lbl:'Auxerre' },
+    { panel:'foot', block:0, idx:1, match:'Stade Rennais vs Angers SCO', pari:'Victoire Rennes', cote:1.36, sport:'⚽ Foot', cls:'win-home', lbl:'Rennes' },
+    { panel:'foot', block:0, idx:2, match:'OGC Nice vs Le Havre AC', pari:'Victoire Le Havre', cote:4.30, sport:'⚽ Foot', cls:'win-away', lbl:'Le Havre' },
+    { panel:'foot', block:0, idx:3, match:'Toulouse FC vs Lille OSC', pari:'Victoire Lille', cote:2.30, sport:'⚽ Foot', cls:'win-away', lbl:'Lille' },
+    { panel:'foot', block:0, idx:4, match:'Olympique Lyon vs FC Lorient', pari:'Victoire Lyon', cote:1.68, sport:'⚽ Foot', cls:'win-home', lbl:'Lyon' },
+    // ⚽ FOOT J30
+    { panel:'foot', block:1, idx:0, match:'RC Lens vs Toulouse FC', pari:'Victoire Lens', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Lens' },
+    { panel:'foot', block:1, idx:1, match:'FC Lorient vs Olympique Marseille', pari:'Victoire Marseille', cote:1.82, sport:'⚽ Foot', cls:'win-away', lbl:'Marseille' },
+    { panel:'foot', block:1, idx:2, match:'Angers SCO vs Le Havre AC', pari:'Match Nul', cote:3.00, sport:'⚽ Foot', cls:'draw', lbl:'Nul' },
+    { panel:'foot', block:1, idx:3, match:'Lille OSC vs OGC Nice', pari:'Victoire Lille', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Lille' },
+    { panel:'foot', block:1, idx:4, match:'AS Monaco vs AJ Auxerre', pari:'Victoire Monaco', cote:1.56, sport:'⚽ Foot', cls:'win-home', lbl:'Monaco' },
+    // 🏀 NBA
+    { panel:'nba', block:0, idx:0, match:'Denver Nuggets vs OKC Thunder', pari:'Victoire Denver', cote:2.20, sport:'🏀 NBA', cls:'win-home', lbl:'Denver' },
+    { panel:'nba', block:0, idx:1, match:'Boston Celtics vs New Orleans', pari:'Victoire Boston', cote:1.07, sport:'🏀 NBA', cls:'win-home', lbl:'Boston' },
+    { panel:'nba', block:0, idx:2, match:'Indiana Pacers vs Philadelphia', pari:'Victoire Philly', cote:1.10, sport:'🏀 NBA', cls:'win-away', lbl:'Philly' },
+    { panel:'nba', block:0, idx:3, match:'San Antonio Spurs vs Dallas Mavericks', pari:'Victoire Spurs', cote:1.04, sport:'🏀 NBA', cls:'win-home', lbl:'Spurs' },
+    { panel:'nba', block:0, idx:4, match:'Milwaukee Bucks vs Brooklyn Nets', pari:'Victoire Bucks', cote:1.25, sport:'🏀 NBA', cls:'win-home', lbl:'Bucks' },
+    // 🎾 TENNIS ATP Monte-Carlo
+    { panel:'tennis', block:0, idx:0, match:'Sinner vs Dimitrov', pari:'Victoire Sinner', cote:1.15, sport:'🎾 Tennis', cls:'win-home', lbl:'Sinner' },
+    { panel:'tennis', block:0, idx:1, match:'Alcaraz vs Tsitsipas', pari:'Victoire Tsitsipas', cote:3.20, sport:'🎾 Tennis', cls:'win-away', lbl:'Tsitsipas' },
+    { panel:'tennis', block:0, idx:2, match:'Zverev vs Hurkacz', pari:'Victoire Zverev', cote:1.45, sport:'🎾 Tennis', cls:'win-home', lbl:'Zverev' },
+    { panel:'tennis', block:0, idx:3, match:'Djokovic vs Ruud', pari:'Victoire Ruud', cote:2.35, sport:'🎾 Tennis', cls:'win-away', lbl:'Ruud' },
+    { panel:'tennis', block:0, idx:4, match:'Medvedev vs de Minaur', pari:'Victoire de Minaur', cote:2.15, sport:'🎾 Tennis', cls:'win-away', lbl:'de Minaur' },
+    // 🏉 RUGBY Top 14
+    { panel:'rugby', block:0, idx:0, match:'Toulouse vs Castres', pari:'Victoire Toulouse', cote:1.12, sport:'🏉 Rugby', cls:'win-home', lbl:'Toulouse' },
+    { panel:'rugby', block:0, idx:1, match:'UBB Bordeaux vs Pau', pari:'Victoire UBB', cote:1.25, sport:'🏉 Rugby', cls:'win-home', lbl:'UBB' },
+    { panel:'rugby', block:0, idx:2, match:'La Rochelle vs Lyon', pari:'Victoire La Rochelle', cote:1.40, sport:'🏉 Rugby', cls:'win-home', lbl:'La Rochelle' },
+    { panel:'rugby', block:0, idx:3, match:'Racing 92 vs Montpellier', pari:'Victoire Racing 92', cote:1.32, sport:'🏉 Rugby', cls:'win-home', lbl:'Racing 92' },
+    // 🏎️ FORMULE 1
+    { panel:'f1', block:0, idx:0, match:'GP Bahreïn — Verstappen', pari:'Verstappen Podium', cote:1.20, sport:'🏎️ F1', cls:'win-home', lbl:'Verstappen' },
+    { panel:'f1', block:0, idx:1, match:'GP Bahreïn — Norris', pari:'Norris Top 6', cote:1.15, sport:'🏎️ F1', cls:'win-home', lbl:'Norris' },
+    { panel:'f1', block:0, idx:2, match:'GP Bahreïn — 2 Ferrari points', pari:'Les 2 Ferrari dans les points', cote:1.25, sport:'🏎️ F1', cls:'win-home', lbl:'Ferrari' },
+  ];
+
+  configs.forEach(c => {
+    const panel = document.getElementById('panel-' + c.panel);
+    if (!panel) return;
+    const blocks = panel.querySelectorAll('.journee-block');
+    const block = blocks[c.block];
+    if (!block) return;
+    const cards = block.querySelectorAll('.mc');
+    const card = cards[c.idx];
+    if (!card) return;
+    appendBetBtn(card, c);
+  });
+
+  // UFC cards : querySelectorAll direct
+  const ufcConfigs = [
+    { match:'UFC 327 — Procházka vs Ulberg', pari:'Victoire Ulberg (décision)', cote:2.00, sport:'🥊 UFC', cls:'win-away', lbl:'Ulberg' },
+    { match:'UFC 327 — Costa vs Murzakanov', pari:'Victoire Murzakanov', cote:1.50, sport:'🥊 UFC', cls:'win-away', lbl:'Murzakanov' },
+    { match:'UFC 327 — Blaydes vs Hokit', pari:'Victoire Blaydes (TKO)', cote:1.25, sport:'🥊 UFC', cls:'win-home', lbl:'Blaydes' },
+    { match:'UFC 327 — Sterling vs Ribovics', pari:'Victoire Ribovics (décision)', cote:3.10, sport:'🥊 UFC', cls:'win-away', lbl:'Ribovics' },
+  ];
+  const ufcCards = document.querySelectorAll('#panel-ufc .ufc-card');
+  ufcCards.forEach((card, i) => {
+    if (ufcConfigs[i]) appendBetBtn(card, ufcConfigs[i]);
+  });
+}
+
+// ===================== PAGE AUJOURD'HUI =====================
+let todaySportFilter = 'all';
+
+function collectAllPronos() {
+  // Récupère tous les boutons data-match générés par injectBetButtons
+  // avec leur carte parente pour la confiance déjà lue
+  const list = [];
+  document.querySelectorAll('.btn-quick-bet[data-match]').forEach(btn => {
+    list.push({
+      match: btn.dataset.match,
+      pari: btn.dataset.pari,
+      cote: parseFloat(btn.dataset.cote),
+      sport: btn.dataset.sport,
+      cls: btn.dataset.cls,
+      lbl: btn.dataset.lbl,
+      conf: parseInt(btn.dataset.conf) || 3,
+    });
+  });
+  return list;
+}
+
+function filterToday(sport, btn) {
+  todaySportFilter = sport;
+  document.querySelectorAll('.today-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderToday();
+}
+
+function renderToday() {
+  const grid = document.getElementById('today-grid');
+  if (!grid) return;
+  renderAutoCombos();
+  let pronos = collectAllPronos();
+  if (todaySportFilter !== 'all') {
+    pronos = pronos.filter(p => p.sport === todaySportFilter);
+  }
+  // Tri par cote croissante (du plus sûr au plus risqué)
+  pronos.sort((a,b) => a.cote - b.cote);
+  if (!pronos.length) {
+    grid.innerHTML = '<p style="color:var(--muted);text-align:center;padding:40px 0;grid-column:1/-1">Aucun pronostic disponible pour ce filtre.</p>';
+    return;
+  }
+  const pendingMatches = new Set(bets.filter(b => b.status === 'pending').map(b => b.match));
+  const safeAttr = s => String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  const safeJs = s => String(s).replace(/\\/g,'\\\\').replace(/'/g,"\\'");
+  grid.innerHTML = pronos.map(p => {
+    const stars = '★'.repeat(p.conf) + '☆'.repeat(5 - p.conf);
+    const isPending = pendingMatches.has(p.match);
+    const isSelected = comboLegs.some(l => l.match === p.match);
+    const cardClass = 'today-card' + (comboMode ? ' combo-mode' : '') + (isSelected ? ' combo-selected' : '');
+    const btnHtml = comboMode
+      ? '' // en mode combiné, on clique la carte entière
+      : (isPending
+        ? `<button class="tc-btn cancel" onclick="cancelBetByMatch('${safeJs(p.match)}');renderToday()">✕ Annuler</button>`
+        : `<button class="tc-btn" onclick="openMiseModal('${safeJs(p.match)}','${safeJs(p.pari)}',${p.cote},'${safeJs(p.sport)}','${p.cls}','${safeJs(p.lbl)}',${p.conf})">+ Parier</button>`);
+    const cardOnclick = comboMode
+      ? `onclick="toggleComboLeg('${safeJs(p.match)}','${safeJs(p.pari)}',${p.cote},'${safeJs(p.sport)}',${p.conf})"`
+      : '';
+    return `<div class="${cardClass}" ${cardOnclick}>
+      <div class="tc-top">
+        <div class="tc-sport">${p.sport.charAt(0)}</div>
+        <div class="tc-sport-name">${safeAttr(p.sport)}</div>
+        <div class="tc-conf">${stars}</div>
+      </div>
+      <div class="tc-match">${safeAttr(p.match)}</div>
+      <div class="tc-pari">🎯 ${safeAttr(p.pari)}</div>
+      <div class="tc-bottom">
+        <div class="tc-cote">${p.cote.toFixed(2)}</div>
+        ${btnHtml}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ===================== COMBINES AUTO-SUGGERES =====================
+// Genere 3-4 suggestions de combines basees sur des strategies distinctes :
+// - Double securite : 2 picks a tres faible cote
+// - Triple cross-sport : 3 sports differents, forte confiance
+// - Triple value : 3 picks avec meilleur edge Kelly
+// - Quinte favoris : 5 favoris en serie
+function generateAutoCombos() {
+  const pronos = collectAllPronos();
+  if (pronos.length < 2) return [];
+  // Enrichir avec prob et edge
+  const enriched = pronos.map(p => {
+    const prob = estimateProbability(p.cote, p.sport);
+    const edge = prob * p.cote - 1;
+    return { ...p, prob, edge };
+  });
+  const combos = [];
+  // Helper pour calculer cote combinee
+  const cc = legs => legs.reduce((pr,l) => pr * l.cote, 1);
+
+  // 1. Double Securite : 2 picks cote < 1.40, sports differents si possible
+  const veryLow = enriched.filter(p => p.cote < 1.40).sort((a,b) => a.cote - b.cote);
+  if (veryLow.length >= 2) {
+    // Essayer de prendre 2 sports differents
+    const legs = [veryLow[0]];
+    const other = veryLow.find(p => p.sport !== veryLow[0].sport) || veryLow[1];
+    legs.push(other);
+    combos.push({
+      name: 'Double Sécurité',
+      emoji: '🔒',
+      description: 'Les 2 pronos les plus fiables — un combiné quasi garanti',
+      legs,
+    });
+  }
+
+  // 2. Triple Cross-Sport : 3 sports differents, confiance >= 4
+  const bySport = {};
+  enriched.filter(p => p.conf >= 4).sort((a,b) => a.cote - b.cote).forEach(p => {
+    if (!bySport[p.sport]) bySport[p.sport] = p;
+  });
+  const crossSport = Object.values(bySport).slice(0, 3);
+  if (crossSport.length >= 3) {
+    combos.push({
+      name: 'Triple Cross-Sport',
+      emoji: '🌐',
+      description: '3 sports différents — diversification maximale et risques décorrélés',
+      legs: crossSport,
+    });
+  }
+
+  // 3. Triple Value : 3 picks avec meilleur edge (cote 1.5-3)
+  const valueBets = enriched
+    .filter(p => p.cote >= 1.5 && p.cote < 3.0)
+    .sort((a,b) => b.edge - a.edge)
+    .slice(0, 3);
+  if (valueBets.length >= 3) {
+    combos.push({
+      name: 'Triple Value',
+      emoji: '💎',
+      description: 'Les 3 meilleurs edges Kelly dans la zone équilibrée',
+      legs: valueBets,
+    });
+  }
+
+  // 4. Quinte Favoris : 5 favoris cote < 1.60 avec forte confiance
+  const bigFavs = enriched
+    .filter(p => p.cote < 1.60 && p.conf >= 3)
+    .sort((a,b) => a.cote - b.cote)
+    .slice(0, 5);
+  if (bigFavs.length >= 5) {
+    combos.push({
+      name: 'Quinté Favoris',
+      emoji: '🏆',
+      description: '5 favoris alignés — cote combinée attractive mais plus de risque',
+      legs: bigFavs,
+    });
+  }
+
+  // Calculer cote et gain pour chaque combo
+  return combos.map(c => {
+    const combinedCote = cc(c.legs);
+    return {
+      ...c,
+      combinedCote,
+      potentialWin10: (10 * combinedCote).toFixed(2),
+    };
+  });
+}
+
+function renderAutoCombos() {
+  const el = document.getElementById('auto-combos');
+  if (!el) return;
+  const combos = generateAutoCombos();
+  if (!combos.length) {
+    el.innerHTML = '<p style="color:var(--muted);font-size:12px;grid-column:1/-1;text-align:center;padding:20px 0">Pas assez de pronos disponibles pour générer des combinés.</p>';
+    return;
+  }
+  const safeAttr = s => String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  el.innerHTML = combos.map((c, i) => {
+    const legsHtml = c.legs.map(l => `
+      <div class="acc-leg">
+        <div class="acc-leg-info">
+          <div>${l.sport.charAt(0)} ${safeAttr(l.match)}</div>
+          <div class="acc-leg-pari">${safeAttr(l.pari)}</div>
+        </div>
+        <span class="acc-leg-cote">${l.cote.toFixed(2)}</span>
+      </div>`).join('');
+    return `<div class="auto-combo-card">
+      <div class="acc-header">
+        <div class="acc-name">${c.emoji} ${c.name}</div>
+        <div class="acc-cote">×${c.combinedCote.toFixed(2)}</div>
+      </div>
+      <div class="acc-desc">${c.description}</div>
+      <div class="acc-legs">${legsHtml}</div>
+      <div class="acc-footer">
+        <div class="acc-gain">Pour 10 € → <span>${c.potentialWin10} €</span></div>
+        <button class="acc-play" onclick="playAutoCombo(${i})">▶ Jouer</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function playAutoCombo(idx) {
+  const combos = generateAutoCombos();
+  const combo = combos[idx];
+  if (!combo) return;
+  comboMode = true;
+  comboLegs = combo.legs.map(l => ({
+    match: l.match,
+    pari: l.pari,
+    cote: l.cote,
+    sport: l.sport,
+    conf: l.conf,
+  }));
+  document.getElementById('combo-toggle').classList.add('active');
+  updateComboBar();
+  renderToday();
+  // Scroll vers la barre combinee
+  setTimeout(() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }), 100);
+  toast('🔗 ' + combo.name + ' chargé — ajuste la mise et confirme', 'ok');
+}
+
+// ===================== BUILDER COMBINE =====================
+let comboMode = false;
+let comboLegs = [];
+
+function toggleComboMode() {
+  comboMode = !comboMode;
+  document.getElementById('combo-toggle').classList.toggle('active', comboMode);
+  if (!comboMode) {
+    comboLegs = [];
+    document.getElementById('combo-bar').classList.remove('show');
+  } else {
+    updateComboBar();
+  }
+  renderToday();
+}
+
+function toggleComboLeg(match, pari, cote, sport, conf) {
+  const idx = comboLegs.findIndex(l => l.match === match);
+  if (idx >= 0) {
+    comboLegs.splice(idx, 1);
+  } else {
+    comboLegs.push({ match, pari, cote: parseFloat(cote), sport, conf: parseInt(conf) || 3 });
+  }
+  updateComboBar();
+  renderToday();
+}
+
+function removeComboLeg(idx) {
+  comboLegs.splice(idx, 1);
+  updateComboBar();
+  renderToday();
+}
+
+function clearCombo() {
+  comboLegs = [];
+  updateComboBar();
+  renderToday();
+}
+
+function updateComboBar() {
+  const bar = document.getElementById('combo-bar');
+  if (!bar) return;
+  if (comboLegs.length === 0) {
+    bar.classList.remove('show');
+    return;
+  }
+  bar.classList.add('show');
+  document.getElementById('cb-count').textContent = comboLegs.length + ' pari(s)';
+  const legsHtml = comboLegs.map((l, i) =>
+    `<div class="cb-leg">
+      <div class="cb-leg-info">
+        <div class="cb-leg-match">${l.sport.charAt(0)} ${l.match}</div>
+        <div class="cb-leg-pari">${l.pari}</div>
+      </div>
+      <span class="cb-leg-cote">${l.cote.toFixed(2)}</span>
+      <button class="cb-leg-remove" onclick="removeComboLeg(${i})">✕</button>
+    </div>`
+  ).join('');
+  document.getElementById('cb-legs').innerHTML = legsHtml;
+  updateComboStats();
+  document.getElementById('cb-confirm').disabled = comboLegs.length < 2;
+}
+
+function updateComboStats() {
+  const combinedCote = comboLegs.reduce((p, l) => p * l.cote, 1);
+  const mise = parseFloat(document.getElementById('cb-mise').value) || 0;
+  const gain = mise * combinedCote;
+  const profit = gain - mise;
+  document.getElementById('cb-cote').textContent = combinedCote.toFixed(2);
+  document.getElementById('cb-gain').textContent = profit >= 0 ? '+' + profit.toFixed(2) + '€' : profit.toFixed(2) + '€';
+}
+
+function confirmCombo() {
+  if (comboLegs.length < 2) { toast('Il faut au moins 2 paris pour un combiné', 'err'); return; }
+  const mise = parseFloat(document.getElementById('cb-mise').value);
+  if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
+  const combinedCote = comboLegs.reduce((p, l) => p * l.cote, 1);
+  const avgConf = Math.round(comboLegs.reduce((s, l) => s + l.conf, 0) / comboLegs.length);
+  const today = new Date().toISOString().slice(0, 10);
+  const shortNames = comboLegs.map(l => l.match.split(' vs ')[0].split(' — ')[0]).join(' + ');
+  bets.push({
+    id: Date.now(),
+    match: 'Combiné : ' + shortNames,
+    pari: comboLegs.length + ' pronos combinés',
+    cote: +combinedCote.toFixed(3),
+    mise: mise,
+    sport: '🔗 Combiné',
+    date: today,
+    status: 'pending',
+    tag: 'combo',
+    confidence: avgConf,
+    isCombo: true,
+    legs: comboLegs.slice()
+  });
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+  comboLegs = [];
+  comboMode = false;
+  document.getElementById('combo-toggle').classList.remove('active');
+  document.getElementById('combo-bar').classList.remove('show');
+  refreshBankroll();
+  renderToday();
+  toast('✅ Combiné créé (cote ' + combinedCote.toFixed(2) + ')', 'ok');
+}
+
+function appendBetBtn(card, c) {
+  const gain10 = (10 * (c.cote - 1)).toFixed(2);
+  // Niveau de confiance lu depuis les dots du DOM (1-5)
+  const conf = card.querySelectorAll('.dot.on').length || 3;
+  const row = document.createElement('div');
+  row.className = 'quick-bet-row';
+  const safe = s => s.replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
+  row.innerHTML = `
+    <div class="gain-preview">Pour 10 € → profit <span>+${gain10} €</span></div>
+    <button class="btn-quick-bet"
+      data-match="${safe(c.match)}"
+      data-pari="${safe(c.pari)}"
+      data-cote="${c.cote}"
+      data-sport="${safe(c.sport)}"
+      data-cls="${c.cls}"
+      data-lbl="${safe(c.lbl)}"
+      data-conf="${conf}"
+      onclick="openMiseModal('${safe(c.match)}','${safe(c.pari)}',${c.cote},'${safe(c.sport)}','${c.cls}','${safe(c.lbl)}',${conf})">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+      Parier
+    </button>`;
+  card.appendChild(row);
+}
+
+
+// ===================== KELLY =====================
+function updateKelly() {
+  const prob = parseFloat(document.getElementById('kelly-prob').value) / 100;
+  const cote = miseContext ? miseContext.cote : 1;
+  if (!prob || prob <= 0 || prob >= 1) { document.getElementById('kelly-val').textContent = '—'; return; }
+  const edge = prob * cote - 1;
+  if (edge <= 0) { document.getElementById('kelly-val').textContent = 'Pas de value'; return; }
+  const kelly = edge / (cote - 1);
+  const init = getInit();
+  // Clamp entre 1 et 10€ (valeur entiere), fraction Kelly (½, ¼...) appliquee
+  const rawMise = kelly * init * getKellyFrac();
+  const mise = Math.min(10, Math.max(1, Math.round(rawMise)));
+  document.getElementById('kelly-val').textContent = mise + ' €';
+  document.getElementById('kelly-val').dataset.mise = mise;
+}
+
+function applyKelly() {
+  const val = parseFloat(document.getElementById('kelly-val').dataset.mise);
+  if (!val || isNaN(val)) { toast('Entre ta probabilité estimée d\'abord', 'err'); return; }
+  document.getElementById('mm-mise').value = val;
+  updateMiseCalc();
+  toast('Mise Kelly appliquée : ' + val + ' €', 'ok');
+}
+
+// ===================== PAGE PERFORMANCES =====================
+function renderPerf() {
+  if (!document.getElementById('perf-summary')) return;
+  const resolved = bets.filter(b => b.status !== 'pending');
+  const won = bets.filter(b => b.status === 'won');
+  const lost = bets.filter(b => b.status === 'lost');
+  const pending = bets.filter(b => b.status === 'pending');
+  const totalMise = resolved.reduce((s, b) => s + b.mise, 0);
+  const totalGain = won.reduce((s, b) => s + b.mise * (b.cote - 1), 0);
+  const totalLoss = lost.reduce((s, b) => s + b.mise, 0);
+  const net = totalGain - totalLoss;
+  const roi = totalMise > 0 ? (net / totalMise * 100) : 0;
+  const taux = resolved.length > 0 ? Math.round(won.length / resolved.length * 100) : 0;
+  const avgCoteWon = won.length > 0 ? (won.reduce((s, b) => s + b.cote, 0) / won.length) : 0;
+  const avgCoteAll = resolved.length > 0 ? (resolved.reduce((s, b) => s + b.cote, 0) / resolved.length) : 0;
+
+  // Summary row
+  const summaryEl = document.getElementById('perf-summary');
+  summaryEl.innerHTML = [
+    { v: bets.length, l: 'Total paris' },
+    { v: resolved.length, l: 'Résolus' },
+    { v: pending.length, l: 'En attente' },
+    { v: taux + '%', l: 'Taux réussite', col: taux >= 50 ? 'var(--green)' : 'var(--red)' },
+    { v: (roi >= 0 ? '+' : '') + roi.toFixed(1) + '%', l: 'ROI', col: roi >= 0 ? 'var(--green)' : 'var(--red)' },
+    { v: (net >= 0 ? '+' : '') + net.toFixed(2) + '€', l: 'Gains nets', col: net >= 0 ? 'var(--green)' : 'var(--red)' },
+    { v: avgCoteAll.toFixed(2) || '—', l: 'Cote moy.' },
+    { v: avgCoteWon.toFixed(2) || '—', l: 'Cote moy. gagnée' },
+  ].map(s => `<div class="ss-item"><div class="ss-val" style="color:${s.col || 'var(--text)'}">${s.v}</div><div class="ss-lbl">${s.l}</div></div>`).join('');
+
+  // Série en cours
+  const serieEl = document.getElementById('perf-serie');
+  const streakEl = document.getElementById('perf-streak');
+  const last10 = [...resolved].sort((a,b) => b.id - a.id).slice(0, 10).reverse();
+  streakEl.innerHTML = last10.map(b =>
+    `<div class="streak-dot ${b.status === 'won' ? 'w' : 'l'}" title="${b.match}">${b.status === 'won' ? 'W' : 'L'}</div>`
+  ).join('') + (pending.length ? `<div class="streak-dot p" title="${pending.length} en attente">…</div>` : '');
+
+  // Série actuelle
+  let streak = 0, streakType = '';
+  const sorted = [...resolved].sort((a,b) => b.id - a.id);
+  if (sorted.length > 0) {
+    streakType = sorted[0].status;
+    for (const b of sorted) { if (b.status === streakType) streak++; else break; }
+  }
+  if (streak > 0) {
+    const cls = streakType === 'won' ? 'hot' : 'cold';
+    const emoji = streakType === 'won' ? '🔥' : '❄️';
+    serieEl.innerHTML = `<span class="serie-badge ${cls}">${emoji} ${streak} ${streakType === 'won' ? 'victoire(s)' : 'défaite(s)'} consécutive(s)</span>`;
+  } else {
+    serieEl.innerHTML = `<span class="serie-badge neutral">— Aucun historique</span>`;
+  }
+
+  // Stats par sport
+  const sports = {};
+  bets.forEach(b => {
+    const s = b.sport || '?';
+    if (!sports[s]) sports[s] = { won: 0, lost: 0, pending: 0, mise: 0, gain: 0 };
+    if (b.status === 'won') { sports[s].won++; sports[s].gain += b.mise * (b.cote - 1); }
+    else if (b.status === 'lost') { sports[s].lost++; sports[s].gain -= b.mise; }
+    else sports[s].pending++;
+    sports[s].mise += b.status !== 'pending' ? b.mise : 0;
+  });
+
+  const sportColors = { 'foot': 'rgba(79,142,247,.08)', 'nba': 'rgba(249,115,22,.08)', 'ufc': 'rgba(244,63,94,.08)' };
+  const sportVarColors = { 'foot': 'var(--blue)', 'nba': 'var(--orange)', 'ufc': 'var(--red)' };
+  const gridEl = document.getElementById('sport-stats-grid');
+  gridEl.innerHTML = Object.entries(sports).map(([sport, d]) => {
+    const res = d.won + d.lost;
+    const t = res > 0 ? Math.round(d.won / res * 100) : 0;
+    const key = sport.includes('Foot') ? 'foot' : sport.includes('NBA') ? 'nba' : 'ufc';
+    const emoji = sport.includes('Foot') ? '⚽' : sport.includes('NBA') ? '🏀' : '🥊';
+    const roi_s = d.mise > 0 ? (d.gain / d.mise * 100).toFixed(1) : '0.0';
+    return `<div class="sport-stat-card" style="--sc:${sportVarColors[key] || 'var(--blue)'}">
+      <div class="ssc-sport">${emoji}</div>
+      <div class="ssc-name">${sport}</div>
+      <div class="ssc-stats">
+        <div class="ssc-stat"><div class="ssc-val">${d.won}</div><div class="ssc-lbl">Gagnés</div></div>
+        <div class="ssc-stat"><div class="ssc-val">${d.lost}</div><div class="ssc-lbl">Perdus</div></div>
+        <div class="ssc-stat"><div class="ssc-val">${t}%</div><div class="ssc-lbl">Taux</div></div>
+        <div class="ssc-stat"><div class="ssc-val" style="color:${parseFloat(roi_s)>=0?'var(--green)':'var(--red)'}">${roi_s}%</div><div class="ssc-lbl">ROI</div></div>
+      </div>
+      <div class="ssc-taux-bar"><div class="ssc-taux-fill" style="width:${t}%"></div></div>
+    </div>`;
+  }).join('') || '<p style="color:var(--muted);font-size:13px;">Aucun pari enregistré</p>';
+
+  // Graphique principal
+  drawPerfChart(resolved);
+
+  // Barres par sport
+  const sportBarsEl = document.getElementById('sport-bars');
+  sportBarsEl.innerHTML = Object.entries(sports).map(([s, d]) => {
+    const res = d.won + d.lost;
+    if (!res) return '';
+    const pctW = Math.round(d.won / res * 100);
+    const pctL = 100 - pctW;
+    return `<div class="perf-bar-row"><div class="pbr-label" style="font-size:11px">${s}</div>
+      <div style="flex:1">
+        <div class="pbr-bar" style="height:16px"><div class="pbr-fill won" style="width:${pctW}%">${pctW > 20 ? pctW+'%' : ''}</div></div>
+        <div class="pbr-bar" style="height:16px;margin-top:3px"><div class="pbr-fill lost" style="width:${pctL}%">${pctL > 20 ? pctL+'%' : ''}</div></div>
+      </div>
+      <div class="pbr-val" style="color:${d.gain>=0?'var(--green)':'var(--red)'}">${d.gain>=0?'+':''}${d.gain.toFixed(1)}€</div>
+    </div>`;
+  }).join('') || '<p style="color:var(--muted);font-size:12px;padding:8px 0">Aucune donnée</p>';
+
+  // Barres par tag
+  const tags = {};
+  resolved.forEach(b => {
+    const tag = b.tag || 'sure';
+    if (!tags[tag]) tags[tag] = { won: 0, lost: 0 };
+    if (b.status === 'won') tags[tag].won++;
+    else tags[tag].lost++;
+  });
+  const tagLabels = { sure:'Valeur sure', value:'Value bet', risky:'Risque', combo:'Combine' };
+  const tagBarsEl = document.getElementById('tag-bars');
+  tagBarsEl.innerHTML = Object.entries(tags).map(([tag, d]) => {
+    const res = d.won + d.lost;
+    const pct = Math.round(d.won / res * 100);
+    return `<div class="perf-bar-row">
+      <div class="pbr-label" style="font-size:10px">${tagLabels[tag] || tag}</div>
+      <div class="pbr-bar"><div class="pbr-fill won" style="width:${pct}%">${pct}%</div></div>
+      <div class="pbr-val">${d.won}/${res}</div>
+    </div>`;
+  }).join('') || '<p style="color:var(--muted);font-size:12px;padding:8px 0">Aucune donnée</p>';
+
+  // Barres par fourchette de cotes
+  const coteRanges = [
+    { label:'< 1.5', min:1, max:1.5 },
+    { label:'1.5–2.0', min:1.5, max:2.0 },
+    { label:'2.0–2.5', min:2.0, max:2.5 },
+    { label:'2.5–3.5', min:2.5, max:3.5 },
+    { label:'> 3.5', min:3.5, max:999 },
+  ];
+  const coteBarsEl = document.getElementById('cote-bars');
+  coteBarsEl.innerHTML = coteRanges.map(r => {
+    const inRange = resolved.filter(b => b.cote >= r.min && b.cote < r.max);
+    if (!inRange.length) return '';
+    const w = inRange.filter(b => b.status === 'won').length;
+    const pct = Math.round(w / inRange.length * 100);
+    const gainRange = inRange.reduce((s,b) => s + (b.status==='won' ? b.mise*(b.cote-1) : -b.mise), 0);
+    return `<div class="perf-bar-row">
+      <div class="pbr-label">${r.label}</div>
+      <div class="pbr-bar"><div class="pbr-fill won" style="width:${pct}%">${pct}%</div></div>
+      <div class="pbr-val" style="color:${gainRange>=0?'var(--green)':'var(--red)'};min-width:70px">${gainRange>=0?'+':''}${gainRange.toFixed(1)}€</div>
+    </div>`;
+  }).join('') || '<p style="color:var(--muted);font-size:12px;padding:8px 0">Aucun pari resolu</p>';
+
+  // Stats par niveau de confiance (dots 1-5)
+  const confBarsEl = document.getElementById('conf-bars');
+  const confInsightEl = document.getElementById('conf-insight');
+  if (confBarsEl) {
+    const confLevels = [1,2,3,4,5];
+    const confData = confLevels.map(lvl => {
+      const inLvl = resolved.filter(b => (b.confidence || 3) === lvl);
+      const w = inLvl.filter(b => b.status === 'won').length;
+      const l = inLvl.filter(b => b.status === 'lost').length;
+      const mise = inLvl.reduce((s,b) => s + b.mise, 0);
+      const gain = inLvl.reduce((s,b) => s + (b.status==='won' ? b.mise*(b.cote-1) : -b.mise), 0);
+      return { lvl, count: inLvl.length, w, l, mise, gain, pct: inLvl.length ? Math.round(w/inLvl.length*100) : 0 };
+    });
+    confBarsEl.innerHTML = confData.map(d => {
+      if (!d.count) return '';
+      const stars = '★'.repeat(d.lvl) + '☆'.repeat(5-d.lvl);
+      return `<div class="perf-bar-row">
+        <div class="pbr-label" style="font-size:11px;color:var(--gold);letter-spacing:1px">${stars}</div>
+        <div class="pbr-bar"><div class="pbr-fill won" style="width:${d.pct}%">${d.pct}% (${d.w}/${d.count})</div></div>
+        <div class="pbr-val" style="color:${d.gain>=0?'var(--green)':'var(--red)'};min-width:70px">${d.gain>=0?'+':''}${d.gain.toFixed(1)}€</div>
+      </div>`;
+    }).join('') || '<p style="color:var(--muted);font-size:12px;padding:8px 0">Aucun pari résolu avec niveau de confiance</p>';
+    // Insight : la confiance elevee gagne-t-elle vraiment plus ?
+    const high = confData.filter(d => d.lvl >= 4 && d.count > 0);
+    const low = confData.filter(d => d.lvl <= 2 && d.count > 0);
+    if (high.length && low.length) {
+      const hTaux = high.reduce((s,d)=>s+d.w,0) / high.reduce((s,d)=>s+d.count,0) * 100;
+      const lTaux = low.reduce((s,d)=>s+d.w,0) / low.reduce((s,d)=>s+d.count,0) * 100;
+      const diff = hTaux - lTaux;
+      if (diff > 10) {
+        confInsightEl.textContent = '✅ Ta methode fonctionne : tes pronos a forte confiance (★★★★+) gagnent ' + diff.toFixed(0) + ' points de plus que ceux a faible confiance.';
+      } else if (diff < -5) {
+        confInsightEl.textContent = '⚠️ Attention : tes pronos a forte confiance gagnent moins que les faibles. Revois ta grille d\'evaluation.';
+      } else {
+        confInsightEl.textContent = 'ℹ️ Pas de difference significative entre niveaux de confiance. Continue a collecter des donnees.';
+      }
+    } else {
+      confInsightEl.textContent = 'Besoin de plus de paris resolus pour analyser ta grille de confiance.';
+    }
+  }
+
+  // Meilleurs/pires paris
+  const worstEl = document.getElementById('worst-bets');
+  const bestEl = document.getElementById('best-bets');
+  const wonSorted = won.map(b => ({ ...b, profit: +(b.mise * (b.cote - 1)).toFixed(2) })).sort((a,b) => b.profit - a.profit);
+  const lostSorted = lost.map(b => ({ ...b, loss: -b.mise })).sort((a,b) => a.loss - b.loss);
+  const betLine = (b, v, col) => `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);">
+    <div><div style="font-size:12px;font-weight:700">${b.match}</div><div style="font-size:10px;color:var(--muted)">${b.sport} · Cote ${b.cote}</div></div>
+    <div style="font-family:DM Mono,monospace;font-size:13px;font-weight:700;color:${col}">${v}</div>
+  </div>`;
+  bestEl.innerHTML = wonSorted.slice(0, 3).map(b => betLine(b, '+' + b.profit + '€', 'var(--green)')).join('') || '<p style="color:var(--muted);font-size:12px">Aucun pari gagné</p>';
+  worstEl.innerHTML = lostSorted.slice(0, 3).map(b => betLine(b, b.loss.toFixed(2) + '€', 'var(--red)')).join('') || '<p style="color:var(--muted);font-size:12px">Aucun pari perdu</p>';
+
+  // Mise à jour du compteur accueil
+  const homePerfSummary = document.getElementById('home-perf-summary');
+  if (homePerfSummary) {
+    homePerfSummary.textContent = bets.length + ' paris · ' + taux + '% réussite';
+  }
+}
+
+function drawPerfChart(resolved) {
+  const svg = document.getElementById('perf-chart-main');
+  if (!svg) return;
+  if (!resolved.length) {
+    svg.innerHTML = '<text x="450" y="95" text-anchor="middle" fill="#64748b" font-size="13" font-family="Syne">Aucun pari resolu</text>';
+    return;
+  }
+  const init = getInit();
+  const sorted = [...resolved].sort((a,b) => a.id - b.id);
+  const points = [{ x: 0, v: init }];
+  let cur = init;
+  sorted.forEach((b, i) => {
+    cur += b.status === 'won' ? b.mise * (b.cote - 1) : -b.mise;
+    points.push({ x: i + 1, v: cur });
+  });
+  const W = 900, H = 180, pad = 24;
+  const ys = points.map(p => p.v);
+  const minY = Math.min(...ys), maxY = Math.max(...ys);
+  const rangeY = maxY - minY || 1;
+  const toX = x => pad + x / (points.length - 1 || 1) * (W - 2 * pad);
+  const toY = y => H - pad - (y - minY) / rangeY * (H - 2 * pad);
+  const pts = points.map(p => `${toX(p.x)},${toY(p.v)}`).join(' ');
+  const isPos = cur >= init;
+  const color = isPos ? '#10b981' : '#f43f5e';
+  const lastX = toX(points[points.length - 1].x);
+  const lastY = toY(cur);
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${color}" stop-opacity=".25"/>
+        <stop offset="100%" stop-color="${color}" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path d="M ${toX(0)},${toY(init)} L ${pts} L ${lastX},${H} L ${toX(0)},${H} Z" fill="url(#pg)"/>
+    <line x1="${toX(0)}" y1="${toY(init)}" x2="${lastX}" y2="${toY(init)}" stroke="${color}" stroke-width="1" stroke-dasharray="4 4" opacity=".3"/>
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${toX(0)}" cy="${toY(init)}" r="4" fill="${color}"/>
+    <circle cx="${lastX}" cy="${lastY}" r="6" fill="${color}"/>
+    <text x="${lastX + 10}" y="${lastY + 4}" fill="${color}" font-size="11" font-family="DM Mono" font-weight="700">${cur.toFixed(2)}€</text>
+  `;
+}
+
+// ===================== EXPORT =====================
+function exportCSV() {
+  if (!bets.length) { toast('Aucun pari à exporter', 'err'); return; }
+  const headers = ['Date', 'Sport', 'Match', 'Pari', 'Cote', 'Mise', 'Tag', 'Statut', 'Gain/Perte'];
+  const rows = bets.map(b => {
+    const gain = b.status === 'won' ? +(b.mise*(b.cote-1)).toFixed(2) : b.status === 'lost' ? -b.mise : 0;
+    return [b.date, b.sport, b.match, b.pari, b.cote, b.mise, b.tag || '', b.status, gain].join(';');
+  });
+  const csv = [headers.join(';'), ...rows].join('\n');
+  const a = document.createElement('a');
+  a.href = 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv);
+  a.download = 'bankroll_' + new Date().toISOString().slice(0,10) + '.csv';
+  a.click();
+  toast('CSV exporté !', 'ok');
+}
+
+function exportJSON() {
+  if (!bets.length) { toast('Aucun pari à exporter', 'err'); return; }
+  const a = document.createElement('a');
+  a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify({ bankroll_init: getInit(), bets }, null, 2));
+  a.download = 'bankroll_' + new Date().toISOString().slice(0,10) + '.json';
+  a.click();
+  toast('JSON exporté !', 'ok');
+}
+
+function printPerf() { window.print(); }
+
+// ===================== INIT =====================
+document.getElementById('bankroll-init').value=localStorage.getItem('lcp-init')||100;
+document.getElementById('f-date').value=new Date().toISOString().slice(0,10);
+document.getElementById('cfg-kelly-frac').value = localStorage.getItem('lcp-kelly-frac') || '0.5';
+document.getElementById('cfg-goal').value = localStorage.getItem('lcp-goal') || '';
+document.getElementById('cfg-stoploss').value = localStorage.getItem('lcp-stoploss') || '';
+refreshBankroll();
+renderPerf();
+injectBetButtons();
+syncBetButtons();
+renderPerf();
+</script>
+</body>
+</html>
