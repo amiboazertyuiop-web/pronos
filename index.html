@@ -253,6 +253,12 @@ nav{
   font-family:'DM Mono',monospace;font-size:12px;font-weight:800;
   vertical-align:middle;
 }
+.mc-tag-banner{
+  display:flex;justify-content:flex-start;margin-bottom:10px;
+}
+.mc-tag-banner .tag-chip{
+  font-size:11px;font-weight:800;letter-spacing:0.5px;
+}
 .bet-auto-hint{
   font-size:11px;color:var(--muted);
   font-style:italic;letter-spacing:0.3px;
@@ -2543,8 +2549,9 @@ function syncBetButtons(){
       const cls = btn.dataset.cls;
       const lbl = btn.dataset.lbl;
       const conf = parseInt(btn.dataset.conf) || 3;
-      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Parier`;
-      btn.onclick = () => openMiseModal(match, pari, cote, sport, cls, lbl, conf);
+      const reco = calculateRecommendedStake(cote, sport);
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Parier ${reco}€`;
+      btn.onclick = () => quickBet(match, pari, cote, sport, cls, lbl, conf);
     }
   });
 }
@@ -3001,10 +3008,12 @@ function renderMatchCard(p, sportKey, outcomeCount) {
   if (p.status === 'won') actualLine = '<div class="pc-actual win">✓ Gagné' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
   else if (p.status === 'lost') actualLine = '<div class="pc-actual loss">✗ Perdu' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
 
-  const gain10 = (10 * (p.cote_retenue - 1)).toFixed(2);
+  const classify = autoClassifyBet(p.cote_retenue, sportLabel);
+  const recoMise = calculateRecommendedStake(p.cote_retenue, sportLabel);
+  const gainReco = (recoMise * (p.cote_retenue - 1)).toFixed(2);
   const buttonHtml =
     '<div class="quick-bet-row">' +
-      '<div class="gain-preview">Pour 10 € → profit <span>+' + gain10 + ' €</span></div>' +
+      '<div class="gain-preview">Pour ' + recoMise + ' € → profit <span>+' + gainReco + ' €</span></div>' +
       '<button class="btn-quick-bet" ' +
         'data-match="' + esc(p.match) + '" ' +
         'data-pari="' + esc(p.pari) + '" ' +
@@ -3013,9 +3022,9 @@ function renderMatchCard(p, sportKey, outcomeCount) {
         'data-cls="' + ptagClass + '" ' +
         'data-lbl="' + esc(ptagLabel) + '" ' +
         'data-conf="' + (p.confiance || 3) + '" ' +
-        "onclick=\"openMiseModal('" + jsSafe(p.match) + "','" + jsSafe(p.pari) + "'," + p.cote_retenue + ",'" + jsSafe(sportLabel) + "','" + ptagClass + "','" + jsSafe(ptagLabel) + "'," + (p.confiance || 3) + ")\">" +
+        "onclick=\"quickBet('" + jsSafe(p.match) + "','" + jsSafe(p.pari) + "'," + p.cote_retenue + ",'" + jsSafe(sportLabel) + "','" + ptagClass + "','" + jsSafe(ptagLabel) + "'," + (p.confiance || 3) + ")\">" +
         '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>' +
-        ' Parier' +
+        ' Parier ' + recoMise + '€' +
       '</button>' +
     '</div>';
 
@@ -3027,6 +3036,9 @@ function renderMatchCard(p, sportKey, outcomeCount) {
     : '';
 
   return '<div class="mc' + featuredCls + statusCls + '" data-event-id="' + esc(p.event_id) + '">' +
+    '<div class="mc-tag-banner">' +
+      '<span class="tag-chip ' + classify.tag + '" title="' + esc(classify.reason) + '">' + classify.label + '</span>' +
+    '</div>' +
     '<div class="mc-top">' +
       '<div class="mc-team home"><div class="mc-name">' + esc(p.home) + '</div></div>' +
       '<div class="mc-center"><div class="mc-time">' + esc(timeDisplay) + '</div><div class="mc-vs">VS</div></div>' +
@@ -3044,6 +3056,33 @@ function renderMatchCard(p, sportKey, outcomeCount) {
     '</div>' +
     buttonHtml +
   '</div>';
+}
+
+// One-click quick bet — saves a bet directly without showing the mise modal.
+// The recommended stake is computed from Kelly + bankroll settings at click
+// time, and the tag is auto-classified from cote × sport.
+async function quickBet(match, pari, cote, sport, cls, lbl, conf) {
+  if (!currentUserId) { toast('Connecte-toi pour parier', 'err'); return; }
+  const mise = calculateRecommendedStake(cote, sport);
+  const classify = autoClassifyBet(cote, sport);
+  const today = new Date().toISOString().slice(0, 10);
+  const newBet = {
+    match, pari, cote, mise, sport, date: today,
+    status: 'pending',
+    tag: classify.tag,
+    confidence: conf || 3,
+  };
+  const saved = await saveBetToCloud(newBet);
+  if (!saved) { toast('❌ Erreur sauvegarde', 'err'); return; }
+  bets.push(saved);
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+  refreshBankroll();
+  if (typeof renderPerf === 'function') renderPerf();
+  toast('✅ ' + mise + '€ sur ' + pari + ' (' + classify.label + ')', 'ok');
+  // Re-render everything that shows bet state
+  syncBetButtons();
+  if (typeof renderToday === 'function') renderToday();
+  if (typeof renderCoupDeCoeur === 'function') renderCoupDeCoeur();
 }
 
 // Legacy placeholder for old init code
@@ -3220,10 +3259,13 @@ function renderCoupDeCoeur() {
     const analyseHtml = p.analyse
       ? '<div class="cdc-analyse">' + esc(p.analyse) + '</div>'
       : '<div class="cdc-analyse cdc-analyse-empty">Analyse en cours de rédaction par le Coach — elle apparaîtra au prochain run de 7h.</div>';
+    const cdcClassify = autoClassifyBet(p.cote_retenue, sportLabel);
+    const cdcRecoMise = calculateRecommendedStake(p.cote_retenue, sportLabel);
+    const cdcTagHtml = '<span class="tag-chip ' + cdcClassify.tag + '" title="' + esc(cdcClassify.reason) + '">' + cdcClassify.label + '</span>';
     const isPlaced = pendingMatches.has(p.match);
     const btnHtml = isPlaced
       ? '<button class="cdc-bet-btn placed" onclick="cancelBetByMatch(\'' + jsSafe(p.match) + '\');renderCoupDeCoeur()">✕ Annuler le pari</button>'
-      : '<button class="cdc-bet-btn" onclick="openMiseModal(\'' + jsSafe(p.match) + '\',\'' + jsSafe(p.pari) + '\',' + p.cote_retenue + ',\'' + jsSafe(sportLabel) + '\',\'' + ptagClass + '\',\'' + jsSafe(ptagLabel) + '\',' + (p.confiance || 3) + ')">+ Parier ce coup de cœur</button>';
+      : '<button class="cdc-bet-btn" onclick="quickBet(\'' + jsSafe(p.match) + '\',\'' + jsSafe(p.pari) + '\',' + p.cote_retenue + ',\'' + jsSafe(sportLabel) + '\',\'' + ptagClass + '\',\'' + jsSafe(ptagLabel) + '\',' + (p.confiance || 3) + ')">+ Parier ' + cdcRecoMise + '€</button>';
 
     return (
       '<div class="cdc-card">' +
@@ -3233,6 +3275,7 @@ function renderCoupDeCoeur() {
       '<div class="cdc-sport-chip">' + esc(leagueFlag) + ' ' + esc(leagueLabel || sportLabel) + '</div>' +
       '<div class="cdc-match" style="margin-top:8px">' + esc(p.match) + '</div>' +
       '<div class="cdc-time">' + esc(p.time_display || '') + '</div>' +
+      '<div style="margin-top:8px">' + cdcTagHtml + '</div>' +
       '</div>' +
       '</div>' +
       '<div class="cdc-pick-row">' +
@@ -3277,11 +3320,12 @@ function renderToday() {
     const isPending = pendingMatches.has(p.match);
     const isSelected = comboLegs.some(l => l.match === p.match);
     const cardClass = 'today-card' + (comboMode ? ' combo-mode' : '') + (isSelected ? ' combo-selected' : '');
+    const tcRecoMise = calculateRecommendedStake(p.cote, p.sport);
     const btnHtml = comboMode
       ? '' // en mode combiné, on clique la carte entière
       : (isPending
         ? `<button class="tc-btn cancel" onclick="cancelBetByMatch('${safeJs(p.match)}');renderToday()">✕ Annuler</button>`
-        : `<button class="tc-btn" onclick="openMiseModal('${safeJs(p.match)}','${safeJs(p.pari)}',${p.cote},'${safeJs(p.sport)}','${p.cls}','${safeJs(p.lbl)}',${p.conf})">+ Parier</button>`);
+        : `<button class="tc-btn" onclick="quickBet('${safeJs(p.match)}','${safeJs(p.pari)}',${p.cote},'${safeJs(p.sport)}','${p.cls}','${safeJs(p.lbl)}',${p.conf})">+ Parier ${tcRecoMise}€</button>`);
     const cardOnclick = comboMode
       ? `onclick="toggleComboLeg('${safeJs(p.match)}','${safeJs(p.pari)}',${p.cote},'${safeJs(p.sport)}',${p.conf})"`
       : '';
