@@ -1043,16 +1043,121 @@ nav{
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .animate{animation:fadeUp .4s ease both;}
 
-@media(max-width:700px){
+/* ============ RESPONSIVE — TABLETTE & GROS MOBILE ============ */
+@media(max-width:900px){
+  nav{
+    padding:0 10px;gap:2px;
+    overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  nav::-webkit-scrollbar{display:none;}
+  .nav-logo{font-size:16px;letter-spacing:1px;margin-right:8px;flex-shrink:0;}
+  .nav-logo span{font-size:16px;}
+  .nav-tab{padding:6px 10px;font-size:10px;letter-spacing:0.5px;flex-shrink:0;}
+  .nav-tab .tab-icon{margin-right:3px;}
+  .nav-logout{flex-shrink:0;padding:4px 8px;font-size:12px;}
   .sports-sidebar{display:none;}
-  .sports-content{padding:20px 16px;}
-  nav{padding:0 12px;}
-  .nav-tab{padding:6px 10px;font-size:11px;}
-  .mc-top{gap:4px;}
-  .mc-name{font-size:13px;}
-  .bet-item{grid-template-columns:auto 1fr;gap:10px;}
+  .sports-content{padding:20px 14px;}
+  .panel-header{margin-bottom:20px;}
+  .panel-title{font-size:22px;}
+  .hero{padding:70px 16px 40px;min-height:auto;}
+  .hero-title{font-size:clamp(44px,12vw,72px);letter-spacing:2px;}
+  .hero-sub{font-size:14px;max-width:100%;margin-bottom:32px;}
+  .hero-eyebrow{font-size:10px;letter-spacing:2px;padding:5px 12px;}
+  .hero-stats{gap:24px;margin-bottom:36px;}
+  .stat-num{font-size:28px;}
+  .stat-label{font-size:10px;}
+  .hero-ctas{flex-direction:column;width:100%;max-width:300px;gap:10px;}
+  .cta-btn{width:100%;padding:14px 20px;font-size:12px;}
+  .hero-sports{gap:10px;}
+  .sport-pill{padding:10px 14px;}
+  .bankroll-layout,.perf-layout,.today-layout{padding:24px 14px;}
+  .bk-title,.perf-title,.today-title{font-size:26px;}
+  .bk-sub,.perf-sub,.today-sub{font-size:12px;}
+  .bankroll-setup{padding:16px;gap:12px;}
+  .bankroll-setup label{font-size:11px;}
+  .bankroll-input{width:100%;}
+  .bk-settings{padding:16px;}
+  .bk-settings-grid{grid-template-columns:1fr;gap:12px;}
+  .kpi-grid{grid-template-columns:1fr 1fr;gap:8px;}
+  .kpi-card{padding:14px;}
+  .kpi-val{font-size:20px;}
+  .kpi-label{font-size:10px;}
+  .form-grid{grid-template-columns:1fr 1fr;gap:10px;}
+  .form-group label{font-size:10px;}
+  .btn-add-bet{width:100%;}
+  .bet-list-header{flex-direction:column;align-items:flex-start;gap:10px;}
+  .bet-filters{flex-wrap:wrap;width:100%;}
+  .adv-filters{padding:12px;}
+  .adv-filters-grid{grid-template-columns:1fr 1fr;gap:8px;}
+  .bet-item{padding:12px;}
+  .bet-item-top{flex-wrap:wrap;gap:8px;}
+  .bet-match{font-size:13px;}
+  .bet-detail{font-size:10px;}
   .bet-stake,.bet-gain{display:none;}
-  .kpi-grid{grid-template-columns:1fr 1fr;}
+  .bet-actions{flex-wrap:wrap;gap:6px;}
+  .bet-resolve{font-size:10px;padding:6px 10px;}
+  .today-grid{grid-template-columns:1fr;}
+  .auto-combos-grid{grid-template-columns:1fr;}
+  .today-filters{gap:6px;}
+  .today-filter{padding:6px 10px;font-size:10px;}
+  .today-filter.combo-toggle{margin-left:0;width:100%;margin-top:6px;}
+  .mc{padding:14px;}
+  .mc-top{flex-wrap:nowrap;gap:6px;}
+  .mc-name{font-size:13px;}
+  .mc-sub{font-size:10px;}
+  .mc-time{font-size:10px;}
+  .prono-row{flex-direction:column;align-items:flex-start;gap:10px;}
+  .cotes-bar{flex-wrap:wrap;}
+  .quick-bet-row{flex-direction:column;gap:10px;align-items:stretch;}
+  .btn-quick-bet{width:100%;justify-content:center;}
+  .perf-chart-card{padding:14px;}
+  .perf-charts{grid-template-columns:1fr;}
+  .stats-summary{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .sport-stats-grid{grid-template-columns:1fr;}
+  .export-bar{flex-wrap:wrap;}
+  .export-btn{flex:1;min-width:100px;}
+  .mise-overlay{padding:12px;align-items:flex-start;padding-top:70px;}
+  .mise-modal{padding:24px 20px;max-width:100%;}
+  .mise-modal-title{font-size:18px;}
+  .mise-presets{gap:4px;}
+  .preset-btn{min-width:44px;padding:6px 4px;font-size:11px;}
+  .mise-calc{grid-template-columns:1fr;gap:6px;padding:12px;}
+  .mise-actions{flex-direction:column;}
+  .mise-actions button{width:100%;}
+  .combo-bar{width:calc(100% - 16px);max-width:calc(100% - 16px);padding:14px;}
+  .cb-stats{grid-template-columns:1fr 1fr 1fr;gap:6px;}
+  .cb-stat{padding:6px 4px;}
+  .cb-stat-val{font-size:13px;}
+  .cb-stat-label{font-size:8px;}
+  .auth-modal{padding:30px 24px;max-width:100%;}
+  .auth-logo{font-size:28px;}
+  .alerts-zone{padding:0;}
+  .alert-banner{padding:12px 14px;font-size:12px;}
+  .alert-banner .ab-icon{font-size:18px;}
+  .goal-card{padding:14px 16px;}
+}
+
+/* ============ RESPONSIVE — PETIT MOBILE ============ */
+@media(max-width:520px){
+  .nav-tab{padding:6px 8px;font-size:0;}
+  .nav-tab .tab-icon{margin-right:0;font-size:16px;}
+  .nav-logo{font-size:14px;letter-spacing:0.5px;}
+  .nav-logo span{font-size:14px;}
+  .hero-title{font-size:clamp(36px,13vw,56px);}
+  .hero-stats{gap:16px;}
+  .stat-num{font-size:24px;}
+  .kpi-grid{grid-template-columns:1fr;}
+  .form-grid{grid-template-columns:1fr;}
+  .adv-filters-grid{grid-template-columns:1fr;}
+  .stats-summary{grid-template-columns:1fr 1fr;}
+  .today-filters{flex-direction:column;align-items:stretch;}
+  .today-filter{width:100%;}
+  .mise-presets{flex-wrap:wrap;}
+  .preset-btn{flex:1 1 calc(33% - 4px);}
+  .bk-settings-title{font-size:10px;}
+  .bet-filters button{flex:1 1 calc(50% - 4px);}
 }
 
 @media print {
