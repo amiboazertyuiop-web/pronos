@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Le Coach Parie — Pronostics & Bankroll</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <style>
 :root {
   --bg: #080a0f;
@@ -2293,51 +2294,226 @@ nav{
 <div class="toast" id="toast"></div>
 
 <script>
-// ===================== AUTHENTIFICATION =====================
-// Hashes SHA-256 precalcules. Ni le login ni le mot de passe n'apparaissent en clair.
-// Protection cosmetique contre les visiteurs casuels — pas une vraie securite
-// (anyone avec devtools peut bypasser, car le code tourne cote client).
-const AUTH_USER_HASH = '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918';
-const AUTH_PASS_HASH = '384a80dd5b22bcd517d64f3dfd789e81117c3d2d8ab22fe38cf9b753d3ba059d';
+// ===================== SUPABASE CLIENT =====================
+const SUPABASE_URL = 'https://yyustwbdpzrytavzpqtk.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5dXN0d2JkcHpyeXRhdnpwcXRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4NDk1ODMsImV4cCI6MjA5MTQyNTU4M30.szlImpI0ietxEUA4dy36rjqgn-pAGmIBoDkDj_yTBzw';
+const AUTH_EMAIL = 'admin@coachparie.local';
+const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let currentUserId = null;
 
-async function sha256(str) {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
-  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+// ===================== HELPERS DE CONVERSION =====================
+function betFromDb(row) {
+  return {
+    id: row.id,
+    match: row.match,
+    pari: row.pari,
+    cote: parseFloat(row.cote),
+    mise: parseFloat(row.mise),
+    sport: row.sport,
+    date: row.bet_date,
+    status: row.status,
+    tag: row.tag,
+    confidence: row.confidence != null ? row.confidence : 3,
+    isCombo: row.is_combo || false,
+    legs: row.legs || null,
+  };
 }
 
+function betToDbRow(bet, userId) {
+  return {
+    user_id: userId,
+    match: bet.match,
+    pari: bet.pari,
+    cote: bet.cote,
+    mise: bet.mise,
+    sport: bet.sport,
+    bet_date: bet.date,
+    status: bet.status,
+    tag: bet.tag || 'sure',
+    confidence: bet.confidence != null ? bet.confidence : 3,
+    is_combo: bet.isCombo || false,
+    legs: bet.legs || null,
+  };
+}
+
+// ===================== SYNC CLOUD (BETS) =====================
+async function loadBetsFromCloud() {
+  if (!currentUserId) return;
+  const { data, error } = await sb
+    .from('bets')
+    .select('*')
+    .eq('user_id', currentUserId)
+    .order('id', { ascending: true });
+  if (error) {
+    console.error('Load bets error:', error);
+    toast('⚠️ Erreur chargement paris: ' + error.message, 'err');
+    return;
+  }
+  bets = data.map(betFromDb);
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+}
+
+async function saveBetToCloud(bet) {
+  if (!currentUserId) return null;
+  const row = betToDbRow(bet, currentUserId);
+  const { data, error } = await sb
+    .from('bets')
+    .insert(row)
+    .select()
+    .single();
+  if (error) {
+    toast('❌ Erreur sauvegarde: ' + error.message, 'err');
+    return null;
+  }
+  return betFromDb(data);
+}
+
+async function updateBetInCloud(id, updates) {
+  if (!currentUserId) return false;
+  const dbUpdates = {};
+  if ('status' in updates) dbUpdates.status = updates.status;
+  if ('match' in updates) dbUpdates.match = updates.match;
+  if ('pari' in updates) dbUpdates.pari = updates.pari;
+  if ('cote' in updates) dbUpdates.cote = updates.cote;
+  if ('mise' in updates) dbUpdates.mise = updates.mise;
+  if ('sport' in updates) dbUpdates.sport = updates.sport;
+  if ('date' in updates) dbUpdates.bet_date = updates.date;
+  if ('tag' in updates) dbUpdates.tag = updates.tag;
+  if ('confidence' in updates) dbUpdates.confidence = updates.confidence;
+  const { error } = await sb.from('bets').update(dbUpdates).eq('id', id);
+  if (error) {
+    toast('❌ Erreur mise à jour: ' + error.message, 'err');
+    return false;
+  }
+  return true;
+}
+
+async function deleteBetFromCloud(id) {
+  if (!currentUserId) return false;
+  const { error } = await sb.from('bets').delete().eq('id', id);
+  if (error) {
+    toast('❌ Erreur suppression: ' + error.message, 'err');
+    return false;
+  }
+  return true;
+}
+
+// ===================== SYNC CLOUD (SETTINGS) =====================
+async function loadSettingsFromCloud() {
+  if (!currentUserId) return;
+  const { data, error } = await sb
+    .from('settings')
+    .select('data')
+    .eq('user_id', currentUserId)
+    .maybeSingle();
+  if (error) { console.error('Load settings error:', error); return; }
+  if (data && data.data) {
+    const s = data.data;
+    if (s.bankrollInit != null) localStorage.setItem('lcp-init', String(s.bankrollInit));
+    if (s.kellyFrac != null) localStorage.setItem('lcp-kelly-frac', String(s.kellyFrac));
+    if (s.goal != null) localStorage.setItem('lcp-goal', String(s.goal));
+    else localStorage.removeItem('lcp-goal');
+    if (s.stopLoss != null) localStorage.setItem('lcp-stoploss', String(s.stopLoss));
+    else localStorage.removeItem('lcp-stoploss');
+  }
+}
+
+async function saveSettingsToCloud() {
+  if (!currentUserId) return;
+  const data = {
+    bankrollInit: parseFloat(localStorage.getItem('lcp-init') || '100'),
+    kellyFrac: parseFloat(localStorage.getItem('lcp-kelly-frac') || '0.5'),
+    goal: localStorage.getItem('lcp-goal') ? parseFloat(localStorage.getItem('lcp-goal')) : null,
+    stopLoss: localStorage.getItem('lcp-stoploss') ? parseFloat(localStorage.getItem('lcp-stoploss')) : null,
+  };
+  const { error } = await sb.from('settings').upsert({
+    user_id: currentUserId,
+    data: data,
+    updated_at: new Date().toISOString(),
+  });
+  if (error) {
+    console.error('Save settings error:', error);
+    toast('⚠️ Erreur sync paramètres', 'err');
+  }
+}
+
+// Reapplique les inputs de parametres avec les valeurs (apres chargement cloud)
+function applySettingsToInputs() {
+  const initEl = document.getElementById('bankroll-init');
+  if (initEl) initEl.value = localStorage.getItem('lcp-init') || 100;
+  const kf = document.getElementById('cfg-kelly-frac');
+  if (kf) kf.value = localStorage.getItem('lcp-kelly-frac') || '0.5';
+  const g = document.getElementById('cfg-goal');
+  if (g) g.value = localStorage.getItem('lcp-goal') || '';
+  const sl = document.getElementById('cfg-stoploss');
+  if (sl) sl.value = localStorage.getItem('lcp-stoploss') || '';
+}
+
+// ===================== AUTHENTIFICATION SUPABASE =====================
 async function handleLogin(e) {
   e.preventDefault();
   const user = document.getElementById('auth-user').value.trim();
   const pass = document.getElementById('auth-pass').value;
   const errEl = document.getElementById('auth-error');
+  const btn = document.querySelector('.auth-btn');
   errEl.textContent = '';
+  btn.disabled = true;
+  btn.textContent = 'Connexion...';
   try {
-    const [uH, pH] = await Promise.all([sha256(user), sha256(pass)]);
-    if (uH === AUTH_USER_HASH && pH === AUTH_PASS_HASH) {
-      localStorage.setItem('lcp-auth', 'true');
-      document.getElementById('auth-overlay').classList.add('hidden');
-      document.getElementById('auth-pass').value = '';
-    } else {
+    // Le champ "Identifiant" accepte 'admin' ou un email complet
+    const email = user.includes('@') ? user : AUTH_EMAIL;
+    const { data, error } = await sb.auth.signInWithPassword({ email, password: pass });
+    if (error) {
       errEl.textContent = '❌ Identifiant ou mot de passe incorrect';
-      // Petit delay anti-brute-force naif (ralentit les tentatives auto)
-      document.querySelector('.auth-btn').disabled = true;
-      setTimeout(() => document.querySelector('.auth-btn').disabled = false, 800);
+      setTimeout(() => { btn.disabled = false; btn.textContent = 'Se connecter'; }, 600);
+      return;
     }
+    currentUserId = data.user.id;
+    document.getElementById('auth-overlay').classList.add('hidden');
+    document.getElementById('auth-pass').value = '';
+    // Synchroniser les donnees depuis Supabase
+    await loadSettingsFromCloud();
+    await loadBetsFromCloud();
+    applySettingsToInputs();
+    refreshBankroll();
+    renderPerf();
+    syncBetButtons();
+    toast('✅ Connecté — données synchronisées', 'ok');
   } catch (err) {
     errEl.textContent = '❌ Erreur technique : ' + err.message;
+    btn.disabled = false;
+    btn.textContent = 'Se connecter';
   }
 }
 
-function logout() {
+async function logout() {
   if (!confirm('Se déconnecter ?')) return;
-  localStorage.removeItem('lcp-auth');
+  await sb.auth.signOut();
+  currentUserId = null;
   location.reload();
 }
 
-// Verification au chargement — si deja connecte, on cache l'overlay
-if (localStorage.getItem('lcp-auth') === 'true') {
-  document.getElementById('auth-overlay').classList.add('hidden');
-}
+// Verification au chargement — si session Supabase active, on cache l'overlay et on charge les donnees
+(async () => {
+  try {
+    const { data: { session } } = await sb.auth.getSession();
+    if (session && session.user) {
+      currentUserId = session.user.id;
+      document.getElementById('auth-overlay').classList.add('hidden');
+      // Charger les donnees cloud (apres que le reste du script ait fini de s'initialiser)
+      setTimeout(async () => {
+        await loadSettingsFromCloud();
+        await loadBetsFromCloud();
+        applySettingsToInputs();
+        refreshBankroll();
+        renderPerf();
+        syncBetButtons();
+      }, 100);
+    }
+  } catch (err) {
+    console.error('Session check error:', err);
+  }
+})();
 
 // ===================== NAVIGATION =====================
 function showPage(id){
@@ -2370,12 +2546,13 @@ let currentFilter='all';
 
 function saveAndRefresh(){
   localStorage.setItem('lcp-init',document.getElementById('bankroll-init').value);
+  saveSettingsToCloud();
   refreshBankroll();
 }
 
 function getInit(){return parseFloat(localStorage.getItem('lcp-init')||100);}
 
-function addBet(){
+async function addBet(){
   const match=document.getElementById('f-match').value.trim();
   const pari=document.getElementById('f-pari').value.trim();
   const cote=parseFloat(document.getElementById('f-cote').value);
@@ -2384,21 +2561,28 @@ function addBet(){
   const date=document.getElementById('f-date').value||new Date().toISOString().slice(0,10);
   if(!match||!pari||!cote||!mise){toast('⚠️ Remplis tous les champs','err');return;}
   if(cote<1){toast('❌ Cote invalide','err');return;}
-  bets.push({id:Date.now(),match,pari,cote,mise,sport,date,status:'pending'});
+  const newBet = {match,pari,cote,mise,sport,date,status:'pending',tag:'sure',confidence:3};
+  const saved = await saveBetToCloud(newBet);
+  if (!saved) return;
+  bets.push(saved);
   localStorage.setItem('lcp-bets',JSON.stringify(bets));
   ['f-match','f-pari','f-cote','f-mise'].forEach(id=>document.getElementById(id).value='');
   refreshBankroll();
   toast('✅ Pari ajouté !','ok');
 }
 
-function resolveBet(id,status){
+async function resolveBet(id,status){
+  const ok = await updateBetInCloud(id, { status });
+  if (!ok) return;
   bets=bets.map(b=>b.id===id?{...b,status}:b);
   localStorage.setItem('lcp-bets',JSON.stringify(bets));
   refreshBankroll();
-  toast(status==='won'?'Pari gagne !':'Pari perdu','');
+  toast(status==='won'?'Pari gagné !':'Pari perdu','');
 }
 
-function deleteBet(id){
+async function deleteBet(id){
+  const ok = await deleteBetFromCloud(id);
+  if (!ok) return;
   bets=bets.filter(b=>b.id!==id);
   localStorage.setItem('lcp-bets',JSON.stringify(bets));
   refreshBankroll();
@@ -2427,7 +2611,7 @@ function closeEditBet(e) {
   editingBetId = null;
 }
 
-function saveEditBet() {
+async function saveEditBet() {
   if (!editingBetId) return;
   const idx = bets.findIndex(b => b.id === editingBetId);
   if (idx === -1) return;
@@ -2443,7 +2627,10 @@ function saveEditBet() {
     toast('❌ Champs invalides', 'err');
     return;
   }
-  bets[idx] = { ...bets[idx], match, pari, cote, mise, sport, date, tag, confidence };
+  const updates = { match, pari, cote, mise, sport, date, tag, confidence };
+  const ok = await updateBetInCloud(editingBetId, updates);
+  if (!ok) return;
+  bets[idx] = { ...bets[idx], ...updates };
   localStorage.setItem('lcp-bets', JSON.stringify(bets));
   document.getElementById('edit-overlay').classList.remove('open');
   editingBetId = null;
@@ -2807,9 +2994,11 @@ function syncBetButtons(){
   });
 }
 
-function cancelBetByMatch(match){
+async function cancelBetByMatch(match){
   const bet = bets.find(b=>b.status==='pending' && b.match===match);
   if(!bet) return;
+  const ok = await deleteBetFromCloud(bet.id);
+  if (!ok) return;
   bets = bets.filter(b=>b.id!==bet.id);
   localStorage.setItem('lcp-bets',JSON.stringify(bets));
   refreshBankroll();
@@ -2826,6 +3015,7 @@ function getKellyFrac() {
 }
 function saveKellyFrac() {
   localStorage.setItem('lcp-kelly-frac', document.getElementById('cfg-kelly-frac').value);
+  saveSettingsToCloud();
   refreshBankroll();
 }
 function getGoal() {
@@ -2836,6 +3026,7 @@ function saveGoal() {
   const val = document.getElementById('cfg-goal').value;
   if (val) localStorage.setItem('lcp-goal', val);
   else localStorage.removeItem('lcp-goal');
+  saveSettingsToCloud();
   refreshBankroll();
 }
 function getStopLoss() {
@@ -2846,6 +3037,7 @@ function saveStopLoss() {
   const val = document.getElementById('cfg-stoploss').value;
   if (val) localStorage.setItem('lcp-stoploss', val);
   else localStorage.removeItem('lcp-stoploss');
+  saveSettingsToCloud();
   refreshBankroll();
 }
 
@@ -3020,13 +3212,12 @@ function updateMiseCalc() {
   }
 }
 
-function confirmMise() {
+async function confirmMise() {
   if (!miseContext) return;
   const mise = parseFloat(document.getElementById('mm-mise').value);
   if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
   const today = new Date().toISOString().slice(0, 10);
-  bets.push({
-    id: Date.now(),
+  const newBet = {
     match: miseContext.match,
     pari: miseContext.pari,
     cote: miseContext.cote,
@@ -3036,13 +3227,16 @@ function confirmMise() {
     status: 'pending',
     tag: miseContext.autoTag || 'sure',
     confidence: miseContext.conf || 3
-  });
+  };
+  const saved = await saveBetToCloud(newBet);
+  if (!saved) return;
+  bets.push(saved);
   localStorage.setItem('lcp-bets', JSON.stringify(bets));
   document.getElementById('mise-overlay').classList.remove('open');
   miseContext = null;
   refreshBankroll();
   renderPerf();
-  toast('Pari de ' + mise + ' EUR ajoute a la bankroll !', 'ok');
+  toast('Pari de ' + mise + ' EUR ajouté à la bankroll !', 'ok');
 }
 
 // Fermer avec Escape
@@ -3400,7 +3594,7 @@ function updateComboStats() {
   document.getElementById('cb-gain').textContent = profit >= 0 ? '+' + profit.toFixed(2) + '€' : profit.toFixed(2) + '€';
 }
 
-function confirmCombo() {
+async function confirmCombo() {
   if (comboLegs.length < 2) { toast('Il faut au moins 2 paris pour un combiné', 'err'); return; }
   const mise = parseFloat(document.getElementById('cb-mise').value);
   if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
@@ -3408,8 +3602,7 @@ function confirmCombo() {
   const avgConf = Math.round(comboLegs.reduce((s, l) => s + l.conf, 0) / comboLegs.length);
   const today = new Date().toISOString().slice(0, 10);
   const shortNames = comboLegs.map(l => l.match.split(' vs ')[0].split(' — ')[0]).join(' + ');
-  bets.push({
-    id: Date.now(),
+  const newBet = {
     match: 'Combiné : ' + shortNames,
     pari: comboLegs.length + ' pronos combinés',
     cote: +combinedCote.toFixed(3),
@@ -3421,7 +3614,10 @@ function confirmCombo() {
     confidence: avgConf,
     isCombo: true,
     legs: comboLegs.slice()
-  });
+  };
+  const saved = await saveBetToCloud(newBet);
+  if (!saved) return;
+  bets.push(saved);
   localStorage.setItem('lcp-bets', JSON.stringify(bets));
   comboLegs = [];
   comboMode = false;
