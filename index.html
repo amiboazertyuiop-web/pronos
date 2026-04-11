@@ -344,6 +344,81 @@ nav{
   padding:60px 20px;text-align:center;color:var(--muted);
   font-size:13px;letter-spacing:1px;
 }
+.cdc-combos-section{margin-bottom:36px;}
+.cdc-combos-title{
+  font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;
+  color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:10px;
+}
+.cdc-combos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media (max-width:720px){.cdc-combos-grid{grid-template-columns:1fr;}}
+.cdc-combo-card{
+  background:linear-gradient(140deg, rgba(139,92,246,0.08) 0%, var(--s2) 100%);
+  border:1px solid rgba(139,92,246,0.3);border-radius:16px;
+  padding:20px 22px;position:relative;overflow:hidden;
+  transition:all .25s ease;
+}
+.cdc-combo-card.safe{
+  background:linear-gradient(140deg, rgba(16,185,129,0.08) 0%, var(--s2) 100%);
+  border-color:rgba(16,185,129,0.3);
+}
+.cdc-combo-card.safe::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:linear-gradient(180deg,#10b981,#34d399);
+}
+.cdc-combo-card.value::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:linear-gradient(180deg,#8b5cf6,#a78bfa);
+}
+.cdc-combo-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px;}
+.cdc-combo-title{font-size:16px;font-weight:800;color:var(--text);}
+.cdc-combo-strategy{
+  font-size:9px;letter-spacing:1.5px;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;font-weight:800;margin-top:4px;display:inline-block;
+}
+.cdc-combo-card.safe .cdc-combo-strategy{background:rgba(16,185,129,0.18);color:var(--green);}
+.cdc-combo-card.value .cdc-combo-strategy{background:rgba(139,92,246,0.18);color:var(--purple);}
+.cdc-combo-total{text-align:right;}
+.cdc-combo-total-label{
+  font-size:9px;color:var(--muted);letter-spacing:1.5px;
+  text-transform:uppercase;font-weight:700;
+}
+.cdc-combo-total-val{
+  font-family:'Bebas Neue',sans-serif;font-size:32px;
+  color:var(--gold);line-height:1;letter-spacing:1px;
+}
+.cdc-combo-reason{
+  color:var(--text);font-size:13px;line-height:1.5;
+  padding:10px 12px;margin-bottom:12px;
+  background:rgba(0,0,0,0.25);border-radius:8px;
+}
+.cdc-combo-legs{display:flex;flex-direction:column;gap:8px;margin-bottom:14px;}
+.cdc-combo-leg{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:8px 12px;background:var(--s1);border:1px solid var(--border);
+  border-radius:8px;gap:10px;
+}
+.cdc-combo-leg-info{flex:1;min-width:0;}
+.cdc-combo-leg-sport{
+  font-size:9px;color:var(--muted);letter-spacing:1px;
+  text-transform:uppercase;font-weight:700;margin-bottom:2px;
+}
+.cdc-combo-leg-match{
+  font-size:12px;font-weight:700;color:var(--text);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.cdc-combo-leg-pari{font-size:11px;color:var(--muted);margin-top:1px;}
+.cdc-combo-leg-cote{
+  font-family:'DM Mono',monospace;font-size:13px;font-weight:800;
+  color:var(--gold);flex-shrink:0;
+}
+.cdc-combo-bet-btn{
+  width:100%;background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;border:none;border-radius:10px;padding:12px 18px;
+  font-family:'Syne',sans-serif;font-size:12px;font-weight:800;
+  letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;
+  transition:all .2s;
+}
+.cdc-combo-bet-btn:hover{transform:translateY(-1px);background:#fff;}
 @media (max-width:720px){
   .cdc-layout{padding:24px 14px;}
   .cdc-title{font-size:32px;}
@@ -1414,6 +1489,10 @@ nav{
       <div class="cdc-sub">Ma sélection — analysée le matin à 7h, cote minimum 1.25, mise à jour quotidienne.</div>
       <div class="cdc-meta" id="cdc-meta"></div>
     </div>
+    <div class="cdc-combos-section">
+      <div class="cdc-combos-title">🎯 Mes 2 combinés du jour</div>
+      <div class="cdc-combos-grid" id="cdc-combos-grid"></div>
+    </div>
     <div class="cdc-grid" id="cdc-grid"></div>
   </div>
 </div>
@@ -2379,7 +2458,6 @@ function renderBets(){
     const gainStr=gain!==null?(gain>=0?'+':'')+gain.toFixed(2)+' €':'en attente';
     const actionsHtml = b.status==='pending'
       ? `<span class="bet-auto-hint">⏳ Résolution automatique après le match</span>
-         <button class="bet-resolve edit" onclick="openEditBet(${b.id})">✎ Éditer</button>
          <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`
       : `<span class="bet-resolved-tag ${b.status}">${b.status==='won'?'🎉 Gagné':b.status==='lost'?'😔 Perdu':'⏸ Remboursé'}</span>
          <button class="bet-resolve del" onclick="deleteBet(${b.id})">🗑 Supprimer</button>`;
@@ -3008,7 +3086,93 @@ function filterToday(sport, btn) {
 }
 
 // ===================== PAGE COUP DE COEUR =====================
+function renderCoupDeCoeurCombos() {
+  const grid = document.getElementById('cdc-combos-grid');
+  if (!grid) return;
+  const combos = (pronosData && Array.isArray(pronosData.combos)) ? pronosData.combos : [];
+  if (!combos.length) {
+    grid.innerHTML = '<div class="cdc-empty" style="grid-column:1/-1">⏳ Combinés générés chaque matin à 7h. Reviens bientôt.</div>';
+    return;
+  }
+  grid.innerHTML = combos.map((c, idx) => {
+    const strategyClass = c.strategy === 'safe' ? 'safe' : 'value';
+    const strategyLabel = c.strategy === 'safe' ? '🛡 Sûr' : '💎 Value';
+    const legsHtml = (c.legs || []).map(l =>
+      '<div class="cdc-combo-leg">' +
+        '<div class="cdc-combo-leg-info">' +
+          '<div class="cdc-combo-leg-sport">' + esc(l.sport_label || '') + '</div>' +
+          '<div class="cdc-combo-leg-match">' + esc(l.match) + '</div>' +
+          '<div class="cdc-combo-leg-pari">' + esc(l.pari) + '</div>' +
+        '</div>' +
+        '<div class="cdc-combo-leg-cote">@ ' + l.cote + '</div>' +
+      '</div>'
+    ).join('');
+    return '' +
+      '<div class="cdc-combo-card ' + strategyClass + '">' +
+        '<div class="cdc-combo-header">' +
+          '<div>' +
+            '<div class="cdc-combo-title">' + esc(c.label) + '</div>' +
+            '<div class="cdc-combo-strategy">' + strategyLabel + '</div>' +
+          '</div>' +
+          '<div class="cdc-combo-total">' +
+            '<div class="cdc-combo-total-label">Cote totale</div>' +
+            '<div class="cdc-combo-total-val">' + c.total_cote + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="cdc-combo-reason">' + esc(c.reasoning) + '</div>' +
+        '<div class="cdc-combo-legs">' + legsHtml + '</div>' +
+        '<button class="cdc-combo-bet-btn" onclick="placeClaudeCombo(' + idx + ')">+ Parier ce combiné</button>' +
+      '</div>';
+  }).join('');
+}
+
+async function placeClaudeCombo(comboIndex) {
+  if (!pronosData || !pronosData.combos || !pronosData.combos[comboIndex]) {
+    toast('Combiné introuvable', 'err');
+    return;
+  }
+  const combo = pronosData.combos[comboIndex];
+  const miseStr = prompt('Mise pour ce combiné (cote totale ' + combo.total_cote + '×) :', '5');
+  if (miseStr == null) return;
+  const mise = parseFloat(miseStr);
+  if (!mise || mise <= 0) { toast('Mise invalide', 'err'); return; }
+
+  const legs = (combo.legs || []).map(l => ({
+    match: l.match,
+    pari: l.pari,
+    cote: l.cote,
+    sport: l.sport_label || '🎯 Autre',
+    cls: l.pick_category === '1x2' ? (l.prono || 'win-home') : 'market-' + (l.pick_category || 'ou'),
+    lbl: l.pari,
+    conf: 4,
+  }));
+  const totalCote = legs.reduce((p, l) => p * l.cote, 1);
+  const shortNames = legs.map(l => l.match.split(' vs ')[0].split(' — ')[0]).join(' + ');
+  const today = new Date().toISOString().slice(0, 10);
+
+  const newBet = {
+    match: 'Combiné Coach : ' + shortNames,
+    pari: combo.label + ' (' + legs.length + ' legs)',
+    cote: +totalCote.toFixed(3),
+    mise: mise,
+    sport: '🔗 Combiné',
+    date: today,
+    status: 'pending',
+    tag: 'coeur',
+    confidence: 4,
+    isCombo: true,
+    legs,
+  };
+  const saved = await saveBetToCloud(newBet);
+  if (!saved) { toast('Erreur lors de la sauvegarde', 'err'); return; }
+  bets.push(saved);
+  localStorage.setItem('lcp-bets', JSON.stringify(bets));
+  refreshBankroll();
+  toast('✅ Combiné ajouté à ta bankroll (cote ' + newBet.cote + ')', 'ok');
+}
+
 function renderCoupDeCoeur() {
+  renderCoupDeCoeurCombos();
   const grid = document.getElementById('cdc-grid');
   const metaEl = document.getElementById('cdc-meta');
   if (!grid) return;

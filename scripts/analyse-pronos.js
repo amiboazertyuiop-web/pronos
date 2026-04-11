@@ -224,6 +224,19 @@ async function main() {
   data.coup_de_coeur = topPicks.map((p) => p.event_id);
   console.log(`  coup-de-cœur re-selected: ${topPicks.length} picks`);
 
+  // ---- Claude picks 2 combos from the top 10 coup-de-cœur ----
+  try {
+    const combos = await generateCombos(topPicks);
+    if (combos && combos.length) {
+      data.combos = combos;
+      console.log(`  combos: ${combos.length} generated`);
+    }
+  } catch (e) {
+    console.error('  [WARN] combo generation failed:', e.message);
+    // Fall back to empty combos — the rest of the pipeline still works
+    data.combos = [];
+  }
+
   data.meta = data.meta || {};
   data.meta.analyses_written_at = new Date().toISOString();
   data.meta.analyses_cost_usd = parseFloat(cost.toFixed(4));
@@ -234,6 +247,142 @@ async function main() {
   if (errCount > 0 && okCount === 0) {
     process.exit(1); // full failure
   }
+}
+
+// ---------------------------------------------------------------------------
+// Claude picks 2 curated combos from the top coup-de-cœur picks.
+// ---------------------------------------------------------------------------
+const COMBO_SYSTEM_PROMPT = `Tu es un tipster sportif expert. À partir d'une liste de 10 pronostics coup-de-cœur du jour, tu proposes DEUX combinés stratégiques différents :
+
+COMBO 1 ("safe") — Le combiné sûr
+- 2 ou 3 picks à très haute confiance (⭐4 minimum)
+- Préférer des cotes modérées (1.25 à 1.70 par leg)
+- Cote totale visée : entre 1.80 et 3.00
+- Idéal pour une mise confortable à faible variance
+
+COMBO 2 ("value") — Le combiné value
+- 2 ou 3 picks avec un bon ratio value/risque (⭐3 ou ⭐4)
+- Peut inclure des cotes un peu plus élevées (1.60 à 2.50 par leg)
+- Cote totale visée : entre 3.00 et 8.00
+- Une bonne upside pour une mise moindre
+
+RÈGLES STRICTES :
+- Un même match ne peut PAS apparaître dans les 2 combos
+- Diversifier les sports et les championnats quand c'est possible
+- Privilégier les pronostics les plus solidement argumentés
+- Le raisonnement doit expliquer POURQUOI ces picks vont bien ensemble (complémentarité, risque équilibré, timing…)
+
+FORMAT DE RÉPONSE : uniquement un JSON valide, aucun markdown, aucun préambule. Schéma :
+{
+  "combos": [
+    {
+      "strategy": "safe",
+      "label": "Triple sûr du jour",
+      "reasoning": "2-3 phrases en français expliquant le choix des 3 legs et pourquoi ils vont ensemble",
+      "event_ids": ["id1", "id2", "id3"]
+    },
+    {
+      "strategy": "value",
+      "label": "Combo value du jour",
+      "reasoning": "2-3 phrases",
+      "event_ids": ["id4", "id5"]
+    }
+  ]
+}
+
+Les event_ids doivent correspondre EXACTEMENT à des event_id fournis dans la liste d'entrée.`;
+
+async function generateCombos(topPicks) {
+  if (!topPicks || topPicks.length < 3) return [];
+
+  // Build the compact picks summary for the prompt
+  const list = topPicks.map((p) => ({
+    event_id: p.event_id,
+    match: p.match,
+    sport_key: p.sport_key,
+    pari: p.pari,
+    pick_category: p.pick_category,
+    cote: p.cote_retenue,
+    confiance: p.confiance,
+  }));
+
+  const userPrompt =
+    "Voici les 10 coup-de-cœur du jour, propose-moi 2 combinés stratégiques :\n\n" +
+    JSON.stringify(list, null, 2);
+
+  console.log('  → calling Claude for 2 combos');
+  const res = await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'x-api-key': API_KEY,
+      'anthropic-version': '2023-06-01',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 1200,
+      system: COMBO_SYSTEM_PROMPT,
+      messages: [{ role: 'user', content: userPrompt }],
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`HTTP ${res.status}: ${body.slice(0, 300)}`);
+  }
+  const resp = await res.json();
+  const text = resp.content && resp.content[0] && resp.content[0].text;
+  if (!text) throw new Error('empty combos response');
+  const parsed = extractJson(text);
+  if (!parsed.combos || !Array.isArray(parsed.combos)) throw new Error('no combos array in response');
+
+  // Enrich each combo with total_cote and leg details pulled from topPicks
+  const byId = new Map(topPicks.map((p) => [p.event_id, p]));
+  const usedIds = new Set();
+  const combos = [];
+  for (const c of parsed.combos) {
+    if (!Array.isArray(c.event_ids) || c.event_ids.length < 2) continue;
+    const legs = [];
+    let totalCote = 1;
+    let dup = false;
+    for (const eid of c.event_ids) {
+      if (usedIds.has(eid)) { dup = true; break; }
+      const pick = byId.get(eid);
+      if (!pick) continue;
+      legs.push({
+        event_id: pick.event_id,
+        match: pick.match,
+        pari: pick.pari,
+        sport_key: pick.sport_key,
+        pick_category: pick.pick_category,
+        prono: pick.prono,
+        cote: pick.cote_retenue,
+        home: pick.home,
+        away: pick.away,
+        time_display: pick.time_display,
+      });
+      totalCote *= pick.cote_retenue;
+    }
+    if (dup || legs.length < 2) continue;
+    // Add a human sport label to each leg so the frontend doesn't have to
+    // reverse-engineer it from sport_key
+    legs.forEach((l) => {
+      const k = l.sport_key || '';
+      if (k.startsWith('flashscore_football') || k.startsWith('soccer_')) l.sport_label = '⚽ Foot';
+      else if (k === 'basketball_nba') l.sport_label = '🏀 NBA';
+      else if (k === 'mma_mixed_martial_arts') l.sport_label = '🥊 UFC';
+      else if (k.startsWith('tennis_')) l.sport_label = '🎾 Tennis';
+      else l.sport_label = '🎯 Autre';
+      usedIds.add(l.event_id);
+    });
+    combos.push({
+      strategy: c.strategy || 'unknown',
+      label: c.label || 'Combiné',
+      reasoning: c.reasoning || '',
+      legs,
+      total_cote: parseFloat(totalCote.toFixed(2)),
+    });
+  }
+  return combos;
 }
 
 main().catch((e) => { console.error('FATAL:', e); process.exit(1); });
