@@ -1,0 +1,53 @@
+  name: Daily pronos refresh
+
+  # Runs every morning at 07:00 Paris time.
+  # - fetches today's fixtures + stats from Flashscore & The Odds API
+  # - writes fact-based analyses and market picks via Claude Haiku 4.5
+  # - commits and pushes pronos.json so GitHub Pages redeploys
+
+  on:
+    schedule:
+      - cron: '0 5 * * *' # 05:00 UTC = 07:00 Europe/Paris
+    workflow_dispatch: {} # enables manual "Run workflow" button in the Actions UI
+
+  concurrency:
+    group: pronos-main
+    cancel-in-progress: false
+
+  jobs:
+    refresh:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+      steps:
+        - name: Checkout main
+          uses: actions/checkout@v4
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v4
+          with:
+            node-version: '20'
+
+        - name: Generate pronos.json (fetch + parse markets)
+          env:
+            ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+            FLASHSCORE_KEY: ${{ secrets.FLASHSCORE_KEY }}
+          run: node scripts/generate-pronos.js
+
+        - name: Write analyses via Claude Haiku
+          env:
+            ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          run: node scripts/analyse-pronos.js
+
+        - name: Commit and push if changed
+          run: |
+            git config user.email 'coach-parie-bot@users.noreply.github.com'
+            git config user.name 'Coach Parie Bot'
+            if git diff --quiet -- pronos.json; then
+              echo "No changes to pronos.json — skipping commit"
+            else
+              git add pronos.json
+              git commit -m "chore(pronos): daily refresh — picks + analyses + coup-de-cœur"
+              git push
+              echo "Pushed daily refresh"
+            fi
