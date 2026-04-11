@@ -495,17 +495,22 @@ function computeCoupDeCoeur(allPronos) {
   return top.map((p) => p.event_id);
 }
 
-async function enrichCoupDeCoeurFoot(allPronos) {
-  // Only enrich foot coup-de-cœur picks — non-foot picks don't have
-  // Flashscore data in our setup (NBA/UFC/tennis come from the Odds API).
-  const footPicks = allPronos.filter((p) => p.coup_de_coeur && p.flashscore_id);
-  for (const p of footPicks) {
+// Max foot matches to enrich per run (Pro plan: 1000/day, plenty of headroom).
+// Capped as a safety net in case the fixture list is unexpectedly huge.
+const MAX_FOOT_ENRICHMENTS = 40;
+
+async function enrichAllFoot(allPronos) {
+  // Enrich EVERY foot match (not just coup-de-cœur) so that every prono on
+  // the site has real H2H + form data to write an analysis from.
+  const footMatches = allPronos.filter((p) => p.flashscore_id).slice(0, MAX_FOOT_ENRICHMENTS);
+  let done = 0;
+  for (const p of footMatches) {
     try {
       console.log(`    h2h: ${p.match}`);
       const h2h = await fsFetch(`/matches/h2h?match_id=${p.flashscore_id}`);
-      // The Flashscore h2h endpoint actually returns recent matches involving
-      // EITHER team (not only head-to-head), which is fine — we use it as a
-      // combined form + H2H signal. Keep the 15 most recent entries.
+      // The Flashscore /matches/h2h endpoint returns recent matches involving
+      // EITHER team (it's not pure head-to-head). Treated as a combined form +
+      // H2H signal. We keep the 15 most recent entries per match.
       const recent = Array.isArray(h2h)
         ? h2h.slice(0, 15).map((m) => ({
             timestamp: m.timestamp,
@@ -516,11 +521,12 @@ async function enrichCoupDeCoeurFoot(allPronos) {
           }))
         : [];
       p.stats = { recent_matches: recent };
+      done++;
     } catch (e) {
       console.error('    [WARN] h2h:', e.message);
     }
   }
-  return footPicks.length;
+  return done;
 }
 
 // ---------------------------------------------------------------------------
@@ -610,11 +616,11 @@ async function main() {
   const coupDeCoeurIds = computeCoupDeCoeur(allPronos);
   console.log(`    selected ${coupDeCoeurIds.length}`);
 
-  // 7. Enrich coup-de-cœur foot picks with recent matches / H2H
-  if (coupDeCoeurIds.length) {
-    console.log('[7] enrich foot coup-de-cœur with recent matches');
-    const enriched = await enrichCoupDeCoeurFoot(allPronos);
-    console.log(`    enriched ${enriched} foot picks`);
+  // 7. Enrich ALL foot matches with recent matches / H2H (Pro plan allows it)
+  if (allPronos.length) {
+    console.log('[7] enrich ALL foot matches with recent matches (up to ' + MAX_FOOT_ENRICHMENTS + ')');
+    const enriched = await enrichAllFoot(allPronos);
+    console.log(`    enriched ${enriched} foot matches`);
   }
 
   // 8. Write
