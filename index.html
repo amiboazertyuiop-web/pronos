@@ -246,6 +246,100 @@ nav{
 .jblock-badge.tennis{background:linear-gradient(135deg,var(--green),#059669);}
 .jblock-badge.import{background:linear-gradient(135deg,#6366f1,var(--purple));}
 .pronos-body{display:flex;flex-direction:column;gap:16px;}
+/* ===================== COUP DE COEUR ===================== */
+.cdc-layout{max-width:1000px;margin:0 auto;padding:40px 24px;}
+.cdc-header{text-align:center;margin-bottom:36px;}
+.cdc-title{
+  font-family:'Bebas Neue',sans-serif;font-size:44px;
+  letter-spacing:3px;
+  background:linear-gradient(135deg,#f97316,#f0c040 50%,#fff);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  margin-bottom:8px;
+}
+.cdc-sub{color:var(--muted);font-size:13px;letter-spacing:0.5px;max-width:600px;margin:0 auto 8px;}
+.cdc-meta{color:var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;}
+.cdc-grid{display:grid;grid-template-columns:1fr;gap:18px;}
+.cdc-card{
+  background:linear-gradient(140deg,var(--s2) 0%, var(--s3) 100%);
+  border:1px solid var(--border2);border-radius:16px;
+  padding:22px 24px;position:relative;overflow:hidden;
+  transition:all .25s ease;
+}
+.cdc-card::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:4px;
+  background:linear-gradient(180deg,#f97316,#f0c040);
+}
+.cdc-card:hover{transform:translateY(-2px);border-color:var(--gold);box-shadow:0 10px 30px rgba(240,192,64,0.08);}
+.cdc-rank{
+  position:absolute;top:16px;right:20px;
+  font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:1;
+  color:var(--gold);opacity:0.25;letter-spacing:2px;
+}
+.cdc-top-row{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:12px;}
+.cdc-sport-chip{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--s1);border:1px solid var(--border);border-radius:999px;
+  padding:5px 12px;font-size:10px;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--muted);font-weight:800;
+}
+.cdc-match{font-size:20px;font-weight:800;margin-bottom:4px;color:var(--text);}
+.cdc-time{font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;font-weight:700;}
+.cdc-pick-row{
+  display:flex;align-items:center;gap:14px;
+  padding:14px 16px;margin:16px 0;
+  background:rgba(240,192,64,0.06);border:1px solid rgba(240,192,64,0.2);
+  border-radius:12px;
+}
+.cdc-pick-label{
+  font-size:10px;color:var(--gold);letter-spacing:2px;
+  text-transform:uppercase;font-weight:800;margin-bottom:2px;
+}
+.cdc-pick-value{font-size:17px;font-weight:800;color:var(--text);}
+.cdc-cote-box{
+  margin-left:auto;text-align:right;padding-left:14px;
+  border-left:1px solid var(--border2);
+}
+.cdc-cote-label{
+  font-size:9px;color:var(--muted);letter-spacing:1.5px;
+  text-transform:uppercase;font-weight:700;
+}
+.cdc-cote-val{
+  font-family:'Bebas Neue',sans-serif;font-size:28px;
+  color:var(--gold);line-height:1;letter-spacing:1px;
+}
+.cdc-conf{display:flex;align-items:center;gap:6px;margin-top:4px;}
+.cdc-conf .dot{width:10px;height:10px;}
+.cdc-analyse{
+  color:var(--text);font-size:14px;line-height:1.6;
+  padding:12px 0;border-top:1px solid var(--border);
+}
+.cdc-analyse-empty{color:var(--muted);font-style:italic;}
+.cdc-actions{display:flex;gap:10px;margin-top:14px;}
+.cdc-bet-btn{
+  flex:1;background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#000;border:none;border-radius:10px;padding:12px 18px;
+  font-family:'Syne',sans-serif;font-size:12px;font-weight:800;
+  letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;
+  transition:all .2s;
+}
+.cdc-bet-btn:hover{transform:translateY(-1px);background:#fff;}
+.cdc-bet-btn.placed{
+  background:transparent;border:1px solid var(--border2);color:var(--muted);
+}
+.cdc-empty{
+  padding:60px 20px;text-align:center;color:var(--muted);
+  font-size:13px;letter-spacing:1px;
+}
+@media (max-width:720px){
+  .cdc-layout{padding:24px 14px;}
+  .cdc-title{font-size:32px;}
+  .cdc-card{padding:18px 16px;}
+  .cdc-match{font-size:17px;}
+  .cdc-rank{font-size:32px;}
+  .cdc-top-row{flex-direction:column;gap:8px;}
+  .cdc-pick-row{flex-wrap:wrap;}
+  .cdc-cote-box{margin-left:0;border-left:0;padding-left:0;border-top:1px solid var(--border2);padding-top:8px;text-align:left;}
+}
 .sidebar-empty{
   padding:10px 12px;font-size:11px;color:var(--muted);
   font-style:italic;letter-spacing:0.5px;
@@ -1215,6 +1309,7 @@ nav{
   <div class="nav-logo" onclick="showPage('home')"><span>🏆</span> LE COACH PARIE</div>
   <div class="nav-tab active" id="tab-home" onclick="showPage('home')"><span class="tab-icon">🏠</span>Accueil</div>
   <div class="nav-tab" id="tab-today" onclick="showPage('today')"><span class="tab-icon">📅</span>Aujourd'hui</div>
+  <div class="nav-tab" id="tab-coupdecoeur" onclick="showPage('coupdecoeur')"><span class="tab-icon">🔥</span>Coup de cœur</div>
   <div class="nav-tab" id="tab-sports" onclick="showPage('sports')"><span class="tab-icon">🎯</span>Sports</div>
   <div class="nav-tab" id="tab-bankroll" onclick="showPage('bankroll')"><span class="tab-icon">💰</span>Bankroll</div>
   <div class="nav-tab" id="tab-perf" onclick="showPage('perf')"><span class="tab-icon">📊</span>Perfs</div>
@@ -1308,6 +1403,18 @@ nav{
       <button class="cb-cancel" onclick="clearCombo()">Vider</button>
       <button class="cb-confirm" id="cb-confirm" onclick="confirmCombo()" disabled>✓ Créer le combiné</button>
     </div>
+  </div>
+</div>
+
+<!-- ===================== PAGE : COUP DE COEUR ===================== -->
+<div class="page" id="page-coupdecoeur">
+  <div class="cdc-layout">
+    <div class="cdc-header">
+      <div class="cdc-title">🔥 Les 10 coups de cœur du jour</div>
+      <div class="cdc-sub">Ma sélection — analysée le matin à 7h, cote minimum 1.25, mise à jour quotidienne.</div>
+      <div class="cdc-meta" id="cdc-meta"></div>
+    </div>
+    <div class="cdc-grid" id="cdc-grid"></div>
   </div>
 </div>
 
@@ -1967,6 +2074,7 @@ function showPage(id){
   document.getElementById('tab-'+id).classList.add('active');
   if(id==='perf') renderPerf();
   if(id==='today') renderToday();
+  if(id==='coupdecoeur') renderCoupDeCoeur();
   window.scrollTo(0, 0);
 }
 
@@ -2700,6 +2808,7 @@ async function loadAndRenderPronos() {
     buildSidebarAndPanels();
     syncBetButtons();
     renderToday();
+    renderCoupDeCoeur();
   } catch (e) {
     console.error('Failed to load pronos.json', e);
     const container = document.getElementById('dynamic-panels');
@@ -2952,6 +3061,83 @@ function filterToday(sport, btn) {
   document.querySelectorAll('.today-filter').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderToday();
+}
+
+// ===================== PAGE COUP DE COEUR =====================
+function renderCoupDeCoeur() {
+  const grid = document.getElementById('cdc-grid');
+  const metaEl = document.getElementById('cdc-meta');
+  if (!grid) return;
+  if (!pronosData || !pronosData.coup_de_coeur || !pronosData.coup_de_coeur.length) {
+    grid.innerHTML = '<div class="cdc-empty">⏳ Les coups de cœur sont générés chaque matin à 7h. Reviens bientôt.</div>';
+    if (metaEl) metaEl.textContent = '';
+    return;
+  }
+  // Build a lookup of all pronos across sports
+  const allPronos = [];
+  for (const [sportKey, sport] of Object.entries(pronosData.sports || {})) {
+    const sportLabel = SPORT_LABELS[sportKey] || sport.label || sportKey;
+    for (const league of sport.leagues || []) {
+      for (const p of league.pronos || []) {
+        allPronos.push({ p, sportKey, sportLabel, leagueLabel: league.label, leagueFlag: league.flag || '' });
+      }
+    }
+  }
+  const byId = new Map(allPronos.map((x) => [x.p.event_id, x]));
+  const pendingMatches = new Set(bets.filter((b) => b.status === 'pending').map((b) => b.match));
+
+  if (metaEl) {
+    const ts = pronosData.meta && pronosData.meta.generated_at
+      ? new Date(pronosData.meta.generated_at).toLocaleString('fr-FR')
+      : '';
+    metaEl.textContent = ts ? '↻ Mis à jour ' + ts : '';
+  }
+
+  const html = pronosData.coup_de_coeur.map((eventId, idx) => {
+    const entry = byId.get(eventId);
+    if (!entry) return '';
+    const { p, sportKey, sportLabel, leagueLabel, leagueFlag } = entry;
+    const dotsHtml = Array.from({ length: 5 }, (_, i) =>
+      '<span class="dot' + (i < (p.confiance || 3) ? ' on' : '') + '"></span>'
+    ).join('');
+    const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
+    const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
+    const analyseHtml = p.analyse
+      ? '<div class="cdc-analyse">' + esc(p.analyse) + '</div>'
+      : '<div class="cdc-analyse cdc-analyse-empty">Analyse en cours de rédaction par le Coach — elle apparaîtra au prochain run de 7h.</div>';
+    const isPlaced = pendingMatches.has(p.match);
+    const btnHtml = isPlaced
+      ? '<button class="cdc-bet-btn placed" onclick="cancelBetByMatch(\'' + jsSafe(p.match) + '\');renderCoupDeCoeur()">✕ Annuler le pari</button>'
+      : '<button class="cdc-bet-btn" onclick="openMiseModal(\'' + jsSafe(p.match) + '\',\'' + jsSafe(p.pari) + '\',' + p.cote_retenue + ',\'' + jsSafe(sportLabel) + '\',\'' + ptagClass + '\',\'' + jsSafe(ptagLabel) + '\',' + (p.confiance || 3) + ')">+ Parier ce coup de cœur</button>';
+
+    return (
+      '<div class="cdc-card">' +
+      '<div class="cdc-rank">#' + (idx + 1) + '</div>' +
+      '<div class="cdc-top-row">' +
+      '<div>' +
+      '<div class="cdc-sport-chip">' + esc(leagueFlag) + ' ' + esc(leagueLabel || sportLabel) + '</div>' +
+      '<div class="cdc-match" style="margin-top:8px">' + esc(p.match) + '</div>' +
+      '<div class="cdc-time">' + esc(p.time_display || '') + '</div>' +
+      '</div>' +
+      '</div>' +
+      '<div class="cdc-pick-row">' +
+      '<div>' +
+      '<div class="cdc-pick-label">Mon pick</div>' +
+      '<div class="cdc-pick-value">' + esc(p.pari) + '</div>' +
+      '<div class="cdc-conf">' + dotsHtml + '</div>' +
+      '</div>' +
+      '<div class="cdc-cote-box">' +
+      '<div class="cdc-cote-label">Cote</div>' +
+      '<div class="cdc-cote-val">' + p.cote_retenue + '</div>' +
+      '</div>' +
+      '</div>' +
+      analyseHtml +
+      '<div class="cdc-actions">' + btnHtml + '</div>' +
+      '</div>'
+    );
+  }).join('');
+
+  grid.innerHTML = html;
 }
 
 function renderToday() {
