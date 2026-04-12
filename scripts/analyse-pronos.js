@@ -21,7 +21,7 @@ const path = require('path');
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 if (!API_KEY) { console.error('ERROR: ANTHROPIC_API_KEY env var not set'); process.exit(1); }
 
-const MODEL = 'claude-haiku-4-5-20251001';
+const MODEL = 'claude-sonnet-4-6-20250514';
 const JSON_PATH = path.join(__dirname, '..', 'pronos.json');
 const API_URL = 'https://api.anthropic.com/v1/messages';
 
