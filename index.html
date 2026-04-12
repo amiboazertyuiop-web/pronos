@@ -2913,6 +2913,21 @@ function jsSafe(s) {
   return String(s == null ? '' : s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/"/g,'&quot;');
 }
 
+// Format an ISO commence_time into Paris-time display: "Lun. 10h00"
+function formatTimeParis(iso) {
+  if (!iso) return '';
+  try {
+    const d = new Date(iso);
+    const days = ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'];
+    const paris = new Date(d.toLocaleString('en-US', { timeZone: 'Europe/Paris' }));
+    const hh = paris.getHours().toString().padStart(2, '0');
+    const mm = paris.getMinutes().toString().padStart(2, '0');
+    return `${days[paris.getDay()]} ${hh}h${mm}`;
+  } catch {
+    return '';
+  }
+}
+
 function renderLeaguePanel(panel, league, outcomeCount, badge, sportKey) {
   const body = panel.querySelector('.pronos-body');
   if (!body) return;
@@ -3021,7 +3036,7 @@ function renderMatchCard(p, sportKey, outcomeCount) {
       '</button>' +
     '</div>';
 
-  const timeDisplay = p.time_display || '';
+  const timeDisplay = formatTimeParis(p.commence_time) || p.time_display || '';
   const scoreText = p.score_prevu ? ' — ' + esc(p.score_prevu) : '';
   const analyse = p.analyse ? '<div class="pc-reason">' + esc(p.analyse) + '</div>' : '';
   const coteBadge = p.cote_retenue
@@ -3288,7 +3303,7 @@ function renderCoupDeCoeur() {
       '<div>' +
       '<div class="cdc-sport-chip">' + esc(leagueFlag) + ' ' + esc(leagueLabel || sportLabel) + '</div>' +
       '<div class="cdc-match" style="margin-top:8px">' + esc(p.match) + '</div>' +
-      '<div class="cdc-time">' + esc(p.time_display || '') + '</div>' +
+      '<div class="cdc-time">' + esc(formatTimeParis(p.commence_time) || p.time_display || '') + '</div>' +
       '<div style="margin-top:8px">' + cdcTagHtml + '</div>' +
       '</div>' +
       '</div>' +
@@ -3337,7 +3352,7 @@ function renderFunPage() {
         '</div>' +
         '<div class="mc-top">' +
           '<div class="mc-team home"><div class="mc-name">' + esc(y.home || '') + '</div></div>' +
-          '<div class="mc-center"><div class="mc-time">' + esc(y.time_display || '') + '</div><div class="mc-vs">VS</div></div>' +
+          '<div class="mc-center"><div class="mc-time">' + esc(formatTimeParis(y.commence_time) || y.time_display || '') + '</div><div class="mc-vs">VS</div></div>' +
           '<div class="mc-team away"><div class="mc-name">' + esc(y.away || '') + '</div></div>' +
         '</div>' +
         '<div class="prono-row">' +
