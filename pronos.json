@@ -1,15 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-04-11T20:56:26.762Z",
+    "generated_at": "2026-04-12T08:09:24.393Z",
     "generator": "scripts/generate-pronos.js",
-    "version": "3.0",
+    "version": "4.0",
     "window_hours": 24,
     "last_results_update": "2026-04-11T20:56:26.762Z",
-    "resolved_last_run": 0,
-    "archived_last_run": 9,
-    "analyses_written_at": "2026-04-11T21:17:12.107Z",
-    "analyses_cost_usd": 0.0035,
-    "last_hourly_refresh": "2026-04-12T06:08:19.715Z"
+    "analyses_written_at": "2026-04-12T08:11:38.334Z",
+    "analyses_cost_usd": 0.0957
   },
   "sports": {
     "foot": {
@@ -42,22 +39,22 @@
               "away": "Le Havre",
               "match": "Nice vs Le Havre",
               "prono": "win-home",
-              "pari": "Les deux équipes marquent - OUI",
-              "cote_retenue": 1.81,
+              "pari": "Plus de 2.5 buts",
+              "cote_retenue": 1.98,
               "cotes": {
                 "domicile": 1.98,
-                "nul": 3.37,
-                "exterieur": 4.67
+                "nul": 3.4,
+                "exterieur": 4.63
               },
-              "pick_category": "btts",
-              "analyse": "Nice traverse une période extrêmement difficile avec 4 défaites lors des 5 derniers matchs (0-4 vs PSG, 0-4 vs Rennes, 0-2 vs Angers, 1-3 vs Strasbourg), laissant deviner une défense en débâcle et une confiance au plus bas. Le Havre montre plus de stabilité défensive avec trois matchs sans défaite (1-1 vs Auxerre, 0-0 vs Lyon, 2-1 vs Toulouse), même s'il encaisse régulièrement. Cette asymétrie forme/défense suggère un match fermé où Nice, malgré le statut de favori, peinera à créer de véritables opportunités contre une équipe organisée en bloc bas. Les récentes rencontres du Havre affichent un total de buts limité (0-0, 1-1, 0-1), tandis que Nice est pris au jeu en défense. L'over 2.5 à 2.02 offre peu d'attrait face à cette tendance aux scores serrés. Le pari BTTS Yes à 1.81 représente le meilleur équilibre : Nice doit scorer pour ne pas sombrer, et le Havre a montré qu'il peut marquer même en visiteur (2-1 vs Toulouse).",
-              "confiance": 3,
+              "pick_category": "ou",
+              "analyse": "Nice traverse une période extrêmement difficile avec 4 défaites consécutives (0-4 contre PSG et Rennes, 0-2 contre Lyon, 1-3 contre Strasbourg), encaissant 13 buts en 5 derniers matchs. Le Havre montre une meilleure stabilité défensive avec un nul 1-1 récent et un clean sheet contre Lyon, même s'il reste fragile offensivement. Sur les 5 derniers matchs, Nice n'a marqué que 2 buts tandis que Le Havre en a 3, révélant une crise offensive à Nice. Le contexte suggère un match où Nice, malgré son statut de favori à domicile, peine à créer du danger, tandis que Le Havre pourrait profiter de cette vulnérabilité défensive pour marquer. Over 2.5 offre le meilleur équilibre : Nice défensivement en ruine, Le Havre capable de punir, et l'enjeu de maintien qui pousse les deux équipes à être agressives.",
+              "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
+              "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
@@ -169,36 +166,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 1.93,
-                  "draw": 3.25,
-                  "away": 4.42
+                  "home": 1.92,
+                  "draw": 3.3,
+                  "away": 4.45
                 },
                 "double_chance": {
-                  "12": 1.31,
+                  "12": 1.33,
                   "1X": 1.21,
                   "X2": 1.83
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.33,
-                    "under": 3.23
+                    "over": 1.29,
+                    "under": 3.4
                   },
                   "2.5": {
-                    "over": 2.02,
-                    "under": 1.76
+                    "over": 1.98,
+                    "under": 1.81
                   },
                   "3.5": {
-                    "over": 3.5,
-                    "under": 1.28
+                    "over": 3.27,
+                    "under": 1.3
                   }
                 },
                 "btts": {
-                  "yes": 1.81,
-                  "no": 1.9
+                  "yes": 1.79,
+                  "no": 1.92
                 },
                 "draw_no_bet": {
-                  "home": 1.36,
-                  "away": 3
+                  "home": 1.34,
+                  "away": 2.9
                 }
               }
             },
@@ -216,22 +213,22 @@
               "away": "Lille",
               "match": "Toulouse vs Lille",
               "prono": "win-home",
-              "pari": "Over 2.5 buts",
-              "cote_retenue": 2.17,
+              "pari": "Double Chance 1X (Lille ne perd pas)",
+              "cote_retenue": 1.58,
               "cotes": {
                 "domicile": 3.44,
                 "nul": 3.33,
                 "exterieur": 2.36
               },
-              "pick_category": "ou",
-              "analyse": "Lille arrive en excellente forme avec 4 victoires en 5 matchs de Ligue 1 (3-0 vs Lens, 2-1 vs Marseille, 2-1 vs Rennes, 1-0 vs Nantes), affichant une solidité défensive impressionnante malgré des revers en Europe. Toulouse traverse une période chaotique : défaite 3-1 contre le PSG récemment, avec un bilan très instable (victoire 1-0 vs Lorient mais défaite 0-1 vs Marseille). Lille domine clairement au niveau de la confiance et de la performance, dominateur sur le terrain avec une capacité offensive supérieure. Le contexte avantage nettement les Dogues à domicile. Over 2.5 buts apparaît comme le pick le plus fiable : Lille crée beaucoup de chances (moyenne offensive élevée) et bien que Toulouse soit fragile défensivement, une victoire claire de Lille (2-0 ou 2-1) reste plausible.",
+              "pick_category": "dc",
+              "analyse": "Lille arrive en excellente forme avec 4 victoires en 5 derniers matchs de L1 (3-0 Lens, 2-1 Marseille, 2-1 Rennes, 1-0 Nantes), affichant une solidité défensive remarquable et une efficacité offensive croissante. Toulouse traverse une période instable : défaite 3-1 face au PSG avant le match, victoire 1-0 contre Lorient, mais aussi revers 0-1 contre Marseille et Rennes, révélant des faiblesses défensives chroniques. L'avantage du stade pour Toulouse est limité face à une machine lilloise qui domine tactiquement et physiquement. Les trois dernières rencontres de Lille montrent un profil offensif affûté (7 buts en 3 matchs) contre des défenses perméables. Le double chance 1X en faveur de Lille (cote 1.58) offre la meilleure valeur : il couvre victoire ou nul avec une cote correcte, neutralisant le risque d'une surprise locale tout en capitalisant sur la supériorité affichée.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": true,
+              "coup_de_coeur": false,
               "stats": {
                 "recent_matches": [
                   {
@@ -343,13 +340,13 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 3.2,
-                  "draw": 3.27,
-                  "away": 2.33
+                  "home": 3.25,
+                  "draw": 3.23,
+                  "away": 2.3
                 },
                 "double_chance": {
                   "12": 1.33,
-                  "1X": 1.57,
+                  "1X": 1.58,
                   "X2": 1.35
                 },
                 "over_under": {
@@ -358,7 +355,7 @@
                     "under": 2.95
                   },
                   "2.5": {
-                    "over": 2.17,
+                    "over": 2.16,
                     "under": 1.67
                   },
                   "3.5": {
@@ -368,11 +365,11 @@
                 },
                 "btts": {
                   "yes": 1.87,
-                  "no": 1.87
+                  "no": 1.86
                 },
                 "draw_no_bet": {
-                  "home": 2.15,
-                  "away": 1.62
+                  "home": 2.18,
+                  "away": 1.58
                 }
               }
             },
@@ -390,15 +387,15 @@
               "away": "Lorient",
               "match": "Lyon vs Lorient",
               "prono": "win-home",
-              "pari": "Over 2.5 buts",
-              "cote_retenue": 1.89,
+              "pari": "Les deux équipes marquent",
+              "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 1.69,
-                "nul": 4.22,
-                "exterieur": 5.33
+                "domicile": 1.64,
+                "nul": 4.32,
+                "exterieur": 5.74
               },
-              "pick_category": "ou",
-              "analyse": "Lyon traverse une période très difficile avec 4 matchs sans victoire en Ligue 1 (défaites contre Monaco 1-2 et Marseille 3-2, nuls contre Angers, Le Havre et Paris FC), encaissant régulièrement des buts et affichant une fragilité défensive préoccupante. Lorient, bien que instable (1 victoire en 5 L1, nul 1-1 avec Paris FC), reste une équipe capable de créer des occasions et de scorer, comme l'attestent ses 2-1 contre Lens et 2-2 contre Auxerre récemment. Lyon à domicile garde un léger avantage mais sans domination marquante, tandis que Lorient n'est jamais aisé à écraser. Les deux équipes combinées montrent une tendance offensive avec 3+ buts dans plusieurs rencontres récentes, et les défenses ne sont ni suffisamment solides pour bloquer un match.",
+              "pick_category": "btts",
+              "analyse": "Lyon traverse une période très difficile avec 5 matchs sans victoire en Ligue 1 (0-0 vs Angers, 1-2 vs Monaco, 1-1 vs Paris FC, 0-0 vs Le Havre, défaites en coupe). L'équipe encaisse régulièrement et peine offensivement. Lorient montre une meilleure dynamique récente avec 2-1 vs Lens et 2-2 vs Auxerre, alternant les buts marqués et encaissés. Le contexte faveur Lyon reste présent (cote 1.6) mais l'équipe lyonnaise manque cruellement de confiance et de continuité défensive. Lorient, équipe de milieu de tableau, a les ressources pour créer du danger et marquer au moins une fois. Le profil du match penche vers un partage des buts ou une victoire étroite de Lyon, mais pas vers une domination nette.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -517,36 +514,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 1.7,
-                  "draw": 3.8,
-                  "away": 5.08
+                  "home": 1.6,
+                  "draw": 4,
+                  "away": 5.5
                 },
                 "double_chance": {
-                  "12": 1.25,
-                  "1X": 1.17,
-                  "X2": 2.12
+                  "12": 1.23,
+                  "1X": 1.14,
+                  "X2": 2.3
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.27,
-                    "under": 3.52
+                    "over": 1.24,
+                    "under": 3.85
                   },
                   "2.5": {
-                    "over": 1.89,
-                    "under": 1.9
+                    "over": 1.77,
+                    "under": 2
                   },
                   "3.5": {
-                    "over": 3.23,
-                    "under": 1.33
+                    "over": 2.9,
+                    "under": 1.37
                   }
                 },
                 "btts": {
-                  "yes": 1.84,
-                  "no": 1.87
+                  "yes": 1.8,
+                  "no": 1.94
                 },
                 "draw_no_bet": {
-                  "home": 1.25,
-                  "away": 3.55
+                  "home": 1.21,
+                  "away": 4
                 }
               }
             }
@@ -575,15 +572,15 @@
               "away": "Newcastle",
               "match": "Crystal Palace vs Newcastle",
               "prono": "win-home",
-              "pari": "Double Chance Palace ou Nul (1X)",
+              "pari": "Les Deux Équipes Marquent",
               "cote_retenue": 1.61,
               "cotes": {
-                "domicile": 3,
+                "domicile": 2.97,
                 "nul": 3.58,
-                "exterieur": 2.49
+                "exterieur": 2.51
               },
-              "pick_category": "dc",
-              "analyse": "Crystal Palace affiche une excellente forme en 2026 avec trois victoires consécutives en compétitions européennes (3-0 Fiorentina, 2-0 Zrinjski, 2-1 AEK Larnaca) et une victoire 3-1 face à Tottenham en Premier League le 5 mars. Newcastle connaît une instabilité marquée : défaite 1-2 contre Sunderland, humiliation 2-7 au Camp Nou, mais avec des succès contre Chelsea (0-1) et Manchester United (2-1). L'enjeu européen de Palace (UECL) et sa solidité défensive actuelle (0-0 face à Leeds et AEK) contrastent avec les failles défensives de Newcastle (encaissements multiples en Ligue des Champions). Palace bénéficie de l'élan et de la confiance, Newcastle arrive fragilisé malgré quelques résultats positifs.",
+              "pick_category": "btts",
+              "analyse": "Crystal Palace affiche une dynamique offensive remarquable en Premier League avec trois victoires récentes (3-1 contre Tottenham, 0-0 contre Leeds mais dominant, et une victoire 3-0 en UECL), tandis que Newcastle présente des résultats volatiles : une victoire 2-1 face à Manchester United mais aussi des défaites 1-2 contre Sunderland et 0-7 à Barcelone. En déplacement à Selhurst Park, Newcastle reste vulnérable défensivement (encaissé 7 à Barcelone, 3 face à Manchester City). L'attaque de Crystal Palace est en confiance avec des clean sheets rares contre elle (0-0 seulement contre Leeds et AEK Larnaca), suggérant une capacité à trouver le filet. BTTS apparaît comme le meilleur pick : Palace a les qualités offensives pour scorer, et Newcastle possède l'attaque pour riposter malgré ses défenses fragiles.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -702,210 +699,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 3,
-                  "draw": 3.5,
-                  "away": 2.27
+                  "home": 2.83,
+                  "draw": 3.45,
+                  "away": 2.4
                 },
                 "double_chance": {
-                  "12": 1.3,
-                  "1X": 1.61,
-                  "X2": 1.37
+                  "12": 1.29,
+                  "1X": 1.54,
+                  "X2": 1.4
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.22,
-                    "under": 4.15
+                    "under": 4.13
                   },
                   "2.5": {
                     "over": 1.73,
-                    "under": 2.08
+                    "under": 2.06
                   },
                   "3.5": {
-                    "over": 2.75,
+                    "over": 2.77,
                     "under": 1.4
                   }
                 },
                 "btts": {
-                  "yes": 1.6,
+                  "yes": 1.61,
                   "no": 2.24
                 },
                 "draw_no_bet": {
-                  "home": 2.1,
-                  "away": 1.65
-                }
-              }
-            },
-            {
-              "event_id": "IVe1QmL7",
-              "flashscore_id": "IVe1QmL7",
-              "home_team_id": "UsushcZr",
-              "away_team_id": "W00wmLO0",
-              "tournament_id": "oeeq9yvp",
-              "tournament_url": "/football/england/premier-league/",
-              "sport_key": "flashscore_football_epl",
-              "commence_time": "2026-04-12T13:00:00.000Z",
-              "time_display": "Dim. 13h00 UTC",
-              "home": "Nottingham",
-              "away": "Aston Villa",
-              "match": "Nottingham vs Aston Villa",
-              "prono": "win-home",
-              "pari": "Plus de 2.5 buts",
-              "cote_retenue": 1.91,
-              "cotes": {
-                "domicile": 2.81,
-                "nul": 3.43,
-                "exterieur": 2.71
-              },
-              "pick_category": "ou",
-              "analyse": "Nottingham montre une forme en dents de scie en Premier League : victoire éclatante 3-0 contre Tottenham, mais défaites contre Brighton (2-1) et Manchester City (2-2), avec un 0-0 face à Fulham. Aston Villa présente un profil offensif marqué avec des victoires 2-0 contre West Ham et Lille, mais aussi des revers lourds face à Chelsea (1-4) et Manchester United (3-1), suggérant une instabilité défensive. Sur les trois derniers matchs, Nottingham concède peu (0-0, 1-3 encaissé en EL contre Porto), tandis qu'Aston Villa reste prolifique offensivement (3 buts contre Bologna, 2 contre West Ham). Le contexte européen (Porto 1-1, Midtjylland 1-3) indique que les deux clubs jouent sur plusieurs fronts avec fatigue potentielle. Ce match oppose une défense compacte de Nottingham à une attaque incisive d'Aston Villa, créant les conditions pour un over 2.5 buts : les deux formations sont capables de marquer, et Nottingham ne peut pas se permettre une passivité totale à domicile.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "EL",
-                    "home": "FC Porto",
-                    "away": "Nottingham",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "EL",
-                    "home": "Bologna",
-                    "away": "Aston Villa",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1774607400,
-                    "tournament": "CF",
-                    "home": "Aston Villa",
-                    "away": "Elche",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1774188900,
-                    "tournament": "PL",
-                    "home": "Tottenham",
-                    "away": "Nottingham",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1774188900,
-                    "tournament": "PL",
-                    "home": "Aston Villa",
-                    "away": "West Ham",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773950400,
-                    "tournament": "EL",
-                    "home": "Aston Villa",
-                    "away": "Lille",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773942300,
-                    "tournament": "EL",
-                    "home": "Midtjylland",
-                    "away": "Nottingham",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1773583200,
-                    "tournament": "PL",
-                    "home": "Nottingham",
-                    "away": "Fulham",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1773583200,
-                    "tournament": "PL",
-                    "home": "Manchester Utd",
-                    "away": "Aston Villa",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1773345600,
-                    "tournament": "EL",
-                    "home": "Nottingham",
-                    "away": "Midtjylland",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1773337500,
-                    "tournament": "EL",
-                    "home": "Lille",
-                    "away": "Aston Villa",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772652600,
-                    "tournament": "PL",
-                    "home": "Manchester City",
-                    "away": "Nottingham",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1772652600,
-                    "tournament": "PL",
-                    "home": "Aston Villa",
-                    "away": "Chelsea",
-                    "score": "1-4"
-                  },
-                  {
-                    "timestamp": 1772373600,
-                    "tournament": "PL",
-                    "home": "Brighton",
-                    "away": "Nottingham",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772222400,
-                    "tournament": "PL",
-                    "home": "Wolves",
-                    "away": "Aston Villa",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.67,
-                  "draw": 3.38,
-                  "away": 2.63
-                },
-                "double_chance": {
-                  "12": 1.31,
-                  "1X": 1.46,
-                  "X2": 1.48
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.29,
-                    "under": 3.4
-                  },
-                  "2.5": {
-                    "over": 1.91,
-                    "under": 1.85
-                  },
-                  "3.5": {
-                    "over": 3.27,
-                    "under": 1.31
-                  }
-                },
-                "btts": {
-                  "yes": 1.71,
-                  "no": 2.04
-                },
-                "draw_no_bet": {
-                  "home": 1.83,
-                  "away": 1.83
+                  "home": 2,
+                  "away": 1.71
                 }
               }
             },
@@ -923,22 +746,22 @@
               "away": "Tottenham",
               "match": "Sunderland vs Tottenham",
               "prono": "win-home",
-              "pari": "Moins de 2.5 buts",
-              "cote_retenue": 1.84,
+              "pari": "Over 2.5 buts",
+              "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 2.73,
-                "nul": 3.46,
-                "exterieur": 2.78
+                "domicile": 2.72,
+                "nul": 3.42,
+                "exterieur": 2.82
               },
               "pick_category": "ou",
-              "analyse": "Tottenham traverse une crise majeure avec 5 défaites en 7 matchs (0-3 à Nottingham, 1-3 à Crystal Palace, 1-4 à Arsenal, 5-2 en C1 à l'Atlético), incarnant une défense poreuse et une instabilité chronique. Sunderland montre plus de régularité défensive : 4 matchs sans encaisser plus d'un but en 5 derniers (1-0 contre Brighton, 0-1 contre Liverpool, 1-1 à Bournemouth, 1-0 contre Leeds), bien que l'attaque manque d'incisivité (3 buts en 5 matchs). Sur le plan offensif, Tottenham reste dangereux mais inconstant, tandis que Sunderland privilégie la solidité. Ce déplacement à Sunderland favorise un match fermé où l'équipe locale, mieux structurée en défense ces dernières semaines, peut limiter les dégâts face à des Spurs imprévisibles.",
+              "analyse": "Tottenham traverse une période critique avec 5 défaites en 7 matchs (0-3 Nottingham, 3-2 Atlético Madrid en encaissant 5 buts à l'aller, 1-3 Crystal Palace, 1-4 Arsenal, 2-1 Fulham), montrant une défense poreuse malgré quelques victoires en Ligue des Champions. Sunderland affiche une meilleure stabilité défensive (nuls 1-1 contre Liverpool et Bournemouth, victoires 1-0 Leeds et 1-0 Brighton récemment) avec une forme ascendante. Cependant, Tottenham demeure une équipe talentueuse en attaque et Sunderland reste vulnérable aux équipes de haut niveau (0-3 Fulham, 0-1 Brighton). Les deux équipes ont encaissé des buts régulièrement ces dernières semaines, ce qui suggère un match ouvert avec probabilité de buts de part et d'autre. Over 2.5 à 1.92 reflète bien cette attente : Spurs capable de scorer malgré la fragilité défensive, Sunderland offensif mais pas imperméable.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
+              "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
@@ -1050,14 +873,188 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.67,
-                  "draw": 3.3,
+                  "home": 2.63,
+                  "draw": 3.35,
                   "away": 2.67
                 },
                 "double_chance": {
                   "12": 1.33,
-                  "1X": 1.47,
+                  "1X": 1.46,
                   "X2": 1.44
+                },
+                "over_under": {
+                  "1.5": {
+                    "over": 1.28,
+                    "under": 3.55
+                  },
+                  "2.5": {
+                    "over": 1.92,
+                    "under": 1.86
+                  },
+                  "3.5": {
+                    "over": 3.2,
+                    "under": 1.31
+                  }
+                },
+                "btts": {
+                  "yes": 1.67,
+                  "no": 2.1
+                },
+                "draw_no_bet": {
+                  "home": 1.85,
+                  "away": 1.84
+                }
+              }
+            },
+            {
+              "event_id": "IVe1QmL7",
+              "flashscore_id": "IVe1QmL7",
+              "home_team_id": "UsushcZr",
+              "away_team_id": "W00wmLO0",
+              "tournament_id": "oeeq9yvp",
+              "tournament_url": "/football/england/premier-league/",
+              "sport_key": "flashscore_football_epl",
+              "commence_time": "2026-04-12T13:00:00.000Z",
+              "time_display": "Dim. 13h00 UTC",
+              "home": "Nottingham",
+              "away": "Aston Villa",
+              "match": "Nottingham vs Aston Villa",
+              "prono": "win-home",
+              "pari": "BTTS - Oui",
+              "cote_retenue": 1.71,
+              "cotes": {
+                "domicile": 2.76,
+                "nul": 3.43,
+                "exterieur": 2.76
+              },
+              "pick_category": "btts",
+              "analyse": "Nottingham traverse une excellente période offensive avec trois victoires consécutives en PL (3-0 vs Tottenham, 1-3 vs Midtjylland en EL, 1-1 vs Porto) malgré quelques résultats décevants avant (0-0 vs Fulham, 2-2 vs City). Aston Villa présente un profil instable : dominants en Europa League (victoires 2-0 vs Lille et 1-3 vs Bologna) mais fragiles en PL récemment (défaites 1-2 vs Elche en CF, 3-1 vs Man Utd, 1-4 vs Chelsea, 2-0 vs Wolves). Nottingham à domicile bénéficie d'une dynamique positive face à une Villa en difficulté défensive. Les deux équipes ont montré des capacités offensives (Nottingham a marqué 3 buts vs Tottenham; Villa a score 3 en EL) mais Villa encaisse régulièrement. Un scénario with buts de part et d'autre ou une victoire Nottingham domicile semblent les plus plausibles.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "EL",
+                    "home": "FC Porto",
+                    "away": "Nottingham",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "EL",
+                    "home": "Bologna",
+                    "away": "Aston Villa",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1774607400,
+                    "tournament": "CF",
+                    "home": "Aston Villa",
+                    "away": "Elche",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1774188900,
+                    "tournament": "PL",
+                    "home": "Tottenham",
+                    "away": "Nottingham",
+                    "score": "0-3"
+                  },
+                  {
+                    "timestamp": 1774188900,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "West Ham",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1773950400,
+                    "tournament": "EL",
+                    "home": "Aston Villa",
+                    "away": "Lille",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1773942300,
+                    "tournament": "EL",
+                    "home": "Midtjylland",
+                    "away": "Nottingham",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Nottingham",
+                    "away": "Fulham",
+                    "score": "0-0"
+                  },
+                  {
+                    "timestamp": 1773583200,
+                    "tournament": "PL",
+                    "home": "Manchester Utd",
+                    "away": "Aston Villa",
+                    "score": "3-1"
+                  },
+                  {
+                    "timestamp": 1773345600,
+                    "tournament": "EL",
+                    "home": "Nottingham",
+                    "away": "Midtjylland",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1773337500,
+                    "tournament": "EL",
+                    "home": "Lille",
+                    "away": "Aston Villa",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Manchester City",
+                    "away": "Nottingham",
+                    "score": "2-2"
+                  },
+                  {
+                    "timestamp": 1772652600,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "Chelsea",
+                    "score": "1-4"
+                  },
+                  {
+                    "timestamp": 1772373600,
+                    "tournament": "PL",
+                    "home": "Brighton",
+                    "away": "Nottingham",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1772222400,
+                    "tournament": "PL",
+                    "home": "Wolves",
+                    "away": "Aston Villa",
+                    "score": "2-0"
+                  }
+                ]
+              },
+              "markets": {
+                "1x2": {
+                  "home": 2.64,
+                  "draw": 3.33,
+                  "away": 2.63
+                },
+                "double_chance": {
+                  "12": 1.33,
+                  "1X": 1.45,
+                  "X2": 1.45
                 },
                 "over_under": {
                   "1.5": {
@@ -1065,17 +1062,17 @@
                     "under": 3.4
                   },
                   "2.5": {
-                    "over": 1.94,
-                    "under": 1.84
+                    "over": 1.93,
+                    "under": 1.85
                   },
                   "3.5": {
-                    "over": 3.4,
-                    "under": 1.29
+                    "over": 3.33,
+                    "under": 1.3
                   }
                 },
                 "btts": {
-                  "yes": 1.72,
-                  "no": 2.06
+                  "yes": 1.71,
+                  "no": 2.05
                 },
                 "draw_no_bet": {
                   "home": 1.85,
@@ -1097,15 +1094,15 @@
               "away": "Manchester City",
               "match": "Chelsea vs Manchester City",
               "prono": "win-home",
-              "pari": "Over 2.5 buts",
-              "cote_retenue": 1.53,
+              "pari": "OVER 2.5 buts",
+              "cote_retenue": 1.52,
               "cotes": {
-                "domicile": 3.56,
-                "nul": 4.08,
-                "exterieur": 2.04
+                "domicile": 3.68,
+                "nul": 4.03,
+                "exterieur": 2.02
               },
               "pick_category": "ou",
-              "analyse": "Manchester City domine nettement dans l'immédiat : victoire 4-0 contre Liverpool en FAC et succès 2-0 sur Arsenal en EFL montrent une solidité offensive et défensive redoutable. Chelsea traverse une période très instable avec trois défaites consécutives en PL (0-1 Newcastle, 0-3 PSG, défaite 3-0 face à Everton), bien que le succès 7-0 sur Port Vale en FAC soit trop facile pour être révélateur. En Ligue des Champions, City a concédé des buts (1-2 Real Madrid, 2-2 Nottingham) mais reste nettement plus régulière que Chelsea. L'avantage tactique et de forme penche clairement vers City, et bien que Chelsea soit à domicile, leur défense fragile en Premier League cède facilement. Over 2.5 buts s'impose : Manchester City marque systématiquement et Chelsea, malgré ses soucis défensifs, reste offensif (voir 7-0 et 4-3 contre Aston Villa).",
+              "analyse": "Chelsea traverse une période chaotique : défaite 0-3 face à PSG en Ligue des Champions, puis 0-1 contre Newcastle en PL, avant une débâcle 3-0 à Everton. Même la victoire 7-0 contre Port Vale (FAC) ne masque pas les failles défensives récentes. Manchester City affiche une meilleure régularité, avec un 1-1 contre West Ham et un 4-0 contre Liverpool, malgré les revers contre Real Madrid (3-0) et une légère baisse de régularité. City domine largement l'historique récent et possède une bien meilleure défense en PL. Chelsea encaisse de manière répétée (5 buts en 3 PL récents), tandis que City reste plus solide. Le penchant offensif des deux équipes, notamment la solidité de City, rend OVER 2.5 buts très probable : les matchs récents entre top-6 en PL produisent régulièrement des buts, et même les défenses fragiles de Chelsea laissent passer. City marquera presque certainement, Chelsea est trop inconstant pour un clean sheet.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -1224,27 +1221,27 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 3.42,
+                  "home": 3.55,
                   "draw": 3.85,
-                  "away": 2.04
+                  "away": 1.95
                 },
                 "double_chance": {
                   "12": 1.25,
-                  "1X": 1.75,
-                  "X2": 1.32
+                  "1X": 1.81,
+                  "X2": 1.3
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.15,
-                    "under": 5
+                    "under": 5.05
                   },
                   "2.5": {
-                    "over": 1.53,
-                    "under": 2.39
+                    "over": 1.52,
+                    "under": 2.45
                   },
                   "3.5": {
-                    "over": 2.34,
-                    "under": 1.57
+                    "over": 2.3,
+                    "under": 1.61
                   }
                 },
                 "btts": {
@@ -1252,8 +1249,8 @@
                   "no": 2.5
                 },
                 "draw_no_bet": {
-                  "home": 2.4,
-                  "away": 1.5
+                  "home": 2.55,
+                  "away": 1.44
                 }
               }
             }
@@ -1282,22 +1279,22 @@
               "away": "Betis",
               "match": "Osasuna vs Betis",
               "prono": "win-home",
-              "pari": "Osasuna sans enjeu",
-              "cote_retenue": 1.6,
+              "pari": "Under 2.5 buts",
+              "cote_retenue": 1.9,
               "cotes": {
                 "domicile": 2.27,
                 "nul": 3.56,
                 "exterieur": 3.42
               },
-              "pick_category": "dnb",
-              "analyse": "Osasuna arrive en forme avec une victoire 1-0 contre Girona et un nul 2-2 face à Mallorca, mais vient de concéder 2 buts à Bilbao et 3 à la Real Sociedad. Betis montre une résilience défensive remarquable (0-0 contre Espanyol, 1-1 contre Celta, 1-1 contre Rayo) mais reste irrégulier offensivement avec des défaites 2-0 à Getafe et 2-1 à Bilbao. Sur les 15 derniers matchs, Betis affiche une tendance aux matchs fermés et aux nuls (4 sur 8 en LaLiga), tandis qu'Osasuna propose du spectacle (2-2, 2-1, 1-0). Le profil d'Osasuna dominant à domicile face à une Betis défensive et instable offensively suggère un avantage pour le leader du match, mais sans débordement en buts.",
-              "confiance": 3,
+              "pick_category": "ou",
+              "analyse": "Osasuna montre une forme mitigée avec 1 victoire (Girona 1-0), 2 nuls (Alaves 2-2, Mallorca 2-2) et 2 défaites récentes (Valencia 0-1, Real Sociedad 1-3), sans véritable consistency offensivo-défensif. Betis affiche un profil très instable : victoires impressionnantes (Panathinaikos 4-0) alternant avec des revers (Getafe 0-2, Bilbao 1-2) et nombreux matchs nuls (3 en 5 derniers), mais reste compétitif. Sur le dernier mois, Betis accumule les matchs fermés (0-0 vs Espanyol, 1-1 x2, 2-2) suggérant une défense solidifiée malgré les faiblesses offensives par moment. Osasuna domine légèrement à domicile (victoire récente vs Girona) mais encaisse régulièrement (2-2, 1-3). Le contexte de saison indique deux équipes tendant vers des rencontres fermées et équilibrées. Under 2.5 buts à 1.90 s'impose : les 5 derniers matchs de Betis en LaLiga totalisent 7 buts (1.4/match), Osasuna en affiche 5 sur 5 matchs (1.0/match), et le H2H implicite suggère un match tactique.",
+              "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
+              "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
@@ -1409,13 +1406,13 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.2,
-                  "draw": 3.4,
-                  "away": 3.23
+                  "home": 2.19,
+                  "draw": 3.45,
+                  "away": 3.25
                 },
                 "double_chance": {
-                  "12": 1.3,
-                  "1X": 1.35,
+                  "12": 1.29,
+                  "1X": 1.34,
                   "X2": 1.65
                 },
                 "over_under": {
@@ -1433,12 +1430,12 @@
                   }
                 },
                 "btts": {
-                  "yes": 1.7,
+                  "yes": 1.71,
                   "no": 2.05
                 },
                 "draw_no_bet": {
-                  "home": 1.6,
-                  "away": 2.23
+                  "home": 1.57,
+                  "away": 2.25
                 }
               }
             },
@@ -1456,7 +1453,7 @@
               "away": "Rayo Vallecano",
               "match": "Mallorca vs Rayo Vallecano",
               "prono": "win-home",
-              "pari": "Plus de 2,5 buts",
+              "pari": "Plus de 2.5 buts",
               "cote_retenue": 2.2,
               "cotes": {
                 "domicile": 2.39,
@@ -1464,7 +1461,7 @@
                 "exterieur": 3.35
               },
               "pick_category": "ou",
-              "analyse": "Mallorca affiche une forme offensive intéressante avec trois victoires en cinq matchs LaLiga (2-1 vs Real Madrid, 2-1 vs Espanyol, 2-2 vs Osasuna), marquant régulièrement mais encaissant aussi des buts. Rayo Vallecano montre une solidité défensive variable : 1-0 vs Elche, 3-0 vs Oviedo, mais aussi des nuls (1-1 vs Levante, 1-1 vs Bilbao) et des défaites. En attaque, Rayo a scoré dans 5 de ses 8 derniers matchs LaLiga. Sur ce match à domicile, Mallorca cherchera à imposer son jeu offensif face à une équipe qui accepte les buts. La tendance des deux équipes favorise un match ouvert avec plusieurs réalisations.",
+              "analyse": "Mallorca arrive en excellente forme avec une victoire 2-1 contre le Real Madrid (04/04) et un succès 2-1 contre Espanyol (15/03), affichant une capacité offensive certaine à domicile. Rayo Vallecano montre aussi de la consistance récemment : victoire 3-0 contre l'AEK en UECL, 1-0 contre Elche, mais avec des résultats plus serrés en championnat (1-1 contre Levante et Bilbao, 1-0 contre Oviedo). Le contexte suggère deux équipes capables de marquer, Mallorca ayant trouvé le filet dans 3 de ses 4 derniers matchs de L1, tandis que Rayo sort d'une UECL offensive. L'enjeu d'un match entre deux prétendants au podium favorise un scénario ouvert. Over 2.5 à 2.20 reflète ce potentiel offensif mutuel, avec des cotes stables et attractives.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -1583,9 +1580,9 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.31,
+                  "home": 2.33,
                   "draw": 3.2,
-                  "away": 3.23
+                  "away": 3.17
                 },
                 "double_chance": {
                   "12": 1.35,
@@ -1594,25 +1591,25 @@
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.37,
-                    "under": 2.89
+                    "over": 1.36,
+                    "under": 2.9
                   },
                   "2.5": {
                     "over": 2.2,
                     "under": 1.66
                   },
                   "3.5": {
-                    "over": 4,
+                    "over": 3.95,
                     "under": 1.22
                   }
                 },
                 "btts": {
-                  "yes": 1.87,
-                  "no": 1.85
+                  "yes": 1.88,
+                  "no": 1.86
                 },
                 "draw_no_bet": {
                   "home": 1.62,
-                  "away": 2.2
+                  "away": 2.17
                 }
               }
             },
@@ -1630,22 +1627,22 @@
               "away": "Oviedo",
               "match": "Celta Vigo vs Oviedo",
               "prono": "win-home",
-              "pari": "Celta Vigo sans le nul",
-              "cote_retenue": 1.29,
+              "pari": "Over 2.5 buts",
+              "cote_retenue": 1.98,
               "cotes": {
-                "domicile": 1.82,
-                "nul": 3.9,
-                "exterieur": 4.78
+                "domicile": 1.85,
+                "nul": 3.84,
+                "exterieur": 4.67
               },
-              "pick_category": "dnb",
-              "analyse": "Celta Vigo affiche une dynamique offensive intéressante en LaLiga avec 3 buts en 4 matchs (victoire 3-2 vs Valencia, 2-0 vs Lyon, 1-2 vs Real Madrid), tandis qu'Oviedo reste défensif et instable avec seulement 1 but en 5 rencontres récentes malgré deux victoires serrées (1-0 vs Sevilla et Valencia). Le bilan H2H et contextuel montre Celta plus dominant techniquement et offensivement, notamment face à une équipe d'Oviedo qui encaisse régulièrement (4-2 vs Levante, 3-0 vs Rayo). Celta joue à domicile, facteur crucial face à une formation fragile en déplacement. Le marché DNB à 1.29 offre une excellente valeur pour capitaliser sur la supériorité locale sans risquer le nul, évitant les pièges des matchs serrés de LaLiga.",
+              "pick_category": "ou",
+              "analyse": "Celta Vigo montre une forme offensive intéressante en LaLiga avec 3 victoires en 6 matchs (Valencia 3-2, Girona 2-1, Lyon 2-0), alternant entre performances solides et revers contre les gros (Madrid 1-2, Alavés 3-4). Oviedo affiche une défense fragile avec 4 défaites en 6 matchs LaLiga récents (Levante 4-2, Rayo 3-0, Atlético 1-0) mais peut surprendre défensivement (clean sheet face à Valencia, Sevilla). À domicile, Celta dispose d'un avantage tactique et offensif clair face à une équipe qui encaisse régulièrement. La probabilité d'un match ouvert avec au moins 2-3 buts est élevée vu les profils offensifs de Celta et les failles défensives d'Oviedo.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
+              "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
@@ -1757,36 +1754,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 1.74,
+                  "home": 1.75,
                   "draw": 3.73,
-                  "away": 4.78
+                  "away": 4.69
                 },
                 "double_chance": {
                   "12": 1.26,
-                  "1X": 1.18,
+                  "1X": 1.19,
                   "X2": 2.05
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.3,
-                    "under": 3.35
+                    "under": 3.33
                   },
                   "2.5": {
                     "over": 1.98,
-                    "under": 1.84
+                    "under": 1.81
                   },
                   "3.5": {
-                    "over": 3.4,
+                    "over": 3.45,
                     "under": 1.29
                   }
                 },
                 "btts": {
-                  "yes": 1.88,
-                  "no": 1.86
+                  "yes": 1.89,
+                  "no": 1.85
                 },
                 "draw_no_bet": {
                   "home": 1.29,
-                  "away": 3.4
+                  "away": 3.3
                 }
               }
             },
@@ -1804,22 +1801,22 @@
               "away": "Villarreal",
               "match": "Ath Bilbao vs Villarreal",
               "prono": "win-home",
-              "pari": "Les deux équipes marquent - OUI",
-              "cote_retenue": 1.71,
+              "pari": "Moins de 2.5 buts",
+              "cote_retenue": 1.89,
               "cotes": {
                 "domicile": 2.16,
                 "nul": 3.56,
                 "exterieur": 3.7
               },
-              "pick_category": "btts",
-              "analyse": "Athletic Bilbao traverse une période instable avec 3 défaites sur les 5 derniers matchs (0-1 face à Barcelone, 0-2 contre Getafe, 0-3 à Girona), alternant avec des victoires contre des équipes modestes. Villarreal affiche une meilleure dynamique récente : 4 victoires en 6 matchs (3-1 contre Real Sociedad, 2-1 contre Elche et Valencia, 1-0 contre Levante), malgré des revers face aux ténors (0-1 Girona, 0-4 Barcelone). À domicile, Bilbao reste compétitif (2-1 Betis, 2-1 Elche) mais la défense bilbaine encaisse régulièrement, tandis que Villarreal sait bien défendre mais crée offensivement. Le profil du match pointe vers un affrontement ouvert : Bilbao a besoin de redynamiser son jeu à San Mamés, Villarreal cherche à poursuivre sa série. Les deux équipes combinent buts et fragilité défensive dans ce contexte.",
-              "confiance": 3,
+              "pick_category": "ou",
+              "analyse": "Bilbao traverse une période délicate avec trois défaites sur les quatre derniers matchs (0-1 contre Barcelone, 2-0 contre Getafe, 3-0 contre Girona), tandis que Villarreal montre plus de régularité avec une victoire 3-1 contre la Real Sociedad et un nul 1-1 contre Alaves récemment. Sur la forme, Villarreal paraît supérieur en cohérence défensive et créativité offensive. Cependant, les matchs entre ces deux équipes historiquement tendus livrent souvent peu de buts (profil plutôt équilibré en Liga). L'under 2.5 à 1.89 reflète un équilibre fragile : Bilbao en crise défensive mais solide offensivement à domicile, Villarreal plus stable mais pas explosif en déplacement. Avec deux équipes prudentes tactiquement et une forme mitigée, un scénario 1-1 ou 1-0 s'avère probable.",
+              "confiance": 4,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": false,
+              "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
@@ -1931,36 +1928,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.27,
+                  "home": 2.1,
                   "draw": 3.42,
-                  "away": 3.1
+                  "away": 3.55
                 },
                 "double_chance": {
                   "12": 1.31,
-                  "1X": 1.36,
-                  "X2": 1.61
+                  "1X": 1.29,
+                  "X2": 1.71
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.29,
-                    "under": 3.45
+                    "under": 3.43
                   },
                   "2.5": {
-                    "over": 1.9,
+                    "over": 1.92,
                     "under": 1.89
                   },
                   "3.5": {
-                    "over": 3.23,
-                    "under": 1.33
+                    "over": 3.25,
+                    "under": 1.32
                   }
                 },
                 "btts": {
-                  "yes": 1.71,
-                  "no": 2.04
+                  "yes": 1.73,
+                  "no": 2
                 },
                 "draw_no_bet": {
-                  "home": 1.62,
-                  "away": 2.15
+                  "home": 1.49,
+                  "away": 2.45
                 }
               }
             }
@@ -1990,21 +1987,21 @@
               "match": "Genoa vs Sassuolo",
               "prono": "win-home",
               "pari": "Over 2.5 buts",
-              "cote_retenue": 2.13,
+              "cote_retenue": 2.1,
               "cotes": {
-                "domicile": 2.21,
+                "domicile": 2.22,
                 "nul": 3.38,
-                "exterieur": 3.75
+                "exterieur": 3.72
               },
               "pick_category": "ou",
-              "analyse": "Genoa montre une forme très irrégulière avec trois défaites consécutives (0-2 vs Udinese, 0-2 vs Juventus, 2-1 vs AS Roma en alternance), tandis que Sassuolo affiche une meilleure dynamique offensives récemment : victoire 2-1 vs Cagliari, 3-0 vs Verona, 2-1 vs Atalanta. Cependant, Sassuolo a aussi subi des revers nets (0-1 vs Bologna, 0-5 vs Inter, 2-1 chute vs Lazio) révélant une instabilité défensive. Genoa à domicile reste une équipe combattive (victoire 2-1 vs AS Roma, 3-0 vs Torino récemment) mais encaisse régulièrement. Les deux équipes tendent à laisser des espaces en attaque et en défense : Sassuolo marque systématiquement mais encaisse aussi. Over 2.5 buts s'impose comme la trajectoire la plus probable.",
-              "confiance": 4,
+              "analyse": "Genoa montre une forme très irrégulière : victoires contre Roma (2-1) et Torino (3-0), mais défaites face à Juventus (0-2), Udinese (0-2) et Inter (0-2). Sassuolo affiche une meilleure dynamique récente avec 2-1 contre Cagliari et Atalanta, bien qu'un revers 0-5 face à Inter souligne son inconsistance défensive. Sur les 5 derniers matchs, Genoa penche vers des rencontres ouvertes (2-1, 0-2, 2-1, 3-0, 0-2), tandis que Sassuolo a marqué dans 3 de ses 4 derniers (2-1, 3-0, 2-1). L'absence de H2H récent entre les deux équipes rend le pronostic plus exploratoire. Given que Sassuolo possède une attaque plus stable et que Genoa a tendance à concéder face aux équipes organisées, un scénario avec buts est probable : Over 2.5 offre une cote de 2.1 avec un bon potentiel sur cette rencontre ouverte.",
+              "confiance": 3,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
               "actual_score": null,
               "actual_result": null,
-              "coup_de_coeur": true,
+              "coup_de_coeur": false,
               "stats": {
                 "recent_matches": [
                   {
@@ -2116,36 +2113,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.15,
+                  "home": 2.1,
                   "draw": 3.27,
-                  "away": 3.5
+                  "away": 3.52
                 },
                 "double_chance": {
                   "12": 1.33,
-                  "1X": 1.3,
-                  "X2": 1.67
+                  "1X": 1.29,
+                  "X2": 1.69
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.35,
-                    "under": 3.05
+                    "under": 3
                   },
                   "2.5": {
-                    "over": 2.13,
+                    "over": 2.1,
                     "under": 1.71
                   },
                   "3.5": {
-                    "over": 3.85,
-                    "under": 1.25
+                    "over": 3.8,
+                    "under": 1.23
                   }
                 },
                 "btts": {
                   "yes": 1.85,
-                  "no": 1.87
+                  "no": 1.9
                 },
                 "draw_no_bet": {
                   "home": 1.5,
-                  "away": 2.4
+                  "away": 2.43
                 }
               }
             },
@@ -2163,15 +2160,15 @@
               "away": "Napoli",
               "match": "Parma vs Napoli",
               "prono": "win-home",
-              "pari": "Over 2.5 buts",
+              "pari": "Plus de 2.5 buts",
               "cote_retenue": 2.17,
               "cotes": {
-                "domicile": 6.49,
-                "nul": 3.93,
-                "exterieur": 1.65
+                "domicile": 6.8,
+                "nul": 4.01,
+                "exterieur": 1.62
               },
               "pick_category": "ou",
-              "analyse": "Napoli arrive en excellent momentum avec trois victoires consécutives (1-0 AC Milan, 1-0 Cagliari, 2-1 Lecce) et montre une solidité défensive remarquable. Parma, en revanche, traverse une crise majeure avec quatre défaites sur ses six derniers matchs (0-2 Cremonese, 4-1 Torino, 1-1 Lazio, 1-1 Cagliari), encaissant 8 buts en ces rencontres. L'écart de forme est abyssal : Napoli maîtrise son jeu offensif (2+ buts marqués dans 3 de ses 4 derniers matchs) tandis que Parma peine offensivement malgré quelques Clean sheets en défense. Le contraste entre l'équipe de haut niveau napolitaine et une Parma en détresse rend un succès napolitain très probable. Les cotes du 1X2 reflètent cette hiérarchie mais X2 (1.13) offre une couverture intéressante contre le risque nul, tandis que le Over 2.5 (2.17) s'aligne sur le potentiel offensif de Napoli face à une défense perméable parmésane.",
+              "analyse": "Napoli arrive en excellente forme avec trois victoires consécutives en Serie A (1-0 vs AC Milan, 1-0 vs Cagliari, 2-1 vs Lecce), affichant une défense solide et une efficacité offensive certaine. Parma traverse une période difficile avec deux défaites marquantes (0-2 vs Cremonese, 4-1 vs Torino) dans ses quatre derniers matchs, malgré quelques nuls (1-1 vs Lazio, 1-1 vs Cagliari). L'écart de qualité est flagrant : Napoli domine clairement sur le plan offensif et défensif, tandis que Parma souffre de failles récurrentes. À domicile, Napoli possède l'avantage du stade face à une équipe en quête de stabilité. Over 2.5 buts s'impose naturellement car Napoli crée régulièrement des occasions et Parma encaisse facilement, comme le montrent les récents matchs.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -2290,13 +2287,13 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 6,
+                  "home": 6.33,
                   "draw": 3.8,
-                  "away": 1.6
+                  "away": 1.57
                 },
                 "double_chance": {
                   "12": 1.25,
-                  "1X": 2.3,
+                  "1X": 2.31,
                   "X2": 1.13
                 },
                 "over_under": {
@@ -2314,12 +2311,12 @@
                   }
                 },
                 "btts": {
-                  "yes": 2.16,
+                  "yes": 2.17,
                   "no": 1.65
                 },
                 "draw_no_bet": {
-                  "home": 4.2,
-                  "away": 1.2
+                  "home": 4.5,
+                  "away": 1.18
                 }
               }
             },
@@ -2337,15 +2334,15 @@
               "away": "Lecce",
               "match": "Bologna vs Lecce",
               "prono": "win-home",
-              "pari": "Double Chance Bologna ou Nul",
-              "cote_retenue": 1.18,
+              "pari": "Victoire Bologna",
+              "cote_retenue": 1.8,
               "cotes": {
                 "domicile": 1.89,
                 "nul": 3.48,
                 "exterieur": 5.01
               },
-              "pick_category": "dc",
-              "analyse": "Bologna montre une forme très instable en Serie A avec 3 victoires et 3 défaites sur les 6 derniers matchs (1-2 vs Verona, 0-2 vs Lazio, 0-1 vs Sassuolo, 1-2 vs Cremonese, 1-0 vs Pisa, 1-0 vs Udinese), oscillant entre excellentes performances et débâcles. Lecce traverse une période critique avec seulement une victoire en 6 rencontres récentes (2-1 vs Cremonese), concédant 8 buts en 5 derniers matchs de Serie A (0-3 vs Atalanta, 1-2 vs Napoli, 0-1 vs Roma, 3-1 vs Como). À domicile, Bologna reste une équipe capable de créer du danger mais sans domination écrasante, tandis que Lecce en déplacement encaisse beaucoup et montre une fragilité défensive chronique. Cette rencontre oppose un favori instable à une équipe en crise défensive : Bologna devrait l'emporter mais Lecce possède toujours du potentiel offensif pour inscrire un but. Le double chance 1X offre un équilibre optimal entre la supériorité affichée de Bologna et l'incertitude inhérente à sa forme.",
+              "pick_category": "1x2",
+              "analyse": "Bologna montre une forme très instable en Serie A : victoire 2-1 contre Cremonese, mais défaites 0-2 face à Lazio et 1-2 contre Verona, avec une élimination 1-3 en Ligue Europa. Lecce traverse une mauvaise passe offensive, encaissant 3 buts contre Atalanta et 0-3 contre Lazio, mais affiche une capacité à marquer (victoire 2-1 contre Cremonese le 8 mars). Bologna domine nettement le bilan récent et joue à domicile, avantage classique en Serie A. Cependant, les deux équipes affichent des défenses poreuses : Bologna en a encaissé 7 en 5 matchs, Lecce 8 en 5 matchs. Cette vulnérabilité défensive mutuelle, combinée à l'avantage du terrain bolognais, suggère un match ouvert où Bologna favoris doit l'emporter mais sans certitude de clean sheet.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
@@ -2465,13 +2462,13 @@
               "markets": {
                 "1x2": {
                   "home": 1.8,
-                  "draw": 3.4,
-                  "away": 4.83
+                  "draw": 3.35,
+                  "away": 4.9
                 },
                 "double_chance": {
-                  "12": 1.3,
+                  "12": 1.31,
                   "1X": 1.18,
-                  "X2": 1.96
+                  "X2": 1.99
                 },
                 "over_under": {
                   "1.5": {
@@ -2480,16 +2477,16 @@
                   },
                   "2.5": {
                     "over": 2.2,
-                    "under": 1.67
+                    "under": 1.66
                   },
                   "3.5": {
                     "over": 4,
-                    "under": 1.23
+                    "under": 1.22
                   }
                 },
                 "btts": {
                   "yes": 2,
-                  "no": 1.75
+                  "no": 1.73
                 },
                 "draw_no_bet": {
                   "home": 1.29,
@@ -2512,14 +2509,14 @@
               "match": "Como vs Inter",
               "prono": "win-home",
               "pari": "Over 2.5 buts",
-              "cote_retenue": 1.89,
+              "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 3.25,
+                "domicile": 3.2,
                 "nul": 3.4,
-                "exterieur": 2.42
+                "exterieur": 2.45
               },
               "pick_category": "ou",
-              "analyse": "Inter arrive en grande forme avec 5 buts marqués contre Roma et une domination offensive récente, tandis que Como montre aussi une attaque clinique (5-0 contre Pisa, 2-1 contre Roma, 3-1 contre Lecce). Le H2H très récent (3 mars, 0-0 en Coupe) suggère un match équilibré malgré la supériorité théorique d'Inter. Les deux équipes ont encaissé régulièrement sur les dix derniers matchs (Inter : buts concédés contre Roma 2, Atalanta 1 ; Como : seul 0 contre Udinese dernièrement), ce qui favorise un scénario d'échanges offensifs. L'over 2.5 buts à 1.89 offre un bon compromis entre la dynamique offensive des deux camps et une cote équilibrée, meilleur choix que BTTS (1.68) face à la variabilité défensive.",
+              "analyse": "Inter arrive en grande forme avec 5 buts marqués contre la Roma et une solidité défensive reconnue, tandis que Como montre une dynamique impressionnante (victoire 5-0 contre Pisa, 2-1 contre la Roma). Le H2H récent (0-0 en Coupe le 3 mars) suggère une équipe de Como bien organisée capable de tenir bon défensivement. Cependant, Inter domine nettement la qualité globale et possède un avantage tactique clair. Les deux derniers matchs de Como laissent entrevoir une équipe offensive, mais face à Inter, une approche plus défensive est attendue. L'Over 2.5 buts à 1.88 offre le meilleur équilibre : Inter marquera probablement au moins 2 buts, et Como peut en scorer 1 sur contre-attaque, comme le montrent ses récentes performances.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -2638,22 +2635,22 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 3.1,
-                  "draw": 3.35,
-                  "away": 2.3
+                  "home": 3.05,
+                  "draw": 3.33,
+                  "away": 2.34
                 },
                 "double_chance": {
-                  "12": 1.3,
-                  "1X": 1.6,
+                  "12": 1.31,
+                  "1X": 1.59,
                   "X2": 1.36
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.27,
-                    "under": 3.55
+                    "under": 3.65
                   },
                   "2.5": {
-                    "over": 1.89,
+                    "over": 1.88,
                     "under": 1.9
                   },
                   "3.5": {
@@ -2666,7 +2663,7 @@
                   "no": 2.06
                 },
                 "draw_no_bet": {
-                  "home": 2.2,
+                  "home": 2.15,
                   "away": 1.62
                 }
               }
@@ -2696,16 +2693,16 @@
               "away": "Werder Bremen",
               "match": "FC Koln vs Werder Bremen",
               "prono": "win-home",
-              "pari": "Plus de 2.5 buts",
-              "cote_retenue": 1.7,
+              "pari": "Over 2.5 buts",
+              "cote_retenue": 1.73,
               "cotes": {
                 "domicile": 2.29,
                 "nul": 3.56,
                 "exterieur": 3.37
               },
               "pick_category": "ou",
-              "analyse": "FC Köln affiche une instabilité chronique avec 4 matchs nuls et des défaites récurrentes (0-2 vs Augsburg, 1-2 vs Dortmund et Leipzig). Werder Bremen montre davantage de dynamique offensif : victoire 4-1 vs Union Berlin, 2-0 vs Heidenheim, mais aussi revers lourds (0-3 vs Bayern, 0-2 vs Mainz). Les deux équipes ont encaissé 6+ buts en 5 derniers matchs chacune, révélant des défenses poreuses. Köln a concédé 2+ buts dans 4 de ses 5 dernières sorties. Werder semble légèrement supérieur dans la progression du classement et offre plus de punch offensif récemment. L'over 2.5 à 1.70 reflète l'instabilité défensive commune et l'alternance attaque-défense des deux formations.",
-              "confiance": 4,
+              "analyse": "FC Cologne traverse une période instable avec 2 matchs nuls récents (2-2 vs Francfort, 1-1 vs Hambourg) mais aussi des défaites lourdes face aux équipes de haut de tableau (1-2 vs Dortmund, 1-2 vs Leipzig, 0-2 vs Augsbourg). Werder Bremen montre plus de régularité offensiveWith une victoire probante 1-0 vs Wolfsburg et une démonstration 4-1 vs Union Berlin, bien que freiné par des revers face aux ténors (0-2 vs Mayence, 0-3 vs Bayern). Sur les 5 derniers matchs, Cologne encaisse en moyenne 1.6 but par rencontre tandis que Bremen en marque 1.4 mais avec moins de fiabilité défensive. Le match présente un équilibre fragile : Cologne jouant à domicile mais instable, Bremen plus offensive mais capable de saccades. Les tendances des 15 derniers matchs montrent que les deux équipes privilégient des matches à buts multiples (plus de 2.5 buts dans 7 matchs sur 15 combinés), suggérant un over 2.5 plus probable qu'un scénario fermé.",
+              "confiance": 3,
               "featured": false,
               "score_prevu": null,
               "status": "pending",
@@ -2823,35 +2820,35 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.23,
+                  "home": 2.2,
                   "draw": 3.48,
-                  "away": 3.15
+                  "away": 3.2
                 },
                 "double_chance": {
                   "12": 1.29,
-                  "1X": 1.36,
+                  "1X": 1.35,
                   "X2": 1.65
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.2,
-                    "under": 4.15
+                    "over": 1.21,
+                    "under": 4.1
                   },
                   "2.5": {
-                    "over": 1.7,
+                    "over": 1.73,
                     "under": 2.1
                   },
                   "3.5": {
-                    "over": 2.73,
-                    "under": 1.41
+                    "over": 2.77,
+                    "under": 1.4
                   }
                 },
                 "btts": {
-                  "yes": 1.58,
-                  "no": 2.26
+                  "yes": 1.6,
+                  "no": 2.25
                 },
                 "draw_no_bet": {
-                  "home": 1.6,
+                  "home": 1.58,
                   "away": 2.2
                 }
               }
@@ -2871,14 +2868,14 @@
               "match": "Stuttgart vs Hamburger SV",
               "prono": "win-home",
               "pari": "Under 2.5 buts",
-              "cote_retenue": 2.75,
+              "cote_retenue": 3.1,
               "cotes": {
-                "domicile": 1.36,
-                "nul": 5.89,
-                "exterieur": 8.9
+                "domicile": 1.35,
+                "nul": 6,
+                "exterieur": 9.15
               },
               "pick_category": "ou",
-              "analyse": "Stuttgart montre une forme très irrégulière en Bundesliga : victoire 4-0 contre Wolfsburg, nul 2-2 à Mayence, puis défaite 0-2 contre Dortmund. Hamburger SV affiche aussi de l'instabilité avec deux nuls (1-1 contre Augsbourg et Cologne) encadrant une défaite 1-2 à Leipzig. Sur les 5 derniers matchs de Stuttgart en Bundesliga, seul 2 nuls et 1 victoire sur les 3 derniers signalent une certaine prudence défensive. Hamburger SV reste fragile défensivement (concède régulièrement) mais crée peu en attaque. Stuttgart domine nettement au classement et au potentiel offensif, mais ce contexte de résultats décousus pour les deux équipes et Hamburger qui limite les dégâts (deux nuls récents) suggère un match peu généreux en buts. L'over 2.5 à 1.42 offre un bon équilibre face à une cote basse (1.12) sur l'under 1.5.",
+              "analyse": "Stuttgart montre une forme très instable : victoire écrasante 4-0 contre Wolfsburg suivie d'une défaite 0-2 à Dortmund, avec un succès 1-0 contre Leipzig entre les deux. Hamburger SV affiche une tendance défensive marquée avec trois matchs nuls (1-1 contre Augsburg et Cologne, 2-2 à Mainz) et très peu de buts concédés récemment (seulement 4 en 5 matches). Le contraste offensif est net : Stuttgart reste capable de scorer (5 buts à Augsburg) mais face à une défense HSV organisée, l'accumulation de buts semble peu probable. Les deux derniers duels Bundesliga entre ces équipes (non présents dans l'historique récent) n'indiquent pas un H2H explosif. Stuttgart favori logique mais HSV compact freinera le spectacle offensif.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
@@ -2997,36 +2994,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 1.36,
-                  "draw": 5.25,
-                  "away": 7.7
+                  "home": 1.31,
+                  "draw": 5.75,
+                  "away": 8.5
                 },
                 "double_chance": {
-                  "12": 1.16,
-                  "1X": 1.1,
-                  "X2": 2.98
+                  "12": 1.14,
+                  "1X": 1.08,
+                  "X2": 3.38
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.12,
-                    "under": 5.9
+                    "over": 1.09,
+                    "under": 6.75
                   },
                   "2.5": {
-                    "over": 1.42,
-                    "under": 2.75
+                    "over": 1.33,
+                    "under": 3.1
                   },
                   "3.5": {
-                    "over": 2.1,
-                    "under": 1.73
+                    "over": 1.9,
+                    "under": 1.88
                   }
                 },
                 "btts": {
-                  "yes": 1.63,
-                  "no": 2.19
+                  "yes": 1.6,
+                  "no": 2.21
                 },
                 "draw_no_bet": {
-                  "home": 1.12,
-                  "away": 5.5
+                  "home": 1.09,
+                  "away": 6.5
                 }
               }
             },
@@ -3044,15 +3041,15 @@
               "away": "Freiburg",
               "match": "Mainz vs Freiburg",
               "prono": "win-home",
-              "pari": "Over 2.5 buts",
-              "cote_retenue": 1.9,
+              "pari": "Plus de 2.5 buts",
+              "cote_retenue": 1.88,
               "cotes": {
                 "domicile": 2.39,
                 "nul": 3.33,
                 "exterieur": 3.37
               },
               "pick_category": "ou",
-              "analyse": "Mainz et Freiburg montrent tous deux une forme offensive séduisante en ce moment. Mainz a remporté 4 de ses 5 derniers matchs de Bundesliga (2-1 contre Francfort, 2-0 contre Werder, 1-2 à Hoffenheim, 2-2 contre Stuttgart), marquant régulièrement. Freiburg accumule les résultats hauts en Europa League (5-1, 3-0) mais demeure plus irrégulier en Bundesliga : victoire 2-3 face à Bayern, mais revers 0-1 contre Union Berlin et 2-0 contre Francfort. Les deux équipes affichent une tendance aux matchs spectaculaires avec buts des deux côtés (2-2, 3-3 récemment chez Freiburg; 2-1, 2-0 chez Mainz). L'Over 2.5 s'impose comme le marché le plus logique face à cette dynamique offensive partagée, proposant une cote attrayante de 1.90 avec un profil de matchs combinés suggérant régulièrement 3+ buts.",
+              "analyse": "Mainz montre une excellente dynamique offensive en Bundesliga avec trois victoires consécutives (2-1 vs Francfort, 2-0 vs Werder, 2-1 vs Hoffenheim), marquant régulièrement. Freiburg alterne entre performances solides et défaillances défensives : victoires 2-0 et 5-1 en coupes intercontinentales, mais revers 1-2 vs Bayern et 1-0 vs Union Berlin en championnat, révélant des fragilités en défense. Les deux équipes affichent une propension au jeu offensif : Freiburg a encaissé 8 buts en trois récents matchs de Bundesliga (3-3, 0-1, 2-3), tandis que Mainz crée des occasions régulièrement. L'over 2.5 buts s'impose comme le pick optimal face à cet affrontement où les deux formations recherchent le jeu offensif et la continuité après leurs résultats récents. La cote de 1.88 offre un bon équilibre risque-récompense.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -3171,31 +3168,31 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 2.27,
-                  "draw": 3.19,
-                  "away": 3.4
+                  "home": 2.3,
+                  "draw": 3.23,
+                  "away": 3.36
                 },
                 "double_chance": {
-                  "12": 1.34,
+                  "12": 1.35,
                   "1X": 1.33,
-                  "X2": 1.62
+                  "X2": 1.6
                 },
                 "over_under": {
                   "1.5": {
                     "over": 1.25,
-                    "under": 3.5
+                    "under": 3.63
                   },
                   "2.5": {
-                    "over": 1.9,
-                    "under": 1.9
+                    "over": 1.88,
+                    "under": 1.92
                   },
                   "3.5": {
-                    "over": 3.05,
-                    "under": 1.33
+                    "over": 3,
+                    "under": 1.35
                   }
                 },
                 "btts": {
-                  "yes": 1.67,
+                  "yes": 1.66,
                   "no": 2.12
                 },
                 "draw_no_bet": {
@@ -3229,15 +3226,15 @@
               "away": "Mamelodi Sundowns",
               "match": "Esperance Tunis vs Mamelodi Sundowns",
               "prono": "win-home",
-              "pari": "Double Chance Esperance Tunis ou Nul",
-              "cote_retenue": 1.21,
+              "pari": "Moins de 2.5 buts",
+              "cote_retenue": 1.44,
               "cotes": {
                 "domicile": 2.06,
                 "nul": 3.04,
                 "exterieur": 3.86
               },
-              "pick_category": "dc",
-              "analyse": "Esperance Tunis arrive en excellente forme avec 5 victoires en 6 matchs récents (dont deux succès en Champions League face à Al Ahly 2-3 et 1-0), démontrant une solidité défensive et offensive. Mamelodi Sundowns alterne résultats brillants et défaites, avec une victoire 4-1 contre Chippa mais une lourde défaite 0-2 face à Stade Malien en CL il y a deux semaines, signe d'irrégularité en compétition continentale. Esperance joue à domicile avec un avantage psychologique certain, ayant remporté ses trois derniers matchs sur son terrain. Le style tunisien privilégie la maîtrise et l'efficacité défensive (0-0 contre Etoile Sahel, plusieurs clean sheets), tandis que Sundowns, malgré ses pics offensifs, expose des failles défensives. Vu la supériorité actuelle d'Esperance et l'avantage du terrain, le double chance 1X (victoire ou nul de la maison) offre une sécurité optimale avec une cote attractive à 1.21.",
+              "pick_category": "ou",
+              "analyse": "Esperance Tunis affiche une solidité défensive impressionnante en phase de groupes de Ligue des Champions avec des victoires 1-0 contre Al Ahly et des résultats serrés (0-0 contre Etoile Sahel). Mamelodi Sundowns, leader du championnat sud-africain, a montré une attaque tranchante (4-1 contre Chippa, 3-0 contre Stade Malien, 3-1 contre Marumo) mais s'est incliné 2-0 à domicile face à Stade Malien en CL, révélant des fragilités. La forme tunisienne en championnat (1-0, 3-0, 1-0 récemment) contraste avec une défense sud-africaine en difficulté en C1. Esperance domine clairement le contexte compétitif africain tandis que Sundowns excelle domestiquement. Ce match oppose une équipe en quête de contrôle à une équipe d'attaque directe, situation propice à des buts limités.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
@@ -3356,36 +3353,36 @@
               },
               "markets": {
                 "1x2": {
-                  "home": 1.91,
-                  "draw": 2.98,
-                  "away": 3.83
+                  "home": 1.98,
+                  "draw": 3,
+                  "away": 3.75
                 },
                 "double_chance": {
                   "12": 1.33,
-                  "1X": 1.21,
-                  "X2": 1.74
+                  "1X": 1.22,
+                  "X2": 1.72
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.48,
-                    "under": 2.5
+                    "over": 1.51,
+                    "under": 2.42
                   },
                   "2.5": {
-                    "over": 2.52,
-                    "under": 1.46
+                    "over": 2.55,
+                    "under": 1.44
                   },
                   "3.5": {
-                    "over": 5.15,
-                    "under": 1.15
+                    "over": 5,
+                    "under": 1.14
                   }
                 },
                 "btts": {
-                  "yes": 2.17,
+                  "yes": 2.18,
                   "no": 1.61
                 },
                 "draw_no_bet": {
-                  "home": 1.37,
-                  "away": 2.65
+                  "home": 1.39,
+                  "away": 2.58
                 }
               }
             }
@@ -3399,7 +3396,439 @@
       "badge": "nba",
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>La NBA est difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. <strong>Bankroll recommandée 30% inférieure au foot.</strong></div>",
-      "leagues": []
+      "leagues": [
+        {
+          "key": "nba",
+          "sport_key": "basketball_nba",
+          "label": "NBA",
+          "flag": "🏀",
+          "country": "USA",
+          "panel_title": "🏀 NBA",
+          "panel_meta": "Matchs des prochaines 24h",
+          "pronos": [
+            {
+              "event_id": "22dcb3e32847c7eab5774e8927016216",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Miami Heat",
+              "away": "Atlanta Hawks",
+              "match": "Miami Heat vs Atlanta Hawks",
+              "prono": "win-home",
+              "pari": "Victoire Miami Heat",
+              "cote_retenue": 1.58,
+              "cotes": {
+                "domicile": 1.58,
+                "exterieur": 2.4
+              },
+              "pick_category": "1x2",
+              "analyse": "Miami Heat se présente en meilleure forme que Atlanta Hawks ces dernières semaines, avec un effectif plus équilibré et une défense plus solide. Les Hawks ont souffert d'inconstance chronique cette saison, alternant bons matchs et contre-performances, tandis que le Heat maintient une régularité défensive qui en fait un prétendant sérieux à chaque rencontre. À domicile, Miami bénéficie d'un avantage psychologique et environnemental significatif, notamment avec le soutien du public de l'AmericanAirlines Center. Bien que les Hawks possèdent du talent offensif avec Trae Young, ils n'ont pas montré la consistance nécessaire pour inquiéter sérieusement un Heat mené par une défense de haut niveau. La cote de 1.58 reflète une confiance justifiée dans la victoire du Heat.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "f78d40af453b24c39e18559579894d14",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Boston Celtics",
+              "away": "Orlando Magic",
+              "match": "Boston Celtics vs Orlando Magic",
+              "prono": "win-away",
+              "pari": "Victoire Orlando Magic",
+              "cote_retenue": 1.16,
+              "cotes": {
+                "domicile": 5.5,
+                "exterieur": 1.16
+              },
+              "pick_category": "1x2",
+              "analyse": "Orlando Magic arrive en grande forme avec une série de victoires récentes et une défense étouffante qui limite les équipes offensives. Boston Celtics, malgré son statut de favori, traverse une période plus irrégulière et affiche des faiblesses en défense periphérique. Le Magic possède une excellente chimie offensiva avec Paolo Banchero et Cole Anthony qui créent des opportunités fluides. La cote de 1.16 sur Orlando reflète leur forme actuelle et leur capacité à rivaliser contre les meilleures équipes. Ce match favorise nettement l'équipe visiteuse compte tenu des dynamiques actuelles.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "d55bfef33abc5dc6dba0717236d0ee80",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Toronto Raptors",
+              "away": "Brooklyn Nets",
+              "match": "Toronto Raptors vs Brooklyn Nets",
+              "prono": "win-home",
+              "pari": "Victoire Toronto Raptors",
+              "cote_retenue": 1.02,
+              "cotes": {
+                "domicile": 1.02,
+                "exterieur": 17.75
+              },
+              "pick_category": "1x2",
+              "analyse": "Toronto joue à domicile avec une cote de 1.02, reflétant une domination nette sur Brooklyn. Les Raptors sont actuellement bien mieux positionnés en classement et bénéficient de l'avantage du terrain à Scotiabank Arena. Brooklyn traverse une période difficile avec des blessures importantes et une défense poreuse, tandis que Toronto maintient une cohésion défensive solide et un jeu d'équipe structuré. La cote 17.75 sur les Nets indique une probabilité résiduelle mineure, justifiée par l'absence de facteurs perturbateurs majeurs pour les Raptors. Malgré une cote très basse, le pick maison s'impose comme l'option la plus fiable.",
+              "confiance": 5,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "38b10a0526d5b246097a502269bcdf71",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "New York Knicks",
+              "away": "Charlotte Hornets",
+              "match": "New York Knicks vs Charlotte Hornets",
+              "prono": "win-away",
+              "pari": "Victoire New York Knicks",
+              "cote_retenue": 1.14,
+              "cotes": {
+                "domicile": 6.05,
+                "exterieur": 1.14
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Knicks dominent largement Charlotte cette saison, avec une différence de niveau évidente entre une équipe new-yorkaise solide en défense et en attaque face aux Hornets en difficulté. La cote de 1.14 sur Charlotte reflète leur statut de favori massif, justifié par leur supériorité en effectif, cohésion offensive et expérience des playoffs. Même si les Hornets peuvent créer des surprises occasionnelles, les Knicks contrôlent le match à domicile avec un avantage majeur du terrain. Le risque d'une cote aussi basse (1.14) sur l'extérieur n'est pas compensé par le potentiel de gain, rendant ce pari peu intéressant pour les attentes classiques de valeur.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "ad75b36adad0af42dea87b9bcdfa91f8",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Cleveland Cavaliers",
+              "away": "Washington Wizards",
+              "match": "Cleveland Cavaliers vs Washington Wizards",
+              "prono": "win-home",
+              "pari": "Victoire Cleveland Cavaliers",
+              "cote_retenue": 1.19,
+              "cotes": {
+                "domicile": 1.19,
+                "exterieur": 4.8
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Cavaliers dominent largement cette saison avec l'un des meilleurs records de la NBA et une défense étouffante sous la direction de Kenny Atkinson. Cleveland affiche une forme impressionnante à domicile au Quicken Loans Arena, avec des victoires régulières contre des équipes de calibre supérieur. Les Wizards, malgré quelques talents offensifs, traversent une période instable et manquent de constance défensive, particulièrement en déplacement. L'écart de niveau entre les deux formations est substantiel, et les données de saison confirment la supériorité cavaliers. Même si Washington peut créer des moments offensifs, leur capacité à contenir Cleveland sur 48 minutes reste très compromises.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "4675acfb68965858aa571a0493a222da",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Indiana Pacers",
+              "away": "Detroit Pistons",
+              "match": "Indiana Pacers vs Detroit Pistons",
+              "prono": "win-away",
+              "pari": "Victoire Detroit Pistons",
+              "cote_retenue": 1.11,
+              "cotes": {
+                "domicile": 7,
+                "exterieur": 1.11
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Pistons se présentent en nets favoris à 1.11, reflétant une forme actuelle supérieure et une meilleure trajectoire en saison régulière NBA. Indiana, malgré le statut de domicile, affronte une équipe détroit en dynamique positive avec un effectif plus complet et une défense structurée. Les Pacers devront compter sur leur attaque pour créer des différences, mais les Pistons possèdent les outils pour contrôler le tempo et limiter les points concédés. La cote de 7.00 pour Indiana reflète une probabilité implicite basse, justifiée par les tendances récentes. Detroit a montré cette saison une capacité à gagner en déplacement difficile, tandis que les matchs à domicile des Pacers ne garantissent pas la victoire contre les équipes de calibre supérieur.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "23c66e71d25675800d939e532e38bcd2",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-12T22:10:00Z",
+              "time_display": "Dim. 22h10 UTC",
+              "home": "Philadelphia 76ers",
+              "away": "Milwaukee Bucks",
+              "match": "Philadelphia 76ers vs Milwaukee Bucks",
+              "prono": "win-home",
+              "pari": "Victoire 76ers",
+              "cote_retenue": 1.08,
+              "cotes": {
+                "domicile": 1.08,
+                "exterieur": 8.5
+              },
+              "pick_category": "1x2",
+              "analyse": "Les 76ers reçoivent les Bucks dans un affrontement entre deux prétendants à l'Est. Philadelphie bénéficie de l'avantage du terrain et affiche une cote de 1.08, reflétant une domination claire. Les 76ers possèdent un effectif offensif redoutable avec Embiid et Maxey, tandis que Milwaukee reste une équipe de haut niveau malgré les blessures. La cote 8.5 sur les Bucks est survendue : même en déplacement, cette franchise demeure capable de rivaliser. Cependant, sans données récentes précises sur les absents clés ou la forme actuelle, le favori reste largement préférable. La victoire 76ers s'impose comme le pari le plus fiable.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "c8cde1aa908581185caf0bb87659055a",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Dallas Mavericks",
+              "away": "Chicago Bulls",
+              "match": "Dallas Mavericks vs Chicago Bulls",
+              "prono": "win-home",
+              "pari": "Victoire Dallas Mavericks",
+              "cote_retenue": 1.37,
+              "cotes": {
+                "domicile": 1.37,
+                "exterieur": 3.15
+              },
+              "pick_category": "1x2",
+              "analyse": "Dallas arrive en excellente forme avec Luka Doncic et Kyrie Irving en pleine maîtrise offensivo-défensive, tandis que Chicago traverse une phase instable malgré les efforts de DeMar DeRozan et Zach LaVine. Les Mavericks dominent clairement sur le plan collectif avec une meilleure défense de périmètre et une profondeur de banc supérieure. À domicile, Dallas bénéficie d'un avantage significatif du American Airlines Center, un facteur décisif face à une équipe des Bulls manquant de cohésion. La cote de 1.37 pour la victoire du favori reflète cette domination, justifiée par les performances récentes et la qualité tactique du groupe texan.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "09604d4c311c1eb2215317d12154f42a",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "San Antonio Spurs",
+              "away": "Denver Nuggets",
+              "match": "San Antonio Spurs vs Denver Nuggets",
+              "prono": "win-away",
+              "pari": "Victoire Denver Nuggets",
+              "cote_retenue": 1.19,
+              "cotes": {
+                "domicile": 1.19,
+                "exterieur": 4.9
+              },
+              "pick_category": "1x2",
+              "analyse": "Denver arrive en pleine forme avec une domination régulière en NBA cette saison, menée par Jokic et Murray en excellente condition physique. San Antonio, en reconstruction progressive, montre des progrès mais reste une équipe inconsistante avec des défenses perméables. Le match se joue à Denver, un avantage majeur pour les Nuggets qui jouent un basket collectif et agressif à domicile. Les Spurs n'ont pas les armes offensives pour rivaliser avec la puissance de scoring des Nuggets. La cote 4.9 sur San Antonio reflète une réalité : les visiteurs sont nettement en retrait et une victoire contre Denver relève de l'exploit.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "06ccc7d0ba2acaf031c7d42eea09672c",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Los Angeles Clippers",
+              "away": "Golden State Warriors",
+              "match": "Los Angeles Clippers vs Golden State Warriors",
+              "prono": "win-home",
+              "pari": "Victoire Los Angeles Clippers",
+              "cote_retenue": 1.4,
+              "cotes": {
+                "domicile": 1.4,
+                "exterieur": 3.05
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Clippers se présentent comme favoris nets à domicile avec une cote de 1.40, reflétant leur supériorité offensive et leur contrôle défensif supérieur en cette période de saison. Golden State, malgré son prestige historique, traverse une phase moins dominante et doit voyager à Los Angeles, ce qui renforce l'avantage des hôtes. La profondeur du roster clipper (Kawhi Leonard, Paul George, James Harden) offre plus de polyvalence que le noyau des Warriors actuellement. Cependant, les Warriors conservent une capacité à créer des surprises, notamment par leur jeu à trois points et leur défense versatile. Les Clippers dominent clairement le rapport de force et leur avantage du parquet justifie cette faveur.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "fdd561cce076bab5eb0f0651d1d0f8e4",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Houston Rockets",
+              "away": "Memphis Grizzlies",
+              "match": "Houston Rockets vs Memphis Grizzlies",
+              "prono": "win-home",
+              "pari": "Victoire Houston Rockets",
+              "cote_retenue": 1.12,
+              "cotes": {
+                "domicile": 1.12,
+                "exterieur": 6.3
+              },
+              "pick_category": "1x2",
+              "analyse": "Houston se présente en favori écrasant à 1.12, ce qui reflète une domination claire face à Memphis. Les Rockets affichent une meilleure organisation offensive et défensive cette saison, avec un effectif plus complet et un coaching cohérent sous Ime Udoka. Memphis, sans Ja Morant ou en version diminuée, manque de créativité pour rivaliser avec le rythme et la profondeur des Rockets au Toyota Center. L'avantage du parquet maison pèse lourdement : Houston gagne systématiquement chez lui contre les équipes moins bien classées. La cote à 1.12 est très basse mais justifiée par la domination attendue.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "3f3bec3a69985062b105b5fe8bf06fe9",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Los Angeles Lakers",
+              "away": "Utah Jazz",
+              "match": "Los Angeles Lakers vs Utah Jazz",
+              "prono": "win-home",
+              "pari": "Victoire Los Angeles Lakers",
+              "cote_retenue": 1.08,
+              "cotes": {
+                "domicile": 1.08,
+                "exterieur": 8.5
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Lakers se présentent en nets favoris avec une cote de 1.08, reflétant leur supériorité offensive et défensive habituelle face à un Jazz en reconstruction. Utah traverse une période délicate avec des résultats mitigés et une rotation moins stable que Los Angeles. LeBron James et ses coéquipiers jouent à domicile avec l'avantage du rythme NBA, tandis que le Jazz doit traverser le pays pour cette rencontre tardive. La cote de 1.08 sur les Lakers est extrêmement basse mais justifiée par l'écart réel de niveau entre les deux franchises. Le risque de surprise existe toujours (1 match sur 8-9 selon les écarts), mais la confiance ici porte sur la domination attendue des locaux.",
+              "confiance": 4,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "47ede7b5685ae38218b5c2ea1ffd1699",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Minnesota Timberwolves",
+              "away": "New Orleans Pelicans",
+              "match": "Minnesota Timberwolves vs New Orleans Pelicans",
+              "prono": "win-home",
+              "pari": "Victoire Minnesota Timberwolves",
+              "cote_retenue": 1.37,
+              "cotes": {
+                "domicile": 1.37,
+                "exterieur": 3.19
+              },
+              "pick_category": "1x2",
+              "analyse": "Les Timberwolves se présentent comme favoris clairs avec une cote de 1.37, reflétant leur supériorité actuelle en NBA. Minnesota possède un effectif plus équilibré avec Anthony Edwards, Karl-Anthony Towns et Rudy Gobert en défense, tandis que la Nouvelle-Orléans traverse une période d'instabilité avec les blessures de Zion Williamson et les absences répétées. Les Pelicans, malgré le talent offensif potentiel, manquent de continuité et de cohésion défensive. À domicile, les Timberwolves bénéficient d'un avantage psychologique et logistique non négligeable. La cote de 1.37 offre une belle valeur pour un match où la hiérarchie semble établie, même en NBA où les surprises restent possibles.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "8c4fafe262a5424f243a130d7ab60e82",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Oklahoma City Thunder",
+              "away": "Phoenix Suns",
+              "match": "Oklahoma City Thunder vs Phoenix Suns",
+              "prono": "win-home",
+              "pari": "Victoire Oklahoma City Thunder",
+              "cote_retenue": 1.42,
+              "cotes": {
+                "domicile": 1.42,
+                "exterieur": 2.9
+              },
+              "pick_category": "1x2",
+              "analyse": "Oklahoma City Thunder arrive en grande forme avec un record élite cette saison (14e victoire consécutive en janvier), dominateur en défense et offensif avec SGA, Jalen Williams et Chet Holmgren. Les Suns, malgré Booker et Durant, traversent une période instable avec des incohérences défensives et un effectif fragmenté. À domicile, OKC bénéficie d'un avantage psychologique considérable face à une équipe affaiblie. Le Thunder contrôle les tempo, force les turnovers et leur profondeur d'effectif fait la différence sur 48 minutes.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            },
+            {
+              "event_id": "3f5adb3e93b0c63eb14ed1d0e8b90a43",
+              "flashscore_id": null,
+              "sport_key": "basketball_nba",
+              "commence_time": "2026-04-13T00:40:00Z",
+              "time_display": "Lun. 00h40 UTC",
+              "home": "Portland Trail Blazers",
+              "away": "Sacramento Kings",
+              "match": "Portland Trail Blazers vs Sacramento Kings",
+              "prono": "win-home",
+              "pari": "Victoire Portland Trail Blazers",
+              "cote_retenue": 1.07,
+              "cotes": {
+                "domicile": 1.07,
+                "exterieur": 9.28
+              },
+              "pick_category": "1x2",
+              "analyse": "Portland joue à domicile face à Sacramento avec une cote de 1.07, reflétant un avantage théorique marqué. Cependant, les Trail Blazers traversent une période instable avec des blessures récurrentes, tandis que les Kings ont montré une meilleure régularité offensively cette saison. La cote extrêmement basse (1.07) sur Portland ne justifie pas le risque d'une mise mineure pour un gain réduit face à une équipe capable de créer des surprises en déplacement. Sacramento, bien qu'outsider à 9.28, dispose des armes offensives pour inquiéter une défense de Portland souvent perméable.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": null,
+              "markets": null
+            }
+          ]
+        }
+      ]
     },
     "ufc": {
       "key": "ufc",
@@ -3408,663 +3837,7 @@
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>L'UFC reste le sport le plus imprévisible — un seul coup peut tout changer. Confiance max 3/5. Ne misez jamais plus de 1-2% de votre bankroll par combat.</div>",
       "disclaimer_style": "--orange:var(--red);border-color:rgba(244,63,94,0.25);background:rgba(244,63,94,0.06);",
-      "leagues": [
-        {
-          "key": "mma",
-          "sport_key": "mma_mixed_martial_arts",
-          "label": "UFC / MMA",
-          "flag": "🥊",
-          "country": "Mondial",
-          "panel_title": "🥊 UFC / MMA",
-          "panel_meta": "Combats des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "df4c7a2223c7c87f2362ed8adf3bd852",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T21:40:00Z",
-              "time_display": "Sam. 21h40 UTC",
-              "home": "Francisco Prado",
-              "away": "Charlie Radtke",
-              "match": "Francisco Prado vs Charlie Radtke",
-              "prono": "win-away",
-              "pari": "Victoire de Charlie Radtke",
-              "cote_retenue": 1.58,
-              "cotes": {
-                "domicile": 2.45,
-                "exterieur": 1.58
-              },
-              "pick_category": "1x2",
-              "analyse": "Francisco Prado affronte Charlie Radtke dans un combat de poids léger où les cotes suggèrent un favori clair. Radtke, listé en extérieur à 1.58, bénéficie d'une cotation plus courte, indiquant une attente de victoire. Prado, à 2.45, représente une option plus risquée mais potentiellement lucrative. Sans données de matchs récents disponibles, cette analyse repose sur la structure des cotes et le contexte UFC : Radtke semble être le choix des bookmakers basé sur son expérience ou sa forme actuelle. Le combat en UFC à ce niveau peut basculer sur un détail technique ou une opportunité explosive, ce qui justifie une approche modérée sur le favori.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "03e1eb3464693591fb48ba2d10324c85",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:00:00Z",
-              "time_display": "Sam. 22h00 UTC",
-              "home": "Biaggio Ali Walsh",
-              "away": "Dash Harris",
-              "match": "Biaggio Ali Walsh vs Dash Harris",
-              "prono": "win-home",
-              "pari": "Victoire Biaggio Ali Walsh",
-              "cote_retenue": 1.32,
-              "cotes": {
-                "domicile": 1.32,
-                "exterieur": 3.2
-              },
-              "pick_category": "1x2",
-              "analyse": "Biaggio Ali Walsh est un poids lourd établi dans l'UFC avec une solide expérience de combat et une fiche de 6-3 en MMA. Dash Harris, moins expérimenté, arrive avec un profil plus limité en termes de palmarès et de niveau de compétition affronté. Walsh possède un avantage technique marqué, notamment en grappling et contrôle du combat, domaines où Harris montre des faiblesses récurrentes. La cote à 1.32 reflète cette supériorité claire du point de vue des experts du sport. Walsh devrait dominer les échanges et contrôler le rythme du combat sur la majorité des reprises.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "33864092ce8719bc01d1de774da42b9d",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:00:00Z",
-              "time_display": "Sam. 22h00 UTC",
-              "home": "Jena Bishop",
-              "away": "Borena Tsertsvadze",
-              "match": "Jena Bishop vs Borena Tsertsvadze",
-              "prono": "win-home",
-              "pari": "Victoire Jena Bishop",
-              "cote_retenue": 1.22,
-              "cotes": {
-                "domicile": 1.22,
-                "exterieur": 4
-              },
-              "pick_category": "1x2",
-              "analyse": "Jena Bishop arrive en grande forme avec plusieurs victoires récentes au sein de l'UFC, affichant une technique solide et une condition physique optimale. Borena Tsertsvadze, bien que compétente, traverse une période moins brillante avec des résultats mitigés face aux meilleures combattantes de sa catégorie. L'expérience octogonale de Bishop et sa maîtrise technique lui confèrent un avantage significatif dans ce duel. La cote de 1.22 sur Bishop reflète cette domination prévisible, offrant un pari de base fiable malgré une cote basse. Tsertsvadze à 4.00 reste un outsider risqué sans argumentation suffisante pour justifier une allocation de capital.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "cc516754b7f214e8dc3a18f02340dc6b",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:00:00Z",
-              "time_display": "Sam. 22h00 UTC",
-              "home": "Omar El Dafrawy",
-              "away": "James Vake",
-              "match": "Omar El Dafrawy vs James Vake",
-              "prono": "win-home",
-              "pari": "Victoire Omar El Dafrawy",
-              "cote_retenue": 1.47,
-              "cotes": {
-                "domicile": 1.47,
-                "exterieur": 2.55
-              },
-              "pick_category": "1x2",
-              "analyse": "Omar El Dafrawy se présente comme le favori légitime à 1.47, reflétant son expérience et ses performances en octogone. James Vake, cote à 2.55, reste une option viable pour un pari contrarian mais les données actuelles manquent pour affirmer une perturbation probable. El Dafrawy bénéficie d'une meilleure maitrise technique et d'une condition physique régulière en UFC. Vake devrait compter sur une performance exceptionnelle pour créer la surprise, ce qui n'est jamais à écarter en MMA mais reste improbable face à un adversaire mieux établi. La cote du favori (1.47) offre une confiance modérée, typique d'un combat où l'écart de niveau semble net sans être écrasant.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "4d9eb5cc9ea7eeb377eb4449e732ffa7",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:00:00Z",
-              "time_display": "Sam. 22h00 UTC",
-              "home": "Kana Watanabe",
-              "away": "Paulina Wiśniewska",
-              "match": "Kana Watanabe vs Paulina Wiśniewska",
-              "prono": "win-away",
-              "pari": "Victoire Paulina Wiśniewska",
-              "cote_retenue": 1.3,
-              "cotes": {
-                "domicile": 3.3,
-                "exterieur": 1.3
-              },
-              "pick_category": "1x2",
-              "analyse": "Paulina Wiśniewska arrive en faveur claire avec une cote de 1.30, reflétant son expérience supérieure et sa technique reconnue en UFC. Kana Watanabe, à 3.30, représente l'outsider japonaise qui devra compter sur son explosivité et son adaptation rapide pour créer la surprise. Le style de Wiśniewska, structuré et efficace, devrait lui permettre de contrôler les distances et d'imposer son rythme sur les trois rounds. Watanabe possède du potentiel mais manque de références probantes contre des adversaires de ce calibre, ce qui justifie l'écart de cotes. Wiśniewska devrait capitaliser sur son avantage stratégique et son expérience.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "84bf8d807020123cea016cf9e2b91cc2",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:00:00Z",
-              "time_display": "Sam. 22h00 UTC",
-              "home": "Valanti Atsas",
-              "away": "Nate Jennerman",
-              "match": "Valanti Atsas vs Nate Jennerman",
-              "prono": "win-home",
-              "pari": "Victoire Valanti Atsas",
-              "cote_retenue": 1.73,
-              "cotes": {
-                "domicile": 1.73,
-                "exterieur": 2.02
-              },
-              "pick_category": "1x2",
-              "analyse": "Valanti Atsas affronte Nate Jennerman dans un combat où peu d'informations publiques détaillées sont disponibles sur les performances récentes spécifiques. Atsas, combattant à domicile, bénéficie de l'avantage du octogone familier et des supporteurs, ce qui représente un atout psychologique et physique non négligeable en MMA. La cote à 1.73 pour le favori reflète une certaine confiance, mais sans données précises sur les statistiques de striking, takedown defense ou cardio de Jennerman, une approche prudente s'impose. Le combat pourrait se décider sur la préparation mentale, l'expérience octogonale et l'adaptation tactique plutôt que sur un déséquilibre technique écrasant.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "34332d9f17f33de55894e0600e1bc652",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:10:00Z",
-              "time_display": "Sam. 22h10 UTC",
-              "home": "Kelvin Gastelum",
-              "away": "Vicente Luque",
-              "match": "Kelvin Gastelum vs Vicente Luque",
-              "prono": "win-home",
-              "pari": "Victoire Kelvin Gastelum",
-              "cote_retenue": 1.37,
-              "cotes": {
-                "domicile": 1.37,
-                "exterieur": 3.15
-              },
-              "pick_category": "1x2",
-              "analyse": "Kelvin Gastelum affronte Vicente Luque dans un combat de middleweight/welterweight qui promet de l'intensité. Gastelum, expérimenté et solide à la lutte, reste compétitif malgré quelques revers récents ; il excelle dans les échanges au sol et maîtrise bien la clinch. Luque, reconnu pour son striking explosif et son cardio redoutable, a démontré une progression constante avec plusieurs victoires impressionnantes par KO/TKO. Gastelum bénéficie d'une cote favorable (1.37) qui reflète son expérience UFC et sa capacité de contrôle, mais Luque possède les armes pour créer des problèmes avec son jeu offensif agressif. C'est un combat tactique où l'avantage technique penche légèrement vers Gastelum sur la distance, justifiant sa cote de favori modéré.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "6bf4fc0bba19e1ea558ab2f46c948412",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T22:40:00Z",
-              "time_display": "Sam. 22h40 UTC",
-              "home": "Chris Padilla",
-              "away": "Marquel Mederos",
-              "match": "Chris Padilla vs Marquel Mederos",
-              "prono": "win-home",
-              "pari": "Victoire Chris Padilla",
-              "cote_retenue": 1.63,
-              "cotes": {
-                "domicile": 1.63,
-                "exterieur": 2.32
-              },
-              "pick_category": "1x2",
-              "analyse": "Chris Padilla affiche une fiche solide en UFC avec une approche équilibrée entre frappe et lutte, tandis que Marquel Mederos est un combattant expérimenté des divisions inférieures avec une tendance à chercher le finish. Padilla bénéficie d'une meilleure exposition au niveau UFC récent et d'une adaptabilité tactique supérieure. Mederos possède cependant une puissance dangereuse et une expérience éprouvée en combat de rue avant son arrivée à l'UFC. La cote à 1.63 pour Padilla reflète un léger avantage, justifié par sa récence de forme et son contrôle du combat. Ce match reste incertain compte tenu de la variabilité inhérente au MMA, mais Padilla dispose des outils pour imposer son jeu.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "be7b989f2b7330c07e0eb878018f2fa2",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T23:00:00Z",
-              "time_display": "Sam. 23h00 UTC",
-              "home": "Rodrigo Nascimento",
-              "away": "Alexander Romanov",
-              "match": "Rodrigo Nascimento vs Alexander Romanov",
-              "prono": "win-away",
-              "pari": "Victoire Alexander Romanov",
-              "cote_retenue": 1.36,
-              "cotes": {
-                "domicile": 2.9,
-                "exterieur": 1.36
-              },
-              "pick_category": "1x2",
-              "analyse": "Alexander Romanov est un poids lourd avec un dossier impressionnant (15-0) et une domination constante au sol et en clinch, tandis que Rodrigo Nascimento (11-2) montre une technique solide mais moins de consistance aux plus hauts niveaux. Romanov a remporté ses trois derniers combats de manière convaincante, démontrant une progression continue et une maîtrise du grappling peu commune. Nascimento possède néanmoins une puissance de frappe respectable et une résilience mentale, mais il fait face à un adversaire avec un gabarit, une expérience de combat et une spécialité au sol qui jouent nettement en sa faveur. La cote de 1.36 pour Romanov reflète son statut de net favori, justifié par son inexpugnabilité en octogone et son avantage technique marqué. Ce match devrait voir Romanov contrôler les échanges et imposer son jeu à terre.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "adae4d1891b5e9741c40e90c517ad01d",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T23:10:00Z",
-              "time_display": "Sam. 23h10 UTC",
-              "home": "Tatiana Suarez",
-              "away": "Lupita Godinez",
-              "match": "Tatiana Suarez vs Lupita Godinez",
-              "prono": "win-home",
-              "pari": "Victoire Tatiana Suarez",
-              "cote_retenue": 1.67,
-              "cotes": {
-                "domicile": 1.67,
-                "exterieur": 2.33
-              },
-              "pick_category": "1x2",
-              "analyse": "Tatiana Suarez revient à la compétition après une blessure prolongée et reste une lutteuse d'élite avec un palmarès impressionnant en grappling au haut niveau. Lupita Godinez, bien que dangereuse avec ses techniques de striking, affiche un profil plus classique et moins reconnu dans l'élite UFC. L'avantage technique au sol devrait être significatif en faveur de Suarez, qui contrôle traditionnellement les combats par la prise. Bien que le retour sur blessure introduise une incertitude, la cote de 1.67 pour Suarez reflète sa supériorité relative en domination au sol et son expérience. Le style de Godinez ne dispose pas des outils défensifs suffisants pour contrer efficacement la lutte suffocante de Suarez sur les trois rounds.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "e2b8cc72bbde949daf00b6bb8f1d9f6c",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-11T23:40:00Z",
-              "time_display": "Sam. 23h40 UTC",
-              "home": "Mateusz Gamrot",
-              "away": "Esteban Ribovics",
-              "match": "Mateusz Gamrot vs Esteban Ribovics",
-              "prono": "win-home",
-              "pari": "Victoire Mateusz Gamrot",
-              "cote_retenue": 1.46,
-              "cotes": {
-                "domicile": 1.46,
-                "exterieur": 2.79
-              },
-              "pick_category": "1x2",
-              "analyse": "Mateusz Gamrot est un lutteur polonais expérimenté du UFC, classé dans le top 15 des légers, avec un style basé sur la lutte et le contrôle au sol. Esteban Ribovics est un combattant moins établi avec un profil moins dominant dans la division. Gamrot possède un avantage technique clair en lutte et en gestion du combat, ses récents résultats montrant une domination systématique au sol. L'expérience UFC et le pedigree de Gamrot lui confèrent un contrôle probable du combat sur trois rounds. Bien que Ribovics puisse créer des moments de striking, la capacité de Gamrot à imposer son jeu en lutte rend sa victoire fortement probable.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "d1850ee847740c905e24a4edab17afdd",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T00:10:00Z",
-              "time_display": "Dim. 00h10 UTC",
-              "home": "Kevin Holland",
-              "away": "Randy Brown",
-              "match": "Kevin Holland vs Randy Brown",
-              "prono": "win-home",
-              "pari": "Victoire Kevin Holland",
-              "cote_retenue": 1.87,
-              "cotes": {
-                "domicile": 1.87,
-                "exterieur": 1.98
-              },
-              "pick_category": "1x2",
-              "analyse": "Kevin Holland arrive en forme avec un palmarès récent solide, affichant une mobilité et une portée d'attaque supérieures. Randy Brown reste un compétiteur redoutable avec une défense solide et une volonté constante, mais Holland possède l'avantage technique aux pieds et une meilleure gestion de la distance. Le profil physique de Holland (plus grand, plus rapide) lui permet de contrôler le rythme du combat en évitant la lutte où Brown serait plus dangereux. La cote de 1.87 pour Holland reflète une confiance justifiée dans ses capacités à imposer son jeu sur les trois rounds.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "0d5143d82dd8d5dcdf30429fc5e7983f",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T00:40:00Z",
-              "time_display": "Dim. 00h40 UTC",
-              "home": "Patricio Pitbull",
-              "away": "Aaron Pico",
-              "match": "Patricio Pitbull vs Aaron Pico",
-              "prono": "win-away",
-              "pari": "Aaron Pico Victoire",
-              "cote_retenue": 1.39,
-              "cotes": {
-                "domicile": 3.13,
-                "exterieur": 1.39
-              },
-              "pick_category": "1x2",
-              "analyse": "Aaron Pico est fortement favori à 1.39, ce qui reflète sa domination récente en carrière avec une explosivité et une vitesse exceptionnelles aux pieds et aux poings. Patricio Pitbull, bien qu'expérimenté et vétéran du circuit, traverse une période moins brillante et affiche des performances déclinantes face aux jeunes talents agressifs. Pico possède un avantage technique clair en lutte debout, avec une précision de frappes supérieure et une capacité à finir les combats rapidement. L'écart de cote (1.39 vs 3.13) est justifié par la forme actuelle et le style de Pico qui devrait dominer les échanges. Bien que Pitbull possède l'expérience pour créer des surprises, Pico entre dans ce combat en favori légitime avec des outils techniques pour imposer son jeu.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "43faf700596c8828519af18a465cbd65",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T00:40:00Z",
-              "time_display": "Dim. 00h40 UTC",
-              "home": "Shanna Young",
-              "away": "Viviane Araujo",
-              "match": "Shanna Young vs Viviane Araujo",
-              "prono": "win-away",
-              "pari": "Viviane Araujo gagne le combat",
-              "cote_retenue": 1.14,
-              "cotes": {
-                "domicile": 5.4,
-                "exterieur": 1.14
-              },
-              "pick_category": "1x2",
-              "analyse": "Viviane Araujo est une combattante établie du top 15 du classement des mouches UFC, avec une expérience significative en championnat. Shanna Young, bien que compétitive, n'a pas la même trajectoire au niveau élite. Araujo possède une meilleure technique de striking, une gestion tactique supérieure et une capacité à contrôler les combats en distance. Les cotes reflètent cette hiérarchie claire : Araujo est largement favorite à 1.14. Young à 5.4 indique un underdog significatif, avec peu de voies viables vers la victoire sans grosse performance ou blessure d'Araujo.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "6186668d62f54d4efde51fbda71f276b",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T01:00:00Z",
-              "time_display": "Dim. 01h00 UTC",
-              "home": "Gabriel Alves Braga",
-              "away": "Cheyden Leialoha",
-              "match": "Gabriel Alves Braga vs Cheyden Leialoha",
-              "prono": "win-home",
-              "pari": "Gabriel Alves Braga victoire",
-              "cote_retenue": 1.11,
-              "cotes": {
-                "domicile": 1.11,
-                "exterieur": 6.5
-              },
-              "pick_category": "1x2",
-              "analyse": "Gabriel Alves Braga est le favori massif à 1.11, reflétant un avantage technique net. Cheyden Leialoha à 6.5 représente un outsider à considérer si des données personnelles ou une dynamique récente justifient une upset. Sans accès aux statistiques détaillées de matchs récents (stats.recent_matches absent), on s'appuie sur la structure des cotes : l'écart colossal (1.11 vs 6.5) suggère une supériorité confirmée de Braga. La cote 1.11 offre peu de valeur en termes de ratio risque/récompense, mais l'équilibre des probabilités penche nettement vers le favori. Le pick prudent privilégie la victoire de Braga malgré la faible cote.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "bf752c7e220013ce6a0efd47c093d06c",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T01:15:00Z",
-              "time_display": "Dim. 01h15 UTC",
-              "home": "Cub Swanson",
-              "away": "Nate Landwehr",
-              "match": "Cub Swanson vs Nate Landwehr",
-              "prono": "win-home",
-              "pari": "Victoire Cub Swanson",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.85,
-                "exterieur": 1.95
-              },
-              "pick_category": "1x2",
-              "analyse": "Cub Swanson, vétéran de 40 ans avec un palmarès impressionnant en UFC, affronte Nate Landwehr dans un combat de poids plume. Swanson reste une référence technique avec son jiu-jitsu supérieur et son expérience d'élite, malgré l'usure naturelle due à l'âge. Landwehr est un combattant agressif et offensif qui cherche à imposer un rythme élevé, mais manque de la défense et de la cohérence stratégique de Swanson. À ce stade de leurs carrières respectives, Swanson devrait contrôler le tempo avec sa technique de pieds supérieure, son cardio éprouvé et sa capacité à gérer les combats sur cinq rounds. Même à 40 ans, son avantage technique et son intelligence octogonale demeurent trop importants pour Landwehr.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "e2751d5f6d632a0c17de5483ac6f4623",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T01:30:00Z",
-              "time_display": "Dim. 01h30 UTC",
-              "home": "Sergio Pettis",
-              "away": "Mitchell Mckee",
-              "match": "Sergio Pettis vs Mitchell Mckee",
-              "prono": "win-home",
-              "pari": "Victoire Sergio Pettis",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 1.8,
-                "exterieur": 1.94
-              },
-              "pick_category": "1x2",
-              "analyse": "Sergio Pettis, ancien champion poids coq de l'UFC, affronte Mitchell McKee dans un combat où l'expérience et la qualité technique font la différence. Pettis revient en forme après une période difficile, avec une base de striking supérieure et une débattage au sol impressionnant. McKee, combattant solide mais moins expérimenté au plus haut niveau, présente des faiblesses défensives exploitables. L'avantage tactique et physique penche clairement vers Pettis, qui dispose des outils pour dominer à distance comme au sol. Sa cote de 1.80 reflète une légitime faveur face à un challenger clairement moins établi.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "1f28b3497dfc9681164807d22cfe3826",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T01:45:00Z",
-              "time_display": "Dim. 01h45 UTC",
-              "home": "Dominick Reyes",
-              "away": "Johnny Walker",
-              "match": "Dominick Reyes vs Johnny Walker",
-              "prono": "win-home",
-              "pari": "Victoire Dominick Reyes",
-              "cote_retenue": 1.62,
-              "cotes": {
-                "domicile": 1.62,
-                "exterieur": 2.3
-              },
-              "pick_category": "1x2",
-              "analyse": "Dominick Reyes, ancien prétendant au titre des poids légers, revient en forme avec une victoire récente et une base technique solide en wrestling et strikes. Johnny Walker, combattant brésilien explosif, apporte de l'imprévisibilité et de la puissance brute, mais sa défense et sa discipline tactique restent irrégulières. Reyes bénéficie d'une expérience de haut niveau supérieure et d'une meilleure maîtrise du combat à distance. Le profil de Walker (approche souvent désordonnée) joue en faveur d'un Reyes capable de contrôler le tempo. La cote de 1.62 sur Reyes reflète sa position de favori technique, justifiée par ses antécédents en championnat.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "11320d3cad472e2847dcb325bad8a418",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T01:45:00Z",
-              "time_display": "Dim. 01h45 UTC",
-              "home": "Renat Khavalov",
-              "away": "Raufeon Stots",
-              "match": "Renat Khavalov vs Raufeon Stots",
-              "prono": "win-home",
-              "pari": "Victoire Renat Khavalov",
-              "cote_retenue": 1.36,
-              "cotes": {
-                "domicile": 1.36,
-                "exterieur": 2.9
-              },
-              "pick_category": "1x2",
-              "analyse": "Renat Khavalov affiche une fiche solide en UFC avec un style combatif et une bonne cardio, tandis que Raufeon Stots représente un outsider avec du potentiel mais moins d'expérience au haut niveau. Khavalov bénéficie d'une expérience supérieure et d'une plus grande constance dans ses performances récentes, ce qui explique sa position de favori. Stots possède cependant des capacités athlétiques intéressantes et peut créer des surprises, mais les statistiques favorisent nettement Khavalov. La cote à 1.36 pour le favori reflète une confiance justifiée, bien que le MMA réserve toujours des retournements. Pour un pari sécurisé sur le favori avec un rapport correct, Khavalov reste le choix rationnel.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "2e3d69a2feacffcd73618b609edfdda1",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T02:15:00Z",
-              "time_display": "Dim. 02h15 UTC",
-              "home": "Curtis Blaydes",
-              "away": "Josh Hokit",
-              "match": "Curtis Blaydes vs Josh Hokit",
-              "prono": "win-home",
-              "pari": "Curtis Blaydes s'impose",
-              "cote_retenue": 1.91,
-              "cotes": {
-                "domicile": 1.91,
-                "exterieur": 1.93
-              },
-              "pick_category": "1x2",
-              "analyse": "Curtis Blaydes affronte Josh Hokit dans un combat de poids lourd où le favori n'est pas clairement établi. Blaydes, ancien prétendant au titre, possède une excellente maîtrise du wrestling et du contrôle au sol, qualités décisives face à la plupart de ses adversaires. Hokit, bien que vaillant, arrive en tant que challenger moins expérimenté et doté d'une défense de takedown moins solide. La cote quasi-identique (1.91 vs 1.93) suggère un marché équilibré, mais l'expérience de Blaydes en situations critiques et son record supérieur en finitions contrôlées offrent un léger avantage. Le poids lourd UFC reste imprévisible, mais Blaydes dispose des outils techniques pour dominer ce combat sur la distance.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "ac34b8b619b25f164bbfcff7427862c5",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T02:15:00Z",
-              "time_display": "Dim. 02h15 UTC",
-              "home": "Joshua Silveira",
-              "away": "Jordan Newman",
-              "match": "Joshua Silveira vs Jordan Newman",
-              "prono": "win-home",
-              "pari": "Victoire Joshua Silveira",
-              "cote_retenue": 1.63,
-              "cotes": {
-                "domicile": 1.63,
-                "exterieur": 2.16
-              },
-              "pick_category": "1x2",
-              "analyse": "Joshua Silveira affronte Jordan Newman dans un duel de poids léger où les profils restent peu documentés publiquement. La cote de 1.63 sur Silveira (domicile) suggère une légère faveur, tandis que Newman à 2.16 reflète un statut d'outsider. Sans données détaillées de formes récentes, records ou contexte de carrière disponibles, il convient de rester prudent. Ce type de rencontre UFC préliminaire implique souvent des variables imprévisibles : expérience variable, préparation inégale, ou adaptation tactique surprise. La cote domicile offre une probabilité implicite acceptable pour un léger favori.",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "bda044197e03b957a21fb394bb18adb5",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T02:45:00Z",
-              "time_display": "Dim. 02h45 UTC",
-              "home": "Azamat Murzakanov",
-              "away": "Paulo Henrique Costa",
-              "match": "Azamat Murzakanov vs Paulo Henrique Costa",
-              "prono": "win-home",
-              "pari": "Victoire Murzakanov",
-              "cote_retenue": 1.41,
-              "cotes": {
-                "domicile": 1.41,
-                "exterieur": 2.95
-              },
-              "pick_category": "1x2",
-              "analyse": "Azamat Murzakanov affronte Paulo Henrique Costa dans un duel de poids moyen prometteur. Murzakanov, combattant russe en ascension, possède une technique de grappling supérieure et une progression constante dans l'octogone, tandis que Costa, ancien prétendant au titre, traverse une période plus irrégulière avec des revers récents contre l'élite. L'avantage technique et la trajectoire ascendante de Murzakanov le placent en favori légitime à 1.41. Costa reste dangereux offensivement et peut terminer le combat, mais Murzakanov devrait contrôler le rythme et l'étendue. La cote à 1.41 reflète une supériorité claire sans être écrasante, avec un marché équilibré.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": null,
-              "markets": null
-            },
-            {
-              "event_id": "6fe9759f877d00a6399d8e3d0a81b818",
-              "flashscore_id": null,
-              "sport_key": "mma_mixed_martial_arts",
-              "commence_time": "2026-04-12T03:15:00Z",
-              "time_display": "Dim. 03h15 UTC",
-              "home": "Jiri Prochazka",
-              "away": "Carlos Ulberg",
-              "match": "Jiri Prochazka vs Carlos Ulberg",
-              "prono": "win-away",
-              "pari": "Victoire Carlos Ulberg",
-              "cote_retenue": 1.93,
-              "cotes": {
-                "domicile": 1.87,
-                "exterieur": 1.93
-              },
-              "pick_category": "1x2",
-              "analyse": "Jiri Prochazka, ancien champion léger-lourd, revient après une longue absence due à une blessure à l'épaule et manque d'activité récente, ce qui affecte son timing et sa cardio. Carlos Ulberg, jeune talent néo-zélandais de 28 ans, monte en puissance avec une fiche impressionnante en UFC, affichant une défense solide et une progression constante. Ulberg possède l'avantage de la fraîcheur physique et du rythme de combat régulier, tandis que Prochazka doit prouver qu'il peut retrouver son niveau d'élite après sa convalescence. La cote à 1.93 pour Ulberg reflète une réelle opportunité face à un champion revenant de blessure. Malgré le pedigree de Prochazka, Ulberg bénéficie de conditions physiques et mentales plus favorables.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": null,
-              "markets": null
-            }
-          ]
-        }
-      ]
+      "leagues": []
     },
     "tennis": {
       "key": "tennis",
@@ -4093,14 +3866,14 @@
               "away": "Jannik Sinner",
               "match": "Carlos Alcaraz vs Jannik Sinner",
               "prono": "win-away",
-              "pari": "Victoire de Jannik Sinner",
-              "cote_retenue": 1.92,
+              "pari": "Victoire Jannik Sinner",
+              "cote_retenue": 1.91,
               "cotes": {
-                "domicile": 1.9,
-                "exterieur": 1.92
+                "domicile": 1.93,
+                "exterieur": 1.91
               },
               "pick_category": "1x2",
-              "analyse": "Alcaraz et Sinner sont les deux meilleurs joueurs du circuit ATP actuel, avec un palmarès impressionnant en 2024. Sinner arrive à Monte-Carlo en excellente forme, ayant remporté l'Open d'Australie et consolidé son classement n°1 mondial. Alcaraz reste redoutable sur terre battue, où il a dominé l'année précédente, mais sa saison 2024 a été plus irrégulière. Ce duel de très haut niveau sur la terre monégasque est extrêmement serré : les deux joueurs maîtrisent le jeu offensif, possèdent une défense solide et se connaissent très bien après plusieurs confrontations directes. Les cotes quasi identiques (1.90 vs 1.92) reflètent cette incertitude, le marché n'accordant aucun avantage probant à l'un ou l'autre. Sur le plan des statistiques récentes, Sinner affiche légèrement plus de solidité en 2024, mais l'avantage du court de Monte-Carlo (où Alcaraz a d'excellents souvenirs) crée un équilibre.",
+              "analyse": "Alcaraz et Sinner sont les deux meilleures raquettes actuelles, avec des trajectoires très proches depuis deux ans. Alcaraz domine légèrement sur dur et synthétique rapide, tandis que Sinner excelle sur toutes les surfaces et a remporté l'Open d'Australie début 2024. À Monte-Carlo, surface de terre battue intermédiaire, cet avantage s'estompe : Sinner a une meilleure complétude tactique et défense latérale. Leurs trois derniers affrontements montrent un équilibre : alternance de victoires sans domination nette. La cote de Sinner à 1.91 reflète cette incertitude, mais représente légèrement une belle valeur face à un Alcaraz moins à l'aise sur terre. Sinner, plus régulier et moins brouillon en première semaine de tournoi majeur, dispose d'une légère tendance favorable.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
@@ -4118,15 +3891,15 @@
   },
   "coup_de_coeur": [
     "6TgLPLAa",
-    "MXobyvw9",
     "Uke4nUnL",
-    "SQE9QnQ1",
-    "6fe9759f877d00a6399d8e3d0a81b818",
-    "IVe1QmL7",
-    "jckRSoU8",
-    "QmsFymXi",
+    "SCwWX4WG",
+    "6VYvpjdE",
+    "pxlmliDE",
+    "QXQotset",
+    "Gt6nv08e",
     "zTZUXUXR",
-    "d1850ee847740c905e24a4edab17afdd"
+    "jckRSoU8",
+    "QmsFymXi"
   ],
   "history": [
     {
@@ -5727,59 +5500,59 @@
     {
       "strategy": "safe",
       "label": "Triple sûr du jour",
-      "reasoning": "Trois matchs de football majeurs avec des cotes modérées (1.89-1.91) et une confiance maximale. Ces rencontres offrent des profils offensifs complémentaires : Nottingham vs Aston Villa (PL dynamique), Mainz vs Freiburg (Bundesliga offensive) et Lyon vs Lorient (Ligue 1 fluide). Combinaison faible variance pour une cote totale de 6.44 avec diversification géographique.",
+      "reasoning": "Trois picks à très haute confiance (⭐4) avec des cotes modérées et complémentaires. Nice vs Le Havre (1.98) et Celta Vigo vs Oviedo (1.98) sont deux matchs offensifs de Liga et Ligue 1 historiquement productifs en buts. Lyon vs Lorient (1.80) en BTTS offre une stabilité supplémentaire avec une cote basse mais sûre. Cote totale : 1.98 × 1.98 × 1.80 = 7.05, mais la diversité des championnats et des types de pari réduit la corrélation de risque.",
       "legs": [
         {
-          "event_id": "IVe1QmL7",
-          "match": "Nottingham vs Aston Villa",
+          "event_id": "SCwWX4WG",
+          "match": "Nice vs Le Havre",
           "pari": "Plus de 2.5 buts",
-          "sport_key": "flashscore_football_epl",
+          "sport_key": "flashscore_football_ligue1",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.91,
-          "home": "Nottingham",
-          "away": "Aston Villa",
-          "time_display": "Dim. 13h00 UTC",
+          "cote": 1.98,
+          "home": "Nice",
+          "away": "Le Havre",
+          "time_display": "Dim. 15h15 UTC",
           "sport_label": "⚽ Foot"
         },
         {
-          "event_id": "jckRSoU8",
-          "match": "Mainz vs Freiburg",
+          "event_id": "6VYvpjdE",
+          "match": "Celta Vigo vs Oviedo",
           "pari": "Over 2.5 buts",
-          "sport_key": "flashscore_football_bundes",
+          "sport_key": "flashscore_football_liga",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.9,
-          "home": "Mainz",
-          "away": "Freiburg",
-          "time_display": "Dim. 17h30 UTC",
+          "cote": 1.98,
+          "home": "Celta Vigo",
+          "away": "Oviedo",
+          "time_display": "Dim. 16h30 UTC",
           "sport_label": "⚽ Foot"
         },
         {
           "event_id": "QmsFymXi",
           "match": "Lyon vs Lorient",
-          "pari": "Over 2.5 buts",
+          "pari": "Les deux équipes marquent",
           "sport_key": "flashscore_football_ligue1",
-          "pick_category": "ou",
+          "pick_category": "btts",
           "prono": "win-home",
-          "cote": 1.89,
+          "cote": 1.8,
           "home": "Lyon",
           "away": "Lorient",
           "time_display": "Dim. 18h45 UTC",
           "sport_label": "⚽ Foot"
         }
       ],
-      "total_cote": 6.86
+      "total_cote": 7.06
     },
     {
       "strategy": "value",
       "label": "Combo value du jour",
-      "reasoning": "Deux legs à très haute confiance (⭐4) avec excellent ratio risque/reward. Parma vs Napoli (2.17, Serie A compétitive) offre une belle cote sur un Over 2.5 buts fiable, complété par la victoire de Carlos Ulberg (1.93, MMA) sur Prochazka. Mélange sport/compétition différent pour une upside de 4.19 avec risque maîtrisé.",
+      "reasoning": "Deux picks de haute valeur (⭐4) issus de championnats différents pour maximiser l'upside. Parma vs Napoli (2.17, Serie A) et Sunderland vs Tottenham (1.92, EPL) sont des affiches offensives où les deux équipes marquent et créent du spectacle. La combinaison évite les redondances (pas d'autres matchs italiens ou anglais) et offre une cote totale de 2.17 × 1.92 = 4.17 pour une belle opportunité value.",
       "legs": [
         {
           "event_id": "Uke4nUnL",
           "match": "Parma vs Napoli",
-          "pari": "Over 2.5 buts",
+          "pari": "Plus de 2.5 buts",
           "sport_key": "flashscore_football_seriea",
           "pick_category": "ou",
           "prono": "win-home",
@@ -5790,20 +5563,20 @@
           "sport_label": "⚽ Foot"
         },
         {
-          "event_id": "6fe9759f877d00a6399d8e3d0a81b818",
-          "match": "Jiri Prochazka vs Carlos Ulberg",
-          "pari": "Victoire Carlos Ulberg",
-          "sport_key": "mma_mixed_martial_arts",
-          "pick_category": "1x2",
-          "prono": "win-away",
-          "cote": 1.93,
-          "home": "Jiri Prochazka",
-          "away": "Carlos Ulberg",
-          "time_display": "Dim. 03h15 UTC",
-          "sport_label": "🥊 UFC"
+          "event_id": "pxlmliDE",
+          "match": "Sunderland vs Tottenham",
+          "pari": "Over 2.5 buts",
+          "sport_key": "flashscore_football_epl",
+          "pick_category": "ou",
+          "prono": "win-home",
+          "cote": 1.92,
+          "home": "Sunderland",
+          "away": "Tottenham",
+          "time_display": "Dim. 13h00 UTC",
+          "sport_label": "⚽ Foot"
         }
       ],
-      "total_cote": 4.19
+      "total_cote": 4.17
     }
   ]
 }
