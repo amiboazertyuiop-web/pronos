@@ -1609,42 +1609,7 @@ nav{
       </div>
     </div>
 
-    <!-- Add bet form -->
-    <div class="add-bet-form">
-      <div class="form-title">➕ Ajouter un pari</div>
-      <div class="form-grid">
-        <div class="form-group">
-          <label>Match / Événement</label>
-          <input type="text" id="f-match" placeholder="ex: Nice vs Le Havre">
-        </div>
-        <div class="form-group">
-          <label>Mon Pari</label>
-          <input type="text" id="f-pari" placeholder="ex: Match Nul">
-        </div>
-        <div class="form-group">
-          <label>Cote</label>
-          <input type="number" id="f-cote" placeholder="ex: 3.40" step="0.01" min="1">
-        </div>
-        <div class="form-group">
-          <label>Mise (€)</label>
-          <input type="number" id="f-mise" placeholder="ex: 10" step="1" min="1">
-        </div>
-        <div class="form-group">
-          <label>Sport</label>
-          <select id="f-sport">
-            <option value="⚽ Foot">⚽ Football</option>
-            <option value="🏀 NBA">🏀 NBA</option>
-            <option value="🥊 UFC">🥊 UFC</option>
-            <option value="🎯 Autre">🎯 Autre</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label>Date</label>
-          <input type="date" id="f-date">
-        </div>
-      </div>
-      <button class="btn-add-bet" onclick="addBet()">💾 Enregistrer le pari</button>
-    </div>
+    <!-- Add bet form removed — all bets go through the "Parier" buttons on match cards -->
 
     <!-- Bet list -->
     <div class="bet-list-header">
