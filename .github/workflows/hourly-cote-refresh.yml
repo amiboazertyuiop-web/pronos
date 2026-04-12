@@ -1,0 +1,42 @@
+name: Hourly cote refresh
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+concurrency:
+  group: pronos-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run hourly refresh
+        env:
+          FLASHSCORE_KEY: ${{ secrets.FLASHSCORE_KEY }}
+        run: node scripts/hourly-refresh.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.email 'coach-parie-bot@users.noreply.github.com'
+          git config user.name 'Coach Parie Bot'
+          if git diff --quiet -- pronos.json; then
+            echo "No changes — exiting quietly"
+          else
+            git add pronos.json
+            git commit -m "chore(pronos): refresh — cotes + results"
+            git push
+            echo "Pushed refresh"
+          fi
