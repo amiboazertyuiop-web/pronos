@@ -154,14 +154,20 @@ async function main() {
     { match: 'Cub Swanson vs Nate Landwehr', pari: 'Victoire Cub Swanson' },
   ];
 
-  // Known scores (from history or manual)
+  // Known scores (from history + manual UFC results from Nicolas)
   const knownScores = {
     'Genoa vs Sassuolo': { home: 'Genoa', away: 'Sassuolo', homeScore: 2, awayScore: 1 },
+    // UFC results confirmed manually by Nicolas (Flashscore doesn't keep them past day=-1)
+    'Jiri Prochazka vs Carlos Ulberg': { home: 'Jiri Prochazka', away: 'Carlos Ulberg', homeScore: 0, awayScore: 1 },
+    'Dominick Reyes vs Johnny Walker': { home: 'Dominick Reyes', away: 'Johnny Walker', homeScore: 1, awayScore: 0 },
+    'Curtis Blaydes vs Josh Hokit': { home: 'Curtis Blaydes', away: 'Josh Hokit', homeScore: 0, awayScore: 1 },
+    'Azamat Murzakanov vs Paulo Henrique Costa': { home: 'Azamat Murzakanov', away: 'Paulo Henrique Costa', homeScore: 0, awayScore: 1 },
+    'Cub Swanson vs Nate Landwehr': { home: 'Cub Swanson', away: 'Nate Landwehr', homeScore: 1, awayScore: 0 },
   };
 
-  // Merge UFC scores
+  // Merge any UFC scores found on Flashscore
   for (const [name, s] of ufcMatches) {
-    knownScores[name] = s;
+    if (!knownScores[name]) knownScores[name] = s;
   }
 
   let injected = 0;
