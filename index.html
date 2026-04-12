@@ -2870,7 +2870,7 @@ function buildSidebarAndPanels() {
 
     for (const league of leagues) {
       const uid = sportKey + '-' + league.key;
-      const pronoCount = (league.pronos || []).length;
+      const pronoCount = (league.pronos || []).filter(p => p.status !== 'in_progress').length;
 
       // Sidebar item
       if (sidebar) {
@@ -2928,9 +2928,9 @@ function jsSafe(s) {
 function renderLeaguePanel(panel, league, outcomeCount, badge, sportKey) {
   const body = panel.querySelector('.pronos-body');
   if (!body) return;
-  const list = league.pronos || [];
+  const list = (league.pronos || []).filter(p => p.status !== 'in_progress');
   if (!list.length) {
-    body.innerHTML = '<div class="pronos-empty">Aucun pronostic pour les 3 prochains jours.</div>';
+    body.innerHTML = '<div class="pronos-empty">Aucun pronostic disponible.</div>';
     return;
   }
 
@@ -3105,6 +3105,7 @@ function collectAllPronos() {
     const sportLabel = SPORT_LABELS[sportKey] || sport.label || sportKey;
     for (const league of sport.leagues || []) {
       for (const p of league.pronos || []) {
+        if (p.status === 'in_progress') continue;
         const ptagClass = p.prono === 'win-home' ? 'win-home' : p.prono === 'win-away' ? 'win-away' : 'draw';
         const ptagLabel = p.prono === 'win-home' ? p.home : p.prono === 'win-away' ? p.away : 'Nul';
         list.push({
@@ -3249,6 +3250,7 @@ function renderCoupDeCoeur() {
     const sportLabel = SPORT_LABELS[sportKey] || sport.label || sportKey;
     for (const league of sport.leagues || []) {
       for (const p of league.pronos || []) {
+        if (p.status === 'in_progress') continue;
         allPronos.push({ p, sportKey, sportLabel, leagueLabel: league.label, leagueFlag: league.flag || '' });
       }
     }
