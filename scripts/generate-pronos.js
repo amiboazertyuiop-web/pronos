@@ -1,44 +1,41 @@
 #!/usr/bin/env node
 /*
- * generate-pronos.js (v3.0) — full daily pipeline for Coach Parie
+ * generate-pronos.js (v5.0) — full daily pipeline for Coach Parie
  * ----------------------------------------------------------------
- * Runs once per day at 07:00 Paris from the scheduled Claude agent.
+ * Runs once per day at 07:00 Paris from GitHub Actions.
+ *
+ * v5 migration: ALL sports now use Flashscore as the single data source.
+ * The Odds API dependency has been fully removed.
  *
  * Responsibilities:
- *   1. Load existing pronos.json (if any)
- *   2. Update any still-pending pronos from yesterday by fetching their scores
- *      and flipping status to won/lost/void
- *   3. Archive resolved pronos into pronos.history[] (keeps long-term stats)
- *   4. Fetch TODAY's matches (next 24h window) from:
- *        - Flashscore (football — all leagues + built-in odds)
- *        - The Odds API (NBA, UFC/MMA, ATP tennis)
- *   5. Build prono objects with default pick (favorite) and default confidence
- *      but leave `analyse` empty — the Claude agent will fill it afterwards
- *   6. For the top ~10 most interesting football matches, fetch H2H data from
- *      Flashscore and attach it to each prono's `stats.h2h` field so the agent
- *      has real facts to write with
- *   7. Compute coup-de-cœur: the top 10 picks ranked by confidence * edge with
- *      cote >= 1.25, mark them with coup_de_coeur=true and populate a
- *      top-level pronosData.coup_de_coeur array of event_id references
- *   8. Write pronos.json
+ *   1. Load existing pronos.json (to inherit history[])
+ *   2. Fetch TODAY's matches (next 24h window) from Flashscore:
+ *        - Football  (sport_id=1)  — all target leagues + built-in odds
+ *        - Basketball (sport_id=3) — NBA only
+ *        - MMA        (sport_id=28) — UFC, PFL, RIZIN
+ *        - Tennis     (sport_id=2)  — ATP + WTA singles
+ *   3. Build prono objects with default pick (favorite) and empty `analyse`
+ *   4. For foot matches, fetch H2H + all betting markets from Flashscore
+ *   5. Compute coup-de-cœur (top 10 picks)
+ *   6. Write pronos.json
  *
  * Usage:
- *   ODDS_API_KEY=xxx FLASHSCORE_KEY=xxx node scripts/generate-pronos.js
+ *   FLASHSCORE_KEY=xxx node scripts/generate-pronos.js
  *
- * Budget targets (free tiers):
- *   - Flashscore (flashscore4 on RapidAPI): ~12 req/day → ~360/500 per month
- *   - The Odds API: ~3-4 req/day → ~100/500 per month
+ * Budget targets (Flashscore Pro — 1000 req/day):
+ *   - Foot:   ~65 req/day (2 list + ~40 h2h + ~40 odds)
+ *   - NBA:     2 req/day  (list day=0 + day=1)
+ *   - MMA:     2 req/day  (list day=0 + day=1)
+ *   - Tennis:  2 req/day  (list day=0 + day=1)
+ *   - Total:  ~71 req/day → ~2100/month (well under 30 000)
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const ODDS_API_KEY = process.env.ODDS_API_KEY;
 const FLASHSCORE_KEY = process.env.FLASHSCORE_KEY;
-if (!ODDS_API_KEY) { console.error('ERROR: ODDS_API_KEY env var not set'); process.exit(1); }
 if (!FLASHSCORE_KEY) { console.error('ERROR: FLASHSCORE_KEY env var not set'); process.exit(1); }
 
-const ODDS_BASE = 'https://api.the-odds-api.com/v4';
 const FS_HOST = 'flashscore4.p.rapidapi.com';
 const FS_BASE = `https://${FS_HOST}/api/flashscore/v2`;
 const JSON_PATH = path.join(__dirname, '..', 'pronos.json');
@@ -48,8 +45,6 @@ const MIN_COUP_DE_COEUR_COTE = 1.25;
 
 // ---------------------------------------------------------------------------
 // League config (football — Flashscore tournaments we care about)
-// Matching is done on the `name` + `country_name` fields returned by
-// /matches/list (we accept any of the patterns).
 // ---------------------------------------------------------------------------
 const FOOT_LEAGUES = [
   { key: 'ligue1', label: 'Ligue 1',          flag: '🇫🇷', country: 'France',     pattern: /^FRANCE: Ligue 1$/i },
@@ -63,7 +58,14 @@ const FOOT_LEAGUES = [
 ];
 
 // ---------------------------------------------------------------------------
-// Simple fetch helpers with error handling + quota logging
+// Non-foot sport config
+// ---------------------------------------------------------------------------
+const NBA_FILTER = (name) => /\bNBA\b/.test(name);
+const UFC_FILTER = (name) => /\bUFC\b|\bPFL\b|\bRIZIN\b|\bBellator\b|\bONE\s+Championship\b/i.test(name);
+const TENNIS_FILTER = (name) => /^(ATP|WTA)\s*-\s*SINGLES:/i.test(name);
+
+// ---------------------------------------------------------------------------
+// Simple fetch helper with error handling + quota logging
 // ---------------------------------------------------------------------------
 async function fsFetch(pathname) {
   const url = FS_BASE + pathname;
@@ -76,20 +78,6 @@ async function fsFetch(pathname) {
   if (!res.ok) {
     const body = await res.text();
     throw new Error(`Flashscore HTTP ${res.status} for ${pathname}: ${body.slice(0, 200)}`);
-  }
-  return res.json();
-}
-
-async function oddsFetch(pathname) {
-  const sep = pathname.includes('?') ? '&' : '?';
-  const url = ODDS_BASE + pathname + sep + 'apiKey=' + ODDS_API_KEY;
-  const res = await fetch(url);
-  const remaining = res.headers.get('x-requests-remaining');
-  if (remaining) console.log(`      odds-api remaining: ${remaining}`);
-  if (res.status === 404 || res.status === 422) return [];
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Odds API HTTP ${res.status} for ${pathname}: ${body.slice(0, 200)}`);
   }
   return res.json();
 }
@@ -113,91 +101,120 @@ function confidenceFromCote(cote) {
   return 1;
 }
 
-// ---------------------------------------------------------------------------
-// FOOT — fetch via Flashscore, group by our target leagues
-// ---------------------------------------------------------------------------
-async function fetchFootMatches(windowStartMs, windowEndMs) {
-  console.log('  · foot via Flashscore');
-  // Fetch day=0 and day=1 so we capture the full 24h window
-  const [today, tomorrow] = await Promise.all([
-    fsFetch('/matches/list?sport_id=1&day=0'),
-    fsFetch('/matches/list?sport_id=1&day=1'),
-  ]);
-  const allTournaments = [...today, ...tomorrow];
+function median(arr) {
+  if (!arr.length) return null;
+  const s = [...arr].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
+}
 
-  // Deduplicate tournaments by tournament_id but merge their matches
+// ---------------------------------------------------------------------------
+// Generic: fetch + deduplicate Flashscore tournaments for a given sport_id
+// ---------------------------------------------------------------------------
+async function fetchFlashscoreTournaments(sportId) {
+  const [today, tomorrow] = await Promise.all([
+    fsFetch(`/matches/list?sport_id=${sportId}&day=0`),
+    fsFetch(`/matches/list?sport_id=${sportId}&day=1`),
+  ]);
+  const all = [
+    ...(Array.isArray(today) ? today : []),
+    ...(Array.isArray(tomorrow) ? tomorrow : []),
+  ];
+
+  // Deduplicate tournaments by tournament_id, merge their matches
   const tournamentMap = new Map();
-  for (const t of allTournaments) {
+  for (const t of all) {
     const existing = tournamentMap.get(t.tournament_id);
     if (existing) {
       const seenIds = new Set(existing.matches.map((m) => m.match_id));
       for (const m of t.matches) if (!seenIds.has(m.match_id)) existing.matches.push(m);
     } else {
-      tournamentMap.set(t.tournament_id, { ...t, matches: [...t.matches] });
+      tournamentMap.set(t.tournament_id, { ...t, matches: [...(t.matches || [])] });
     }
   }
+  return tournamentMap;
+}
 
-  // Group by our league config
+// ---------------------------------------------------------------------------
+// Generic: filter matches from tournaments within the 24h window
+// ---------------------------------------------------------------------------
+function filterMatches(tournamentMap, filter, windowStartMs, windowEndMs) {
+  const matches = [];
+  for (const t of tournamentMap.values()) {
+    const fullName = t.full_name || t.name || '';
+    if (!filter(fullName)) continue;
+    for (const m of t.matches || []) {
+      if (!m.timestamp) continue;
+      const ms = m.timestamp * 1000;
+      if (ms < windowStartMs || ms > windowEndMs) continue;
+      if (!m.odds || !m.odds['1'] || !m.odds['2']) continue;
+      if (m.match_status && (m.match_status.is_started || m.match_status.is_finished)) continue;
+      matches.push({ raw: m, tournament: t });
+    }
+  }
+  return matches;
+}
+
+// ---------------------------------------------------------------------------
+// Build a prono object from a Flashscore match (works for any sport)
+// ---------------------------------------------------------------------------
+function buildProno(raw, tournament, sportKey, flashscoreSportId) {
+  const cHome = raw.odds['1'];
+  const cAway = raw.odds['2'];
+  const cDraw = raw.odds['X'] || null;
+  let prono, cote, pickName;
+  if (cHome <= cAway) {
+    prono = 'win-home'; cote = cHome; pickName = raw.home_team.name;
+  } else {
+    prono = 'win-away'; cote = cAway; pickName = raw.away_team.name;
+  }
+  return {
+    event_id: raw.match_id,
+    flashscore_id: raw.match_id,
+    flashscore_sport_id: flashscoreSportId,
+    home_team_id: raw.home_team.team_id || null,
+    away_team_id: raw.away_team.team_id || null,
+    tournament_id: tournament.tournament_id || null,
+    tournament_url: tournament.tournament_url || '',
+    sport_key: sportKey,
+    commence_time: new Date(raw.timestamp * 1000).toISOString(),
+    time_display: formatTimeFr(raw.timestamp),
+    home: raw.home_team.name,
+    away: raw.away_team.name,
+    match: `${raw.home_team.name} vs ${raw.away_team.name}`,
+    prono,
+    pari: `Victoire ${pickName}`,
+    cote_retenue: cote,
+    cotes: { domicile: cHome, nul: cDraw, exterieur: cAway },
+    pick_category: '1x2',
+    analyse: '',
+    confiance: confidenceFromCote(cote),
+    featured: cote < 1.35,
+    score_prevu: null,
+    status: 'pending',
+    actual_score: null,
+    actual_result: null,
+    coup_de_coeur: false,
+    stats: null,
+    markets: null,
+  };
+}
+
+// ---------------------------------------------------------------------------
+// FOOT — fetch via Flashscore, group by our target leagues
+// ---------------------------------------------------------------------------
+async function fetchFootMatches(windowStartMs, windowEndMs) {
+  console.log('  · foot via Flashscore (sport_id=1)');
+  const tournamentMap = await fetchFlashscoreTournaments(1);
+
   const leaguesOut = [];
   for (const cfg of FOOT_LEAGUES) {
-    const matches = [];
-    for (const t of tournamentMap.values()) {
-      if (!cfg.pattern.test(t.full_name || t.name || '')) continue;
-      for (const m of t.matches) {
-        if (!m.timestamp) continue;
-        const ms = m.timestamp * 1000;
-        if (ms < windowStartMs || ms > windowEndMs) continue;
-        if (!m.odds || !m.odds['1'] || !m.odds['2']) continue; // require cotes
-        if (m.match_status && (m.match_status.is_started || m.match_status.is_finished)) continue;
-        matches.push({ raw: m, tournament: t });
-      }
-    }
+    const matches = filterMatches(tournamentMap, (name) => cfg.pattern.test(name), windowStartMs, windowEndMs);
     if (!matches.length) continue;
 
-    // Build prono objects
-    const pronos = matches.map(({ raw, tournament }) => {
-      const cHome = raw.odds['1'];
-      const cAway = raw.odds['2'];
-      const cDraw = raw.odds['X'];
-      // Default pick: favourite (lowest cote). Agent can override.
-      let prono, cote, pickName;
-      if (cHome <= cAway) {
-        prono = 'win-home'; cote = cHome; pickName = raw.home_team.name;
-      } else {
-        prono = 'win-away'; cote = cAway; pickName = raw.away_team.name;
-      }
-      return {
-        event_id: raw.match_id,
-        flashscore_id: raw.match_id,
-        home_team_id: raw.home_team.team_id,
-        away_team_id: raw.away_team.team_id,
-        tournament_id: tournament.tournament_id,
-        tournament_url: tournament.tournament_url || '',
-        sport_key: 'flashscore_football_' + cfg.key,
-        commence_time: new Date(raw.timestamp * 1000).toISOString(),
-        time_display: formatTimeFr(raw.timestamp),
-        home: raw.home_team.name,
-        away: raw.away_team.name,
-        match: `${raw.home_team.name} vs ${raw.away_team.name}`,
-        prono,
-        pari: `Victoire ${pickName}`,
-        cote_retenue: cote,
-        cotes: { domicile: cHome, nul: cDraw || null, exterieur: cAway },
-        pick_category: '1x2', // "1x2" | "ou" | "btts" | "dc" | "dnb" — agent can change
-        analyse: '', // filled by the Claude agent
-        confiance: confidenceFromCote(cote),
-        featured: cote < 1.35,
-        score_prevu: null,
-        status: 'pending',
-        actual_score: null,
-        actual_result: null,
-        coup_de_coeur: false,
-        stats: null,   // filled later for foot matches
-        markets: null, // filled later for foot matches
-      };
-    });
-
-    // Sort by kickoff, then by cote (ascending = safest first)
+    const pronos = matches.map(({ raw, tournament }) =>
+      buildProno(raw, tournament, 'flashscore_football_' + cfg.key, 1)
+    );
     pronos.sort((a, b) =>
       new Date(a.commence_time) - new Date(b.commence_time) ||
       a.cote_retenue - b.cote_retenue
@@ -218,92 +235,25 @@ async function fetchFootMatches(windowStartMs, windowEndMs) {
 }
 
 // ---------------------------------------------------------------------------
-// NBA / UFC / TENNIS — fetch via The Odds API (unchanged from v2)
+// NBA / UFC / TENNIS — all via Flashscore now (v5 migration)
 // ---------------------------------------------------------------------------
-function median(arr) {
-  if (!arr.length) return null;
-  const s = [...arr].sort((a, b) => a - b);
-  const m = Math.floor(s.length / 2);
-  return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2;
-}
-
-function aggregateOddsApiEvent(event) {
-  const priceMap = new Map();
-  for (const bm of event.bookmakers || []) {
-    for (const m of bm.markets || []) {
-      if (m.key !== 'h2h') continue;
-      for (const o of m.outcomes || []) {
-        if (!priceMap.has(o.name)) priceMap.set(o.name, []);
-        priceMap.get(o.name).push(o.price);
-      }
-    }
-  }
-  const out = {};
-  for (const [name, prices] of priceMap) out[name] = parseFloat(median(prices).toFixed(2));
-  return out;
-}
-
-function pickForOddsApiEvent(event, outcomeCount, sportLabel) {
-  const odds = aggregateOddsApiEvent(event);
-  const home = event.home_team;
-  const away = event.away_team;
-  const cHome = odds[home];
-  const cAway = odds[away];
-  if (!cHome || !cAway) return null;
-  let prono, cote, pickName;
-  if (cHome <= cAway) { prono = 'win-home'; cote = cHome; pickName = home; }
-  else { prono = 'win-away'; cote = cAway; pickName = away; }
-  return {
-    event_id: event.id,
-    flashscore_id: null,
-    sport_key: event.sport_key,
-    commence_time: event.commence_time,
-    time_display: formatTimeFr(Math.floor(new Date(event.commence_time).getTime() / 1000)),
-    home, away,
-    match: `${home} vs ${away}`,
-    prono,
-    pari: `Victoire ${pickName}`,
-    cote_retenue: cote,
-    cotes: { domicile: cHome, exterieur: cAway },
-    pick_category: '1x2',
-    analyse: '',
-    confiance: confidenceFromCote(cote),
-    featured: cote < 1.35,
-    score_prevu: null,
-    status: 'pending',
-    actual_score: null,
-    actual_result: null,
-    coup_de_coeur: false,
-    stats: null,
-    markets: null,
-  };
-}
-
-async function fetchOddsApiSport(sportKey, windowEndMs) {
-  const isoEnd = new Date(windowEndMs).toISOString().replace(/\.\d{3}Z$/, 'Z');
-  const qs = `regions=eu&markets=h2h&oddsFormat=decimal&commenceTimeTo=${encodeURIComponent(isoEnd)}`;
-  const events = await oddsFetch(`/sports/${sportKey}/odds/?${qs}`);
-  return events;
-}
-
 async function fetchNonFoot(windowStartMs, windowEndMs) {
   const result = { nba: null, ufc: null, tennis: null };
 
-  console.log('  · nba via Odds API');
+  // --- NBA (sport_id=3) ---
+  console.log('  · nba via Flashscore (sport_id=3)');
   try {
-    const events = await fetchOddsApiSport('basketball_nba', windowEndMs);
-    const pronos = events
-      .filter((e) => {
-        const ms = new Date(e.commence_time).getTime();
-        return ms >= windowStartMs && ms <= windowEndMs;
-      })
-      .map((e) => pickForOddsApiEvent(e, 2, '🏀 NBA'))
-      .filter(Boolean);
+    const tournaments = await fetchFlashscoreTournaments(3);
+    const matches = filterMatches(tournaments, NBA_FILTER, windowStartMs, windowEndMs);
+    const pronos = matches.map(({ raw, tournament }) =>
+      buildProno(raw, tournament, 'flashscore_basketball_nba', 3)
+    );
     pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
+    console.log(`    found ${pronos.length} NBA matches`);
     if (pronos.length) {
       result.nba = {
         key: 'nba',
-        sport_key: 'basketball_nba',
+        sport_key: 'flashscore_basketball_nba',
         label: 'NBA',
         flag: '🏀',
         country: 'USA',
@@ -312,23 +262,22 @@ async function fetchNonFoot(windowStartMs, windowEndMs) {
         pronos,
       };
     }
-  } catch (e) { console.error('    [WARN]', e.message); }
+  } catch (e) { console.error('    [WARN] nba:', e.message); }
 
-  console.log('  · ufc via Odds API');
+  // --- UFC / MMA (sport_id=28) ---
+  console.log('  · ufc via Flashscore (sport_id=28)');
   try {
-    const events = await fetchOddsApiSport('mma_mixed_martial_arts', windowEndMs);
-    const pronos = events
-      .filter((e) => {
-        const ms = new Date(e.commence_time).getTime();
-        return ms >= windowStartMs && ms <= windowEndMs;
-      })
-      .map((e) => pickForOddsApiEvent(e, 2, '🥊 UFC'))
-      .filter(Boolean);
+    const tournaments = await fetchFlashscoreTournaments(28);
+    const matches = filterMatches(tournaments, UFC_FILTER, windowStartMs, windowEndMs);
+    const pronos = matches.map(({ raw, tournament }) =>
+      buildProno(raw, tournament, 'flashscore_mma', 28)
+    );
     pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
+    console.log(`    found ${pronos.length} MMA matches`);
     if (pronos.length) {
       result.ufc = {
         key: 'mma',
-        sport_key: 'mma_mixed_martial_arts',
+        sport_key: 'flashscore_mma',
         label: 'UFC / MMA',
         flag: '🥊',
         country: 'Mondial',
@@ -337,43 +286,46 @@ async function fetchNonFoot(windowStartMs, windowEndMs) {
         pronos,
       };
     }
-  } catch (e) { console.error('    [WARN]', e.message); }
+  } catch (e) { console.error('    [WARN] ufc:', e.message); }
 
-  console.log('  · tennis via Odds API (probing active tournaments)');
-  const tennisSports = [
-    { key: 'montecarlo', sport_key: 'tennis_atp_monte_carlo_masters', label: 'ATP Monte-Carlo', flag: '🇲🇨', country: 'Monaco' },
-    { key: 'madrid',     sport_key: 'tennis_atp_madrid_open',         label: 'ATP Madrid',       flag: '🇪🇸', country: 'Espagne' },
-    { key: 'rome',       sport_key: 'tennis_atp_rome_masters',        label: 'ATP Rome',         flag: '🇮🇹', country: 'Italie' },
-    { key: 'roland',     sport_key: 'tennis_atp_french_open',         label: 'Roland-Garros',    flag: '🇫🇷', country: 'France' },
-    { key: 'wimbledon',  sport_key: 'tennis_atp_wimbledon',           label: 'Wimbledon',        flag: '🇬🇧', country: 'Angleterre' },
-    { key: 'usopen',     sport_key: 'tennis_atp_us_open',             label: 'US Open',          flag: '🇺🇸', country: 'USA' },
-  ];
-  for (const tour of tennisSports) {
-    try {
-      const events = await fetchOddsApiSport(tour.sport_key, windowEndMs);
-      const pronos = events
-        .filter((e) => {
-          const ms = new Date(e.commence_time).getTime();
-          return ms >= windowStartMs && ms <= windowEndMs;
-        })
-        .map((e) => pickForOddsApiEvent(e, 2, '🎾 Tennis'))
-        .filter(Boolean);
-      if (pronos.length) {
-        pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
-        result.tennis = {
-          key: tour.key,
-          sport_key: tour.sport_key,
-          label: tour.label,
-          flag: tour.flag,
-          country: tour.country,
-          panel_title: `${tour.flag} ${tour.label}`,
-          panel_meta: 'Matchs des prochaines 24h',
-          pronos,
-        };
-        break; // stop at first active tournament
+  // --- Tennis (sport_id=2) ---
+  console.log('  · tennis via Flashscore (sport_id=2)');
+  try {
+    const tournaments = await fetchFlashscoreTournaments(2);
+    const matches = filterMatches(tournaments, TENNIS_FILTER, windowStartMs, windowEndMs);
+    const pronos = matches.map(({ raw, tournament }) =>
+      buildProno(raw, tournament, 'flashscore_tennis', 2)
+    );
+    pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
+    console.log(`    found ${pronos.length} tennis matches`);
+    if (pronos.length) {
+      // Extract the most prominent tournament name for the label
+      const tournamentCounts = new Map();
+      for (const { tournament } of matches) {
+        const name = tournament.full_name || tournament.name || '';
+        tournamentCounts.set(name, (tournamentCounts.get(name) || 0) + 1);
       }
-    } catch (e) { /* inactive tournament — skip */ }
-  }
+      let mainTournament = 'Tennis';
+      let maxCount = 0;
+      for (const [name, count] of tournamentCounts) {
+        if (count > maxCount) { maxCount = count; mainTournament = name; }
+      }
+      // Clean up: "ATP - SINGLES: Monte Carlo (Monaco), clay" → "ATP Monte-Carlo"
+      const labelMatch = mainTournament.match(/^(ATP|WTA)\s*-\s*SINGLES:\s*(.+?)(?:\s*-\s*Qualification)?(?:,\s*.+)?$/i);
+      const cleanLabel = labelMatch ? `${labelMatch[1]} ${labelMatch[2].trim()}` : mainTournament;
+
+      result.tennis = {
+        key: 'tennis',
+        sport_key: 'flashscore_tennis',
+        label: cleanLabel,
+        flag: '🎾',
+        country: '',
+        panel_title: `🎾 ${cleanLabel}`,
+        panel_meta: 'Matchs des prochaines 24h',
+        pronos,
+      };
+    }
+  } catch (e) { console.error('    [WARN] tennis:', e.message); }
 
   return result;
 }
@@ -381,20 +333,12 @@ async function fetchNonFoot(windowStartMs, windowEndMs) {
 // ---------------------------------------------------------------------------
 // Note: result resolution and history archiving are now owned exclusively by
 // scripts/hourly-refresh.js. The daily run only builds new pronos and
-// preserves the existing history[] untouched. This keeps concerns cleanly
-// separated and avoids duplicate/conflicting resolution logic.
+// preserves the existing history[] untouched.
 // ---------------------------------------------------------------------------
 
 // ---------------------------------------------------------------------------
 // Compute coup-de-cœur (ranking) then enrich foot picks with H2H
 // ---------------------------------------------------------------------------
-// Selection priority (within cote >= 1.25 filter):
-//   1. confidence DESC (safer picks first)
-//   2. cote DESC     (within the same confidence tier, higher cote = more value)
-// Rationale: the user explicitly asked for a minimum cote of 1.25 so we skip
-// ultra-safe picks. Past that, we prefer the higher-confidence tier because
-// coup-de-cœur should feel reasonably safe. A conf=4 (cote 1.25-1.50) is far
-// better value than a conf=2 (cote 2.00-3.00) for a daily curated list.
 function computeCoupDeCoeur(allPronos) {
   const candidates = allPronos
     .filter((p) => p.cote_retenue >= MIN_COUP_DE_COEUR_COTE)
@@ -404,26 +348,10 @@ function computeCoupDeCoeur(allPronos) {
   return top.map((p) => p.event_id);
 }
 
-// Max foot matches to enrich per run (Pro plan: 1000/day, plenty of headroom).
-// Capped as a safety net in case the fixture list is unexpectedly huge.
 const MAX_FOOT_ENRICHMENTS = 40;
 
 // ---------------------------------------------------------------------------
-// Parse the /matches/odds response into a compact, agent-friendly markets
-// structure covering the betting markets that matter for a curated daily feed.
-//
-// Input: array of bookmakers, each with .odds[] of markets. We aggregate
-// across bookmakers by taking the median value for each distinct outcome.
-//
-// Output shape:
-//   {
-//     "1x2":          { home, draw, away },
-//     "double_chance":{ "1X", "12", "X2" },
-//     "over_under":   { "1.5": {over, under}, "2.5": {...}, "3.5": {...} },
-//     "btts":         { yes, no },
-//     "draw_no_bet":  { home, away }
-//   }
-// Any market that isn't returned by the bookmakers is simply omitted.
+// Parse the /matches/odds response into agent-friendly markets structure
 // ---------------------------------------------------------------------------
 function round2(v) {
   return v && isFinite(v) ? parseFloat(v.toFixed(2)) : null;
@@ -432,15 +360,12 @@ function round2(v) {
 function parseMarkets(raw, knownHome1X2, knownAway1X2) {
   if (!Array.isArray(raw) || raw.length === 0) return null;
 
-  // Step 1: determine which eventParticipantId is home and which is away,
-  // by comparing each participant's median HOME_DRAW_AWAY odds to the known
-  // 1X2 cotes we already have from the match list endpoint.
   const partOddsMap = new Map();
   for (const bm of raw) {
     for (const m of bm.odds || []) {
       if (m.bettingType !== 'HOME_DRAW_AWAY' || m.bettingScope !== 'FULL_TIME') continue;
       for (const o of m.odds || []) {
-        if (!o.eventParticipantId) continue; // skip draw (null)
+        if (!o.eventParticipantId) continue;
         const v = parseFloat(o.value);
         if (!isFinite(v)) continue;
         if (!partOddsMap.has(o.eventParticipantId)) partOddsMap.set(o.eventParticipantId, []);
@@ -461,16 +386,14 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
     if (da < minAwayDist) { minAwayDist = da; awayId = id; }
   }
   if (homeId === awayId) {
-    // Tie-break by insertion order
     const ids = [...partOddsMap.keys()];
     [homeId, awayId] = ids;
   }
 
-  // Step 2: bucket raw odds per market + outcome across all bookmakers
   const buckets = {
     h_home: [], h_draw: [], h_away: [],
     dc_1x: [], dc_12: [], dc_x2: [],
-    ou: {}, // { "2.5": { over: [], under: [] } }
+    ou: {},
     btts_yes: [], btts_no: [],
     dnb_home: [], dnb_away: [],
   };
@@ -488,9 +411,6 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
           else if (o.eventParticipantId === awayId) buckets.h_away.push(v);
           else if (o.eventParticipantId == null) buckets.h_draw.push(v);
         } else if (type === 'DOUBLE_CHANCE') {
-          // null participant = "12" (no draw)
-          // home participant = "1X" (home or draw)
-          // away participant = "X2" (away or draw)
           if (o.eventParticipantId === homeId) buckets.dc_1x.push(v);
           else if (o.eventParticipantId === awayId) buckets.dc_x2.push(v);
           else if (o.eventParticipantId == null) buckets.dc_12.push(v);
@@ -507,15 +427,11 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
           if (o.eventParticipantId === homeId) buckets.dnb_home.push(v);
           else if (o.eventParticipantId === awayId) buckets.dnb_away.push(v);
         }
-        // Skip ASIAN_HANDICAP, EUROPEAN_HANDICAP, CORRECT_SCORE,
-        // HALF_FULL_TIME, ODD_OR_EVEN — too niche for the daily picks list.
       }
     }
   }
 
   const out = {};
-
-  // 1X2 (only if we got data)
   if (buckets.h_home.length) {
     out['1x2'] = {
       home: round2(median(buckets.h_home)),
@@ -523,8 +439,6 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
       away: round2(median(buckets.h_away)),
     };
   }
-
-  // Double chance
   if (buckets.dc_1x.length) {
     out.double_chance = {
       '1X': round2(median(buckets.dc_1x)),
@@ -532,8 +446,6 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
       'X2': round2(median(buckets.dc_x2)),
     };
   }
-
-  // Over/Under 1.5, 2.5, 3.5 (skip other lines)
   const ou = {};
   for (const line of ['1.5', '2.5', '3.5']) {
     const b = buckets.ou[line];
@@ -542,33 +454,19 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
     }
   }
   if (Object.keys(ou).length) out.over_under = ou;
-
-  // BTTS
   if (buckets.btts_yes.length) {
-    out.btts = {
-      yes: round2(median(buckets.btts_yes)),
-      no: round2(median(buckets.btts_no)),
-    };
+    out.btts = { yes: round2(median(buckets.btts_yes)), no: round2(median(buckets.btts_no)) };
   }
-
-  // Draw No Bet
   if (buckets.dnb_home.length) {
-    out.draw_no_bet = {
-      home: round2(median(buckets.dnb_home)),
-      away: round2(median(buckets.dnb_away)),
-    };
+    out.draw_no_bet = { home: round2(median(buckets.dnb_home)), away: round2(median(buckets.dnb_away)) };
   }
-
   return out;
 }
 
 async function enrichAllFoot(allPronos) {
-  // Enrich EVERY foot match (not just coup-de-cœur) so that every prono on
-  // the site has real H2H + form data + all available markets for the agent.
-  const footMatches = allPronos.filter((p) => p.flashscore_id).slice(0, MAX_FOOT_ENRICHMENTS);
+  const footMatches = allPronos.filter((p) => p.flashscore_id && p.flashscore_sport_id === 1).slice(0, MAX_FOOT_ENRICHMENTS);
   let done = 0;
   for (const p of footMatches) {
-    // Recent matches (H2H + form combined)
     try {
       const h2h = await fsFetch(`/matches/h2h?match_id=${p.flashscore_id}`);
       const recent = Array.isArray(h2h)
@@ -585,7 +483,6 @@ async function enrichAllFoot(allPronos) {
       console.error('    [WARN] h2h:', p.match, '-', e.message);
     }
 
-    // All betting markets
     try {
       const oddsRaw = await fsFetch(`/matches/odds?match_id=${p.flashscore_id}`);
       const markets = parseMarkets(oddsRaw, p.cotes.domicile, p.cotes.exterieur);
@@ -604,12 +501,12 @@ async function enrichAllFoot(allPronos) {
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
-  console.log(`→ generate-pronos v4 — window: next ${WINDOW_HOURS}h (daily generator)`);
-  console.log('  (result resolution + archiving is now owned by hourly-refresh.js)');
+  console.log(`→ generate-pronos v5 — window: next ${WINDOW_HOURS}h (all Flashscore)`);
+  console.log('  (result resolution + archiving is owned by hourly-refresh.js)');
   const now = Date.now();
   const windowEnd = now + WINDOW_HOURS * 60 * 60 * 1000;
 
-  // 1. Load existing (only to inherit history[] — we don't touch pronos)
+  // 1. Load existing (only to inherit history[])
   let existing = null;
   try { existing = JSON.parse(fs.readFileSync(JSON_PATH, 'utf8')); } catch {}
   const history = existing && Array.isArray(existing.history) ? existing.history : [];
@@ -620,7 +517,7 @@ async function main() {
   const footLeagues = await fetchFootMatches(now, windowEnd);
   const nonFoot = await fetchNonFoot(now, windowEnd);
 
-  // 5. Build sports structure
+  // 3. Build sports structure
   const sports = {
     foot: {
       key: 'foot',
@@ -658,7 +555,7 @@ async function main() {
     },
   };
 
-  // Collect a flat list of all current pronos for enrichment and coup-de-cœur
+  // Collect flat list for enrichment and coup-de-cœur
   const allPronos = [];
   for (const sport of Object.values(sports)) {
     for (const league of sport.leagues) {
@@ -667,24 +564,24 @@ async function main() {
   }
   console.log(`    total pronos: ${allPronos.length}`);
 
-  // 4. Coup-de-cœur selection (before enrichment so we know which to enrich)
+  // 4. Coup-de-cœur selection
   console.log('[4] coup-de-cœur selection');
   const coupDeCoeurIds = computeCoupDeCoeur(allPronos);
   console.log(`    selected ${coupDeCoeurIds.length}`);
 
-  // 5. Enrich ALL foot matches with recent matches / H2H (Pro plan allows it)
+  // 5. Enrich ALL foot matches with H2H + markets
   if (allPronos.length) {
-    console.log('[5] enrich ALL foot matches with recent matches (up to ' + MAX_FOOT_ENRICHMENTS + ')');
+    console.log('[5] enrich foot matches with H2H + markets (up to ' + MAX_FOOT_ENRICHMENTS + ')');
     const enriched = await enrichAllFoot(allPronos);
     console.log(`    enriched ${enriched} foot matches`);
   }
 
-  // 6. Write — inherit history[] from the previous file untouched
+  // 6. Write
   const data = {
     meta: {
       generated_at: new Date().toISOString(),
       generator: 'scripts/generate-pronos.js',
-      version: '4.0',
+      version: '5.0',
       window_hours: WINDOW_HOURS,
       last_results_update: existing && existing.meta ? existing.meta.last_results_update : null,
     },
