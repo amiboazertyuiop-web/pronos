@@ -24,9 +24,9 @@ async function fsFetch(pathname) {
 }
 
 async function main() {
-  console.log('=== Probing Flashscore sport_ids 1-15 (day=0) ===\n');
+  console.log('=== Probing Flashscore sport_ids 16-40 (day=0) ===\n');
 
-  for (let id = 1; id <= 15; id++) {
+  for (let id = 16; id <= 40; id++) {
     const result = await fsFetch(`/matches/list?sport_id=${id}&day=0`);
 
     if (result.error) {
