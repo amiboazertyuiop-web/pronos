@@ -288,42 +288,61 @@ async function fetchNonFoot(windowStartMs, windowEndMs) {
     }
   } catch (e) { console.error('    [WARN] ufc:', e.message); }
 
-  // --- Tennis (sport_id=2) ---
+  // --- Tennis (sport_id=2) — one league per tournament ---
   console.log('  · tennis via Flashscore (sport_id=2)');
   try {
     const tournaments = await fetchFlashscoreTournaments(2);
     const matches = filterMatches(tournaments, TENNIS_FILTER, windowStartMs, windowEndMs);
-    const pronos = matches.map(({ raw, tournament }) =>
-      buildProno(raw, tournament, 'flashscore_tennis', 2)
-    );
-    pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
-    console.log(`    found ${pronos.length} tennis matches`);
-    if (pronos.length) {
-      // Extract the most prominent tournament name for the label
-      const tournamentCounts = new Map();
-      for (const { tournament } of matches) {
-        const name = tournament.full_name || tournament.name || '';
-        tournamentCounts.set(name, (tournamentCounts.get(name) || 0) + 1);
-      }
-      let mainTournament = 'Tennis';
-      let maxCount = 0;
-      for (const [name, count] of tournamentCounts) {
-        if (count > maxCount) { maxCount = count; mainTournament = name; }
-      }
-      // Clean up: "ATP - SINGLES: Monte Carlo (Monaco), clay" → "ATP Monte-Carlo"
-      const labelMatch = mainTournament.match(/^(ATP|WTA)\s*-\s*SINGLES:\s*(.+?)(?:\s*-\s*Qualification)?(?:,\s*.+)?$/i);
-      const cleanLabel = labelMatch ? `${labelMatch[1]} ${labelMatch[2].trim()}` : mainTournament;
+    console.log(`    found ${matches.length} tennis matches`);
 
-      result.tennis = {
-        key: 'tennis',
-        sport_key: 'flashscore_tennis',
-        label: cleanLabel,
-        flag: '🎾',
-        country: '',
-        panel_title: `🎾 ${cleanLabel}`,
-        panel_meta: 'Matchs des prochaines 24h',
-        pronos,
-      };
+    if (matches.length) {
+      // Group matches by tournament
+      const byTournament = new Map();
+      for (const { raw, tournament } of matches) {
+        const fullName = tournament.full_name || tournament.name || 'Tennis';
+        if (!byTournament.has(fullName)) byTournament.set(fullName, { tournament, matches: [] });
+        byTournament.get(fullName).matches.push({ raw, tournament });
+      }
+
+      // Build one league per tournament
+      const tennisLeagues = [];
+      for (const [fullName, group] of byTournament) {
+        // Clean up: "ATP - SINGLES: Monte Carlo (Monaco), clay" → "ATP Monte-Carlo"
+        // Also: "ATP - SINGLES: Barcelona (Spain) - Qualification, clay" → "ATP Barcelona (Q)"
+        const isQualif = /qualification/i.test(fullName);
+        const labelMatch = fullName.match(/^(ATP|WTA)\s*-\s*SINGLES:\s*(.+?)(?:\s*-\s*Qualification)?(?:,\s*.+)?$/i);
+        const cleanLabel = labelMatch
+          ? `${labelMatch[1]} ${labelMatch[2].trim()}${isQualif ? ' (Q)' : ''}`
+          : fullName;
+        const keySlug = cleanLabel.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/_+$/, '');
+
+        const pronos = group.matches.map(({ raw, tournament }) =>
+          buildProno(raw, tournament, 'flashscore_tennis_' + keySlug, 2)
+        );
+        pronos.sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
+
+        tennisLeagues.push({
+          key: keySlug,
+          sport_key: 'flashscore_tennis_' + keySlug,
+          label: cleanLabel,
+          flag: '🎾',
+          country: '',
+          panel_title: `🎾 ${cleanLabel}`,
+          panel_meta: `Matchs des prochaines 24h`,
+          pronos,
+        });
+      }
+
+      // Sort leagues: main draws first, qualifs last, then alphabetically
+      tennisLeagues.sort((a, b) => {
+        const aQ = a.label.includes('(Q)') ? 1 : 0;
+        const bQ = b.label.includes('(Q)') ? 1 : 0;
+        if (aQ !== bQ) return aQ - bQ;
+        return a.label.localeCompare(b.label);
+      });
+
+      result.tennis = tennisLeagues;
+      console.log(`    ${tennisLeagues.length} tournaments: ${tennisLeagues.map(l => l.label).join(', ')}`);
     }
   } catch (e) { console.error('    [WARN] tennis:', e.message); }
 
@@ -718,7 +737,7 @@ async function main() {
       outcome_count: 2,
       disclaimer_html: "✅ <div>Le tennis est l'un des sports les <strong>plus fiables</strong> à pronostiquer : pas d'effet d'équipe, écart de niveau énorme entre têtes de série et qualifiés.</div>",
       disclaimer_style: '--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);',
-      leagues: nonFoot.tennis ? [nonFoot.tennis] : [],
+      leagues: Array.isArray(nonFoot.tennis) ? nonFoot.tennis : nonFoot.tennis ? [nonFoot.tennis] : [],
     },
   };
 
