@@ -351,6 +351,10 @@ function computeCoupDeCoeur(allPronos) {
 const MAX_FOOT_ENRICHMENTS = 40;
 const MAX_NONFOOT_ENRICHMENTS = 70; // NBA ~15 + UFC ~5 + Tennis ~50
 
+// Flashscore Pro plan has a per-minute rate limit. Throttle enrichment calls.
+const THROTTLE_MS = 600; // 600ms between calls = ~100 req/min (safe margin)
+function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
+
 // ---------------------------------------------------------------------------
 // Parse the /matches/odds response into agent-friendly markets structure
 // ---------------------------------------------------------------------------
@@ -585,7 +589,7 @@ function parseNonFootMarkets(raw, knownHome, knownAway) {
 // Enrich ALL pronos with H2H stats + betting markets
 // ---------------------------------------------------------------------------
 async function enrichAll(allPronos) {
-  // Foot: H2H + full odds (same as before)
+  // Foot: H2H + full odds
   const footMatches = allPronos.filter((p) => p.flashscore_id && p.flashscore_sport_id === 1).slice(0, MAX_FOOT_ENRICHMENTS);
   let done = 0;
   for (const p of footMatches) {
@@ -604,6 +608,7 @@ async function enrichAll(allPronos) {
     } catch (e) {
       console.error('    [WARN] h2h:', p.match, '-', e.message);
     }
+    await sleep(THROTTLE_MS);
 
     try {
       const oddsRaw = await fsFetch(`/matches/odds?match_id=${p.flashscore_id}`);
@@ -612,6 +617,7 @@ async function enrichAll(allPronos) {
     } catch (e) {
       console.error('    [WARN] odds:', p.match, '-', e.message);
     }
+    await sleep(THROTTLE_MS);
 
     console.log(`    enriched: ${p.match}`);
     done++;
@@ -639,6 +645,7 @@ async function enrichAll(allPronos) {
     } catch (e) {
       console.error('    [WARN] h2h:', p.match, '-', e.message);
     }
+    await sleep(THROTTLE_MS);
 
     // Betting markets
     try {
@@ -648,6 +655,7 @@ async function enrichAll(allPronos) {
     } catch (e) {
       console.error('    [WARN] odds:', p.match, '-', e.message);
     }
+    await sleep(THROTTLE_MS);
 
     console.log(`    enriched: ${p.match}`);
     done++;
