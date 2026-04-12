@@ -239,24 +239,10 @@ function refreshFromIndex(pronos, byId) {
 }
 
 // ---------------------------------------------------------------------------
-// Check if a sport has any active pronos (pending or in_progress, past kickoff)
-// ---------------------------------------------------------------------------
-function hasActivePronos(sport, now) {
-  for (const league of sport.leagues || []) {
-    for (const p of league.pronos || []) {
-      if (p.status !== 'pending' && p.status !== 'in_progress') continue;
-      const ms = new Date(p.commence_time).getTime();
-      if (ms <= now) return true;
-    }
-  }
-  return false;
-}
-
-// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
-  console.log(`→ refresh v6 ${new Date().toISOString()} (smart refresh)`);
+  console.log(`→ refresh v7 ${new Date().toISOString()} (full refresh — all sports every run)`);
 
   let data;
   try {
@@ -283,12 +269,7 @@ async function main() {
       continue;
     }
 
-    // Check if there are active pronos (past kickoff)
-    if (!hasActivePronos(sport, now)) {
-      console.log(`  ${sportKey}: no active matches — skipping API call`);
-      continue;
-    }
-
+    // Full refresh: always fetch all sports (no smart skip — detects night matches)
     // Collect all non-resolved pronos with flashscore_id
     const activePronos = [];
     for (const league of sport.leagues || []) {
