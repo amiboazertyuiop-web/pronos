@@ -3883,7 +3883,7 @@ function printPerf() { window.print(); }
 
 // ===================== INIT =====================
 document.getElementById('bankroll-init').value=localStorage.getItem('lcp-init')||100;
-document.getElementById('f-date').value=new Date().toISOString().slice(0,10);
+// f-date form removed — manual bet form no longer exists
 document.getElementById('cfg-kelly-frac').value = localStorage.getItem('lcp-kelly-frac') || '0.5';
 document.getElementById('cfg-goal').value = localStorage.getItem('lcp-goal') || '';
 document.getElementById('cfg-stoploss').value = localStorage.getItem('lcp-stoploss') || '';
