@@ -16,6 +16,8 @@ const path = require('path');
 
 const SUPABASE_URL = 'https://yyustwbdpzrytavzpqtk.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl5dXN0d2JkcHpyeXRhdnpwcXRrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU4NDk1ODMsImV4cCI6MjA5MTQyNTU4M30.szlImpI0ietxEUA4dy36rjqgn-pAGmIBoDkDj_yTBzw';
+// Use authenticated session token (from env) if available, else fallback to anon key
+const AUTH_TOKEN = process.env.SUPABASE_AUTH_TOKEN || SUPABASE_ANON_KEY;
 const JSON_PATH = path.join(__dirname, '..', 'pronos.json');
 
 // ---------------------------------------------------------------------------
@@ -26,7 +28,7 @@ async function supabaseGet(table, query) {
   const res = await fetch(url, {
     headers: {
       'apikey': SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'Authorization': `Bearer ${AUTH_TOKEN}`,
     },
   });
   if (!res.ok) throw new Error(`Supabase GET ${res.status}: ${await res.text()}`);
@@ -39,7 +41,7 @@ async function supabaseUpdate(table, id, data) {
     method: 'PATCH',
     headers: {
       'apikey': SUPABASE_ANON_KEY,
-      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'Authorization': `Bearer ${AUTH_TOKEN}`,
       'Content-Type': 'application/json',
       'Prefer': 'return=minimal',
     },
