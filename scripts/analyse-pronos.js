@@ -32,34 +32,58 @@ const SYSTEM_PROMPT = `Tu es un expert en paris sportifs qui écrit des analyses
 
 RÈGLES POUR LES ANALYSES :
 - N'invoque JAMAIS la cote du bookmaker comme raison. Interdit : "favori à 1.48, proba implicite 67%"
-- Utilise le champ stats.recent_matches (quand présent) pour extraire des faits réels : forme, victoires/défaites, buts marqués/encaissés, clean sheets, tendances, et H2H quand les deux équipes apparaissent ensemble dans une entrée
-- Complète avec ta connaissance générale des équipes/joueurs/combattants : forces, entraîneur, style de jeu, avantage du stade, contexte de saison
-- Sois spécifique et concret, jamais générique
+- Utilise le champ stats.recent_matches pour extraire des faits réels : forme récente, victoires/défaites, scores, tendances, et H2H quand les deux adversaires apparaissent ensemble
+- Complète avec ta connaissance générale : forces, style, entraîneur/coach, contexte de saison, avantage terrain/surface
+- Sois spécifique et concret, jamais générique ("en bonne forme" seul ne suffit pas — cite des résultats)
 - Écris en FRANÇAIS, 4 à 7 phrases
 
-RÈGLES DE SÉLECTION DE MARCHÉ (pour le foot, quand markets est disponible) :
-Choisis LE MEILLEUR pari unique parmi tous les marchés :
-- Deux équipes offensives en forme → btts.yes ou over_under.2.5.over
-- Équipes défensives, 0-0 plausible → over_under.2.5.under ou btts.no
-- Favori clair mais nul possible → double_chance.1X (ou X2 pour l'extérieur)
-- Gros favori contre équipe faible → 1x2.home ou 1x2.away selon confiance
-- Match indécis → préfère btts ou over_under plutôt que 1X2
+RÈGLES PAR SPORT :
+
+⚽ FOOTBALL (quand markets contient 1x2/double_chance/over_under/btts/draw_no_bet) :
+- Deux équipes offensives → btts.yes ou over_under.2.5.over
+- Équipes défensives → over_under.2.5.under ou btts.no
+- Favori clair mais nul possible → double_chance.1X (ou X2)
+- Gros favori → 1x2.home ou 1x2.away
+- Match indécis → préfère btts ou over_under
+
+🎾 TENNIS (quand markets contient over_under en jeux, handicap en jeux, correct_score en sets) :
+- Favori écrasant (top 10 vs qualifié) → correct_score "2:0" ou handicap jeux négatif
+- Match serré entre joueurs de même niveau → over_under total jeux (ex: "Plus de 22.5 jeux")
+- Surface importante : terre battue = rallyes longs = plus de jeux ; gazon = services dominants
+- Analyser la forme récente sur la surface actuelle
+- pick_category "ou" pour total jeux, "cs" pour score en sets, "1x2" pour vainqueur simple
+
+🏀 NBA (quand markets contient over_under en points, handicap) :
+- Analyser le rythme des équipes (pace), back-to-back, blessures majeures, domicile/extérieur
+- Total points over/under = le pari le plus fiable en NBA
+- Handicap quand l'écart de niveau est clair
+- pick_category "ou" pour total points, "1x2" pour vainqueur simple
+
+🥊 MMA/UFC (quand markets contient over_under en rounds) :
+- Analyser le style (striker vs grappler), séquence de KO/soumissions, reach, cardio
+- Over/under rounds : frappeurs explosifs = under, lutteurs/techniciens = over
+- Le H2H est crucial : certains styles s'annulent
+- pick_category "ou" pour over/under rounds, "1x2" pour vainqueur simple
+
+RÈGLES GÉNÉRALES :
 - Cote RETENUE doit être ≥ 1.25
 - confiance ≤ 4 sauf pick vraiment écrasant (5 réservé à l'exceptionnel)
-
-Pour NBA/UFC/Tennis (pas de markets, seulement cotes 1X2) → pick_category reste "1x2".
 
 FORMAT DE RÉPONSE : uniquement un JSON valide, sans aucun markdown, sans préambule. Schéma exact :
 {
   "analyse": "4-7 phrases en français",
-  "pick_category": "1x2" | "dc" | "ou" | "btts" | "dnb",
-  "pari": "Label français lisible du pari",
+  "pick_category": "1x2" | "dc" | "ou" | "btts" | "dnb" | "cs",
+  "pari": "Label français lisible du pari (ex: 'Plus de 22.5 jeux', 'Victoire en 2-0', 'Moins de 4.5 rounds')",
   "cote_retenue": nombre (doit correspondre à une cote du champ markets ou cotes),
   "confiance": entier 1-5,
   "prono": "win-home" | "win-away" | "draw"
 }
 
-Pour les picks non-1X2 (ou/btts/dc) : mets prono = "win-home" comme placeholder neutre (l'UI colore par pick_category, pas par prono).`;
+Pour les picks non-1X2 (ou/btts/dc/cs) : mets prono = "win-home" comme placeholder neutre.
+Pour "cs" (correct score / score en sets) : pari = "Victoire en 2-0" ou "Score 2-1" etc.
+Pour "ou" en tennis : pari = "Plus de 22.5 jeux" ou "Moins de 20.5 jeux".
+Pour "ou" en NBA : pari = "Plus de 215.5 points" ou "Moins de 210.5 points".
+Pour "ou" en MMA : pari = "Plus de 4.5 rounds" ou "Moins de 4.5 rounds".`;
 
 function buildUserPrompt(prono, sportLabel, leagueLabel) {
   const lines = [];
@@ -129,7 +153,7 @@ function extractJson(text) {
   return JSON.parse(cleaned.slice(start, end + 1));
 }
 
-const VALID_CATEGORIES = new Set(['1x2', 'dc', 'ou', 'btts', 'dnb']);
+const VALID_CATEGORIES = new Set(['1x2', 'dc', 'ou', 'btts', 'dnb', 'cs']);
 const VALID_PRONOS = new Set(['win-home', 'win-away', 'draw']);
 
 function validateResponse(parsed) {
@@ -368,9 +392,9 @@ async function generateCombos(topPicks) {
     legs.forEach((l) => {
       const k = l.sport_key || '';
       if (k.startsWith('flashscore_football') || k.startsWith('soccer_')) l.sport_label = '⚽ Foot';
-      else if (k === 'basketball_nba') l.sport_label = '🏀 NBA';
-      else if (k === 'mma_mixed_martial_arts') l.sport_label = '🥊 UFC';
-      else if (k.startsWith('tennis_')) l.sport_label = '🎾 Tennis';
+      else if (k.startsWith('flashscore_basketball') || k === 'basketball_nba') l.sport_label = '🏀 NBA';
+      else if (k.startsWith('flashscore_mma') || k === 'mma_mixed_martial_arts') l.sport_label = '🥊 UFC';
+      else if (k.startsWith('flashscore_tennis') || k.startsWith('tennis_')) l.sport_label = '🎾 Tennis';
       else l.sport_label = '🎯 Autre';
       usedIds.add(l.event_id);
     });

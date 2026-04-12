@@ -77,8 +77,20 @@ async function oddsFetch(pathname) {
 function inferOuOutcome(pari) {
   if (!pari) return null;
   const p = pari.toLowerCase();
-  const m = p.match(/([0-9]+(?:[.,][0-9]+)?)\s*but/);
-  if (!m) return null;
+  // Match patterns like "Plus de 2.5 buts", "Moins de 22.5 jeux", "Plus de 215.5 points", "Moins de 4.5 rounds"
+  const m = p.match(/([0-9]+(?:[.,][0-9]+)?)\s*(?:but|jeu|game|point|round|set|manche)/);
+  if (!m) {
+    // Fallback: match "plus de X.X" or "moins de X.X" without unit
+    const m2 = p.match(/(?:plus|over|moins|under)[^0-9]*([0-9]+(?:[.,][0-9]+)?)/);
+    if (!m2) return null;
+    const line = parseFloat(m2[1].replace(',', '.'));
+    if (!isFinite(line)) return null;
+    const hasOver = /\b(plus|over|\+)\b/.test(p);
+    const hasUnder = /\b(moins|under|-)\b/.test(p);
+    if (hasOver && !hasUnder) return { line, direction: 'over' };
+    if (hasUnder && !hasOver) return { line, direction: 'under' };
+    return null;
+  }
   const line = parseFloat(m[1].replace(',', '.'));
   if (!isFinite(line)) return null;
   const hasOver = /\b(plus|over|\+)\b/.test(p);
@@ -169,6 +181,17 @@ function resolveStatus(prono, scores) {
     if (o.outcome === 'X2') return pack(!homeWins || draw ? 'won' : 'lost');
     if (o.outcome === '12') return pack(!draw ? 'won' : 'lost');
     return pack('void');
+  }
+
+  // --- Correct Score / Set Betting (tennis) ---
+  if (cat === 'cs') {
+    // Parse expected score from pari: "Victoire en 2-0", "Score 2-1", "2:0" etc.
+    const csMatch = prono.pari && prono.pari.match(/(\d)\s*[-:]\s*(\d)/);
+    if (!csMatch) return pack('void');
+    const expectedHome = parseInt(csMatch[1], 10);
+    const expectedAway = parseInt(csMatch[2], 10);
+    if (h === expectedHome && a === expectedAway) return pack('won');
+    return pack('lost');
   }
 
   return pack('void');

@@ -349,6 +349,7 @@ function computeCoupDeCoeur(allPronos) {
 }
 
 const MAX_FOOT_ENRICHMENTS = 40;
+const MAX_NONFOOT_ENRICHMENTS = 70; // NBA ~15 + UFC ~5 + Tennis ~50
 
 // ---------------------------------------------------------------------------
 // Parse the /matches/odds response into agent-friendly markets structure
@@ -463,7 +464,128 @@ function parseMarkets(raw, knownHome1X2, knownAway1X2) {
   return out;
 }
 
-async function enrichAllFoot(allPronos) {
+// ---------------------------------------------------------------------------
+// Parse non-foot markets (tennis, NBA, MMA) — simpler structure than football
+// Uses HOME_AWAY (no draw) and OVER_UNDER with sport-appropriate lines.
+// For tennis: over_under = total games, correct_score = set betting (2-0 etc.)
+// For MMA: over_under = total rounds (e.g. 4.5)
+// For NBA: over_under = total points (e.g. 215.5)
+// ---------------------------------------------------------------------------
+function parseNonFootMarkets(raw, knownHome, knownAway) {
+  if (!Array.isArray(raw) || raw.length === 0) return null;
+
+  // Identify home/away participant IDs via HOME_AWAY or HOME_DRAW_AWAY
+  const partOddsMap = new Map();
+  for (const bm of raw) {
+    for (const m of bm.odds || []) {
+      if (m.bettingScope !== 'FULL_TIME') continue;
+      if (m.bettingType !== 'HOME_AWAY' && m.bettingType !== 'HOME_DRAW_AWAY') continue;
+      for (const o of m.odds || []) {
+        if (!o.eventParticipantId) continue;
+        const v = parseFloat(o.value);
+        if (!isFinite(v)) continue;
+        if (!partOddsMap.has(o.eventParticipantId)) partOddsMap.set(o.eventParticipantId, []);
+        partOddsMap.get(o.eventParticipantId).push(v);
+      }
+    }
+  }
+
+  let homeId = null, awayId = null;
+  if (partOddsMap.size >= 2 && knownHome && knownAway) {
+    let minHomeDist = Infinity, minAwayDist = Infinity;
+    for (const [id, vals] of partOddsMap) {
+      const med = median(vals);
+      if (med == null) continue;
+      const dh = Math.abs(med - knownHome);
+      const da = Math.abs(med - knownAway);
+      if (dh < minHomeDist) { minHomeDist = dh; homeId = id; }
+      if (da < minAwayDist) { minAwayDist = da; awayId = id; }
+    }
+    if (homeId === awayId) {
+      const ids = [...partOddsMap.keys()];
+      [homeId, awayId] = ids;
+    }
+  }
+
+  const buckets = {
+    ou: {},           // over/under (games, points, rounds)
+    handicap: {},     // asian handicap lines
+    correct_score: new Map(), // set scores for tennis (cote by score label)
+  };
+
+  for (const bm of raw) {
+    for (const m of bm.odds || []) {
+      if (m.bettingScope !== 'FULL_TIME') continue;
+      const type = m.bettingType;
+      for (const o of m.odds || []) {
+        const v = parseFloat(o.value);
+        if (!isFinite(v)) continue;
+
+        if (type === 'OVER_UNDER') {
+          const line = o.handicap?.value;
+          if (!line) continue;
+          if (!buckets.ou[line]) buckets.ou[line] = { over: [], under: [] };
+          if (o.selection === 'OVER') buckets.ou[line].over.push(v);
+          else if (o.selection === 'UNDER') buckets.ou[line].under.push(v);
+        } else if (type === 'ASIAN_HANDICAP') {
+          const line = o.handicap?.value;
+          if (!line || !o.eventParticipantId) continue;
+          const side = o.eventParticipantId === homeId ? 'home' : 'away';
+          const key = `${line}`;
+          if (!buckets.handicap[key]) buckets.handicap[key] = {};
+          if (!buckets.handicap[key][side]) buckets.handicap[key][side] = [];
+          buckets.handicap[key][side].push(v);
+        } else if (type === 'CORRECT_SCORE') {
+          // For tennis: set score betting (2-0, 2-1, 0-2, 1-2)
+          // The outcome name or a combination of fields identifies the score
+          const name = o.name || o.selection || null;
+          if (name) {
+            if (!buckets.correct_score.has(name)) buckets.correct_score.set(name, []);
+            buckets.correct_score.get(name).push(v);
+          }
+        }
+      }
+    }
+  }
+
+  const out = {};
+
+  // Over/under — keep all available lines (not just 1.5/2.5/3.5 like foot)
+  const ou = {};
+  for (const [line, data] of Object.entries(buckets.ou)) {
+    if (data.over.length && data.under.length) {
+      ou[line] = { over: round2(median(data.over)), under: round2(median(data.under)) };
+    }
+  }
+  if (Object.keys(ou).length) out.over_under = ou;
+
+  // Handicap — keep main lines
+  const hcap = {};
+  for (const [line, sides] of Object.entries(buckets.handicap)) {
+    const entry = {};
+    if (sides.home?.length) entry.home = round2(median(sides.home));
+    if (sides.away?.length) entry.away = round2(median(sides.away));
+    if (Object.keys(entry).length) hcap[line] = entry;
+  }
+  if (Object.keys(hcap).length) out.handicap = hcap;
+
+  // Correct score (tennis set betting)
+  if (buckets.correct_score.size > 0) {
+    const cs = {};
+    for (const [name, vals] of buckets.correct_score) {
+      cs[name] = round2(median(vals));
+    }
+    if (Object.keys(cs).length) out.correct_score = cs;
+  }
+
+  return Object.keys(out).length ? out : null;
+}
+
+// ---------------------------------------------------------------------------
+// Enrich ALL pronos with H2H stats + betting markets
+// ---------------------------------------------------------------------------
+async function enrichAll(allPronos) {
+  // Foot: H2H + full odds (same as before)
   const footMatches = allPronos.filter((p) => p.flashscore_id && p.flashscore_sport_id === 1).slice(0, MAX_FOOT_ENRICHMENTS);
   let done = 0;
   for (const p of footMatches) {
@@ -494,6 +616,43 @@ async function enrichAllFoot(allPronos) {
     console.log(`    enriched: ${p.match}`);
     done++;
   }
+
+  // Non-foot: H2H + non-foot markets (tennis/NBA/MMA)
+  const nonFootMatches = allPronos
+    .filter((p) => p.flashscore_id && p.flashscore_sport_id !== 1)
+    .slice(0, MAX_NONFOOT_ENRICHMENTS);
+
+  for (const p of nonFootMatches) {
+    // H2H / recent form
+    try {
+      const h2h = await fsFetch(`/matches/h2h?match_id=${p.flashscore_id}`);
+      const recent = Array.isArray(h2h)
+        ? h2h.slice(0, 15).map((m) => ({
+            timestamp: m.timestamp,
+            tournament: m.tournament_name_short || m.tournament_name,
+            home: m.home_team?.name,
+            away: m.away_team?.name,
+            score: `${m.scores?.home}-${m.scores?.away}`,
+          }))
+        : [];
+      p.stats = { recent_matches: recent };
+    } catch (e) {
+      console.error('    [WARN] h2h:', p.match, '-', e.message);
+    }
+
+    // Betting markets
+    try {
+      const oddsRaw = await fsFetch(`/matches/odds?match_id=${p.flashscore_id}`);
+      const markets = parseNonFootMarkets(oddsRaw, p.cotes.domicile, p.cotes.exterieur);
+      if (markets) p.markets = markets;
+    } catch (e) {
+      console.error('    [WARN] odds:', p.match, '-', e.message);
+    }
+
+    console.log(`    enriched: ${p.match}`);
+    done++;
+  }
+
   return done;
 }
 
@@ -569,11 +728,11 @@ async function main() {
   const coupDeCoeurIds = computeCoupDeCoeur(allPronos);
   console.log(`    selected ${coupDeCoeurIds.length}`);
 
-  // 5. Enrich ALL foot matches with H2H + markets
+  // 5. Enrich ALL matches with H2H + markets (foot + non-foot)
   if (allPronos.length) {
-    console.log('[5] enrich foot matches with H2H + markets (up to ' + MAX_FOOT_ENRICHMENTS + ')');
-    const enriched = await enrichAllFoot(allPronos);
-    console.log(`    enriched ${enriched} foot matches`);
+    console.log('[5] enrich all matches with H2H + markets');
+    const enriched = await enrichAll(allPronos);
+    console.log(`    enriched ${enriched} matches total`);
   }
 
   // 6. Write
