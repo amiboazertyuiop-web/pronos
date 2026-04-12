@@ -1,0 +1,28 @@
+name: Fix pending bets
+on:
+  workflow_dispatch: {}
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Fix bets history
+        env:
+          FLASHSCORE_KEY: ${{ secrets.FLASHSCORE_KEY }}
+        run: node scripts/fix-bets-history.js
+      - name: Commit and push if changed
+        run: |
+          git config user.email 'coach-parie-bot@users.noreply.github.com'
+          git config user.name 'Coach Parie Bot'
+          if git diff --quiet -- pronos.json; then
+            echo "No changes"
+          else
+            git add pronos.json
+            git commit -m "chore: inject targeted history entries for pending bets"
+            git push
+          fi
