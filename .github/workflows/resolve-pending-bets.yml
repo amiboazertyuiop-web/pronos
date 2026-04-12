@@ -1,0 +1,15 @@
+name: Resolve pending bets
+on:
+  workflow_dispatch: {}
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Resolve pending bets from history scores
+        env:
+          FLASHSCORE_KEY: ${{ secrets.FLASHSCORE_KEY }}
+        run: node scripts/resolve-pending-bets.js
