@@ -261,6 +261,18 @@ async function main() {
     data.combos = [];
   }
 
+  // ---- Fun page: 2 yolo picks + 1 mega combo ----
+  try {
+    const funBets = await generateFunBets(allPronos);
+    if (funBets) {
+      data.fun = funBets;
+      console.log(`  fun: ${(funBets.yolo_picks || []).length} yolo picks + ${funBets.mega_combo ? '1 mega combo (' + funBets.mega_combo.total_cote + 'x)' : 'no mega combo'}`);
+    }
+  } catch (e) {
+    console.error('  [WARN] fun bets generation failed:', e.message);
+    data.fun = { yolo_picks: [], mega_combo: null };
+  }
+
   data.meta = data.meta || {};
   data.meta.analyses_written_at = new Date().toISOString();
   data.meta.analyses_cost_usd = parseFloat(cost.toFixed(4));
@@ -407,6 +419,153 @@ async function generateCombos(topPicks) {
     });
   }
   return combos;
+}
+
+// ---------------------------------------------------------------------------
+// FUN PAGE: 2 risky singles + 1 mega combo (cote 10 000 – 20 000)
+// ---------------------------------------------------------------------------
+const FUN_SYSTEM_PROMPT = `Tu es un tipster sportif fun et audacieux. Tu proposes des paris "coup de folie" pour les joueurs qui veulent s'amuser avec une petite mise.
+
+À partir de la liste de TOUS les pronos du jour (avec leurs analyses et marchés), tu dois proposer :
+
+1. DEUX paris simples "YOLO" — des picks individuels à grosse cote (≥ 4.00 chacun).
+   Ce sont des outsiders crédibles : pas n'importe quel underdog, mais des situations où l'upset est réaliste.
+   Pour chaque pick, écris 2-3 phrases fun et convaincantes en français expliquant pourquoi c'est jouable.
+
+2. UN méga combiné "JACKPOT" — entre 8 et 14 legs, cote totale visée entre 10 000 et 20 000.
+   Les legs individuels doivent avoir des cotes entre 1.50 et 3.50 (risque modéré par leg).
+   Diversifier les sports et championnats autant que possible.
+   Le raisonnement doit être fun, ambitieux mais pas délirant — chaque leg doit être défendable.
+
+RÈGLES :
+- Les event_ids doivent correspondre EXACTEMENT à ceux fournis dans la liste
+- Le pari de chaque pick doit correspondre à un marché réellement disponible (cotes ou markets)
+- N'utilise PAS les mêmes matchs pour les 2 yolo picks
+- Écris en FRANÇAIS
+
+FORMAT DE RÉPONSE : uniquement un JSON valide, aucun markdown. Schéma :
+{
+  "yolo_picks": [
+    {
+      "event_id": "id1",
+      "pari": "Label français du pari",
+      "cote": nombre,
+      "analyse_fun": "2-3 phrases fun en français"
+    },
+    {
+      "event_id": "id2",
+      "pari": "Label français du pari",
+      "cote": nombre,
+      "analyse_fun": "2-3 phrases fun en français"
+    }
+  ],
+  "mega_combo": {
+    "label": "Nom fun du combo",
+    "reasoning": "3-4 phrases fun et ambitieuses en français",
+    "legs": [
+      { "event_id": "id", "pari": "Label du pari", "cote": nombre }
+    ]
+  }
+}`;
+
+async function generateFunBets(allPronos) {
+  if (!allPronos || allPronos.length < 10) return null;
+
+  const list = allPronos.map((p) => ({
+    event_id: p.event_id,
+    match: p.match,
+    sport_key: p.sport_key,
+    home: p.home,
+    away: p.away,
+    pari: p.pari,
+    pick_category: p.pick_category,
+    cote: p.cote_retenue,
+    confiance: p.confiance,
+    cotes: p.cotes || null,
+    markets: p.markets ? Object.keys(p.markets) : null,
+  }));
+
+  const userPrompt =
+    `Voici les ${list.length} pronos du jour avec leurs cotes. Propose-moi 2 paris YOLO + 1 méga combo JACKPOT :\n\n` +
+    JSON.stringify(list, null, 2);
+
+  console.log('  → calling Claude for fun bets (2 yolo + 1 mega combo)');
+  const res = await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'x-api-key': API_KEY,
+      'anthropic-version': '2023-06-01',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: MODEL,
+      max_tokens: 2000,
+      system: FUN_SYSTEM_PROMPT,
+      messages: [{ role: 'user', content: userPrompt }],
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`HTTP ${res.status}: ${body.slice(0, 300)}`);
+  }
+  const resp = await res.json();
+  const text = resp.content && resp.content[0] && resp.content[0].text;
+  if (!text) throw new Error('empty fun response');
+  const parsed = extractJson(text);
+
+  // Build pronos lookup
+  const byId = new Map(allPronos.map((p) => [p.event_id, p]));
+
+  // Enrich yolo picks
+  const yoloPicks = [];
+  for (const y of parsed.yolo_picks || []) {
+    const pick = byId.get(y.event_id);
+    if (!pick) continue;
+    yoloPicks.push({
+      event_id: pick.event_id,
+      match: pick.match,
+      home: pick.home,
+      away: pick.away,
+      pari: y.pari,
+      cote: y.cote || pick.cote_retenue,
+      analyse_fun: y.analyse_fun || '',
+      sport_key: pick.sport_key,
+      time_display: pick.time_display,
+    });
+  }
+
+  // Enrich mega combo
+  let megaCombo = null;
+  if (parsed.mega_combo && Array.isArray(parsed.mega_combo.legs)) {
+    const legs = [];
+    let totalCote = 1;
+    for (const leg of parsed.mega_combo.legs) {
+      const pick = byId.get(leg.event_id);
+      if (!pick) continue;
+      const cote = leg.cote || pick.cote_retenue;
+      legs.push({
+        event_id: pick.event_id,
+        match: pick.match,
+        home: pick.home,
+        away: pick.away,
+        pari: leg.pari,
+        cote,
+        sport_key: pick.sport_key,
+        time_display: pick.time_display,
+      });
+      totalCote *= cote;
+    }
+    if (legs.length >= 5) {
+      megaCombo = {
+        label: parsed.mega_combo.label || 'Méga Combo Jackpot',
+        reasoning: parsed.mega_combo.reasoning || '',
+        legs,
+        total_cote: parseFloat(totalCote.toFixed(2)),
+      };
+    }
+  }
+
+  return { yolo_picks: yoloPicks, mega_combo: megaCombo };
 }
 
 main().catch((e) => { console.error('FATAL:', e); process.exit(1); });

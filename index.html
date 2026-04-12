@@ -1398,6 +1398,7 @@ nav{
   <div class="nav-tab" id="tab-coupdecoeur" onclick="showPage('coupdecoeur')"><span class="tab-icon">🔥</span>Coup de cœur</div>
   <div class="nav-tab" id="tab-sports" onclick="showPage('sports')"><span class="tab-icon">🎯</span>Sports</div>
   <div class="nav-tab" id="tab-bankroll" onclick="showPage('bankroll')"><span class="tab-icon">💰</span>Bankroll</div>
+  <div class="nav-tab" id="tab-fun" onclick="showPage('fun')"><span class="tab-icon">🎰</span>Fun</div>
   <div class="nav-tab" id="tab-perf" onclick="showPage('perf')"><span class="tab-icon">📊</span>Perfs</div>
   <button class="nav-logout" onclick="logout()" title="Déconnexion">🚪</button>
 </nav>
@@ -1535,6 +1536,27 @@ nav{
     </div><!-- /sports-content -->
   </div><!-- /sports-layout -->
 </div><!-- /page-sports -->
+
+<!-- ===================== PAGE : FUN ===================== -->
+<div class="page" id="page-fun">
+  <div class="section-header" style="text-align:center;padding:2rem 0 1rem;">
+    <div style="font-size:2.5rem;">🎰</div>
+    <h2 style="color:var(--gold);margin:0.5rem 0;">Paris Fun</h2>
+    <p style="color:var(--muted);font-size:0.85rem;">Petite mise, gros frissons. Ces paris sont risqués — joue uniquement pour le fun !</p>
+  </div>
+
+  <div style="max-width:700px;margin:0 auto;padding:0 1rem;">
+    <h3 style="color:var(--orange);margin:1.5rem 0 0.75rem;">🔥 Paris YOLO</h3>
+    <p style="color:var(--muted);font-size:0.8rem;margin-bottom:1rem;">2 outsiders crédibles à grosse cote. Mise mini, adrénaline maxi.</p>
+    <div id="fun-yolo-grid"></div>
+
+    <h3 style="color:#a855f7;margin:2rem 0 0.75rem;">🎰 Méga Combo Jackpot</h3>
+    <p style="color:var(--muted);font-size:0.8rem;margin-bottom:1rem;">Un combiné délirant avec une cote entre 10 000 et 20 000. 1€ misé = un rêve.</p>
+    <div id="fun-mega-combo"></div>
+  </div>
+
+  <div class="pronos-meta-updated" id="fun-meta" style="text-align:center;margin-top:2rem;"></div>
+</div>
 
 <!-- ===================== PAGE : BANKROLL ===================== -->
 <div class="page" id="page-bankroll">
@@ -2104,6 +2126,7 @@ function showPage(id){
   if(id==='perf') renderPerf();
   if(id==='today') renderToday();
   if(id==='coupdecoeur') renderCoupDeCoeur();
+  if(id==='fun') renderFunPage();
   window.scrollTo(0, 0);
 }
 
@@ -3287,6 +3310,85 @@ function renderCoupDeCoeur() {
   }).join('');
 
   grid.innerHTML = html;
+}
+
+function renderFunPage() {
+  const yoloGrid = document.getElementById('fun-yolo-grid');
+  const megaDiv = document.getElementById('fun-mega-combo');
+  const metaEl = document.getElementById('fun-meta');
+  if (!yoloGrid || !megaDiv) return;
+
+  if (!pronosData || !pronosData.fun) {
+    yoloGrid.innerHTML = '<div class="pronos-empty">Pas de paris fun aujourd\'hui — le daily n\'a pas encore tourné.</div>';
+    megaDiv.innerHTML = '';
+    return;
+  }
+
+  const fun = pronosData.fun;
+
+  // Yolo picks
+  if (fun.yolo_picks && fun.yolo_picks.length) {
+    yoloGrid.innerHTML = fun.yolo_picks.map((y, i) => {
+      const gain1e = (1 * (y.cote - 1)).toFixed(2);
+      return '<div class="mc" style="border-left:3px solid var(--orange);margin-bottom:1rem;">' +
+        '<div class="mc-tag-banner">' +
+          '<span class="tag-chip risky">🔥 YOLO #' + (i + 1) + '</span>' +
+          '<span style="font-size:0.6rem;opacity:0.35;margin-left:auto;">' + esc(y.event_id || '') + '</span>' +
+        '</div>' +
+        '<div class="mc-top">' +
+          '<div class="mc-team home"><div class="mc-name">' + esc(y.home || '') + '</div></div>' +
+          '<div class="mc-center"><div class="mc-time">' + esc(y.time_display || '') + '</div><div class="mc-vs">VS</div></div>' +
+          '<div class="mc-team away"><div class="mc-name">' + esc(y.away || '') + '</div></div>' +
+        '</div>' +
+        '<div class="prono-row">' +
+          '<span class="ptag win-away" style="background:var(--orange);">' + esc(y.pari) + '</span>' +
+          '<div>' +
+            '<div class="pc-result" style="font-size:1.1rem;font-weight:700;color:var(--orange);">@ ' + y.cote + ' <span style="font-size:0.75rem;color:var(--muted);">(1€ → +' + gain1e + '€)</span></div>' +
+            '<div class="pc-reason">' + esc(y.analyse_fun || '') + '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  } else {
+    yoloGrid.innerHTML = '<div class="pronos-empty">Pas de picks YOLO aujourd\'hui.</div>';
+  }
+
+  // Mega combo
+  if (fun.mega_combo && fun.mega_combo.legs && fun.mega_combo.legs.length) {
+    const mc = fun.mega_combo;
+    const gain1e = (1 * (mc.total_cote - 1)).toFixed(0);
+    const legsHtml = mc.legs.map((leg, i) =>
+      '<div style="display:flex;justify-content:space-between;align-items:center;padding:0.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">' +
+        '<div style="flex:1;">' +
+          '<div style="font-size:0.8rem;color:var(--fg);">' + (i + 1) + '. ' + esc(leg.match) + '</div>' +
+          '<div style="font-size:0.7rem;color:var(--muted);">' + esc(leg.pari) + '</div>' +
+        '</div>' +
+        '<div style="font-weight:700;color:#a855f7;min-width:50px;text-align:right;">@ ' + leg.cote + '</div>' +
+      '</div>'
+    ).join('');
+
+    megaDiv.innerHTML =
+      '<div class="mc" style="border-left:3px solid #a855f7;">' +
+        '<div class="mc-tag-banner">' +
+          '<span class="tag-chip" style="background:linear-gradient(135deg,#7c3aed,#a855f7);color:white;">🎰 ' + esc(mc.label) + '</span>' +
+        '</div>' +
+        '<div style="padding:0 1rem;">' +
+          '<div style="text-align:center;margin:1rem 0;">' +
+            '<div style="font-size:2rem;font-weight:800;background:linear-gradient(135deg,#a855f7,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">COTE ' + mc.total_cote.toLocaleString('fr-FR') + '</div>' +
+            '<div style="font-size:0.85rem;color:var(--muted);">1€ misé → <span style="color:#a855f7;font-weight:700;">' + gain1e + '€ de gains</span></div>' +
+          '</div>' +
+          '<div class="pc-reason" style="margin-bottom:1rem;">' + esc(mc.reasoning) + '</div>' +
+          '<div style="font-size:0.75rem;color:var(--gold);margin-bottom:0.5rem;font-weight:600;">' + mc.legs.length + ' LEGS</div>' +
+          legsHtml +
+        '</div>' +
+      '</div>';
+  } else {
+    megaDiv.innerHTML = '<div class="pronos-empty">Pas de méga combo aujourd\'hui.</div>';
+  }
+
+  if (metaEl && pronosData.meta && pronosData.meta.generated_at) {
+    metaEl.textContent = '↻ Mis à jour ' + new Date(pronosData.meta.generated_at).toLocaleString('fr-FR');
+  }
 }
 
 function renderToday() {
