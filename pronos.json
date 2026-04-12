@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-12T18:06:23.346Z",
+    "last_results_update": "2026-04-12T19:56:25.509Z",
     "analyses_written_at": "2026-04-12T13:56:54.279Z",
     "analyses_cost_usd": 0.2409,
-    "last_hourly_refresh": "2026-04-12T18:06:23.346Z"
+    "last_hourly_refresh": "2026-04-12T19:56:25.509Z"
   },
   "sports": {
     "foot": {
@@ -44,16 +44,16 @@
               "pari": "Les deux équipes marquent",
               "cote_retenue": 1.77,
               "cotes": {
-                "domicile": 1.67,
-                "nul": 4.27,
-                "exterieur": 5.53
+                "domicile": 1.69,
+                "nul": 4.1,
+                "exterieur": 5.12
               },
               "pick_category": "btts",
               "analyse": "Lyon traverse une période très difficile avec 5 matchs sans victoire en Ligue 1 (1 nul, 4 défaites sur les 5 derniers : revers 0-2 contre Celta, 1-2 face à Monaco, 3-2 à Marseille, 0-0 à Angers et Le Havre). Lorient affiche une stabilité relative avec 2 nuls et 1 victoire récemment (2-1 contre Lens), mais reste une équipe modeste. Malgré le statut de favori, Lyon n'inspire confiance actuellement et manque clairement de réussite offensive (seulement 1 but en 3 derniers matchs de L1). Le contexte suggère un match fermé où Lorient ne se laissera pas dominer facilement. Le pari BTTS est pertinent car Lorient a marqué dans 3 de ses 4 derniers matchs (1-1, 2-1, 2-2, 1-1) et Lyon, malgré ses difficultés, reste capable de créer des occasions à domicile.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -223,181 +223,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "6VYvpjdE",
-              "flashscore_id": "6VYvpjdE",
-              "flashscore_sport_id": 1,
-              "home_team_id": "8pvUZFhf",
-              "away_team_id": "SzYzw34K",
-              "tournament_id": "vcm2mhgk",
-              "tournament_url": "/football/spain/laliga/",
-              "sport_key": "flashscore_football_liga",
-              "commence_time": "2026-04-12T16:30:00.000Z",
-              "time_display": "Dim. 16h30 UTC",
-              "home": "Celta Vigo",
-              "away": "Oviedo",
-              "match": "Celta Vigo vs Oviedo",
-              "prono": "win-home",
-              "pari": "Victoire Celta Vigo",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 1.8,
-                "nul": 3.56,
-                "exterieur": 5.12
-              },
-              "pick_category": "1x2",
-              "analyse": "Celta Vigo montre une forme offensive solide avec 5 victoires en 8 matchs récents (Valencia 2-3, Lyon 0-2, Girona 1-2, PAOK 1-0), même s'ils ont concédé 4 buts face à Alaves. Oviedo affiche une défense fragile avec 3 revers en 5 rencontres (Levante 4-2, Rayo 3-0, Atl. Madrid 0-1), malgré deux victoires de prestige (Sevilla 1-0, Valencia 1-0). Sur le terrain, Celta est nettement supérieur en qualité offensive et exploite bien ses occasions. Oviedo reste dangereux à la contre mais reste irrégulier. L'écart de niveau plaide pour une victoire de Celta, d'autant plus qu'ils jouent à domicile avec 1.73 à la cote. Le profil tactique suggère que Celta va presser haut et scorer, tandis qu'Oviedo cherchera à bloquer bas, limitant les occasions mutuelles.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "EL",
-                    "home": "Freiburg",
-                    "away": "Celta Vigo",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1775406600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Sevilla",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1775398500,
-                    "tournament": "LL",
-                    "home": "Valencia",
-                    "away": "Celta Vigo",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1774192500,
-                    "tournament": "LL",
-                    "home": "Celta Vigo",
-                    "away": "Alaves",
-                    "score": "3-4"
-                  },
-                  {
-                    "timestamp": 1774114200,
-                    "tournament": "LL",
-                    "home": "Levante",
-                    "away": "Oviedo",
-                    "score": "4-2"
-                  },
-                  {
-                    "timestamp": 1773942300,
-                    "tournament": "EL",
-                    "home": "Lyon",
-                    "away": "Celta Vigo",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1773595800,
-                    "tournament": "LL",
-                    "home": "Betis",
-                    "away": "Celta Vigo",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773509400,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Valencia",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1773345600,
-                    "tournament": "EL",
-                    "home": "Celta Vigo",
-                    "away": "Lyon",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773086400,
-                    "tournament": "LL",
-                    "home": "Espanyol",
-                    "away": "Oviedo",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1772827200,
-                    "tournament": "LL",
-                    "home": "Celta Vigo",
-                    "away": "Real Madrid",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772647200,
-                    "tournament": "LL",
-                    "home": "Rayo Vallecano",
-                    "away": "Oviedo",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1772395200,
-                    "tournament": "LL",
-                    "home": "Girona",
-                    "away": "Celta Vigo",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772308800,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Atl. Madrid",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772136000,
-                    "tournament": "EL",
-                    "home": "Celta Vigo",
-                    "away": "PAOK",
-                    "score": "1-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 1.73,
-                  "draw": 3.58,
-                  "away": 5.27
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.16,
-                  "X2": 2.1
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.36,
-                    "under": 2.99
-                  },
-                  "2.5": {
-                    "over": 2.2,
-                    "under": 1.67
-                  },
-                  "3.5": {
-                    "over": 3.95,
-                    "under": 1.23
-                  }
-                },
-                "btts": {
-                  "yes": 2.08,
-                  "no": 1.71
-                },
-                "draw_no_bet": {
-                  "home": 1.25,
-                  "away": 3.5
-                }
-              }
-            },
-            {
               "event_id": "Gt6nv08e",
               "flashscore_id": "Gt6nv08e",
               "flashscore_sport_id": 1,
@@ -415,16 +240,16 @@
               "pari": "Plus de 2.5 buts",
               "cote_retenue": 1.89,
               "cotes": {
-                "domicile": 2.12,
-                "nul": 3.6,
-                "exterieur": 3.76
+                "domicile": 2.09,
+                "nul": 3.47,
+                "exterieur": 3.78
               },
               "pick_category": "ou",
               "analyse": "Athletic Bilbao montre une forme très instable avec 2 défaites sur les 4 derniers matchs (0-1 vs Barcelone, 2-0 vs Getafe) malgré quelques victoires (2-1 vs Betis, 2-1 vs Elche). Villarreal affiche une meilleure régularité offensive avec 3 victoires en 5 matchs (3-1 vs Real Sociedad, 2-1 vs Elche et Valencia) bien que récemment limité par Girona (0-1). En défense, Bilbao encaisse beaucoup (6 buts en 5 matchs) tandis que Villarreal reste solide. Le match oppose une équipe locale fragile à l'extérieur à une formation jaune capable de créer des occasions. La cote du draw_no_bet à 1.46 pour Bilbao valorise le risque, mais Villarreal présente un profil offensif plus constant. L'over 2.5 à 1.89 reste pertinent car Villarreal marque régulièrement et Bilbao en encaisse, avec une tendance aux matchs à rebondissements.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -601,16 +426,16 @@
               "pari": "Plus de 2.5 buts",
               "cote_retenue": 1.98,
               "cotes": {
-                "domicile": 3.29,
-                "nul": 3.33,
-                "exterieur": 2.43
+                "domicile": 3.54,
+                "nul": 3.49,
+                "exterieur": 2.17
               },
               "pick_category": "ou",
               "analyse": "Inter arrive en grande forme avec un succès 5-2 contre la Roma récemment, tandis que Como monte en puissance avec des victoires probantes (5-0 contre Pise, 2-1 contre la Roma). Le H2H récent montre un 0-0 en Coupe début mars, un contexte qui suggère un équilibre tactique. Cependant, Inter reste supérieure techniquement et dominante à domicile, avec 5 buts marqués lors de son dernier match. Como affiche une défense fragile (encaissé 5 buts contre Fiorentina) mais offensif (5 buts contre Pise). Ce profil d'Inter offensive et Como poreuse pointe vers un match ouvert avec plusieurs buts attendus, plus de 2.5 étant le scénario le plus probable.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -768,183 +593,7 @@
           "country": "Allemagne",
           "panel_title": "🇩🇪 Bundesliga — Allemagne",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "jckRSoU8",
-              "flashscore_id": "jckRSoU8",
-              "flashscore_sport_id": 1,
-              "home_team_id": "EuakNmc1",
-              "away_team_id": "fiEQZ7C7",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-12T17:30:00.000Z",
-              "time_display": "Dim. 17h30 UTC",
-              "home": "Mainz",
-              "away": "Freiburg",
-              "match": "Mainz vs Freiburg",
-              "prono": "win-home",
-              "pari": "Plus de 2.5 buts",
-              "cote_retenue": 1.81,
-              "cotes": {
-                "domicile": 2.32,
-                "nul": 3.1,
-                "exterieur": 3.61
-              },
-              "pick_category": "ou",
-              "analyse": "Mainz et Freiburg affichent tous deux une belle dynamique offensive en cette fin de saison. Mainz a remporté 3 de ses 4 derniers matches de Bundesliga (2-1 vs Francfort, 2-0 vs Werder, 1-2 vs Hoffenheim), tandis que Freiburg montre une alternance : victoire 2-3 vs Bayern, défaite 0-1 vs Union Berlin, mais surtout des performances spectaculaires en coupe (5-1 vs Genk, 3-0 vs Celta). Le 1er mars, Francfort a battu Freiburg 2-0 en Bundesliga, révélant une certaine fragilité défensive chez les visiteurs. Ces deux équipes combinent attaque dynamique et défense perméable : sur les 15 derniers matchs, on observe plusieurs confrontations à plus de 2 buts. Le match devrait offrir des occasions de part et d'autre, avec un potentiel d'au moins 3 buts.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "UECL",
-                    "home": "Mainz",
-                    "away": "Strasbourg",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "EL",
-                    "home": "Freiburg",
-                    "away": "Celta Vigo",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1775309400,
-                    "tournament": "BUN",
-                    "home": "Hoffenheim",
-                    "away": "Mainz",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775309400,
-                    "tournament": "BUN",
-                    "home": "Freiburg",
-                    "away": "Bayern Munich",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1774197000,
-                    "tournament": "BUN",
-                    "home": "St. Pauli",
-                    "away": "Freiburg",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1774189800,
-                    "tournament": "BUN",
-                    "home": "Mainz",
-                    "away": "Eintracht Frankfurt",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1773942300,
-                    "tournament": "UECL",
-                    "home": "Mainz",
-                    "away": "Sigma Olomouc",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773942300,
-                    "tournament": "EL",
-                    "home": "Freiburg",
-                    "away": "Genk",
-                    "score": "5-1"
-                  },
-                  {
-                    "timestamp": 1773592200,
-                    "tournament": "BUN",
-                    "home": "Freiburg",
-                    "away": "Union Berlin",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1773585000,
-                    "tournament": "BUN",
-                    "home": "Werder Bremen",
-                    "away": "Mainz",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1773345600,
-                    "tournament": "UECL",
-                    "home": "Sigma Olomouc",
-                    "away": "Mainz",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1773345600,
-                    "tournament": "EL",
-                    "home": "Genk",
-                    "away": "Freiburg",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1772893800,
-                    "tournament": "BUN",
-                    "home": "Mainz",
-                    "away": "Stuttgart",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1772893800,
-                    "tournament": "BUN",
-                    "home": "Freiburg",
-                    "away": "Bayer Leverkusen",
-                    "score": "3-3"
-                  },
-                  {
-                    "timestamp": 1772382600,
-                    "tournament": "BUN",
-                    "home": "Eintracht Frankfurt",
-                    "away": "Freiburg",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.26,
-                  "draw": 3.23,
-                  "away": 3.38
-                },
-                "double_chance": {
-                  "12": 1.35,
-                  "1X": 1.33,
-                  "X2": 1.62
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.25,
-                    "under": 3.85
-                  },
-                  "2.5": {
-                    "over": 1.81,
-                    "under": 1.98
-                  },
-                  "3.5": {
-                    "over": 3,
-                    "under": 1.36
-                  }
-                },
-                "btts": {
-                  "yes": 1.62,
-                  "no": 2.19
-                },
-                "draw_no_bet": {
-                  "home": 1.57,
-                  "away": 2.25
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "ucl",
@@ -973,16 +622,16 @@
               "pari": "Victoire ou Nul Espérance Tunis (Draw No Bet)",
               "cote_retenue": 1.44,
               "cotes": {
-                "domicile": 1.77,
-                "nul": 3.18,
-                "exterieur": 5.17
+                "domicile": 1.94,
+                "nul": 3.05,
+                "exterieur": 4.41
               },
               "pick_category": "dnb",
               "analyse": "Espérance Tunis affiche une forme exceptionnelle en Champions League avec trois victoires consécutives (1-0 vs Al Ahly, 3-2 away vs Al Ahly, 1-0 vs Al Ahly), dominant largement en Ligue 1 (trois victoires 5-0, 3-0, 1-0 récemment). Mamelodi Sundowns alterne entre domination domestique (victoires 4-1, 3-1, 3-0, 2-1) et faillesse continentale (défaites 0-1, 0-2 en CL). En zone de compétition équilibrée, Espérance joue à domicile avec un avantage psychologique majeur : les Tunisiens contrôlent mieux le jeu et encaissent peu en phase groupale. Le contexte tactique favorise un match fermé où Espérance, supérieure techniquement, cherchera à protéger son avantage terrain. BTTS semble peu probable au vu de la défense solide des Tunisiens (seulement 2 buts encaissés en 5 matchs récents) et des difficultés offensives des Sundowns en C1.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -11869,102 +11518,6 @@
     "h2KuSENE"
   ],
   "history": [
-    {
-      "event_id": "AotvDqq1",
-      "flashscore_id": "AotvDqq1",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T14:00:00.000Z",
-      "home": "St. Ives",
-      "away": "Bromsgrove",
-      "match": "St. Ives vs Bromsgrove",
-      "prono": "win-home",
-      "pari": "Victoire St. Ives",
-      "cote_retenue": 2.27,
-      "cotes": {
-        "domicile": 2.27,
-        "exterieur": 2.54
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.433Z"
-    },
-    {
-      "event_id": "GjRFMdGc",
-      "flashscore_id": "GjRFMdGc",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T14:00:00.000Z",
-      "home": "Stourbridge",
-      "away": "Bishop's Stortford",
-      "match": "Stourbridge vs Bishop's Stortford",
-      "prono": "win-home",
-      "pari": "Victoire Stourbridge",
-      "cote_retenue": 1.64,
-      "cotes": {
-        "domicile": 1.64,
-        "exterieur": 4.38
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.433Z"
-    },
-    {
-      "event_id": "EZ0MKOaN",
-      "flashscore_id": "EZ0MKOaN",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T14:00:00.000Z",
-      "home": "Bracknell",
-      "away": "Tiverton",
-      "match": "Bracknell vs Tiverton",
-      "prono": "win-home",
-      "pari": "Victoire Bracknell",
-      "cote_retenue": 1.31,
-      "cotes": {
-        "domicile": 1.31,
-        "exterieur": 6.85
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "8-0",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.433Z"
-    },
-    {
-      "event_id": "b7xgF2Np",
-      "flashscore_id": "b7xgF2Np",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T14:00:00.000Z",
-      "home": "Chertsey",
-      "away": "Poole",
-      "match": "Chertsey vs Poole",
-      "prono": "win-away",
-      "pari": "Victoire Poole",
-      "cote_retenue": 2.39,
-      "cotes": {
-        "domicile": 2.46,
-        "exterieur": 2.39
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "0-1",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.434Z"
-    },
     {
       "event_id": "QDUvw6Fi",
       "flashscore_id": "QDUvw6Fi",
@@ -24560,6 +24113,362 @@
       "cote_retenue": 1.8,
       "confiance": 3,
       "archived_at": "2026-04-12T19:34:06.325Z"
+    },
+    {
+      "event_id": "6VYvpjdE",
+      "flashscore_id": "6VYvpjdE",
+      "flashscore_sport_id": 1,
+      "home_team_id": "8pvUZFhf",
+      "away_team_id": "SzYzw34K",
+      "tournament_id": "vcm2mhgk",
+      "tournament_url": "/football/spain/laliga/",
+      "sport_key": "flashscore_football_liga",
+      "commence_time": "2026-04-12T16:30:00.000Z",
+      "time_display": "Dim. 16h30 UTC",
+      "home": "Celta Vigo",
+      "away": "Oviedo",
+      "match": "Celta Vigo vs Oviedo",
+      "prono": "win-home",
+      "pari": "Victoire Celta Vigo",
+      "cote_retenue": 1.8,
+      "cotes": {
+        "domicile": 1.8,
+        "nul": 3.56,
+        "exterieur": 5.12
+      },
+      "pick_category": "1x2",
+      "analyse": "Celta Vigo montre une forme offensive solide avec 5 victoires en 8 matchs récents (Valencia 2-3, Lyon 0-2, Girona 1-2, PAOK 1-0), même s'ils ont concédé 4 buts face à Alaves. Oviedo affiche une défense fragile avec 3 revers en 5 rencontres (Levante 4-2, Rayo 3-0, Atl. Madrid 0-1), malgré deux victoires de prestige (Sevilla 1-0, Valencia 1-0). Sur le terrain, Celta est nettement supérieur en qualité offensive et exploite bien ses occasions. Oviedo reste dangereux à la contre mais reste irrégulier. L'écart de niveau plaide pour une victoire de Celta, d'autant plus qu'ils jouent à domicile avec 1.73 à la cote. Le profil tactique suggère que Celta va presser haut et scorer, tandis qu'Oviedo cherchera à bloquer bas, limitant les occasions mutuelles.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "0-3",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775761200,
+            "tournament": "EL",
+            "home": "Freiburg",
+            "away": "Celta Vigo",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1775406600,
+            "tournament": "LL",
+            "home": "Oviedo",
+            "away": "Sevilla",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1775398500,
+            "tournament": "LL",
+            "home": "Valencia",
+            "away": "Celta Vigo",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1774192500,
+            "tournament": "LL",
+            "home": "Celta Vigo",
+            "away": "Alaves",
+            "score": "3-4"
+          },
+          {
+            "timestamp": 1774114200,
+            "tournament": "LL",
+            "home": "Levante",
+            "away": "Oviedo",
+            "score": "4-2"
+          },
+          {
+            "timestamp": 1773942300,
+            "tournament": "EL",
+            "home": "Lyon",
+            "away": "Celta Vigo",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1773595800,
+            "tournament": "LL",
+            "home": "Betis",
+            "away": "Celta Vigo",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773509400,
+            "tournament": "LL",
+            "home": "Oviedo",
+            "away": "Valencia",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1773345600,
+            "tournament": "EL",
+            "home": "Celta Vigo",
+            "away": "Lyon",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773086400,
+            "tournament": "LL",
+            "home": "Espanyol",
+            "away": "Oviedo",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1772827200,
+            "tournament": "LL",
+            "home": "Celta Vigo",
+            "away": "Real Madrid",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1772647200,
+            "tournament": "LL",
+            "home": "Rayo Vallecano",
+            "away": "Oviedo",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1772395200,
+            "tournament": "LL",
+            "home": "Girona",
+            "away": "Celta Vigo",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1772308800,
+            "tournament": "LL",
+            "home": "Oviedo",
+            "away": "Atl. Madrid",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772136000,
+            "tournament": "EL",
+            "home": "Celta Vigo",
+            "away": "PAOK",
+            "score": "1-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 1.73,
+          "draw": 3.58,
+          "away": 5.27
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.16,
+          "X2": 2.1
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.36,
+            "under": 2.99
+          },
+          "2.5": {
+            "over": 2.2,
+            "under": 1.67
+          },
+          "3.5": {
+            "over": 3.95,
+            "under": 1.23
+          }
+        },
+        "btts": {
+          "yes": 2.08,
+          "no": 1.71
+        },
+        "draw_no_bet": {
+          "home": 1.25,
+          "away": 3.5
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "LaLiga",
+      "archived_at": "2026-04-12T19:56:25.509Z"
+    },
+    {
+      "event_id": "jckRSoU8",
+      "flashscore_id": "jckRSoU8",
+      "flashscore_sport_id": 1,
+      "home_team_id": "EuakNmc1",
+      "away_team_id": "fiEQZ7C7",
+      "tournament_id": "8uyeqfid",
+      "tournament_url": "/football/germany/bundesliga/",
+      "sport_key": "flashscore_football_bundes",
+      "commence_time": "2026-04-12T17:30:00.000Z",
+      "time_display": "Dim. 17h30 UTC",
+      "home": "Mainz",
+      "away": "Freiburg",
+      "match": "Mainz vs Freiburg",
+      "prono": "win-home",
+      "pari": "Plus de 2.5 buts",
+      "cote_retenue": 1.81,
+      "cotes": {
+        "domicile": 2.32,
+        "nul": 3.1,
+        "exterieur": 3.61
+      },
+      "pick_category": "ou",
+      "analyse": "Mainz et Freiburg affichent tous deux une belle dynamique offensive en cette fin de saison. Mainz a remporté 3 de ses 4 derniers matches de Bundesliga (2-1 vs Francfort, 2-0 vs Werder, 1-2 vs Hoffenheim), tandis que Freiburg montre une alternance : victoire 2-3 vs Bayern, défaite 0-1 vs Union Berlin, mais surtout des performances spectaculaires en coupe (5-1 vs Genk, 3-0 vs Celta). Le 1er mars, Francfort a battu Freiburg 2-0 en Bundesliga, révélant une certaine fragilité défensive chez les visiteurs. Ces deux équipes combinent attaque dynamique et défense perméable : sur les 15 derniers matchs, on observe plusieurs confrontations à plus de 2 buts. Le match devrait offrir des occasions de part et d'autre, avec un potentiel d'au moins 3 buts.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "0-1",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775761200,
+            "tournament": "UECL",
+            "home": "Mainz",
+            "away": "Strasbourg",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775761200,
+            "tournament": "EL",
+            "home": "Freiburg",
+            "away": "Celta Vigo",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1775309400,
+            "tournament": "BUN",
+            "home": "Hoffenheim",
+            "away": "Mainz",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775309400,
+            "tournament": "BUN",
+            "home": "Freiburg",
+            "away": "Bayern Munich",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1774197000,
+            "tournament": "BUN",
+            "home": "St. Pauli",
+            "away": "Freiburg",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1774189800,
+            "tournament": "BUN",
+            "home": "Mainz",
+            "away": "Eintracht Frankfurt",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1773942300,
+            "tournament": "UECL",
+            "home": "Mainz",
+            "away": "Sigma Olomouc",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773942300,
+            "tournament": "EL",
+            "home": "Freiburg",
+            "away": "Genk",
+            "score": "5-1"
+          },
+          {
+            "timestamp": 1773592200,
+            "tournament": "BUN",
+            "home": "Freiburg",
+            "away": "Union Berlin",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1773585000,
+            "tournament": "BUN",
+            "home": "Werder Bremen",
+            "away": "Mainz",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1773345600,
+            "tournament": "UECL",
+            "home": "Sigma Olomouc",
+            "away": "Mainz",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1773345600,
+            "tournament": "EL",
+            "home": "Genk",
+            "away": "Freiburg",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1772893800,
+            "tournament": "BUN",
+            "home": "Mainz",
+            "away": "Stuttgart",
+            "score": "2-2"
+          },
+          {
+            "timestamp": 1772893800,
+            "tournament": "BUN",
+            "home": "Freiburg",
+            "away": "Bayer Leverkusen",
+            "score": "3-3"
+          },
+          {
+            "timestamp": 1772382600,
+            "tournament": "BUN",
+            "home": "Eintracht Frankfurt",
+            "away": "Freiburg",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.26,
+          "draw": 3.23,
+          "away": 3.38
+        },
+        "double_chance": {
+          "12": 1.35,
+          "1X": 1.33,
+          "X2": 1.62
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.25,
+            "under": 3.85
+          },
+          "2.5": {
+            "over": 1.81,
+            "under": 1.98
+          },
+          "3.5": {
+            "over": 3,
+            "under": 1.36
+          }
+        },
+        "btts": {
+          "yes": 1.62,
+          "no": 2.19
+        },
+        "draw_no_bet": {
+          "home": 1.57,
+          "away": 2.25
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Bundesliga",
+      "archived_at": "2026-04-12T19:56:25.509Z"
     }
   ],
   "combos": [
