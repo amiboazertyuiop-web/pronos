@@ -2914,7 +2914,7 @@ function renderLeaguePanel(panel, league, outcomeCount, badge, sportKey) {
     const date = new Date(day + 'T00:00:00Z');
     const title = jours[date.getUTCDay()];
     const dateStr = date.getUTCDate() + ' ' + mois[date.getUTCMonth()] + ' ' + date.getUTCFullYear();
-    const pronos = groups.get(day);
+    const pronos = groups.get(day).sort((a, b) => new Date(a.commence_time) - new Date(b.commence_time));
     return '<div class="journee-block">' +
       '<div class="jblock-header">' +
         '<span class="jblock-badge ' + badge + '">' + pronos.length + '</span>' +
@@ -3008,6 +3008,7 @@ function renderMatchCard(p, sportKey, outcomeCount) {
   return '<div class="mc' + featuredCls + statusCls + '" data-event-id="' + esc(p.event_id) + '">' +
     '<div class="mc-tag-banner">' +
       '<span class="tag-chip ' + classify.tag + '" title="' + esc(classify.reason) + '">' + classify.label + '</span>' +
+      '<span style="font-size:0.6rem;opacity:0.35;margin-left:auto;">' + esc(p.event_id || '') + '</span>' +
     '</div>' +
     '<div class="mc-top">' +
       '<div class="mc-team home"><div class="mc-name">' + esc(p.home) + '</div></div>' +

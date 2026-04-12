@@ -86,11 +86,13 @@ async function fsFetch(pathname) {
 // Utility helpers
 // ---------------------------------------------------------------------------
 function formatTimeFr(ts) {
+  // Display in Europe/Paris timezone
   const d = new Date(ts * 1000);
+  const paris = new Date(d.toLocaleString('en-US', { timeZone: 'Europe/Paris' }));
   const days = ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'];
-  const hh = d.getUTCHours().toString().padStart(2, '0');
-  const mm = d.getUTCMinutes().toString().padStart(2, '0');
-  return `${days[d.getUTCDay()]} ${hh}h${mm} UTC`;
+  const hh = paris.getHours().toString().padStart(2, '0');
+  const mm = paris.getMinutes().toString().padStart(2, '0');
+  return `${days[paris.getDay()]} ${hh}h${mm}`;
 }
 
 function confidenceFromCote(cote) {
