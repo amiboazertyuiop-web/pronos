@@ -37,3 +37,9 @@ jobs:
             git commit -m "chore(pronos): daily refresh"
             git push
           fi
+      - name: Send daily recap email
+        if: ${{ success() }}
+        continue-on-error: true
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: node scripts/send-daily-email.js
