@@ -1365,6 +1365,45 @@ nav{
   body { background: white; color: black; }
   .perf-chart-card, .sport-stat-card, .ss-item { background: #f5f5f5; border-color: #ddd; }
 }
+/* Montante */
+.mt-layout { max-width: 780px; margin: 0 auto; padding: 16px; }
+.mt-header { margin-bottom: 20px; }
+.mt-title { font-size: 28px; font-weight: 800; color: var(--gold); }
+.mt-sub { font-size: 13px; color: #b8b8cc; padding-top: 4px; }
+.mt-card { background: #1d1d2e; border: 1px solid #33334d; border-radius: 14px; padding: 20px; margin-bottom: 14px; }
+.mt-card h3 { margin: 0 0 12px 0; font-size: 16px; color: #fff; }
+.mt-form-row { display: flex; gap: 12px; margin-bottom: 12px; }
+.mt-form-row label { flex: 1; display: flex; flex-direction: column; font-size: 12px; color: #b8b8cc; }
+.mt-form-row input { padding: 10px; border-radius: 8px; border: 1px solid #33334d; background: #141423; color: #fff; font-size: 16px; margin-top: 4px; }
+.mt-btn { padding: 12px 18px; border: 0; border-radius: 10px; font-weight: 700; cursor: pointer; font-size: 14px; }
+.mt-btn-primary { background: var(--gold); color: #1a1a2e; }
+.mt-btn-win { background: #1db954; color: #fff; }
+.mt-btn-lost { background: #e74c3c; color: #fff; }
+.mt-btn-skip { background: #3a3a55; color: #fff; }
+.mt-btn-danger { background: transparent; color: #e74c3c; border: 1px solid #e74c3c; }
+.mt-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.mt-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+.mt-kpi { background: #141423; border: 1px solid #33334d; border-radius: 10px; padding: 12px; text-align: center; }
+.mt-kpi-label { font-size: 11px; color: #8a8aa0; text-transform: uppercase; letter-spacing: 0.05em; }
+.mt-kpi-val { font-size: 20px; font-weight: 800; color: #fff; padding-top: 4px; }
+.mt-progress { height: 8px; background: #2a2a40; border-radius: 4px; overflow: hidden; margin-bottom: 14px; }
+.mt-progress-bar { height: 100%; background: linear-gradient(90deg, var(--gold), #ffe489); transition: width 0.3s; }
+.mt-pick-match { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.mt-pick-meta { font-size: 12px; color: #8a8aa0; margin-bottom: 10px; }
+.mt-pick-bet { background: #1a1a2e; color: var(--gold); padding: 8px 14px; border-radius: 8px; font-weight: 700; display: inline-block; margin-bottom: 10px; }
+.mt-pick-gain { font-size: 13px; color: #b8b8cc; }
+.mt-pick-gain b { color: #1db954; }
+.mt-steps { margin-top: 16px; }
+.mt-step-row { display: flex; justify-content: space-between; padding: 10px 14px; border-radius: 8px; margin-bottom: 6px; background: #141423; font-size: 13px; }
+.mt-step-won { border-left: 3px solid #1db954; }
+.mt-step-lost { border-left: 3px solid #e74c3c; }
+.mt-step-pending { border-left: 3px solid #ffa726; }
+.mt-final-card { background: linear-gradient(135deg, #1db954 0%, #0d6e34 100%); text-align: center; padding: 30px; border-radius: 14px; margin-bottom: 14px; }
+.mt-final-card.lost { background: linear-gradient(135deg, #e74c3c 0%, #8a2a21 100%); }
+.mt-final-emoji { font-size: 48px; }
+.mt-final-title { font-size: 22px; font-weight: 800; color: #fff; padding-top: 6px; }
+.mt-final-sub { font-size: 14px; color: #fff; opacity: 0.9; padding-top: 4px; }
+@media (max-width: 600px) { .mt-kpis { grid-template-columns: repeat(2, 1fr); } .mt-form-row { flex-direction: column; } }
 </style>
 </head>
 <body>
@@ -1398,6 +1437,7 @@ nav{
   <div class="nav-tab" id="tab-coupdecoeur" onclick="showPage('coupdecoeur')"><span class="tab-icon">🔥</span>Coup de cœur</div>
   <div class="nav-tab" id="tab-sports" onclick="showPage('sports')"><span class="tab-icon">🎯</span>Sports</div>
   <div class="nav-tab" id="tab-bankroll" onclick="showPage('bankroll')"><span class="tab-icon">💰</span>Bankroll</div>
+  <div class="nav-tab" id="tab-montante" onclick="showPage('montante')"><span class="tab-icon">📈</span>Montante</div>
   <div class="nav-tab" id="tab-fun" onclick="showPage('fun')"><span class="tab-icon">🎰</span>Fun</div>
   <div class="nav-tab" id="tab-perf" onclick="showPage('perf')"><span class="tab-icon">📊</span>Perfs</div>
   <a class="nav-tab" href="https://github.com/amiboazertyuiop-web/pronos/actions/workflows/hourly-cote-refresh.yml" target="_blank" rel="noopener" title="Ouvre GitHub Actions, clique 'Run workflow' pour rafraîchir immédiatement"><span class="tab-icon">🔄</span>Rafraîchir</a>
@@ -1696,6 +1736,17 @@ nav{
 </div>
 
 <!-- ===================== MODAL MISE RAPIDE ===================== -->
+
+<!-- ===================== PAGE : MONTANTE ===================== -->
+<div class="page" id="page-montante">
+  <div class="mt-layout">
+    <div class="mt-header">
+      <div class="mt-title">📈 Montante</div>
+      <div class="mt-sub">Enchaîne des paris de confiance jusqu'à atteindre ton objectif. Une défaite = reset.</div>
+    </div>
+    <div id="mt-body"></div>
+  </div>
+</div>
 
 <!-- ===================== PAGE : PERFORMANCE ===================== -->
 <div class="page" id="page-perf">
@@ -2128,6 +2179,7 @@ function showPage(id){
   if(id==='today') renderToday();
   if(id==='coupdecoeur') renderCoupDeCoeur();
   if(id==='fun') renderFunPage();
+  if(id==='montante') renderMontante();
   window.scrollTo(0, 0);
 }
 
@@ -3984,6 +4036,239 @@ function exportJSON() {
 }
 
 function printPerf() { window.print(); }
+
+// ===================== MONTANTE =====================
+const MT_KEY = 'lcp-montante';
+
+function loadMontante() {
+  try { return JSON.parse(localStorage.getItem(MT_KEY) || 'null'); }
+  catch { return null; }
+}
+function saveMontante(m) {
+  if (!m) localStorage.removeItem(MT_KEY);
+  else localStorage.setItem(MT_KEY, JSON.stringify(m));
+}
+
+function montanteCandidates(rejectedIds) {
+  if (!pronosData) return [];
+  const now = Date.now();
+  const out = [];
+  for (const sport of Object.values(pronosData.sports || {})) {
+    for (const league of sport.leagues || []) {
+      for (const p of league.pronos || []) {
+        if (p.status && p.status !== 'pending') continue;
+        if (!p.commence_time) continue;
+        const t = new Date(p.commence_time).getTime();
+        if (isNaN(t) || t <= now) continue;
+        const conf = parseInt(p.confiance || 0);
+        if (conf < 3) continue;
+        if (rejectedIds && rejectedIds.includes(p.event_id)) continue;
+        if (!p.cote_retenue || p.cote_retenue < 1.2) continue;
+        out.push(p);
+      }
+    }
+  }
+  return out;
+}
+
+function montanteTargetCote(current, target, remaining) {
+  if (remaining <= 0) return 1.5;
+  return Math.pow(target / current, 1 / Math.max(1, remaining));
+}
+
+function montanteRemainingSteps(current, target) {
+  if (current >= target) return 0;
+  return Math.max(1, Math.round(Math.log(target / current) / Math.log(1.5)));
+}
+
+function montantePickNext(m) {
+  const rejected = m.rejected_for_step || [];
+  const pool = montanteCandidates(rejected);
+  if (!pool.length) return null;
+  const remaining = montanteRemainingSteps(m.current_capital, m.target);
+  const tgt = montanteTargetCote(m.current_capital, m.target, remaining);
+  const scored = pool.map(p => ({
+    p,
+    score: Math.abs(p.cote_retenue - tgt) - (p.confiance - 3) * 0.1 + (new Date(p.commence_time).getTime() - Date.now()) / (1000 * 3600 * 24) * 0.05,
+  }));
+  scored.sort((a, b) => a.score - b.score);
+  return scored[0].p;
+}
+
+function startMontante() {
+  const start = parseFloat(document.getElementById('mt-start').value);
+  const target = parseFloat(document.getElementById('mt-target').value);
+  if (!(start > 0) || !(target > start)) { toast('Entrées invalides : arrivée doit être > départ', 'err'); return; }
+  const m = {
+    start, target,
+    current_capital: start,
+    step: 1,
+    steps: [],
+    status: 'running',
+    rejected_for_step: [],
+    started_at: new Date().toISOString(),
+  };
+  saveMontante(m);
+  renderMontante();
+}
+
+function montanteActionWin() {
+  const m = loadMontante(); if (!m || m.status !== 'running') return;
+  const current = m.steps[m.steps.length - 1];
+  if (!current) return;
+  current.result = 'won';
+  m.current_capital = Math.round(m.current_capital * current.cote * 100) / 100;
+  m.step++;
+  m.rejected_for_step = [];
+  if (m.current_capital >= m.target) m.status = 'won';
+  saveMontante(m);
+  renderMontante();
+}
+
+function montanteActionLost() {
+  const m = loadMontante(); if (!m || m.status !== 'running') return;
+  const current = m.steps[m.steps.length - 1];
+  if (!current) return;
+  current.result = 'lost';
+  m.status = 'lost';
+  saveMontante(m);
+  renderMontante();
+}
+
+function montanteActionSkip() {
+  const m = loadMontante(); if (!m || m.status !== 'running') return;
+  const current = m.steps[m.steps.length - 1];
+  if (current && current.result === 'pending') {
+    m.rejected_for_step = m.rejected_for_step || [];
+    m.rejected_for_step.push(current.event_id);
+    m.steps.pop();
+  }
+  saveMontante(m);
+  renderMontante();
+}
+
+function montanteAbandon() {
+  if (!confirm('Abandonner la montante en cours ?')) return;
+  saveMontante(null);
+  renderMontante();
+}
+
+function renderMontante() {
+  const body = document.getElementById('mt-body');
+  if (!body) return;
+  const m = loadMontante();
+
+  if (!m) {
+    body.innerHTML = `
+      <div class="mt-card">
+        <h3>Nouvelle montante</h3>
+        <div class="mt-form-row">
+          <label>Somme de départ (€)<input type="number" id="mt-start" min="1" step="1" value="10"></label>
+          <label>Somme d'arrivée (€)<input type="number" id="mt-target" min="2" step="1" value="100"></label>
+        </div>
+        <div class="mt-actions">
+          <button class="mt-btn mt-btn-primary" onclick="startMontante()">🚀 Lancer la montante</button>
+        </div>
+      </div>
+      <div class="mt-card" style="font-size:13px;color:#b8b8cc;">
+        <b style="color:#fff;">Comment ça marche ?</b><br>
+        Le système sélectionne à chaque étape un pari ⭐3+ du pool du jour dont la cote permet d'atteindre l'objectif en ~${Math.round(Math.log(10)/Math.log(1.5))} étapes. Tu valides (gagné) ou tu tombes (perdu, reset). Tu peux demander un autre pick si le match ne te plaît pas.
+      </div>`;
+    return;
+  }
+
+  const progress = Math.min(100, ((m.current_capital - m.start) / (m.target - m.start)) * 100);
+
+  if (m.status !== 'running') {
+    const won = m.status === 'won';
+    body.innerHTML = `
+      <div class="mt-final-card ${won ? '' : 'lost'}">
+        <div class="mt-final-emoji">${won ? '🏆' : '💥'}</div>
+        <div class="mt-final-title">${won ? 'Objectif atteint !' : 'Montante perdue'}</div>
+        <div class="mt-final-sub">${won ? `Tu es passé de ${m.start}€ à ${m.current_capital.toFixed(2)}€ en ${m.steps.length} étape(s)` : `Arrêt à l'étape ${m.steps.length}, capital ${m.current_capital.toFixed(2)}€`}</div>
+      </div>
+      <div class="mt-card">
+        <h3>Récap</h3>
+        ${renderMtSteps(m)}
+      </div>
+      <div class="mt-actions">
+        <button class="mt-btn mt-btn-primary" onclick="saveMontante(null);renderMontante()">🔁 Nouvelle montante</button>
+      </div>`;
+    return;
+  }
+
+  // Running — show current proposed pick
+  let currentStep = m.steps[m.steps.length - 1];
+  if (!currentStep || currentStep.result !== 'pending') {
+    const pick = montantePickNext(m);
+    if (!pick) {
+      body.innerHTML = `
+        <div class="mt-card">
+          <h3>⚠️ Aucun pari disponible</h3>
+          <p style="font-size:13px;color:#b8b8cc;">Aucun pronostic ⭐3+ à venir ne correspond. Réessaie plus tard ou abandonne la montante.</p>
+          <div class="mt-actions">
+            <button class="mt-btn mt-btn-danger" onclick="montanteAbandon()">🛑 Abandonner</button>
+          </div>
+        </div>`;
+      return;
+    }
+    currentStep = {
+      event_id: pick.event_id,
+      match: pick.match,
+      pari: pick.pari,
+      cote: pick.cote_retenue,
+      mise: m.current_capital,
+      confiance: pick.confiance,
+      commence_time: pick.commence_time,
+      time_display: pick.time_display,
+      sport_key: pick.sport_key,
+      result: 'pending',
+    };
+    m.steps.push(currentStep);
+    saveMontante(m);
+  }
+
+  const remaining = montanteRemainingSteps(m.current_capital, m.target);
+  const targetCote = montanteTargetCote(m.current_capital, m.target, remaining);
+  const potentialGain = currentStep.mise * currentStep.cote;
+  const stars = '⭐'.repeat(currentStep.confiance || 0);
+
+  body.innerHTML = `
+    <div class="mt-kpis">
+      <div class="mt-kpi"><div class="mt-kpi-label">Départ</div><div class="mt-kpi-val">${m.start}€</div></div>
+      <div class="mt-kpi"><div class="mt-kpi-label">Actuel</div><div class="mt-kpi-val" style="color:var(--gold)">${m.current_capital.toFixed(2)}€</div></div>
+      <div class="mt-kpi"><div class="mt-kpi-label">Objectif</div><div class="mt-kpi-val">${m.target}€</div></div>
+      <div class="mt-kpi"><div class="mt-kpi-label">Étape</div><div class="mt-kpi-val">${m.step}</div></div>
+    </div>
+    <div class="mt-progress"><div class="mt-progress-bar" style="width:${progress}%"></div></div>
+    <div class="mt-card">
+      <h3>🎯 Pari proposé — étape ${m.step} (cote cible ~${targetCote.toFixed(2)})</h3>
+      <div class="mt-pick-match">${esc(currentStep.match)}</div>
+      <div class="mt-pick-meta">${esc(currentStep.time_display || '')} · ${stars} confiance</div>
+      <div class="mt-pick-bet">${esc(currentStep.pari)} @ ${currentStep.cote.toFixed(2)}</div>
+      <div class="mt-pick-gain">Mise <b style="color:var(--gold)">${currentStep.mise.toFixed(2)}€</b> → gain potentiel <b>${potentialGain.toFixed(2)}€</b></div>
+      <div class="mt-actions">
+        <button class="mt-btn mt-btn-win" onclick="montanteActionWin()">✅ Gagné</button>
+        <button class="mt-btn mt-btn-lost" onclick="montanteActionLost()">❌ Perdu</button>
+        <button class="mt-btn mt-btn-skip" onclick="montanteActionSkip()">🔄 Autre pick</button>
+        <button class="mt-btn mt-btn-danger" onclick="montanteAbandon()">🛑 Abandonner</button>
+      </div>
+    </div>
+    ${m.steps.length > 1 ? `<div class="mt-card"><h3>Historique</h3>${renderMtSteps(m, true)}</div>` : ''}`;
+}
+
+function renderMtSteps(m, skipCurrent) {
+  const steps = skipCurrent ? m.steps.slice(0, -1) : m.steps;
+  if (!steps.length) return '<div style="font-size:13px;color:#8a8aa0;">Aucune étape encore.</div>';
+  return steps.map((s, i) => {
+    const cls = s.result === 'won' ? 'mt-step-won' : s.result === 'lost' ? 'mt-step-lost' : 'mt-step-pending';
+    const icon = s.result === 'won' ? '✅' : s.result === 'lost' ? '❌' : '⏳';
+    return `<div class="mt-step-row ${cls}">
+      <span>${icon} Étape ${i + 1} · ${esc(s.match)} — ${esc(s.pari)}</span>
+      <span>${s.mise.toFixed(2)}€ @ ${s.cote.toFixed(2)}</span>
+    </div>`;
+  }).join('');
+}
 
 // ===================== INIT =====================
 document.getElementById('bankroll-init').value=localStorage.getItem('lcp-init')||100;
