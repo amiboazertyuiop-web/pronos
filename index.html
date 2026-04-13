@@ -2542,7 +2542,7 @@ function syncBetButtons(){
       const cls = btn.dataset.cls;
       const lbl = btn.dataset.lbl;
       const conf = parseInt(btn.dataset.conf) || 3;
-      const reco = calculateRecommendedStake(cote, sport);
+      const reco = calculateRecommendedStake(cote, sport, conf);
       btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg> Parier ${reco}€`;
       btn.onclick = () => quickBet(match, pari, cote, sport, cls, lbl, conf);
     }
@@ -2601,28 +2601,39 @@ function saveStopLoss() {
 // que l'encart "Critere de Kelly", avec la probabilite auto-estimee a partir de
 // la cote et du sport. Ainsi la mise recommandee et la mise Kelly sont toujours
 // identiques a l'ouverture de la modale. La fraction Kelly (½ ou ¼) est appliquee.
-function calculateRecommendedStake(cote, sport) {
+function getCurrentBankroll() {
   const init = getInit();
+  const net = bets.reduce((s, b) => {
+    if (b.status === 'won') return s + b.mise * (b.cote - 1);
+    if (b.status === 'lost') return s - b.mise;
+    return s;
+  }, 0);
+  return Math.max(init + net, init * 0.1); // never drop below 10% floor
+}
+
+function calculateRecommendedStake(cote, sport, confidence) {
   const prob = estimateProbability(cote, sport);
   const edge = prob * cote - 1;
   if (edge <= 0) return 1;
+  const conf = Math.max(1, Math.min(5, parseInt(confidence || 3, 10)));
+  const confMult = conf / 4; // ⭐4 = 1.0x, ⭐3 = 0.75x, ⭐2 = 0.5x, ⭐5 = 1.25x
+  const bankroll = getCurrentBankroll();
   const kelly = edge / (cote - 1);
-  const raw = kelly * init * getKellyFrac();
-  return Math.min(10, Math.max(1, Math.round(raw)));
+  const raw = kelly * bankroll * getKellyFrac() * confMult;
+  const cap = Math.max(2, bankroll * 0.05); // 5% of current bankroll, floor 2€
+  return Math.min(cap, Math.max(1, Math.round(raw)));
 }
 
 // Estime la probabilite reelle d'un pari a partir de la cote et du sport.
-// On part de la probabilite implicite du marche (1/cote) a laquelle on ajoute
-// un "edge" qui depend de la volatilite du sport. Plus le sport est fiable,
-// plus l'edge est grand.
+// Bump d'edge réduit et inversé sur tennis (imprévisible : blessures, abandons).
 function estimateProbability(cote, sport) {
   const implicit = 1 / cote;
   const s = (sport || '').toLowerCase();
-  let edge = 0.05;
+  let edge = 0.03;
   if (s.includes('ufc'))         edge = 0.02;
-  else if (s.includes('nba'))    edge = 0.03;
-  else if (s.includes('foot'))   edge = 0.05;
-  else if (s.includes('tennis')) edge = 0.08;
+  else if (s.includes('nba'))    edge = 0.02;
+  else if (s.includes('foot'))   edge = 0.03;
+  else if (s.includes('tennis')) edge = 0.02;
   return Math.min(0.95, implicit + edge);
 }
 
@@ -2682,7 +2693,7 @@ function openMiseModal(match, pari, cote, sport, ptagClass, ptagLabel, conf) {
   document.getElementById('mm-cote').textContent = 'Cote ' + cote;
   document.getElementById('mm-sport').textContent = sport;
   // Mise recommandee pre-remplie (entier uniquement)
-  const reco = calculateRecommendedStake(parseFloat(cote), sport);
+  const reco = calculateRecommendedStake(parseFloat(cote), sport, parseInt(conf) || 3);
   miseContext.reco = reco;
   document.getElementById('mm-mise').value = reco;
   document.getElementById('preset-reco').textContent = reco + ' €';
@@ -3017,7 +3028,7 @@ function renderMatchCard(p, sportKey, outcomeCount) {
   else if (p.status === 'lost') actualLine = '<div class="pc-actual loss">✗ Perdu' + (p.actual_score ? ' — ' + esc(p.actual_score) : '') + '</div>';
 
   const classify = autoClassifyBet(p.cote_retenue, sportLabel);
-  const recoMise = calculateRecommendedStake(p.cote_retenue, sportLabel);
+  const recoMise = calculateRecommendedStake(p.cote_retenue, sportLabel, p.confiance);
   const gainReco = (recoMise * (p.cote_retenue - 1)).toFixed(2);
   const buttonHtml =
     '<div class="quick-bet-row">' +
@@ -3072,7 +3083,7 @@ function renderMatchCard(p, sportKey, outcomeCount) {
 // time, and the tag is auto-classified from cote × sport.
 async function quickBet(match, pari, cote, sport, cls, lbl, conf) {
   if (!currentUserId) { toast('Connecte-toi pour parier', 'err'); return; }
-  const mise = calculateRecommendedStake(cote, sport);
+  const mise = calculateRecommendedStake(cote, sport, conf);
   const classify = autoClassifyBet(cote, sport);
   const today = new Date().toISOString().slice(0, 10);
   const newBet = {
@@ -3181,17 +3192,17 @@ function renderCoupDeCoeurCombos() {
 // Recommended stake for a combo. Combos compound variance, so we use HALF of
 // the user's Kelly fraction and cap the output at 5 € (vs 10 € for singles).
 function calculateRecommendedComboStake(totalCote, strategy) {
-  const init = getInit();
+  const bankroll = getCurrentBankroll();
   const kellyFrac = getKellyFrac();
   const implicit = 1 / totalCote;
-  // Small edge bump: safer combos get slightly more edge credit
-  const edgeBump = strategy === 'safe' ? 0.04 : 0.02;
+  const edgeBump = strategy === 'safe' ? 0.02 : 0.01;
   const prob = Math.min(0.95, implicit + edgeBump);
   const realEdge = prob * totalCote - 1;
   if (realEdge <= 0) return 1;
   const kelly = realEdge / (totalCote - 1);
-  const raw = kelly * init * kellyFrac * 0.5; // half-Kelly for combos
-  return Math.min(5, Math.max(1, Math.round(raw)));
+  const raw = kelly * bankroll * kellyFrac * 0.5; // half-Kelly for combos
+  const cap = Math.max(1, bankroll * 0.03); // 3% of current bankroll for combos
+  return Math.min(cap, Math.max(1, Math.round(raw)));
 }
 
 async function placeClaudeCombo(comboIndex) {
@@ -3289,7 +3300,7 @@ function renderCoupDeCoeur() {
       ? '<div class="cdc-analyse">' + esc(p.analyse) + '</div>'
       : '<div class="cdc-analyse cdc-analyse-empty">Analyse en cours de rédaction par le Coach — elle apparaîtra au prochain run de 7h.</div>';
     const cdcClassify = autoClassifyBet(p.cote_retenue, sportLabel);
-    const cdcRecoMise = calculateRecommendedStake(p.cote_retenue, sportLabel);
+    const cdcRecoMise = calculateRecommendedStake(p.cote_retenue, sportLabel, p.confiance);
     const cdcTagHtml = '<span class="tag-chip ' + cdcClassify.tag + '" title="' + esc(cdcClassify.reason) + '">' + cdcClassify.label + '</span>';
     const isPlaced = pendingMatches.has(p.match);
     const btnHtml = isPlaced
@@ -3428,7 +3439,7 @@ function renderToday() {
     const isPending = pendingMatches.has(p.match);
     const isSelected = comboLegs.some(l => l.match === p.match);
     const cardClass = 'today-card' + (comboMode ? ' combo-mode' : '') + (isSelected ? ' combo-selected' : '');
-    const tcRecoMise = calculateRecommendedStake(p.cote, p.sport);
+    const tcRecoMise = calculateRecommendedStake(p.cote, p.sport, p.conf);
     const btnHtml = comboMode
       ? '' // en mode combiné, on clique la carte entière
       : (isPending
