@@ -3176,8 +3176,7 @@ function renderCoupDeCoeurCombos() {
 // Recommended stake for a combo. Combos compound variance, so we use HALF of
 // the user's Kelly fraction and cap the output at 5 € (vs 10 € for singles).
 function calculateRecommendedComboStake(totalCote, strategy) {
-  // Combinés : 10€ safe, 5€ value
-  return strategy === 'safe' ? 10 : 5;
+  return 5;
 }
 
 async function placeClaudeCombo(comboIndex) {
