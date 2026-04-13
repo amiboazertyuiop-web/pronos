@@ -2601,27 +2601,11 @@ function saveStopLoss() {
 // que l'encart "Critere de Kelly", avec la probabilite auto-estimee a partir de
 // la cote et du sport. Ainsi la mise recommandee et la mise Kelly sont toujours
 // identiques a l'ouverture de la modale. La fraction Kelly (½ ou ¼) est appliquee.
-function getCurrentBankroll() {
-  const init = getInit();
-  const net = bets.reduce((s, b) => {
-    if (b.status === 'won') return s + b.mise * (b.cote - 1);
-    if (b.status === 'lost') return s - b.mise;
-    return s;
-  }, 0);
-  return Math.max(init + net, init * 0.1); // never drop below 10% floor
-}
-
 function calculateRecommendedStake(cote, sport, confidence) {
-  const prob = estimateProbability(cote, sport);
-  const edge = prob * cote - 1;
-  if (edge <= 0) return 1;
   const conf = Math.max(1, Math.min(5, parseInt(confidence || 3, 10)));
-  const confMult = conf / 4; // ⭐4 = 1.0x, ⭐3 = 0.75x, ⭐2 = 0.5x, ⭐5 = 1.25x
-  const bankroll = getCurrentBankroll();
-  const kelly = edge / (cote - 1);
-  const raw = kelly * bankroll * getKellyFrac() * confMult;
-  const cap = Math.max(2, bankroll * 0.05); // 5% of current bankroll, floor 2€
-  return Math.min(cap, Math.max(1, Math.round(raw)));
+  // Linéaire : ⭐1=5€, ⭐2=9€, ⭐3=13€, ⭐4=16€, ⭐5=20€
+  const table = { 1: 5, 2: 9, 3: 13, 4: 16, 5: 20 };
+  return table[conf];
 }
 
 // Estime la probabilite reelle d'un pari a partir de la cote et du sport.
@@ -3192,17 +3176,8 @@ function renderCoupDeCoeurCombos() {
 // Recommended stake for a combo. Combos compound variance, so we use HALF of
 // the user's Kelly fraction and cap the output at 5 € (vs 10 € for singles).
 function calculateRecommendedComboStake(totalCote, strategy) {
-  const bankroll = getCurrentBankroll();
-  const kellyFrac = getKellyFrac();
-  const implicit = 1 / totalCote;
-  const edgeBump = strategy === 'safe' ? 0.02 : 0.01;
-  const prob = Math.min(0.95, implicit + edgeBump);
-  const realEdge = prob * totalCote - 1;
-  if (realEdge <= 0) return 1;
-  const kelly = realEdge / (totalCote - 1);
-  const raw = kelly * bankroll * kellyFrac * 0.5; // half-Kelly for combos
-  const cap = Math.max(1, bankroll * 0.03); // 3% of current bankroll for combos
-  return Math.min(cap, Math.max(1, Math.round(raw)));
+  // Combinés : 10€ safe, 5€ value
+  return strategy === 'safe' ? 10 : 5;
 }
 
 async function placeClaudeCombo(comboIndex) {
