@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-13T18:32:09.783Z",
+    "last_results_update": "2026-04-13T20:13:54.912Z",
     "analyses_written_at": "2026-04-13T16:12:55.566Z",
     "analyses_cost_usd": 0.201,
-    "last_hourly_refresh": "2026-04-13T18:32:09.783Z"
+    "last_hourly_refresh": "2026-04-13T20:13:54.912Z"
   },
   "sports": {
     "foot": {
@@ -44,16 +44,16 @@
               "pari": "Manchester Utd sans match nul (DNB)",
               "cote_retenue": 1.2,
               "cotes": {
-                "domicile": 1.72,
+                "domicile": 1.62,
                 "nul": 4.19,
-                "exterieur": 5.09
+                "exterieur": 5.71
               },
               "pick_category": "dnb",
               "analyse": "Manchester United présente une forme en dents de scie sur ses six derniers matchs de Premier League : victoires contre Aston Villa (3-1), Crystal Palace (2-1) et Everton (1-0), mais défaites contre Newcastle (2-1) et nul à Bournemouth (2-2). Leeds de son côté traverse une période très difficile : aucune victoire lors de ses cinq derniers matchs de championnat, avec des nuls (0-0 contre Brentford, 0-0 contre Crystal Palace, 1-1 contre Chelsea, 1-1 contre Aston Villa) et deux défaites (0-1 contre Sunderland, 0-1 contre Manchester City). La tendance défensive de Leeds est frappante : ils n'ont pas marqué lors de leurs trois derniers matchs de PL. Manchester United joue à Old Trafford où l'atmosphère et l'avantage du terrain restent significatifs face à une équipe nouvellement promue. Le profil récent des deux équipes — Manchester United capable de scorer (7 buts sur ses 3 dernières victoires) face à une défense de Leeds poreuse (5 buts encaissés sur 5 matchs de PL) — plaide pour une victoire des Red Devils sans trop de risque. Le Draw No Bet en faveur de Manchester United offre une couverture raisonnable compte tenu de la volatilité de United cette saison.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -230,16 +230,16 @@
               "pari": "Moins de 2.5 buts",
               "cote_retenue": 1.46,
               "cotes": {
-                "domicile": 2.73,
-                "nul": 3.07,
-                "exterieur": 3.09
+                "domicile": 2.77,
+                "nul": 3.06,
+                "exterieur": 2.91
               },
               "pick_category": "ou",
               "analyse": "Getafe arrive dans ce match en excellente forme avec trois victoires lors de ses quatre dernières sorties, dont des succès notables à Barcelone face au Real Madrid (1-0) et à domicile contre l'Athletic Bilbao (2-0) et le Betis (2-0). L'équipe de José Bordalás affiche une solidité défensive remarquable, n'encaissant qu'un seul but sur leurs quatre derniers matchs. Levante, de son côté, est plus irrégulier : une large victoire 4-2 contre Oviedo mais deux défaites à domicile consécutives contre Valence (0-2) et Villarreal (0-1) avant cela, et une défaite 0-2 contre la Real Sociedad en déplacement lors du dernier match. Le bilan offensif de Levante à domicile reste fragile face aux équipes organisées. Les deux équipes pratiquent un football pragmatique et défensif, Getafe étant l'archétype du bloc bas solide — seulement 4 buts encaissés sur leurs 5 derniers matchs. Un match à faible scoring est très probable, avec une tendance forte au moins de 2.5 buts.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -416,16 +416,16 @@
               "pari": "Les deux équipes marquent - Oui",
               "cote_retenue": 1.83,
               "cotes": {
-                "domicile": 2.46,
-                "nul": 3.23,
-                "exterieur": 3.35
+                "domicile": 2.38,
+                "nul": 3.14,
+                "exterieur": 3.44
               },
               "pick_category": "btts",
               "analyse": "La Fiorentina affiche une forme contrastée : après un excellent 4-1 à Cremonese et un succès en UECL contre Rakow, elle a subi une lourde défaite 3-0 contre Crystal Palace en UECL et reste sur deux nuls (0-0 vs Parma, 1-1 vs Inter), ce qui traduit une certaine irrégularité. La Lazio présente elle aussi un bilan mi-figue mi-raisin : victoire solide 2-0 à Bologna et 1-0 contre le Milan, mais nul contre Parma à domicile (1-1) et défaite à Torino (2-0). Les deux équipes connaissent des hauts et des bas, avec des défenses qui encaissent régulièrement. En regardant les derniers matchs, les deux côtés ont montré une tendance à laisser entrer des buts : la Fiorentina a encaissé dans 9 de ses 10 derniers matchs recensés, et la Lazio a inscrit dans presque tous ses déplacements. Le contexte d'un derby d'intensité entre deux clubs de milieu de tableau luttant pour les places européennes pousse vers un match ouvert. Le BTTS ressort comme le pari le plus cohérent avec les tendances observées des deux côtés.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -6536,261 +6536,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "AZUIfoj5",
-              "flashscore_id": "AZUIfoj5",
-              "flashscore_sport_id": 2,
-              "home_team_id": "Em3nvKqP",
-              "away_team_id": "0SeXj3jT",
-              "tournament_id": "wj0dy3o4",
-              "tournament_url": "/tennis/wta-singles/rouen/",
-              "sport_key": "flashscore_tennis_wta_rouen_france",
-              "commence_time": "2026-04-13T17:45:00.000Z",
-              "time_display": "Lun. 19h45",
-              "home": "Timofeeva M.",
-              "away": "Boulter K.",
-              "match": "Timofeeva M. vs Boulter K.",
-              "prono": "win-home",
-              "pari": "Moins de 20.5 jeux",
-              "cote_retenue": 1.99,
-              "cotes": {
-                "domicile": 2.66,
-                "nul": null,
-                "exterieur": 1.48
-              },
-              "pick_category": "ou",
-              "analyse": "Timofeeva et Boulter présentent toutes deux un profil offensif avec une tendance aux matchs en deux sets. Sur ses récents matchs, Timofeeva a battu Bartashevich 2-0, Charaeva 2-1, et perdu face à Paquet 0-2 et Korpatsch 0-2 — des rencontres souvent expéditives avec peu de jeux. Boulter, de son côté, a aligné des victoires en 2-0 contre Bouzas Maneiro et Tomova, et ses défaites face à Muchova (0-2) et Ruse (0-2) sont également des matchs nets et rapides. Les deux joueuses évoluent sur surface indoor rapide à Rouen, ce qui favorise les services dominants et les échanges courts. Le profil des deux joueuses — l'une agressive depuis le fond de court, l'autre avec un jeu offensif bien rodé sur surfaces rapides — suggère un match résolu en deux sets sans prolongation. La ligne à 20.5 jeux semble haute au regard de la tendance commune aux matchs serrés mais rapides.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775984700,
-                    "tournament": "ROU",
-                    "home": "Timofeeva M.",
-                    "away": "Paquet C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775899800,
-                    "tournament": "ROU",
-                    "home": "Timofeeva M.",
-                    "away": "Bartashevich Y.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775493900,
-                    "tournament": "LIN",
-                    "home": "Boulter K.",
-                    "away": "Ruse G.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775466600,
-                    "tournament": "LIN",
-                    "home": "Korpatsch T.",
-                    "away": "Timofeeva M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775379900,
-                    "tournament": "LIN",
-                    "home": "Timofeeva M.",
-                    "away": "Charaeva A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1774123500,
-                    "tournament": "MIA",
-                    "home": "Muchova K.",
-                    "away": "Boulter K.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1774030800,
-                    "tournament": "MIA",
-                    "home": "Boulter K.",
-                    "away": "Tauson C.",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773782400,
-                    "tournament": "MIA",
-                    "home": "Boulter K.",
-                    "away": "Bouzas Maneiro J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773688200,
-                    "tournament": "MIA",
-                    "home": "Sun L.",
-                    "away": "Timofeeva M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772574600,
-                    "tournament": "IND",
-                    "home": "Boulter K.",
-                    "away": "Jimenez Kasintseva V.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772561400,
-                    "tournament": "IND",
-                    "home": "Rakhimova K.",
-                    "away": "Timofeeva M.",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772486400,
-                    "tournament": "IND",
-                    "home": "Boulter K.",
-                    "away": "Tomova V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772395500,
-                    "tournament": "IND",
-                    "home": "Timofeeva M.",
-                    "away": "Lamens S.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772248800,
-                    "tournament": "MER",
-                    "home": "Paolini J.",
-                    "away": "Boulter K.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772070900,
-                    "tournament": "MER",
-                    "home": "Boulter K.",
-                    "away": "Osorio C.",
-                    "score": "1-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.33,
-                    "under": 2.92
-                  },
-                  "19.5": {
-                    "over": 1.51,
-                    "under": 2.32
-                  },
-                  "20.0": {
-                    "over": 1.66,
-                    "under": 2.11
-                  },
-                  "20.5": {
-                    "over": 1.71,
-                    "under": 1.99
-                  },
-                  "21.0": {
-                    "over": 1.78,
-                    "under": 1.95
-                  },
-                  "21.5": {
-                    "over": 1.89,
-                    "under": 1.81
-                  },
-                  "22.0": {
-                    "over": 2,
-                    "under": 1.74
-                  },
-                  "22.5": {
-                    "over": 2.19,
-                    "under": 1.57
-                  },
-                  "23.5": {
-                    "over": 2.44,
-                    "under": 1.46
-                  },
-                  "24.5": {
-                    "over": 2.43,
-                    "under": 1.47
-                  },
-                  "25.5": {
-                    "over": 2.7,
-                    "under": 1.38
-                  },
-                  "26.5": {
-                    "over": 3.03,
-                    "under": 1.31
-                  },
-                  "2.5": {
-                    "over": 2.35,
-                    "under": 1.55
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.64,
-                    "away": 1.18
-                  },
-                  "-1.5": {
-                    "home": 4.3,
-                    "away": 2.13
-                  },
-                  "2.0": {
-                    "home": 2.2
-                  },
-                  "-2.0": {
-                    "away": 1.61
-                  },
-                  "2.5": {
-                    "home": 2.08
-                  },
-                  "-2.5": {
-                    "away": 1.68
-                  },
-                  "3.0": {
-                    "home": 1.95
-                  },
-                  "-3.0": {
-                    "away": 1.78
-                  },
-                  "3.5": {
-                    "home": 1.83
-                  },
-                  "-3.5": {
-                    "away": 1.9
-                  },
-                  "4.0": {
-                    "home": 1.67
-                  },
-                  "-4.0": {
-                    "away": 2.11
-                  },
-                  "4.5": {
-                    "home": 1.56
-                  },
-                  "-4.5": {
-                    "away": 2.3
-                  },
-                  "5.0": {
-                    "home": 1.4
-                  },
-                  "-5.0": {
-                    "away": 2.77
-                  },
-                  "5.5": {
-                    "home": 1.34
-                  },
-                  "-5.5": {
-                    "away": 3.04
-                  }
-                }
-              }
-            },
-            {
               "event_id": "6VaIGqVb",
               "flashscore_id": "6VaIGqVb",
               "flashscore_sport_id": 2,
@@ -9034,267 +8779,6 @@
               }
             },
             {
-              "event_id": "SI9QlxzS",
-              "flashscore_id": "SI9QlxzS",
-              "flashscore_sport_id": 2,
-              "home_team_id": "ETkoNgxJ",
-              "away_team_id": "Ova6pdYE",
-              "tournament_id": "aq4jmvdt",
-              "tournament_url": "/tennis/wta-singles/stuttgart/",
-              "sport_key": "flashscore_tennis_wta_stuttgart_germany",
-              "commence_time": "2026-04-13T16:30:35.000Z",
-              "time_display": "Lun. 18h30",
-              "home": "Siegemund L.",
-              "away": "Tomova V.",
-              "match": "Siegemund L. vs Tomova V.",
-              "prono": "win-home",
-              "pari": "Plus de 21.5 jeux",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.59,
-                "nul": null,
-                "exterieur": 2.4
-              },
-              "pick_category": "ou",
-              "analyse": "Laura Siegemund joue à domicile à Stuttgart, un tournoi sur terre battue où elle a historically bien performé, bénéficiant d'un soutien du public et d'une connaissance parfaite de la surface. Sa forme récente est mitigée : victoire convaincante contre Marcinko (2-0) mais défaites face à Eala (1-2) et Svitolina (1-2), montrant qu'elle peut aller en trois sets. Viktoriya Tomova présente une forme irrégulière : éliminée dès ses derniers tournois sur terre battue (défaite 0-2 contre Parks à Stuttgart cette semaine même au premier tour, et 0-2 contre Kalinskaya à Charleston), ce qui est un signal d'alarme fort sur cette surface. Tomova a disputé plusieurs matchs en trois sets récemment (Akli, Liang), suggérant qu'elle a tendance à prolonger les rencontres même contre des adversaires plus faibles. Siegemund est favorite à domicile sur sa surface de prédilection, mais compte tenu des tendances aux trois sets des deux joueuses, le pari sur un nombre de jeux élevé est pertinent. Le marché à 21.5 jeux offre un bon équilibre : entre les sets en trois manches possibles et les services difficiles à breaker sur terre battue de Stuttgart, dépasser 21 jeux est très probable.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775986500,
-                    "tournament": "STU",
-                    "home": "Parks A.",
-                    "away": "Tomova V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775916300,
-                    "tournament": "STU",
-                    "home": "Hesse A.",
-                    "away": "Tomova V.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1774984500,
-                    "tournament": "CHA",
-                    "home": "Tomova V.",
-                    "away": "Kalinskaya A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1774897500,
-                    "tournament": "CHA",
-                    "home": "Tomova V.",
-                    "away": "Brady J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1774797000,
-                    "tournament": "CHA",
-                    "home": "Akli A.",
-                    "away": "Tomova V.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1774711200,
-                    "tournament": "CHA",
-                    "home": "Arconada U. M.",
-                    "away": "Tomova V.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1773936600,
-                    "tournament": "MIA",
-                    "home": "Eala A.",
-                    "away": "Siegemund L.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1773780300,
-                    "tournament": "MIA",
-                    "home": "Siegemund L.",
-                    "away": "Marcinko P.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773670500,
-                    "tournament": "MIA",
-                    "home": "Birrell K.",
-                    "away": "Tomova V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772945400,
-                    "tournament": "IND",
-                    "home": "Siegemund L.",
-                    "away": "Svitolina E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772737500,
-                    "tournament": "IND",
-                    "home": "Siegemund L.",
-                    "away": "Marcinko P.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772486400,
-                    "tournament": "IND",
-                    "home": "Boulter K.",
-                    "away": "Tomova V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1771585500,
-                    "tournament": "OEI",
-                    "home": "Tomova V.",
-                    "away": "Lamens S.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1771412700,
-                    "tournament": "OEI",
-                    "home": "Tomova V.",
-                    "away": "Liang E. S.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1771326300,
-                    "tournament": "OEI",
-                    "home": "Tomova V.",
-                    "away": "Jakupovic D.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.35,
-                    "under": 2.84
-                  },
-                  "19.5": {
-                    "over": 1.53,
-                    "under": 2.27
-                  },
-                  "20.5": {
-                    "over": 1.71,
-                    "under": 1.99
-                  },
-                  "21.0": {
-                    "over": 1.83,
-                    "under": 1.89
-                  },
-                  "21.5": {
-                    "over": 1.9,
-                    "under": 1.81
-                  },
-                  "22.0": {
-                    "over": 2.04,
-                    "under": 1.71
-                  },
-                  "22.5": {
-                    "over": 2.27,
-                    "under": 1.53
-                  },
-                  "23.5": {
-                    "over": 2.54,
-                    "under": 1.43
-                  },
-                  "24.5": {
-                    "over": 2.73,
-                    "under": 1.38
-                  },
-                  "25.5": {
-                    "over": 3.13,
-                    "under": 1.29
-                  },
-                  "26.5": {
-                    "over": 3.62,
-                    "under": 1.22
-                  },
-                  "2.5": {
-                    "over": 2.3,
-                    "under": 1.56
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.25,
-                    "away": 1.84
-                  },
-                  "-1.5": {
-                    "home": 1.85,
-                    "away": 3.62
-                  },
-                  "0.0": {
-                    "home": 1.52,
-                    "away": 2.3
-                  },
-                  "0.5": {
-                    "home": 1.6,
-                    "away": 2.1
-                  },
-                  "-0.5": {
-                    "home": 1.62,
-                    "away": 2.13
-                  },
-                  "1.0": {
-                    "home": 1.53,
-                    "away": 2.04
-                  },
-                  "-1.0": {
-                    "home": 1.66,
-                    "away": 2.29
-                  },
-                  "2.0": {
-                    "home": 1.51,
-                    "away": 1.88
-                  },
-                  "-2.0": {
-                    "home": 1.78,
-                    "away": 2.33
-                  },
-                  "2.5": {
-                    "away": 1.83
-                  },
-                  "-2.5": {
-                    "home": 1.84
-                  },
-                  "3.0": {
-                    "away": 1.73
-                  },
-                  "-3.0": {
-                    "home": 1.94
-                  },
-                  "3.5": {
-                    "away": 1.65
-                  },
-                  "-3.5": {
-                    "home": 2.05
-                  },
-                  "4.0": {
-                    "away": 1.54
-                  },
-                  "-4.0": {
-                    "home": 2.26
-                  },
-                  "4.5": {
-                    "away": 1.47
-                  },
-                  "-4.5": {
-                    "home": 2.43
-                  }
-                }
-              }
-            },
-            {
               "event_id": "jRoRx0CD",
               "flashscore_id": "jRoRx0CD",
               "flashscore_sport_id": 2,
@@ -9312,16 +8796,16 @@
               "pari": "Plus de 19.5 jeux",
               "cote_retenue": 1.58,
               "cotes": {
-                "domicile": 2.76,
+                "domicile": 2.86,
                 "nul": null,
-                "exterieur": 1.45
+                "exterieur": 1.43
               },
               "pick_category": "ou",
               "analyse": "Samsonova aborde ce match en mauvaise posture avec trois défaites consécutives : Fernandez (2-1), Krueger (2-1) et Baptiste (2-0), une série inquiétante qui révèle des failles tant dans les matchs serrés que dans les confrontations directes. Ruzic affiche quant à elle une forme contrastée mais globalement solide : victoires sur Zheng, Brady (2-1), Zakharova (2-1) et Raducanu (2-1), montrant sa capacité à gérer les sets accrochés. Sur terre battue, surface de Stuttgart, les échanges ont tendance à s'allonger, favorisant les joueuses avec de la consistance depuis le fond de court — un domaine où Ruzic a montré plus de régularité récemment. La majorité des matchs récents de Ruzic se sont conclus en trois sets ou en deux sets serrés, suggérant que ses rencontres génèrent un volume de jeux élevé. Face à une Samsonova fragilisée mentalement et physiquement, un match en deux sets compétitifs semble le scénario le plus probable, ce qui oriente vers un total de jeux confortable autour des 20-21. Le seuil de 19.5 jeux à 1.58 représente le meilleur équilibre risque/valeur compte tenu des profils des deux joueuses sur cette surface.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -10815,102 +10299,6 @@
     "tfcxpHJt"
   ],
   "history": [
-    {
-      "event_id": "QPjNT1rg",
-      "flashscore_id": "QPjNT1rg",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T10:30:00.000Z",
-      "home": "West Brom U18",
-      "away": "Leicester U18",
-      "match": "West Brom U18 vs Leicester U18",
-      "prono": "win-home",
-      "pari": "Victoire West Brom U18",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.434Z"
-    },
-    {
-      "event_id": "f5rvQJsI",
-      "flashscore_id": "f5rvQJsI",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Aston Villa U18",
-      "away": "Fulham U18",
-      "match": "Aston Villa U18 vs Fulham U18",
-      "prono": "win-home",
-      "pari": "Victoire Aston Villa U18",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "3-3",
-      "actual_result": "draw",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.434Z"
-    },
-    {
-      "event_id": "jXymOcCU",
-      "flashscore_id": "jXymOcCU",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Leeds U18",
-      "away": "Manchester Utd U18",
-      "match": "Leeds U18 vs Manchester Utd U18",
-      "prono": "win-home",
-      "pari": "Victoire Leeds U18",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.434Z"
-    },
-    {
-      "event_id": "YBV5vJdB",
-      "flashscore_id": "YBV5vJdB",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:30:00.000Z",
-      "home": "Newcastle Utd U18",
-      "away": "Burnley U18",
-      "match": "Newcastle Utd U18 vs Burnley U18",
-      "prono": "win-home",
-      "pari": "Victoire Newcastle Utd U18",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-1",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Premier League",
-      "archived_at": "2026-04-12T13:10:52.434Z"
-    },
     {
       "event_id": "6qCdr1cn",
       "flashscore_id": "6qCdr1cn",
@@ -28408,6 +27796,528 @@
       "status": "lost",
       "manual_injection": true,
       "injected_at": "2026-04-13T18:33:14.758Z"
+    },
+    {
+      "event_id": "AZUIfoj5",
+      "flashscore_id": "AZUIfoj5",
+      "flashscore_sport_id": 2,
+      "home_team_id": "Em3nvKqP",
+      "away_team_id": "0SeXj3jT",
+      "tournament_id": "wj0dy3o4",
+      "tournament_url": "/tennis/wta-singles/rouen/",
+      "sport_key": "flashscore_tennis_wta_rouen_france",
+      "commence_time": "2026-04-13T17:45:00.000Z",
+      "time_display": "Lun. 19h45",
+      "home": "Timofeeva M.",
+      "away": "Boulter K.",
+      "match": "Timofeeva M. vs Boulter K.",
+      "prono": "win-home",
+      "pari": "Moins de 20.5 jeux",
+      "cote_retenue": 1.99,
+      "cotes": {
+        "domicile": 2.66,
+        "nul": null,
+        "exterieur": 1.48
+      },
+      "pick_category": "ou",
+      "analyse": "Timofeeva et Boulter présentent toutes deux un profil offensif avec une tendance aux matchs en deux sets. Sur ses récents matchs, Timofeeva a battu Bartashevich 2-0, Charaeva 2-1, et perdu face à Paquet 0-2 et Korpatsch 0-2 — des rencontres souvent expéditives avec peu de jeux. Boulter, de son côté, a aligné des victoires en 2-0 contre Bouzas Maneiro et Tomova, et ses défaites face à Muchova (0-2) et Ruse (0-2) sont également des matchs nets et rapides. Les deux joueuses évoluent sur surface indoor rapide à Rouen, ce qui favorise les services dominants et les échanges courts. Le profil des deux joueuses — l'une agressive depuis le fond de court, l'autre avec un jeu offensif bien rodé sur surfaces rapides — suggère un match résolu en deux sets sans prolongation. La ligne à 20.5 jeux semble haute au regard de la tendance commune aux matchs serrés mais rapides.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "0-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775984700,
+            "tournament": "ROU",
+            "home": "Timofeeva M.",
+            "away": "Paquet C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775899800,
+            "tournament": "ROU",
+            "home": "Timofeeva M.",
+            "away": "Bartashevich Y.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775493900,
+            "tournament": "LIN",
+            "home": "Boulter K.",
+            "away": "Ruse G.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775466600,
+            "tournament": "LIN",
+            "home": "Korpatsch T.",
+            "away": "Timofeeva M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775379900,
+            "tournament": "LIN",
+            "home": "Timofeeva M.",
+            "away": "Charaeva A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1774123500,
+            "tournament": "MIA",
+            "home": "Muchova K.",
+            "away": "Boulter K.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1774030800,
+            "tournament": "MIA",
+            "home": "Boulter K.",
+            "away": "Tauson C.",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773782400,
+            "tournament": "MIA",
+            "home": "Boulter K.",
+            "away": "Bouzas Maneiro J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773688200,
+            "tournament": "MIA",
+            "home": "Sun L.",
+            "away": "Timofeeva M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772574600,
+            "tournament": "IND",
+            "home": "Boulter K.",
+            "away": "Jimenez Kasintseva V.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1772561400,
+            "tournament": "IND",
+            "home": "Rakhimova K.",
+            "away": "Timofeeva M.",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772486400,
+            "tournament": "IND",
+            "home": "Boulter K.",
+            "away": "Tomova V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772395500,
+            "tournament": "IND",
+            "home": "Timofeeva M.",
+            "away": "Lamens S.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772248800,
+            "tournament": "MER",
+            "home": "Paolini J.",
+            "away": "Boulter K.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1772070900,
+            "tournament": "MER",
+            "home": "Boulter K.",
+            "away": "Osorio C.",
+            "score": "1-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.33,
+            "under": 2.92
+          },
+          "19.5": {
+            "over": 1.51,
+            "under": 2.32
+          },
+          "20.0": {
+            "over": 1.66,
+            "under": 2.11
+          },
+          "20.5": {
+            "over": 1.71,
+            "under": 1.99
+          },
+          "21.0": {
+            "over": 1.78,
+            "under": 1.95
+          },
+          "21.5": {
+            "over": 1.89,
+            "under": 1.81
+          },
+          "22.0": {
+            "over": 2,
+            "under": 1.74
+          },
+          "22.5": {
+            "over": 2.19,
+            "under": 1.57
+          },
+          "23.5": {
+            "over": 2.44,
+            "under": 1.46
+          },
+          "24.5": {
+            "over": 2.43,
+            "under": 1.47
+          },
+          "25.5": {
+            "over": 2.7,
+            "under": 1.38
+          },
+          "26.5": {
+            "over": 3.03,
+            "under": 1.31
+          },
+          "2.5": {
+            "over": 2.35,
+            "under": 1.55
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.64,
+            "away": 1.18
+          },
+          "-1.5": {
+            "home": 4.3,
+            "away": 2.13
+          },
+          "2.0": {
+            "home": 2.2
+          },
+          "-2.0": {
+            "away": 1.61
+          },
+          "2.5": {
+            "home": 2.08
+          },
+          "-2.5": {
+            "away": 1.68
+          },
+          "3.0": {
+            "home": 1.95
+          },
+          "-3.0": {
+            "away": 1.78
+          },
+          "3.5": {
+            "home": 1.83
+          },
+          "-3.5": {
+            "away": 1.9
+          },
+          "4.0": {
+            "home": 1.67
+          },
+          "-4.0": {
+            "away": 2.11
+          },
+          "4.5": {
+            "home": 1.56
+          },
+          "-4.5": {
+            "away": 2.3
+          },
+          "5.0": {
+            "home": 1.4
+          },
+          "-5.0": {
+            "away": 2.77
+          },
+          "5.5": {
+            "home": 1.34
+          },
+          "-5.5": {
+            "away": 3.04
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA Rouen (France)",
+      "archived_at": "2026-04-13T20:13:54.912Z"
+    },
+    {
+      "event_id": "SI9QlxzS",
+      "flashscore_id": "SI9QlxzS",
+      "flashscore_sport_id": 2,
+      "home_team_id": "ETkoNgxJ",
+      "away_team_id": "Ova6pdYE",
+      "tournament_id": "aq4jmvdt",
+      "tournament_url": "/tennis/wta-singles/stuttgart/",
+      "sport_key": "flashscore_tennis_wta_stuttgart_germany",
+      "commence_time": "2026-04-13T16:30:35.000Z",
+      "time_display": "Lun. 18h30",
+      "home": "Siegemund L.",
+      "away": "Tomova V.",
+      "match": "Siegemund L. vs Tomova V.",
+      "prono": "win-home",
+      "pari": "Plus de 21.5 jeux",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.59,
+        "nul": null,
+        "exterieur": 2.4
+      },
+      "pick_category": "ou",
+      "analyse": "Laura Siegemund joue à domicile à Stuttgart, un tournoi sur terre battue où elle a historically bien performé, bénéficiant d'un soutien du public et d'une connaissance parfaite de la surface. Sa forme récente est mitigée : victoire convaincante contre Marcinko (2-0) mais défaites face à Eala (1-2) et Svitolina (1-2), montrant qu'elle peut aller en trois sets. Viktoriya Tomova présente une forme irrégulière : éliminée dès ses derniers tournois sur terre battue (défaite 0-2 contre Parks à Stuttgart cette semaine même au premier tour, et 0-2 contre Kalinskaya à Charleston), ce qui est un signal d'alarme fort sur cette surface. Tomova a disputé plusieurs matchs en trois sets récemment (Akli, Liang), suggérant qu'elle a tendance à prolonger les rencontres même contre des adversaires plus faibles. Siegemund est favorite à domicile sur sa surface de prédilection, mais compte tenu des tendances aux trois sets des deux joueuses, le pari sur un nombre de jeux élevé est pertinent. Le marché à 21.5 jeux offre un bon équilibre : entre les sets en trois manches possibles et les services difficiles à breaker sur terre battue de Stuttgart, dépasser 21 jeux est très probable.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775986500,
+            "tournament": "STU",
+            "home": "Parks A.",
+            "away": "Tomova V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775916300,
+            "tournament": "STU",
+            "home": "Hesse A.",
+            "away": "Tomova V.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1774984500,
+            "tournament": "CHA",
+            "home": "Tomova V.",
+            "away": "Kalinskaya A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1774897500,
+            "tournament": "CHA",
+            "home": "Tomova V.",
+            "away": "Brady J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1774797000,
+            "tournament": "CHA",
+            "home": "Akli A.",
+            "away": "Tomova V.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1774711200,
+            "tournament": "CHA",
+            "home": "Arconada U. M.",
+            "away": "Tomova V.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1773936600,
+            "tournament": "MIA",
+            "home": "Eala A.",
+            "away": "Siegemund L.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1773780300,
+            "tournament": "MIA",
+            "home": "Siegemund L.",
+            "away": "Marcinko P.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773670500,
+            "tournament": "MIA",
+            "home": "Birrell K.",
+            "away": "Tomova V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772945400,
+            "tournament": "IND",
+            "home": "Siegemund L.",
+            "away": "Svitolina E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1772737500,
+            "tournament": "IND",
+            "home": "Siegemund L.",
+            "away": "Marcinko P.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1772486400,
+            "tournament": "IND",
+            "home": "Boulter K.",
+            "away": "Tomova V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1771585500,
+            "tournament": "OEI",
+            "home": "Tomova V.",
+            "away": "Lamens S.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1771412700,
+            "tournament": "OEI",
+            "home": "Tomova V.",
+            "away": "Liang E. S.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1771326300,
+            "tournament": "OEI",
+            "home": "Tomova V.",
+            "away": "Jakupovic D.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.35,
+            "under": 2.84
+          },
+          "19.5": {
+            "over": 1.53,
+            "under": 2.27
+          },
+          "20.5": {
+            "over": 1.71,
+            "under": 1.99
+          },
+          "21.0": {
+            "over": 1.83,
+            "under": 1.89
+          },
+          "21.5": {
+            "over": 1.9,
+            "under": 1.81
+          },
+          "22.0": {
+            "over": 2.04,
+            "under": 1.71
+          },
+          "22.5": {
+            "over": 2.27,
+            "under": 1.53
+          },
+          "23.5": {
+            "over": 2.54,
+            "under": 1.43
+          },
+          "24.5": {
+            "over": 2.73,
+            "under": 1.38
+          },
+          "25.5": {
+            "over": 3.13,
+            "under": 1.29
+          },
+          "26.5": {
+            "over": 3.62,
+            "under": 1.22
+          },
+          "2.5": {
+            "over": 2.3,
+            "under": 1.56
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.25,
+            "away": 1.84
+          },
+          "-1.5": {
+            "home": 1.85,
+            "away": 3.62
+          },
+          "0.0": {
+            "home": 1.52,
+            "away": 2.3
+          },
+          "0.5": {
+            "home": 1.6,
+            "away": 2.1
+          },
+          "-0.5": {
+            "home": 1.62,
+            "away": 2.13
+          },
+          "1.0": {
+            "home": 1.53,
+            "away": 2.04
+          },
+          "-1.0": {
+            "home": 1.66,
+            "away": 2.29
+          },
+          "2.0": {
+            "home": 1.51,
+            "away": 1.88
+          },
+          "-2.0": {
+            "home": 1.78,
+            "away": 2.33
+          },
+          "2.5": {
+            "away": 1.83
+          },
+          "-2.5": {
+            "home": 1.84
+          },
+          "3.0": {
+            "away": 1.73
+          },
+          "-3.0": {
+            "home": 1.94
+          },
+          "3.5": {
+            "away": 1.65
+          },
+          "-3.5": {
+            "home": 2.05
+          },
+          "4.0": {
+            "away": 1.54
+          },
+          "-4.0": {
+            "home": 2.26
+          },
+          "4.5": {
+            "away": 1.47
+          },
+          "-4.5": {
+            "home": 2.43
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA Stuttgart (Germany)",
+      "archived_at": "2026-04-13T20:13:54.912Z"
     }
   ],
   "combos": [
