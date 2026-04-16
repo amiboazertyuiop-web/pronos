@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-16T00:02:33.572Z",
+    "last_results_update": "2026-04-16T07:09:16.164Z",
     "analyses_written_at": "2026-04-15T10:08:47.635Z",
     "analyses_cost_usd": 0.1551,
-    "last_hourly_refresh": "2026-04-16T00:02:33.572Z"
+    "last_hourly_refresh": "2026-04-16T07:09:16.164Z"
   },
   "sports": {
     "foot": {
@@ -44,500 +44,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "f5BIjb5F",
-              "flashscore_id": "f5BIjb5F",
-              "flashscore_sport_id": 3,
-              "home_team_id": "vwRW2QSh",
-              "away_team_id": "QZMS36Dn",
-              "tournament_id": "fg9dak3b",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-15T23:30:00.000Z",
-              "time_display": "Jeu. 01h30",
-              "home": "Philadelphia 76ers",
-              "away": "Orlando Magic",
-              "match": "Philadelphia 76ers vs Orlando Magic",
-              "prono": "win-home",
-              "pari": "Plus de 219.5 points",
-              "cote_retenue": 1.75,
-              "cotes": {
-                "domicile": 1.85,
-                "nul": null,
-                "exterieur": 2.08
-              },
-              "pick_category": "ou",
-              "analyse": "Philadelphia affiche une forme très irrégulière sur ses 7 derniers matchs : une victoire écrasante contre Milwaukee (126-106), une victoire solide contre Indiana (105-94), mais aussi des défaites contre Houston (102-113), San Antonio (102-115) et Detroit (93-116). Orlando est en bien meilleure forme globale avec 5 victoires sur ses 6 derniers matchs, dont des succès probants contre Dallas (138-127), Minnesota (132-120) et Detroit (123-107). Les scores récents d'Orlando témoignent d'un collectif offensif très productif, dépassant régulièrement les 120 points. Côté total de points, les matchs d'Orlando dépassent fréquemment la barre des 220 points combinés (132+127 vs Dallas, 123+107 vs Detroit, 132+120 vs Minnesota). Philly a aussi tendance à jouer dans des matchs à haute intensité offensive quand elle est en confiance (126-106 vs Milwaukee, 153-131 vs Washington). Avec deux équipes capables de scorer en rafale et un Orlando en plein momentum offensif, le total devrait franchir les 219.5 points.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Milwaukee Bucks",
-                    "score": "126-106"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Orlando Magic",
-                    "score": "113-108"
-                  },
-                  {
-                    "timestamp": 1775865600,
-                    "tournament": "NBA",
-                    "home": "Chicago Bulls",
-                    "away": "Orlando Magic",
-                    "score": "103-127"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Philadelphia 76ers",
-                    "score": "94-105"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-120"
-                  },
-                  {
-                    "timestamp": 1775520000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Philadelphia 76ers",
-                    "score": "115-102"
-                  },
-                  {
-                    "timestamp": 1775516400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "123-107"
-                  },
-                  {
-                    "timestamp": 1775430000,
-                    "tournament": "NBA",
-                    "home": "New Orleans Pelicans",
-                    "away": "Orlando Magic",
-                    "score": "108-112"
-                  },
-                  {
-                    "timestamp": 1775343600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Detroit Pistons",
-                    "score": "93-116"
-                  },
-                  {
-                    "timestamp": 1775262600,
-                    "tournament": "NBA",
-                    "home": "Dallas Mavericks",
-                    "away": "Orlando Magic",
-                    "score": "127-138"
-                  },
-                  {
-                    "timestamp": 1775257200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Minnesota Timberwolves",
-                    "score": "115-103"
-                  },
-                  {
-                    "timestamp": 1775084400,
-                    "tournament": "NBA",
-                    "home": "Washington Wizards",
-                    "away": "Philadelphia 76ers",
-                    "score": "131-153"
-                  },
-                  {
-                    "timestamp": 1775084400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Atlanta Hawks",
-                    "score": "101-130"
-                  },
-                  {
-                    "timestamp": 1774998000,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Phoenix Suns",
-                    "score": "115-111"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "219.5": {
-                    "over": 1.75,
-                    "under": 1.97
-                  },
-                  "220.5": {
-                    "over": 1.8,
-                    "under": 1.97
-                  },
-                  "222.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "218.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "221.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "223.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "224.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "225.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "226.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "1.0": {
-                    "away": 1.83
-                  },
-                  "-1.0": {
-                    "home": 1.83
-                  },
-                  "1.5": {
-                    "home": 1.7,
-                    "away": 1.9
-                  },
-                  "-1.5": {
-                    "home": 1.9,
-                    "away": 2.05
-                  },
-                  "2.0": {
-                    "away": 1.9
-                  },
-                  "-2.0": {
-                    "home": 1.9
-                  },
-                  "2.5": {
-                    "home": 1.6,
-                    "away": 1.81
-                  },
-                  "-2.5": {
-                    "home": 1.95,
-                    "away": 2.25
-                  },
-                  "3.5": {
-                    "home": 1.53,
-                    "away": 1.7
-                  },
-                  "-3.5": {
-                    "home": 2.05,
-                    "away": 2.38
-                  },
-                  "4.5": {
-                    "away": 1.6
-                  },
-                  "-4.5": {
-                    "home": 2.25
-                  },
-                  "5.5": {
-                    "away": 1.53
-                  },
-                  "-5.5": {
-                    "home": 2.38
-                  },
-                  "6.5": {
-                    "away": 1.5
-                  },
-                  "-6.5": {
-                    "home": 2.5
-                  },
-                  "7.5": {
-                    "away": 1.4
-                  },
-                  "-7.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "O2AeqGck",
-              "flashscore_id": "O2AeqGck",
-              "flashscore_sport_id": 3,
-              "home_team_id": "vPeTYlqm",
-              "away_team_id": "SxUtXqch",
-              "tournament_id": "fg9dak3b",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-16T02:00:00.000Z",
-              "time_display": "Jeu. 04h00",
-              "home": "Los Angeles Clippers",
-              "away": "Golden State Warriors",
-              "match": "Los Angeles Clippers vs Golden State Warriors",
-              "prono": "win-home",
-              "pari": "Plus de 220.5 points",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.48,
-                "nul": null,
-                "exterieur": 2.91
-              },
-              "pick_category": "ou",
-              "analyse": "Le H2H récent est crucial ici : les Clippers ont battu les Warriors 115-110 le 13 avril, confirmant leur supériorité dans ce duel cette saison. Los Angeles évolue à domicile avec un bilan en dents de scie : victoire contre Dallas (116-103) et Sacramento (138-109), mais défaites contre Portland (97-116) et OKC (128-110). Golden State traverse une période difficile avec quatre défaites sur leurs six derniers matchs, encaissant des revers contre Sacramento (118-124), les Lakers (103-119) et San Antonio (113-127). Les deux équipes affichent des niveaux offensifs corrects — les scores récents oscillent régulièrement entre 100 et 130 points — mais Golden State manque de constance défensive et les Clippers restent vulnérables à l'extérieur. Le total de 220.5 points semble une ligne équilibrée : au vu du H2H récent (225 points combinés le 13 avril), de l'irrégularité défensive des Warriors et du potentiel offensif des Clippers à domicile, un match au-dessus de 220.5 points est plausible.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "Golden State Warriors",
-                    "score": "115-110"
-                  },
-                  {
-                    "timestamp": 1775872800,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "Los Angeles Clippers",
-                    "score": "116-97"
-                  },
-                  {
-                    "timestamp": 1775872800,
-                    "tournament": "NBA",
-                    "home": "Sacramento Kings",
-                    "away": "Golden State Warriors",
-                    "score": "124-118"
-                  },
-                  {
-                    "timestamp": 1775786400,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Los Angeles Lakers",
-                    "score": "103-119"
-                  },
-                  {
-                    "timestamp": 1775700000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "110-128"
-                  },
-                  {
-                    "timestamp": 1775615400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "Dallas Mavericks",
-                    "score": "116-103"
-                  },
-                  {
-                    "timestamp": 1775613600,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Sacramento Kings",
-                    "score": "110-105"
-                  },
-                  {
-                    "timestamp": 1775440800,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Houston Rockets",
-                    "score": "116-117"
-                  },
-                  {
-                    "timestamp": 1775437200,
-                    "tournament": "NBA",
-                    "home": "Sacramento Kings",
-                    "away": "Los Angeles Clippers",
-                    "score": "109-138"
-                  },
-                  {
-                    "timestamp": 1775183400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "San Antonio Spurs",
-                    "score": "99-118"
-                  },
-                  {
-                    "timestamp": 1775181600,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "111-118"
-                  },
-                  {
-                    "timestamp": 1775095200,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "San Antonio Spurs",
-                    "score": "113-127"
-                  },
-                  {
-                    "timestamp": 1775012400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "Portland Trail Blazers",
-                    "score": "104-114"
-                  },
-                  {
-                    "timestamp": 1774836000,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Golden State Warriors",
-                    "score": "116-93"
-                  },
-                  {
-                    "timestamp": 1774812600,
-                    "tournament": "NBA",
-                    "home": "Milwaukee Bucks",
-                    "away": "Los Angeles Clippers",
-                    "score": "113-127"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "220.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "221.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "217.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "218.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "219.5": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "222.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "223.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "224.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "225.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "3.5": {
-                    "away": 2.02
-                  },
-                  "-3.5": {
-                    "home": 1.73
-                  },
-                  "4.0": {
-                    "away": 1.83
-                  },
-                  "-4.0": {
-                    "home": 1.83
-                  },
-                  "4.5": {
-                    "away": 1.94
-                  },
-                  "-4.5": {
-                    "home": 1.77
-                  },
-                  "5.0": {
-                    "away": 1.9
-                  },
-                  "-5.0": {
-                    "home": 1.9
-                  },
-                  "5.5": {
-                    "away": 1.9
-                  },
-                  "-5.5": {
-                    "home": 1.9
-                  },
-                  "1.5": {
-                    "away": 2.5
-                  },
-                  "-1.5": {
-                    "home": 1.5
-                  },
-                  "2.5": {
-                    "away": 2.25
-                  },
-                  "-2.5": {
-                    "home": 1.6
-                  },
-                  "6.5": {
-                    "away": 1.7
-                  },
-                  "-6.5": {
-                    "home": 2.05
-                  },
-                  "7.5": {
-                    "away": 1.62
-                  },
-                  "-7.5": {
-                    "home": 2.2
-                  },
-                  "8.5": {
-                    "away": 1.53
-                  },
-                  "-8.5": {
-                    "home": 2.38
-                  },
-                  "9.5": {
-                    "away": 1.5
-                  },
-                  "-9.5": {
-                    "home": 2.5
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1143,9 +650,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.9,
               "cotes": {
-                "domicile": 3.4,
+                "domicile": 3.66,
                 "nul": null,
-                "exterieur": 1.34
+                "exterieur": 1.3
               },
               "pick_category": "ou",
               "analyse": "Musetti aborde ce match en position de favori sur terre battue à Barcelone, sa surface de prédilection, après avoir écarté Landaluce 2-0 à l'entrée du tournoi. Cependant, l'Italien traverse une forme inconstante : il a été sorti sèchement par Vacherot à Monte-Carlo (0-2) et par Fucsovics à Indian Wells (0-2), ce qui révèle une certaine fragilité. Moutet, de son côté, enchaîne les matchs sur terre depuis plusieurs semaines et vient de battre Buse 2-0 au tour précédent, après une victoire accrochée 2-1 contre Machac à Miami. Le Français est un joueur de rallyes, à l'aise sur argile, capable de pousser n'importe quel adversaire dans ses retranchements grâce à sa défense et ses angles. Les deux joueurs sont de profil similaire sur cette surface — ils prolongent les échanges, ce qui favorise les matchs longs avec de nombreux jeux disputés. Compte tenu du niveau relativement proche sur terre battue et du style de jeu accrocheur des deux protagonistes, dépasser 21.5 jeux semble une valeur solide.",
@@ -1720,9 +1227,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.71,
+                "domicile": 1.72,
                 "nul": null,
-                "exterieur": 2.19
+                "exterieur": 2.17
               },
               "pick_category": "ou",
               "analyse": "Molcan traverse une forme exceptionnelle sur terre battue cette semaine à Munich : il a éliminé Harris, Clarke, Arnaldi, Diallo, Carballes Baena et Bublix en enchaînant six victoires consécutives dont plusieurs en deux sets secs. Altmaier, de son côté, a aussi progressé dans ce tournoi en battant Cilic 2-0, mais sa forme récente est plus irrégulière : défaites sèches face à Marozsan (0-2) et Machac (1-2), et une sortie prématurée à Naples. Sur terre battue, Molcan est dans un état de grâce évident avec un jeu solide de fond de court et une gestion des points décisifs remarquable, comme en témoigne sa victoire 2-0 contre Bublik pourtant dangereux sur toutes surfaces. Altmaier est un joueur compétitif sur terre mais manque de constance en ce moment. Les matchs sur cette surface ont tendance à s'étirer en longs échanges, ce qui pousse vers un total de jeux élevé, mais le niveau de forme de Molcan suggère qu'il peut dominer sans laisser trop d'espaces. Le handicap de -3.5 jeux en faveur de Molcan à 3.05 est trop risqué ; en revanche, une victoire nette en deux sets de Molcan justifie un pari sur le total sous les 22.5 jeux.",
@@ -2298,7 +1805,7 @@
               "cotes": {
                 "domicile": 1.09,
                 "nul": null,
-                "exterieur": 8.15
+                "exterieur": 8.25
               },
               "pick_category": "ou",
               "analyse": "Alexander Zverev est en excellente forme sur terre battue : il a atteint les demi-finales à Monte-Carlo en battant Garin, Bergs et Fonseca avant de s'incliner face à Sinner. À Munich, il vient de signer une victoire en trois sets contre Kecmanovic, confirmant son niveau élevé sur ocre. Gabriel Diallo, de son côté, affiche une forme plus modeste : battu 2-0 par Molcan à Bucarest, éliminé 2-0 par Humbert à Miami, et sorti par Fonseca à Monte-Carlo. Sa seule victoire récente est un succès 2-0 contre Sachko, joueur de faible calibre. L'écart de niveau entre les deux joueurs est considérable : Zverev, tête de série et joueur du top 3 mondial, évolue sur sa surface de prédilection et à domicile en Allemagne, ce qui constitue un avantage psychologique supplémentaire. On s'attend à une victoire nette et rapide de Zverev, très probablement en deux sets dominateurs avec peu de jeux laissés à l'adversaire. Le handicap de -4.5 jeux en faveur de Zverev à 1.81 reflète bien ce scénario d'écrasement.",
@@ -3131,9 +2638,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.91,
               "cotes": {
-                "domicile": 1.51,
+                "domicile": 1.49,
                 "nul": null,
-                "exterieur": 2.57
+                "exterieur": 2.63
               },
               "pick_category": "ou",
               "analyse": "Muchova et Mertens se retrouvent à Stuttgart sur terre battue, une surface qui favorise les échanges longs et les rallyes. Toutes deux ont gagné leur premier tour en deux sets secs ce mardi (Muchova 2-0 Sasnovich, Mertens 2-0 Seidel), signe qu'elles sont en forme mais que leurs adversaires respectifs n'offraient pas grande résistance. En regardant plus loin, Muchova a enchaîné plusieurs victoires nettes à Miami (2-0 contre Boulter, Eala, Mboko), ce qui illustre sa domination récente en sets, même si elle s'est inclinée face à Gauff et Swiatek. Mertens, quant à elle, est une joueuse expérimentée et régulière sur terre, mais elle a perdu 0-2 face à Cirstea et Bencic lors de ses deux derniers échecs. Le niveau de Muchova, techniquement supérieur et actuellement en confiance, suggère qu'elle devrait contrôler ce match sans aller au troisième set, mais face à la solidité défensive de Mertens, les sets pourraient être disputés avec un nombre significatif de jeux. La ligne 21.5 jeux représente un bon équilibre : deux sets complets sur terre battue entre deux joueuses à l'aise dans les échanges rendent l'over crédible.",
@@ -3665,7 +3172,7 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.59,
               "cotes": {
-                "domicile": 4.97,
+                "domicile": 4.94,
                 "nul": null,
                 "exterieur": 1.18
               },
@@ -3944,54 +3451,6 @@
     "KW8WdbOs"
   ],
   "history": [
-    {
-      "event_id": "C8mFgdVQ",
-      "flashscore_id": "C8mFgdVQ",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T12:00:00.000Z",
-      "home": "B. Monchengladbach II",
-      "away": "Lotte",
-      "match": "B. Monchengladbach II vs Lotte",
-      "prono": "win-home",
-      "pari": "Victoire B. Monchengladbach II",
-      "cote_retenue": 2.18,
-      "cotes": {
-        "domicile": 2.18,
-        "exterieur": 2.93
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "3-1",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.435Z"
-    },
-    {
-      "event_id": "On7KXE87",
-      "flashscore_id": "On7KXE87",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T12:00:00.000Z",
-      "home": "Bocholt",
-      "away": "Rodinghausen",
-      "match": "Bocholt vs Rodinghausen",
-      "prono": "win-home",
-      "pari": "Victoire Bocholt",
-      "cote_retenue": 1.79,
-      "cotes": {
-        "domicile": 1.79,
-        "exterieur": 3.83
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "0-4",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.435Z"
-    },
     {
       "event_id": "A3V1phhD",
       "flashscore_id": "A3V1phhD",
@@ -33725,6 +33184,504 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rouen (France)",
       "archived_at": "2026-04-16T00:02:33.572Z"
+    },
+    {
+      "event_id": "f5BIjb5F",
+      "flashscore_id": "f5BIjb5F",
+      "flashscore_sport_id": 3,
+      "home_team_id": "vwRW2QSh",
+      "away_team_id": "QZMS36Dn",
+      "tournament_id": "fg9dak3b",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-15T23:30:00.000Z",
+      "time_display": "Jeu. 01h30",
+      "home": "Philadelphia 76ers",
+      "away": "Orlando Magic",
+      "match": "Philadelphia 76ers vs Orlando Magic",
+      "prono": "win-home",
+      "pari": "Plus de 219.5 points",
+      "cote_retenue": 1.75,
+      "cotes": {
+        "domicile": 1.85,
+        "nul": null,
+        "exterieur": 2.08
+      },
+      "pick_category": "ou",
+      "analyse": "Philadelphia affiche une forme très irrégulière sur ses 7 derniers matchs : une victoire écrasante contre Milwaukee (126-106), une victoire solide contre Indiana (105-94), mais aussi des défaites contre Houston (102-113), San Antonio (102-115) et Detroit (93-116). Orlando est en bien meilleure forme globale avec 5 victoires sur ses 6 derniers matchs, dont des succès probants contre Dallas (138-127), Minnesota (132-120) et Detroit (123-107). Les scores récents d'Orlando témoignent d'un collectif offensif très productif, dépassant régulièrement les 120 points. Côté total de points, les matchs d'Orlando dépassent fréquemment la barre des 220 points combinés (132+127 vs Dallas, 123+107 vs Detroit, 132+120 vs Minnesota). Philly a aussi tendance à jouer dans des matchs à haute intensité offensive quand elle est en confiance (126-106 vs Milwaukee, 153-131 vs Washington). Avec deux équipes capables de scorer en rafale et un Orlando en plein momentum offensif, le total devrait franchir les 219.5 points.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "109-97",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Milwaukee Bucks",
+            "score": "126-106"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Orlando Magic",
+            "score": "113-108"
+          },
+          {
+            "timestamp": 1775865600,
+            "tournament": "NBA",
+            "home": "Chicago Bulls",
+            "away": "Orlando Magic",
+            "score": "103-127"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Philadelphia 76ers",
+            "score": "94-105"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Minnesota Timberwolves",
+            "score": "132-120"
+          },
+          {
+            "timestamp": 1775520000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Philadelphia 76ers",
+            "score": "115-102"
+          },
+          {
+            "timestamp": 1775516400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "123-107"
+          },
+          {
+            "timestamp": 1775430000,
+            "tournament": "NBA",
+            "home": "New Orleans Pelicans",
+            "away": "Orlando Magic",
+            "score": "108-112"
+          },
+          {
+            "timestamp": 1775343600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Detroit Pistons",
+            "score": "93-116"
+          },
+          {
+            "timestamp": 1775262600,
+            "tournament": "NBA",
+            "home": "Dallas Mavericks",
+            "away": "Orlando Magic",
+            "score": "127-138"
+          },
+          {
+            "timestamp": 1775257200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Minnesota Timberwolves",
+            "score": "115-103"
+          },
+          {
+            "timestamp": 1775084400,
+            "tournament": "NBA",
+            "home": "Washington Wizards",
+            "away": "Philadelphia 76ers",
+            "score": "131-153"
+          },
+          {
+            "timestamp": 1775084400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Atlanta Hawks",
+            "score": "101-130"
+          },
+          {
+            "timestamp": 1774998000,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Phoenix Suns",
+            "score": "115-111"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "219.5": {
+            "over": 1.75,
+            "under": 1.97
+          },
+          "220.5": {
+            "over": 1.8,
+            "under": 1.97
+          },
+          "222.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "218.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "221.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "223.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "224.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "225.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "226.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "1.0": {
+            "away": 1.83
+          },
+          "-1.0": {
+            "home": 1.83
+          },
+          "1.5": {
+            "home": 1.7,
+            "away": 1.9
+          },
+          "-1.5": {
+            "home": 1.9,
+            "away": 2.05
+          },
+          "2.0": {
+            "away": 1.9
+          },
+          "-2.0": {
+            "home": 1.9
+          },
+          "2.5": {
+            "home": 1.6,
+            "away": 1.81
+          },
+          "-2.5": {
+            "home": 1.95,
+            "away": 2.25
+          },
+          "3.5": {
+            "home": 1.53,
+            "away": 1.7
+          },
+          "-3.5": {
+            "home": 2.05,
+            "away": 2.38
+          },
+          "4.5": {
+            "away": 1.6
+          },
+          "-4.5": {
+            "home": 2.25
+          },
+          "5.5": {
+            "away": 1.53
+          },
+          "-5.5": {
+            "home": 2.38
+          },
+          "6.5": {
+            "away": 1.5
+          },
+          "-6.5": {
+            "home": 2.5
+          },
+          "7.5": {
+            "away": 1.4
+          },
+          "-7.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-16T07:09:16.164Z"
+    },
+    {
+      "event_id": "O2AeqGck",
+      "flashscore_id": "O2AeqGck",
+      "flashscore_sport_id": 3,
+      "home_team_id": "vPeTYlqm",
+      "away_team_id": "SxUtXqch",
+      "tournament_id": "fg9dak3b",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-16T02:00:00.000Z",
+      "time_display": "Jeu. 04h00",
+      "home": "Los Angeles Clippers",
+      "away": "Golden State Warriors",
+      "match": "Los Angeles Clippers vs Golden State Warriors",
+      "prono": "win-home",
+      "pari": "Plus de 220.5 points",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.48,
+        "nul": null,
+        "exterieur": 2.91
+      },
+      "pick_category": "ou",
+      "analyse": "Le H2H récent est crucial ici : les Clippers ont battu les Warriors 115-110 le 13 avril, confirmant leur supériorité dans ce duel cette saison. Los Angeles évolue à domicile avec un bilan en dents de scie : victoire contre Dallas (116-103) et Sacramento (138-109), mais défaites contre Portland (97-116) et OKC (128-110). Golden State traverse une période difficile avec quatre défaites sur leurs six derniers matchs, encaissant des revers contre Sacramento (118-124), les Lakers (103-119) et San Antonio (113-127). Les deux équipes affichent des niveaux offensifs corrects — les scores récents oscillent régulièrement entre 100 et 130 points — mais Golden State manque de constance défensive et les Clippers restent vulnérables à l'extérieur. Le total de 220.5 points semble une ligne équilibrée : au vu du H2H récent (225 points combinés le 13 avril), de l'irrégularité défensive des Warriors et du potentiel offensif des Clippers à domicile, un match au-dessus de 220.5 points est plausible.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "121-126",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "Golden State Warriors",
+            "score": "115-110"
+          },
+          {
+            "timestamp": 1775872800,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "Los Angeles Clippers",
+            "score": "116-97"
+          },
+          {
+            "timestamp": 1775872800,
+            "tournament": "NBA",
+            "home": "Sacramento Kings",
+            "away": "Golden State Warriors",
+            "score": "124-118"
+          },
+          {
+            "timestamp": 1775786400,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Los Angeles Lakers",
+            "score": "103-119"
+          },
+          {
+            "timestamp": 1775700000,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "Oklahoma City Thunder",
+            "score": "110-128"
+          },
+          {
+            "timestamp": 1775615400,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "Dallas Mavericks",
+            "score": "116-103"
+          },
+          {
+            "timestamp": 1775613600,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Sacramento Kings",
+            "score": "110-105"
+          },
+          {
+            "timestamp": 1775440800,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Houston Rockets",
+            "score": "116-117"
+          },
+          {
+            "timestamp": 1775437200,
+            "tournament": "NBA",
+            "home": "Sacramento Kings",
+            "away": "Los Angeles Clippers",
+            "score": "109-138"
+          },
+          {
+            "timestamp": 1775183400,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "San Antonio Spurs",
+            "score": "99-118"
+          },
+          {
+            "timestamp": 1775181600,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Cleveland Cavaliers",
+            "score": "111-118"
+          },
+          {
+            "timestamp": 1775095200,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "San Antonio Spurs",
+            "score": "113-127"
+          },
+          {
+            "timestamp": 1775012400,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "Portland Trail Blazers",
+            "score": "104-114"
+          },
+          {
+            "timestamp": 1774836000,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Golden State Warriors",
+            "score": "116-93"
+          },
+          {
+            "timestamp": 1774812600,
+            "tournament": "NBA",
+            "home": "Milwaukee Bucks",
+            "away": "Los Angeles Clippers",
+            "score": "113-127"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "220.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "221.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "217.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "218.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "219.5": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "222.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "223.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "224.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "225.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "3.5": {
+            "away": 2.02
+          },
+          "-3.5": {
+            "home": 1.73
+          },
+          "4.0": {
+            "away": 1.83
+          },
+          "-4.0": {
+            "home": 1.83
+          },
+          "4.5": {
+            "away": 1.94
+          },
+          "-4.5": {
+            "home": 1.77
+          },
+          "5.0": {
+            "away": 1.9
+          },
+          "-5.0": {
+            "home": 1.9
+          },
+          "5.5": {
+            "away": 1.9
+          },
+          "-5.5": {
+            "home": 1.9
+          },
+          "1.5": {
+            "away": 2.5
+          },
+          "-1.5": {
+            "home": 1.5
+          },
+          "2.5": {
+            "away": 2.25
+          },
+          "-2.5": {
+            "home": 1.6
+          },
+          "6.5": {
+            "away": 1.7
+          },
+          "-6.5": {
+            "home": 2.05
+          },
+          "7.5": {
+            "away": 1.62
+          },
+          "-7.5": {
+            "home": 2.2
+          },
+          "8.5": {
+            "away": 1.53
+          },
+          "-8.5": {
+            "home": 2.38
+          },
+          "9.5": {
+            "away": 1.5
+          },
+          "-9.5": {
+            "home": 2.5
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-16T07:09:16.164Z"
     }
   ],
   "combos": [
