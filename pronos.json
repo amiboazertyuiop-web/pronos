@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-19T16:06:43.326Z",
+    "last_results_update": "2026-04-19T18:07:16.429Z",
     "analyses_written_at": "2026-04-19T08:21:20.743Z",
     "analyses_cost_usd": 0.1104,
-    "last_hourly_refresh": "2026-04-19T16:06:43.326Z"
+    "last_hourly_refresh": "2026-04-19T18:07:16.429Z"
   },
   "sports": {
     "foot": {
@@ -27,531 +27,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "OKAulHME",
-              "flashscore_id": "OKAulHME",
-              "flashscore_sport_id": 1,
-              "home_team_id": "4v0yqlWc",
-              "away_team_id": "0OEHEprs",
-              "tournament_id": "j9qetlpp",
-              "tournament_url": "/football/france/ligue-1/",
-              "sport_key": "flashscore_football_ligue1",
-              "commence_time": "2026-04-19T15:15:00.000Z",
-              "time_display": "Dim. 17h15",
-              "home": "Metz",
-              "away": "Paris FC",
-              "match": "Metz vs Paris FC",
-              "prono": "win-away",
-              "pari": "Paris FC victoire (Draw No Bet)",
-              "cote_retenue": 1.55,
-              "cotes": {
-                "domicile": 3,
-                "nul": 3.73,
-                "exterieur": 2.33
-              },
-              "pick_category": "dnb",
-              "analyse": "Le Paris FC affiche une dynamique impressionnante avec une victoire éclatante 4-1 contre Monaco lors de la dernière journée, après avoir déjà battu Le Havre 3-2 et Nice 1-0 sur les dernières semaines. La formation parisienne enchaîne les résultats solides avec une seule défaite sur les 7 derniers matchs, confirmant une belle régularité. Metz traverse à l'inverse une période difficile : 5 défaites sur les 7 dernières rencontres, avec notamment des revers 3-1 contre Marseille, 3-0 contre Lens et 3-4 contre Toulouse. Les Grenats peinent à trouver la victoire à domicile, avec seulement un nul 0-0 contre Nantes lors de leur dernier match à Saint-Symphorien. L'écart de niveau entre les deux formations est net en ce moment, et même si Metz peut accrocher des nuls à domicile comme face à Nantes, le Paris FC dispose d'une attaque prolifique capable de faire la différence. La double chance X2 représente le pari le plus raisonnable compte tenu du potentiel nul de Metz à domicile, mais la dynamique du Paris FC plaide pour une victoire directe.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775847900,
-                    "tournament": "L1",
-                    "home": "Marseille",
-                    "away": "Metz",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1775840400,
-                    "tournament": "L1",
-                    "home": "Paris FC",
-                    "away": "Monaco",
-                    "score": "4-1"
-                  },
-                  {
-                    "timestamp": 1775402100,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Nantes",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1775402100,
-                    "tournament": "L1",
-                    "home": "Lorient",
-                    "away": "Paris FC",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1774196100,
-                    "tournament": "L1",
-                    "home": "Rennes",
-                    "away": "Metz",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1774196100,
-                    "tournament": "L1",
-                    "home": "Paris FC",
-                    "away": "Le Havre",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1773591300,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Toulouse",
-                    "score": "3-4"
-                  },
-                  {
-                    "timestamp": 1773583200,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Paris FC",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1772999100,
-                    "tournament": "L1",
-                    "home": "Lyon",
-                    "away": "Paris FC",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1772978400,
-                    "tournament": "L1",
-                    "home": "Lens",
-                    "away": "Metz",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1772381700,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Brest",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772373600,
-                    "tournament": "L1",
-                    "home": "Paris FC",
-                    "away": "Nice",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1771704300,
-                    "tournament": "L1",
-                    "home": "PSG",
-                    "away": "Metz",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1771696800,
-                    "tournament": "L1",
-                    "home": "Toulouse",
-                    "away": "Paris FC",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1771172100,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Auxerre",
-                    "score": "1-3"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 3.23,
-                  "draw": 3.5,
-                  "away": 2.2
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.67,
-                  "X2": 1.33
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.25,
-                    "under": 3.77
-                  },
-                  "2.5": {
-                    "over": 1.8,
-                    "under": 1.98
-                  },
-                  "3.5": {
-                    "over": 2.92,
-                    "under": 1.36
-                  }
-                },
-                "btts": {
-                  "yes": 1.64,
-                  "no": 2.2
-                },
-                "draw_no_bet": {
-                  "home": 2.3,
-                  "away": 1.55
-                }
-              }
-            },
-            {
-              "event_id": "IsnywiED",
-              "flashscore_id": "IsnywiED",
-              "flashscore_sport_id": 1,
-              "home_team_id": "veuetnGG",
-              "away_team_id": "Cr4VGaUl",
-              "tournament_id": "j9qetlpp",
-              "tournament_url": "/football/france/ligue-1/",
-              "sport_key": "flashscore_football_ligue1",
-              "commence_time": "2026-04-19T15:15:00.000Z",
-              "time_display": "Dim. 17h15",
-              "home": "Nantes",
-              "away": "Brest",
-              "match": "Nantes vs Brest",
-              "prono": "win-home",
-              "pari": "Moins de 2.5 buts",
-              "cote_retenue": 1.69,
-              "cotes": {
-                "domicile": 2.4,
-                "nul": 3.37,
-                "exterieur": 3.16
-              },
-              "pick_category": "ou",
-              "analyse": "Nantes traverse une période de disette offensive inquiétante : trois matchs sans marquer sur les cinq derniers (0-0 vs Auxerre, 0-0 vs Metz, 0-1 vs Angers), avec seulement deux buts inscrits lors du seul match prolifique récent (2-3 vs Strasbourg). Brest de son côté connaît également des difficultés, avec trois défaites sur les quatre dernières sorties (3-4 vs Rennes, 3-0 vs Auxerre, 2-0 vs Monaco), même si leur attaque reste plus active. La tendance défensive de Nantes à domicile est notable : sur six matchs à la Beaujoire en 2026, on compte des scores comme 2-3, 0-1, 2-0, 0-1, 2-0 — la majorité restant sous la barre des 2,5 buts. Les deux équipes semblent en manque de confiance et de régularité offensive, ce qui plaide pour un match fermé. Brest encaisse beaucoup (7 buts sur les deux derniers matchs), mais Nantes est incapable de concrétiser en ce moment, suggérant fortement un match à moins de 2,5 buts.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775926800,
-                    "tournament": "L1",
-                    "home": "Auxerre",
-                    "away": "Nantes",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1775402100,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Nantes",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1775322000,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Rennes",
-                    "score": "3-4"
-                  },
-                  {
-                    "timestamp": 1774208700,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Strasbourg",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1774116000,
-                    "tournament": "L1",
-                    "home": "Auxerre",
-                    "away": "Brest",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1773518700,
-                    "tournament": "L1",
-                    "home": "Monaco",
-                    "away": "Brest",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772986500,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Le Havre",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1772899200,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Angers",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772381700,
-                    "tournament": "L1",
-                    "home": "Lille",
-                    "away": "Nantes",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1772381700,
-                    "tournament": "L1",
-                    "home": "Metz",
-                    "away": "Brest",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1771776900,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Le Havre",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1771616700,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Marseille",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1771092000,
-                    "tournament": "L1",
-                    "home": "Lille",
-                    "away": "Brest",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1771013100,
-                    "tournament": "L1",
-                    "home": "Monaco",
-                    "away": "Nantes",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1770494700,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Lyon",
-                    "score": "0-1"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.38,
-                  "draw": 3.25,
-                  "away": 3
-                },
-                "double_chance": {
-                  "12": 1.33,
-                  "1X": 1.36,
-                  "X2": 1.54
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.36,
-                    "under": 3
-                  },
-                  "2.5": {
-                    "over": 2.15,
-                    "under": 1.69
-                  },
-                  "3.5": {
-                    "over": 3.85,
-                    "under": 1.23
-                  }
-                },
-                "btts": {
-                  "yes": 1.84,
-                  "no": 1.91
-                },
-                "draw_no_bet": {
-                  "home": 1.66,
-                  "away": 2.1
-                }
-              }
-            },
-            {
-              "event_id": "8CShQDU7",
-              "flashscore_id": "8CShQDU7",
-              "flashscore_sport_id": 1,
-              "home_team_id": "nP6UzIU1",
-              "away_team_id": "d2nnj1IE",
-              "tournament_id": "j9qetlpp",
-              "tournament_url": "/football/france/ligue-1/",
-              "sport_key": "flashscore_football_ligue1",
-              "commence_time": "2026-04-19T15:15:00.000Z",
-              "time_display": "Dim. 17h15",
-              "home": "Strasbourg",
-              "away": "Rennes",
-              "match": "Strasbourg vs Rennes",
-              "prono": "win-home",
-              "pari": "Les deux équipes marquent",
-              "cote_retenue": 1.56,
-              "cotes": {
-                "domicile": 3.78,
-                "nul": 4.28,
-                "exterieur": 1.88
-              },
-              "pick_category": "btts",
-              "analyse": "Strasbourg traverse une période de grande forme offensive, enchaînant des victoires convaincantes : 3-1 contre Nice, 3-4 à Brest pour Rennes, et surtout un cinglant 4-0 contre Mainz en UECL. Rennes est également en bonne dynamique avec trois succès récents dont une victoire spectaculaire 4-3 à Brest et un 4-0 infligé à Nice, mais reste irrégulier (nul 0-0 contre Metz, défaite 1-2 face à Lille). Les deux formations se distinguent par leur capacité à produire des buts : Strasbourg a marqué dans 6 de ses 7 derniers matchs, Rennes dans 5 des 6 derniers hors nul à domicile. Strasbourg reçoit avec l'élan d'une double campagne européenne en UECL, ce qui peut peser favorablement sur leur énergie mais aussi sur leur fraîcheur physique. Les deux attaques sont en feu et les défenses poreuses, ce contexte plaide clairement pour un match avec des buts des deux côtés. Le BTTS Yes à 1.56 est le pari le mieux soutenu par les données récentes de ce choc entre deux équipes à vocation offensive.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776366000,
-                    "tournament": "UECL",
-                    "home": "Strasbourg",
-                    "away": "Mainz",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1775934300,
-                    "tournament": "L1",
-                    "home": "Rennes",
-                    "away": "Angers",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "UECL",
-                    "home": "Mainz",
-                    "away": "Strasbourg",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775322000,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Rennes",
-                    "score": "3-4"
-                  },
-                  {
-                    "timestamp": 1775314800,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Nice",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1774208700,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Strasbourg",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1774196100,
-                    "tournament": "L1",
-                    "home": "Rennes",
-                    "away": "Metz",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1773950400,
-                    "tournament": "UECL",
-                    "home": "Strasbourg",
-                    "away": "Rijeka",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773603900,
-                    "tournament": "L1",
-                    "home": "Rennes",
-                    "away": "Lille",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1773583200,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Paris FC",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1773337500,
-                    "tournament": "UECL",
-                    "home": "Rijeka",
-                    "away": "Strasbourg",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1772986500,
-                    "tournament": "L1",
-                    "home": "Nice",
-                    "away": "Rennes",
-                    "score": "0-4"
-                  },
-                  {
-                    "timestamp": 1772906400,
-                    "tournament": "L1",
-                    "home": "Auxerre",
-                    "away": "Strasbourg",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1772568000,
-                    "tournament": "CDF",
-                    "home": "Strasbourg",
-                    "away": "Reims",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772294400,
-                    "tournament": "L1",
-                    "home": "Rennes",
-                    "away": "Toulouse",
-                    "score": "1-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.73,
-                  "draw": 3.67,
-                  "away": 2.4
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.53,
-                  "X2": 1.44
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.2,
-                    "under": 4.35
-                  },
-                  "2.5": {
-                    "over": 1.67,
-                    "under": 2.2
-                  },
-                  "3.5": {
-                    "over": 2.63,
-                    "under": 1.44
-                  }
-                },
-                "btts": {
-                  "yes": 1.56,
-                  "no": 2.37
-                },
-                "draw_no_bet": {
-                  "home": 1.95,
-                  "away": 1.75
-                }
-              }
-            },
-            {
               "event_id": "hdxneYTs",
               "flashscore_id": "hdxneYTs",
               "flashscore_sport_id": 1,
@@ -569,9 +44,9 @@
               "pari": "Plus de 2.5 buts",
               "cote_retenue": 1.4,
               "cotes": {
-                "domicile": 1.33,
-                "nul": 6.19,
-                "exterieur": 9.75
+                "domicile": 1.36,
+                "nul": 5.94,
+                "exterieur": 9.15
               },
               "pick_category": "ou",
               "analyse": "Le PSG traverse une période de forme exceptionnelle sur la scène européenne : victoire 2-0 à Liverpool le 14 avril, 2-0 contre Liverpool à l'aller, 3-0 à Chelsea, et 5-2 à domicile contre ces mêmes Blues. En Ligue 1, le club parisien reste sur un 3-1 contre Toulouse et un 4-0 à Nice, ne concédant que la défaite 1-3 face à Monaco début mars. Lyon, de son côté, présente un bilan nettement moins impressionnant : deux victoires récentes (2-0 contre Lorient, 2-3 contre Lens en Coupe), mais aussi trois matchs sans marquer (0-0 à Angers, 0-2 contre Celta Vigo, 0-0 au Havre). La capacité défensive de Lyon à contenir le PSG au Parc des Princes est très incertaine, d'autant que les Lyonnais semblent eux-mêmes peu prolifiques. Le total de buts 'Plus de 2.5' à 1.40 est sous-évalué : le PSG marque en moyenne plus de 2 buts par match lors de ses 5 dernières sorties, et Lyon a du mal à défendre sur les transitions rapides, style de jeu parisien. Le Parc des Princes en configuration nocturne et la pression d'une Ligue 1 serrée plaident pour une rencontre ouverte, avec des Parisiens libérés après leur épopée européenne.",
@@ -736,183 +211,7 @@
           "country": "Angleterre",
           "panel_title": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League — Angleterre",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "U3M9iQJ6",
-              "flashscore_id": "U3M9iQJ6",
-              "flashscore_sport_id": 1,
-              "home_team_id": "Wtn9Stg0",
-              "away_team_id": "hA1Zm19f",
-              "tournament_id": "oeeq9yvp",
-              "tournament_url": "/football/england/premier-league/",
-              "sport_key": "flashscore_football_epl",
-              "commence_time": "2026-04-19T15:30:00.000Z",
-              "time_display": "Dim. 17h30",
-              "home": "Manchester City",
-              "away": "Arsenal",
-              "match": "Manchester City vs Arsenal",
-              "prono": "win-home",
-              "pari": "Les deux équipes ne marquent pas",
-              "cote_retenue": 1.92,
-              "cotes": {
-                "domicile": 1.85,
-                "nul": 3.78,
-                "exterieur": 4.46
-              },
-              "pick_category": "btts",
-              "analyse": "Le H2H récent est particulièrement éclairant : Manchester City a battu Arsenal 2-0 en EFL Cup le 22 mars 2026, confirmant une domination physique et tactique dans les confrontations directes cette saison. City arrive en grande forme à domicile avec une victoire écrasante 4-0 contre Liverpool en FA Cup et un 3-0 contre Chelsea en PL, démontrant une efficacité offensive redoutable. Arsenal traverse en revanche une passe difficile : défaite 1-2 contre Bournemouth en PL le 11 avril et elimination en FA Cup par Southampton (2-1), révélant une fragilité défensive et un manque de tranchant offensif inquiétant. Les Gunners n'ont marqué qu'un seul but lors de leurs trois derniers matchs de compétition domestique, ce qui tempère toute ambition offensive. City à l'Etihad face à une équipe d'Arsenal en manque de confiance suggère un match contrôlé par les locaux, avec un risque réel que les Gunners ne parviennent pas à scorer. Le pari BTTS No apparaît comme le choix le plus pertinent : Arsenal n'a pas marqué dans 3 de ses 5 derniers matchs, et City garde un clean sheet dans ce H2H récent.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776279600,
-                    "tournament": "CL",
-                    "home": "Arsenal",
-                    "away": "Sporting CP",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1776007800,
-                    "tournament": "PL",
-                    "home": "Chelsea",
-                    "away": "Manchester City",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1775907000,
-                    "tournament": "PL",
-                    "home": "Arsenal",
-                    "away": "Bournemouth",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775588400,
-                    "tournament": "CL",
-                    "home": "Sporting CP",
-                    "away": "Arsenal",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1775329200,
-                    "tournament": "FAC",
-                    "home": "Southampton",
-                    "away": "Arsenal",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775303100,
-                    "tournament": "FAC",
-                    "home": "Manchester City",
-                    "away": "Liverpool",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1774197000,
-                    "tournament": "EFL",
-                    "home": "Arsenal",
-                    "away": "Manchester City",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1773777600,
-                    "tournament": "CL",
-                    "home": "Manchester City",
-                    "away": "Real Madrid",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1773777600,
-                    "tournament": "CL",
-                    "home": "Arsenal",
-                    "away": "Bayer Leverkusen",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773518400,
-                    "tournament": "PL",
-                    "home": "West Ham",
-                    "away": "Manchester City",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773509400,
-                    "tournament": "PL",
-                    "home": "Arsenal",
-                    "away": "Everton",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773259200,
-                    "tournament": "CL",
-                    "home": "Real Madrid",
-                    "away": "Manchester City",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1773251100,
-                    "tournament": "CL",
-                    "home": "Bayer Leverkusen",
-                    "away": "Arsenal",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1772913600,
-                    "tournament": "FAC",
-                    "home": "Newcastle",
-                    "away": "Manchester City",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1772885700,
-                    "tournament": "FAC",
-                    "home": "Mansfield",
-                    "away": "Arsenal",
-                    "score": "1-2"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 1.9,
-                  "draw": 3.5,
-                  "away": 4.15
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.22,
-                  "X2": 1.87
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.29,
-                    "under": 3.4
-                  },
-                  "2.5": {
-                    "over": 1.91,
-                    "under": 1.84
-                  },
-                  "3.5": {
-                    "over": 3.35,
-                    "under": 1.29
-                  }
-                },
-                "btts": {
-                  "yes": 1.81,
-                  "no": 1.92
-                },
-                "draw_no_bet": {
-                  "home": 1.36,
-                  "away": 2.88
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "seriea",
@@ -923,181 +222,6 @@
           "panel_title": "🇮🇹 Serie A — Italie",
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
-            {
-              "event_id": "tOLCD6oK",
-              "flashscore_id": "tOLCD6oK",
-              "flashscore_sport_id": 1,
-              "home_team_id": "roasMsOT",
-              "away_team_id": "d0PJxeie",
-              "tournament_id": "6pwwasa7",
-              "tournament_url": "/football/italy/serie-a/",
-              "sport_key": "flashscore_football_seriea",
-              "commence_time": "2026-04-19T16:00:00.000Z",
-              "time_display": "Dim. 18h00",
-              "home": "Pisa",
-              "away": "Genoa",
-              "match": "Pisa vs Genoa",
-              "prono": "win-away",
-              "pari": "Victoire Genoa (remboursement si nul)",
-              "cote_retenue": 1.62,
-              "cotes": {
-                "domicile": 3.06,
-                "nul": 3.06,
-                "exterieur": 2.65
-              },
-              "pick_category": "dnb",
-              "analyse": "Pisa traverse une période très difficile : quatre défaites lors de leurs cinq derniers matchs de Serie A, avec notamment une humiliation 5-0 face à Como et une lourde défaite 4-0 contre la Juventus. La seule victoire récente des Pisans remonte au 15 mars contre Cagliari (3-1), ce qui semble isolé dans un contexte de nette régression. Genoa présente un bilan plus équilibré : victoires contre Sassuolo (2-1), Verona (2-0) et AS Roma (2-1), mais aussi des revers contre Juventus (0-2) et Udinese (0-2), ce qui révèle une équipe capable d'être compétitive sans pour autant être constante. À domicile, Pisa est particulièrement vulnérable comme en témoignent leurs défaites 0-1 contre Torino et 0-1 contre Bologna entre leurs propres murs. Genoa, équipe expérimentée en Serie A, dispose d'un effectif plus solide pour profiter d'une formation pisane en manque de confiance. Le Draw No Bet en faveur de Genoa à 1.62 offre une sécurité supplémentaire dans un match où les visiteurs semblent nettement mieux armés.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1775989800,
-                    "tournament": "SA",
-                    "home": "Genoa",
-                    "away": "Sassuolo",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775846700,
-                    "tournament": "SA",
-                    "home": "AS Roma",
-                    "away": "Pisa",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1775491200,
-                    "tournament": "SA",
-                    "home": "Juventus",
-                    "away": "Genoa",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775404800,
-                    "tournament": "SA",
-                    "home": "Pisa",
-                    "away": "Torino",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1774179000,
-                    "tournament": "SA",
-                    "home": "Como",
-                    "away": "Pisa",
-                    "score": "5-0"
-                  },
-                  {
-                    "timestamp": 1774035900,
-                    "tournament": "SA",
-                    "home": "Genoa",
-                    "away": "Udinese",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1773583200,
-                    "tournament": "SA",
-                    "home": "Pisa",
-                    "away": "Cagliari",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1773574200,
-                    "tournament": "SA",
-                    "home": "Verona",
-                    "away": "Genoa",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1772989200,
-                    "tournament": "SA",
-                    "home": "Genoa",
-                    "away": "AS Roma",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1772912700,
-                    "tournament": "SA",
-                    "home": "Juventus",
-                    "away": "Pisa",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1772472600,
-                    "tournament": "SA",
-                    "home": "Pisa",
-                    "away": "Bologna",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772307900,
-                    "tournament": "SA",
-                    "home": "Inter",
-                    "away": "Genoa",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1771867800,
-                    "tournament": "SA",
-                    "home": "Fiorentina",
-                    "away": "Pisa",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1771759800,
-                    "tournament": "SA",
-                    "home": "Genoa",
-                    "away": "Torino",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1771164000,
-                    "tournament": "SA",
-                    "home": "Cremonese",
-                    "away": "Genoa",
-                    "score": "0-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 3.2,
-                  "draw": 3.05,
-                  "away": 2.42
-                },
-                "double_chance": {
-                  "12": 1.35,
-                  "1X": 1.55,
-                  "X2": 1.35
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.44,
-                    "under": 2.62
-                  },
-                  "2.5": {
-                    "over": 2.42,
-                    "under": 1.54
-                  },
-                  "3.5": {
-                    "over": 4.78,
-                    "under": 1.17
-                  }
-                },
-                "btts": {
-                  "yes": 2.01,
-                  "no": 1.73
-                },
-                "draw_no_bet": {
-                  "home": 2.17,
-                  "away": 1.62
-                }
-              }
-            },
             {
               "event_id": "zi0Igofl",
               "flashscore_id": "zi0Igofl",
@@ -1285,181 +409,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "lE8lWKz1",
-              "flashscore_id": "lE8lWKz1",
-              "flashscore_sport_id": 1,
-              "home_team_id": "nVp0wiqd",
-              "away_team_id": "nJQmYp1B",
-              "tournament_id": "8uyeqfid",
-              "tournament_url": "/football/germany/bundesliga/",
-              "sport_key": "flashscore_football_bundes",
-              "commence_time": "2026-04-19T15:30:00.000Z",
-              "time_display": "Dim. 17h30",
-              "home": "Bayern Munich",
-              "away": "Stuttgart",
-              "match": "Bayern Munich vs Stuttgart",
-              "prono": "win-home",
-              "pari": "Plus de 3.5 buts",
-              "cote_retenue": 1.62,
-              "cotes": {
-                "domicile": 1.5,
-                "nul": 5.33,
-                "exterieur": 5.68
-              },
-              "pick_category": "ou",
-              "analyse": "Le Bayern Munich traverse une forme exceptionnelle : victoire 5-0 à St. Pauli, 4-0 contre Union Berlin, 3-2 contre Freiburg (en butant sur l'adversité) et une double qualification en Ligue des Champions face au Real Madrid (2-1 + 4-3). C'est une machine offensive qui enchaîne les grosses performances. Stuttgart présente une forme plus contrastée : écrasante victoire 4-0 contre Hambourg et 5-2 à Augsbourg, mais défaite 0-2 contre Dortmund et élimination en Europa League par Porto. À domicile, le Bayern est une forteresse, et Stuttgart concède des buts même dans ses bonnes périodes. La tendance des deux équipes à scorer en grand nombre (over 3.5 atteint dans 6 des 10 derniers matchs combinés) et la capacité de Stuttgart à marquer malgré tout (même face à de grosses équipes) rend le scénario d'une partie prolifique très probable. Avec le Bayern en grande forme offensive et Stuttgart capable de répondre, le pari sur plus de 3.5 buts à 1.62 représente une valeur certaine.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776279600,
-                    "tournament": "CL",
-                    "home": "Bayern Munich",
-                    "away": "Real Madrid",
-                    "score": "4-3"
-                  },
-                  {
-                    "timestamp": 1776007800,
-                    "tournament": "BUN",
-                    "home": "Stuttgart",
-                    "away": "Hamburger SV",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1775925000,
-                    "tournament": "BUN",
-                    "home": "St. Pauli",
-                    "away": "Bayern Munich",
-                    "score": "0-5"
-                  },
-                  {
-                    "timestamp": 1775588400,
-                    "tournament": "CL",
-                    "home": "Real Madrid",
-                    "away": "Bayern Munich",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775320200,
-                    "tournament": "BUN",
-                    "home": "Stuttgart",
-                    "away": "Dortmund",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775309400,
-                    "tournament": "BUN",
-                    "home": "Freiburg",
-                    "away": "Bayern Munich",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1774204200,
-                    "tournament": "BUN",
-                    "home": "Augsburg",
-                    "away": "Stuttgart",
-                    "score": "2-5"
-                  },
-                  {
-                    "timestamp": 1774103400,
-                    "tournament": "BUN",
-                    "home": "Bayern Munich",
-                    "away": "Union Berlin",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1773950400,
-                    "tournament": "EL",
-                    "home": "FC Porto",
-                    "away": "Stuttgart",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773864000,
-                    "tournament": "CL",
-                    "home": "Bayern Munich",
-                    "away": "Atalanta",
-                    "score": "4-1"
-                  },
-                  {
-                    "timestamp": 1773599400,
-                    "tournament": "BUN",
-                    "home": "Stuttgart",
-                    "away": "RB Leipzig",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1773498600,
-                    "tournament": "BUN",
-                    "home": "Bayer Leverkusen",
-                    "away": "Bayern Munich",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1773337500,
-                    "tournament": "EL",
-                    "home": "Stuttgart",
-                    "away": "FC Porto",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1773172800,
-                    "tournament": "CL",
-                    "home": "Atalanta",
-                    "away": "Bayern Munich",
-                    "score": "1-6"
-                  },
-                  {
-                    "timestamp": 1772893800,
-                    "tournament": "BUN",
-                    "home": "Mainz",
-                    "away": "Stuttgart",
-                    "score": "2-2"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 1.4,
-                  "draw": 5.5,
-                  "away": 6.5
-                },
-                "double_chance": {
-                  "12": 1.15,
-                  "1X": 1.12,
-                  "X2": 2.88
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.06,
-                    "under": 9.3
-                  },
-                  "2.5": {
-                    "over": 1.22,
-                    "under": 4.03
-                  },
-                  "3.5": {
-                    "over": 1.62,
-                    "under": 2.29
-                  }
-                },
-                "btts": {
-                  "yes": 1.36,
-                  "no": 2.96
-                },
-                "draw_no_bet": {
-                  "home": 1.17,
-                  "away": 4.8
-                }
-              }
-            },
-            {
               "event_id": "YsCuUkBU",
               "flashscore_id": "YsCuUkBU",
               "flashscore_sport_id": 1,
@@ -1477,16 +426,16 @@
               "pari": "Les deux équipes marquent - Oui",
               "cote_retenue": 1.65,
               "cotes": {
-                "domicile": 2.33,
-                "nul": 3.68,
-                "exterieur": 3.19
+                "domicile": 2.25,
+                "nul": 3.57,
+                "exterieur": 3.27
               },
               "pick_category": "btts",
               "analyse": "Mainz traverse une période contrastée : après une belle victoire en UECL contre Strasbourg (2-0, le 9 avril), les hommes de Bo Svensson ont subi une lourde défaite retour (0-4) et ont perdu en Bundesliga contre Freiburg (0-1). Mönchengladbach n'est pas en grande forme non plus : deux nuls consécutifs à domicile (2-2 contre Heidenheim) et à Cologne (3-3), et une défaite 1-0 à Leipzig. Ces deux équipes semblent incapables de garder leurs cages inviolées : sur les 15 derniers matchs recensés, la grande majorité affichent des buts des deux côtés. Mönchengladbach a encaissé dans presque chaque rencontre récente et Mainz a alterné entre solidité défensive (0-0 vs Olomouc) et fragilité (0-4 vs Strasbourg retour). Le match à domicile du Borussia au Borussia-Park est un facteur favorable, mais insuffisant pour dégager un grand favori. Avec deux équipes qui marquent et encaissent régulièrement, le pari le plus cohérent est que les deux équipes trouvent le chemin des filets.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -1646,177 +595,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "l02DM3Ns",
-              "flashscore_id": "l02DM3Ns",
-              "flashscore_sport_id": 1,
-              "home_team_id": "YBFbLqQ4",
-              "away_team_id": "Gzqmz0ya",
-              "tournament_id": "luvkpl9k",
-              "tournament_url": "/football/asia/gulf-club-champions-league/",
-              "sport_key": "flashscore_football_ucl",
-              "commence_time": "2026-04-19T14:00:00.000Z",
-              "time_display": "Dim. 16h00",
-              "home": "Zakho (Irq)",
-              "away": "Al Shabab (Sau)",
-              "match": "Zakho (Irq) vs Al Shabab (Sau)",
-              "prono": "win-home",
-              "pari": "Plus de 2.5 buts",
-              "cote_retenue": 1.63,
-              "cotes": {
-                "domicile": 6.72,
-                "nul": 4.84,
-                "exterieur": 1.4
-              },
-              "pick_category": "ou",
-              "analyse": "Al Shabab (Arabie Saoudite) affronte Zakho (Irak) dans ce qui semble être une confrontation très déséquilibrée sur le papier. Le club saoudien évolue en Saudi Pro League, l'un des championnats les plus riches et compétitifs de la région, et présente une forme récente correcte : victoire 2-0 face à Al Okhdood, 3-1 contre Al Riyadh, et deux nuls récents contre Al Qadsiah (2-2) et Al Riyadh (1-1). Zakho, club irakien, traverse une période difficile en championnat national : défaite 3-0 contre Baghdad, 2-0 contre Al Shorta, 2-0 contre Al Mosul, avec seulement une victoire sur les 6 derniers matches (1-0 à Duhok). Le niveau structurel, financier et athlétique entre les deux clubs est manifestement en faveur du club saoudien, qui dispose de joueurs professionnels au niveau international supérieur. Zakho concède des buts régulièrement à domicile et à l'extérieur (3-0, 2-0, 2-0 encaissés sur les dernières sorties). Le pari sur la victoire d'Al Shabab semble excessivement court, mais un pari sur plus de 2.5 buts est cohérent avec la tendance offensive d'Al Shabab (3-5, 3-1, 2-0, 3-1 récents) combinée à la défense poreuse de Zakho.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776189600,
-                    "tournament": "SPL",
-                    "home": "Al Qadsiah",
-                    "away": "Al Shabab",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1776011400,
-                    "tournament": "SL",
-                    "home": "Zakho",
-                    "away": "Al Talaba",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775656800,
-                    "tournament": "SL",
-                    "home": "Zakho",
-                    "away": "Al Zawraa",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1775412000,
-                    "tournament": "SPL",
-                    "home": "Al Riyadh",
-                    "away": "Al Shabab",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1775233800,
-                    "tournament": "SL",
-                    "home": "Baghdad",
-                    "away": "Zakho",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1774881000,
-                    "tournament": "SL",
-                    "home": "Duhok",
-                    "away": "Zakho",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1774528200,
-                    "tournament": "SL",
-                    "home": "Zakho",
-                    "away": "Al Shorta",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1774197000,
-                    "tournament": "SL",
-                    "home": "Al Mosul",
-                    "away": "Zakho",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773864900,
-                    "tournament": "SL",
-                    "home": "Zakho",
-                    "away": "Al-Karma",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1773514800,
-                    "tournament": "SPL",
-                    "home": "Al Shabab",
-                    "away": "Al Okhdood",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1773513000,
-                    "tournament": "SL",
-                    "home": "Al-Qassim",
-                    "away": "Zakho",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1772910000,
-                    "tournament": "SPL",
-                    "home": "Al Ettifaq",
-                    "away": "Al Shabab",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1772218800,
-                    "tournament": "SPL",
-                    "home": "Al Shabab",
-                    "away": "Al Hilal",
-                    "score": "3-5"
-                  },
-                  {
-                    "timestamp": 1772130600,
-                    "tournament": "SL",
-                    "home": "Zakho",
-                    "away": "Al Gharraf",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1771873200,
-                    "tournament": "SPL",
-                    "home": "Al Shabab",
-                    "away": "Al Riyadh",
-                    "score": "3-1"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 5.37,
-                  "draw": 4.85,
-                  "away": 1.41
-                },
-                "double_chance": {
-                  "12": 1.1,
-                  "1X": 2.52,
-                  "X2": 1.09
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.17,
-                    "under": 4.05
-                  },
-                  "2.5": {
-                    "over": 1.63,
-                    "under": 2.12
-                  },
-                  "3.5": {
-                    "over": 2.63,
-                    "under": 1.38
-                  }
-                },
-                "btts": {
-                  "yes": 1.77,
-                  "no": 1.9
-                }
-              }
-            },
-            {
               "event_id": "2N8TILM6",
               "flashscore_id": "2N8TILM6",
               "flashscore_sport_id": 1,
@@ -1835,15 +613,15 @@
               "cote_retenue": 1.65,
               "cotes": {
                 "domicile": 1.37,
-                "nul": 4,
-                "exterieur": 8.05
+                "nul": 5.33,
+                "exterieur": 6.66
               },
               "pick_category": "ou",
               "analyse": "Al Rayyan présente une forme impressionnante sur ses récents matchs à domicile, avec notamment des victoires 3-0 contre Umm-Salal, 3-0 contre Al-Shahaniya et 2-0 contre Muaither SC en QSC. Sur les 15 derniers matchs listés, Al Rayyan totalise 10 victoires, 2 nuls et seulement 3 défaites, avec une moyenne de buts marqués très élevée. Al Qadisiya, club koweïtien évoluant dans un championnat de niveau nettement inférieur à la Qatar Stars League, n'offre que peu de garanties : une défaite 4-2 contre Kazma SC en PL le 23 février illustre ses limites défensives. Al Rayyan produit un football offensif et prolifique — 4 buts contre Umm-Salal en QSC, 3 buts contre Al-Nahda en GCC — ce qui laisse présager un match ouvert avec plusieurs réalisations. Le différentiel de niveau entre les deux ligues est considérable, Al Rayyan étant habitué à la compétition face à des clubs du Golfe de haut rang. Le pari sur plus de 2.5 buts à 1.65 semble le plus cohérent avec les tendances offensives des deux équipes.",
               "confiance": 4,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -2038,7 +816,7 @@
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -2282,11 +1060,11 @@
               "match": "Oklahoma City Thunder vs Phoenix Suns",
               "prono": "win-home",
               "pari": "Oklahoma City Thunder -13.5 points",
-              "cote_retenue": 1.1,
+              "cote_retenue": 1.09,
               "cotes": {
-                "domicile": 1.1,
+                "domicile": 1.09,
                 "nul": null,
-                "exterieur": 9.25
+                "exterieur": 9.6
               },
               "pick_category": "1x2",
               "analyse": "Oklahoma City Thunder s'impose comme l'un des meilleurs bilans de la ligue cette saison, avec une domination écrasante récente : 146-111 contre Utah, 139-96 contre les Lakers, 123-87 contre les Lakers encore. Leur seule défaite notable sur cette séquence est 107-127 face à Denver, un adversaire de haut niveau. Le H2H direct du 13 avril est éloquent : OKC a été battu 103-135 par Phoenix dans ce qui ressemble à une anomalie ou un match sans enjeu pour le Thunder. Phoenix, de son côté, présente une forme erratique : victoire 111-96 contre Golden State, mais aussi des défaites face à Portland (110-114), Los Angeles Lakers (73-101) et Houston (105-119). Le Thunder joue à domicile, où il s'est montré impitoyable, et l'écart de niveau collectif — autour de Shai Gilgeous-Alexander et d'un effectif rodé — est significatif. Le handicap -13.5 à 1.81 reflète cet avantage structurel, mais au vu des scores récents du Thunder à domicile (marges de +35, +23, +18), couvrir un écart de 13.5 points est tout à fait réaliste.",
@@ -3090,174 +1868,6 @@
     "rcKhFUxp"
   ],
   "history": [
-    {
-      "event_id": "4YA3yJEd",
-      "flashscore_id": "4YA3yJEd",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T10:00:00.000Z",
-      "home": "Hanse Lubeck U19",
-      "away": "Magdeburg U19",
-      "match": "Hanse Lubeck U19 vs Magdeburg U19",
-      "prono": "win-home",
-      "pari": "Victoire Hanse Lubeck U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "3-6",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "2FF6iFPp",
-      "flashscore_id": "2FF6iFPp",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T10:00:00.000Z",
-      "home": "Ingolstadt U19",
-      "away": "Unterhaching U19",
-      "match": "Ingolstadt U19 vs Unterhaching U19",
-      "prono": "win-home",
-      "pari": "Victoire Ingolstadt U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "1-0",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "Wv3kaM63",
-      "flashscore_id": "Wv3kaM63",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Babelsberg U19",
-      "away": "Hansa Rostock U19",
-      "match": "Babelsberg U19 vs Hansa Rostock U19",
-      "prono": "win-home",
-      "pari": "Victoire Babelsberg U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "ClBcc0yG",
-      "flashscore_id": "ClBcc0yG",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Blumenthaler U19",
-      "away": "Hallescher U19",
-      "match": "Blumenthaler U19 vs Hallescher U19",
-      "prono": "win-home",
-      "pari": "Victoire Blumenthaler U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "n3c9jnhc",
-      "flashscore_id": "n3c9jnhc",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Chemnitzer FC U19",
-      "away": "TSV Havelse U19",
-      "match": "Chemnitzer FC U19 vs TSV Havelse U19",
-      "prono": "win-home",
-      "pari": "Victoire Chemnitzer FC U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "0-1",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "nRudsrFq",
-      "flashscore_id": "nRudsrFq",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Erfurt U19",
-      "away": "St. Pauli U19",
-      "match": "Erfurt U19 vs St. Pauli U19",
-      "prono": "win-home",
-      "pari": "Victoire Erfurt U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "xx6CLrGc",
-      "flashscore_id": "xx6CLrGc",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T11:00:00.000Z",
-      "home": "Fortuna Koln U19",
-      "away": "FSV Frankfurt U19",
-      "match": "Fortuna Koln U19 vs FSV Frankfurt U19",
-      "prono": "win-home",
-      "pari": "Victoire Fortuna Koln U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-1",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
     {
       "event_id": "IVF2WYtp",
       "flashscore_id": "IVF2WYtp",
@@ -49789,6 +48399,1248 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rouen (France)",
       "archived_at": "2026-04-19T16:06:43.326Z"
+    },
+    {
+      "event_id": "OKAulHME",
+      "flashscore_id": "OKAulHME",
+      "flashscore_sport_id": 1,
+      "home_team_id": "4v0yqlWc",
+      "away_team_id": "0OEHEprs",
+      "tournament_id": "j9qetlpp",
+      "tournament_url": "/football/france/ligue-1/",
+      "sport_key": "flashscore_football_ligue1",
+      "commence_time": "2026-04-19T15:15:00.000Z",
+      "time_display": "Dim. 17h15",
+      "home": "Metz",
+      "away": "Paris FC",
+      "match": "Metz vs Paris FC",
+      "prono": "win-away",
+      "pari": "Paris FC victoire (Draw No Bet)",
+      "cote_retenue": 1.55,
+      "cotes": {
+        "domicile": 3,
+        "nul": 3.73,
+        "exterieur": 2.33
+      },
+      "pick_category": "dnb",
+      "analyse": "Le Paris FC affiche une dynamique impressionnante avec une victoire éclatante 4-1 contre Monaco lors de la dernière journée, après avoir déjà battu Le Havre 3-2 et Nice 1-0 sur les dernières semaines. La formation parisienne enchaîne les résultats solides avec une seule défaite sur les 7 derniers matchs, confirmant une belle régularité. Metz traverse à l'inverse une période difficile : 5 défaites sur les 7 dernières rencontres, avec notamment des revers 3-1 contre Marseille, 3-0 contre Lens et 3-4 contre Toulouse. Les Grenats peinent à trouver la victoire à domicile, avec seulement un nul 0-0 contre Nantes lors de leur dernier match à Saint-Symphorien. L'écart de niveau entre les deux formations est net en ce moment, et même si Metz peut accrocher des nuls à domicile comme face à Nantes, le Paris FC dispose d'une attaque prolifique capable de faire la différence. La double chance X2 représente le pari le plus raisonnable compte tenu du potentiel nul de Metz à domicile, mais la dynamique du Paris FC plaide pour une victoire directe.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-3",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775847900,
+            "tournament": "L1",
+            "home": "Marseille",
+            "away": "Metz",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1775840400,
+            "tournament": "L1",
+            "home": "Paris FC",
+            "away": "Monaco",
+            "score": "4-1"
+          },
+          {
+            "timestamp": 1775402100,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Nantes",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1775402100,
+            "tournament": "L1",
+            "home": "Lorient",
+            "away": "Paris FC",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1774196100,
+            "tournament": "L1",
+            "home": "Rennes",
+            "away": "Metz",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1774196100,
+            "tournament": "L1",
+            "home": "Paris FC",
+            "away": "Le Havre",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1773591300,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Toulouse",
+            "score": "3-4"
+          },
+          {
+            "timestamp": 1773583200,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Paris FC",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1772999100,
+            "tournament": "L1",
+            "home": "Lyon",
+            "away": "Paris FC",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1772978400,
+            "tournament": "L1",
+            "home": "Lens",
+            "away": "Metz",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1772381700,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Brest",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772373600,
+            "tournament": "L1",
+            "home": "Paris FC",
+            "away": "Nice",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1771704300,
+            "tournament": "L1",
+            "home": "PSG",
+            "away": "Metz",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1771696800,
+            "tournament": "L1",
+            "home": "Toulouse",
+            "away": "Paris FC",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1771172100,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Auxerre",
+            "score": "1-3"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 3.23,
+          "draw": 3.5,
+          "away": 2.2
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.67,
+          "X2": 1.33
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.25,
+            "under": 3.77
+          },
+          "2.5": {
+            "over": 1.8,
+            "under": 1.98
+          },
+          "3.5": {
+            "over": 2.92,
+            "under": 1.36
+          }
+        },
+        "btts": {
+          "yes": 1.64,
+          "no": 2.2
+        },
+        "draw_no_bet": {
+          "home": 2.3,
+          "away": 1.55
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Ligue 1",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "IsnywiED",
+      "flashscore_id": "IsnywiED",
+      "flashscore_sport_id": 1,
+      "home_team_id": "veuetnGG",
+      "away_team_id": "Cr4VGaUl",
+      "tournament_id": "j9qetlpp",
+      "tournament_url": "/football/france/ligue-1/",
+      "sport_key": "flashscore_football_ligue1",
+      "commence_time": "2026-04-19T15:15:00.000Z",
+      "time_display": "Dim. 17h15",
+      "home": "Nantes",
+      "away": "Brest",
+      "match": "Nantes vs Brest",
+      "prono": "win-home",
+      "pari": "Moins de 2.5 buts",
+      "cote_retenue": 1.69,
+      "cotes": {
+        "domicile": 2.4,
+        "nul": 3.37,
+        "exterieur": 3.16
+      },
+      "pick_category": "ou",
+      "analyse": "Nantes traverse une période de disette offensive inquiétante : trois matchs sans marquer sur les cinq derniers (0-0 vs Auxerre, 0-0 vs Metz, 0-1 vs Angers), avec seulement deux buts inscrits lors du seul match prolifique récent (2-3 vs Strasbourg). Brest de son côté connaît également des difficultés, avec trois défaites sur les quatre dernières sorties (3-4 vs Rennes, 3-0 vs Auxerre, 2-0 vs Monaco), même si leur attaque reste plus active. La tendance défensive de Nantes à domicile est notable : sur six matchs à la Beaujoire en 2026, on compte des scores comme 2-3, 0-1, 2-0, 0-1, 2-0 — la majorité restant sous la barre des 2,5 buts. Les deux équipes semblent en manque de confiance et de régularité offensive, ce qui plaide pour un match fermé. Brest encaisse beaucoup (7 buts sur les deux derniers matchs), mais Nantes est incapable de concrétiser en ce moment, suggérant fortement un match à moins de 2,5 buts.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-1",
+      "actual_result": "draw",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775926800,
+            "tournament": "L1",
+            "home": "Auxerre",
+            "away": "Nantes",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1775402100,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Nantes",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1775322000,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Rennes",
+            "score": "3-4"
+          },
+          {
+            "timestamp": 1774208700,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Strasbourg",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1774116000,
+            "tournament": "L1",
+            "home": "Auxerre",
+            "away": "Brest",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1773518700,
+            "tournament": "L1",
+            "home": "Monaco",
+            "away": "Brest",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772986500,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Le Havre",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1772899200,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Angers",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772381700,
+            "tournament": "L1",
+            "home": "Lille",
+            "away": "Nantes",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1772381700,
+            "tournament": "L1",
+            "home": "Metz",
+            "away": "Brest",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1771776900,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Le Havre",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1771616700,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Marseille",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1771092000,
+            "tournament": "L1",
+            "home": "Lille",
+            "away": "Brest",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1771013100,
+            "tournament": "L1",
+            "home": "Monaco",
+            "away": "Nantes",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1770494700,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Lyon",
+            "score": "0-1"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.38,
+          "draw": 3.25,
+          "away": 3
+        },
+        "double_chance": {
+          "12": 1.33,
+          "1X": 1.36,
+          "X2": 1.54
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.36,
+            "under": 3
+          },
+          "2.5": {
+            "over": 2.15,
+            "under": 1.69
+          },
+          "3.5": {
+            "over": 3.85,
+            "under": 1.23
+          }
+        },
+        "btts": {
+          "yes": 1.84,
+          "no": 1.91
+        },
+        "draw_no_bet": {
+          "home": 1.66,
+          "away": 2.1
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Ligue 1",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "8CShQDU7",
+      "flashscore_id": "8CShQDU7",
+      "flashscore_sport_id": 1,
+      "home_team_id": "nP6UzIU1",
+      "away_team_id": "d2nnj1IE",
+      "tournament_id": "j9qetlpp",
+      "tournament_url": "/football/france/ligue-1/",
+      "sport_key": "flashscore_football_ligue1",
+      "commence_time": "2026-04-19T15:15:00.000Z",
+      "time_display": "Dim. 17h15",
+      "home": "Strasbourg",
+      "away": "Rennes",
+      "match": "Strasbourg vs Rennes",
+      "prono": "win-home",
+      "pari": "Les deux équipes marquent",
+      "cote_retenue": 1.56,
+      "cotes": {
+        "domicile": 3.78,
+        "nul": 4.28,
+        "exterieur": 1.88
+      },
+      "pick_category": "btts",
+      "analyse": "Strasbourg traverse une période de grande forme offensive, enchaînant des victoires convaincantes : 3-1 contre Nice, 3-4 à Brest pour Rennes, et surtout un cinglant 4-0 contre Mainz en UECL. Rennes est également en bonne dynamique avec trois succès récents dont une victoire spectaculaire 4-3 à Brest et un 4-0 infligé à Nice, mais reste irrégulier (nul 0-0 contre Metz, défaite 1-2 face à Lille). Les deux formations se distinguent par leur capacité à produire des buts : Strasbourg a marqué dans 6 de ses 7 derniers matchs, Rennes dans 5 des 6 derniers hors nul à domicile. Strasbourg reçoit avec l'élan d'une double campagne européenne en UECL, ce qui peut peser favorablement sur leur énergie mais aussi sur leur fraîcheur physique. Les deux attaques sont en feu et les défenses poreuses, ce contexte plaide clairement pour un match avec des buts des deux côtés. Le BTTS Yes à 1.56 est le pari le mieux soutenu par les données récentes de ce choc entre deux équipes à vocation offensive.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "0-3",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776366000,
+            "tournament": "UECL",
+            "home": "Strasbourg",
+            "away": "Mainz",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1775934300,
+            "tournament": "L1",
+            "home": "Rennes",
+            "away": "Angers",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775761200,
+            "tournament": "UECL",
+            "home": "Mainz",
+            "away": "Strasbourg",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775322000,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Rennes",
+            "score": "3-4"
+          },
+          {
+            "timestamp": 1775314800,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Nice",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1774208700,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Strasbourg",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1774196100,
+            "tournament": "L1",
+            "home": "Rennes",
+            "away": "Metz",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1773950400,
+            "tournament": "UECL",
+            "home": "Strasbourg",
+            "away": "Rijeka",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773603900,
+            "tournament": "L1",
+            "home": "Rennes",
+            "away": "Lille",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1773583200,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Paris FC",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1773337500,
+            "tournament": "UECL",
+            "home": "Rijeka",
+            "away": "Strasbourg",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1772986500,
+            "tournament": "L1",
+            "home": "Nice",
+            "away": "Rennes",
+            "score": "0-4"
+          },
+          {
+            "timestamp": 1772906400,
+            "tournament": "L1",
+            "home": "Auxerre",
+            "away": "Strasbourg",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1772568000,
+            "tournament": "CDF",
+            "home": "Strasbourg",
+            "away": "Reims",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1772294400,
+            "tournament": "L1",
+            "home": "Rennes",
+            "away": "Toulouse",
+            "score": "1-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.73,
+          "draw": 3.67,
+          "away": 2.4
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.53,
+          "X2": 1.44
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.2,
+            "under": 4.35
+          },
+          "2.5": {
+            "over": 1.67,
+            "under": 2.2
+          },
+          "3.5": {
+            "over": 2.63,
+            "under": 1.44
+          }
+        },
+        "btts": {
+          "yes": 1.56,
+          "no": 2.37
+        },
+        "draw_no_bet": {
+          "home": 1.95,
+          "away": 1.75
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Ligue 1",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "U3M9iQJ6",
+      "flashscore_id": "U3M9iQJ6",
+      "flashscore_sport_id": 1,
+      "home_team_id": "Wtn9Stg0",
+      "away_team_id": "hA1Zm19f",
+      "tournament_id": "oeeq9yvp",
+      "tournament_url": "/football/england/premier-league/",
+      "sport_key": "flashscore_football_epl",
+      "commence_time": "2026-04-19T15:30:00.000Z",
+      "time_display": "Dim. 17h30",
+      "home": "Manchester City",
+      "away": "Arsenal",
+      "match": "Manchester City vs Arsenal",
+      "prono": "win-home",
+      "pari": "Les deux équipes ne marquent pas",
+      "cote_retenue": 1.92,
+      "cotes": {
+        "domicile": 1.85,
+        "nul": 3.78,
+        "exterieur": 4.46
+      },
+      "pick_category": "btts",
+      "analyse": "Le H2H récent est particulièrement éclairant : Manchester City a battu Arsenal 2-0 en EFL Cup le 22 mars 2026, confirmant une domination physique et tactique dans les confrontations directes cette saison. City arrive en grande forme à domicile avec une victoire écrasante 4-0 contre Liverpool en FA Cup et un 3-0 contre Chelsea en PL, démontrant une efficacité offensive redoutable. Arsenal traverse en revanche une passe difficile : défaite 1-2 contre Bournemouth en PL le 11 avril et elimination en FA Cup par Southampton (2-1), révélant une fragilité défensive et un manque de tranchant offensif inquiétant. Les Gunners n'ont marqué qu'un seul but lors de leurs trois derniers matchs de compétition domestique, ce qui tempère toute ambition offensive. City à l'Etihad face à une équipe d'Arsenal en manque de confiance suggère un match contrôlé par les locaux, avec un risque réel que les Gunners ne parviennent pas à scorer. Le pari BTTS No apparaît comme le choix le plus pertinent : Arsenal n'a pas marqué dans 3 de ses 5 derniers matchs, et City garde un clean sheet dans ce H2H récent.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "void",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776279600,
+            "tournament": "CL",
+            "home": "Arsenal",
+            "away": "Sporting CP",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1776007800,
+            "tournament": "PL",
+            "home": "Chelsea",
+            "away": "Manchester City",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1775907000,
+            "tournament": "PL",
+            "home": "Arsenal",
+            "away": "Bournemouth",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775588400,
+            "tournament": "CL",
+            "home": "Sporting CP",
+            "away": "Arsenal",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1775329200,
+            "tournament": "FAC",
+            "home": "Southampton",
+            "away": "Arsenal",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775303100,
+            "tournament": "FAC",
+            "home": "Manchester City",
+            "away": "Liverpool",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1774197000,
+            "tournament": "EFL",
+            "home": "Arsenal",
+            "away": "Manchester City",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1773777600,
+            "tournament": "CL",
+            "home": "Manchester City",
+            "away": "Real Madrid",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1773777600,
+            "tournament": "CL",
+            "home": "Arsenal",
+            "away": "Bayer Leverkusen",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773518400,
+            "tournament": "PL",
+            "home": "West Ham",
+            "away": "Manchester City",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773509400,
+            "tournament": "PL",
+            "home": "Arsenal",
+            "away": "Everton",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773259200,
+            "tournament": "CL",
+            "home": "Real Madrid",
+            "away": "Manchester City",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1773251100,
+            "tournament": "CL",
+            "home": "Bayer Leverkusen",
+            "away": "Arsenal",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1772913600,
+            "tournament": "FAC",
+            "home": "Newcastle",
+            "away": "Manchester City",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1772885700,
+            "tournament": "FAC",
+            "home": "Mansfield",
+            "away": "Arsenal",
+            "score": "1-2"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 1.9,
+          "draw": 3.5,
+          "away": 4.15
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.22,
+          "X2": 1.87
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.29,
+            "under": 3.4
+          },
+          "2.5": {
+            "over": 1.91,
+            "under": 1.84
+          },
+          "3.5": {
+            "over": 3.35,
+            "under": 1.29
+          }
+        },
+        "btts": {
+          "yes": 1.81,
+          "no": 1.92
+        },
+        "draw_no_bet": {
+          "home": 1.36,
+          "away": 2.88
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Premier League",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "tOLCD6oK",
+      "flashscore_id": "tOLCD6oK",
+      "flashscore_sport_id": 1,
+      "home_team_id": "roasMsOT",
+      "away_team_id": "d0PJxeie",
+      "tournament_id": "6pwwasa7",
+      "tournament_url": "/football/italy/serie-a/",
+      "sport_key": "flashscore_football_seriea",
+      "commence_time": "2026-04-19T16:00:00.000Z",
+      "time_display": "Dim. 18h00",
+      "home": "Pisa",
+      "away": "Genoa",
+      "match": "Pisa vs Genoa",
+      "prono": "win-away",
+      "pari": "Victoire Genoa (remboursement si nul)",
+      "cote_retenue": 1.62,
+      "cotes": {
+        "domicile": 3.06,
+        "nul": 3.06,
+        "exterieur": 2.65
+      },
+      "pick_category": "dnb",
+      "analyse": "Pisa traverse une période très difficile : quatre défaites lors de leurs cinq derniers matchs de Serie A, avec notamment une humiliation 5-0 face à Como et une lourde défaite 4-0 contre la Juventus. La seule victoire récente des Pisans remonte au 15 mars contre Cagliari (3-1), ce qui semble isolé dans un contexte de nette régression. Genoa présente un bilan plus équilibré : victoires contre Sassuolo (2-1), Verona (2-0) et AS Roma (2-1), mais aussi des revers contre Juventus (0-2) et Udinese (0-2), ce qui révèle une équipe capable d'être compétitive sans pour autant être constante. À domicile, Pisa est particulièrement vulnérable comme en témoignent leurs défaites 0-1 contre Torino et 0-1 contre Bologna entre leurs propres murs. Genoa, équipe expérimentée en Serie A, dispose d'un effectif plus solide pour profiter d'une formation pisane en manque de confiance. Le Draw No Bet en faveur de Genoa à 1.62 offre une sécurité supplémentaire dans un match où les visiteurs semblent nettement mieux armés.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1775989800,
+            "tournament": "SA",
+            "home": "Genoa",
+            "away": "Sassuolo",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775846700,
+            "tournament": "SA",
+            "home": "AS Roma",
+            "away": "Pisa",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1775491200,
+            "tournament": "SA",
+            "home": "Juventus",
+            "away": "Genoa",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775404800,
+            "tournament": "SA",
+            "home": "Pisa",
+            "away": "Torino",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1774179000,
+            "tournament": "SA",
+            "home": "Como",
+            "away": "Pisa",
+            "score": "5-0"
+          },
+          {
+            "timestamp": 1774035900,
+            "tournament": "SA",
+            "home": "Genoa",
+            "away": "Udinese",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1773583200,
+            "tournament": "SA",
+            "home": "Pisa",
+            "away": "Cagliari",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1773574200,
+            "tournament": "SA",
+            "home": "Verona",
+            "away": "Genoa",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1772989200,
+            "tournament": "SA",
+            "home": "Genoa",
+            "away": "AS Roma",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1772912700,
+            "tournament": "SA",
+            "home": "Juventus",
+            "away": "Pisa",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1772472600,
+            "tournament": "SA",
+            "home": "Pisa",
+            "away": "Bologna",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772307900,
+            "tournament": "SA",
+            "home": "Inter",
+            "away": "Genoa",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1771867800,
+            "tournament": "SA",
+            "home": "Fiorentina",
+            "away": "Pisa",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1771759800,
+            "tournament": "SA",
+            "home": "Genoa",
+            "away": "Torino",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1771164000,
+            "tournament": "SA",
+            "home": "Cremonese",
+            "away": "Genoa",
+            "score": "0-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 3.2,
+          "draw": 3.05,
+          "away": 2.42
+        },
+        "double_chance": {
+          "12": 1.35,
+          "1X": 1.55,
+          "X2": 1.35
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.44,
+            "under": 2.62
+          },
+          "2.5": {
+            "over": 2.42,
+            "under": 1.54
+          },
+          "3.5": {
+            "over": 4.78,
+            "under": 1.17
+          }
+        },
+        "btts": {
+          "yes": 2.01,
+          "no": 1.73
+        },
+        "draw_no_bet": {
+          "home": 2.17,
+          "away": 1.62
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Serie A",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "lE8lWKz1",
+      "flashscore_id": "lE8lWKz1",
+      "flashscore_sport_id": 1,
+      "home_team_id": "nVp0wiqd",
+      "away_team_id": "nJQmYp1B",
+      "tournament_id": "8uyeqfid",
+      "tournament_url": "/football/germany/bundesliga/",
+      "sport_key": "flashscore_football_bundes",
+      "commence_time": "2026-04-19T15:30:00.000Z",
+      "time_display": "Dim. 17h30",
+      "home": "Bayern Munich",
+      "away": "Stuttgart",
+      "match": "Bayern Munich vs Stuttgart",
+      "prono": "win-home",
+      "pari": "Plus de 3.5 buts",
+      "cote_retenue": 1.62,
+      "cotes": {
+        "domicile": 1.5,
+        "nul": 5.33,
+        "exterieur": 5.68
+      },
+      "pick_category": "ou",
+      "analyse": "Le Bayern Munich traverse une forme exceptionnelle : victoire 5-0 à St. Pauli, 4-0 contre Union Berlin, 3-2 contre Freiburg (en butant sur l'adversité) et une double qualification en Ligue des Champions face au Real Madrid (2-1 + 4-3). C'est une machine offensive qui enchaîne les grosses performances. Stuttgart présente une forme plus contrastée : écrasante victoire 4-0 contre Hambourg et 5-2 à Augsbourg, mais défaite 0-2 contre Dortmund et élimination en Europa League par Porto. À domicile, le Bayern est une forteresse, et Stuttgart concède des buts même dans ses bonnes périodes. La tendance des deux équipes à scorer en grand nombre (over 3.5 atteint dans 6 des 10 derniers matchs combinés) et la capacité de Stuttgart à marquer malgré tout (même face à de grosses équipes) rend le scénario d'une partie prolifique très probable. Avec le Bayern en grande forme offensive et Stuttgart capable de répondre, le pari sur plus de 3.5 buts à 1.62 représente une valeur certaine.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "4-2",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776279600,
+            "tournament": "CL",
+            "home": "Bayern Munich",
+            "away": "Real Madrid",
+            "score": "4-3"
+          },
+          {
+            "timestamp": 1776007800,
+            "tournament": "BUN",
+            "home": "Stuttgart",
+            "away": "Hamburger SV",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1775925000,
+            "tournament": "BUN",
+            "home": "St. Pauli",
+            "away": "Bayern Munich",
+            "score": "0-5"
+          },
+          {
+            "timestamp": 1775588400,
+            "tournament": "CL",
+            "home": "Real Madrid",
+            "away": "Bayern Munich",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775320200,
+            "tournament": "BUN",
+            "home": "Stuttgart",
+            "away": "Dortmund",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775309400,
+            "tournament": "BUN",
+            "home": "Freiburg",
+            "away": "Bayern Munich",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1774204200,
+            "tournament": "BUN",
+            "home": "Augsburg",
+            "away": "Stuttgart",
+            "score": "2-5"
+          },
+          {
+            "timestamp": 1774103400,
+            "tournament": "BUN",
+            "home": "Bayern Munich",
+            "away": "Union Berlin",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1773950400,
+            "tournament": "EL",
+            "home": "FC Porto",
+            "away": "Stuttgart",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773864000,
+            "tournament": "CL",
+            "home": "Bayern Munich",
+            "away": "Atalanta",
+            "score": "4-1"
+          },
+          {
+            "timestamp": 1773599400,
+            "tournament": "BUN",
+            "home": "Stuttgart",
+            "away": "RB Leipzig",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1773498600,
+            "tournament": "BUN",
+            "home": "Bayer Leverkusen",
+            "away": "Bayern Munich",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1773337500,
+            "tournament": "EL",
+            "home": "Stuttgart",
+            "away": "FC Porto",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1773172800,
+            "tournament": "CL",
+            "home": "Atalanta",
+            "away": "Bayern Munich",
+            "score": "1-6"
+          },
+          {
+            "timestamp": 1772893800,
+            "tournament": "BUN",
+            "home": "Mainz",
+            "away": "Stuttgart",
+            "score": "2-2"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 1.4,
+          "draw": 5.5,
+          "away": 6.5
+        },
+        "double_chance": {
+          "12": 1.15,
+          "1X": 1.12,
+          "X2": 2.88
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.06,
+            "under": 9.3
+          },
+          "2.5": {
+            "over": 1.22,
+            "under": 4.03
+          },
+          "3.5": {
+            "over": 1.62,
+            "under": 2.29
+          }
+        },
+        "btts": {
+          "yes": 1.36,
+          "no": 2.96
+        },
+        "draw_no_bet": {
+          "home": 1.17,
+          "away": 4.8
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Bundesliga",
+      "archived_at": "2026-04-19T18:07:16.429Z"
+    },
+    {
+      "event_id": "l02DM3Ns",
+      "flashscore_id": "l02DM3Ns",
+      "flashscore_sport_id": 1,
+      "home_team_id": "YBFbLqQ4",
+      "away_team_id": "Gzqmz0ya",
+      "tournament_id": "luvkpl9k",
+      "tournament_url": "/football/asia/gulf-club-champions-league/",
+      "sport_key": "flashscore_football_ucl",
+      "commence_time": "2026-04-19T14:00:00.000Z",
+      "time_display": "Dim. 16h00",
+      "home": "Zakho (Irq)",
+      "away": "Al Shabab (Sau)",
+      "match": "Zakho (Irq) vs Al Shabab (Sau)",
+      "prono": "win-home",
+      "pari": "Plus de 2.5 buts",
+      "cote_retenue": 1.63,
+      "cotes": {
+        "domicile": 6.72,
+        "nul": 4.84,
+        "exterieur": 1.4
+      },
+      "pick_category": "ou",
+      "analyse": "Al Shabab (Arabie Saoudite) affronte Zakho (Irak) dans ce qui semble être une confrontation très déséquilibrée sur le papier. Le club saoudien évolue en Saudi Pro League, l'un des championnats les plus riches et compétitifs de la région, et présente une forme récente correcte : victoire 2-0 face à Al Okhdood, 3-1 contre Al Riyadh, et deux nuls récents contre Al Qadsiah (2-2) et Al Riyadh (1-1). Zakho, club irakien, traverse une période difficile en championnat national : défaite 3-0 contre Baghdad, 2-0 contre Al Shorta, 2-0 contre Al Mosul, avec seulement une victoire sur les 6 derniers matches (1-0 à Duhok). Le niveau structurel, financier et athlétique entre les deux clubs est manifestement en faveur du club saoudien, qui dispose de joueurs professionnels au niveau international supérieur. Zakho concède des buts régulièrement à domicile et à l'extérieur (3-0, 2-0, 2-0 encaissés sur les dernières sorties). Le pari sur la victoire d'Al Shabab semble excessivement court, mais un pari sur plus de 2.5 buts est cohérent avec la tendance offensive d'Al Shabab (3-5, 3-1, 2-0, 3-1 récents) combinée à la défense poreuse de Zakho.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "1-1",
+      "actual_result": "draw",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776189600,
+            "tournament": "SPL",
+            "home": "Al Qadsiah",
+            "away": "Al Shabab",
+            "score": "2-2"
+          },
+          {
+            "timestamp": 1776011400,
+            "tournament": "SL",
+            "home": "Zakho",
+            "away": "Al Talaba",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775656800,
+            "tournament": "SL",
+            "home": "Zakho",
+            "away": "Al Zawraa",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1775412000,
+            "tournament": "SPL",
+            "home": "Al Riyadh",
+            "away": "Al Shabab",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1775233800,
+            "tournament": "SL",
+            "home": "Baghdad",
+            "away": "Zakho",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1774881000,
+            "tournament": "SL",
+            "home": "Duhok",
+            "away": "Zakho",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1774528200,
+            "tournament": "SL",
+            "home": "Zakho",
+            "away": "Al Shorta",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1774197000,
+            "tournament": "SL",
+            "home": "Al Mosul",
+            "away": "Zakho",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773864900,
+            "tournament": "SL",
+            "home": "Zakho",
+            "away": "Al-Karma",
+            "score": "2-2"
+          },
+          {
+            "timestamp": 1773514800,
+            "tournament": "SPL",
+            "home": "Al Shabab",
+            "away": "Al Okhdood",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1773513000,
+            "tournament": "SL",
+            "home": "Al-Qassim",
+            "away": "Zakho",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1772910000,
+            "tournament": "SPL",
+            "home": "Al Ettifaq",
+            "away": "Al Shabab",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1772218800,
+            "tournament": "SPL",
+            "home": "Al Shabab",
+            "away": "Al Hilal",
+            "score": "3-5"
+          },
+          {
+            "timestamp": 1772130600,
+            "tournament": "SL",
+            "home": "Zakho",
+            "away": "Al Gharraf",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1771873200,
+            "tournament": "SPL",
+            "home": "Al Shabab",
+            "away": "Al Riyadh",
+            "score": "3-1"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 5.37,
+          "draw": 4.85,
+          "away": 1.41
+        },
+        "double_chance": {
+          "12": 1.1,
+          "1X": 2.52,
+          "X2": 1.09
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.17,
+            "under": 4.05
+          },
+          "2.5": {
+            "over": 1.63,
+            "under": 2.12
+          },
+          "3.5": {
+            "over": 2.63,
+            "under": 1.38
+          }
+        },
+        "btts": {
+          "yes": 1.77,
+          "no": 1.9
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Champions League",
+      "archived_at": "2026-04-19T18:07:16.429Z"
     }
   ],
   "combos": [
