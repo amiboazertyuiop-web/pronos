@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-19T00:04:09.994Z",
+    "last_results_update": "2026-04-19T06:21:54.522Z",
     "analyses_written_at": "2026-04-18T08:15:07.420Z",
     "analyses_cost_usd": 0.181,
-    "last_hourly_refresh": "2026-04-19T00:04:09.994Z"
+    "last_hourly_refresh": "2026-04-19T06:21:54.522Z"
   },
   "sports": {
     "foot": {
@@ -788,494 +788,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "02fTcFCr",
-              "flashscore_id": "02fTcFCr",
-              "flashscore_sport_id": 3,
-              "home_team_id": "WCNO4nbt",
-              "away_team_id": "xAO4gBas",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-18T22:00:00.000Z",
-              "time_display": "Dim. 00h00",
-              "home": "New York Knicks",
-              "away": "Atlanta Hawks",
-              "match": "New York Knicks vs Atlanta Hawks",
-              "prono": "win-home",
-              "pari": "Plus de 215.5 points",
-              "cote_retenue": 1.81,
-              "cotes": {
-                "domicile": 1.44,
-                "nul": null,
-                "exterieur": 3.07
-              },
-              "pick_category": "ou",
-              "analyse": "Les Knicks présentent une forme irrégulière : après deux victoires solides contre Toronto (112-95) et Boston (112-106), ils ont sombré face à Charlotte (96-110), révélant une certaine fragilité défensive. Atlanta enchaîne des performances très contrastées également : une victoire éclatante contre Cleveland (124-102) a été suivie d'une déroute face à Miami (143-117). Le H2H récent du 6 avril (105-108 en faveur des Knicks) a produit un total de 213 points, un match relativement serré. Sur les derniers matchs d'Atlanta, le total de points est souvent élevé : 141+107 contre Brooklyn, 101+130 contre Orlando, 123+113 contre Sacramento. Les Knicks, eux, alternent matches offensifs (136-96 vs Chicago, 130+119 vs Memphis) et matches défensifs fermés. Avec deux équipes en fin de saison régulière, potentiellement en lutte pour le classement playoff, le rythme devrait rester soutenu, mais les défenses montrent des failles. Un total supérieur à 215.5 points paraît raisonnable au vu de la tendance offensive récente des deux équipes.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Charlotte Hornets",
-                    "score": "96-110"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Miami Heat",
-                    "away": "Atlanta Hawks",
-                    "score": "143-117"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Toronto Raptors",
-                    "score": "112-95"
-                  },
-                  {
-                    "timestamp": 1775862000,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "124-102"
-                  },
-                  {
-                    "timestamp": 1775777400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Boston Celtics",
-                    "score": "112-106"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Atlanta Hawks",
-                    "score": "122-116"
-                  },
-                  {
-                    "timestamp": 1775516400,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "105-108"
-                  },
-                  {
-                    "timestamp": 1775259000,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Chicago Bulls",
-                    "score": "136-96"
-                  },
-                  {
-                    "timestamp": 1775259000,
-                    "tournament": "NBA",
-                    "home": "Brooklyn Nets",
-                    "away": "Atlanta Hawks",
-                    "score": "107-141"
-                  },
-                  {
-                    "timestamp": 1775088000,
-                    "tournament": "NBA",
-                    "home": "Memphis Grizzlies",
-                    "away": "New York Knicks",
-                    "score": "119-130"
-                  },
-                  {
-                    "timestamp": 1775084400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Atlanta Hawks",
-                    "score": "101-130"
-                  },
-                  {
-                    "timestamp": 1775001600,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "New York Knicks",
-                    "score": "111-94"
-                  },
-                  {
-                    "timestamp": 1774913400,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "Boston Celtics",
-                    "score": "112-102"
-                  },
-                  {
-                    "timestamp": 1774827000,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "New York Knicks",
-                    "score": "111-100"
-                  },
-                  {
-                    "timestamp": 1774740600,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "Sacramento Kings",
-                    "score": "123-113"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "215.5": {
-                    "over": 1.81,
-                    "under": 1.87
-                  },
-                  "216.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "212.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "214.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "217.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "218.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "219.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "220.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "5.0": {
-                    "away": 1.9
-                  },
-                  "-5.0": {
-                    "home": 1.9
-                  },
-                  "5.5": {
-                    "away": 1.9
-                  },
-                  "-5.5": {
-                    "home": 1.9
-                  },
-                  "1.5": {
-                    "away": 2.5
-                  },
-                  "-1.5": {
-                    "home": 1.5
-                  },
-                  "2.5": {
-                    "away": 2.25
-                  },
-                  "-2.5": {
-                    "home": 1.6
-                  },
-                  "3.5": {
-                    "away": 2.05
-                  },
-                  "-3.5": {
-                    "home": 1.7
-                  },
-                  "4.5": {
-                    "away": 2
-                  },
-                  "-4.5": {
-                    "home": 1.73
-                  },
-                  "6.5": {
-                    "away": 1.7
-                  },
-                  "-6.5": {
-                    "home": 2.05
-                  },
-                  "7.5": {
-                    "away": 1.6
-                  },
-                  "-7.5": {
-                    "home": 2.25
-                  },
-                  "8.5": {
-                    "away": 1.5
-                  },
-                  "-8.5": {
-                    "home": 2.5
-                  },
-                  "9.5": {
-                    "away": 1.4
-                  },
-                  "-9.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "Wn4c3ykL",
-              "flashscore_id": "Wn4c3ykL",
-              "flashscore_sport_id": 3,
-              "home_team_id": "ngegZ8bg",
-              "away_team_id": "Sr9PQALP",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-19T00:30:00.000Z",
-              "time_display": "Dim. 02h30",
-              "home": "Los Angeles Lakers",
-              "away": "Houston Rockets",
-              "match": "Los Angeles Lakers vs Houston Rockets",
-              "prono": "win-home",
-              "pari": "Moins de 207.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 2.81,
-                "nul": null,
-                "exterieur": 1.51
-              },
-              "pick_category": "ou",
-              "analyse": "Les deux équipes arrivent en excellente forme à l'approche de ce match de fin de saison régulière. Houston a dominé Memphis 132-101 et Utah 140-106 lors de ses deux dernières sorties, affichant une attaque prolifique et une défense étouffante. Los Angeles a de son côté écrasé Utah 131-107 et les Suns 101-73, mais a encaissé 123 et 139 points face à Oklahoma City, révélant une défense parfois poreuse. En analysant les totaux récents, on constate que la majorité des matchs restent sous la barre des 220 points combinés, avec des scores comme 131-107, 101-73 ou 132-101 qui suggèrent une équipe dominante mais pas nécessairement des shootouts à haut scoring. Les Rockets jouent un basket très discipliné sous Ime Udoka, contrôlant le rythme et la possession, tandis que les Lakers à domicile ont montré une certaine solidité défensive face aux équipes offensives. Un total autour de 206-207 points semble raisonnable compte tenu des styles en présence.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Utah Jazz",
-                    "score": "131-107"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Memphis Grizzlies",
-                    "score": "132-101"
-                  },
-                  {
-                    "timestamp": 1775874600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Phoenix Suns",
-                    "score": "101-73"
-                  },
-                  {
-                    "timestamp": 1775871000,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-136"
-                  },
-                  {
-                    "timestamp": 1775786400,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Los Angeles Lakers",
-                    "score": "103-119"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775617200,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Houston Rockets",
-                    "score": "105-119"
-                  },
-                  {
-                    "timestamp": 1775615400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "87-123"
-                  },
-                  {
-                    "timestamp": 1775440800,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Houston Rockets",
-                    "score": "116-117"
-                  },
-                  {
-                    "timestamp": 1775431800,
-                    "tournament": "NBA",
-                    "home": "Dallas Mavericks",
-                    "away": "Los Angeles Lakers",
-                    "score": "134-128"
-                  },
-                  {
-                    "timestamp": 1775260800,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Utah Jazz",
-                    "score": "140-106"
-                  },
-                  {
-                    "timestamp": 1775179800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "139-96"
-                  },
-                  {
-                    "timestamp": 1775088000,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Milwaukee Bucks",
-                    "score": "119-113"
-                  },
-                  {
-                    "timestamp": 1775010600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Cleveland Cavaliers",
-                    "score": "127-113"
-                  },
-                  {
-                    "timestamp": 1775001600,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "New York Knicks",
-                    "score": "111-94"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "206.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "207.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "203.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "204.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "205.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "208.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "209.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "210.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "211.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "5.0": {
-                    "home": 1.9
-                  },
-                  "-5.0": {
-                    "away": 1.9
-                  },
-                  "5.5": {
-                    "home": 1.85
-                  },
-                  "-5.5": {
-                    "away": 1.91
-                  },
-                  "1.5": {
-                    "home": 2.5
-                  },
-                  "-1.5": {
-                    "away": 1.5
-                  },
-                  "2.5": {
-                    "home": 2.38
-                  },
-                  "-2.5": {
-                    "away": 1.53
-                  },
-                  "3.5": {
-                    "home": 2.2
-                  },
-                  "-3.5": {
-                    "away": 1.62
-                  },
-                  "4.5": {
-                    "home": 2.05
-                  },
-                  "-4.5": {
-                    "away": 1.7
-                  },
-                  "6.5": {
-                    "home": 1.7
-                  },
-                  "-6.5": {
-                    "away": 2.05
-                  },
-                  "7.5": {
-                    "home": 1.62
-                  },
-                  "-7.5": {
-                    "away": 2.2
-                  },
-                  "8.5": {
-                    "home": 1.53
-                  },
-                  "-8.5": {
-                    "away": 2.38
-                  },
-                  "9.5": {
-                    "home": 1.5
-                  },
-                  "-9.5": {
-                    "away": 2.5
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -3282,54 +2795,6 @@
     "Wn4c3ykL"
   ],
   "history": [
-    {
-      "event_id": "ERQ71v3M",
-      "flashscore_id": "ERQ71v3M",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T09:00:00.000Z",
-      "home": "Hamburger SV U19",
-      "away": "Stuttgart U19",
-      "match": "Hamburger SV U19 vs Stuttgart U19",
-      "prono": "win-away",
-      "pari": "Victoire Stuttgart U19",
-      "cote_retenue": 1.61,
-      "cotes": {
-        "domicile": 4,
-        "exterieur": 1.61
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "3-2",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
-    {
-      "event_id": "rqWvKUdS",
-      "flashscore_id": "rqWvKUdS",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T09:00:00.000Z",
-      "home": "Hannover U19",
-      "away": "Kaiserslautern U19",
-      "match": "Hannover U19 vs Kaiserslautern U19",
-      "prono": "win-home",
-      "pari": "Victoire Hannover U19",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 2,
-        "exterieur": 2
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "5-1",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-12T13:10:52.437Z"
-    },
     {
       "event_id": "lCaXRzu0",
       "flashscore_id": "lCaXRzu0",
@@ -47303,6 +46768,498 @@
       "sport_label": "🏀 Basketball",
       "league_label": "NBA",
       "archived_at": "2026-04-19T00:04:09.994Z"
+    },
+    {
+      "event_id": "02fTcFCr",
+      "flashscore_id": "02fTcFCr",
+      "flashscore_sport_id": 3,
+      "home_team_id": "WCNO4nbt",
+      "away_team_id": "xAO4gBas",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-18T22:00:00.000Z",
+      "time_display": "Dim. 00h00",
+      "home": "New York Knicks",
+      "away": "Atlanta Hawks",
+      "match": "New York Knicks vs Atlanta Hawks",
+      "prono": "win-home",
+      "pari": "Plus de 215.5 points",
+      "cote_retenue": 1.81,
+      "cotes": {
+        "domicile": 1.44,
+        "nul": null,
+        "exterieur": 3.07
+      },
+      "pick_category": "ou",
+      "analyse": "Les Knicks présentent une forme irrégulière : après deux victoires solides contre Toronto (112-95) et Boston (112-106), ils ont sombré face à Charlotte (96-110), révélant une certaine fragilité défensive. Atlanta enchaîne des performances très contrastées également : une victoire éclatante contre Cleveland (124-102) a été suivie d'une déroute face à Miami (143-117). Le H2H récent du 6 avril (105-108 en faveur des Knicks) a produit un total de 213 points, un match relativement serré. Sur les derniers matchs d'Atlanta, le total de points est souvent élevé : 141+107 contre Brooklyn, 101+130 contre Orlando, 123+113 contre Sacramento. Les Knicks, eux, alternent matches offensifs (136-96 vs Chicago, 130+119 vs Memphis) et matches défensifs fermés. Avec deux équipes en fin de saison régulière, potentiellement en lutte pour le classement playoff, le rythme devrait rester soutenu, mais les défenses montrent des failles. Un total supérieur à 215.5 points paraît raisonnable au vu de la tendance offensive récente des deux équipes.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "113-102",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Charlotte Hornets",
+            "score": "96-110"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Miami Heat",
+            "away": "Atlanta Hawks",
+            "score": "143-117"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Toronto Raptors",
+            "score": "112-95"
+          },
+          {
+            "timestamp": 1775862000,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "Cleveland Cavaliers",
+            "score": "124-102"
+          },
+          {
+            "timestamp": 1775777400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Boston Celtics",
+            "score": "112-106"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Atlanta Hawks",
+            "score": "122-116"
+          },
+          {
+            "timestamp": 1775516400,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "105-108"
+          },
+          {
+            "timestamp": 1775259000,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Chicago Bulls",
+            "score": "136-96"
+          },
+          {
+            "timestamp": 1775259000,
+            "tournament": "NBA",
+            "home": "Brooklyn Nets",
+            "away": "Atlanta Hawks",
+            "score": "107-141"
+          },
+          {
+            "timestamp": 1775088000,
+            "tournament": "NBA",
+            "home": "Memphis Grizzlies",
+            "away": "New York Knicks",
+            "score": "119-130"
+          },
+          {
+            "timestamp": 1775084400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Atlanta Hawks",
+            "score": "101-130"
+          },
+          {
+            "timestamp": 1775001600,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "New York Knicks",
+            "score": "111-94"
+          },
+          {
+            "timestamp": 1774913400,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "Boston Celtics",
+            "score": "112-102"
+          },
+          {
+            "timestamp": 1774827000,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "New York Knicks",
+            "score": "111-100"
+          },
+          {
+            "timestamp": 1774740600,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "Sacramento Kings",
+            "score": "123-113"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "215.5": {
+            "over": 1.81,
+            "under": 1.87
+          },
+          "216.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "212.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "214.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "217.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "218.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "219.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "220.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "5.0": {
+            "away": 1.9
+          },
+          "-5.0": {
+            "home": 1.9
+          },
+          "5.5": {
+            "away": 1.9
+          },
+          "-5.5": {
+            "home": 1.9
+          },
+          "1.5": {
+            "away": 2.5
+          },
+          "-1.5": {
+            "home": 1.5
+          },
+          "2.5": {
+            "away": 2.25
+          },
+          "-2.5": {
+            "home": 1.6
+          },
+          "3.5": {
+            "away": 2.05
+          },
+          "-3.5": {
+            "home": 1.7
+          },
+          "4.5": {
+            "away": 2
+          },
+          "-4.5": {
+            "home": 1.73
+          },
+          "6.5": {
+            "away": 1.7
+          },
+          "-6.5": {
+            "home": 2.05
+          },
+          "7.5": {
+            "away": 1.6
+          },
+          "-7.5": {
+            "home": 2.25
+          },
+          "8.5": {
+            "away": 1.5
+          },
+          "-8.5": {
+            "home": 2.5
+          },
+          "9.5": {
+            "away": 1.4
+          },
+          "-9.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-19T06:21:54.522Z"
+    },
+    {
+      "event_id": "Wn4c3ykL",
+      "flashscore_id": "Wn4c3ykL",
+      "flashscore_sport_id": 3,
+      "home_team_id": "ngegZ8bg",
+      "away_team_id": "Sr9PQALP",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-19T00:30:00.000Z",
+      "time_display": "Dim. 02h30",
+      "home": "Los Angeles Lakers",
+      "away": "Houston Rockets",
+      "match": "Los Angeles Lakers vs Houston Rockets",
+      "prono": "win-home",
+      "pari": "Moins de 207.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 2.81,
+        "nul": null,
+        "exterieur": 1.51
+      },
+      "pick_category": "ou",
+      "analyse": "Les deux équipes arrivent en excellente forme à l'approche de ce match de fin de saison régulière. Houston a dominé Memphis 132-101 et Utah 140-106 lors de ses deux dernières sorties, affichant une attaque prolifique et une défense étouffante. Los Angeles a de son côté écrasé Utah 131-107 et les Suns 101-73, mais a encaissé 123 et 139 points face à Oklahoma City, révélant une défense parfois poreuse. En analysant les totaux récents, on constate que la majorité des matchs restent sous la barre des 220 points combinés, avec des scores comme 131-107, 101-73 ou 132-101 qui suggèrent une équipe dominante mais pas nécessairement des shootouts à haut scoring. Les Rockets jouent un basket très discipliné sous Ime Udoka, contrôlant le rythme et la possession, tandis que les Lakers à domicile ont montré une certaine solidité défensive face aux équipes offensives. Un total autour de 206-207 points semble raisonnable compte tenu des styles en présence.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "107-98",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Utah Jazz",
+            "score": "131-107"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Memphis Grizzlies",
+            "score": "132-101"
+          },
+          {
+            "timestamp": 1775874600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Phoenix Suns",
+            "score": "101-73"
+          },
+          {
+            "timestamp": 1775871000,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Minnesota Timberwolves",
+            "score": "132-136"
+          },
+          {
+            "timestamp": 1775786400,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Los Angeles Lakers",
+            "score": "103-119"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775617200,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Houston Rockets",
+            "score": "105-119"
+          },
+          {
+            "timestamp": 1775615400,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "87-123"
+          },
+          {
+            "timestamp": 1775440800,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Houston Rockets",
+            "score": "116-117"
+          },
+          {
+            "timestamp": 1775431800,
+            "tournament": "NBA",
+            "home": "Dallas Mavericks",
+            "away": "Los Angeles Lakers",
+            "score": "134-128"
+          },
+          {
+            "timestamp": 1775260800,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Utah Jazz",
+            "score": "140-106"
+          },
+          {
+            "timestamp": 1775179800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "139-96"
+          },
+          {
+            "timestamp": 1775088000,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Milwaukee Bucks",
+            "score": "119-113"
+          },
+          {
+            "timestamp": 1775010600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Cleveland Cavaliers",
+            "score": "127-113"
+          },
+          {
+            "timestamp": 1775001600,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "New York Knicks",
+            "score": "111-94"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "206.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "207.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "203.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "204.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "205.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "208.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "209.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "210.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "211.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "5.0": {
+            "home": 1.9
+          },
+          "-5.0": {
+            "away": 1.9
+          },
+          "5.5": {
+            "home": 1.85
+          },
+          "-5.5": {
+            "away": 1.91
+          },
+          "1.5": {
+            "home": 2.5
+          },
+          "-1.5": {
+            "away": 1.5
+          },
+          "2.5": {
+            "home": 2.38
+          },
+          "-2.5": {
+            "away": 1.53
+          },
+          "3.5": {
+            "home": 2.2
+          },
+          "-3.5": {
+            "away": 1.62
+          },
+          "4.5": {
+            "home": 2.05
+          },
+          "-4.5": {
+            "away": 1.7
+          },
+          "6.5": {
+            "home": 1.7
+          },
+          "-6.5": {
+            "away": 2.05
+          },
+          "7.5": {
+            "home": 1.62
+          },
+          "-7.5": {
+            "away": 2.2
+          },
+          "8.5": {
+            "home": 1.53
+          },
+          "-8.5": {
+            "away": 2.38
+          },
+          "9.5": {
+            "home": 1.5
+          },
+          "-9.5": {
+            "away": 2.5
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-19T06:21:54.522Z"
     }
   ],
   "combos": [
