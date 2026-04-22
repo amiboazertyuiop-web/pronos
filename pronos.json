@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-21T19:54:10.342Z",
+    "last_results_update": "2026-04-22T07:11:52.501Z",
     "analyses_written_at": "2026-04-21T10:21:29.649Z",
     "analyses_cost_usd": 0.314,
-    "last_hourly_refresh": "2026-04-22T00:05:57.776Z"
+    "last_hourly_refresh": "2026-04-22T07:11:52.501Z"
   },
   "sports": {
     "foot": {
@@ -591,745 +591,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "C84vyaKO",
-              "flashscore_id": "C84vyaKO",
-              "flashscore_sport_id": 3,
-              "home_team_id": "KYD9hVEm",
-              "away_team_id": "vwRW2QSh",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-21T23:00:00.000Z",
-              "time_display": "Mer. 01h00",
-              "home": "Boston Celtics",
-              "away": "Philadelphia 76ers",
-              "match": "Boston Celtics vs Philadelphia 76ers",
-              "prono": "win-home",
-              "pari": "Boston Celtics -13.5 points",
-              "cote_retenue": 1.11,
-              "cotes": {
-                "domicile": 1.11,
-                "nul": null,
-                "exterieur": 8.15
-              },
-              "pick_category": "1x2",
-              "analyse": "Le H2H récent est sans appel : Boston a écrasé Philadelphie 123-91 le 19 avril, soit un écart de 32 points. Les Celtics affichent une forme dominante avec des victoires contre les Pelicans (144-118), Milwaukee (133-101), Miami (147-129) et Toronto (115-101), témoignant d'une attaque prolifique et d'une défense solide. Philadelphie traverse une fin de saison compliquée : défaite 93-116 contre Detroit, 102-113 contre Houston, 102-115 contre San Antonio, pour seulement quelques victoires sporadiques. Le handicap -13.5 pour Boston semble conservateur au regard de l'écart de 32 points lors du dernier face-à-face. Les Celtics, champions en titre et clairement supérieurs en talent collectif, devraient dominer ce match à domicile avec un écart confortable. La forme offensive explosive de Boston (trois matchs au-dessus de 113 points lors des 5 derniers) combinée à la fragilité défensive de Philadelphie plaide pour une couverture du handicap.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776618000,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "123-91"
-                  },
-                  {
-                    "timestamp": 1776295800,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Orlando Magic",
-                    "score": "109-97"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Orlando Magic",
-                    "score": "113-108"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Milwaukee Bucks",
-                    "score": "126-106"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "New Orleans Pelicans",
-                    "score": "144-118"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Philadelphia 76ers",
-                    "score": "94-105"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775777400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Boston Celtics",
-                    "score": "112-106"
-                  },
-                  {
-                    "timestamp": 1775606400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Charlotte Hornets",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775520000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Philadelphia 76ers",
-                    "score": "115-102"
-                  },
-                  {
-                    "timestamp": 1775417400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Toronto Raptors",
-                    "score": "115-101"
-                  },
-                  {
-                    "timestamp": 1775343600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Detroit Pistons",
-                    "score": "93-116"
-                  },
-                  {
-                    "timestamp": 1775260800,
-                    "tournament": "NBA",
-                    "home": "Milwaukee Bucks",
-                    "away": "Boston Celtics",
-                    "score": "101-133"
-                  },
-                  {
-                    "timestamp": 1775257200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Minnesota Timberwolves",
-                    "score": "115-103"
-                  },
-                  {
-                    "timestamp": 1775086200,
-                    "tournament": "NBA",
-                    "home": "Miami Heat",
-                    "away": "Boston Celtics",
-                    "score": "129-147"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "216.5": {
-                    "over": 1.95,
-                    "under": 1.85
-                  },
-                  "217.5": {
-                    "over": 1.92,
-                    "under": 1.78
-                  },
-                  "212.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "214.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "215.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "218.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "219.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "220.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "13.5": {
-                    "away": 1.9
-                  },
-                  "-13.5": {
-                    "home": 1.9
-                  },
-                  "10.5": {
-                    "away": 2.38
-                  },
-                  "-10.5": {
-                    "home": 1.53
-                  },
-                  "11.5": {
-                    "away": 2.25
-                  },
-                  "-11.5": {
-                    "home": 1.6
-                  },
-                  "12.5": {
-                    "away": 2.05
-                  },
-                  "-12.5": {
-                    "home": 1.7
-                  },
-                  "14.5": {
-                    "away": 1.73
-                  },
-                  "-14.5": {
-                    "home": 2
-                  },
-                  "15.5": {
-                    "away": 1.7
-                  },
-                  "-15.5": {
-                    "home": 2.05
-                  },
-                  "16.5": {
-                    "away": 1.62
-                  },
-                  "-16.5": {
-                    "home": 2.2
-                  },
-                  "17.5": {
-                    "away": 1.53
-                  },
-                  "-17.5": {
-                    "home": 2.38
-                  },
-                  "9.5": {
-                    "away": 2.5
-                  },
-                  "-9.5": {
-                    "home": 1.5
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "ruuPcnS7",
-              "flashscore_id": "ruuPcnS7",
-              "flashscore_sport_id": 3,
-              "home_team_id": "IwmkErSH",
-              "away_team_id": "4Awl14c5",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-22T00:00:00.000Z",
-              "time_display": "Mer. 02h00",
-              "home": "San Antonio Spurs",
-              "away": "Portland Trail Blazers",
-              "match": "San Antonio Spurs vs Portland Trail Blazers",
-              "prono": "win-home",
-              "pari": "San Antonio Spurs gagnent avec -11.5 points de handicap",
-              "cote_retenue": 1.22,
-              "cotes": {
-                "domicile": 1.22,
-                "nul": null,
-                "exterieur": 4.98
-              },
-              "pick_category": "1x2",
-              "analyse": "San Antonio domine clairement cette série récente face à Portland : victoire 111-98 le 20 avril et 112-101 le 9 avril, soit deux succès de plus de 10 points en moins de deux semaines. Les Spurs affichent une forme impressionnante avec 5 victoires lors de leurs 6 derniers matchs, dont un 139-120 explosif contre Dallas et un 127-113 à Golden State. Portland reste dans une dynamique positive (4 victoires sur 5) mais encaisse systématiquement face à San Antonio. Sur le plan du total, les trois confrontations directes récentes affichent 209, 213 et 221 points — des totaux modérés à élevés mais sans excès. Les deux équipes jouent à un rythme offensif soutenu, mais San Antonio contrôle le score et les Blazers n'ont pas réussi à dépasser les 110 points dans les deux derniers H2H. L'écart de niveau est réel et les Spurs à domicile couvrent le handicap dans les deux confrontations récentes, ce qui rend le -11.5 crédible.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776646800,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "111-98"
-                  },
-                  {
-                    "timestamp": 1776218400,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Portland Trail Blazers",
-                    "score": "110-114"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Denver Nuggets",
-                    "score": "118-128"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "Sacramento Kings",
-                    "score": "122-110"
-                  },
-                  {
-                    "timestamp": 1775872800,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "Los Angeles Clippers",
-                    "score": "116-97"
-                  },
-                  {
-                    "timestamp": 1775865600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Dallas Mavericks",
-                    "score": "139-120"
-                  },
-                  {
-                    "timestamp": 1775698200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "112-101"
-                  },
-                  {
-                    "timestamp": 1775523600,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Portland Trail Blazers",
-                    "score": "137-132"
-                  },
-                  {
-                    "timestamp": 1775520000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Philadelphia 76ers",
-                    "score": "115-102"
-                  },
-                  {
-                    "timestamp": 1775329200,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "San Antonio Spurs",
-                    "score": "136-134"
-                  },
-                  {
-                    "timestamp": 1775183400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "San Antonio Spurs",
-                    "score": "99-118"
-                  },
-                  {
-                    "timestamp": 1775181600,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "New Orleans Pelicans",
-                    "score": "118-106"
-                  },
-                  {
-                    "timestamp": 1775095200,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "San Antonio Spurs",
-                    "score": "113-127"
-                  },
-                  {
-                    "timestamp": 1775012400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Clippers",
-                    "away": "Portland Trail Blazers",
-                    "score": "104-114"
-                  },
-                  {
-                    "timestamp": 1774915200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Chicago Bulls",
-                    "score": "129-114"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "220.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "216.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "217.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "218.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "219.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "221.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "222.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "223.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "224.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "11.5": {
-                    "away": 1.9
-                  },
-                  "-11.5": {
-                    "home": 1.9
-                  },
-                  "12.0": {
-                    "away": 1.83
-                  },
-                  "-12.0": {
-                    "home": 1.83
-                  },
-                  "10.5": {
-                    "away": 2.05
-                  },
-                  "-10.5": {
-                    "home": 1.7
-                  },
-                  "12.5": {
-                    "away": 1.73
-                  },
-                  "-12.5": {
-                    "home": 2
-                  },
-                  "13.5": {
-                    "away": 1.62
-                  },
-                  "-13.5": {
-                    "home": 2.2
-                  },
-                  "14.5": {
-                    "away": 1.6
-                  },
-                  "-14.5": {
-                    "home": 2.25
-                  },
-                  "15.5": {
-                    "away": 1.5
-                  },
-                  "-15.5": {
-                    "home": 2.5
-                  },
-                  "7.5": {
-                    "away": 2.5
-                  },
-                  "-7.5": {
-                    "home": 1.5
-                  },
-                  "8.5": {
-                    "away": 2.5
-                  },
-                  "-8.5": {
-                    "home": 1.5
-                  },
-                  "9.5": {
-                    "away": 2.2
-                  },
-                  "-9.5": {
-                    "home": 1.62
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "dMHyPOQ6",
-              "flashscore_id": "dMHyPOQ6",
-              "flashscore_sport_id": 3,
-              "home_team_id": "ngegZ8bg",
-              "away_team_id": "Sr9PQALP",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-22T02:30:00.000Z",
-              "time_display": "Mer. 04h30",
-              "home": "Los Angeles Lakers",
-              "away": "Houston Rockets",
-              "match": "Los Angeles Lakers vs Houston Rockets",
-              "prono": "win-home",
-              "pari": "Moins de 206.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 2.81,
-                "nul": null,
-                "exterieur": 1.51
-              },
-              "pick_category": "ou",
-              "analyse": "Houston se présente à Los Angeles avec un avantage clair en termes de forme récente : les Rockets restent sur plusieurs performances offensives très solides (132 pts contre Memphis, 140 pts contre Utah, 132 pts à Minnesota), ne perdant que de justesse contre les Timberwolves en prolongation. Les Lakers sont bien plus irréguliers : après une belle victoire 131-107 contre Utah et un succès 107-98 lors du H2H du 19 avril, ils ont encaissé des défaites sévères face à OKC (96-139 et 87-123), révélant une vraie fragilité défensive. Le H2H récent tourne légèrement en faveur des Lakers à domicile (107-98), mais la dynamique collective de Houston, portée par un collectif huilé et un Ime Udoka qui impose une discipline défensive et offensive, paraît plus fiable sur la durée. Les totaux des matchs récents oscillent entre 180 (Lakers-Suns défensivement) et 245 (Rockets-Timberwolves), mais les rencontres directes récentes tournent autour de 205 pts. Avec la ligne fixée à 206.5, le profil défensif des Rockets (capable d'étouffer les offensives adverses) combiné aux irrégularités offensives des Lakers penche vers le under.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1776558600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "107-98"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Utah Jazz",
-                    "score": "131-107"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Memphis Grizzlies",
-                    "score": "132-101"
-                  },
-                  {
-                    "timestamp": 1775874600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Phoenix Suns",
-                    "score": "101-73"
-                  },
-                  {
-                    "timestamp": 1775871000,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-136"
-                  },
-                  {
-                    "timestamp": 1775786400,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Los Angeles Lakers",
-                    "score": "103-119"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775617200,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Houston Rockets",
-                    "score": "105-119"
-                  },
-                  {
-                    "timestamp": 1775615400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "87-123"
-                  },
-                  {
-                    "timestamp": 1775440800,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Houston Rockets",
-                    "score": "116-117"
-                  },
-                  {
-                    "timestamp": 1775431800,
-                    "tournament": "NBA",
-                    "home": "Dallas Mavericks",
-                    "away": "Los Angeles Lakers",
-                    "score": "134-128"
-                  },
-                  {
-                    "timestamp": 1775260800,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Utah Jazz",
-                    "score": "140-106"
-                  },
-                  {
-                    "timestamp": 1775179800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "139-96"
-                  },
-                  {
-                    "timestamp": 1775088000,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Milwaukee Bucks",
-                    "score": "119-113"
-                  },
-                  {
-                    "timestamp": 1775010600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Cleveland Cavaliers",
-                    "score": "127-113"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "205.5": {
-                    "over": 1.81,
-                    "under": 1.95
-                  },
-                  "206.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "19.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "20.5": {
-                    "over": 1.91,
-                    "under": 1.91
-                  },
-                  "21.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "32.5": {
-                    "over": 9,
-                    "under": 1.05
-                  },
-                  "33.5": {
-                    "over": 10,
-                    "under": 1.04
-                  },
-                  "202.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "203.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "204.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "207.5": {
-                    "over": 2,
-                    "under": 1.8
-                  },
-                  "208.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "209.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "210.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  }
-                },
-                "handicap": {
-                  "4.5": {
-                    "home": 2
-                  },
-                  "-4.5": {
-                    "away": 1.81
-                  },
-                  "1.5": {
-                    "home": 2.38
-                  },
-                  "-1.5": {
-                    "away": 1.53
-                  },
-                  "2.5": {
-                    "home": 2.2
-                  },
-                  "-2.5": {
-                    "away": 1.62
-                  },
-                  "3.5": {
-                    "home": 2.05
-                  },
-                  "-3.5": {
-                    "away": 1.7
-                  },
-                  "5.5": {
-                    "home": 1.73
-                  },
-                  "-5.5": {
-                    "away": 2
-                  },
-                  "6.5": {
-                    "home": 1.62
-                  },
-                  "-6.5": {
-                    "away": 2.2
-                  },
-                  "7.5": {
-                    "home": 1.6
-                  },
-                  "-7.5": {
-                    "away": 2.25
-                  },
-                  "8.5": {
-                    "home": 1.5
-                  },
-                  "-8.5": {
-                    "away": 2.5
-                  },
-                  "9.5": {
-                    "home": 1.4
-                  },
-                  "-9.5": {
-                    "away": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1939,9 +1201,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.57,
               "cotes": {
-                "domicile": 2.48,
+                "domicile": 2.76,
                 "nul": null,
-                "exterieur": 1.6
+                "exterieur": 1.49
               },
               "pick_category": "ou",
               "analyse": "Bautista-Agut aborde ce match sur terre battue à Madrid avec une forme mitigée : battu par Shevchenko (2-0) à Monaco après avoir éliminé Bonzi (2-0), il a aussi chuté contre Droguet à Bucarest et Royer à Capetown, montrant une certaine irrégularité. Tirante, l'Argentin habitué à la terre battue, présente lui aussi une forme en dents de scie : il a battu Shelton (2-1), McDonald (2-0) et Smith (2-0) à Houston, mais s'est incliné lourdement contre Cerundolo (0-2) à Miami et contre Burruchaga (0-2) très récemment. Les deux joueurs sont des profils typiques de la terre battue : échanges longs, défense acharnée, et tendance à prolonger les jeux. Bautista-Agut est connu pour son tennis solide du fond de court, très adapté à Madrid, ce qui favorise naturellement des matchs disputés et longs en nombre de jeux. Tirante n'est pas le type à céder rapidement et a montré qu'il pouvait pousser des joueurs de bon niveau en 3 sets. La surface lente de Madrid en altitude (ce qui ralentit les échanges et favorise les longs rallyes) plaide clairement pour un match dense en jeux. Un total supérieur à 21.5 jeux semble très conservateur étant donné les profils défensifs des deux protagonistes.",
@@ -2238,9 +1500,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.83,
               "cotes": {
-                "domicile": 1.96,
+                "domicile": 1.86,
                 "nul": null,
-                "exterieur": 1.92
+                "exterieur": 2.03
               },
               "pick_category": "ou",
               "analyse": "Bergs et Cilic présentent des bilans récents très similaires sur terre battue, ce qui rend ce duel particulièrement ouvert. Bergs a battu Rublev et Mannarino à Monaco avant de tomber face à Zverev, tandis qu'à Munich il a éliminé Topo avant de s'incliner en deux sets contre Cobolli. Cilic de son côté a perdu ses deux derniers matchs en deux sets (contre Altmaier à Munich et Auger-Aliassime à Monaco), mais il avait battu Shevchenko à Monaco. Les deux joueurs encaissent et donnent souvent des sets secs (2-0 omniprésents des deux côtés), ce qui suggère un match qui se règle rapidement sans nécessairement beaucoup de jeux disputés. La terre battue espagnole rallonge théoriquement les échanges, mais ni Bergs ni Cilic ne sont des spécialistes reconnus de la surface et leurs récents matchs montrent peu de troisièmes sets. Avec une majorité de matchs conclus en 2-0 pour les deux joueurs, parier sur un total inférieur à 20.5 jeux offre une valeur intéressante à 2.83.",
@@ -2790,9 +2052,9 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 2.17,
               "cotes": {
-                "domicile": 2.67,
+                "domicile": 2.7,
                 "nul": null,
-                "exterieur": 1.52
+                "exterieur": 1.51
               },
               "pick_category": "ou",
               "analyse": "Deux joueurs américains de niveau comparable s'affrontent sur terre battue à Madrid, une surface qui favorise les échanges longs et prolonge naturellement les matchs. Nava présente une forme récente active avec de nombreux matchs joués : victoire sur Goffin (2-0), Halys (2-0), Tosetto (2-1) et Goffin à Monaco, bien qu'il ait perdu contre Shelton et Molcan en sets directs. Brooksby, lui, a enchaîné trois défaites récentes consécutives (contre McDonald, Bergs et Tiafoe), toutes en deux sets, ce qui traduit une baisse de régime inquiétante. La terre battue à Madrid, avec son altitude qui accélère légèrement la balle, tend à produire des matchs plus courts qu'à Rome ou Roland-Garros. Compte tenu du niveau serré entre les deux joueurs mais de la supériorité de forme de Nava, on anticipe un match en deux sets sans véritables batailles de jeux interminables, ce qui plaide pour rester sous une ligne de totaux élevée. Le seuil de 21.5 jeux offre une cote intéressante pour le moins, sachant que plusieurs matchs récents de Nava (deux victoires 2-0 contre Goffin et Halys) ont été expéditifs.",
@@ -3077,9 +2339,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.86,
               "cotes": {
-                "domicile": 1.18,
+                "domicile": 1.16,
                 "nul": null,
-                "exterieur": 5.41
+                "exterieur": 5.85
               },
               "pick_category": "ou",
               "analyse": "Ce match oppose deux joueurs en difficulté de forme récente, mais avec des profils tactiques distincts sur terre battue. Buse a perdu 4 de ses 5 derniers matchs (défaites contre Moutet, Goffin, Ugo Carabelli, Dzumhur), avec néanmoins une victoire notable contre Berrettini à Marrakech. Mannarino, quant à lui, présente un bilan encore plus inquiétant : 5 défaites sur ses 6 derniers matchs, souvent en 2 sets secs (Borges 2-0, Bergs 2-0). Sur terre battue, Mannarino est un joueur de fond de court qui allonge les échanges grâce à son revers slicé, ce qui favorise des matchs disputés avec de nombreux jeux. Buse, joueur de 23 ans au gabarit imposant, possède un service puissant mais ses performances récentes montrent des matchs souvent en 3 sets (vs Goffin 1-2, vs Ugo Carabelli 1-2, vs Dzumhur 1-2). La surface lente de Madrid milite clairement pour un nombre élevé de jeux : les deux joueurs ont tendance à disputer des matchs longs (plusieurs résultats en 3 sets), et le style défensif de Mannarino allonge naturellement les échanges.",
@@ -3926,9 +3188,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.57,
               "cotes": {
-                "domicile": 2.11,
+                "domicile": 2.07,
                 "nul": null,
-                "exterieur": 1.8
+                "exterieur": 1.83
               },
               "pick_category": "ou",
               "analyse": "Bellucci et Dzumhur se retrouvent dans un duel entre deux joueurs de niveau similaire sur la terre battue de Madrid. Bellucci affiche une forme récente solide avec quatre victoires consécutives à Monte-Carlo (Lajovic, Guerrieri, Travaglia) avant de chuter contre Prizmic, puis une nouvelle défaite face à Forejtek à Oeiras. Dzumhur de son côté présente une forme très irrégulière : battu sèchement par Sachko à Munich, Marozsan et Blockx à Monte-Carlo, mais capable de s'imposer face à Borges et Jianu à Bucarest. Ces deux joueurs sont des défenseurs/combattants de fond de court, habitués aux échanges longs sur terre battue, ce qui laisse présager un match physique avec des jeux disputés. La surface madrilène, à haute altitude, ralentit encore davantage les échanges et favorise les longs rallyes. Leurs niveaux proches et leurs styles défensifs similaires rendent probable un match au-dessus de 22 jeux. Le total 'Plus de 21.5 jeux' à 1.57 offre un rapport risque/récompense intéressant pour ce type de profil.",
@@ -4494,11 +3756,11 @@
               "match": "Jodar R. vs De Jong J.",
               "prono": "win-home",
               "pari": "Handicap jeux Jodar -3.5",
-              "cote_retenue": 1.22,
+              "cote_retenue": 1.18,
               "cotes": {
-                "domicile": 1.22,
+                "domicile": 1.18,
                 "nul": null,
-                "exterieur": 4.73
+                "exterieur": 5.53
               },
               "pick_category": "1x2",
               "analyse": "Jodar traverse une forme exceptionnelle sur terre battue avec 7 victoires lors de ses 8 derniers matchs (seule défaite contre Fils, top 10), enchaînant des succès contre Munar, Norrie, Cerundolo-level ou Machac. Il s'impose régulièrement en deux sets secs, comme le montrent ses victoires 2-0 contre Ugo Carabelli, Norrie, Lajovic ou Trungelliti. De Jong, de son côté, présente une forme fragile : éliminé par Cerundolo 0-2, battu par Hanfmann 0-2, et des défaites en trois sets contre Garin et Butvilas. Le Néerlandais n'a remporté qu'un seul de ses cinq derniers matchs (contre Bonzi). La surface en terre battue à Madrid favorise les échanges longs, mais la domination de Jodar en ce moment est telle qu'il devrait conclure rapidement. Un handicap jeux à -3.5 en faveur de Jodar à 1.47 représente une valeur solide compte tenu de l'écart de forme flagrant entre les deux joueurs.",
@@ -5096,9 +4358,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 1.51,
+                "domicile": 1.5,
                 "nul": null,
-                "exterieur": 2.7
+                "exterieur": 2.73
               },
               "pick_category": "ou",
               "analyse": "Tomáš Macháč est clairement le favori de ce match : classé dans le top 30 mondial, le Tchèque a montré une belle solidité sur terre battue récemment, battant Baez (2-1), Cerundolo (2-0) et Altmaier (2-1) à Monte-Carlo avant de tomber face à Sinner. Comesana, lui, présente une forme bien plus limitée : éliminé par Ferreira Silva à Oeiras (1-2), par Cobolli à Monte-Carlo (1-2), et battu sèchement par Tabilo (0-2) et Korda (0-2) sur les dernières semaines. Le niveau de jeu de l'Argentin reste insuffisant face à un joueur du calibre de Macháč sur une grande surface comme Madrid. Concernant le nombre de jeux, les matches récents de Macháč tendent vers des confrontations en 3 sets avec de nombreux jeux (2-1 répétés contre Baez, Altmaier, Sinner), et Comesana, bien que battu, tient souvent un set face à des adversaires de niveau supérieur (Cobolli 2-1, Ferreira Silva 2-1). La ligne à 22.5 jeux offre une valeur intéressante : le match devrait dépasser ce seuil si Comesana accroche un set comme à son habitude, et la cote à 1.92 est suffisamment attractive.",
@@ -5814,9 +5076,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 2,
               "cotes": {
-                "domicile": 1.7,
+                "domicile": 1.69,
                 "nul": null,
-                "exterieur": 2.26
+                "exterieur": 2.28
               },
               "pick_category": "ou",
               "analyse": "Alexandre Muller traverse une période de forme très solide sur terre battue : il a battu Choinski, Arnaldi, Kopriva et Cina ces dernières semaines, avec seulement des défaites face à des joueurs de bon niveau (Moutet, Virtanen). Sa capacité à enchaîner les victoires en deux sets sur terre est notable. Jan-Lennard Struff, lui, affiche une forme décevante : éliminé par Basilashvili (0-2) à Monte-Carlo et par Blanch (en 3 sets) à Miami, puis par Duckworth à Phoenix. L'Allemand est un joueur de service-volée dont le jeu puissant fonctionne mieux sur surfaces rapides, ce qui désavantage significativement son profil sur la terre battue madrilène à 660m d'altitude. Sur cette surface, les échanges ont tendance à se prolonger, favorisant les joueurs de fond de court réguliers comme Muller. Avec Muller en bien meilleure forme et Struff en difficulté sur terre, le total de jeux devrait rester modéré : Muller semble capable de dominer les échanges et de conclure en deux sets sans trop de résistance. Un total sous 22.5 jeux paraît réaliste compte tenu de l'ascendant technique de Muller sur cette surface.",
@@ -6378,9 +5640,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.78,
               "cotes": {
-                "domicile": 1.39,
+                "domicile": 1.4,
                 "nul": null,
-                "exterieur": 3.19
+                "exterieur": 3.15
               },
               "pick_category": "ou",
               "analyse": "Alejandro Tabilo aborde ce match de Madrid avec une forme mitigée : éliminé dès le 1er tour à Munich face à Fonseca (0-2) et sorti par Lehecka à Monaco (1-2), même si il avait battu Rublev à Miami (2-1). Valentin Royer arrive en pleine confiance après un parcours remarquable à Oeiras cette semaine, enchaînant les victoires contre Cecchinato, Rodionov, Schwaerzler et Houkes avant de s'incliner face à Safiullin. Sur terre battue, Royer a également montré de belles choses à Monaco (Nardi, Fery battus). Le profil de Royer est celui d'un joueur combatif, qui pousse les échanges et sait aller en trois sets (3 matchs en trois sets à Oeiras cette semaine). Tabilo, tête de série sur cette surface, est clairement le favori mais le niveau affiché récemment laisse des doutes sur sa régularité. Avec Royer capable de tenir longtemps dans les échanges et un Tabilo pas à son meilleur niveau, ce match devrait produire un nombre important de jeux. Le total bas de 20.5 jeux semble sous-estimer la résistance probable de Royer.",
@@ -7233,9 +6495,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.83,
               "cotes": {
-                "domicile": 1.92,
+                "domicile": 1.85,
                 "nul": null,
-                "exterieur": 1.96
+                "exterieur": 2.04
               },
               "pick_category": "ou",
               "analyse": "Zhang Z. et Kopriva V. présentent tous deux une forme récente très irrégulière, ce qui rend le vainqueur difficile à identifier. Zhang a perdu ses trois derniers matchs disputés (contre Darderi, Shelton et Mannarino), sans jamais remporter un set face à des joueurs de haut niveau. Kopriva, de son côté, alterne bons coups et défaites : il a battu Darderi et Engel à Munich, mais a cédé 2-0 face à Cobolli et Muller récemment. On se trouve à Madrid sur terre battue en altitude, surface qui favorise des échanges plus longs et des breaks fréquents, ce qui allonge naturellement les matchs. Les deux joueurs sont capables de se battre en trois sets comme leurs résultats le montrent régulièrement (5 matchs sur les 15 listés se sont joués en 3 sets), ce qui plaide pour un total de jeux élevé. Compte tenu du niveau équilibré et de l'instabilité des deux joueurs, un match en trois sets avec de nombreux jeux disputés semble très probable, soutenant un pari sur le dépassement d'un seuil intermédiaire de jeux.",
@@ -7820,9 +7082,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.97,
+                "domicile": 2.03,
                 "nul": null,
-                "exterieur": 1.91
+                "exterieur": 1.86
               },
               "pick_category": "ou",
               "analyse": "Gibson et Arango présentent des profils et des niveaux très proches, ce qui rend ce duel particulièrement indécis. Gibson traverse une forme correcte à Miami : victoires sur Rakhimova, Bejlek, Osaka et Jovic, avant de chuter 0-2 contre Rybakina. Sa dernière sortie à Madrid est une défaite 0-2 face à Stojsavljevic, ce qui tempère l'enthousiasme. Arango, de son côté, a enchaîné plusieurs bonnes performances sur terre battue sud-américaine (Bogotá, BJK Cup), avec notamment des victoires 2-0 nettes, bien que sa constance reste fragile (défaites 1-2 contre Vergara Rivera et Selekhmeteva). Sur terre battue à Madrid, surface lente qui favorise les échanges prolongés et les matches en 3 sets, les deux joueuses sont susceptibles de s'accrocher et de produire un match long. La ligne des 21.5 jeux apparaît basse pour deux joueuses de ce gabarit sur cette surface, d'autant que les récents résultats d'Arango (3 matches en 3 sets récents) et de Gibson (idem à Miami) indiquent une tendance aux matches disputés. Un total supérieur à 21.5 jeux semble cohérent avec le contexte.",
@@ -8408,9 +7670,9 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.55,
               "cotes": {
-                "domicile": 2.23,
+                "domicile": 2.25,
                 "nul": null,
-                "exterieur": 1.72
+                "exterieur": 1.71
               },
               "pick_category": "cs",
               "analyse": "Putintseva traverse une excellente période avec quatre victoires en cinq derniers matchs, dont des succès convaincants contre Andreescu (2-1) et Cross (2-0) en Fed Cup, ainsi que Badosa (2-0) à Indian Wells. Son style combatif et défensif sur terre battue, surface qui favorise ses qualités de grognard et de relanceur, est un vrai atout à Madrid. Valentova, de son côté, présente un bilan plus mitigé : éliminée sèchement par Shnaider (0-2) et Vekic (0-2), avec un match non terminé contre Birrell — ce qui révèle une certaine fragilité. Face à une Putintseva en confiance sur sa surface de prédilection, Valentova ne dispose pas du niveau nécessaire pour imposer ses conditions. La terre battue à Madrid allonge les échanges, mais Putintseva sait raccourcir les points clés et gérer les moments décisifs. Au vu de la forme respective des deux joueuses, un succès net et rapide de Putintseva en deux sets est le scénario le plus probable.",
@@ -9022,9 +8284,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.32,
               "cotes": {
-                "domicile": 1.06,
+                "domicile": 1.05,
                 "nul": null,
-                "exterieur": 11.8
+                "exterieur": 13.4
               },
               "pick_category": "ou",
               "analyse": "Zeynep Sonmez arrive dans ce match en excellente forme sur terre battue, avec trois victoires consécutives en sets directs à Stuttgart contre Pohle, Friedsam et Paolini, avant de s'incliner face à Fernandez en demi-finale. Sa seule défaite récente sur cette surface vient d'une joueuse de très haut niveau. Martinez Cirez, joueuse locale qui évolue principalement sur le circuit ITF, présente un niveau bien inférieur : elle s'est inclinée face à Hercog à Madrid et face à Costoulas cette semaine en deux sets secs. Sonmez est clairement dominante sur terre battue en ce moment et affronte une joueuse de circuit ITF sur le circuit principal WTA. Le handicap à -5.0 jeux pour Sonmez à 1.25 reflète cette domination attendue, mais les lignes de jeux totaux sont plus intéressantes : sur terre battue, les matchs à sens unique entre une WTA solide et une ITF tendent à rester compacts. Un score en 2-0 expéditif est très probable, ce qui oriente vers un faible nombre de jeux total. La ligne 'Moins de 20.5 jeux' à 1.32 offre une valeur raisonnable compte tenu de l'écart de niveau flagrant.",
@@ -9319,9 +8581,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.86,
               "cotes": {
-                "domicile": 1.93,
+                "domicile": 1.87,
                 "nul": null,
-                "exterieur": 1.95
+                "exterieur": 2.01
               },
               "pick_category": "ou",
               "analyse": "Townsend et Boulter se retrouvent dans un contexte très incertain : les deux joueuses affichent des formes irrégulières. Boulter a perdu face à Podrez (2-0), puis battu Cristian et Timofeeva, avant de s'incliner contre Ruse et Muchova — soit 3 défaites sur ses 5 derniers matchs. Townsend, de son côté, a enchaîné quatre victoires consécutives en mars (Garland, Urhobo, Bouzkova, Sun) avant de tomber face à Paolini et Kostyuk. Sur terre battue à Madrid, la surface ralentit le jeu et favorise les échanges longs, ce qui tend à gonfler le nombre de jeux joués. Le niveau similaire entre les deux joueuses (handicap quasi équilibré à 0.5) suggère un match disputé, potentiellement en 3 sets, ce qui plaide pour un total de jeux élevé. Un score en 3 sets donnerait facilement 22 à 26 jeux. Le seuil de 21.5 jeux représente un point d'équilibre raisonnable où le 'Plus de' reste probable dès qu'un troisième set est disputé.",
@@ -9612,9 +8874,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 1.29,
+                "domicile": 1.3,
                 "nul": null,
-                "exterieur": 3.95
+                "exterieur": 3.85
               },
               "pick_category": "ou",
               "analyse": "Yastremska est clairement la joueuse de référence dans ce duel : bien classée sur le circuit WTA, elle présente une forme récente solide avec des victoires sur Li A. (2-1), Zakharova (2-0) et Krueger (2-1) sur les dernières semaines. Sierra, en revanche, enchaîne les défaites : battue par Urhobo (0-1 en sets), Rakhimova (0-2), et Andreewa (0-2) lors de ses trois derniers matches, elle peine à s'imposer contre des adversaires de niveau intermédiaire. Sur terre battue à Madrid, la surface favorise les échanges longs et les matches en 3 sets, ce qui laisse entrevoir un total de jeux plutôt élevé si Sierra résiste. Cependant, vu la nette supériorité de Yastremska et la fragilité actuelle de Sierra, un gain en deux sets rapides reste probable. Le handicap -3.5 jeux en faveur de Yastremska à 1.53 reflète bien cet écart de niveau, mais le pari le plus équilibré reste le handicap -0.5 sets (victoire de Yastremska sans contrainte) à 1.30, trop bas. Optons pour le total de jeux sous 20.5 à 1.80 : Yastremska peut expédier cette rencontre rapidement face à une Sierra en difficulté.",
@@ -9925,9 +9187,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 2.73,
+                "domicile": 2.76,
                 "nul": null,
-                "exterieur": 1.5
+                "exterieur": 1.49
               },
               "pick_category": "ou",
               "analyse": "Zhang Shuai traverse une passe difficile avec 5 défaites lors de ses 6 derniers matchs (Noskova 1-2, Potapova 0-2, Starodubtseva 0-2, Cirstea 0-2, Yastremska 0-2), sa seule victoire remontant à février contre Navarro. Lys de son côté présente une forme également irrégulière : défaite contre Svitolina (0-2) puis victoire combative contre Badosa (2-1) lors du tournoi de Stuttgart, avant des revers contre Volynets (1-2) et Starodubtseva (0-2). Les deux joueuses sont en manque de régularité et affichent des niveaux comparables en ce moment, ce qui laisse entrevoir un match serré. Sur terre battue à Madrid, la surface ralentit les échanges et favorise des rallyes plus longs, augmentant naturellement le nombre de jeux disputés. Les sets accrochés comme le 2-1 de Lys contre Badosa ou la résistance de Zhang face à Noskova (1-2) indiquent que ces joueuses ne s'inclinent pas facilement sans se battre. Un total dépassant les 20.5 jeux semble cohérent au vu du profil de chacune et du contexte terre battue.",
@@ -10256,78 +9518,6 @@
     "lWGmm4u0"
   ],
   "history": [
-    {
-      "event_id": "tIdirIjT",
-      "flashscore_id": "tIdirIjT",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T15:30:00.000Z",
-      "home": "Atletico Arteixo",
-      "away": "Barco",
-      "match": "Atletico Arteixo vs Barco",
-      "prono": "win-home",
-      "pari": "Victoire Atletico Arteixo",
-      "cote_retenue": 2.21,
-      "cotes": {
-        "domicile": 2.21,
-        "exterieur": 3.36
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "5-1",
-      "actual_result": "home",
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-04-12T13:10:52.439Z"
-    },
-    {
-      "event_id": "jTs9Vv7N",
-      "flashscore_id": "jTs9Vv7N",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T16:45:00.000Z",
-      "home": "Lugo B",
-      "away": "Gran Pena",
-      "match": "Lugo B vs Gran Pena",
-      "prono": "win-home",
-      "pari": "Victoire Lugo B",
-      "cote_retenue": 2.37,
-      "cotes": {
-        "domicile": 2.37,
-        "exterieur": 2.99
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "0-0",
-      "actual_result": "draw",
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-04-12T13:10:52.439Z"
-    },
-    {
-      "event_id": "zcigGqQc",
-      "flashscore_id": "zcigGqQc",
-      "sport_key": "foot",
-      "commence_time": "2026-04-11T14:45:00.000Z",
-      "home": "Bezana",
-      "away": "Atletico Albericia",
-      "match": "Bezana vs Atletico Albericia",
-      "prono": "win-away",
-      "pari": "Victoire Atletico Albericia",
-      "cote_retenue": 2.21,
-      "cotes": {
-        "domicile": 2.9,
-        "exterieur": 2.21
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-3",
-      "actual_result": "away",
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-04-12T13:10:52.439Z"
-    },
     {
       "event_id": "xnX0oPQN",
       "flashscore_id": "xnX0oPQN",
@@ -75637,6 +74827,752 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Madrid (Spain) (Q)",
       "archived_at": "2026-04-21T19:54:10.342Z"
+    },
+    {
+      "event_id": "C84vyaKO",
+      "flashscore_id": "C84vyaKO",
+      "flashscore_sport_id": 3,
+      "home_team_id": "KYD9hVEm",
+      "away_team_id": "vwRW2QSh",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-21T23:00:00.000Z",
+      "time_display": "Mer. 01h00",
+      "home": "Boston Celtics",
+      "away": "Philadelphia 76ers",
+      "match": "Boston Celtics vs Philadelphia 76ers",
+      "prono": "win-home",
+      "pari": "Boston Celtics -13.5 points",
+      "cote_retenue": 1.11,
+      "cotes": {
+        "domicile": 1.11,
+        "nul": null,
+        "exterieur": 8.15
+      },
+      "pick_category": "1x2",
+      "analyse": "Le H2H récent est sans appel : Boston a écrasé Philadelphie 123-91 le 19 avril, soit un écart de 32 points. Les Celtics affichent une forme dominante avec des victoires contre les Pelicans (144-118), Milwaukee (133-101), Miami (147-129) et Toronto (115-101), témoignant d'une attaque prolifique et d'une défense solide. Philadelphie traverse une fin de saison compliquée : défaite 93-116 contre Detroit, 102-113 contre Houston, 102-115 contre San Antonio, pour seulement quelques victoires sporadiques. Le handicap -13.5 pour Boston semble conservateur au regard de l'écart de 32 points lors du dernier face-à-face. Les Celtics, champions en titre et clairement supérieurs en talent collectif, devraient dominer ce match à domicile avec un écart confortable. La forme offensive explosive de Boston (trois matchs au-dessus de 113 points lors des 5 derniers) combinée à la fragilité défensive de Philadelphie plaide pour une couverture du handicap.",
+      "confiance": 4,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "97-111",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776618000,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "123-91"
+          },
+          {
+            "timestamp": 1776295800,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Orlando Magic",
+            "score": "109-97"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Orlando Magic",
+            "score": "113-108"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Milwaukee Bucks",
+            "score": "126-106"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "New Orleans Pelicans",
+            "score": "144-118"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Philadelphia 76ers",
+            "score": "94-105"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775777400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Boston Celtics",
+            "score": "112-106"
+          },
+          {
+            "timestamp": 1775606400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Charlotte Hornets",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775520000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Philadelphia 76ers",
+            "score": "115-102"
+          },
+          {
+            "timestamp": 1775417400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Toronto Raptors",
+            "score": "115-101"
+          },
+          {
+            "timestamp": 1775343600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Detroit Pistons",
+            "score": "93-116"
+          },
+          {
+            "timestamp": 1775260800,
+            "tournament": "NBA",
+            "home": "Milwaukee Bucks",
+            "away": "Boston Celtics",
+            "score": "101-133"
+          },
+          {
+            "timestamp": 1775257200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Minnesota Timberwolves",
+            "score": "115-103"
+          },
+          {
+            "timestamp": 1775086200,
+            "tournament": "NBA",
+            "home": "Miami Heat",
+            "away": "Boston Celtics",
+            "score": "129-147"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "216.5": {
+            "over": 1.95,
+            "under": 1.85
+          },
+          "217.5": {
+            "over": 1.92,
+            "under": 1.78
+          },
+          "212.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "214.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "215.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "218.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "219.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "220.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "13.5": {
+            "away": 1.9
+          },
+          "-13.5": {
+            "home": 1.9
+          },
+          "10.5": {
+            "away": 2.38
+          },
+          "-10.5": {
+            "home": 1.53
+          },
+          "11.5": {
+            "away": 2.25
+          },
+          "-11.5": {
+            "home": 1.6
+          },
+          "12.5": {
+            "away": 2.05
+          },
+          "-12.5": {
+            "home": 1.7
+          },
+          "14.5": {
+            "away": 1.73
+          },
+          "-14.5": {
+            "home": 2
+          },
+          "15.5": {
+            "away": 1.7
+          },
+          "-15.5": {
+            "home": 2.05
+          },
+          "16.5": {
+            "away": 1.62
+          },
+          "-16.5": {
+            "home": 2.2
+          },
+          "17.5": {
+            "away": 1.53
+          },
+          "-17.5": {
+            "home": 2.38
+          },
+          "9.5": {
+            "away": 2.5
+          },
+          "-9.5": {
+            "home": 1.5
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-22T07:11:52.501Z"
+    },
+    {
+      "event_id": "ruuPcnS7",
+      "flashscore_id": "ruuPcnS7",
+      "flashscore_sport_id": 3,
+      "home_team_id": "IwmkErSH",
+      "away_team_id": "4Awl14c5",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-22T00:00:00.000Z",
+      "time_display": "Mer. 02h00",
+      "home": "San Antonio Spurs",
+      "away": "Portland Trail Blazers",
+      "match": "San Antonio Spurs vs Portland Trail Blazers",
+      "prono": "win-home",
+      "pari": "San Antonio Spurs gagnent avec -11.5 points de handicap",
+      "cote_retenue": 1.22,
+      "cotes": {
+        "domicile": 1.22,
+        "nul": null,
+        "exterieur": 4.98
+      },
+      "pick_category": "1x2",
+      "analyse": "San Antonio domine clairement cette série récente face à Portland : victoire 111-98 le 20 avril et 112-101 le 9 avril, soit deux succès de plus de 10 points en moins de deux semaines. Les Spurs affichent une forme impressionnante avec 5 victoires lors de leurs 6 derniers matchs, dont un 139-120 explosif contre Dallas et un 127-113 à Golden State. Portland reste dans une dynamique positive (4 victoires sur 5) mais encaisse systématiquement face à San Antonio. Sur le plan du total, les trois confrontations directes récentes affichent 209, 213 et 221 points — des totaux modérés à élevés mais sans excès. Les deux équipes jouent à un rythme offensif soutenu, mais San Antonio contrôle le score et les Blazers n'ont pas réussi à dépasser les 110 points dans les deux derniers H2H. L'écart de niveau est réel et les Spurs à domicile couvrent le handicap dans les deux confrontations récentes, ce qui rend le -11.5 crédible.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "103-106",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776646800,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "111-98"
+          },
+          {
+            "timestamp": 1776218400,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Portland Trail Blazers",
+            "score": "110-114"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Denver Nuggets",
+            "score": "118-128"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "Sacramento Kings",
+            "score": "122-110"
+          },
+          {
+            "timestamp": 1775872800,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "Los Angeles Clippers",
+            "score": "116-97"
+          },
+          {
+            "timestamp": 1775865600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Dallas Mavericks",
+            "score": "139-120"
+          },
+          {
+            "timestamp": 1775698200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "112-101"
+          },
+          {
+            "timestamp": 1775523600,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Portland Trail Blazers",
+            "score": "137-132"
+          },
+          {
+            "timestamp": 1775520000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Philadelphia 76ers",
+            "score": "115-102"
+          },
+          {
+            "timestamp": 1775329200,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "San Antonio Spurs",
+            "score": "136-134"
+          },
+          {
+            "timestamp": 1775183400,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "San Antonio Spurs",
+            "score": "99-118"
+          },
+          {
+            "timestamp": 1775181600,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "New Orleans Pelicans",
+            "score": "118-106"
+          },
+          {
+            "timestamp": 1775095200,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "San Antonio Spurs",
+            "score": "113-127"
+          },
+          {
+            "timestamp": 1775012400,
+            "tournament": "NBA",
+            "home": "Los Angeles Clippers",
+            "away": "Portland Trail Blazers",
+            "score": "104-114"
+          },
+          {
+            "timestamp": 1774915200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Chicago Bulls",
+            "score": "129-114"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "220.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "216.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "217.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "218.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "219.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "221.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "222.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "223.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "224.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "11.5": {
+            "away": 1.9
+          },
+          "-11.5": {
+            "home": 1.9
+          },
+          "12.0": {
+            "away": 1.83
+          },
+          "-12.0": {
+            "home": 1.83
+          },
+          "10.5": {
+            "away": 2.05
+          },
+          "-10.5": {
+            "home": 1.7
+          },
+          "12.5": {
+            "away": 1.73
+          },
+          "-12.5": {
+            "home": 2
+          },
+          "13.5": {
+            "away": 1.62
+          },
+          "-13.5": {
+            "home": 2.2
+          },
+          "14.5": {
+            "away": 1.6
+          },
+          "-14.5": {
+            "home": 2.25
+          },
+          "15.5": {
+            "away": 1.5
+          },
+          "-15.5": {
+            "home": 2.5
+          },
+          "7.5": {
+            "away": 2.5
+          },
+          "-7.5": {
+            "home": 1.5
+          },
+          "8.5": {
+            "away": 2.5
+          },
+          "-8.5": {
+            "home": 1.5
+          },
+          "9.5": {
+            "away": 2.2
+          },
+          "-9.5": {
+            "home": 1.62
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-22T07:11:52.501Z"
+    },
+    {
+      "event_id": "dMHyPOQ6",
+      "flashscore_id": "dMHyPOQ6",
+      "flashscore_sport_id": 3,
+      "home_team_id": "ngegZ8bg",
+      "away_team_id": "Sr9PQALP",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-22T02:30:00.000Z",
+      "time_display": "Mer. 04h30",
+      "home": "Los Angeles Lakers",
+      "away": "Houston Rockets",
+      "match": "Los Angeles Lakers vs Houston Rockets",
+      "prono": "win-home",
+      "pari": "Moins de 206.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 2.87,
+        "nul": null,
+        "exterieur": 1.49
+      },
+      "pick_category": "ou",
+      "analyse": "Houston se présente à Los Angeles avec un avantage clair en termes de forme récente : les Rockets restent sur plusieurs performances offensives très solides (132 pts contre Memphis, 140 pts contre Utah, 132 pts à Minnesota), ne perdant que de justesse contre les Timberwolves en prolongation. Les Lakers sont bien plus irréguliers : après une belle victoire 131-107 contre Utah et un succès 107-98 lors du H2H du 19 avril, ils ont encaissé des défaites sévères face à OKC (96-139 et 87-123), révélant une vraie fragilité défensive. Le H2H récent tourne légèrement en faveur des Lakers à domicile (107-98), mais la dynamique collective de Houston, portée par un collectif huilé et un Ime Udoka qui impose une discipline défensive et offensive, paraît plus fiable sur la durée. Les totaux des matchs récents oscillent entre 180 (Lakers-Suns défensivement) et 245 (Rockets-Timberwolves), mais les rencontres directes récentes tournent autour de 205 pts. Avec la ligne fixée à 206.5, le profil défensif des Rockets (capable d'étouffer les offensives adverses) combiné aux irrégularités offensives des Lakers penche vers le under.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "101-94",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1776558600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "107-98"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Utah Jazz",
+            "score": "131-107"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Memphis Grizzlies",
+            "score": "132-101"
+          },
+          {
+            "timestamp": 1775874600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Phoenix Suns",
+            "score": "101-73"
+          },
+          {
+            "timestamp": 1775871000,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Minnesota Timberwolves",
+            "score": "132-136"
+          },
+          {
+            "timestamp": 1775786400,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Los Angeles Lakers",
+            "score": "103-119"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775617200,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Houston Rockets",
+            "score": "105-119"
+          },
+          {
+            "timestamp": 1775615400,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "87-123"
+          },
+          {
+            "timestamp": 1775440800,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Houston Rockets",
+            "score": "116-117"
+          },
+          {
+            "timestamp": 1775431800,
+            "tournament": "NBA",
+            "home": "Dallas Mavericks",
+            "away": "Los Angeles Lakers",
+            "score": "134-128"
+          },
+          {
+            "timestamp": 1775260800,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Utah Jazz",
+            "score": "140-106"
+          },
+          {
+            "timestamp": 1775179800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "139-96"
+          },
+          {
+            "timestamp": 1775088000,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Milwaukee Bucks",
+            "score": "119-113"
+          },
+          {
+            "timestamp": 1775010600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Cleveland Cavaliers",
+            "score": "127-113"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "205.5": {
+            "over": 1.81,
+            "under": 1.95
+          },
+          "206.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "19.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "20.5": {
+            "over": 1.91,
+            "under": 1.91
+          },
+          "21.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "32.5": {
+            "over": 9,
+            "under": 1.05
+          },
+          "33.5": {
+            "over": 10,
+            "under": 1.04
+          },
+          "202.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "203.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "204.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "207.5": {
+            "over": 2,
+            "under": 1.8
+          },
+          "208.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "209.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "210.5": {
+            "over": 2.2,
+            "under": 1.62
+          }
+        },
+        "handicap": {
+          "4.5": {
+            "home": 2
+          },
+          "-4.5": {
+            "away": 1.81
+          },
+          "1.5": {
+            "home": 2.38
+          },
+          "-1.5": {
+            "away": 1.53
+          },
+          "2.5": {
+            "home": 2.2
+          },
+          "-2.5": {
+            "away": 1.62
+          },
+          "3.5": {
+            "home": 2.05
+          },
+          "-3.5": {
+            "away": 1.7
+          },
+          "5.5": {
+            "home": 1.73
+          },
+          "-5.5": {
+            "away": 2
+          },
+          "6.5": {
+            "home": 1.62
+          },
+          "-6.5": {
+            "away": 2.2
+          },
+          "7.5": {
+            "home": 1.6
+          },
+          "-7.5": {
+            "away": 2.25
+          },
+          "8.5": {
+            "home": 1.5
+          },
+          "-8.5": {
+            "away": 2.5
+          },
+          "9.5": {
+            "home": 1.4
+          },
+          "-9.5": {
+            "away": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-22T07:11:52.501Z"
     }
   ],
   "combos": [
