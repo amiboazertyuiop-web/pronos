@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-29T20:05:17.271Z",
+    "last_results_update": "2026-04-29T23:40:00.745Z",
     "analyses_written_at": "2026-04-29T11:19:40.835Z",
     "analyses_cost_usd": 0.0521,
-    "last_hourly_refresh": "2026-04-29T20:05:17.271Z"
+    "last_hourly_refresh": "2026-04-29T23:40:00.745Z"
   },
   "sports": {
     "foot": {
@@ -239,16 +239,16 @@
               "pari": "Moins de 209.5 points",
               "cote_retenue": 1.94,
               "cotes": {
-                "domicile": 1.25,
+                "domicile": 1.23,
                 "nul": null,
-                "exterieur": 4.5
+                "exterieur": 4.81
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre Detroit et Orlando est une série de playoffs très serrée : les Pistons mènent 2-2 après quatre matchs disputés. Orlando a remporté les deux premiers matchs à domicile (113-105 et 94-88), tandis que Detroit a répondu avec deux victoires chez eux (98-83 et 101 perdu non, 98-83 puis défaite 101-112). La tendance défensive est frappante : sur les 4 confrontations directes, les totaux sont 218, 200, 181 et 213 points, soit une moyenne d'environ 203 points, nettement sous la ligne proposée. Orlando s'appuie sur une défense élite organisée autour de Paolo Banchero et Franz Wagner en attaque, mais les Pistons adoptent un rythme lent et physique qui étouffe les échanges. Le match du 22 avril (98-83, total 181 points) illustre parfaitement cette tendance au verrouillage défensif en fin de série. Avec l'enjeu d'un match 5 décisif, les deux staffs prioriseront la solidité défensive, et les indicateurs pointent clairement vers un score total bas.",
               "confiance": 4,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -476,9 +476,9 @@
               "pari": "Moins de 216.5 points",
               "cote_retenue": 1.81,
               "cotes": {
-                "domicile": 1.31,
+                "domicile": 1.28,
                 "nul": null,
-                "exterieur": 3.91
+                "exterieur": 4.24
               },
               "pick_category": "ou",
               "analyse": "Ce choc entre Cleveland et Toronto est actuellement en série playoff (ou fin de saison serrée), avec un H2H récent très équilibré : Toronto a remporté les deux derniers duels (93-89 et 126-104), tandis que Cleveland avait dominé les deux précédents (115-105 et 126-113). On observe une alternance nette entre matchs défensifs (93-89, total 182 points) et matchs très offensifs (126-104, total 230 points). En regardant l'ensemble des 4 confrontations directes récentes, les totaux sont : 182, 230, 220, 239, soit une moyenne de 217,75 points. Cleveland tourne autour de 117-130 points dans ses victoires hors série, tandis que Toronto a scoré 128 et 136 dans ses dernières sorties dominantes. Le total de 214.5 semble légèrement sous-évalué compte tenu de la tendance offensive de ces deux équipes sur les trois derniers matchs de la série, mais le match 93-89 récent rappelle que les rencontres fermées sont aussi possibles. Le total de 216.5 under à 1.81 représente une valeur intéressante en intégrant le risque d'un match plus contrôlé typique des fins de série serrée.",
@@ -713,9 +713,9 @@
               "pari": "Moins de 207.5 points",
               "cote_retenue": 1.87,
               "cotes": {
-                "domicile": 1.56,
+                "domicile": 1.61,
                 "nul": null,
-                "exterieur": 2.65
+                "exterieur": 2.52
               },
               "pick_category": "ou",
               "analyse": "Ce match est le 5e de la série playoff entre les Lakers et les Rockets, après une série très serrée : Houston mène 3-1 avec des victoires 115-96 (match 4), tandis que les Lakers avaient remporté les matchs 2 et 3 (112-108 et 101-94, 107-98). En analysant les scores de la série, on observe que trois des quatre matchs sont restés sous les 210 points combinés (211 lors du match 4, 220 lors du match 2, 195 lors du match 3, 205 lors du match 1). Houston joue un basket physique et organisé sous Ime Udoka, avec une défense étouffante illustrée par le match 3 (101-94) et le match 1 (115-96). Les Lakers, dos au mur, devraient intensifier leur défense pour survivre, ce qui tend à réduire le rythme offensif. Les trois derniers matchs de la série ont totalisé respectivement 205, 195, 211 points — deux des trois sous les 207. Compte tenu de l'intensité défensive attendue dans un match éliminatoire décisif et de la tendance générale de la série à rester basse, le total sous 207.5 points semble le choix le plus solide.",
@@ -1124,329 +1124,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "UodPTq3T",
-              "flashscore_id": "UodPTq3T",
-              "flashscore_sport_id": 2,
-              "home_team_id": "IoIhUqIN",
-              "away_team_id": "6PlgfXKR",
-              "tournament_id": "u5t2id0l",
-              "tournament_url": "/tennis/atp-singles/madrid/",
-              "sport_key": "flashscore_tennis_atp_madrid_spain",
-              "commence_time": "2026-04-29T19:30:00.000Z",
-              "time_display": "Mer. 21h30",
-              "home": "Fils A.",
-              "away": "Lehecka J.",
-              "match": "Fils A. vs Lehecka J.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 1.58,
-                "nul": null,
-                "exterieur": 2.53
-              },
-              "pick_category": "ou",
-              "analyse": "Arthur Fils arrive dans ce quart de finale de Madrid en état de grâce absolue : il a remporté le titre à Barcelone la semaine passée en battant Rublev en finale (2-0), et enchaîne sur 7 victoires consécutives sur terre battue. À Madrid, il a éliminé Buse (2-1), Nava (2-0) et Etcheverry (2-0), démontrant une régularité remarquable. Lehecka est lui aussi en bonne forme avec des victoires sur Tabilo (deux fois), Nava, Michelsen et Musetti, mais ses matchs sont souvent disputés en trois sets (3 sur 5 à Madrid). Sur terre battue, Fils impose un rythme de fond de court intense qui allonge les échanges et pousse les matchs à un nombre élevé de jeux. Face à un Lehecka capable de résister et de forcer un troisième set, un total de jeux élevé semble probable : Fils a joué 3 matchs dont 1 en trois sets, Lehecka 3 matchs dont 2 en trois sets. La ligne des 22.5 jeux offre une cote attractive de 1.80 pour le dépassement.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777374000,
-                    "tournament": "MAD",
-                    "home": "Lehecka J.",
-                    "away": "Musetti L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777367400,
-                    "tournament": "MAD",
-                    "home": "Etcheverry T. M.",
-                    "away": "Fils A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777214700,
-                    "tournament": "MAD",
-                    "home": "Fils A.",
-                    "away": "Nava E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777194600,
-                    "tournament": "MAD",
-                    "home": "Lehecka J.",
-                    "away": "Michelsen A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777036200,
-                    "tournament": "MAD",
-                    "home": "Fils A.",
-                    "away": "Buse I.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777033800,
-                    "tournament": "MAD",
-                    "home": "Lehecka J.",
-                    "away": "Tabilo A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776607800,
-                    "tournament": "BAR",
-                    "home": "Rublev A.",
-                    "away": "Fils A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776521400,
-                    "tournament": "BAR",
-                    "home": "Jodar R.",
-                    "away": "Fils A.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776434400,
-                    "tournament": "BAR",
-                    "home": "Fils A.",
-                    "away": "Musetti L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776361500,
-                    "tournament": "BAR",
-                    "home": "Fils A.",
-                    "away": "Nakashima B.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776188400,
-                    "tournament": "BAR",
-                    "home": "Fils A.",
-                    "away": "Atmane T.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775739600,
-                    "tournament": "MON",
-                    "home": "Lehecka J.",
-                    "away": "Bublik A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775639400,
-                    "tournament": "MON",
-                    "home": "Lehecka J.",
-                    "away": "Tabilo A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775473800,
-                    "tournament": "MON",
-                    "home": "Lehecka J.",
-                    "away": "Nava E.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1774816500,
-                    "tournament": "MIA",
-                    "home": "Lehecka J.",
-                    "away": "Sinner J.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.11,
-                    "under": 4.85
-                  },
-                  "19.0": {
-                    "over": 1.13,
-                    "under": 4.5
-                  },
-                  "19.5": {
-                    "over": 1.27,
-                    "under": 3.38
-                  },
-                  "20.0": {
-                    "over": 1.27,
-                    "under": 3.2
-                  },
-                  "20.5": {
-                    "over": 1.41,
-                    "under": 2.73
-                  },
-                  "21.0": {
-                    "over": 1.42,
-                    "under": 2.61
-                  },
-                  "21.5": {
-                    "over": 1.53,
-                    "under": 2.36
-                  },
-                  "22.0": {
-                    "over": 1.62,
-                    "under": 2.19
-                  },
-                  "22.5": {
-                    "over": 1.8,
-                    "under": 1.94
-                  },
-                  "23.0": {
-                    "over": 1.89,
-                    "under": 1.83
-                  },
-                  "23.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "24.0": {
-                    "over": 2.02,
-                    "under": 1.69
-                  },
-                  "24.5": {
-                    "over": 2.06,
-                    "under": 1.69
-                  },
-                  "25.0": {
-                    "over": 2.09,
-                    "under": 1.61
-                  },
-                  "25.5": {
-                    "over": 2.21,
-                    "under": 1.58
-                  },
-                  "26.0": {
-                    "over": 2.33,
-                    "under": 1.48
-                  },
-                  "26.5": {
-                    "over": 2.52,
-                    "under": 1.46
-                  },
-                  "27.0": {
-                    "over": 2.49,
-                    "under": 1.42
-                  },
-                  "27.5": {
-                    "over": 2.68,
-                    "under": 1.41
-                  },
-                  "2.5": {
-                    "over": 2.29,
-                    "under": 1.58
-                  },
-                  "28.5": {
-                    "over": 3.15,
-                    "under": 1.35
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.22,
-                    "away": 1.79
-                  },
-                  "-1.5": {
-                    "home": 2,
-                    "away": 3.8
-                  },
-                  "0.0": {
-                    "home": 1.53,
-                    "away": 2.38
-                  },
-                  "0.5": {
-                    "home": 1.5,
-                    "away": 2.26
-                  },
-                  "-0.5": {
-                    "home": 1.6,
-                    "away": 2.49
-                  },
-                  "1.0": {
-                    "home": 1.44,
-                    "away": 2.15
-                  },
-                  "-1.0": {
-                    "home": 1.64,
-                    "away": 2.62
-                  },
-                  "2.0": {
-                    "away": 1.91
-                  },
-                  "-2.0": {
-                    "home": 1.81
-                  },
-                  "2.5": {
-                    "home": 1.33,
-                    "away": 1.84
-                  },
-                  "-2.5": {
-                    "home": 1.87,
-                    "away": 3.2
-                  },
-                  "3.0": {
-                    "away": 1.64
-                  },
-                  "-3.0": {
-                    "home": 2.15
-                  },
-                  "3.5": {
-                    "home": 1.22,
-                    "away": 1.53
-                  },
-                  "-3.5": {
-                    "home": 2.38,
-                    "away": 4.1
-                  },
-                  "4.0": {
-                    "away": 1.35
-                  },
-                  "-4.0": {
-                    "home": 2.98
-                  },
-                  "4.5": {
-                    "away": 1.31
-                  },
-                  "-4.5": {
-                    "home": 3.33
-                  },
-                  "5.0": {
-                    "away": 1.15
-                  },
-                  "-5.0": {
-                    "home": 4.8
-                  },
-                  "5.5": {
-                    "away": 1.13
-                  },
-                  "-5.5": {
-                    "home": 5.25
-                  },
-                  "6.0": {
-                    "away": 1.05
-                  },
-                  "-6.0": {
-                    "home": 8.3
-                  },
-                  "6.5": {
-                    "away": 1.04
-                  },
-                  "-6.5": {
-                    "home": 8.8
-                  }
-                }
-              }
-            },
-            {
               "event_id": "KnD4snrR",
               "flashscore_id": "KnD4snrR",
               "flashscore_sport_id": 2,
@@ -1464,7 +1141,7 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 3.36,
+                "domicile": 3.38,
                 "nul": null,
                 "exterieur": 1.36
               },
@@ -1795,9 +1472,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.36,
+                "domicile": 1.34,
                 "nul": null,
-                "exterieur": 3.38
+                "exterieur": 3.52
               },
               "pick_category": "ou",
               "analyse": "Casper Ruud traverse une excellente période sur terre battue, enchaînant les victoires à Madrid contre Munar (2-0), Davidovich Fokina (2-0) et Tsitsipas (2-1), confirmant son statut de spécialiste de la surface. Alexander Blockx, de son côté, réalise un tournoi remarquable pour un jeune joueur : il a éliminé Garin, Nakashima, Auger-Aliassime et Cerundolo, tous en sets directs ou en trois sets. Les deux protagonistes sont donc en grande forme et arrivent en demi-finale avec de l'élan. En analysant les matchs récents, Blockx gagne souvent en deux sets mais concède parfois un set (Garin, Nakashima, Shapovalov), tandis que Ruud, plus régulier et expérimenté, maîtrise aussi des matchs en trois sets (Tsitsipas). Sur terre battue, les échanges sont prolongés et les deux joueurs construisent les points patiemment, ce qui favorise les matchs longs. Un total de moins de 20.5 jeux semble trop court pour deux joueurs en forme à ce stade du tournoi, et le seuil de 22.5 jeux représente un équilibre réaliste pour un match qui pourrait aller en trois sets.",
@@ -2137,9 +1814,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.95,
               "cotes": {
-                "domicile": 3.44,
+                "domicile": 3.11,
                 "nul": null,
-                "exterieur": 1.35
+                "exterieur": 1.41
               },
               "pick_category": "ou",
               "analyse": "Mirra Andreeva traverse une forme exceptionnelle à Madrid : victoires convaincantes sur Udvardy (2-0), Galfi (2-0), puis une bataille remportée contre Bondar (2-1), avant d'écarter facilement Fernandez (2-0). Sa régularité sur terre battue est frappante, avec une seule défaite en six derniers matchs (contre Rybakina à Stuttgart). Hailey Baptiste a également réalisé un parcours solide à Madrid, battant successivement Paolini (2-0), Bencic (2-1) et Sabalenka (1-2... attention, défaite), ce qui montre sa capacité à créer des surprises. Cependant, le niveau d'Andreeva sur cette surface est nettement supérieur : jeu polyvalent, grande endurance sur terre, et expérience des grands tournois WTA. Baptiste a subi une défaite 1-2 contre Shymanovich à Rouen récemment, révélant une certaine fragilité face aux joueuses solides de fond de court. Sur terre battue à Madrid, les échanges tendront à s'étirer, mais Andreeva devrait s'imposer en deux sets sans trop d'encombres, limitant le nombre total de jeux joués.",
@@ -2478,30 +2155,6 @@
     "vRGUaOB7"
   ],
   "history": [
-    {
-      "event_id": "6RZzC3As",
-      "flashscore_id": "6RZzC3As",
-      "sport_key": "tennis",
-      "commence_time": "2026-04-11T11:25:00.000Z",
-      "home": "Wang Xin.",
-      "away": "Leonard M.",
-      "match": "Wang Xin. vs Leonard M.",
-      "prono": "win-home",
-      "pari": "Victoire Wang Xin.",
-      "cote_retenue": 1.05,
-      "cotes": {
-        "domicile": 1.05,
-        "exterieur": 7.4
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-1",
-      "actual_result": "home",
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rouen (France)",
-      "archived_at": "2026-04-12T13:11:01.308Z"
-    },
     {
       "event_id": "0A0Wr5te",
       "flashscore_id": "0A0Wr5te",
@@ -120083,6 +119736,332 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Madrid (Spain)",
       "archived_at": "2026-04-29T20:05:17.271Z"
+    },
+    {
+      "event_id": "UodPTq3T",
+      "flashscore_id": "UodPTq3T",
+      "flashscore_sport_id": 2,
+      "home_team_id": "IoIhUqIN",
+      "away_team_id": "6PlgfXKR",
+      "tournament_id": "u5t2id0l",
+      "tournament_url": "/tennis/atp-singles/madrid/",
+      "sport_key": "flashscore_tennis_atp_madrid_spain",
+      "commence_time": "2026-04-29T19:30:00.000Z",
+      "time_display": "Mer. 21h30",
+      "home": "Fils A.",
+      "away": "Lehecka J.",
+      "match": "Fils A. vs Lehecka J.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 1.8,
+      "cotes": {
+        "domicile": 1.58,
+        "nul": null,
+        "exterieur": 2.53
+      },
+      "pick_category": "ou",
+      "analyse": "Arthur Fils arrive dans ce quart de finale de Madrid en état de grâce absolue : il a remporté le titre à Barcelone la semaine passée en battant Rublev en finale (2-0), et enchaîne sur 7 victoires consécutives sur terre battue. À Madrid, il a éliminé Buse (2-1), Nava (2-0) et Etcheverry (2-0), démontrant une régularité remarquable. Lehecka est lui aussi en bonne forme avec des victoires sur Tabilo (deux fois), Nava, Michelsen et Musetti, mais ses matchs sont souvent disputés en trois sets (3 sur 5 à Madrid). Sur terre battue, Fils impose un rythme de fond de court intense qui allonge les échanges et pousse les matchs à un nombre élevé de jeux. Face à un Lehecka capable de résister et de forcer un troisième set, un total de jeux élevé semble probable : Fils a joué 3 matchs dont 1 en trois sets, Lehecka 3 matchs dont 2 en trois sets. La ligne des 22.5 jeux offre une cote attractive de 1.80 pour le dépassement.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777374000,
+            "tournament": "MAD",
+            "home": "Lehecka J.",
+            "away": "Musetti L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777367400,
+            "tournament": "MAD",
+            "home": "Etcheverry T. M.",
+            "away": "Fils A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777214700,
+            "tournament": "MAD",
+            "home": "Fils A.",
+            "away": "Nava E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777194600,
+            "tournament": "MAD",
+            "home": "Lehecka J.",
+            "away": "Michelsen A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777036200,
+            "tournament": "MAD",
+            "home": "Fils A.",
+            "away": "Buse I.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777033800,
+            "tournament": "MAD",
+            "home": "Lehecka J.",
+            "away": "Tabilo A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776607800,
+            "tournament": "BAR",
+            "home": "Rublev A.",
+            "away": "Fils A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776521400,
+            "tournament": "BAR",
+            "home": "Jodar R.",
+            "away": "Fils A.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776434400,
+            "tournament": "BAR",
+            "home": "Fils A.",
+            "away": "Musetti L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776361500,
+            "tournament": "BAR",
+            "home": "Fils A.",
+            "away": "Nakashima B.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776188400,
+            "tournament": "BAR",
+            "home": "Fils A.",
+            "away": "Atmane T.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775739600,
+            "tournament": "MON",
+            "home": "Lehecka J.",
+            "away": "Bublik A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775639400,
+            "tournament": "MON",
+            "home": "Lehecka J.",
+            "away": "Tabilo A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775473800,
+            "tournament": "MON",
+            "home": "Lehecka J.",
+            "away": "Nava E.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1774816500,
+            "tournament": "MIA",
+            "home": "Lehecka J.",
+            "away": "Sinner J.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.11,
+            "under": 4.85
+          },
+          "19.0": {
+            "over": 1.13,
+            "under": 4.5
+          },
+          "19.5": {
+            "over": 1.27,
+            "under": 3.38
+          },
+          "20.0": {
+            "over": 1.27,
+            "under": 3.2
+          },
+          "20.5": {
+            "over": 1.41,
+            "under": 2.73
+          },
+          "21.0": {
+            "over": 1.42,
+            "under": 2.61
+          },
+          "21.5": {
+            "over": 1.53,
+            "under": 2.36
+          },
+          "22.0": {
+            "over": 1.62,
+            "under": 2.19
+          },
+          "22.5": {
+            "over": 1.8,
+            "under": 1.94
+          },
+          "23.0": {
+            "over": 1.89,
+            "under": 1.83
+          },
+          "23.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "24.0": {
+            "over": 2.02,
+            "under": 1.69
+          },
+          "24.5": {
+            "over": 2.06,
+            "under": 1.69
+          },
+          "25.0": {
+            "over": 2.09,
+            "under": 1.61
+          },
+          "25.5": {
+            "over": 2.21,
+            "under": 1.58
+          },
+          "26.0": {
+            "over": 2.33,
+            "under": 1.48
+          },
+          "26.5": {
+            "over": 2.52,
+            "under": 1.46
+          },
+          "27.0": {
+            "over": 2.49,
+            "under": 1.42
+          },
+          "27.5": {
+            "over": 2.68,
+            "under": 1.41
+          },
+          "2.5": {
+            "over": 2.29,
+            "under": 1.58
+          },
+          "28.5": {
+            "over": 3.15,
+            "under": 1.35
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.22,
+            "away": 1.79
+          },
+          "-1.5": {
+            "home": 2,
+            "away": 3.8
+          },
+          "0.0": {
+            "home": 1.53,
+            "away": 2.38
+          },
+          "0.5": {
+            "home": 1.5,
+            "away": 2.26
+          },
+          "-0.5": {
+            "home": 1.6,
+            "away": 2.49
+          },
+          "1.0": {
+            "home": 1.44,
+            "away": 2.15
+          },
+          "-1.0": {
+            "home": 1.64,
+            "away": 2.62
+          },
+          "2.0": {
+            "away": 1.91
+          },
+          "-2.0": {
+            "home": 1.81
+          },
+          "2.5": {
+            "home": 1.33,
+            "away": 1.84
+          },
+          "-2.5": {
+            "home": 1.87,
+            "away": 3.2
+          },
+          "3.0": {
+            "away": 1.64
+          },
+          "-3.0": {
+            "home": 2.15
+          },
+          "3.5": {
+            "home": 1.22,
+            "away": 1.53
+          },
+          "-3.5": {
+            "home": 2.38,
+            "away": 4.1
+          },
+          "4.0": {
+            "away": 1.35
+          },
+          "-4.0": {
+            "home": 2.98
+          },
+          "4.5": {
+            "away": 1.31
+          },
+          "-4.5": {
+            "home": 3.33
+          },
+          "5.0": {
+            "away": 1.15
+          },
+          "-5.0": {
+            "home": 4.8
+          },
+          "5.5": {
+            "away": 1.13
+          },
+          "-5.5": {
+            "home": 5.25
+          },
+          "6.0": {
+            "away": 1.05
+          },
+          "-6.0": {
+            "home": 8.3
+          },
+          "6.5": {
+            "away": 1.04
+          },
+          "-6.5": {
+            "home": 8.8
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Madrid (Spain)",
+      "archived_at": "2026-04-29T23:40:00.745Z"
     }
   ],
   "combos": [
