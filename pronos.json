@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-04-29T23:40:00.745Z",
+    "last_results_update": "2026-04-30T07:53:07.621Z",
     "analyses_written_at": "2026-04-29T11:19:40.835Z",
     "analyses_cost_usd": 0.0521,
-    "last_hourly_refresh": "2026-04-29T23:40:00.745Z"
+    "last_hourly_refresh": "2026-04-30T07:53:07.621Z"
   },
   "sports": {
     "foot": {
@@ -220,719 +220,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "zeZEbjEi",
-              "flashscore_id": "zeZEbjEi",
-              "flashscore_sport_id": 3,
-              "home_team_id": "UcjMRj6J",
-              "away_team_id": "QZMS36Dn",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-29T23:00:00.000Z",
-              "time_display": "Jeu. 01h00",
-              "home": "Detroit Pistons",
-              "away": "Orlando Magic",
-              "match": "Detroit Pistons vs Orlando Magic",
-              "prono": "win-home",
-              "pari": "Moins de 209.5 points",
-              "cote_retenue": 1.94,
-              "cotes": {
-                "domicile": 1.23,
-                "nul": null,
-                "exterieur": 4.81
-              },
-              "pick_category": "ou",
-              "analyse": "Ce duel entre Detroit et Orlando est une série de playoffs très serrée : les Pistons mènent 2-2 après quatre matchs disputés. Orlando a remporté les deux premiers matchs à domicile (113-105 et 94-88), tandis que Detroit a répondu avec deux victoires chez eux (98-83 et 101 perdu non, 98-83 puis défaite 101-112). La tendance défensive est frappante : sur les 4 confrontations directes, les totaux sont 218, 200, 181 et 213 points, soit une moyenne d'environ 203 points, nettement sous la ligne proposée. Orlando s'appuie sur une défense élite organisée autour de Paolo Banchero et Franz Wagner en attaque, mais les Pistons adoptent un rythme lent et physique qui étouffe les échanges. Le match du 22 avril (98-83, total 181 points) illustre parfaitement cette tendance au verrouillage défensif en fin de série. Avec l'enjeu d'un match 5 décisif, les deux staffs prioriseront la solidité défensive, et les indicateurs pointent clairement vers un score total bas.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777334400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "94-88"
-                  },
-                  {
-                    "timestamp": 1777136400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "113-105"
-                  },
-                  {
-                    "timestamp": 1776898800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "98-83"
-                  },
-                  {
-                    "timestamp": 1776637800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "101-112"
-                  },
-                  {
-                    "timestamp": 1776468600,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Charlotte Hornets",
-                    "score": "121-90"
-                  },
-                  {
-                    "timestamp": 1776295800,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Orlando Magic",
-                    "score": "109-97"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Detroit Pistons",
-                    "score": "121-133"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Orlando Magic",
-                    "score": "113-108"
-                  },
-                  {
-                    "timestamp": 1775865600,
-                    "tournament": "NBA",
-                    "home": "Chicago Bulls",
-                    "away": "Orlando Magic",
-                    "score": "103-127"
-                  },
-                  {
-                    "timestamp": 1775862000,
-                    "tournament": "NBA",
-                    "home": "Charlotte Hornets",
-                    "away": "Detroit Pistons",
-                    "score": "100-118"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Milwaukee Bucks",
-                    "score": "137-111"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-120"
-                  },
-                  {
-                    "timestamp": 1775516400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "123-107"
-                  },
-                  {
-                    "timestamp": 1775430000,
-                    "tournament": "NBA",
-                    "home": "New Orleans Pelicans",
-                    "away": "Orlando Magic",
-                    "score": "108-112"
-                  },
-                  {
-                    "timestamp": 1775343600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Detroit Pistons",
-                    "score": "93-116"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "209.5": {
-                    "over": 1.77,
-                    "under": 1.94
-                  },
-                  "210.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "211.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "207.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "208.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "212.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "213.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "214.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "215.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "10.5": {
-                    "away": 1.9
-                  },
-                  "-10.5": {
-                    "home": 1.9
-                  },
-                  "9.5": {
-                    "away": 1.95
-                  },
-                  "-9.5": {
-                    "home": 1.81
-                  },
-                  "11.5": {
-                    "away": 1.73
-                  },
-                  "-11.5": {
-                    "home": 2
-                  },
-                  "12.5": {
-                    "away": 1.62
-                  },
-                  "-12.5": {
-                    "home": 2.2
-                  },
-                  "13.5": {
-                    "away": 1.53
-                  },
-                  "-13.5": {
-                    "home": 2.38
-                  },
-                  "14.5": {
-                    "away": 1.5
-                  },
-                  "-14.5": {
-                    "home": 2.5
-                  },
-                  "6.5": {
-                    "away": 2.5
-                  },
-                  "-6.5": {
-                    "home": 1.5
-                  },
-                  "7.5": {
-                    "away": 2.25
-                  },
-                  "-7.5": {
-                    "home": 1.6
-                  },
-                  "8.5": {
-                    "away": 2.05
-                  },
-                  "-8.5": {
-                    "home": 1.7
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "tdQHddH0",
-              "flashscore_id": "tdQHddH0",
-              "flashscore_sport_id": 3,
-              "home_team_id": "xGk13Tb6",
-              "away_team_id": "CxtbCMdU",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-29T23:30:00.000Z",
-              "time_display": "Jeu. 01h30",
-              "home": "Cleveland Cavaliers",
-              "away": "Toronto Raptors",
-              "match": "Cleveland Cavaliers vs Toronto Raptors",
-              "prono": "win-home",
-              "pari": "Moins de 216.5 points",
-              "cote_retenue": 1.81,
-              "cotes": {
-                "domicile": 1.28,
-                "nul": null,
-                "exterieur": 4.24
-              },
-              "pick_category": "ou",
-              "analyse": "Ce choc entre Cleveland et Toronto est actuellement en série playoff (ou fin de saison serrée), avec un H2H récent très équilibré : Toronto a remporté les deux derniers duels (93-89 et 126-104), tandis que Cleveland avait dominé les deux précédents (115-105 et 126-113). On observe une alternance nette entre matchs défensifs (93-89, total 182 points) et matchs très offensifs (126-104, total 230 points). En regardant l'ensemble des 4 confrontations directes récentes, les totaux sont : 182, 230, 220, 239, soit une moyenne de 217,75 points. Cleveland tourne autour de 117-130 points dans ses victoires hors série, tandis que Toronto a scoré 128 et 136 dans ses dernières sorties dominantes. Le total de 214.5 semble légèrement sous-évalué compte tenu de la tendance offensive de ces deux équipes sur les trois derniers matchs de la série, mais le match 93-89 récent rappelle que les rencontres fermées sont aussi possibles. Le total de 216.5 under à 1.81 représente une valeur intéressante en intégrant le risque d'un match plus contrôlé typique des fins de série serrée.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777222800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "93-89"
-                  },
-                  {
-                    "timestamp": 1776988800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "126-104"
-                  },
-                  {
-                    "timestamp": 1776726000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "115-105"
-                  },
-                  {
-                    "timestamp": 1776531600,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "126-113"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Washington Wizards",
-                    "score": "130-117"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Brooklyn Nets",
-                    "score": "136-101"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Toronto Raptors",
-                    "score": "112-95"
-                  },
-                  {
-                    "timestamp": 1775862000,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "124-102"
-                  },
-                  {
-                    "timestamp": 1775775600,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Miami Heat",
-                    "score": "128-114"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Atlanta Hawks",
-                    "score": "122-116"
-                  },
-                  {
-                    "timestamp": 1775604600,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Miami Heat",
-                    "score": "121-95"
-                  },
-                  {
-                    "timestamp": 1775520000,
-                    "tournament": "NBA",
-                    "home": "Memphis Grizzlies",
-                    "away": "Cleveland Cavaliers",
-                    "score": "126-142"
-                  },
-                  {
-                    "timestamp": 1775426400,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Indiana Pacers",
-                    "score": "117-108"
-                  },
-                  {
-                    "timestamp": 1775417400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Toronto Raptors",
-                    "score": "115-101"
-                  },
-                  {
-                    "timestamp": 1775260800,
-                    "tournament": "NBA",
-                    "home": "Memphis Grizzlies",
-                    "away": "Toronto Raptors",
-                    "score": "96-128"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "214.5": {
-                    "over": 1.78,
-                    "under": 1.92
-                  },
-                  "215.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "216.5": {
-                    "over": 1.92,
-                    "under": 1.81
-                  },
-                  "212.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "217.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "218.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "219.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "220.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "8.5": {
-                    "away": 1.9
-                  },
-                  "-8.5": {
-                    "home": 1.9
-                  },
-                  "9.5": {
-                    "away": 1.81
-                  },
-                  "-9.5": {
-                    "home": 1.95
-                  },
-                  "10.5": {
-                    "away": 1.62
-                  },
-                  "-10.5": {
-                    "home": 2.2
-                  },
-                  "11.5": {
-                    "away": 1.53
-                  },
-                  "-11.5": {
-                    "home": 2.38
-                  },
-                  "12.5": {
-                    "away": 1.5
-                  },
-                  "-12.5": {
-                    "home": 2.5
-                  },
-                  "4.5": {
-                    "away": 2.75
-                  },
-                  "-4.5": {
-                    "home": 1.4
-                  },
-                  "5.5": {
-                    "away": 2.5
-                  },
-                  "-5.5": {
-                    "home": 1.5
-                  },
-                  "6.5": {
-                    "away": 2.2
-                  },
-                  "-6.5": {
-                    "home": 1.62
-                  },
-                  "7.5": {
-                    "away": 2.05
-                  },
-                  "-7.5": {
-                    "home": 1.7
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "t4dHSMHt",
-              "flashscore_id": "t4dHSMHt",
-              "flashscore_sport_id": 3,
-              "home_team_id": "ngegZ8bg",
-              "away_team_id": "Sr9PQALP",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-04-30T02:00:00.000Z",
-              "time_display": "Jeu. 04h00",
-              "home": "Los Angeles Lakers",
-              "away": "Houston Rockets",
-              "match": "Los Angeles Lakers vs Houston Rockets",
-              "prono": "win-home",
-              "pari": "Moins de 207.5 points",
-              "cote_retenue": 1.87,
-              "cotes": {
-                "domicile": 1.61,
-                "nul": null,
-                "exterieur": 2.52
-              },
-              "pick_category": "ou",
-              "analyse": "Ce match est le 5e de la série playoff entre les Lakers et les Rockets, après une série très serrée : Houston mène 3-1 avec des victoires 115-96 (match 4), tandis que les Lakers avaient remporté les matchs 2 et 3 (112-108 et 101-94, 107-98). En analysant les scores de la série, on observe que trois des quatre matchs sont restés sous les 210 points combinés (211 lors du match 4, 220 lors du match 2, 195 lors du match 3, 205 lors du match 1). Houston joue un basket physique et organisé sous Ime Udoka, avec une défense étouffante illustrée par le match 3 (101-94) et le match 1 (115-96). Les Lakers, dos au mur, devraient intensifier leur défense pour survivre, ce qui tend à réduire le rythme offensif. Les trois derniers matchs de la série ont totalisé respectivement 205, 195, 211 points — deux des trois sous les 207. Compte tenu de l'intensité défensive attendue dans un match éliminatoire décisif et de la tendance générale de la série à rester basse, le total sous 207.5 points semble le choix le plus solide.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777253400,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Los Angeles Lakers",
-                    "score": "115-96"
-                  },
-                  {
-                    "timestamp": 1777075200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Los Angeles Lakers",
-                    "score": "108-112"
-                  },
-                  {
-                    "timestamp": 1776825000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "101-94"
-                  },
-                  {
-                    "timestamp": 1776558600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "107-98"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Utah Jazz",
-                    "score": "131-107"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Memphis Grizzlies",
-                    "score": "132-101"
-                  },
-                  {
-                    "timestamp": 1775874600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Phoenix Suns",
-                    "score": "101-73"
-                  },
-                  {
-                    "timestamp": 1775871000,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-136"
-                  },
-                  {
-                    "timestamp": 1775786400,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Los Angeles Lakers",
-                    "score": "103-119"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775617200,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Houston Rockets",
-                    "score": "105-119"
-                  },
-                  {
-                    "timestamp": 1775615400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "87-123"
-                  },
-                  {
-                    "timestamp": 1775440800,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Houston Rockets",
-                    "score": "116-117"
-                  },
-                  {
-                    "timestamp": 1775431800,
-                    "tournament": "NBA",
-                    "home": "Dallas Mavericks",
-                    "away": "Los Angeles Lakers",
-                    "score": "134-128"
-                  },
-                  {
-                    "timestamp": 1775260800,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Utah Jazz",
-                    "score": "140-106"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "206.5": {
-                    "over": 1.78,
-                    "under": 1.92
-                  },
-                  "207.5": {
-                    "over": 1.81,
-                    "under": 1.87
-                  },
-                  "208.5": {
-                    "over": 1.95,
-                    "under": 1.85
-                  },
-                  "204.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "205.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "209.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "210.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "211.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "212.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "2.5": {
-                    "away": 1.98
-                  },
-                  "-2.5": {
-                    "home": 1.75
-                  },
-                  "3.5": {
-                    "away": 1.95
-                  },
-                  "-3.5": {
-                    "home": 1.81
-                  },
-                  "4.5": {
-                    "away": 1.9
-                  },
-                  "-4.5": {
-                    "home": 1.9
-                  },
-                  "1.5": {
-                    "away": 2.25
-                  },
-                  "-1.5": {
-                    "home": 1.6
-                  },
-                  "5.5": {
-                    "away": 1.7
-                  },
-                  "-5.5": {
-                    "home": 2.05
-                  },
-                  "6.5": {
-                    "away": 1.6
-                  },
-                  "-6.5": {
-                    "home": 2.25
-                  },
-                  "7.5": {
-                    "away": 1.5
-                  },
-                  "-7.5": {
-                    "home": 2.5
-                  },
-                  "8.5": {
-                    "away": 1.4
-                  },
-                  "-8.5": {
-                    "home": 2.75
-                  },
-                  "9.5": {
-                    "away": 1.4
-                  },
-                  "-9.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1141,7 +429,7 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 3.38,
+                "domicile": 3.36,
                 "nul": null,
                 "exterieur": 1.36
               },
@@ -1472,9 +760,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.34,
+                "domicile": 1.35,
                 "nul": null,
-                "exterieur": 3.52
+                "exterieur": 3.44
               },
               "pick_category": "ou",
               "analyse": "Casper Ruud traverse une excellente période sur terre battue, enchaînant les victoires à Madrid contre Munar (2-0), Davidovich Fokina (2-0) et Tsitsipas (2-1), confirmant son statut de spécialiste de la surface. Alexander Blockx, de son côté, réalise un tournoi remarquable pour un jeune joueur : il a éliminé Garin, Nakashima, Auger-Aliassime et Cerundolo, tous en sets directs ou en trois sets. Les deux protagonistes sont donc en grande forme et arrivent en demi-finale avec de l'élan. En analysant les matchs récents, Blockx gagne souvent en deux sets mais concède parfois un set (Garin, Nakashima, Shapovalov), tandis que Ruud, plus régulier et expérimenté, maîtrise aussi des matchs en trois sets (Tsitsipas). Sur terre battue, les échanges sont prolongés et les deux joueurs construisent les points patiemment, ce qui favorise les matchs longs. Un total de moins de 20.5 jeux semble trop court pour deux joueurs en forme à ce stade du tournoi, et le seuil de 22.5 jeux représente un équilibre réaliste pour un match qui pourrait aller en trois sets.",
@@ -1814,9 +1102,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.95,
               "cotes": {
-                "domicile": 3.11,
+                "domicile": 2.88,
                 "nul": null,
-                "exterieur": 1.41
+                "exterieur": 1.46
               },
               "pick_category": "ou",
               "analyse": "Mirra Andreeva traverse une forme exceptionnelle à Madrid : victoires convaincantes sur Udvardy (2-0), Galfi (2-0), puis une bataille remportée contre Bondar (2-1), avant d'écarter facilement Fernandez (2-0). Sa régularité sur terre battue est frappante, avec une seule défaite en six derniers matchs (contre Rybakina à Stuttgart). Hailey Baptiste a également réalisé un parcours solide à Madrid, battant successivement Paolini (2-0), Bencic (2-1) et Sabalenka (1-2... attention, défaite), ce qui montre sa capacité à créer des surprises. Cependant, le niveau d'Andreeva sur cette surface est nettement supérieur : jeu polyvalent, grande endurance sur terre, et expérience des grands tournois WTA. Baptiste a subi une défaite 1-2 contre Shymanovich à Rouen récemment, révélant une certaine fragilité face aux joueuses solides de fond de court. Sur terre battue à Madrid, les échanges tendront à s'étirer, mais Andreeva devrait s'imposer en deux sets sans trop d'encombres, limitant le nombre total de jeux joués.",
@@ -2155,78 +1443,6 @@
     "vRGUaOB7"
   ],
   "history": [
-    {
-      "event_id": "0A0Wr5te",
-      "flashscore_id": "0A0Wr5te",
-      "sport_key": "tennis",
-      "commence_time": "2026-04-11T12:50:00.000Z",
-      "home": "Shymanovich I.",
-      "away": "Martynov D.",
-      "match": "Shymanovich I. vs Martynov D.",
-      "prono": "win-home",
-      "pari": "Victoire Shymanovich I.",
-      "cote_retenue": 1.16,
-      "cotes": {
-        "domicile": 1.16,
-        "exterieur": 5.26
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rouen (France)",
-      "archived_at": "2026-04-12T13:11:01.308Z"
-    },
-    {
-      "event_id": "Ye4X2QXQ",
-      "flashscore_id": "Ye4X2QXQ",
-      "sport_key": "tennis",
-      "commence_time": "2026-04-11T13:15:00.000Z",
-      "home": "Robbe A.",
-      "away": "Tan H.",
-      "match": "Robbe A. vs Tan H.",
-      "prono": "win-away",
-      "pari": "Victoire Tan H.",
-      "cote_retenue": 1.08,
-      "cotes": {
-        "domicile": 7.97,
-        "exterieur": 1.08
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "won",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rouen (France)",
-      "archived_at": "2026-04-12T13:11:01.308Z"
-    },
-    {
-      "event_id": "zqq5HPnK",
-      "flashscore_id": "zqq5HPnK",
-      "sport_key": "tennis",
-      "commence_time": "2026-04-11T14:20:00.000Z",
-      "home": "Kazionova E.",
-      "away": "Janicijevic S.",
-      "match": "Kazionova E. vs Janicijevic S.",
-      "prono": "win-away",
-      "pari": "Victoire Janicijevic S.",
-      "cote_retenue": 1.43,
-      "cotes": {
-        "domicile": 2.82,
-        "exterieur": 1.43
-      },
-      "pick_category": "1x2",
-      "confiance": 3,
-      "status": "lost",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rouen (France)",
-      "archived_at": "2026-04-12T13:11:01.308Z"
-    },
     {
       "event_id": "YNbvsqB7",
       "flashscore_id": "YNbvsqB7",
@@ -120062,6 +119278,726 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP Madrid (Spain)",
       "archived_at": "2026-04-29T23:40:00.745Z"
+    },
+    {
+      "event_id": "zeZEbjEi",
+      "flashscore_id": "zeZEbjEi",
+      "flashscore_sport_id": 3,
+      "home_team_id": "UcjMRj6J",
+      "away_team_id": "QZMS36Dn",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-29T23:00:00.000Z",
+      "time_display": "Jeu. 01h00",
+      "home": "Detroit Pistons",
+      "away": "Orlando Magic",
+      "match": "Detroit Pistons vs Orlando Magic",
+      "prono": "win-home",
+      "pari": "Moins de 209.5 points",
+      "cote_retenue": 1.94,
+      "cotes": {
+        "domicile": 1.23,
+        "nul": null,
+        "exterieur": 4.81
+      },
+      "pick_category": "ou",
+      "analyse": "Ce duel entre Detroit et Orlando est une série de playoffs très serrée : les Pistons mènent 2-2 après quatre matchs disputés. Orlando a remporté les deux premiers matchs à domicile (113-105 et 94-88), tandis que Detroit a répondu avec deux victoires chez eux (98-83 et 101 perdu non, 98-83 puis défaite 101-112). La tendance défensive est frappante : sur les 4 confrontations directes, les totaux sont 218, 200, 181 et 213 points, soit une moyenne d'environ 203 points, nettement sous la ligne proposée. Orlando s'appuie sur une défense élite organisée autour de Paolo Banchero et Franz Wagner en attaque, mais les Pistons adoptent un rythme lent et physique qui étouffe les échanges. Le match du 22 avril (98-83, total 181 points) illustre parfaitement cette tendance au verrouillage défensif en fin de série. Avec l'enjeu d'un match 5 décisif, les deux staffs prioriseront la solidité défensive, et les indicateurs pointent clairement vers un score total bas.",
+      "confiance": 4,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "116-109",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777334400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "94-88"
+          },
+          {
+            "timestamp": 1777136400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "113-105"
+          },
+          {
+            "timestamp": 1776898800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "98-83"
+          },
+          {
+            "timestamp": 1776637800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "101-112"
+          },
+          {
+            "timestamp": 1776468600,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Charlotte Hornets",
+            "score": "121-90"
+          },
+          {
+            "timestamp": 1776295800,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Orlando Magic",
+            "score": "109-97"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Detroit Pistons",
+            "score": "121-133"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Orlando Magic",
+            "score": "113-108"
+          },
+          {
+            "timestamp": 1775865600,
+            "tournament": "NBA",
+            "home": "Chicago Bulls",
+            "away": "Orlando Magic",
+            "score": "103-127"
+          },
+          {
+            "timestamp": 1775862000,
+            "tournament": "NBA",
+            "home": "Charlotte Hornets",
+            "away": "Detroit Pistons",
+            "score": "100-118"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Milwaukee Bucks",
+            "score": "137-111"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Minnesota Timberwolves",
+            "score": "132-120"
+          },
+          {
+            "timestamp": 1775516400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "123-107"
+          },
+          {
+            "timestamp": 1775430000,
+            "tournament": "NBA",
+            "home": "New Orleans Pelicans",
+            "away": "Orlando Magic",
+            "score": "108-112"
+          },
+          {
+            "timestamp": 1775343600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Detroit Pistons",
+            "score": "93-116"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "209.5": {
+            "over": 1.77,
+            "under": 1.94
+          },
+          "210.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "211.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "207.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "208.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "212.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "213.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "214.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "215.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "10.5": {
+            "away": 1.9
+          },
+          "-10.5": {
+            "home": 1.9
+          },
+          "9.5": {
+            "away": 1.95
+          },
+          "-9.5": {
+            "home": 1.81
+          },
+          "11.5": {
+            "away": 1.73
+          },
+          "-11.5": {
+            "home": 2
+          },
+          "12.5": {
+            "away": 1.62
+          },
+          "-12.5": {
+            "home": 2.2
+          },
+          "13.5": {
+            "away": 1.53
+          },
+          "-13.5": {
+            "home": 2.38
+          },
+          "14.5": {
+            "away": 1.5
+          },
+          "-14.5": {
+            "home": 2.5
+          },
+          "6.5": {
+            "away": 2.5
+          },
+          "-6.5": {
+            "home": 1.5
+          },
+          "7.5": {
+            "away": 2.25
+          },
+          "-7.5": {
+            "home": 1.6
+          },
+          "8.5": {
+            "away": 2.05
+          },
+          "-8.5": {
+            "home": 1.7
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-30T07:53:07.621Z"
+    },
+    {
+      "event_id": "tdQHddH0",
+      "flashscore_id": "tdQHddH0",
+      "flashscore_sport_id": 3,
+      "home_team_id": "xGk13Tb6",
+      "away_team_id": "CxtbCMdU",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-29T23:30:00.000Z",
+      "time_display": "Jeu. 01h30",
+      "home": "Cleveland Cavaliers",
+      "away": "Toronto Raptors",
+      "match": "Cleveland Cavaliers vs Toronto Raptors",
+      "prono": "win-home",
+      "pari": "Moins de 216.5 points",
+      "cote_retenue": 1.81,
+      "cotes": {
+        "domicile": 1.28,
+        "nul": null,
+        "exterieur": 4.24
+      },
+      "pick_category": "ou",
+      "analyse": "Ce choc entre Cleveland et Toronto est actuellement en série playoff (ou fin de saison serrée), avec un H2H récent très équilibré : Toronto a remporté les deux derniers duels (93-89 et 126-104), tandis que Cleveland avait dominé les deux précédents (115-105 et 126-113). On observe une alternance nette entre matchs défensifs (93-89, total 182 points) et matchs très offensifs (126-104, total 230 points). En regardant l'ensemble des 4 confrontations directes récentes, les totaux sont : 182, 230, 220, 239, soit une moyenne de 217,75 points. Cleveland tourne autour de 117-130 points dans ses victoires hors série, tandis que Toronto a scoré 128 et 136 dans ses dernières sorties dominantes. Le total de 214.5 semble légèrement sous-évalué compte tenu de la tendance offensive de ces deux équipes sur les trois derniers matchs de la série, mais le match 93-89 récent rappelle que les rencontres fermées sont aussi possibles. Le total de 216.5 under à 1.81 représente une valeur intéressante en intégrant le risque d'un match plus contrôlé typique des fins de série serrée.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "125-120",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777222800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "93-89"
+          },
+          {
+            "timestamp": 1776988800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "126-104"
+          },
+          {
+            "timestamp": 1776726000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "115-105"
+          },
+          {
+            "timestamp": 1776531600,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "126-113"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Washington Wizards",
+            "score": "130-117"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Brooklyn Nets",
+            "score": "136-101"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Toronto Raptors",
+            "score": "112-95"
+          },
+          {
+            "timestamp": 1775862000,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "Cleveland Cavaliers",
+            "score": "124-102"
+          },
+          {
+            "timestamp": 1775775600,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Miami Heat",
+            "score": "128-114"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Atlanta Hawks",
+            "score": "122-116"
+          },
+          {
+            "timestamp": 1775604600,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Miami Heat",
+            "score": "121-95"
+          },
+          {
+            "timestamp": 1775520000,
+            "tournament": "NBA",
+            "home": "Memphis Grizzlies",
+            "away": "Cleveland Cavaliers",
+            "score": "126-142"
+          },
+          {
+            "timestamp": 1775426400,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Indiana Pacers",
+            "score": "117-108"
+          },
+          {
+            "timestamp": 1775417400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Toronto Raptors",
+            "score": "115-101"
+          },
+          {
+            "timestamp": 1775260800,
+            "tournament": "NBA",
+            "home": "Memphis Grizzlies",
+            "away": "Toronto Raptors",
+            "score": "96-128"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "214.5": {
+            "over": 1.78,
+            "under": 1.92
+          },
+          "215.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "216.5": {
+            "over": 1.92,
+            "under": 1.81
+          },
+          "212.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "217.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "218.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "219.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "220.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "8.5": {
+            "away": 1.9
+          },
+          "-8.5": {
+            "home": 1.9
+          },
+          "9.5": {
+            "away": 1.81
+          },
+          "-9.5": {
+            "home": 1.95
+          },
+          "10.5": {
+            "away": 1.62
+          },
+          "-10.5": {
+            "home": 2.2
+          },
+          "11.5": {
+            "away": 1.53
+          },
+          "-11.5": {
+            "home": 2.38
+          },
+          "12.5": {
+            "away": 1.5
+          },
+          "-12.5": {
+            "home": 2.5
+          },
+          "4.5": {
+            "away": 2.75
+          },
+          "-4.5": {
+            "home": 1.4
+          },
+          "5.5": {
+            "away": 2.5
+          },
+          "-5.5": {
+            "home": 1.5
+          },
+          "6.5": {
+            "away": 2.2
+          },
+          "-6.5": {
+            "home": 1.62
+          },
+          "7.5": {
+            "away": 2.05
+          },
+          "-7.5": {
+            "home": 1.7
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-30T07:53:07.621Z"
+    },
+    {
+      "event_id": "t4dHSMHt",
+      "flashscore_id": "t4dHSMHt",
+      "flashscore_sport_id": 3,
+      "home_team_id": "ngegZ8bg",
+      "away_team_id": "Sr9PQALP",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-04-30T02:00:00.000Z",
+      "time_display": "Jeu. 04h00",
+      "home": "Los Angeles Lakers",
+      "away": "Houston Rockets",
+      "match": "Los Angeles Lakers vs Houston Rockets",
+      "prono": "win-home",
+      "pari": "Moins de 207.5 points",
+      "cote_retenue": 1.87,
+      "cotes": {
+        "domicile": 1.62,
+        "nul": null,
+        "exterieur": 2.49
+      },
+      "pick_category": "ou",
+      "analyse": "Ce match est le 5e de la série playoff entre les Lakers et les Rockets, après une série très serrée : Houston mène 3-1 avec des victoires 115-96 (match 4), tandis que les Lakers avaient remporté les matchs 2 et 3 (112-108 et 101-94, 107-98). En analysant les scores de la série, on observe que trois des quatre matchs sont restés sous les 210 points combinés (211 lors du match 4, 220 lors du match 2, 195 lors du match 3, 205 lors du match 1). Houston joue un basket physique et organisé sous Ime Udoka, avec une défense étouffante illustrée par le match 3 (101-94) et le match 1 (115-96). Les Lakers, dos au mur, devraient intensifier leur défense pour survivre, ce qui tend à réduire le rythme offensif. Les trois derniers matchs de la série ont totalisé respectivement 205, 195, 211 points — deux des trois sous les 207. Compte tenu de l'intensité défensive attendue dans un match éliminatoire décisif et de la tendance générale de la série à rester basse, le total sous 207.5 points semble le choix le plus solide.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "93-99",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777253400,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Los Angeles Lakers",
+            "score": "115-96"
+          },
+          {
+            "timestamp": 1777075200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Los Angeles Lakers",
+            "score": "108-112"
+          },
+          {
+            "timestamp": 1776825000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "101-94"
+          },
+          {
+            "timestamp": 1776558600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "107-98"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Utah Jazz",
+            "score": "131-107"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Memphis Grizzlies",
+            "score": "132-101"
+          },
+          {
+            "timestamp": 1775874600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Phoenix Suns",
+            "score": "101-73"
+          },
+          {
+            "timestamp": 1775871000,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Minnesota Timberwolves",
+            "score": "132-136"
+          },
+          {
+            "timestamp": 1775786400,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Los Angeles Lakers",
+            "score": "103-119"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775617200,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Houston Rockets",
+            "score": "105-119"
+          },
+          {
+            "timestamp": 1775615400,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "87-123"
+          },
+          {
+            "timestamp": 1775440800,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Houston Rockets",
+            "score": "116-117"
+          },
+          {
+            "timestamp": 1775431800,
+            "tournament": "NBA",
+            "home": "Dallas Mavericks",
+            "away": "Los Angeles Lakers",
+            "score": "134-128"
+          },
+          {
+            "timestamp": 1775260800,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Utah Jazz",
+            "score": "140-106"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "206.5": {
+            "over": 1.78,
+            "under": 1.92
+          },
+          "207.5": {
+            "over": 1.81,
+            "under": 1.87
+          },
+          "208.5": {
+            "over": 1.95,
+            "under": 1.85
+          },
+          "204.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "205.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "209.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "210.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "211.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "212.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "2.5": {
+            "away": 1.98
+          },
+          "-2.5": {
+            "home": 1.75
+          },
+          "3.5": {
+            "away": 1.95
+          },
+          "-3.5": {
+            "home": 1.81
+          },
+          "4.5": {
+            "away": 1.9
+          },
+          "-4.5": {
+            "home": 1.9
+          },
+          "1.5": {
+            "away": 2.25
+          },
+          "-1.5": {
+            "home": 1.6
+          },
+          "5.5": {
+            "away": 1.7
+          },
+          "-5.5": {
+            "home": 2.05
+          },
+          "6.5": {
+            "away": 1.6
+          },
+          "-6.5": {
+            "home": 2.25
+          },
+          "7.5": {
+            "away": 1.5
+          },
+          "-7.5": {
+            "home": 2.5
+          },
+          "8.5": {
+            "away": 1.4
+          },
+          "-8.5": {
+            "home": 2.75
+          },
+          "9.5": {
+            "away": 1.4
+          },
+          "-9.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-04-30T07:53:07.621Z"
     }
   ],
   "combos": [
