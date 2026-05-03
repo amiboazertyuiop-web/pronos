@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-03T20:03:46.905Z",
+    "last_results_update": "2026-05-03T23:10:00.245Z",
     "analyses_written_at": "2026-05-03T09:54:34.731Z",
     "analyses_cost_usd": 0.0901,
-    "last_hourly_refresh": "2026-05-03T20:03:46.905Z"
+    "last_hourly_refresh": "2026-05-03T23:10:00.245Z"
   },
   "sports": {
     "foot": {
@@ -614,243 +614,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "h0FSCof3",
-              "flashscore_id": "h0FSCof3",
-              "flashscore_sport_id": 3,
-              "home_team_id": "UcjMRj6J",
-              "away_team_id": "QZMS36Dn",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-03T19:30:00.000Z",
-              "time_display": "Dim. 21h30",
-              "home": "Detroit Pistons",
-              "away": "Orlando Magic",
-              "match": "Detroit Pistons vs Orlando Magic",
-              "prono": "win-home",
-              "pari": "Moins de 202.5 points",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.33,
-                "nul": null,
-                "exterieur": 3.72
-              },
-              "pick_category": "ou",
-              "analyse": "Ce match est le Game 7 d'une série playoff extrêmement serrée entre Detroit et Orlando. Sur les 6 affrontements précédents, les scores montrent une tendance défensive marquée : 79-93, 116-109, 94-88, 113-105, 98-83, 101-112. Les totaux affichés sont : 172, 225, 182, 218, 181, 213 — soit une moyenne autour de 198 points. Quatre des six matchs de cette série sont passés sous la barre des 200 points, et notamment le dernier (Game 6 : 79+93=172), qui s'est révélé être une bataille défensive intense. Orlando joue un basket lent et structuré avec Paolo Banchero et Franz Wagner, tandis que Detroit s'appuie sur Cade Cunningham dans un système plus discipliné en playoffs. En Game 7, la tension et les enjeux favorisent historiquement les équipes défensives — les possessions se raréfient, le jeu se resserre, et les totaux chutent. La ligne à 198.5 semble la plus pertinente pour jouer le sous.",
-              "confiance": 4,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777676400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "79-93"
-                  },
-                  {
-                    "timestamp": 1777503600,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1777334400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "94-88"
-                  },
-                  {
-                    "timestamp": 1777136400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "113-105"
-                  },
-                  {
-                    "timestamp": 1776898800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "98-83"
-                  },
-                  {
-                    "timestamp": 1776637800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "101-112"
-                  },
-                  {
-                    "timestamp": 1776468600,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Charlotte Hornets",
-                    "score": "121-90"
-                  },
-                  {
-                    "timestamp": 1776295800,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Orlando Magic",
-                    "score": "109-97"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Detroit Pistons",
-                    "score": "121-133"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Orlando Magic",
-                    "score": "113-108"
-                  },
-                  {
-                    "timestamp": 1775865600,
-                    "tournament": "NBA",
-                    "home": "Chicago Bulls",
-                    "away": "Orlando Magic",
-                    "score": "103-127"
-                  },
-                  {
-                    "timestamp": 1775862000,
-                    "tournament": "NBA",
-                    "home": "Charlotte Hornets",
-                    "away": "Detroit Pistons",
-                    "score": "100-118"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Milwaukee Bucks",
-                    "score": "137-111"
-                  },
-                  {
-                    "timestamp": 1775689200,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Minnesota Timberwolves",
-                    "score": "132-120"
-                  },
-                  {
-                    "timestamp": 1775516400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "123-107"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "202.5": {
-                    "over": 1.96,
-                    "under": 1.85
-                  },
-                  "203.5": {
-                    "over": 1.96,
-                    "under": 1.77
-                  },
-                  "198.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "199.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "200.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "201.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "204.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "205.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "206.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "8.5": {
-                    "away": 1.91
-                  },
-                  "-8.5": {
-                    "home": 1.91
-                  },
-                  "10.5": {
-                    "away": 1.7
-                  },
-                  "-10.5": {
-                    "home": 2.05
-                  },
-                  "11.5": {
-                    "away": 1.6
-                  },
-                  "-11.5": {
-                    "home": 2.25
-                  },
-                  "12.5": {
-                    "away": 1.5
-                  },
-                  "-12.5": {
-                    "home": 2.5
-                  },
-                  "4.5": {
-                    "away": 2.75
-                  },
-                  "-4.5": {
-                    "home": 1.4
-                  },
-                  "5.5": {
-                    "away": 2.5
-                  },
-                  "-5.5": {
-                    "home": 1.5
-                  },
-                  "6.5": {
-                    "away": 2.2
-                  },
-                  "-6.5": {
-                    "home": 1.62
-                  },
-                  "7.5": {
-                    "away": 2.05
-                  },
-                  "-7.5": {
-                    "home": 1.7
-                  },
-                  "9.5": {
-                    "away": 1.73
-                  },
-                  "-9.5": {
-                    "home": 2
-                  }
-                }
-              }
-            },
-            {
               "event_id": "Aw1GN28L",
               "flashscore_id": "Aw1GN28L",
               "flashscore_sport_id": 3,
@@ -868,9 +631,9 @@
               "pari": "Plus de 212.5 points",
               "cote_retenue": 2,
               "cotes": {
-                "domicile": 1.34,
+                "domicile": 1.33,
                 "nul": null,
-                "exterieur": 3.64
+                "exterieur": 3.72
               },
               "pick_category": "ou",
               "analyse": "Ce duel Cleveland-Toronto s'inscrit dans une série playoff très serrée, avec 4 confrontations directes récentes qui le confirment : Toronto mène 3-2 après sa victoire 112-110 du 1er mai. Les 6 matchs H2H affichent des totaux de 222, 245, 182, 230, 220 et 239 points, soit une moyenne d'environ 223 points par rencontre — bien au-dessus des lignes proposées. Cleveland reste une équipe à haut rythme offensif : 130-117 contre Washington, 142 inscrits à Memphis, 122-116 contre Atlanta. Toronto n'est pas en reste avec 136-101 contre Brooklyn et 128-114 contre Miami. Seul le match du 26 avril (93-89, total 182) fait figure d'exception dans cette série, probablement un match très défensif sous pression. La tendance générale de la série penche clairement vers des totaux élevés, et jouer le 'Plus de 212.5 points' à 2.00 représente une valeur solide compte tenu des 5 matchs H2H sur 6 ayant dépassé ce seuil.",
@@ -1134,21 +897,6 @@
     "0zlEU12M"
   ],
   "history": [
-    {
-      "match": "Mainz vs Freiburg",
-      "pari": "Over 2.5 buts",
-      "home": "Mainz",
-      "away": "Freiburg",
-      "status": "lost",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "pick_category": "ou",
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "cote_retenue": 1.8,
-      "confiance": 3,
-      "archived_at": "2026-04-12T19:34:06.323Z"
-    },
     {
       "match": "Como vs Inter",
       "pari": "Over 2.5 buts",
@@ -129499,6 +129247,246 @@
       "sport_label": "⚽ Football",
       "league_label": "Bundesliga",
       "archived_at": "2026-05-03T20:03:46.905Z"
+    },
+    {
+      "event_id": "h0FSCof3",
+      "flashscore_id": "h0FSCof3",
+      "flashscore_sport_id": 3,
+      "home_team_id": "UcjMRj6J",
+      "away_team_id": "QZMS36Dn",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-03T19:30:00.000Z",
+      "time_display": "Dim. 21h30",
+      "home": "Detroit Pistons",
+      "away": "Orlando Magic",
+      "match": "Detroit Pistons vs Orlando Magic",
+      "prono": "win-home",
+      "pari": "Moins de 202.5 points",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.33,
+        "nul": null,
+        "exterieur": 3.72
+      },
+      "pick_category": "ou",
+      "analyse": "Ce match est le Game 7 d'une série playoff extrêmement serrée entre Detroit et Orlando. Sur les 6 affrontements précédents, les scores montrent une tendance défensive marquée : 79-93, 116-109, 94-88, 113-105, 98-83, 101-112. Les totaux affichés sont : 172, 225, 182, 218, 181, 213 — soit une moyenne autour de 198 points. Quatre des six matchs de cette série sont passés sous la barre des 200 points, et notamment le dernier (Game 6 : 79+93=172), qui s'est révélé être une bataille défensive intense. Orlando joue un basket lent et structuré avec Paolo Banchero et Franz Wagner, tandis que Detroit s'appuie sur Cade Cunningham dans un système plus discipliné en playoffs. En Game 7, la tension et les enjeux favorisent historiquement les équipes défensives — les possessions se raréfient, le jeu se resserre, et les totaux chutent. La ligne à 198.5 semble la plus pertinente pour jouer le sous.",
+      "confiance": 4,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "116-94",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777676400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "79-93"
+          },
+          {
+            "timestamp": 1777503600,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1777334400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "94-88"
+          },
+          {
+            "timestamp": 1777136400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "113-105"
+          },
+          {
+            "timestamp": 1776898800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "98-83"
+          },
+          {
+            "timestamp": 1776637800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "101-112"
+          },
+          {
+            "timestamp": 1776468600,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Charlotte Hornets",
+            "score": "121-90"
+          },
+          {
+            "timestamp": 1776295800,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Orlando Magic",
+            "score": "109-97"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Detroit Pistons",
+            "score": "121-133"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Orlando Magic",
+            "score": "113-108"
+          },
+          {
+            "timestamp": 1775865600,
+            "tournament": "NBA",
+            "home": "Chicago Bulls",
+            "away": "Orlando Magic",
+            "score": "103-127"
+          },
+          {
+            "timestamp": 1775862000,
+            "tournament": "NBA",
+            "home": "Charlotte Hornets",
+            "away": "Detroit Pistons",
+            "score": "100-118"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Milwaukee Bucks",
+            "score": "137-111"
+          },
+          {
+            "timestamp": 1775689200,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Minnesota Timberwolves",
+            "score": "132-120"
+          },
+          {
+            "timestamp": 1775516400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "123-107"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "202.5": {
+            "over": 1.96,
+            "under": 1.85
+          },
+          "203.5": {
+            "over": 1.96,
+            "under": 1.77
+          },
+          "198.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "199.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "200.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "201.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "204.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "205.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "206.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "8.5": {
+            "away": 1.91
+          },
+          "-8.5": {
+            "home": 1.91
+          },
+          "10.5": {
+            "away": 1.7
+          },
+          "-10.5": {
+            "home": 2.05
+          },
+          "11.5": {
+            "away": 1.6
+          },
+          "-11.5": {
+            "home": 2.25
+          },
+          "12.5": {
+            "away": 1.5
+          },
+          "-12.5": {
+            "home": 2.5
+          },
+          "4.5": {
+            "away": 2.75
+          },
+          "-4.5": {
+            "home": 1.4
+          },
+          "5.5": {
+            "away": 2.5
+          },
+          "-5.5": {
+            "home": 1.5
+          },
+          "6.5": {
+            "away": 2.2
+          },
+          "-6.5": {
+            "home": 1.62
+          },
+          "7.5": {
+            "away": 2.05
+          },
+          "-7.5": {
+            "home": 1.7
+          },
+          "9.5": {
+            "away": 1.73
+          },
+          "-9.5": {
+            "home": 2
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-03T23:10:00.245Z"
     }
   ],
   "combos": [
