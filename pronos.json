@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-02T21:03:50.050Z",
+    "last_results_update": "2026-05-03T07:32:59.049Z",
     "analyses_written_at": "2026-05-02T09:04:05.363Z",
     "analyses_cost_usd": 0.1819,
-    "last_hourly_refresh": "2026-05-03T00:03:41.694Z"
+    "last_hourly_refresh": "2026-05-03T07:32:59.049Z"
   },
   "sports": {
     "foot": {
@@ -270,249 +270,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "dEFUt8Jk",
-              "flashscore_id": "dEFUt8Jk",
-              "flashscore_sport_id": 3,
-              "home_team_id": "KYD9hVEm",
-              "away_team_id": "vwRW2QSh",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-02T23:30:00.000Z",
-              "time_display": "Dim. 01h30",
-              "home": "Boston Celtics",
-              "away": "Philadelphia 76ers",
-              "match": "Boston Celtics vs Philadelphia 76ers",
-              "prono": "win-home",
-              "pari": "Plus de 205.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.59,
-                "nul": null,
-                "exterieur": 2.57
-              },
-              "pick_category": "ou",
-              "analyse": "Cette série de playoffs entre les Celtics et les 76ers est extrêmement serrée et indécise : chaque équipe a remporté 3 matchs sur 6 joués, avec une alternance quasi parfaite des victoires. Les scores des affrontements directs révèlent une grande variabilité : Boston a écrasé Philly 128-96 et 123-91, mais a aussi perdu 93-106 et 97-113. Cette volatilité traduit des matchs tantôt à sens unique, tantôt disputés, rendant le handicap risqué. En analysant les totaux H2H : 199 pts, 210 pts, 224 pts, 208 pts, 208 pts, 214 pts — la moyenne est autour de 210 points avec une tendance marquée au-dessus de 205. Les Celtics sont capables de produire des attaques à plus de 120 points (144-118 vs Pelicans, 128-96 vs Philly), tandis que Philly a montré sa capacité offensive (126-106 vs Milwaukee). Avec une dynamique offensive forte des deux côtés et 5 des 6 derniers H2H au-dessus de 205.5 points, le pari sur le total au-dessus de 205.5 à cote équilibrée semble le choix le plus solide pour ce match 7.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777593600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "106-93"
-                  },
-                  {
-                    "timestamp": 1777417200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "97-113"
-                  },
-                  {
-                    "timestamp": 1777244400,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "96-128"
-                  },
-                  {
-                    "timestamp": 1777071600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "100-108"
-                  },
-                  {
-                    "timestamp": 1776812400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "97-111"
-                  },
-                  {
-                    "timestamp": 1776618000,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "123-91"
-                  },
-                  {
-                    "timestamp": 1776295800,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Orlando Magic",
-                    "score": "109-97"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Orlando Magic",
-                    "score": "113-108"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Milwaukee Bucks",
-                    "score": "126-106"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "New Orleans Pelicans",
-                    "score": "144-118"
-                  },
-                  {
-                    "timestamp": 1775863800,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Philadelphia 76ers",
-                    "score": "94-105"
-                  },
-                  {
-                    "timestamp": 1775779200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Philadelphia 76ers",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775777400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Boston Celtics",
-                    "score": "112-106"
-                  },
-                  {
-                    "timestamp": 1775606400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Charlotte Hornets",
-                    "score": "113-102"
-                  },
-                  {
-                    "timestamp": 1775520000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Philadelphia 76ers",
-                    "score": "115-102"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "205.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "206.5": {
-                    "over": 1.9,
-                    "under": 1.85
-                  },
-                  "201.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "202.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "203.5": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "204.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "207.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "208.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "209.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "210.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "7.5": {
-                    "away": 1.9
-                  },
-                  "-7.5": {
-                    "home": 1.9
-                  },
-                  "8.5": {
-                    "away": 1.81
-                  },
-                  "-8.5": {
-                    "home": 1.95
-                  },
-                  "10.5": {
-                    "away": 1.53
-                  },
-                  "-10.5": {
-                    "home": 2.38
-                  },
-                  "11.5": {
-                    "away": 1.5
-                  },
-                  "-11.5": {
-                    "home": 2.5
-                  },
-                  "3.5": {
-                    "away": 2.75
-                  },
-                  "-3.5": {
-                    "home": 1.4
-                  },
-                  "4.5": {
-                    "away": 2.5
-                  },
-                  "-4.5": {
-                    "home": 1.5
-                  },
-                  "5.5": {
-                    "away": 2.25
-                  },
-                  "-5.5": {
-                    "home": 1.6
-                  },
-                  "6.5": {
-                    "away": 2.05
-                  },
-                  "-6.5": {
-                    "home": 1.7
-                  },
-                  "9.5": {
-                    "away": 1.62
-                  },
-                  "-9.5": {
-                    "home": 2.2
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -2441,9 +2199,9 @@
               "pari": "Plus de 1.5 rounds",
               "cote_retenue": 1.3,
               "cotes": {
-                "domicile": 1.23,
+                "domicile": 1.22,
                 "nul": null,
-                "exterieur": 3.81
+                "exterieur": 3.91
               },
               "pick_category": "ou",
               "analyse": "Stefanie de Sousa et Chelsea Bowers s'affrontent dans ce combat féminin UFC. Les données récentes de de Sousa sont limitées, avec deux combats sous bannière PFL en 2025 dont les résultats exacts ne sont pas disponibles, ce qui complique l'évaluation de sa forme précise. Chelsea Bowers est une combattante connue pour son cardio solide et sa capacité à emmener les combats en profondeur. En MMA féminin à ce niveau, les combats tendent souvent à durer plus d'un round et demi, surtout quand les deux athlètes présentent un profil technique plutôt qu'un punch de KO express. Avec une cote de 3.14 sur le 'Moins de 1.5 rounds', le marché suggère que la finition rapide est peu probable, et les éléments disponibles confirment cette tendance à des combats qui s'étirent. Le 'Plus de 1.5 rounds' à 1.30 reste en dessous du seuil de 1.25, mais il constitue le seul pari logique compte tenu du profil des deux combattantes et du faible KO power affiché dans leurs récents combats.",
@@ -2499,9 +2257,9 @@
               "pari": "Plus de 1.5 rounds",
               "cote_retenue": 1.97,
               "cotes": {
-                "domicile": 1.11,
+                "domicile": 1.09,
                 "nul": null,
-                "exterieur": 5.5
+                "exterieur": 6.05
               },
               "pick_category": "ou",
               "analyse": "Magomedov R. vient d'un combat au PFL en août 2025, ce qui indique une activité récente. Xavier R. a lui aussi combattu en juin 2025 sous la bannière PFL contre Albrektsson, avant des passages sur des promotions européennes (Bellator, Oktagon). Les données de score étant nulles dans les résultats fournis, il est impossible de déterminer précisément les modes de victoire récents des deux combattants. Cependant, les combats impliquant Xavier R. sur le circuit européen (Oktagon) tendent à être compétitifs et étalés sur la durée, suggérant un profil de lutteur ou technicien plutôt qu'un finisseur explosif. Avec deux combattants issus du circuit PFL qui valorise souvent le format points et la régularité, un combat allant au-delà du premier round est une hypothèse raisonnable. Le marché over/under 1.5 rounds à 1.97 pour le over offre une valeur intéressante dans ce contexte.",
@@ -2622,7 +2380,7 @@
               "cotes": {
                 "domicile": 1.13,
                 "nul": null,
-                "exterieur": 5.1
+                "exterieur": 5.05
               },
               "pick_category": "ou",
               "analyse": "Magomed Magomedov est un lutteur gréco-romain d'élite, ancien champion Bellator au poids coq, reconnu pour son jeu au sol dévastateur et sa capacité à dominer les rounds via le contrôle. Leandro Higo est un spécialiste de la soumission au jiu-jitsu (ceinture noire), capable de terminer les combats tôt s'il trouve le dos ou un étranglement. Ces deux profils de grappling suggèrent que le combat pourrait se terminer rapidement si l'un des deux trouve l'angle décisif — Magomedov a notamment signé plusieurs victoires par TKO ou soumission dans ses carrières Bellator et PFL. Les données disponibles ne permettent pas de lire les scores exacts, mais les deux combattants ont accumulé de l'expérience à haut niveau (Bellator, PFL, BTC) avec des adversaires comme Sabatello, Mix ou Caldwell. Le style grappling vs grappling peut générer une finition rapide au round 1 ou s'étirer si les deux défenses au sol sont solides. Compte tenu du profil finisseur de Magomedov et de la dangerosité de Higo en soumission, un combat se terminant avant ou au round 1 est plausible, mais la qualité défensive des deux rend également crédible un dépassement des 1.5 rounds. Le marché 'over 1.5 rounds' à 1.43 reflète la compétitivité attendue, mais la cote minimum requise est 1.25 — nous jouons le 'under' à 2.58 qui offre de la valeur si un finisseur prend le dessus rapidement.",
@@ -2918,9 +2676,9 @@
               "pari": "Plus de 1.5 rounds",
               "cote_retenue": 3.56,
               "cotes": {
-                "domicile": 1.19,
+                "domicile": 1.18,
                 "nul": null,
-                "exterieur": 4.28
+                "exterieur": 4.43
               },
               "pick_category": "ou",
               "analyse": "Powell S. est un combattant actif ayant disputé des bouts en PFL et Bellator récemment, avec des combats en 2025 contre Carlos Junior et Albrektsson, ce qui indique une bonne activité compétitive. Sordi E., en revanche, n'apparaît dans les données récentes que pour des combats datant de 2022 et avant, suggérant une longue inactivité ou un niveau de compétition moindre. En MMA, les combattants inactifs ou de retour ont souvent des difficultés à maintenir le rythme sur plusieurs rounds, ce qui favorise une fin précoce. Powell, étant plus actif et habitué aux organisations de niveau PFL, dispose d'un avantage en termes de condition physique et d'expérience récente. Le style de combattants peu documentés comme Sordi, avec des combats souvent termins tôt (Bellator Europe, matchs anciens), laisse penser que ce combat ne ira probablement pas loin. La cote sur l'under 1.5 rounds n'est pas retenue car elle est en dessous du seuil minimum de 1.25, mais l'over 1.5 rounds à 3.56 présente une vraie valeur si l'on considère que Powell, plus technique et cardio solide, pourrait gérer le combat sur la durée.",
@@ -3053,9 +2811,9 @@
               "pari": "Plus de 1.5 rounds",
               "cote_retenue": 1.6,
               "cotes": {
-                "domicile": 1.09,
+                "domicile": 1.07,
                 "nul": null,
-                "exterieur": 6.05
+                "exterieur": 6.95
               },
               "pick_category": "ou",
               "analyse": "Rabadanov et Chizov sont deux combattants évoluant principalement en PFL, avec des styles qui favorisent généralement les finishes précoces dans cette organisation. Rabadanov a accumulé une activité soutenue ces deux dernières années (matchs contre Davis, Lee, Diakiese, Primus, Dufort, Espinoza, Renfro), ce qui témoigne d'une expérience solide mais aussi d'une certaine usure potentielle. Chizov, de son côté, a affronté des profils variés dont Hughes et Pacella récemment en PFL. Les données de scores étant absentes, on s'appuie sur les tendances générales de la PFL légèreté/lightweight où les KO et soumissions dans les premiers rounds sont fréquents, les deux combattants ayant des antécédents de finishes rapides dans leurs organisations respectives. Avec une cote à 1.60 sur le 'Plus de 1.5 rounds', le 'Moins de 1.5 rounds' offre une valeur intéressante à 2.16 pour un duel entre deux finishers susceptibles de se terminer au round 1. Cependant, le marché le plus accessible ici reste le 'Plus de 1.5 rounds' à 1.60, reflétant qu'une majorité de combats en PFL dépasse le premier round. En l'absence de données de scores fiables, la prudence s'impose et on privilégie le over 1.5 rounds comme pari le plus sécurisé.",
@@ -3202,9 +2960,9 @@
               "pari": "Plus de 1.5 rounds",
               "cote_retenue": 1.3,
               "cotes": {
-                "domicile": 1.35,
+                "domicile": 1.34,
                 "nul": null,
-                "exterieur": 2.99
+                "exterieur": 3.04
               },
               "pick_category": "ou",
               "analyse": "Lance Storley est un lutteur d'élite issu de l'université du Minnesota, reconnu pour sa domination au sol et sa capacité à contrôler ses adversaires pendant de longues périodes. Ses combats en Bellator et PFL (notamment contre Amosov, Page, Grant) ont quasi systématiquement été des affrontements longs et tactiques, rarement terminés tôt. Fabian Zendeli est un combattant technique qui a également tendance à aller en décision, comme en témoignent ses récents matchs en PFL contre El Dafrawy, Miceli et Grant. Le style grappling-centrique de Storley combiné au profil défensif et technique de Zendeli suggère fortement que ce combat ira au-delà du premier round. Aucun des deux n'est connu pour ses finitions rapides, et leurs historiques respectifs montrent une nette propension aux combats complets. Le marché 'Plus de 1.5 rounds' à 1.30 reflète cette réalité sportive et représente le pari le plus cohérent avec les profils des deux combattants.",
@@ -3375,17 +3133,6 @@
     "O8j1bUt9"
   ],
   "history": [
-    {
-      "match": "Combiné Coach : Nice + Celta Vigo + Lyon",
-      "pari": "Triple sûr du jour (3 legs)",
-      "status": "lost",
-      "is_combo": true,
-      "cote_retenue": 3,
-      "confiance": 3,
-      "sport_label": "🎯 Combiné",
-      "league_label": "Combiné",
-      "archived_at": "2026-04-12T16:45:35.477Z"
-    },
     {
       "match": "Combiné Coach : Parma + Sunderland",
       "pari": "Combo value du jour (2 legs)",
@@ -129365,6 +129112,250 @@
       "sport_label": "⚽ Football",
       "league_label": "Conference League",
       "archived_at": "2026-05-02T21:03:50.050Z"
+    },
+    {
+      "event_id": "dEFUt8Jk",
+      "flashscore_id": "dEFUt8Jk",
+      "flashscore_sport_id": 3,
+      "home_team_id": "KYD9hVEm",
+      "away_team_id": "vwRW2QSh",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-02T23:30:00.000Z",
+      "time_display": "Dim. 01h30",
+      "home": "Boston Celtics",
+      "away": "Philadelphia 76ers",
+      "match": "Boston Celtics vs Philadelphia 76ers",
+      "prono": "win-home",
+      "pari": "Plus de 205.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.59,
+        "nul": null,
+        "exterieur": 2.57
+      },
+      "pick_category": "ou",
+      "analyse": "Cette série de playoffs entre les Celtics et les 76ers est extrêmement serrée et indécise : chaque équipe a remporté 3 matchs sur 6 joués, avec une alternance quasi parfaite des victoires. Les scores des affrontements directs révèlent une grande variabilité : Boston a écrasé Philly 128-96 et 123-91, mais a aussi perdu 93-106 et 97-113. Cette volatilité traduit des matchs tantôt à sens unique, tantôt disputés, rendant le handicap risqué. En analysant les totaux H2H : 199 pts, 210 pts, 224 pts, 208 pts, 208 pts, 214 pts — la moyenne est autour de 210 points avec une tendance marquée au-dessus de 205. Les Celtics sont capables de produire des attaques à plus de 120 points (144-118 vs Pelicans, 128-96 vs Philly), tandis que Philly a montré sa capacité offensive (126-106 vs Milwaukee). Avec une dynamique offensive forte des deux côtés et 5 des 6 derniers H2H au-dessus de 205.5 points, le pari sur le total au-dessus de 205.5 à cote équilibrée semble le choix le plus solide pour ce match 7.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "100-109",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777593600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "106-93"
+          },
+          {
+            "timestamp": 1777417200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "97-113"
+          },
+          {
+            "timestamp": 1777244400,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "96-128"
+          },
+          {
+            "timestamp": 1777071600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "100-108"
+          },
+          {
+            "timestamp": 1776812400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "97-111"
+          },
+          {
+            "timestamp": 1776618000,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "123-91"
+          },
+          {
+            "timestamp": 1776295800,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Orlando Magic",
+            "score": "109-97"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Orlando Magic",
+            "score": "113-108"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Milwaukee Bucks",
+            "score": "126-106"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "New Orleans Pelicans",
+            "score": "144-118"
+          },
+          {
+            "timestamp": 1775863800,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Philadelphia 76ers",
+            "score": "94-105"
+          },
+          {
+            "timestamp": 1775779200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Philadelphia 76ers",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775777400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Boston Celtics",
+            "score": "112-106"
+          },
+          {
+            "timestamp": 1775606400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Charlotte Hornets",
+            "score": "113-102"
+          },
+          {
+            "timestamp": 1775520000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Philadelphia 76ers",
+            "score": "115-102"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "205.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "206.5": {
+            "over": 1.9,
+            "under": 1.85
+          },
+          "201.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "202.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "203.5": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "204.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "207.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "208.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "209.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "210.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "7.5": {
+            "away": 1.9
+          },
+          "-7.5": {
+            "home": 1.9
+          },
+          "8.5": {
+            "away": 1.81
+          },
+          "-8.5": {
+            "home": 1.95
+          },
+          "10.5": {
+            "away": 1.53
+          },
+          "-10.5": {
+            "home": 2.38
+          },
+          "11.5": {
+            "away": 1.5
+          },
+          "-11.5": {
+            "home": 2.5
+          },
+          "3.5": {
+            "away": 2.75
+          },
+          "-3.5": {
+            "home": 1.4
+          },
+          "4.5": {
+            "away": 2.5
+          },
+          "-4.5": {
+            "home": 1.5
+          },
+          "5.5": {
+            "away": 2.25
+          },
+          "-5.5": {
+            "home": 1.6
+          },
+          "6.5": {
+            "away": 2.05
+          },
+          "-6.5": {
+            "home": 1.7
+          },
+          "9.5": {
+            "away": 1.62
+          },
+          "-9.5": {
+            "home": 2.2
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-03T07:32:59.049Z"
     }
   ],
   "combos": [
