@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-05T21:15:57.947Z",
+    "last_results_update": "2026-05-06T09:37:14.668Z",
     "analyses_written_at": "2026-05-05T11:09:18.206Z",
     "analyses_cost_usd": 0.2732,
-    "last_hourly_refresh": "2026-05-06T00:12:30.560Z"
+    "last_hourly_refresh": "2026-05-06T09:37:14.668Z"
   },
   "sports": {
     "foot": {
@@ -44,478 +44,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "CWMFS9CF",
-              "flashscore_id": "CWMFS9CF",
-              "flashscore_sport_id": 3,
-              "home_team_id": "UcjMRj6J",
-              "away_team_id": "xGk13Tb6",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-05T23:00:00.000Z",
-              "time_display": "Mer. 01h00",
-              "home": "Detroit Pistons",
-              "away": "Cleveland Cavaliers",
-              "match": "Detroit Pistons vs Cleveland Cavaliers",
-              "prono": "win-home",
-              "pari": "Moins de 215.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.65,
-                "nul": null,
-                "exterieur": 2.42
-              },
-              "pick_category": "ou",
-              "analyse": "Les deux équipes sont engagées dans des séries de playoffs très disputées. Detroit sort d'une victoire nette 116-94 face à Orlando le 3 mai, après avoir alterné victoires et défaites contre ce même adversaire (3-2 sur les 5 derniers affrontements). Cleveland, de son côté, vient de battre Toronto 114-102 le 3 mai, malgré une défaite 112-110 lors du match précédent le 1er mai. Les Cavaliers affichent globalement des scores plus élevés : 125-120, 126-104, 126-113 contre Toronto, signalant une attaque prolifique. Detroit joue plus défensif et contrôlé, avec des scores souvent sous les 110 points lors des matchs serrés (98-83, 94-88). Ce choc de styles — l'attaque productive de Cleveland contre la défense solide mais parfois vulnérable des Pistons — pointe vers un total modéré. Les deux équipes arrivent en forme mais avec un niveau de fatigue accumulé, et Detroit à domicile a tendance à ralentir le tempo. Un total autour de 215.5 points semble raisonnable, avec une légère préférence pour le under compte tenu du contexte défensif attendu.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777851000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "114-102"
-                  },
-                  {
-                    "timestamp": 1777836600,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "116-94"
-                  },
-                  {
-                    "timestamp": 1777678200,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "112-110"
-                  },
-                  {
-                    "timestamp": 1777676400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "79-93"
-                  },
-                  {
-                    "timestamp": 1777505400,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "125-120"
-                  },
-                  {
-                    "timestamp": 1777503600,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1777334400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "94-88"
-                  },
-                  {
-                    "timestamp": 1777222800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "93-89"
-                  },
-                  {
-                    "timestamp": 1777136400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "113-105"
-                  },
-                  {
-                    "timestamp": 1776988800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "126-104"
-                  },
-                  {
-                    "timestamp": 1776898800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "98-83"
-                  },
-                  {
-                    "timestamp": 1776726000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "115-105"
-                  },
-                  {
-                    "timestamp": 1776637800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "101-112"
-                  },
-                  {
-                    "timestamp": 1776531600,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "126-113"
-                  },
-                  {
-                    "timestamp": 1776031200,
-                    "tournament": "NBA",
-                    "home": "Indiana Pacers",
-                    "away": "Detroit Pistons",
-                    "score": "121-133"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "213.5": {
-                    "over": 1.8,
-                    "under": 1.97
-                  },
-                  "214.5": {
-                    "over": 1.81,
-                    "under": 1.95
-                  },
-                  "215.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "211.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "212.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "216.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "217.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "218.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "219.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  }
-                },
-                "handicap": {
-                  "3.5": {
-                    "away": 1.81
-                  },
-                  "-3.5": {
-                    "home": 1.95
-                  },
-                  "1.5": {
-                    "home": 1.6,
-                    "away": 2.05
-                  },
-                  "-1.5": {
-                    "home": 1.7,
-                    "away": 2.25
-                  },
-                  "2.5": {
-                    "home": 1.5,
-                    "away": 1.91
-                  },
-                  "-2.5": {
-                    "home": 1.91,
-                    "away": 2.5
-                  },
-                  "4.5": {
-                    "away": 1.7
-                  },
-                  "-4.5": {
-                    "home": 2.05
-                  },
-                  "5.5": {
-                    "away": 1.6
-                  },
-                  "-5.5": {
-                    "home": 2.25
-                  },
-                  "6.5": {
-                    "away": 1.5
-                  },
-                  "-6.5": {
-                    "home": 2.5
-                  },
-                  "7.5": {
-                    "away": 1.4
-                  },
-                  "-7.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "nungPz1N",
-              "flashscore_id": "nungPz1N",
-              "flashscore_sport_id": 3,
-              "home_team_id": "0fHFHEWD",
-              "away_team_id": "ngegZ8bg",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-06T00:30:00.000Z",
-              "time_display": "Mer. 02h30",
-              "home": "Oklahoma City Thunder",
-              "away": "Los Angeles Lakers",
-              "match": "Oklahoma City Thunder vs Los Angeles Lakers",
-              "prono": "win-home",
-              "pari": "Moins de 213.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.11,
-                "nul": null,
-                "exterieur": 8.2
-              },
-              "pick_category": "ou",
-              "analyse": "Oklahoma City Thunder est la meilleure équipe de la conférence Ouest cette saison et affiche une forme redoutable : victoires dominantes contre Phoenix 120-107, 121-109, 131-122 et 119-84, avec une seule défaite concédée face aux Nuggets (107-127) et aux Suns (103-135) lors d'un match sans enjeu. Les Lakers, eux, sortent d'une série compliquée contre Houston : éliminés après avoir perdu trois matchs sur quatre (93-99, 96-115), avec une moyenne offensive en baisse nette (93, 96, 101 points marqués). OKC présente un écart de niveau considérable : leur défense étouffante (84 pts concédés à Phoenix lors du Game 4) et leur profondeur de banc laissent peu de chances aux Lakers. Le handicap -11.5 pour OKC à 1.50 est trop bas, mais la ligne -15.5 à 1.90 reflète bien la domination attendue sur cette série. Côté total, les scores récents des deux équipes en playoffs suggèrent des matchs fermés : OKC concède peu (84, 107, 107 pts) et les Lakers peinent à scorer (93, 96, 101 pts face à Houston), ce qui oriente vers un total bas. Un match à moins de 213.5 points est tout à fait envisageable au vu des dynamiques défensives des deux franchises.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1777685400,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Los Angeles Lakers",
-                    "score": "78-98"
-                  },
-                  {
-                    "timestamp": 1777514400,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "93-99"
-                  },
-                  {
-                    "timestamp": 1777339800,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Oklahoma City Thunder",
-                    "score": "122-131"
-                  },
-                  {
-                    "timestamp": 1777253400,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Los Angeles Lakers",
-                    "score": "115-96"
-                  },
-                  {
-                    "timestamp": 1777145400,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Oklahoma City Thunder",
-                    "score": "109-121"
-                  },
-                  {
-                    "timestamp": 1777075200,
-                    "tournament": "NBA",
-                    "home": "Houston Rockets",
-                    "away": "Los Angeles Lakers",
-                    "score": "108-112"
-                  },
-                  {
-                    "timestamp": 1776907800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Phoenix Suns",
-                    "score": "120-107"
-                  },
-                  {
-                    "timestamp": 1776825000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "101-94"
-                  },
-                  {
-                    "timestamp": 1776627000,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Phoenix Suns",
-                    "score": "119-84"
-                  },
-                  {
-                    "timestamp": 1776558600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Houston Rockets",
-                    "score": "107-98"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Phoenix Suns",
-                    "score": "103-135"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Utah Jazz",
-                    "score": "131-107"
-                  },
-                  {
-                    "timestamp": 1775874600,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Phoenix Suns",
-                    "score": "101-73"
-                  },
-                  {
-                    "timestamp": 1775869200,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Oklahoma City Thunder",
-                    "score": "127-107"
-                  },
-                  {
-                    "timestamp": 1775786400,
-                    "tournament": "NBA",
-                    "home": "Golden State Warriors",
-                    "away": "Los Angeles Lakers",
-                    "score": "103-119"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "213.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "209.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "210.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "211.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "212.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "214.5": {
-                    "over": 2,
-                    "under": 1.8
-                  },
-                  "215.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "216.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "217.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "218.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "14.5": {
-                    "away": 1.92
-                  },
-                  "-14.5": {
-                    "home": 1.78
-                  },
-                  "15.5": {
-                    "away": 1.9
-                  },
-                  "-15.5": {
-                    "home": 1.9
-                  },
-                  "11.5": {
-                    "away": 2.5
-                  },
-                  "-11.5": {
-                    "home": 1.5
-                  },
-                  "12.5": {
-                    "away": 2.25
-                  },
-                  "-12.5": {
-                    "home": 1.6
-                  },
-                  "13.5": {
-                    "away": 2.05
-                  },
-                  "-13.5": {
-                    "home": 1.7
-                  },
-                  "16.5": {
-                    "away": 1.73
-                  },
-                  "-16.5": {
-                    "home": 2
-                  },
-                  "17.5": {
-                    "away": 1.7
-                  },
-                  "-17.5": {
-                    "home": 2.05
-                  },
-                  "18.5": {
-                    "away": 1.62
-                  },
-                  "-18.5": {
-                    "home": 2.2
-                  },
-                  "19.5": {
-                    "away": 1.53
-                  },
-                  "-19.5": {
-                    "home": 2.38
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -561,11 +90,11 @@
               "match": "Arnaldi M. vs Munar J.",
               "prono": "win-home",
               "pari": "Victoire Arnaldi",
-              "cote_retenue": 1.6,
+              "cote_retenue": 1.65,
               "cotes": {
-                "domicile": 1.6,
+                "domicile": 1.65,
                 "nul": null,
-                "exterieur": 2.35
+                "exterieur": 2.25
               },
               "pick_category": "1x2",
               "analyse": "Arnaldi arrive à Rome dans une forme exceptionnelle : il vient de remporter le titre à Cagliari en battant successivement Arnaboldi, Cerundolo, Borges, Cadenasso et Hurkacz (tête de série), soit 5 victoires consécutives sur terre battue italienne. Cette dynamique de confiance sur sa surface préférée est un atout majeur à domicile à Rome. Munar, lui, présente un bilan plus fragile : battu 0-2 par Ruud à Madrid et éliminé 0-2 par Jodar à Barcelone, il ne montre pas une forme rassurante sur la terre battue de ce printemps. Le seul H2H récent disponible indique une victoire de Arnaldi sur Munar (MAD, 2-0). Arnaldi, porté par l'élan de son titre et le soutien du public italien, s'impose comme favori logique et solide pour ce premier tour. Le handicap sets à -1.5 en faveur d'Arnaldi à 1.88 reflète bien l'écart de niveau actuel entre les deux joueurs sur cette surface.",
@@ -1416,16 +945,16 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 3.59,
+                "domicile": 4.01,
                 "nul": null,
-                "exterieur": 1.3
+                "exterieur": 1.26
               },
               "pick_category": "ou",
               "analyse": "Baez est le favori logique sur terre battue à Rome, surface où l'Argentin est naturellement à l'aise, mais sa forme récente est alarmante : il a perdu 5 de ses 7 derniers matchs, tombant notamment face à Gaubas (joueur modeste), Droguet, Walton et Alcaraz. Brooksby n'est pas non plus en grande forme, battu récemment par Nava, McDonald, Bergs et Tiafoe, mais il a au moins signé une victoire contre Popyrin lors de son dernier succès. Les deux joueurs sont clairement en difficulté en ce moment, ce qui laisse présager un match disputé, avec des breaks fréquents et des jeux serrés typiques de la terre battue. La surface romaine favorise les longs échanges, les points âpres depuis le fond du court, et rallonge naturellement les matchs — une dynamique qui joue en faveur d'un nombre élevé de jeux. Compte tenu du niveau actuel des deux joueurs et du contexte terre battue, un total élevé de jeux semble bien plus probable qu'une expédition rapide, le seuil de 21.5 jeux offrant une cote intéressante à 1.92.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -2010,9 +1539,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 3.61,
+                "domicile": 3.7,
                 "nul": null,
-                "exterieur": 1.29
+                "exterieur": 1.28
               },
               "pick_category": "ou",
               "analyse": "Alexander Blockx traverse une période de forme exceptionnelle sur terre battue : il a remporté 5 matchs consécutifs à Madrid (Dzumhur, Shapovalov, Cobolli, Nakashima, Garin, Auger-Aliassime, Cerundolo F.) avant de s'incliner face à Zverev en demi-finale, et a également enchaîné des victoires à Monte-Carlo. Sa progression sur ocre est remarquable et il domine clairement son adversaire en termes de niveau actuel. Cina F., de son côté, montre une forme décevante : défaite 0-2 face à Rodionov en avril, 0-2 contre Moller fin avril, et une élimination 1-2 contre Cerundolo J.M. à Cagliari le 29 avril. Sur la terre battue romaine, Blockx arrive en pleine confiance avec un jeu construit et régulier, tandis que Cina accumule les revers face à des adversaires de niveau comparable ou inférieur. L'écart de forme est flagrant : Blockx a battu des joueurs du Top 20-30 mondial ces dernières semaines, Cina n'a pas enchaîné une seule victoire significative. Le handicap -4.5 jeux en faveur de Blockx à 1.83 représente une valeur intéressante, mais la ligne la plus cohérente reste un total de jeux relativement bas, Blockx ayant l'habitude de conclure ses matchs en deux sets secs contre des adversaires de ce calibre.",
@@ -2301,16 +1830,16 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.97,
               "cotes": {
-                "domicile": 1.33,
+                "domicile": 1.29,
                 "nul": null,
-                "exterieur": 3.35
+                "exterieur": 3.74
               },
               "pick_category": "ou",
               "analyse": "Dzumhur et Mannarino s'affrontent sur terre battue à Rome dans un duel entre deux joueurs en difficulté. Dzumhur présente une forme récente très irrégulière : sur ses 10 derniers matchs, il affiche environ 4 victoires et 6 défaites, avec des revers secs en 2 sets face à Griekspoor, Sachko, Marozsan et Blockx, mais aussi des victoires en 3 sets (contre Jianu, Borges). Mannarino n'est guère mieux loti : il enchaîne les éliminations en 2 sets face à De Jong, Buse, Borges, Bergs et Merida Aguilar (ce dernier en 3 sets). Sur terre battue, Mannarino adopte un jeu de fond de court long et défensif, ce qui peut allonger les échanges, mais il manque actuellement de régularité. Dzumhur, lui, est un combattant atypique capable de matches en 3 sets comme on l'a vu à Bucarest. Les deux joueurs semblent tendanciellement capables de s'étirer en matchs longs : 4 des 7 dernières apparitions de Dzumhur ont abouti à des décisions en 3 sets ou au moins un set serré, et Mannarino a lui aussi disputé deux matchs en 3 sets sur ses 6 derniers. Au vu du niveau similaire, de la surface et des styles défensifs des deux, un match dépassant 21 jeux est tout à fait probable.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -2881,9 +2410,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.64,
               "cotes": {
-                "domicile": 1.45,
+                "domicile": 1.47,
                 "nul": null,
-                "exterieur": 2.76
+                "exterieur": 2.69
               },
               "pick_category": "ou",
               "analyse": "Hurkacz aborde ce match à Rome avec une forme solide sur terre battue : il a enchaîné quatre victoires à Cagliari avant de tomber face à Arnaldi, avec notamment des victoires nettes en 2-0 contre Nava et Svajda. À Madrid, il avait été sorti par Musetti en 2-0, montrant une certaine fragilité face aux terriens de haut niveau. Hanfmann, lui, traverse une période plus difficile : éliminé 2-0 par Cerundolo à Madrid et 2-0 par Blockx à Munich, il ne s'est imposé qu'une seule fois récemment (contre Giron en 3 sets). L'écart de niveau entre les deux joueurs est significatif — Hurkacz est un Top 20 mondial avec un service dominant, même sur terre. Les matchs de Hurkacz sur terre cette saison ont souvent été expéditifs (6 des 8 derniers en 2-0), suggérant des rencontres courtes. Sur une surface qui favorise déjà les services, et face à un adversaire en manque de confiance, un match sous la barre des 20.5 jeux paraît crédible, avec Hurkacz gérant ses jeux de service efficacement.",
@@ -3170,16 +2699,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 1.62,
+                "domicile": 1.63,
                 "nul": null,
-                "exterieur": 2.3
+                "exterieur": 2.32
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre Marozsan et Kopriva met en scène deux joueurs de niveau très similaire sur la terre battue, comme l'attestent les cotes handicap extrêmement serrées. Marozsan a montré de la qualité récemment avec une victoire sur Tsitsipas à Munich (2-1) et une victoire nette contre Quinn à Madrid, mais il a été battu par Medvedev (2-1) et Shapovalov (2-0). Kopriva est lui aussi en forme relative : victoire sur Rublev (2-0) et Zhang (2-0) à Madrid, avant une élimination par Jodar. Les deux joueurs ont disputé des matchs en 3 sets récemment (Marozsan 2-1 vs Tsitsipas, Kopriva 2-1 vs Darderi, Kopriva 2-1 vs Engel), ce qui témoigne de leur tendance à aller dans les longs échanges. La terre battue romaine favorise les échanges prolongés, les longs rallyes et les services moins dominants. Deux joueurs de rang similaire sur une surface lente : le scénario d'un match disputé en 3 sets avec un total de jeux élevé est bien plus probable qu'un match en 2 sets express.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -3734,9 +3263,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 2.16,
+                "domicile": 2.21,
                 "nul": null,
-                "exterieur": 1.7
+                "exterieur": 1.67
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre deux joueurs de niveau intermédiaire sur terre battue s'annonce disputé. Muller présente une forme irrégulière : il enchaîne quatre défaites en deux sets lors de ses dernières sorties (Wu, Struff, Virtanen, Moutet) entrecoupées de victoires contre des adversaires moins classés (Arnaldi, Choinski, Kopriva). Van De Zandschulp affiche une dynamique légèrement plus stable avec des victoires nettes contre Huesler, Dzumhur et Shevchenko, mais s'est incliné 2-1 contre Navone et 0-2 face à Cerundolo. Sur terre battue à Rome, les échanges tendent à s'allonger et les services dominent moins, ce qui favorise les matchs en trois sets entre joueurs de ce calibre. Les deux joueurs manquent de régularité et sont susceptibles de se disputer des sets serrés, rendant un total de jeux élevé probable. Avec la lenteur de la surface romaine et le profil technique des deux protagonistes, le seuil de 22.5 jeux semble accessible, voire dépassable dans un scénario en trois sets.",
@@ -5456,11 +4985,11 @@
               "match": "Trungelliti M. vs Svajda Z.",
               "prono": "win-home",
               "pari": "Victoire Trungelliti",
-              "cote_retenue": 1.44,
+              "cote_retenue": 1.37,
               "cotes": {
-                "domicile": 1.44,
+                "domicile": 1.37,
                 "nul": null,
-                "exterieur": 2.79
+                "exterieur": 3.1
               },
               "pick_category": "1x2",
               "analyse": "Trungelliti affiche une forme solide sur terre battue en 2026, avec notamment un beau parcours à Marrakech où il a éliminé Rocha, Sakamoto, Moutet et Darderi avant de chuter en finale/demi contre Jodar. Sur cette surface, l'Argentin est clairement dans son élément et enchaîne les matches avec constance. Svajda, en revanche, traverse une mauvaise passe : défaite 0-2 contre Hurkacz à Cagliari, 0-2 contre Sakamoto à Madrid, et 0-2 contre Vallejo à Houston. L'Américain n'a remporté aucun de ses trois derniers matches, et aucun ne s'est joué sur terre battue récemment. Le handicap home -2.5 jeux à 1.79 offre une valeur intéressante : Trungelliti est habitué à gagner nettement sur ocre et Svajda semble en manque de confiance. La différence d'expérience et d'aisance sur terre battue penche clairement en faveur du joueur argentin pour une victoire maîtrisée.",
@@ -6022,9 +5551,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.68,
               "cotes": {
-                "domicile": 1.47,
+                "domicile": 1.43,
                 "nul": null,
-                "exterieur": 2.69
+                "exterieur": 2.83
               },
               "pick_category": "ou",
               "analyse": "Carabelli et Shevchenko sont deux joueurs de niveau intermédiaire qui évoluent sur terre battue à Rome, une surface propice aux longs échanges et aux matchs disputés en jeux. En forme récente, Carabelli affiche des résultats contrastés : victoires sur Monfils (2-0) et Khachanov (2-0), mais défaites consécutives face à Jodar (deux fois 0-2) et Cobolli (1-2). Shevchenko, de son côté, cumule les défaites sur terre battue cette saison avec des revers face à Munar (0-2), Cilic (0-2) et Dedura (0-2), tout en ayant battu Bautista-Agut (2-0). Les deux joueurs sont capables de s'imposer en deux sets secs mais encaissent aussi des défaites rapides. Sur terre battue, les échanges prolongés sont fréquents et les matchs entre joueurs de ce calibre dépassent régulièrement les 20-21 jeux. Un total de moins de 20.5 jeux semble risqué compte tenu du profil des deux joueurs et de la surface, mais les lignes d'over/under situées autour de 20.5-21.5 jeux reflètent une probabilité équilibrée. Le seuil de 21.5 jeux offre une cote intéressante pour le 'plus de' considérant que les matchs en 2-1 ou disputés en tie-break sont fréquents à ce niveau sur terre battue.",
@@ -6307,16 +5836,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 2.3,
+                "domicile": 2.51,
                 "nul": null,
-                "exterieur": 1.62
+                "exterieur": 1.54
               },
               "pick_category": "ou",
               "analyse": "Zhang Z. traverse une période difficile : battu 0-2 par Kopriva à Madrid et 1-2 par Darderi à Munich, avec une défaite 0-2 contre Shelton à Houston. Le Chinois peine à enchaîner les victoires sur terre battue en ce printemps 2026. Altmaier n'est pas non plus en grande forme : éliminé 0-2 par Cerundolo à Madrid et 0-2 par Molcan à Munich, il alterne le bon et le moins bon, avec des victoires convaincantes en 2-0 contre des adversaires plus faibles. Sur terre battue, Altmaier est un spécialiste du style défensif et des échanges longs, ce qui colle parfaitement à Rome (Foro Italico, surface lente). Ce profil de match — deux joueurs en manque de régularité, fond de court lent, style gratteur d'Altmaier face à un Zhang peu tranchant — est une recette classique pour un match qui dure. Les 5 derniers matchs d'Altmaier sur terre ont tous dépassé 20 jeux, et le format best-of-3 avec un style rallye des deux côtés pousse vers les totaux élevés.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -6585,9 +6114,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.77,
               "cotes": {
-                "domicile": 1.62,
+                "domicile": 1.63,
                 "nul": null,
-                "exterieur": 2.3
+                "exterieur": 2.28
               },
               "pick_category": "ou",
               "analyse": "Boulter et Lys sont deux joueuses de niveau similaire évoluant autour du top 50-80 WTA, ce qui laisse présager un match équilibré et potentiellement en trois sets. La forme récente de Boulter est irrégulière : elle a battu Townsend, Cristian et Timofeeva, mais s'est inclinée face à Pegula, Podrez, Ruse et Muchova. Lys de son côté a montré des ressources en battant Badosa en trois sets à Stuttgart, mais elle a perdu contre Zhang à Madrid et contre Svitolina. Sur terre battue à Rome, les échanges ont tendance à être plus longs, favorisant les sets accrochés et les matchs en trois sets. Avec deux joueuses capables de battre des adversaires de bon niveau mais aussi de perdre contre des moins bien classées, un scénario en 3 sets est tout à fait plausible, ce qui poussera le total de jeux vers le haut. Le handicap de -1.5 sets à 2.00 pour Boulter reste jouable, mais l'option la plus fiable semble être un total de jeux élevé, cohérent avec des profils inconstants sur surface lente.",
@@ -7169,16 +6698,16 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.66,
               "cotes": {
-                "domicile": 1.77,
+                "domicile": 1.82,
                 "nul": null,
-                "exterieur": 2.04
+                "exterieur": 2.02
               },
               "pick_category": "ou",
               "analyse": "Alex Eala aborde ce match sur terre battue romaine avec une forme récente mitigée : si elle a créé la surprise à Indian Wells en éliminant Gauff, elle reste sur une défaite sèche face à Mertens à Madrid (0-2) après avoir perdu contre Fernandez, Ostapenko et Muchova cette saison. Magdalena Frech, de son côté, enchaîne les défaites au premier tour : éliminée par Sierra à Madrid (0-2), par Bondar à Charleston et par Kessler à Miami. Ces deux joueuses présentent donc des niveaux similaires et une instabilité commune. Sur terre battue, la surface favorise naturellement les échanges longs, les rallyes prolongés et les matchs disputés en jeux. Eala est une joueuse combative qui a déjà montré sa capacité à aller en trois sets (victoires en 2-1 contre Siegemund et Yastremska), tandis que Frech adopte un style défensif et régulier propice aux longs échanges. Aucune des deux ne domine l'autre clairement, ce qui plaide fortement pour un match accroché dépassant le seuil des 20.5 jeux. L'over 20.5 jeux à 1.66 représente une valeur solide dans ce contexte.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -7452,16 +6981,16 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.89,
               "cotes": {
-                "domicile": 1.27,
+                "domicile": 1.31,
                 "nul": null,
-                "exterieur": 3.81
+                "exterieur": 3.53
               },
               "pick_category": "ou",
               "analyse": "Linette et Maria se retrouvent à Rome sur terre battue dans un duel entre deux joueuses de niveau intermédiaire au WTA. La forme récente de Linette est mitigée : elle a battu Montgomery et Swiatek (résultat notable à Miami), mais a perdu contre Jovic, Kostyuk et Eala lors de ses dernières sorties. Maria, de son côté, a enchaîné trois victoires consécutives à Bucarest (Jacquemot, Salkova, Shymanovich) avant de céder face à Kostyuk, puis a perdu à Madrid contre Samson. Ces deux joueuses présentent des profils similaires : joueuses de fond de court sans service dominant, ce qui favorise les échanges longs sur ocre. Leurs confrontations récentes montrent des matchs disputés avec des sets serrés (Linette a gagné deux fois en trois sets récemment), ce qui plaide pour un volume élevé de jeux. Sur terre battue, les breaks sont plus fréquents mais les échanges durent davantage, et aucune des deux ne dispose d'une puissance de service capable de clore les points rapidement. Un total de jeux supérieur à 20.5 semble cohérent avec le profil des deux joueuses.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -8341,9 +7870,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.03,
               "cotes": {
-                "domicile": 1.56,
+                "domicile": 1.57,
                 "nul": null,
-                "exterieur": 2.44
+                "exterieur": 2.41
               },
               "pick_category": "ou",
               "analyse": "Pliskova présente une forme solide sur terre battue cette saison, avec des victoires convaincantes contre Sakkari (2-0), Sierra (2-0) et deux victoires en trois sets contre Mertens et Kraus à Madrid. Ses récents matchs montrent une tendance à des rencontres en deux sets résolus rapidement, notamment ses victoires 2-0 contre Alexandrova et Sasnovich à Linz. Bouzas Maneiro est en difficulté depuis plusieurs semaines : elle enchaîne les éliminations précoces face à Teichmann (0-2), Shnaider (1-2), Lepchenko (1-2) et Boulter (0-2), ne montrant de la résistance qu'en deux sets. Sur terre battue à Rome, Pliskova dispose d'un service redoutable qui peut raccourcir les échanges, mais la surface ralentit le jeu et favorise les longues séquences. Les deux joueuses ont tendance à disputer des matchs en peu de jeux lorsque le niveau est déséquilibré, comme en témoigne la série de matchs en 2-0 observée dans leurs historiques récents. Un total sous les 20.5 jeux semble cohérent compte tenu de la domination attendue de Pliskova et du niveau actuel de Bouzas Maneiro.",
@@ -8628,9 +8157,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.87,
               "cotes": {
-                "domicile": 2.14,
+                "domicile": 2.16,
                 "nul": null,
-                "exterieur": 1.71
+                "exterieur": 1.7
               },
               "pick_category": "ou",
               "analyse": "Le H2H récent est décisif : Putintseva a battu Valentova 2-1 à Madrid il y a moins de trois semaines, ce qui donne un avantage psychologique clair à la Kazakhe. Putintseva présente une forme solide avec des victoires sur Andreescu et Cross à Istanbul, même si elle a chuté face à Kostyuk et Rybakina. Valentova, de son côté, sort d'un excellent tournoi à Saïd où elle a enchaîné quatre victoires avant de s'incliner en trois sets face à Uchijima — preuve qu'elle monte en puissance mais reste vulnérable face aux joueuses expérimentées. La terre battue de Rome favorise les échanges longs et les matchs en trois sets : leur dernière confrontation s'est jouée en 2-1, et leurs styles respectifs (Putintseva défensive et Valentova plutôt agressive) laissent présager un match disputé avec de nombreux jeux. Les deux joueuses ont tendance à disputer des sets serrés sur cette surface, ce qui plaide fortement pour un total de jeux élevé. Avec un H2H récent en trois sets et la surface terre battue propice aux rallyes, jouer le dépassement de 21.5 jeux apparaît comme le pari le plus cohérent.",
@@ -8923,9 +8452,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.95,
               "cotes": {
-                "domicile": 2.46,
+                "domicile": 2.51,
                 "nul": null,
-                "exterieur": 1.55
+                "exterieur": 1.53
               },
               "pick_category": "ou",
               "analyse": "Sur terre battue à Rome, ce duel entre Siegemund et Bejlek promet d'être disputé mais relativement compact en termes de jeux. Siegemund affiche une forme correcte sur la saison avec des victoires nettes en deux sets contre Begu (2-0) et Marcinko (2-0, deux fois), mais elle a également concédé des défaites en deux sets sèches face à Swiatek, Kasatkina et Gracheva, signe que ses matchs se terminent souvent rapidement. Bejlek de son côté alterne entre des victoires rapides (2-0 contre Urhobo, 2-0 contre Sonmez) et des défaites expéditives (0-2 face à Bencic, 0-2 face à Gibson), confirmant une tendance aux matchs courts. La terre battue ralentit certes le jeu et favorise les longs échanges, mais aucune des deux joueuses ne semble avoir le profil pour tirer des marathons sur surface lente cette saison. L'historique récent indique clairement une tendance aux scores serrés mais aux matchs se concluant en moins de jeux que la moyenne : la majorité de leurs confrontations récentes donnent des totaux inférieurs à 20 jeux. Parier sur moins de 20.5 jeux apparaît comme la lecture la plus cohérente avec les données disponibles.",
@@ -9222,7 +8751,7 @@
               "cotes": {
                 "domicile": 1.32,
                 "nul": null,
-                "exterieur": 3.41
+                "exterieur": 3.39
               },
               "pick_category": "ou",
               "analyse": "Katerina Siniaková aborde ce match à Rome avec une forme correcte mais inégale : victorieuse contre Blinkova et Kalieva à Madrid, elle s'est inclinée en 3 sets face à McNally au tour suivant. Son niveau sur terre battue reste solide, la Tchèque étant une joueuse polyvalente avec une bonne maîtrise des échanges longs typiques de la surface. Face à elle, Noémie Boisson a été éliminée d'emblée à Madrid contre Stearns (0-2), illustrant un niveau encore limité sur le circuit WTA. Boisson, jeune Française en développement, peine à s'imposer face aux joueuses expérimentées de top 50. L'écart de niveau entre les deux joueuses est réel mais Siniaková peut parfois souffrir en premier set comme le montrent ses défaites contre Osorio, Svitolina ou Badosa. Sur terre battue romaine, les matchs tendent à s'allonger avec des échanges prolongés, ce qui suggère un total de jeux raisonnablement élevé même si Siniaková devrait dominer. Le handicap -3.5 jeux en faveur de Siniaková à 1.52 représente la meilleure combinaison entre valeur et probabilité compte tenu de la différence de niveau affichée.",
@@ -9882,7 +9411,7 @@
               "pari": "Handicap Ostapenko -3.0 jeux",
               "cote_retenue": 1.25,
               "cotes": {
-                "domicile": 8.4,
+                "domicile": 8.98,
                 "nul": null,
                 "exterieur": 1.07
               },
@@ -9891,7 +9420,7 @@
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -10211,480 +9740,6 @@
     "CbeDxDv9"
   ],
   "history": [
-    {
-      "event_id": "Srmdt5dM",
-      "flashscore_id": "Srmdt5dM",
-      "flashscore_sport_id": 1,
-      "home_team_id": "IVy1ZyxH",
-      "away_team_id": "EiQ5g3JL",
-      "tournament_id": "g01moesh",
-      "tournament_url": "/football/asia/afc-champions-league/",
-      "sport_key": "flashscore_football_ucl",
-      "commence_time": "2026-04-14T14:45:00.000Z",
-      "time_display": "Mar. 16h45",
-      "home": "Tractor (Irn)",
-      "away": "Shabab Al-Ahli Dubai (Uae)",
-      "match": "Tractor (Irn) vs Shabab Al-Ahli Dubai (Uae)",
-      "prono": "win-home",
-      "pari": "Shabab Al-Ahli Dubai sans nul",
-      "cote_retenue": 1.36,
-      "cotes": {
-        "domicile": 3.8,
-        "nul": 3.59,
-        "exterieur": 1.96
-      },
-      "pick_category": "dnb",
-      "analyse": "Shabab Al-Ahli Dubai s'impose comme le favori logique de cette rencontre. En Ligue des Champions, le club émirati a tenu en échec Al Hilal (0-0) et battu Al-Gharafa (0-2 à l'aller en format inversé), démontrant une vraie capacité à performer en compétition continentale. Sur le plan offensif, le bilan est saisissant : 5-1 contre Ittihad Kalba, 4-0 contre Dibba Al Fujairah, 5-0 contre Al Dhafra en championnat UAE. Tractor, de son côté, présente une forme irrégulière en championnat iranien (défaite 2-1 contre Fajr Sepasi, nul 1-1 contre Malavan), et en Ligue des Champions ils ont été battus 2-0 par Al-Sadd à domicile, ce qui révèle des lacunes défensives même sur leur terrain. Le différentiel de niveau entre la ligue émiratie et la ligue iranienne, combiné à la puissance offensive de Shabab Al-Ahli, plaide clairement pour une victoire des visiteurs. Le Draw No Bet sur Shabab Al-Ahli à 1.36 offre une sécurité appréciable face à un adversaire qui peine à s'imposer.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-3",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1775838600,
-            "tournament": "LEA",
-            "home": "Al Ain",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1775320200,
-            "tournament": "LEA",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Al Jazira",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774104900,
-            "tournament": "PC",
-            "home": "Al Jazira",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1773682200,
-            "tournament": "LEA",
-            "home": "Dibba Al Fujairah",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "0-4"
-          },
-          {
-            "timestamp": 1773250200,
-            "tournament": "LEA",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Ittihad Kalba",
-            "score": "5-1"
-          },
-          {
-            "timestamp": 1772904600,
-            "tournament": "LEA",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Al Wahda",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1772120700,
-            "tournament": "PGL",
-            "home": "Tractor",
-            "away": "Gol Gohar",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1772040600,
-            "tournament": "LEA",
-            "home": "Al Wasl",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1771773300,
-            "tournament": "PGL",
-            "home": "Malavan",
-            "away": "Tractor",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1771608600,
-            "tournament": "LEA",
-            "home": "Al Dhafra",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "0-5"
-          },
-          {
-            "timestamp": 1771344000,
-            "tournament": "CL",
-            "home": "Al-Gharafa",
-            "away": "Tractor",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1771257600,
-            "tournament": "CL",
-            "home": "Al Ahli SC",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "4-3"
-          },
-          {
-            "timestamp": 1770739200,
-            "tournament": "CL",
-            "home": "Tractor",
-            "away": "Al-Sadd",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1770652800,
-            "tournament": "CL",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Al Hilal",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1770375600,
-            "tournament": "PGL",
-            "home": "Fajr Sepasi",
-            "away": "Tractor",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.94,
-          "draw": 3.4,
-          "away": 1.94
-        },
-        "double_chance": {
-          "12": 1.3,
-          "1X": 1.83,
-          "X2": 1.23
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.34,
-            "under": 2.9
-          },
-          "2.5": {
-            "over": 2.1,
-            "under": 1.69
-          },
-          "3.5": {
-            "over": 3.79,
-            "under": 1.23
-          }
-        },
-        "btts": {
-          "yes": 1.9,
-          "no": 1.8
-        },
-        "draw_no_bet": {
-          "home": 2.8,
-          "away": 1.36
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Champions League",
-      "archived_at": "2026-04-14T19:55:24.489Z"
-    },
-    {
-      "event_id": "MDlJWv3M",
-      "flashscore_id": "MDlJWv3M",
-      "flashscore_sport_id": 2,
-      "home_team_id": "ETGnbrpH",
-      "away_team_id": "A93TM7BR",
-      "tournament_id": "guoiibdl",
-      "tournament_url": "/tennis/atp-singles/barcelona/",
-      "sport_key": "flashscore_tennis_atp_barcelona_spain",
-      "commence_time": "2026-04-14T14:00:00.000Z",
-      "time_display": "Mar. 16h00",
-      "home": "Nakashima B.",
-      "away": "Cerundolo J. M.",
-      "match": "Nakashima B. vs Cerundolo J. M.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.8,
-      "cotes": {
-        "domicile": 2.02,
-        "nul": null,
-        "exterieur": 1.79
-      },
-      "pick_category": "ou",
-      "analyse": "Ce duel sur terre battue à Barcelone oppose deux joueurs au profil très différent. Cerundolo est clairement en confiance sur ocre : il vient d'enchaîner deux victoires nettes 2-0 contre De Jong et Zeppieri à Barcelone, après un bon parcours à Monte-Carlo (3 victoires, dont une défaite en 3 sets contre Vacherot). Son jeu de fond de court physique et son coup droit redoutable sont particulièrement efficaces sur cette surface. Nakashima, de son côté, traverse une période moins convaincante : trois défaites consécutives en trois sets (contre Burruchaga, Cilic et Tiafoe), et ses meilleures performances récentes sont sur dur. La terre battue n'est pas sa surface de prédilection et son jeu, plus flat, souffre face aux défenseurs d'arrière-cour. Avec 5 victoires sur ses 6 derniers matchs sur terre et un rythme de compétition optimal, Cerundolo part favori. Le total de jeux sur terre battue tend à être élevé car les échanges durent plus longtemps, et Nakashima résiste souvent en 3 sets même dans ses défaites — ce qui pousse le total vers le haut.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1775989200,
-            "tournament": "BAR",
-            "home": "Cerundolo J. M.",
-            "away": "De Jong J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775909700,
-            "tournament": "BAR",
-            "home": "Cerundolo J. M.",
-            "away": "Zeppieri G.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775489100,
-            "tournament": "MON",
-            "home": "Vacherot V.",
-            "away": "Cerundolo J. M.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775380200,
-            "tournament": "MON",
-            "home": "Cerundolo J. M.",
-            "away": "Martinez P.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775293800,
-            "tournament": "MON",
-            "home": "Cerundolo J. M.",
-            "away": "Nys H.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775157300,
-            "tournament": "HOU",
-            "home": "Burruchaga R. A.",
-            "away": "Nakashima B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774992300,
-            "tournament": "HOU",
-            "home": "Damm M.",
-            "away": "Nakashima B.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774951800,
-            "tournament": "MAR",
-            "home": "Cerundolo J. M.",
-            "away": "Majchrzak K.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1774138800,
-            "tournament": "MIA",
-            "home": "Nakashima B.",
-            "away": "Cilic M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1772993400,
-            "tournament": "IND",
-            "home": "Nakashima B.",
-            "away": "Zverev A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1772925300,
-            "tournament": "IND",
-            "home": "Cerundolo J. M.",
-            "away": "Rinderknech A.",
-            "score": "null-null"
-          },
-          {
-            "timestamp": 1772837700,
-            "tournament": "IND",
-            "home": "Nakashima B.",
-            "away": "Ugo Carabelli C.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1772757900,
-            "tournament": "IND",
-            "home": "Cerundolo J. M.",
-            "away": "Van De Zandschulp B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772251200,
-            "tournament": "ACA",
-            "home": "Tiafoe F.",
-            "away": "Nakashima B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772166600,
-            "tournament": "ACA",
-            "home": "Vacherot V.",
-            "away": "Nakashima B.",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "20.0": {
-            "over": 1.29,
-            "under": 3.13
-          },
-          "20.5": {
-            "over": 1.43,
-            "under": 2.65
-          },
-          "21.0": {
-            "over": 1.44,
-            "under": 2.53
-          },
-          "21.5": {
-            "over": 1.56,
-            "under": 2.32
-          },
-          "22.0": {
-            "over": 1.64,
-            "under": 2.15
-          },
-          "22.5": {
-            "over": 1.8,
-            "under": 1.94
-          },
-          "23.0": {
-            "over": 1.89,
-            "under": 1.83
-          },
-          "23.5": {
-            "over": 2.02,
-            "under": 1.73
-          },
-          "24.0": {
-            "over": 2.02,
-            "under": 1.69
-          },
-          "24.5": {
-            "over": 2.06,
-            "under": 1.69
-          },
-          "25.0": {
-            "over": 2.11,
-            "under": 1.6
-          },
-          "2.5": {
-            "over": 2.23,
-            "under": 1.62
-          },
-          "19.5": {
-            "over": 1.3,
-            "under": 3.35
-          },
-          "25.5": {
-            "over": 2.3,
-            "under": 1.6
-          },
-          "26.5": {
-            "over": 2.6,
-            "under": 1.48
-          },
-          "27.5": {
-            "over": 2.8,
-            "under": 1.41
-          },
-          "28.5": {
-            "over": 3.15,
-            "under": 1.34
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.7,
-            "away": 1.63
-          },
-          "-1.5": {
-            "home": 2.2,
-            "away": 2.05
-          },
-          "0.0": {
-            "home": 1.91,
-            "away": 1.81
-          },
-          "0.5": {
-            "home": 1.86,
-            "away": 1.75
-          },
-          "-0.5": {
-            "home": 1.98,
-            "away": 1.87
-          },
-          "1.0": {
-            "home": 1.78,
-            "away": 1.68
-          },
-          "-1.0": {
-            "home": 2.08,
-            "away": 1.95
-          },
-          "2.0": {
-            "home": 1.63,
-            "away": 1.54
-          },
-          "-2.0": {
-            "home": 2.35,
-            "away": 2.17
-          },
-          "2.5": {
-            "home": 1.57,
-            "away": 1.52
-          },
-          "-2.5": {
-            "home": 2.34,
-            "away": 2.3
-          },
-          "3.0": {
-            "home": 1.44,
-            "away": 1.4
-          },
-          "-3.0": {
-            "home": 2.65,
-            "away": 2.62
-          },
-          "3.5": {
-            "home": 1.42,
-            "away": 1.38
-          },
-          "-3.5": {
-            "home": 2.88,
-            "away": 2.8
-          },
-          "4.0": {
-            "away": 1.27
-          },
-          "-4.0": {
-            "home": 3.27
-          },
-          "4.5": {
-            "away": 1.31
-          },
-          "-4.5": {
-            "home": 3.03
-          },
-          "5.0": {
-            "away": 1.19
-          },
-          "-5.0": {
-            "home": 3.98
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Barcelona (Spain)",
-      "archived_at": "2026-04-14T19:55:24.489Z"
-    },
     {
       "event_id": "UqDKvh7K",
       "flashscore_id": "UqDKvh7K",
@@ -141036,6 +140091,482 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rome (Italy) (Q)",
       "archived_at": "2026-05-05T21:15:57.947Z"
+    },
+    {
+      "event_id": "CWMFS9CF",
+      "flashscore_id": "CWMFS9CF",
+      "flashscore_sport_id": 3,
+      "home_team_id": "UcjMRj6J",
+      "away_team_id": "xGk13Tb6",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-05T23:00:00.000Z",
+      "time_display": "Mer. 01h00",
+      "home": "Detroit Pistons",
+      "away": "Cleveland Cavaliers",
+      "match": "Detroit Pistons vs Cleveland Cavaliers",
+      "prono": "win-home",
+      "pari": "Moins de 215.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.65,
+        "nul": null,
+        "exterieur": 2.42
+      },
+      "pick_category": "ou",
+      "analyse": "Les deux équipes sont engagées dans des séries de playoffs très disputées. Detroit sort d'une victoire nette 116-94 face à Orlando le 3 mai, après avoir alterné victoires et défaites contre ce même adversaire (3-2 sur les 5 derniers affrontements). Cleveland, de son côté, vient de battre Toronto 114-102 le 3 mai, malgré une défaite 112-110 lors du match précédent le 1er mai. Les Cavaliers affichent globalement des scores plus élevés : 125-120, 126-104, 126-113 contre Toronto, signalant une attaque prolifique. Detroit joue plus défensif et contrôlé, avec des scores souvent sous les 110 points lors des matchs serrés (98-83, 94-88). Ce choc de styles — l'attaque productive de Cleveland contre la défense solide mais parfois vulnérable des Pistons — pointe vers un total modéré. Les deux équipes arrivent en forme mais avec un niveau de fatigue accumulé, et Detroit à domicile a tendance à ralentir le tempo. Un total autour de 215.5 points semble raisonnable, avec une légère préférence pour le under compte tenu du contexte défensif attendu.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "111-101",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777851000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "114-102"
+          },
+          {
+            "timestamp": 1777836600,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "116-94"
+          },
+          {
+            "timestamp": 1777678200,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "112-110"
+          },
+          {
+            "timestamp": 1777676400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "79-93"
+          },
+          {
+            "timestamp": 1777505400,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "125-120"
+          },
+          {
+            "timestamp": 1777503600,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1777334400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "94-88"
+          },
+          {
+            "timestamp": 1777222800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "93-89"
+          },
+          {
+            "timestamp": 1777136400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "113-105"
+          },
+          {
+            "timestamp": 1776988800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "126-104"
+          },
+          {
+            "timestamp": 1776898800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "98-83"
+          },
+          {
+            "timestamp": 1776726000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "115-105"
+          },
+          {
+            "timestamp": 1776637800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "101-112"
+          },
+          {
+            "timestamp": 1776531600,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "126-113"
+          },
+          {
+            "timestamp": 1776031200,
+            "tournament": "NBA",
+            "home": "Indiana Pacers",
+            "away": "Detroit Pistons",
+            "score": "121-133"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "213.5": {
+            "over": 1.8,
+            "under": 1.97
+          },
+          "214.5": {
+            "over": 1.81,
+            "under": 1.95
+          },
+          "215.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "211.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "212.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "216.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "217.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "218.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "219.5": {
+            "over": 2.2,
+            "under": 1.62
+          }
+        },
+        "handicap": {
+          "3.5": {
+            "away": 1.81
+          },
+          "-3.5": {
+            "home": 1.95
+          },
+          "1.5": {
+            "home": 1.6,
+            "away": 2.05
+          },
+          "-1.5": {
+            "home": 1.7,
+            "away": 2.25
+          },
+          "2.5": {
+            "home": 1.5,
+            "away": 1.91
+          },
+          "-2.5": {
+            "home": 1.91,
+            "away": 2.5
+          },
+          "4.5": {
+            "away": 1.7
+          },
+          "-4.5": {
+            "home": 2.05
+          },
+          "5.5": {
+            "away": 1.6
+          },
+          "-5.5": {
+            "home": 2.25
+          },
+          "6.5": {
+            "away": 1.5
+          },
+          "-6.5": {
+            "home": 2.5
+          },
+          "7.5": {
+            "away": 1.4
+          },
+          "-7.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-06T09:37:14.668Z"
+    },
+    {
+      "event_id": "nungPz1N",
+      "flashscore_id": "nungPz1N",
+      "flashscore_sport_id": 3,
+      "home_team_id": "0fHFHEWD",
+      "away_team_id": "ngegZ8bg",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-06T00:30:00.000Z",
+      "time_display": "Mer. 02h30",
+      "home": "Oklahoma City Thunder",
+      "away": "Los Angeles Lakers",
+      "match": "Oklahoma City Thunder vs Los Angeles Lakers",
+      "prono": "win-home",
+      "pari": "Moins de 213.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.11,
+        "nul": null,
+        "exterieur": 8.2
+      },
+      "pick_category": "ou",
+      "analyse": "Oklahoma City Thunder est la meilleure équipe de la conférence Ouest cette saison et affiche une forme redoutable : victoires dominantes contre Phoenix 120-107, 121-109, 131-122 et 119-84, avec une seule défaite concédée face aux Nuggets (107-127) et aux Suns (103-135) lors d'un match sans enjeu. Les Lakers, eux, sortent d'une série compliquée contre Houston : éliminés après avoir perdu trois matchs sur quatre (93-99, 96-115), avec une moyenne offensive en baisse nette (93, 96, 101 points marqués). OKC présente un écart de niveau considérable : leur défense étouffante (84 pts concédés à Phoenix lors du Game 4) et leur profondeur de banc laissent peu de chances aux Lakers. Le handicap -11.5 pour OKC à 1.50 est trop bas, mais la ligne -15.5 à 1.90 reflète bien la domination attendue sur cette série. Côté total, les scores récents des deux équipes en playoffs suggèrent des matchs fermés : OKC concède peu (84, 107, 107 pts) et les Lakers peinent à scorer (93, 96, 101 pts face à Houston), ce qui oriente vers un total bas. Un match à moins de 213.5 points est tout à fait envisageable au vu des dynamiques défensives des deux franchises.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "108-90",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1777685400,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Los Angeles Lakers",
+            "score": "78-98"
+          },
+          {
+            "timestamp": 1777514400,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "93-99"
+          },
+          {
+            "timestamp": 1777339800,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Oklahoma City Thunder",
+            "score": "122-131"
+          },
+          {
+            "timestamp": 1777253400,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Los Angeles Lakers",
+            "score": "115-96"
+          },
+          {
+            "timestamp": 1777145400,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Oklahoma City Thunder",
+            "score": "109-121"
+          },
+          {
+            "timestamp": 1777075200,
+            "tournament": "NBA",
+            "home": "Houston Rockets",
+            "away": "Los Angeles Lakers",
+            "score": "108-112"
+          },
+          {
+            "timestamp": 1776907800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Phoenix Suns",
+            "score": "120-107"
+          },
+          {
+            "timestamp": 1776825000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "101-94"
+          },
+          {
+            "timestamp": 1776627000,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Phoenix Suns",
+            "score": "119-84"
+          },
+          {
+            "timestamp": 1776558600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Houston Rockets",
+            "score": "107-98"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Phoenix Suns",
+            "score": "103-135"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Utah Jazz",
+            "score": "131-107"
+          },
+          {
+            "timestamp": 1775874600,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Phoenix Suns",
+            "score": "101-73"
+          },
+          {
+            "timestamp": 1775869200,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Oklahoma City Thunder",
+            "score": "127-107"
+          },
+          {
+            "timestamp": 1775786400,
+            "tournament": "NBA",
+            "home": "Golden State Warriors",
+            "away": "Los Angeles Lakers",
+            "score": "103-119"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "213.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "209.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "210.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "211.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "212.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "214.5": {
+            "over": 2,
+            "under": 1.8
+          },
+          "215.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "216.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "217.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "218.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "14.5": {
+            "away": 1.92
+          },
+          "-14.5": {
+            "home": 1.78
+          },
+          "15.5": {
+            "away": 1.9
+          },
+          "-15.5": {
+            "home": 1.9
+          },
+          "11.5": {
+            "away": 2.5
+          },
+          "-11.5": {
+            "home": 1.5
+          },
+          "12.5": {
+            "away": 2.25
+          },
+          "-12.5": {
+            "home": 1.6
+          },
+          "13.5": {
+            "away": 2.05
+          },
+          "-13.5": {
+            "home": 1.7
+          },
+          "16.5": {
+            "away": 1.73
+          },
+          "-16.5": {
+            "home": 2
+          },
+          "17.5": {
+            "away": 1.7
+          },
+          "-17.5": {
+            "home": 2.05
+          },
+          "18.5": {
+            "away": 1.62
+          },
+          "-18.5": {
+            "home": 2.2
+          },
+          "19.5": {
+            "away": 1.53
+          },
+          "-19.5": {
+            "home": 2.38
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-06T09:37:14.668Z"
     }
   ],
   "combos": [
