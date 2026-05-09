@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-08T23:42:01.171Z",
+    "last_results_update": "2026-05-09T07:21:08.183Z",
     "analyses_written_at": "2026-05-08T11:03:30.378Z",
     "analyses_cost_usd": 0.2754,
-    "last_hourly_refresh": "2026-05-08T23:42:01.171Z"
+    "last_hourly_refresh": "2026-05-09T07:21:08.183Z"
   },
   "sports": {
     "foot": {
@@ -778,478 +778,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "djwtpcnJ",
-              "flashscore_id": "djwtpcnJ",
-              "flashscore_sport_id": 3,
-              "home_team_id": "vwRW2QSh",
-              "away_team_id": "WCNO4nbt",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-08T23:00:00.000Z",
-              "time_display": "Sam. 01h00",
-              "home": "Philadelphia 76ers",
-              "away": "New York Knicks",
-              "match": "Philadelphia 76ers vs New York Knicks",
-              "prono": "win-home",
-              "pari": "Plus de 213.5 points",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.61,
-                "nul": null,
-                "exterieur": 2.52
-              },
-              "pick_category": "ou",
-              "analyse": "Les deux équipes se retrouvent pour le troisième match de leur série de playoffs, après deux victoires consécutives des Knicks : 108-102 puis 137-98, soit un écart cumulé de 45 points sur deux matchs. Philadelphia a tout de même montré de la résistance contre Boston en remportant trois des cinq derniers matchs de leur série (113-97, 113-97, 109-100), ce qui témoigne d'une certaine capacité à répondre dans l'adversité. Cependant, New York domine clairement cette série et a écrasé Atlanta 140-89 puis 126-97, affichant une attaque de playoff très efficace. Le rythme de jeu est élevé chez les Knicks, avec plusieurs totaux dépassant les 210 points dans ces récents playoffs. Le choc de cette série suggère que Philadelphie, dos au mur, cherchera à ralentir le jeu, mais New York a le talent offensif pour imposer son tempo. Compte tenu des totaux récents (210, 205, 203 dans la série Phila-Boston, mais 237 et 223 dans les matchs Knicks-Hawks), la ligne 213.5 semble bien calibrée, avec un léger avantage pour l'over grâce à la puissance offensive des Knicks.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778108400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "108-102"
-                  },
-                  {
-                    "timestamp": 1777939200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "137-98"
-                  },
-                  {
-                    "timestamp": 1777764600,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "100-109"
-                  },
-                  {
-                    "timestamp": 1777593600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "106-93"
-                  },
-                  {
-                    "timestamp": 1777590000,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "89-140"
-                  },
-                  {
-                    "timestamp": 1777420800,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Atlanta Hawks",
-                    "score": "126-97"
-                  },
-                  {
-                    "timestamp": 1777417200,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "97-113"
-                  },
-                  {
-                    "timestamp": 1777244400,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "96-128"
-                  },
-                  {
-                    "timestamp": 1777154400,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "98-114"
-                  },
-                  {
-                    "timestamp": 1777071600,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "Boston Celtics",
-                    "score": "100-108"
-                  },
-                  {
-                    "timestamp": 1776985200,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "109-108"
-                  },
-                  {
-                    "timestamp": 1776812400,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "97-111"
-                  },
-                  {
-                    "timestamp": 1776729600,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Atlanta Hawks",
-                    "score": "106-107"
-                  },
-                  {
-                    "timestamp": 1776618000,
-                    "tournament": "NBA",
-                    "home": "Boston Celtics",
-                    "away": "Philadelphia 76ers",
-                    "score": "123-91"
-                  },
-                  {
-                    "timestamp": 1776549600,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Atlanta Hawks",
-                    "score": "113-102"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "213.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "214.5": {
-                    "over": 1.96,
-                    "under": 1.8
-                  },
-                  "209.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "210.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "211.5": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "212.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "215.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "216.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "217.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  }
-                },
-                "handicap": {
-                  "1.0": {
-                    "home": 1.8,
-                    "away": 1.9
-                  },
-                  "-1.0": {
-                    "home": 1.9,
-                    "away": 1.91
-                  },
-                  "1.5": {
-                    "home": 1.77,
-                    "away": 1.9
-                  },
-                  "-1.5": {
-                    "home": 1.9,
-                    "away": 1.94
-                  },
-                  "2.5": {
-                    "home": 1.62,
-                    "away": 1.73
-                  },
-                  "-2.5": {
-                    "home": 2,
-                    "away": 2.2
-                  },
-                  "3.5": {
-                    "home": 1.6,
-                    "away": 1.62
-                  },
-                  "-3.5": {
-                    "home": 2.2,
-                    "away": 2.25
-                  },
-                  "4.5": {
-                    "away": 1.53
-                  },
-                  "-4.5": {
-                    "home": 2.38
-                  },
-                  "5.5": {
-                    "away": 1.5
-                  },
-                  "-5.5": {
-                    "home": 2.5
-                  },
-                  "6.5": {
-                    "away": 1.4
-                  },
-                  "-6.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "Gz6nfXBd",
-              "flashscore_id": "Gz6nfXBd",
-              "flashscore_sport_id": 3,
-              "home_team_id": "KjBIVQcI",
-              "away_team_id": "IwmkErSH",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-09T01:30:00.000Z",
-              "time_display": "Sam. 03h30",
-              "home": "Minnesota Timberwolves",
-              "away": "San Antonio Spurs",
-              "match": "Minnesota Timberwolves vs San Antonio Spurs",
-              "prono": "win-home",
-              "pari": "Moins de 212.5 points",
-              "cote_retenue": 2.3,
-              "cotes": {
-                "domicile": 2.85,
-                "nul": null,
-                "exterieur": 1.5
-              },
-              "pick_category": "ou",
-              "analyse": "Ce match oppose deux équipes qui se retrouvent pour un troisième affrontement en quelques jours, après deux rencontres aux résultats très contrastés. San Antonio a d'abord écrasé Minnesota 133-95 le 7 mai, un match au total de 228 points, avant que les Wolves n'arrachent une victoire serrée 104-102 deux jours plus tôt (105 points au total). En dehors du H2H, Minnesota affiche une défense solide sur sa série contre Denver : 110-98, 112-96, 113-96, 119-114 — des scores maîtrisés qui indiquent un jeu contrôlé et peu propice aux shootouts. San Antonio, de son côté, alterne entre des victoires très larges contre Portland (114-95, 120-108, 111-98) et des matchs plus serrés. La médiane des cinq derniers matchs impliquant ces deux équipes tourne autour de 210-215 points hors la rencontre anomalique du 7 mai. Compte tenu du style défensif récurrent de Minnesota et du fait que les matchs tendus entre ces deux équipes restent sous les 210 points, la ligne des 212.5 représente une opportunité intéressante à jouer sous.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778117400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "133-95"
-                  },
-                  {
-                    "timestamp": 1777944600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "102-104"
-                  },
-                  {
-                    "timestamp": 1777599000,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "110-98"
-                  },
-                  {
-                    "timestamp": 1777426200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "114-95"
-                  },
-                  {
-                    "timestamp": 1777343400,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "125-113"
-                  },
-                  {
-                    "timestamp": 1777231800,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "San Antonio Spurs",
-                    "score": "93-114"
-                  },
-                  {
-                    "timestamp": 1777163400,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "112-96"
-                  },
-                  {
-                    "timestamp": 1777084200,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "San Antonio Spurs",
-                    "score": "108-120"
-                  },
-                  {
-                    "timestamp": 1776994200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "113-96"
-                  },
-                  {
-                    "timestamp": 1776816000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "103-106"
-                  },
-                  {
-                    "timestamp": 1776738600,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "114-119"
-                  },
-                  {
-                    "timestamp": 1776646800,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "111-98"
-                  },
-                  {
-                    "timestamp": 1776540600,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "116-105"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "New Orleans Pelicans",
-                    "score": "132-126"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Denver Nuggets",
-                    "score": "118-128"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "216.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "212.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "213.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "214.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "215.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "217.5": {
-                    "over": 2,
-                    "under": 1.8
-                  },
-                  "218.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "219.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "220.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  }
-                },
-                "handicap": {
-                  "3.5": {
-                    "home": 1.95
-                  },
-                  "-3.5": {
-                    "away": 1.81
-                  },
-                  "4.5": {
-                    "home": 1.9
-                  },
-                  "-4.5": {
-                    "away": 1.9
-                  },
-                  "1.5": {
-                    "home": 2.38
-                  },
-                  "-1.5": {
-                    "away": 1.53
-                  },
-                  "2.5": {
-                    "home": 2.2
-                  },
-                  "-2.5": {
-                    "away": 1.62
-                  },
-                  "5.5": {
-                    "home": 1.7
-                  },
-                  "-5.5": {
-                    "away": 2.05
-                  },
-                  "6.5": {
-                    "home": 1.6
-                  },
-                  "-6.5": {
-                    "away": 2.25
-                  },
-                  "7.5": {
-                    "home": 1.5
-                  },
-                  "-7.5": {
-                    "away": 2.5
-                  },
-                  "8.5": {
-                    "home": 1.4
-                  },
-                  "-8.5": {
-                    "away": 2.75
-                  },
-                  "9.5": {
-                    "home": 1.4
-                  },
-                  "-9.5": {
-                    "away": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1629,11 +1158,11 @@
               "match": "Basilashvili N. vs Shelton B.",
               "prono": "win-away",
               "pari": "Victoire Shelton avec -3.5 jeux (handicap)",
-              "cote_retenue": 1.28,
+              "cote_retenue": 1.29,
               "cotes": {
-                "domicile": 3.89,
+                "domicile": 3.79,
                 "nul": null,
-                "exterieur": 1.28
+                "exterieur": 1.29
               },
               "pick_category": "1x2",
               "analyse": "Ben Shelton arrive à Rome dans une forme exceptionnelle : il a remporté le titre à Munich il y a quelques semaines en battant successivement Nava (2-1), Blockx (2-0), Fonseca (2-1), Molcan (2-0) et Cobolli (2-0), soit cinq victoires consécutives dont quatre en deux sets. Basilashvili est lui en cours de tournoi à Rome, ayant battu Moller, Hijikata et Merida Aguilar tout en perdant récemment contre Kopp et Ofner sur terre battue. La différence de niveau actuel est manifeste : Shelton aligne des victoires nettes et régulières, avec un jeu offensif et agressif qui fonctionne même sur terre battue. Le Géorgien reste capable de surprendre ponctuellement (ses trois victoires en sets à Rome le montrent), mais son profil irrégulier et ses défaites récentes contre des joueurs bien classés laissent planer le doute sur sa solidité. Sur terre battue à Rome, les échanges sont généralement plus longs, ce qui pourrait pousser le match vers un total de jeux élevé — Basilashvili dispute souvent des matchs disputés (trois sets contre Merida). Le handicap -3.5 jeux en faveur de Shelton à 1.77 offre une marge raisonnable compte tenu de la domination attendue de l'Américain.",
@@ -2498,9 +2027,9 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 2,
               "cotes": {
-                "domicile": 1.34,
+                "domicile": 1.33,
                 "nul": null,
-                "exterieur": 3.4
+                "exterieur": 3.48
               },
               "pick_category": "ou",
               "analyse": "Cobolli est en grande forme sur terre battue cette saison : il a battu Medvedev, Zverev et enchaîné plusieurs succès convaincants à Madrid et Munich avant de s'incliner face à Shelton et Blockx. Atmane, de son côté, monte également en puissance avec des victoires 2-0 sur Humbert et Kecmanovic à Madrid, mais s'est incliné nettement face à Zverev. Les deux joueurs produisent un tennis offensif et agressif sur terre battue, avec une majorité de matches réglés en deux sets dans leurs confrontations récentes. L'absence de H2H direct rend la prédiction du vainqueur incertaine, mais le profil des deux joueurs — services efficaces, peu de longues guerres d'usure — suggère un match relativement ramassé. Sur les 10 derniers matchs combinés des deux joueurs, la grande majorité se sont terminés en deux sets, ce qui plaide pour un total de jeux contenu. Un résultat en 2-0 typique sur cette surface avec ces profils tourne autour de 19 à 21 jeux, rendant la ligne des 21.5 jeux particulièrement intéressante côté 'under'.",
@@ -3383,9 +2912,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.9,
               "cotes": {
-                "domicile": 2.34,
+                "domicile": 2.26,
                 "nul": null,
-                "exterieur": 1.63
+                "exterieur": 1.67
               },
               "pick_category": "ou",
               "analyse": "Machac traverse une saison sur terre battue très intéressante : victoire nette contre Tsitsipas 2-0 à Rome cette semaine, deux victoires en trois sets à Madrid contre Comesana et en battant Cerundolo à Monaco. Medvedev, lui, enchaîne des résultats décevants sur cette surface : éliminé par Berrettini 0-2 à Monaco, par Cerundolo 1-2 à Miami, et sorti par Cobolli 1-2 à Madrid — trois défaites récentes sur terre battue face à des joueurs de second rang. Machac est en pleine confiance à Rome, après avoir écarté Tsitsipas sans perdre un set, et sa qualité de frappe de fond de court lui convient bien sur ocre. Medvedev peine chroniquement sur cette surface : son jeu plat et peu tourné souffre face aux échanges longs propices à la terre. Ce match entre deux joueurs capables de jouer de longs échanges et dont l'un au moins sera sous pression devrait produire des jeux serrés et disputés. Avec un Machac potentiellement supérieur en confiance et un Medvedev friable, les sets risquent d'être âpres, favorisant un total de jeux élevé.",
@@ -4531,7 +4060,7 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.68,
               "cotes": {
-                "domicile": 8.15,
+                "domicile": 7.95,
                 "nul": null,
                 "exterieur": 1.09
               },
@@ -4820,9 +4349,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.94,
               "cotes": {
-                "domicile": 3.02,
+                "domicile": 2.98,
                 "nul": null,
-                "exterieur": 1.41
+                "exterieur": 1.42
               },
               "pick_category": "ou",
               "analyse": "Popyrin présente une forme irrégulière sur terre battue cette saison : éliminé dès le premier tour à Madrid par Damm (0-2) et battu à Monte-Carlo par Ruud (0-2), avant un succès prometteur à Rome contre Berrettini (2-0). Mensik, en revanche, affiche une forme solide sur dur et a enchaîné des victoires probantes à Madrid contre Damm et Khachanov avant de s'incliner face à Zverev en trois sets. Le Tchèque s'adapte bien aux différentes surfaces et possède un jeu offensif avec de belles frappes de fond de court, mais la terre battue romaine ralentit le jeu et favorise les échanges prolongés. Historiquement, les matchs sur terre battue entre joueurs de ce calibre tendent à produire des échanges plus longs, notamment au service où les retours sont plus difficiles à conclure rapidement. Les récents matchs de Mensik (1-2 contre Zverev en trois sets serrés) et de Popyrin (2-1 contre Kypson, 1-2 contre Tiafoe) suggèrent une tendance aux matchs en trois sets avec un nombre élevé de jeux disputés. Sur cette surface, un total dépassant 22.5 jeux semble probable étant donné le style des deux joueurs et l'incertitude du rapport de force.",
@@ -5444,7 +4973,7 @@
               "cotes": {
                 "domicile": 1.01,
                 "nul": null,
-                "exterieur": 27
+                "exterieur": 28
               },
               "pick_category": "ou",
               "analyse": "Jannik Sinner, numéro 1 mondial et tenant du titre à Rome, traverse une forme écrasante : cinq victoires en 2-0 lors de ses cinq derniers matchs à Madrid, dont des succès contre Zverev, Alcaraz et Fils. Sa domination sur terre battue en 2026 est sans discussion, il s'impose avec une régularité mécanique. Sebastian Ofner, 90e mondial environ, présente une forme plus irrégulière : il a certes battu Michelsen à Rome et Wawrinka à Barcelone, mais il a été sorti en 3 sets par Hijikata et battu sèchement par Etcheverry et De Minaur sur cette même surface. La différence de niveau est abyssale : Sinner a remporté ses cinq dernières victoires sans concéder un seul set, tandis qu'Ofner peine contre des joueurs de second rang. Sur terre battue, surface où Sinner est particulièrement dominant, un score 2-0 avec un faible nombre de jeux totaux est très probable. Le marché 'Moins de 19.5 jeux' à 1.33 reflète bien cette réalité : Sinner expédie régulièrement ses adversaires inférieurs en 12 à 18 jeux.",
@@ -6020,9 +5549,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.84,
               "cotes": {
-                "domicile": 2.36,
+                "domicile": 2.34,
                 "nul": null,
-                "exterieur": 1.62
+                "exterieur": 1.63
               },
               "pick_category": "ou",
               "analyse": "Le H2H récent est particulièrement parlant : Norrie a battu Tirante 2-0 à Madrid il y a seulement deux semaines, démontrant une supériorité nette sur terre battue. Norrie affiche une forme solide sur ocre cette saison, avec des victoires sur Wawrinka, Quinn, Kecmanovic et Machac (en trois sets pour certains), même s'il a subi des défaites contre Jodar et De Minaur. Tirante, lui, présente un bilan plus irrégulier : victoires sur Paul et Bautista-Agut à Madrid, mais élimination rapide à Houston contre Burruchaga. Sur terre battue à Rome, le style défensif-régulier de Norrie est particulièrement adapté, et son récent 2-0 contre Tirante dans la même ville (Madrid, même surface) renforce la confiance. Cependant, ces deux joueurs ont tendance à disputer des matchs longs : leur confrontation à Madrid s'est jouée en 3 sets, et Norrie enchaîne régulièrement des rencontres en 3 sets ces dernières semaines (Machac 2-1, Kecmanovic 2-1, De Minaur 1-2, Wawrinka 2-1). On peut ainsi s'attendre à un match disputé dépassant les 22.5 jeux, Tirante n'étant pas du genre à céder sans résistance sur ocre.",
@@ -6595,9 +6124,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.86,
               "cotes": {
-                "domicile": 1.37,
+                "domicile": 1.38,
                 "nul": null,
-                "exterieur": 3.22
+                "exterieur": 3.17
               },
               "pick_category": "ou",
               "analyse": "Belinda Bencic présente une forme solide sur terre battue en ce début de saison 2026 : victoire nette 2-0 contre Andreescu à Rome, et plusieurs succès convaincants à Madrid (2-0 contre Shnaider, 2-0 contre Marcinko). Elle a certes perdu face à Baptiste (1-2) et Noskova (1-2), mais ses matchs se terminent souvent en deux sets, dans un sens comme dans l'autre. Kalinskaya, de son côté, affiche une forme irrégulière : après deux victoires en deux sets (Badosa, Tomova), elle a enchaîné deux défaites sèches 0-2 contre Galfi et Jovic, avant de battre Siniakova 2-1 à Rome. Sur terre battue, la surface favorise les échanges longs et les renversements de situation, ce qui tend à allonger les matchs. Bencic est clairement favorite dans ce tournoi romain, mais Kalinskaya a les moyens de prendre un set, comme elle vient de le montrer contre Siniakova. On peut donc anticiper un déroulé en deux sets serrés ou un set arraché par la Russe, menant le total à dépasser 20.5 jeux, seuil raisonnable compte tenu des profils des deux joueuses.",
@@ -6924,9 +6453,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.44,
               "cotes": {
-                "domicile": 1.1,
+                "domicile": 1.09,
                 "nul": null,
-                "exterieur": 7.33
+                "exterieur": 8.05
               },
               "pick_category": "ou",
               "analyse": "Cori Gauff et Sofia Sierra se retrouvent à Rome dans ce qui s'annonce comme un duel entre deux joueuses en forme sur terre battue. Gauff a débuté le tournoi par une victoire nette 2-0 contre Valentova, confirmant sa solidité sur ocre après un début de saison chargé (victoire contre Samsonova, Cirstea, Jeanjean à Madrid avant de tomber contre Noskova). Sierra, de son côté, est impressionnante cette semaine : deux victoires 2-0 contre Korpatsch puis Kalinina, et un parcours solide à Madrid (trois victoires dont une contre Frech et Yastremska en 2-0). Le niveau entre les deux est clairement différent : Gauff est une top 5 mondiale, habituée aux grands tournois WTA, tandis que Sierra est une joueuse de moyenne gamme dont les victoires récentes sont face à des adversaires de moindre rang. Sur terre battue, les échanges s'allongent naturellement et les deux joueuses ont tendance à disputer des matchs relativement complets — Sierra en particulier a livré un match en 3 sets contre Sonmez et Pliskova à Madrid. Un score de 2-1 en faveur de Gauff est tout à fait plausible, mais la victoire sèche 2-0 reste le scénario le plus probable compte tenu du différentiel de niveau.",
@@ -7247,7 +6776,7 @@
               "pari": "Victoire en 2-0 (Andreeva)",
               "cote_retenue": 1.23,
               "cotes": {
-                "domicile": 15,
+                "domicile": 16,
                 "nul": null,
                 "exterieur": 1.02
               },
@@ -8896,9 +8425,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.83,
               "cotes": {
-                "domicile": 1.5,
+                "domicile": 1.49,
                 "nul": null,
-                "exterieur": 2.67
+                "exterieur": 2.7
               },
               "pick_category": "ou",
               "analyse": "Zheng Qinwen aborde ce quart de finale romaine en très bonne forme : elle a battu Bucsa (2-0) puis Bondar (2-1) cette semaine à Rome, confirmant sa régularité sur terre battue. Ostapenko, de son côté, a remporté ses deux premiers tours à Rome contre Stefanini (2-0) et Ruse (2-1), mais elle a perdu contre cette même Ruse à Linz en avril — signe d'une irrégularité chronique. Le style d'Ostapenko, basé sur des coups gagnants à risque élevé, génère naturellement beaucoup de jeux disputés sur terre battue, une surface qui ralentit la balle et favorise les échanges longs. Zheng est une joueuse puissante qui n'offre pas facilement ses mises en jeu, et les deux joueuses ont tendance à produire des matchs en trois sets (Ostapenko 3-1 en trois sets lors de ses 4 derniers matchs). Le total de jeux devrait donc dépasser la barre des 20.5, la surface argileuse romaine amplifiant les rebonds et réduisant l'efficacité des coups directs d'Ostapenko.",
@@ -9221,362 +8750,6 @@
     "rBg8efLH"
   ],
   "history": [
-    {
-      "event_id": "xGIWVBtI",
-      "flashscore_id": "xGIWVBtI",
-      "flashscore_sport_id": 1,
-      "home_team_id": "Ig1f1fy3",
-      "away_team_id": "v9k3aY5F",
-      "tournament_id": "8uyeqfid",
-      "tournament_url": "/football/germany/bundesliga/",
-      "sport_key": "flashscore_football_bundes",
-      "commence_time": "2026-04-18T13:30:00.000Z",
-      "time_display": "Sam. 15h30",
-      "home": "Werder Bremen",
-      "away": "Hamburger SV",
-      "match": "Werder Bremen vs Hamburger SV",
-      "prono": "win-home",
-      "pari": "Les deux équipes marquent - Oui",
-      "cote_retenue": 1.62,
-      "cotes": {
-        "domicile": 1.8,
-        "nul": 3.86,
-        "exterieur": 4.63
-      },
-      "pick_category": "btts",
-      "analyse": "Werder Bremen traverse une période de résultats mitigés : défaite 3-1 à Cologne et 1-2 face à Leipzig lors des deux dernières journées, après une belle victoire 4-1 contre Union Berlin début mars. À domicile, les Bremer restent sur un bilan contrasté avec une victoire contre Heidenheim (2-0) mais une défaite contre Mainz (0-2). Hambourg est en difficulté chronique : une seule victoire sur les 7 derniers matchs (1-2 à Wolfsburg), avec notamment une déroute 4-0 à Stuttgart et des revers contre Dortmund (3-2), Leipzig (2-1) et Leverkusen (0-1). Le HSV encaisse facilement et ne parvient pas à s'imposer contre des équipes de milieu/haut de tableau. Dans ce derby de Bundesliga à l'Weserstadion, Brême joue devant ses supporters avec un avantage territorial certain, et face à un HSV en manque de solidité défensive (9 buts encaissés sur les 5 derniers matchs). Les deux équipes semblent capables de marquer mais les défenses sont poreuses, ce qui plaide pour les buts.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "3-1",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776007800,
-            "tournament": "BUN",
-            "home": "Stuttgart",
-            "away": "Hamburger SV",
-            "score": "4-0"
-          },
-          {
-            "timestamp": 1776000600,
-            "tournament": "BUN",
-            "home": "FC Koln",
-            "away": "Werder Bremen",
-            "score": "3-1"
-          },
-          {
-            "timestamp": 1775309400,
-            "tournament": "BUN",
-            "home": "Werder Bremen",
-            "away": "RB Leipzig",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775309400,
-            "tournament": "BUN",
-            "home": "Hamburger SV",
-            "away": "Augsburg",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1774114200,
-            "tournament": "BUN",
-            "home": "Dortmund",
-            "away": "Hamburger SV",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1774103400,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Werder Bremen",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1773585000,
-            "tournament": "BUN",
-            "home": "Werder Bremen",
-            "away": "Mainz",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1773509400,
-            "tournament": "BUN",
-            "home": "Hamburger SV",
-            "away": "FC Koln",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1772987400,
-            "tournament": "BUN",
-            "home": "Union Berlin",
-            "away": "Werder Bremen",
-            "score": "1-4"
-          },
-          {
-            "timestamp": 1772893800,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Hamburger SV",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1772652600,
-            "tournament": "BUN",
-            "home": "Hamburger SV",
-            "away": "Bayer Leverkusen",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1772389800,
-            "tournament": "BUN",
-            "home": "Hamburger SV",
-            "away": "RB Leipzig",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1772289000,
-            "tournament": "BUN",
-            "home": "Werder Bremen",
-            "away": "Heidenheim",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1771777800,
-            "tournament": "BUN",
-            "home": "St. Pauli",
-            "away": "Werder Bremen",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1771615800,
-            "tournament": "BUN",
-            "home": "Mainz",
-            "away": "Hamburger SV",
-            "score": "1-1"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.95,
-          "draw": 3.6,
-          "away": 3.73
-        },
-        "double_chance": {
-          "12": 1.29,
-          "1X": 1.27,
-          "X2": 1.8
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.22,
-            "under": 4.1
-          },
-          "2.5": {
-            "over": 1.71,
-            "under": 2.1
-          },
-          "3.5": {
-            "over": 2.75,
-            "under": 1.41
-          }
-        },
-        "btts": {
-          "yes": 1.62,
-          "no": 2.2
-        },
-        "draw_no_bet": {
-          "home": 1.42,
-          "away": 2.65
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-18T16:07:27.694Z"
-    },
-    {
-      "event_id": "Mwiklgdn",
-      "flashscore_id": "Mwiklgdn",
-      "flashscore_sport_id": 1,
-      "home_team_id": "pzHW4oaE",
-      "away_team_id": "nwkTahLL",
-      "tournament_id": "8uyeqfid",
-      "tournament_url": "/football/germany/bundesliga/",
-      "sport_key": "flashscore_football_bundes",
-      "commence_time": "2026-04-18T13:30:00.000Z",
-      "time_display": "Sam. 15h30",
-      "home": "Union Berlin",
-      "away": "Wolfsburg",
-      "match": "Union Berlin vs Wolfsburg",
-      "prono": "win-home",
-      "pari": "Moins de 3.5 buts",
-      "cote_retenue": 1.34,
-      "cotes": {
-        "domicile": 2.18,
-        "nul": 3.8,
-        "exterieur": 3.24
-      },
-      "pick_category": "ou",
-      "analyse": "Union Berlin traverse une période de résultats très irréguliers : défaite 3-1 à Heidenheim, nul 1-1 face à St. Pauli, lourde défaite 4-0 à Munich, mais aussi une victoire surprise 1-0 contre le Bayer Leverkusen et un succès 1-0 à Freiburg. La tendance globale est à des matchs serrés et peu prolifiques chez les Berlinois, avec seulement 6 buts marqués sur les 7 derniers matchs. Du côté de Wolfsburg, la forme est catastrophique : 6 défaites sur les 7 derniers matchs, dont des humiliations à domicile (6-3 contre Leverkusen, 4-0 contre Stuttgart), concédant en moyenne plus de 2,5 buts par rencontre. Cependant, Wolfsburg peine aussi à marquer, souvent réduit à peu de buts offensifs dans ces matchs. Les deux équipes n'évoluent pas dans un registre offensif expansif, et les confrontations récentes de ces deux équipes suggèrent une tendance aux scores modérés. Avec une équipe d'Union Berlin peu prolifique à domicile et un Wolfsburg en crise profonde mais peu susceptible de s'exposer totalement, un match restant sous les 3,5 buts semble le scénario le plus probable.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1775914200,
-            "tournament": "BUN",
-            "home": "Heidenheim",
-            "away": "Union Berlin",
-            "score": "3-1"
-          },
-          {
-            "timestamp": 1775914200,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Eintracht Frankfurt",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775395800,
-            "tournament": "BUN",
-            "home": "Union Berlin",
-            "away": "St. Pauli",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1775309400,
-            "tournament": "BUN",
-            "home": "Bayer Leverkusen",
-            "away": "Wolfsburg",
-            "score": "6-3"
-          },
-          {
-            "timestamp": 1774103400,
-            "tournament": "BUN",
-            "home": "Bayern Munich",
-            "away": "Union Berlin",
-            "score": "4-0"
-          },
-          {
-            "timestamp": 1774103400,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Werder Bremen",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1773592200,
-            "tournament": "BUN",
-            "home": "Freiburg",
-            "away": "Union Berlin",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1773498600,
-            "tournament": "BUN",
-            "home": "Hoffenheim",
-            "away": "Wolfsburg",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1772987400,
-            "tournament": "BUN",
-            "home": "Union Berlin",
-            "away": "Werder Bremen",
-            "score": "1-4"
-          },
-          {
-            "timestamp": 1772893800,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Hamburger SV",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1772375400,
-            "tournament": "BUN",
-            "home": "Stuttgart",
-            "away": "Wolfsburg",
-            "score": "4-0"
-          },
-          {
-            "timestamp": 1772289000,
-            "tournament": "BUN",
-            "home": "B. Monchengladbach",
-            "away": "Union Berlin",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1771684200,
-            "tournament": "BUN",
-            "home": "Union Berlin",
-            "away": "Bayer Leverkusen",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1771684200,
-            "tournament": "BUN",
-            "home": "Wolfsburg",
-            "away": "Augsburg",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1771173000,
-            "tournament": "BUN",
-            "home": "RB Leipzig",
-            "away": "Wolfsburg",
-            "score": "2-2"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.15,
-          "draw": 3.55,
-          "away": 3.25
-        },
-        "double_chance": {
-          "12": 1.29,
-          "1X": 1.33,
-          "X2": 1.67
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.25,
-            "under": 3.67
-          },
-          "2.5": {
-            "over": 1.86,
-            "under": 1.92
-          },
-          "3.5": {
-            "over": 3.1,
-            "under": 1.34
-          }
-        },
-        "btts": {
-          "yes": 1.69,
-          "no": 2.11
-        },
-        "draw_no_bet": {
-          "home": 1.57,
-          "away": 2.25
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Bundesliga",
-      "archived_at": "2026-04-18T16:07:27.694Z"
-    },
     {
       "event_id": "jJr6pBeB",
       "flashscore_id": "jJr6pBeB",
@@ -142068,6 +141241,482 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rome (Italy)",
       "archived_at": "2026-05-08T23:42:01.171Z"
+    },
+    {
+      "event_id": "djwtpcnJ",
+      "flashscore_id": "djwtpcnJ",
+      "flashscore_sport_id": 3,
+      "home_team_id": "vwRW2QSh",
+      "away_team_id": "WCNO4nbt",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-08T23:00:00.000Z",
+      "time_display": "Sam. 01h00",
+      "home": "Philadelphia 76ers",
+      "away": "New York Knicks",
+      "match": "Philadelphia 76ers vs New York Knicks",
+      "prono": "win-home",
+      "pari": "Plus de 213.5 points",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.61,
+        "nul": null,
+        "exterieur": 2.52
+      },
+      "pick_category": "ou",
+      "analyse": "Les deux équipes se retrouvent pour le troisième match de leur série de playoffs, après deux victoires consécutives des Knicks : 108-102 puis 137-98, soit un écart cumulé de 45 points sur deux matchs. Philadelphia a tout de même montré de la résistance contre Boston en remportant trois des cinq derniers matchs de leur série (113-97, 113-97, 109-100), ce qui témoigne d'une certaine capacité à répondre dans l'adversité. Cependant, New York domine clairement cette série et a écrasé Atlanta 140-89 puis 126-97, affichant une attaque de playoff très efficace. Le rythme de jeu est élevé chez les Knicks, avec plusieurs totaux dépassant les 210 points dans ces récents playoffs. Le choc de cette série suggère que Philadelphie, dos au mur, cherchera à ralentir le jeu, mais New York a le talent offensif pour imposer son tempo. Compte tenu des totaux récents (210, 205, 203 dans la série Phila-Boston, mais 237 et 223 dans les matchs Knicks-Hawks), la ligne 213.5 semble bien calibrée, avec un léger avantage pour l'over grâce à la puissance offensive des Knicks.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "94-108",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778108400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "108-102"
+          },
+          {
+            "timestamp": 1777939200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "137-98"
+          },
+          {
+            "timestamp": 1777764600,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "100-109"
+          },
+          {
+            "timestamp": 1777593600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "106-93"
+          },
+          {
+            "timestamp": 1777590000,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "89-140"
+          },
+          {
+            "timestamp": 1777420800,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Atlanta Hawks",
+            "score": "126-97"
+          },
+          {
+            "timestamp": 1777417200,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "97-113"
+          },
+          {
+            "timestamp": 1777244400,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "96-128"
+          },
+          {
+            "timestamp": 1777154400,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "98-114"
+          },
+          {
+            "timestamp": 1777071600,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "Boston Celtics",
+            "score": "100-108"
+          },
+          {
+            "timestamp": 1776985200,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "109-108"
+          },
+          {
+            "timestamp": 1776812400,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "97-111"
+          },
+          {
+            "timestamp": 1776729600,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Atlanta Hawks",
+            "score": "106-107"
+          },
+          {
+            "timestamp": 1776618000,
+            "tournament": "NBA",
+            "home": "Boston Celtics",
+            "away": "Philadelphia 76ers",
+            "score": "123-91"
+          },
+          {
+            "timestamp": 1776549600,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Atlanta Hawks",
+            "score": "113-102"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "213.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "214.5": {
+            "over": 1.96,
+            "under": 1.8
+          },
+          "209.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "210.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "211.5": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "212.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "215.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "216.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "217.5": {
+            "over": 2.2,
+            "under": 1.62
+          }
+        },
+        "handicap": {
+          "1.0": {
+            "home": 1.8,
+            "away": 1.9
+          },
+          "-1.0": {
+            "home": 1.9,
+            "away": 1.91
+          },
+          "1.5": {
+            "home": 1.77,
+            "away": 1.9
+          },
+          "-1.5": {
+            "home": 1.9,
+            "away": 1.94
+          },
+          "2.5": {
+            "home": 1.62,
+            "away": 1.73
+          },
+          "-2.5": {
+            "home": 2,
+            "away": 2.2
+          },
+          "3.5": {
+            "home": 1.6,
+            "away": 1.62
+          },
+          "-3.5": {
+            "home": 2.2,
+            "away": 2.25
+          },
+          "4.5": {
+            "away": 1.53
+          },
+          "-4.5": {
+            "home": 2.38
+          },
+          "5.5": {
+            "away": 1.5
+          },
+          "-5.5": {
+            "home": 2.5
+          },
+          "6.5": {
+            "away": 1.4
+          },
+          "-6.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-09T07:21:08.183Z"
+    },
+    {
+      "event_id": "Gz6nfXBd",
+      "flashscore_id": "Gz6nfXBd",
+      "flashscore_sport_id": 3,
+      "home_team_id": "KjBIVQcI",
+      "away_team_id": "IwmkErSH",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-09T01:30:00.000Z",
+      "time_display": "Sam. 03h30",
+      "home": "Minnesota Timberwolves",
+      "away": "San Antonio Spurs",
+      "match": "Minnesota Timberwolves vs San Antonio Spurs",
+      "prono": "win-home",
+      "pari": "Moins de 212.5 points",
+      "cote_retenue": 2.3,
+      "cotes": {
+        "domicile": 2.85,
+        "nul": null,
+        "exterieur": 1.5
+      },
+      "pick_category": "ou",
+      "analyse": "Ce match oppose deux équipes qui se retrouvent pour un troisième affrontement en quelques jours, après deux rencontres aux résultats très contrastés. San Antonio a d'abord écrasé Minnesota 133-95 le 7 mai, un match au total de 228 points, avant que les Wolves n'arrachent une victoire serrée 104-102 deux jours plus tôt (105 points au total). En dehors du H2H, Minnesota affiche une défense solide sur sa série contre Denver : 110-98, 112-96, 113-96, 119-114 — des scores maîtrisés qui indiquent un jeu contrôlé et peu propice aux shootouts. San Antonio, de son côté, alterne entre des victoires très larges contre Portland (114-95, 120-108, 111-98) et des matchs plus serrés. La médiane des cinq derniers matchs impliquant ces deux équipes tourne autour de 210-215 points hors la rencontre anomalique du 7 mai. Compte tenu du style défensif récurrent de Minnesota et du fait que les matchs tendus entre ces deux équipes restent sous les 210 points, la ligne des 212.5 représente une opportunité intéressante à jouer sous.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "108-115",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778117400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "133-95"
+          },
+          {
+            "timestamp": 1777944600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "102-104"
+          },
+          {
+            "timestamp": 1777599000,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "110-98"
+          },
+          {
+            "timestamp": 1777426200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "114-95"
+          },
+          {
+            "timestamp": 1777343400,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "125-113"
+          },
+          {
+            "timestamp": 1777231800,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "San Antonio Spurs",
+            "score": "93-114"
+          },
+          {
+            "timestamp": 1777163400,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "112-96"
+          },
+          {
+            "timestamp": 1777084200,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "San Antonio Spurs",
+            "score": "108-120"
+          },
+          {
+            "timestamp": 1776994200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "113-96"
+          },
+          {
+            "timestamp": 1776816000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "103-106"
+          },
+          {
+            "timestamp": 1776738600,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "114-119"
+          },
+          {
+            "timestamp": 1776646800,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "111-98"
+          },
+          {
+            "timestamp": 1776540600,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "116-105"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "New Orleans Pelicans",
+            "score": "132-126"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Denver Nuggets",
+            "score": "118-128"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "216.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "212.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "213.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "214.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "215.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "217.5": {
+            "over": 2,
+            "under": 1.8
+          },
+          "218.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "219.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "220.5": {
+            "over": 2.2,
+            "under": 1.62
+          }
+        },
+        "handicap": {
+          "3.5": {
+            "home": 1.95
+          },
+          "-3.5": {
+            "away": 1.81
+          },
+          "4.5": {
+            "home": 1.9
+          },
+          "-4.5": {
+            "away": 1.9
+          },
+          "1.5": {
+            "home": 2.38
+          },
+          "-1.5": {
+            "away": 1.53
+          },
+          "2.5": {
+            "home": 2.2
+          },
+          "-2.5": {
+            "away": 1.62
+          },
+          "5.5": {
+            "home": 1.7
+          },
+          "-5.5": {
+            "away": 2.05
+          },
+          "6.5": {
+            "home": 1.6
+          },
+          "-6.5": {
+            "away": 2.25
+          },
+          "7.5": {
+            "home": 1.5
+          },
+          "-7.5": {
+            "away": 2.5
+          },
+          "8.5": {
+            "home": 1.4
+          },
+          "-8.5": {
+            "away": 2.75
+          },
+          "9.5": {
+            "home": 1.4
+          },
+          "-9.5": {
+            "away": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-09T07:21:08.183Z"
     }
   ],
   "combos": [
