@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-10T23:36:07.961Z",
+    "last_results_update": "2026-05-11T11:45:17.933Z",
     "analyses_written_at": "2026-05-10T10:13:08.862Z",
     "analyses_cost_usd": 0.2377,
-    "last_hourly_refresh": "2026-05-10T23:36:07.961Z"
+    "last_hourly_refresh": "2026-05-11T11:45:17.933Z"
   },
   "sports": {
     "foot": {
@@ -1837,245 +1837,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "8r8XHz43",
-              "flashscore_id": "8r8XHz43",
-              "flashscore_sport_id": 3,
-              "home_team_id": "KjBIVQcI",
-              "away_team_id": "IwmkErSH",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-10T23:30:00.000Z",
-              "time_display": "Lun. 01h30",
-              "home": "Minnesota Timberwolves",
-              "away": "San Antonio Spurs",
-              "match": "Minnesota Timberwolves vs San Antonio Spurs",
-              "prono": "win-home",
-              "pari": "Moins de 218.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 2.68,
-                "nul": null,
-                "exterieur": 1.55
-              },
-              "pick_category": "ou",
-              "analyse": "Cette série entre Minnesota et San Antonio s'avère extrêmement disputée : les Wolves ont gagné le match 3 (104-102), puis les Spurs ont dominé massivement le match 4 (133-95), et San Antonio a pris l'avantage au match 5 (115-108). Sur les trois confrontations directes récentes, les totaux affichés sont 206, 228 et 221 points — une grande variabilité mais une tendance à des matchs denses en playoffs. Minnesota a montré une attaque efficace contre Denver (132-126, 119-114, 113-96) mais peut aussi jouer défensivement (96, 96, 95 accordés). San Antonio, emmené par Victor Wembanyama, alterne entre performances explosives (133 points) et matchs serrés sous les 110. Le match 4 à 228 points (133-95) est un outlier ; les matchs 3 et 5 ont produit 206 et 223 points — la moyenne des 3 H2H tourne autour de 219 points. Avec la pression des playoffs et les deux équipes défensives capables de serrer le jeu, jouer sous 218.5 offre une valeur intéressante, le total ne dépassant 218 que dans un des trois duels récents si l'on exclut l'outlier.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778290200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "108-115"
-                  },
-                  {
-                    "timestamp": 1778117400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "133-95"
-                  },
-                  {
-                    "timestamp": 1777944600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "102-104"
-                  },
-                  {
-                    "timestamp": 1777599000,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "110-98"
-                  },
-                  {
-                    "timestamp": 1777426200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "114-95"
-                  },
-                  {
-                    "timestamp": 1777343400,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "125-113"
-                  },
-                  {
-                    "timestamp": 1777231800,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "San Antonio Spurs",
-                    "score": "93-114"
-                  },
-                  {
-                    "timestamp": 1777163400,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "112-96"
-                  },
-                  {
-                    "timestamp": 1777084200,
-                    "tournament": "NBA",
-                    "home": "Portland Trail Blazers",
-                    "away": "San Antonio Spurs",
-                    "score": "108-120"
-                  },
-                  {
-                    "timestamp": 1776994200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "Denver Nuggets",
-                    "score": "113-96"
-                  },
-                  {
-                    "timestamp": 1776816000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "103-106"
-                  },
-                  {
-                    "timestamp": 1776738600,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "114-119"
-                  },
-                  {
-                    "timestamp": 1776646800,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "111-98"
-                  },
-                  {
-                    "timestamp": 1776540600,
-                    "tournament": "NBA",
-                    "home": "Denver Nuggets",
-                    "away": "Minnesota Timberwolves",
-                    "score": "116-105"
-                  },
-                  {
-                    "timestamp": 1776040200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "New Orleans Pelicans",
-                    "score": "132-126"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "215.5": {
-                    "over": 1.75,
-                    "under": 1.97
-                  },
-                  "216.5": {
-                    "over": 1.77,
-                    "under": 1.94
-                  },
-                  "217.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "218.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "214.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "219.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "220.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "221.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "222.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "4.5": {
-                    "home": 1.9
-                  },
-                  "-4.5": {
-                    "away": 1.9
-                  },
-                  "1.5": {
-                    "home": 2.25
-                  },
-                  "-1.5": {
-                    "away": 1.6
-                  },
-                  "2.5": {
-                    "home": 2.05
-                  },
-                  "-2.5": {
-                    "away": 1.7
-                  },
-                  "3.5": {
-                    "home": 2
-                  },
-                  "-3.5": {
-                    "away": 1.73
-                  },
-                  "5.5": {
-                    "home": 1.7
-                  },
-                  "-5.5": {
-                    "away": 2.05
-                  },
-                  "6.5": {
-                    "home": 1.6
-                  },
-                  "-6.5": {
-                    "away": 2.25
-                  },
-                  "7.5": {
-                    "home": 1.53
-                  },
-                  "-7.5": {
-                    "away": 2.38
-                  },
-                  "8.5": {
-                    "home": 1.5
-                  },
-                  "-8.5": {
-                    "away": 2.5
-                  },
-                  "9.5": {
-                    "home": 1.4
-                  },
-                  "-9.5": {
-                    "away": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -2266,305 +2028,6 @@
           "panel_title": "🎾 ATP Rome (Italy)",
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
-            {
-              "event_id": "jLMn6FyI",
-              "flashscore_id": "jLMn6FyI",
-              "flashscore_sport_id": 2,
-              "home_team_id": "M9pojLqi",
-              "away_team_id": "AoOnGZEp",
-              "tournament_id": "ibvebhik",
-              "tournament_url": "/tennis/atp-singles/rome/",
-              "sport_key": "flashscore_tennis_atp_rome_italy",
-              "commence_time": "2026-05-11T09:00:00.000Z",
-              "time_display": "Lun. 11h00",
-              "home": "Bellucci M.",
-              "away": "Landaluce M.",
-              "match": "Bellucci M. vs Landaluce M.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.88,
-                "nul": null,
-                "exterieur": 1.96
-              },
-              "pick_category": "ou",
-              "analyse": "Bellucci et Landaluce se retrouvent dans un duel entre deux joueurs de niveau similaire sur la terre battue romaine, avec des formes récentes assez comparables. Bellucci vient de battre Etcheverry (1-2) et Burruchaga (0-2) à Rome, mais il alterne chaud et froid : défaites contre Dzumhur, Forejtek et Prizmic sur les semaines précédentes. Landaluce de son côté a battu Cilic (0-2) à Rome et O'Connell (2-0), mais a perdu contre Pellegrino (1-2), Quinn (1-2), Walton et Musetti récemment. Les deux joueurs perdent régulièrement en deux sets secs et remportent aussi des matchs en deux sets, ce qui laisse anticiper un match relativement compétitif avec potentiellement un troisième set. Sur terre battue, les échanges sont plus longs et les breaks plus difficiles à conclure, ce qui pousse naturellement le nombre de jeux à la hausse. Au vu du niveau équilibré des deux joueurs et de la surface, un total de jeux supérieur à 22.5 semble cohérent avec l'incertitude du match.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778330100,
-                    "tournament": "ROM",
-                    "home": "Etcheverry T. M.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778324100,
-                    "tournament": "ROM",
-                    "home": "Cilic M.",
-                    "away": "Landaluce M.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778156100,
-                    "tournament": "ROM",
-                    "home": "Burruchaga R. A.",
-                    "away": "Bellucci M.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777990500,
-                    "tournament": "ROM",
-                    "home": "Landaluce M.",
-                    "away": "Pellegrino A.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777900800,
-                    "tournament": "ROM",
-                    "home": "Landaluce M.",
-                    "away": "O'Connell C.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777557000,
-                    "tournament": "CAG",
-                    "home": "Bellucci M.",
-                    "away": "Cadenasso G.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777549800,
-                    "tournament": "AP",
-                    "home": "Landaluce M.",
-                    "away": "Quinn E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777476000,
-                    "tournament": "CAG",
-                    "home": "Sonego L.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777384500,
-                    "tournament": "AP",
-                    "home": "Jade D.",
-                    "away": "Landaluce M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776962700,
-                    "tournament": "MAD",
-                    "home": "Landaluce M.",
-                    "away": "Walton A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776855900,
-                    "tournament": "MAD",
-                    "home": "Dzumhur D.",
-                    "away": "Bellucci M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776165000,
-                    "tournament": "BAR",
-                    "home": "Landaluce M.",
-                    "away": "Musetti L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776161400,
-                    "tournament": "OEI",
-                    "home": "Forejtek J.",
-                    "away": "Bellucci M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775904300,
-                    "tournament": "MON",
-                    "home": "Bellucci M.",
-                    "away": "Prizmic D.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775898300,
-                    "tournament": "MON",
-                    "home": "Collignon R.",
-                    "away": "Landaluce M.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.14,
-                    "under": 4.4
-                  },
-                  "19.0": {
-                    "over": 1.16,
-                    "under": 4.1
-                  },
-                  "19.5": {
-                    "over": 1.28,
-                    "under": 3.28
-                  },
-                  "20.0": {
-                    "over": 1.31,
-                    "under": 2.97
-                  },
-                  "20.5": {
-                    "over": 1.46,
-                    "under": 2.6
-                  },
-                  "21.0": {
-                    "over": 1.47,
-                    "under": 2.46
-                  },
-                  "21.5": {
-                    "over": 1.58,
-                    "under": 2.27
-                  },
-                  "22.0": {
-                    "over": 1.67,
-                    "under": 2.11
-                  },
-                  "22.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "23.0": {
-                    "over": 1.91,
-                    "under": 1.81
-                  },
-                  "23.5": {
-                    "over": 2.03,
-                    "under": 1.73
-                  },
-                  "24.0": {
-                    "over": 2.03,
-                    "under": 1.68
-                  },
-                  "24.5": {
-                    "over": 2.08,
-                    "under": 1.67
-                  },
-                  "25.0": {
-                    "over": 2.15,
-                    "under": 1.58
-                  },
-                  "25.5": {
-                    "over": 2.25,
-                    "under": 1.56
-                  },
-                  "26.0": {
-                    "over": 2.38,
-                    "under": 1.46
-                  },
-                  "26.5": {
-                    "over": 2.53,
-                    "under": 1.46
-                  },
-                  "27.5": {
-                    "over": 2.88,
-                    "under": 1.4
-                  },
-                  "2.5": {
-                    "over": 2.23,
-                    "under": 1.62
-                  },
-                  "28.5": {
-                    "over": 3.2,
-                    "under": 1.33
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.34,
-                    "away": 1.36
-                  },
-                  "-1.5": {
-                    "home": 2.9,
-                    "away": 2.9
-                  },
-                  "0.0": {
-                    "home": 1.89,
-                    "away": 1.95
-                  },
-                  "0.5": {
-                    "home": 1.77,
-                    "away": 1.81
-                  },
-                  "-0.5": {
-                    "home": 1.9,
-                    "away": 1.98
-                  },
-                  "1.0": {
-                    "home": 1.7,
-                    "away": 1.76
-                  },
-                  "-1.0": {
-                    "home": 1.97,
-                    "away": 2.05
-                  },
-                  "2.0": {
-                    "home": 1.57,
-                    "away": 1.61
-                  },
-                  "-2.0": {
-                    "home": 2.2,
-                    "away": 2.28
-                  },
-                  "2.5": {
-                    "home": 1.52,
-                    "away": 1.56
-                  },
-                  "-2.5": {
-                    "home": 2.33,
-                    "away": 2.42
-                  },
-                  "3.0": {
-                    "home": 1.4,
-                    "away": 1.44
-                  },
-                  "-3.0": {
-                    "home": 2.62,
-                    "away": 2.77
-                  },
-                  "3.5": {
-                    "home": 1.35,
-                    "away": 1.4
-                  },
-                  "-3.5": {
-                    "home": 2.85,
-                    "away": 3.04
-                  },
-                  "4.0": {
-                    "away": 1.25
-                  },
-                  "-4.0": {
-                    "home": 3.62
-                  },
-                  "4.5": {
-                    "away": 1.22
-                  },
-                  "-4.5": {
-                    "home": 3.9
-                  }
-                }
-              }
-            },
             {
               "event_id": "OUfPPLk5",
               "flashscore_id": "OUfPPLk5",
@@ -2904,9 +2367,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.97,
               "cotes": {
-                "domicile": 2.98,
+                "domicile": 2.93,
                 "nul": null,
-                "exterieur": 1.42
+                "exterieur": 1.43
               },
               "pick_category": "ou",
               "analyse": "Llamas Ruiz, qualifié espagnol issu des qualifications ou des bas du tableau, réalise un parcours solide à Rome avec quatre victoires consécutives (Quinn, Faria, Rocha en sets, Moutet). Il évolue sur sa surface de prédilection — la terre battue — et semble en confiance, enchaînant les sets gagnés (2-0, 2-1) avec une belle régularité. Medvedev, lui, n'a pas terminé son dernier match à Rome (score null vs Machac, probablement un abandon ou un retrait), et avant cela il avait perdu contre Cobolli à Madrid 1-2. Son bilan récent est mitigé avec une défaite en trois sets contre Cobolli et des victoires laborieuses contre des adversaires plus faibles. Sur terre battue, Medvedev reste structurellement moins à l'aise : son jeu de fond de court puissant mais plat souffre de la lenteur de la surface, et son irrégularité physique cette saison est préoccupante. Face à un Llamas Ruiz en pleine forme sur terre battue, un match en trois sets est tout à fait envisageable, ce qui pousse vers un total de jeux élevé. Le handicap à -3.5 jeux en faveur de Medvedev à 1.89 offre une valeur intéressante, mais le total de jeux 'Plus de 22.5' à 1.97 reflète mieux l'incertitude du match avec un Espagnol capable de tenir le score.",
@@ -3225,16 +2688,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.86,
               "cotes": {
-                "domicile": 1.55,
+                "domicile": 1.69,
                 "nul": null,
-                "exterieur": 2.52
+                "exterieur": 2.21
               },
               "pick_category": "ou",
               "analyse": "Nakashima s'impose comme le favori clair de ce duel à Rome : il vient de battre Bautista-Agut 2-0 au premier tour, confirmant une bonne maîtrise sur terre battue cette semaine. Basilashvili traverse une saison en dents de scie : s'il enchaîne les victoires à Rome (Hijikata 2-0, Moller 2-1, Merida 2-1, Shelton 2-1), plusieurs de ses matchs récents se sont joués en trois sets, signe d'une certaine irrégularité. Nakashima, joueur de fond de court puissant et régulier, devrait imposer un tennis sobre et efficace face à un Basilashvili capable de coups d'éclat mais aussi d'erreurs directes en série. Sur terre battue, les échanges tendent à s'allonger, favorisant des totaux de jeux élevés, et au vu des profils des deux joueurs (Basilashvili souvent impliqué dans des matchs en trois sets, Nakashima pouvant tenir tête facilement), un total de plus de 22.5 jeux paraît logique. Les quatre derniers matchs de Basilashvili à Rome ont tous dépassé ce seuil, et Nakashima n'est pas du genre à expédier les affaires.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -3538,9 +3001,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.89,
               "cotes": {
-                "domicile": 2.24,
+                "domicile": 2.16,
                 "nul": null,
-                "exterieur": 1.68
+                "exterieur": 1.73
               },
               "pick_category": "ou",
               "analyse": "Deux joueurs en excellente forme sur terre battue se retrouvent à Rome dans ce qui promet d'être un duel serré et accrochée. Navone a éliminé Shapovalov (2-0) puis Auger-Aliassime (2-0) cette semaine à Rome, affichant une solidité remarquable depuis le fond du court. Medjedovic, de son côté, a enchaîné une victoire convaincante contre Royer (2-0) puis a battu Fonseca en trois sets (2-1) lors de ce même tournoi, après une semaine solide à Barcelone où il avait atteint les quarts. Les deux joueurs sont des terrassiens typiques, adeptes des échanges longs et des rallyes épuisants, ce qui favorise des sets disputés et des scores serrés. Leurs récentes sorties combinées montrent plusieurs matchs en trois sets (Navone contre Merida, Zverev ; Medjedovic contre Halys, Fonseca), signe que ni l'un ni l'autre ne capitule facilement. Sur la terre battue de Rome, les services sont moins dominants et les échanges plus longs, poussant naturellement vers des totaux de jeux élevés. Un total supérieur à 22.5 jeux semble très probable au vu de leurs profils défensifs et de leur combativité commune.",
@@ -3832,309 +3295,6 @@
               }
             },
             {
-              "event_id": "nZpuWsfl",
-              "flashscore_id": "nZpuWsfl",
-              "flashscore_sport_id": 2,
-              "home_team_id": "AeAn4gP0",
-              "away_team_id": "0zQXLfz4",
-              "tournament_id": "ibvebhik",
-              "tournament_url": "/tennis/atp-singles/rome/",
-              "sport_key": "flashscore_tennis_atp_rome_italy",
-              "commence_time": "2026-05-11T09:00:00.000Z",
-              "time_display": "Lun. 11h00",
-              "home": "Rublev A.",
-              "away": "Davidovich Fokina A.",
-              "match": "Rublev A. vs Davidovich Fokina A.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 1.89,
-              "cotes": {
-                "domicile": 1.66,
-                "nul": null,
-                "exterieur": 2.28
-              },
-              "pick_category": "ou",
-              "analyse": "Sur terre battue à Rome, Rublev aborde ce match avec une dynamique en demi-teinte : il a certes dominé Kecmanovic 2-0 au premier tour, mais il reste sur des défaites face à Kopriva (Madrid) et Bergs (Monte-Carlo), deux joueurs bien en deçà de son niveau habituel. Davidovich Fokina, lui, vient de s'imposer nettement face à Garin 2-0 à Rome et avait battu Carreno-Busta à Madrid, montrant une bonne adaptation à la saison sur terre. La terre battue est la surface de prédilection de l'Espagnol, qui construit les points depuis le fond du court et force les longues séquences d'échange — ce qui allonge naturellement les matchs en termes de jeux. Rublev est un guerrier du fond de court qui ne lâche jamais facilement ses jeux de service, et ses matchs sur terre se terminent rarement en moins de 20 jeux. Avec deux joueurs de fond de court acharnés, dont un Rublev capable de se battre dans chaque set (victoire 2-1 face à Medjedovic à Barcelone) et un Davidovich Fokina habitué aux marathons, un total supérieur à 22.5 jeux semble largement justifié.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778328600,
-                    "tournament": "ROM",
-                    "home": "Garin C.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778317800,
-                    "tournament": "ROM",
-                    "home": "Rublev A.",
-                    "away": "Kecmanovic M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777281000,
-                    "tournament": "MAD",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Ruud C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777108200,
-                    "tournament": "MAD",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Carreno-Busta P.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777047600,
-                    "tournament": "MAD",
-                    "home": "Rublev A.",
-                    "away": "Kopriva V.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776607800,
-                    "tournament": "BAR",
-                    "home": "Rublev A.",
-                    "away": "Fils A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776512400,
-                    "tournament": "BAR",
-                    "home": "Rublev A.",
-                    "away": "Medjedovic H.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776424200,
-                    "tournament": "BAR",
-                    "home": "Machac T.",
-                    "away": "Rublev A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776339600,
-                    "tournament": "BAR",
-                    "home": "Sonego L.",
-                    "away": "Rublev A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776182400,
-                    "tournament": "BAR",
-                    "home": "Navone M.",
-                    "away": "Rublev A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775639400,
-                    "tournament": "MON",
-                    "home": "Rublev A.",
-                    "away": "Bergs Z.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1775466600,
-                    "tournament": "MON",
-                    "home": "Rublev A.",
-                    "away": "Borges N.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775304000,
-                    "tournament": "UTS",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Rublev A.",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1775227200,
-                    "tournament": "UTS",
-                    "home": "Rublev A.",
-                    "away": "Tsitsipas S.",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1774124400,
-                    "tournament": "MIA",
-                    "home": "Rublev A.",
-                    "away": "Tabilo A.",
-                    "score": "1-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.14,
-                    "under": 4.33
-                  },
-                  "19.0": {
-                    "over": 1.17,
-                    "under": 4.05
-                  },
-                  "19.5": {
-                    "over": 1.27,
-                    "under": 3.14
-                  },
-                  "20.0": {
-                    "over": 1.31,
-                    "under": 2.97
-                  },
-                  "20.5": {
-                    "over": 1.42,
-                    "under": 2.57
-                  },
-                  "21.0": {
-                    "over": 1.47,
-                    "under": 2.46
-                  },
-                  "21.5": {
-                    "over": 1.57,
-                    "under": 2.25
-                  },
-                  "22.0": {
-                    "over": 1.68,
-                    "under": 2.08
-                  },
-                  "22.5": {
-                    "over": 1.89,
-                    "under": 1.86
-                  },
-                  "23.0": {
-                    "over": 1.92,
-                    "under": 1.8
-                  },
-                  "23.5": {
-                    "over": 1.99,
-                    "under": 1.73
-                  },
-                  "24.0": {
-                    "over": 2.05,
-                    "under": 1.67
-                  },
-                  "24.5": {
-                    "over": 2.07,
-                    "under": 1.64
-                  },
-                  "25.0": {
-                    "over": 2.16,
-                    "under": 1.57
-                  },
-                  "25.5": {
-                    "over": 2.21,
-                    "under": 1.53
-                  },
-                  "26.0": {
-                    "over": 2.38,
-                    "under": 1.46
-                  },
-                  "26.5": {
-                    "over": 2.49,
-                    "under": 1.42
-                  },
-                  "27.5": {
-                    "over": 3.1,
-                    "under": 1.34
-                  },
-                  "2.5": {
-                    "over": 2.29,
-                    "under": 1.58
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.28,
-                    "away": 1.83
-                  },
-                  "-1.5": {
-                    "home": 1.93,
-                    "away": 3.4
-                  },
-                  "0.0": {
-                    "home": 1.68,
-                    "away": 2.08
-                  },
-                  "0.5": {
-                    "home": 1.63,
-                    "away": 2
-                  },
-                  "-0.5": {
-                    "home": 1.74,
-                    "away": 2.17
-                  },
-                  "1.0": {
-                    "home": 1.57,
-                    "away": 1.92
-                  },
-                  "-1.0": {
-                    "home": 1.8,
-                    "away": 2.28
-                  },
-                  "2.0": {
-                    "home": 1.46,
-                    "away": 1.75
-                  },
-                  "-2.0": {
-                    "home": 1.99,
-                    "away": 2.56
-                  },
-                  "2.5": {
-                    "home": 1.42,
-                    "away": 1.67
-                  },
-                  "-2.5": {
-                    "home": 2.1,
-                    "away": 2.69
-                  },
-                  "3.0": {
-                    "away": 1.54
-                  },
-                  "-3.0": {
-                    "home": 2.35
-                  },
-                  "3.5": {
-                    "away": 1.46
-                  },
-                  "-3.5": {
-                    "home": 2.56
-                  },
-                  "4.0": {
-                    "away": 1.32
-                  },
-                  "-4.0": {
-                    "home": 3.14
-                  },
-                  "4.5": {
-                    "away": 1.27
-                  },
-                  "-4.5": {
-                    "home": 3.48
-                  },
-                  "5.0": {
-                    "away": 1.15
-                  },
-                  "-5.0": {
-                    "home": 4.9
-                  },
-                  "5.5": {
-                    "away": 1.13
-                  },
-                  "-5.5": {
-                    "home": 5.35
-                  }
-                }
-              }
-            },
-            {
               "event_id": "WrvFtbIE",
               "flashscore_id": "WrvFtbIE",
               "flashscore_sport_id": 2,
@@ -4152,9 +3312,9 @@
               "pari": "Moins de 19.5 jeux",
               "cote_retenue": 1.56,
               "cotes": {
-                "domicile": 1.02,
+                "domicile": 1.01,
                 "nul": null,
-                "exterieur": 17.5
+                "exterieur": 28
               },
               "pick_category": "ou",
               "analyse": "Jannik Sinner traverse une forme absolument écrasante sur terre battue : depuis Monte-Carlo, il a remporté 10 de ses 11 derniers matchs, dont une victoire en finale à Madrid contre Zverev (2-0), et il a démarré Rome en dominant Ofner 2-0. Sur cette surface, il neutralise ses adversaires avec une régularité impressionnante, terminant la grande majorité de ses matchs en deux sets. Popyrin, lui, alterne le chaud et le froid : après une défaite 0-2 contre Damm à Madrid, il a rebondi à Rome en battant Berrettini 2-0 puis Mensik 2-1, montrant un niveau acceptable mais largement inférieur à celui de Sinner. La tendance des matchs de Sinner est claire : il joue court, domine ses échanges depuis le fond et ne laisse que très rarement un set lui échapper. Un match en 2 sets semble quasi certain, et les totaux de jeux devraient rester limités. Avec la ligne à 19.5 jeux, un 6-3 6-4 suffit pour rester sous le total, ce qui est tout à fait plausible face à un Sinner en mode rouleau compresseur sur sa surface de prédilection.",
@@ -4481,16 +3641,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 1.41,
+                "domicile": 1.44,
                 "nul": null,
-                "exterieur": 3.02
+                "exterieur": 2.89
               },
               "pick_category": "ou",
               "analyse": "Tiafoe aborde ce match en bonne dynamique après avoir battu Buse 2-1 au premier tour de Rome, confirmant sa capacité à gérer les matchs compliqués en 3 sets. L'Américain reste néanmoins sur une défaite contre Paul à Houston et une correction face à Sinner à Miami, ce qui témoigne d'une certaine irrégularité. Pellegrino, lui, est en pleine forme sur terre battue : il a éliminé Gaston, Landaluce et Nardi consécutivement à Rome, avant de chuter face à Fils. L'Italien n'est clairement pas un faire-valoir et ses récents succès montrent un joueur compétitif sur la surface. Ces deux profils — Tiafoe puissant mais parfois instable, Pellegrino combatif et solide sur terre — laissent présager un match accroché avec de nombreux jeux disputés. Sur une surface lente comme la terre battue romaine, les échanges ont tendance à s'allonger, et la dynamique des deux joueurs suggère que le match ira chercher loin en termes de jeux totaux.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -4798,313 +3958,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "Aomhv0m1",
-              "flashscore_id": "Aomhv0m1",
-              "flashscore_sport_id": 2,
-              "home_team_id": "fBPsm3Iq",
-              "away_team_id": "zHMiAkw6",
-              "tournament_id": "2c3kcu0l",
-              "tournament_url": "/tennis/wta-singles/rome/",
-              "sport_key": "flashscore_tennis_wta_rome_italy",
-              "commence_time": "2026-05-11T09:00:00.000Z",
-              "time_display": "Lun. 11h00",
-              "home": "Cirstea S.",
-              "away": "Noskova L.",
-              "match": "Cirstea S. vs Noskova L.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 2.02,
-              "cotes": {
-                "domicile": 2.08,
-                "nul": null,
-                "exterieur": 1.78
-              },
-              "pick_category": "ou",
-              "analyse": "Cirstea réalise un début de tournoi de Rome impressionnant : elle a éliminé Maria (2-0) puis renversé la situation face à Sabalenka, tête de série et numéro 1 mondiale, en remportant le match 2-1 après avoir perdu le premier set. Noskova est également en grande forme sur cette surface, avec deux victoires nettes (0-2) face à Zakharova et Oliynykova. Sur terre battue, les échanges ont tendance à s'allonger, favorisant des matches en plus de jeux. La confrontation entre deux joueuses offensives mais solides en fond de court suggère un match disputé, possiblement en trois sets, ce qui pousse naturellement le total de jeux vers le haut. Cirstea a montré à Rome une capacité de résistance remarquable face à l'élite, et Noskova est suffisamment combative pour prolonger les échanges. Le contexte d'une surface lente, d'un match de troisième tour entre deux joueuses en forme, plaide clairement pour un match au-delà de 22 jeux.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778335500,
-                    "tournament": "ROM",
-                    "home": "Sabalenka A.",
-                    "away": "Cirstea S.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778321400,
-                    "tournament": "ROM",
-                    "home": "Oliynykova O.",
-                    "away": "Noskova L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778155200,
-                    "tournament": "ROM",
-                    "home": "Maria T.",
-                    "away": "Cirstea S.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778154900,
-                    "tournament": "ROM",
-                    "home": "Zakharova A.",
-                    "away": "Noskova L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777486200,
-                    "tournament": "MAD",
-                    "home": "Kostyuk M.",
-                    "away": "Noskova L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777298700,
-                    "tournament": "MAD",
-                    "home": "Noskova L.",
-                    "away": "Gauff C.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777199400,
-                    "tournament": "MAD",
-                    "home": "Noskova L.",
-                    "away": "Samsonova L.",
-                    "score": "null-null"
-                  },
-                  {
-                    "timestamp": 1777194600,
-                    "tournament": "MAD",
-                    "home": "Cirstea S.",
-                    "away": "Gauff C.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777035300,
-                    "tournament": "MAD",
-                    "home": "Noskova L.",
-                    "away": "Arango E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777032300,
-                    "tournament": "MAD",
-                    "home": "Cirstea S.",
-                    "away": "Grant T. C.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776524400,
-                    "tournament": "ROU",
-                    "home": "Podrez V.",
-                    "away": "Cirstea S.",
-                    "score": "null-null"
-                  },
-                  {
-                    "timestamp": 1776448800,
-                    "tournament": "ROU",
-                    "home": "Bondar A.",
-                    "away": "Cirstea S.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776422100,
-                    "tournament": "STU",
-                    "home": "Noskova L.",
-                    "away": "Svitolina E.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776357900,
-                    "tournament": "ROU",
-                    "home": "Wang Xin.",
-                    "away": "Cirstea S.",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1776342900,
-                    "tournament": "STU",
-                    "home": "Alexandrova E.",
-                    "away": "Noskova L.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.15,
-                    "under": 4.3
-                  },
-                  "18.0": {
-                    "over": 1.17,
-                    "under": 3.98
-                  },
-                  "18.5": {
-                    "over": 1.28,
-                    "under": 3.08
-                  },
-                  "19.0": {
-                    "over": 1.32,
-                    "under": 2.92
-                  },
-                  "19.5": {
-                    "over": 1.44,
-                    "under": 2.51
-                  },
-                  "20.0": {
-                    "over": 1.5,
-                    "under": 2.38
-                  },
-                  "20.5": {
-                    "over": 1.62,
-                    "under": 2.16
-                  },
-                  "21.0": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "21.5": {
-                    "over": 1.83,
-                    "under": 1.95
-                  },
-                  "22.0": {
-                    "over": 1.9,
-                    "under": 1.82
-                  },
-                  "22.5": {
-                    "over": 2.02,
-                    "under": 1.71
-                  },
-                  "23.0": {
-                    "over": 2.11,
-                    "under": 1.63
-                  },
-                  "23.5": {
-                    "over": 2.19,
-                    "under": 1.57
-                  },
-                  "24.0": {
-                    "over": 2.24,
-                    "under": 1.53
-                  },
-                  "24.5": {
-                    "over": 2.28,
-                    "under": 1.5
-                  },
-                  "25.0": {
-                    "over": 2.43,
-                    "under": 1.44
-                  },
-                  "25.5": {
-                    "over": 2.52,
-                    "under": 1.41
-                  },
-                  "26.5": {
-                    "over": 3.6,
-                    "under": 1.26
-                  },
-                  "2.5": {
-                    "over": 2.29,
-                    "under": 1.58
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.57,
-                    "away": 1.34
-                  },
-                  "-1.5": {
-                    "home": 3.08,
-                    "away": 2.41
-                  },
-                  "0.0": {
-                    "home": 1.92,
-                    "away": 1.8
-                  },
-                  "0.5": {
-                    "home": 1.88,
-                    "away": 1.75
-                  },
-                  "-0.5": {
-                    "home": 1.99,
-                    "away": 1.92
-                  },
-                  "1.0": {
-                    "home": 1.81,
-                    "away": 1.69
-                  },
-                  "-1.0": {
-                    "home": 2.07,
-                    "away": 1.91
-                  },
-                  "2.0": {
-                    "home": 1.68,
-                    "away": 1.59
-                  },
-                  "-2.0": {
-                    "home": 2.24,
-                    "away": 2.08
-                  },
-                  "2.5": {
-                    "home": 1.63,
-                    "away": 1.54
-                  },
-                  "-2.5": {
-                    "home": 2.35,
-                    "away": 2.17
-                  },
-                  "3.0": {
-                    "home": 1.53,
-                    "away": 1.46
-                  },
-                  "-3.0": {
-                    "home": 2.56,
-                    "away": 2.36
-                  },
-                  "3.5": {
-                    "home": 1.48,
-                    "away": 1.42
-                  },
-                  "-3.5": {
-                    "home": 2.69,
-                    "away": 2.5
-                  },
-                  "4.0": {
-                    "home": 1.36
-                  },
-                  "-4.0": {
-                    "away": 2.92
-                  },
-                  "4.5": {
-                    "home": 1.32
-                  },
-                  "-4.5": {
-                    "away": 3.14
-                  },
-                  "5.0": {
-                    "home": 1.24
-                  },
-                  "-5.0": {
-                    "away": 3.72
-                  },
-                  "5.5": {
-                    "home": 1.21
-                  },
-                  "-5.5": {
-                    "away": 4.05
-                  }
-                }
-              }
-            },
-            {
               "event_id": "lj986d04",
               "flashscore_id": "lj986d04",
               "flashscore_sport_id": 2,
@@ -5122,16 +3975,16 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.82,
               "cotes": {
-                "domicile": 1.29,
+                "domicile": 1.3,
                 "nul": null,
-                "exterieur": 3.79
+                "exterieur": 3.56
               },
               "pick_category": "cs",
               "analyse": "Coco Gauff s'affirme comme la grande favorite de cette rencontre à Rome. Sur terre battue italienne, elle a déjà dominé Valentova (2-0) et Sierra (2-1) sans trembler cette semaine. Sa seule défaite récente sur ocre remonte à Madrid contre Noskova, mais elle avait auparavant écarté Jeanjean et Cirstea avec autorité. Inesa Jovic, de son côté, présente une forme inquiétante : elle a perdu 4 de ses 6 derniers matchs, dont deux défaites en deux sets consécutives contre Minnen et Vandewinkel lors du tournoi BJK. Certes, elle a battu Kessler et Townsend cette semaine à Rome, mais ces adversaires sont de calibre bien inférieur à Gauff. Avec une Gauff dominante sur terre battue et une Jovic friable face aux joueuses de haut rang (défaite contre Fernandez à Madrid, contre Pegula à Charleston), un succès net de Gauff en deux sets semble très probable. Le score en 2-0 est la conclusion logique de cette opposition de niveaux.",
               "confiance": 4,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -5453,16 +4306,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 2.19,
               "cotes": {
-                "domicile": 2.11,
+                "domicile": 1.92,
                 "nul": null,
-                "exterieur": 1.76
+                "exterieur": 1.9
               },
               "pick_category": "ou",
               "analyse": "Kalinskaya traverse une excellente période de forme sur terre battue à Rome, enchaînant les victoires contre Tomova, Badosa, Siniakova et Bencic, cette dernière en deux sets secs (0-2). Ostapenko est également en confiance : elle a éliminé Stefanini (0-2), Ruse (2-1) et Bencic (1-2) à Rome, mais son style agressif et son jeu à plat génèrent souvent des sets accrochés. Sur terre battue, les échanges tendent à se prolonger, favorisant les matches avec davantage de jeux : les derniers matches d'Ostapenko à Rome ont affiché des sets compétitifs (1-2 contre Zheng, 2-1 contre Ruse). Kalinskaya, malgré ses victoires en deux sets récentes, s'est inclinée en 3 sets contre Galfi à Madrid, signe que la résistance adverse peut faire grimper le total. Face à deux joueuses capables de services dominants mais aussi de breaks répétés sur cette surface lente, un total de jeux élevé semble plausible. Le seuil de 22.5 jeux offre une valeur intéressante au vu des profils offensifs et de l'incertitude du match.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -5744,7 +4597,7 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 3.34,
+                "domicile": 3.32,
                 "nul": null,
                 "exterieur": 1.35
               },
@@ -6075,1130 +4928,6 @@
     "vNnlJZqA"
   ],
   "history": [
-    {
-      "event_id": "xbYLhcKM",
-      "flashscore_id": "xbYLhcKM",
-      "flashscore_sport_id": 2,
-      "home_team_id": "8W9dxtVO",
-      "away_team_id": "zylrzjzh",
-      "tournament_id": "jluakzv0",
-      "tournament_url": "/tennis/atp-singles/madrid/",
-      "sport_key": "flashscore_tennis_atp_madrid_spain_q",
-      "commence_time": "2026-04-20T16:20:00.000Z",
-      "time_display": "Lun. 18h20",
-      "home": "Kypson P.",
-      "away": "Kouame M.",
-      "match": "Kypson P. vs Kouame M.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.94,
-      "cotes": {
-        "domicile": 1.71,
-        "nul": null,
-        "exterieur": 2.14
-      },
-      "pick_category": "ou",
-      "analyse": "Kouame traverse une période de forme remarquable : il a remporté 4 matchs consécutifs à San Diego (victoires contre Ferrari, Chepelev, Henning, et une défaite en finale contre Manzano en 3 sets), confirmant sa solidité sur terre battue sud-américaine. Kypson, lui, présente un bilan plus mitigé : éliminé par Ofner à Barcelone, battu par Popyrin en 3 sets à Houston et sorti par Basilashvili à Miami. Ces deux joueurs sont de niveau Challenger/qualifications ATP, ce qui laisse attendre des matchs serrés avec des jeux disputés sur terre battue. La surface madrilène (terre battue rapide en altitude) favorise des rallyes prolongés et des breaks rares, poussant les sets vers des totaux élevés. La forme de Kouame est nettement supérieure sur la période récente, mais l'incertitude sur le niveau exact de Kypson en indoor/altitude suggère une partie compétitive. Avec deux joueurs habitués aux longues batailles en Challenger, un total de jeux supérieur à 22.5 paraît bien calibré pour ce duel.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776501600,
-            "tournament": "SAN",
-            "home": "Martin Manzano J. C.",
-            "away": "Kouame M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776442500,
-            "tournament": "SAN",
-            "home": "Kouame M.",
-            "away": "Henning P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776421800,
-            "tournament": "SAN",
-            "home": "Chepelev A.",
-            "away": "Kouame M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776239400,
-            "tournament": "SAN",
-            "home": "Ferrari F.",
-            "away": "Kouame M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776158400,
-            "tournament": "SAN",
-            "home": "Bernet H.",
-            "away": "Kouame M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775994600,
-            "tournament": "BAR",
-            "home": "Ofner S.",
-            "away": "Kypson P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775918100,
-            "tournament": "BAR",
-            "home": "Gea A.",
-            "away": "Kypson P.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775409600,
-            "tournament": "MON",
-            "home": "Kouame M.",
-            "away": "Humbert U.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775005500,
-            "tournament": "HOU",
-            "home": "Popyrin A.",
-            "away": "Kypson P.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774056300,
-            "tournament": "MIA",
-            "home": "Kouame M.",
-            "away": "Lehecka J.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1773929400,
-            "tournament": "MIA",
-            "home": "Kouame M.",
-            "away": "Svajda Z.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1773693000,
-            "tournament": "MIA",
-            "home": "Kypson P.",
-            "away": "Basilashvili N.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1772813400,
-            "tournament": "THI",
-            "home": "Gaston H.",
-            "away": "Kouame M.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772649900,
-            "tournament": "THI",
-            "home": "Kouame M.",
-            "away": "Zeppieri G.",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1772538600,
-            "tournament": "THI",
-            "home": "Sels J.",
-            "away": "Kouame M.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "20.0": {
-            "over": 1.36,
-            "under": 2.7
-          },
-          "20.5": {
-            "over": 1.47,
-            "under": 2.35
-          },
-          "21.0": {
-            "over": 1.53,
-            "under": 2.24
-          },
-          "21.5": {
-            "over": 1.61,
-            "under": 2.12
-          },
-          "22.0": {
-            "over": 1.74,
-            "under": 1.95
-          },
-          "22.5": {
-            "over": 1.94,
-            "under": 1.81
-          },
-          "23.0": {
-            "over": 1.98,
-            "under": 1.72
-          },
-          "23.5": {
-            "over": 2.07,
-            "under": 1.64
-          },
-          "24.0": {
-            "over": 2.09,
-            "under": 1.61
-          },
-          "24.5": {
-            "over": 2.12,
-            "under": 1.58
-          },
-          "25.0": {
-            "over": 2.24,
-            "under": 1.52
-          },
-          "2.5": {
-            "over": 2.3,
-            "under": 1.56
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.25,
-            "away": 1.91
-          },
-          "-1.5": {
-            "home": 1.82,
-            "away": 3.53
-          },
-          "0.0": {
-            "home": 1.6,
-            "away": 2.16
-          },
-          "0.5": {
-            "home": 1.56,
-            "away": 2.08
-          },
-          "-0.5": {
-            "home": 1.65,
-            "away": 2.24
-          },
-          "1.0": {
-            "home": 1.5,
-            "away": 2.01
-          },
-          "-1.0": {
-            "home": 1.7,
-            "away": 2.38
-          },
-          "2.0": {
-            "home": 1.55,
-            "away": 1.83
-          },
-          "-2.0": {
-            "home": 1.85,
-            "away": 2.26
-          },
-          "2.5": {
-            "home": 1.55,
-            "away": 1.73
-          },
-          "-2.5": {
-            "home": 1.98,
-            "away": 2.26
-          },
-          "3.0": {
-            "home": 1.44,
-            "away": 1.61
-          },
-          "-3.0": {
-            "home": 2.15,
-            "away": 2.55
-          },
-          "3.5": {
-            "away": 1.53
-          },
-          "-3.5": {
-            "home": 2.31
-          },
-          "4.0": {
-            "away": 1.38
-          },
-          "-4.0": {
-            "home": 2.76
-          },
-          "4.5": {
-            "away": 1.33
-          },
-          "-4.5": {
-            "home": 2.98
-          },
-          "5.0": {
-            "away": 1.21
-          },
-          "-5.0": {
-            "home": 3.84
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Madrid (Spain) (Q)",
-      "archived_at": "2026-04-20T20:09:29.020Z"
-    },
-    {
-      "event_id": "xzYzxTe4",
-      "flashscore_id": "xzYzxTe4",
-      "flashscore_sport_id": 2,
-      "home_team_id": "dvDRCAx9",
-      "away_team_id": "zNoTPac0",
-      "tournament_id": "dhgaa2gf",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain_q",
-      "commence_time": "2026-04-20T14:20:00.000Z",
-      "time_display": "Lun. 16h20",
-      "home": "Bassols M.",
-      "away": "Kalinina A.",
-      "match": "Bassols M. vs Kalinina A.",
-      "prono": "win-home",
-      "pari": "Plus de 20.5 jeux",
-      "cote_retenue": 2.14,
-      "cotes": {
-        "domicile": 5.02,
-        "nul": null,
-        "exterieur": 1.17
-      },
-      "pick_category": "ou",
-      "analyse": "Bassols dispute ce match sur ses terres espagnoles, ce qui représente un avantage psychologique et d'adaptation à la terre battue indéniable. Sa forme récente est impressionnante : elle enchaîne les victoires à Madrid (Kalieva 2-0, Yuan 2-1, Mintegi 2-0, Hercog 1-0) et vient de réaliser une belle semaine au Portugal (victoires sur Hercog et Burillo avant de chuter face à Romero Gormaz). Kalinina, de son côté, présente une forme plus irrégulière : victoire en trois sets contre Udvardy, abandon face à Vekic (null-null), défaite sèche 0-2 contre Sasnovich et une autre défaite en finale à Dubrovnik contre Lazaro Garcia. Ce contraste de régularité sur terre battue penche clairement en faveur de la joueuse locale. Sur le plan du style, la terre battue favorise les échanges longs et les sets disputés, ce qui laisse présager un match en trois sets possible. Le handicap jeux -5.5 en faveur de Kalinina à 1.84 semble risqué au vu de la forme de Bassols à domicile, tandis qu'un total de jeux autour de 20.5 paraît raisonnable étant donné la combativité des deux joueuses ces dernières semaines.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776519600,
-            "tournament": "POR",
-            "home": "Romero Gormaz L.",
-            "away": "Bassols M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776499800,
-            "tournament": "POR",
-            "home": "Bassols M.",
-            "away": "Hercog P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776428100,
-            "tournament": "POR",
-            "home": "Bassols M.",
-            "away": "Burillo Escorihuela I.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776338400,
-            "tournament": "POR",
-            "home": "Bassols M.",
-            "away": "Lovric P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775984700,
-            "tournament": "MAD",
-            "home": "Pigato L.",
-            "away": "Bassols M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775913300,
-            "tournament": "MAD",
-            "home": "Mintegi Del Olmo A.",
-            "away": "Bassols M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775812200,
-            "tournament": "MAD",
-            "home": "Bassols M.",
-            "away": "Kalieva E.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775736600,
-            "tournament": "LIN",
-            "home": "Kalinina A.",
-            "away": "Vekic D.",
-            "score": "null-null"
-          },
-          {
-            "timestamp": 1775725800,
-            "tournament": "MAD",
-            "home": "Yuan Y.",
-            "away": "Bassols M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775655000,
-            "tournament": "LIN",
-            "home": "Kalinina A.",
-            "away": "Udvardy P.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775556900,
-            "tournament": "MAD",
-            "home": "Bassols M.",
-            "away": "Hercog P.",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1775472900,
-            "tournament": "LIN",
-            "home": "Sasnovich A.",
-            "away": "Kalinina A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775396700,
-            "tournament": "LIN",
-            "home": "Friedsam A-L.",
-            "away": "Kalinina A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774812000,
-            "tournament": "BOG",
-            "home": "Bassols M.",
-            "away": "Tikhonova A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1774789800,
-            "tournament": "DUB",
-            "home": "Lazaro Garcia A.",
-            "away": "Kalinina A.",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "16.0": {
-            "over": 1.14,
-            "under": 4.35
-          },
-          "16.5": {
-            "over": 1.28,
-            "under": 3.08
-          },
-          "17.0": {
-            "over": 1.29,
-            "under": 3.04
-          },
-          "17.5": {
-            "over": 1.43,
-            "under": 2.46
-          },
-          "18.0": {
-            "over": 1.52,
-            "under": 2.27
-          },
-          "18.5": {
-            "over": 1.69,
-            "under": 2.02
-          },
-          "19.0": {
-            "over": 1.78,
-            "under": 1.9
-          },
-          "19.5": {
-            "over": 1.9,
-            "under": 1.8
-          },
-          "20.0": {
-            "over": 2.03,
-            "under": 1.68
-          },
-          "20.5": {
-            "over": 2.14,
-            "under": 1.6
-          },
-          "21.0": {
-            "over": 2.27,
-            "under": 1.52
-          },
-          "21.5": {
-            "over": 2.38,
-            "under": 1.46
-          },
-          "22.0": {
-            "over": 2.56,
-            "under": 1.4
-          },
-          "2.5": {
-            "over": 3.01,
-            "under": 1.35
-          },
-          "22.5": {
-            "over": 2.6,
-            "under": 1.42
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 2.35,
-            "away": 1.06
-          },
-          "-1.5": {
-            "home": 7.5,
-            "away": 1.56
-          },
-          "3.0": {
-            "home": 3.2
-          },
-          "-3.0": {
-            "away": 1.29
-          },
-          "3.5": {
-            "home": 2.84
-          },
-          "-3.5": {
-            "away": 1.36
-          },
-          "4.0": {
-            "home": 2.64
-          },
-          "-4.0": {
-            "away": 1.41
-          },
-          "4.5": {
-            "home": 2.31
-          },
-          "-4.5": {
-            "away": 1.53
-          },
-          "5.0": {
-            "home": 2.1
-          },
-          "-5.0": {
-            "away": 1.64
-          },
-          "5.5": {
-            "home": 1.85
-          },
-          "-5.5": {
-            "away": 1.84
-          },
-          "6.0": {
-            "home": 1.65
-          },
-          "-6.0": {
-            "away": 2.08
-          },
-          "6.5": {
-            "home": 1.51
-          },
-          "-6.5": {
-            "away": 2.35
-          },
-          "7.0": {
-            "home": 1.33
-          },
-          "-7.0": {
-            "away": 2.98
-          },
-          "7.5": {
-            "home": 1.26
-          },
-          "-7.5": {
-            "away": 3.4
-          },
-          "8.0": {
-            "home": 1.13
-          },
-          "-8.0": {
-            "away": 5
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain) (Q)",
-      "archived_at": "2026-04-20T20:09:29.020Z"
-    },
-    {
-      "event_id": "xxcGCCSh",
-      "flashscore_id": "xxcGCCSh",
-      "flashscore_sport_id": 2,
-      "home_team_id": "hQQLzcNT",
-      "away_team_id": "21U8Dqna",
-      "tournament_id": "dhgaa2gf",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain_q",
-      "commence_time": "2026-04-20T14:35:00.000Z",
-      "time_display": "Lun. 16h35",
-      "home": "Parry D.",
-      "away": "Stephens S.",
-      "match": "Parry D. vs Stephens S.",
-      "prono": "win-home",
-      "pari": "Moins de 20.5 jeux",
-      "cote_retenue": 1.79,
-      "cotes": {
-        "domicile": 1.38,
-        "nul": null,
-        "exterieur": 3.04
-      },
-      "pick_category": "ou",
-      "analyse": "Diane Parry aborde ce match avec une forme récente correcte : victoire sur Sun, Mandlik et Williams en mars à Indian Wells, avant une défaite face à Keys et une élimination par Kalieva à Miami, puis un revers contre Kostyuk à Rouen. Sloane Stephens traverse une période difficile, enchaînant les défaites lourdes : battue par Osorio, Zakharova, Zheng, Zarazua, Andreeva et Podrez ces deux derniers mois, avec seulement une victoire sur Maria (2-1) comme éclaircie. Madrid se joue en altitude sur terre battue, une surface qui favorise les échanges longs et les sets disputés — Parry est plus à l'aise sur terre que Stephens ces derniers temps. Les deux joueuses présentent une grande irrégularité et Stephens semble physiquement et mentalement en difficulté, ce qui laisse présager un match en deux sets mais pas expédié rapidement. Le total de jeux devrait rester modéré, les deux joueuses perdant souvent en deux sets secs, ce qui oriente vers un under sur le total de jeux.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776164700,
-            "tournament": "ROU",
-            "home": "Kostyuk M.",
-            "away": "Parry D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776096900,
-            "tournament": "ROU",
-            "home": "Stephens S.",
-            "away": "Podrez V.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775667600,
-            "tournament": "LIN",
-            "home": "Andreeva M.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775493900,
-            "tournament": "LIN",
-            "home": "Stephens S.",
-            "away": "Maria T.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774892700,
-            "tournament": "CHA",
-            "home": "Stephens S.",
-            "away": "Zarazua R.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774111200,
-            "tournament": "MIA",
-            "home": "Zheng Q.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773964800,
-            "tournament": "MIA",
-            "home": "Brady J.",
-            "away": "Stephens S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1773768300,
-            "tournament": "MIA",
-            "home": "Kalieva E.",
-            "away": "Parry D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773693300,
-            "tournament": "MIA",
-            "home": "Stefanini L.",
-            "away": "Parry D.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1773077100,
-            "tournament": "AUS",
-            "home": "Zakharova A.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1772937000,
-            "tournament": "IND",
-            "home": "Keys M.",
-            "away": "Parry D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1772747700,
-            "tournament": "IND",
-            "home": "Parry D.",
-            "away": "Williams V.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772685900,
-            "tournament": "IND",
-            "home": "Stephens S.",
-            "away": "Osorio C.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1772561400,
-            "tournament": "IND",
-            "home": "Sun L.",
-            "away": "Parry D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1772394900,
-            "tournament": "IND",
-            "home": "Mandlik E.",
-            "away": "Parry D.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "18.0": {
-            "over": 1.32,
-            "under": 2.88
-          },
-          "18.5": {
-            "over": 1.44,
-            "under": 2.43
-          },
-          "19.0": {
-            "over": 1.52,
-            "under": 2.27
-          },
-          "19.5": {
-            "over": 1.64,
-            "under": 2.07
-          },
-          "20.0": {
-            "over": 1.74,
-            "under": 1.95
-          },
-          "20.5": {
-            "over": 1.9,
-            "under": 1.79
-          },
-          "21.0": {
-            "over": 1.95,
-            "under": 1.74
-          },
-          "21.5": {
-            "over": 2.04,
-            "under": 1.65
-          },
-          "22.0": {
-            "over": 2.16,
-            "under": 1.57
-          },
-          "22.5": {
-            "over": 2.28,
-            "under": 1.5
-          },
-          "23.0": {
-            "over": 2.41,
-            "under": 1.45
-          },
-          "23.5": {
-            "over": 2.33,
-            "under": 1.48
-          },
-          "24.0": {
-            "over": 2.43,
-            "under": 1.44
-          },
-          "2.5": {
-            "over": 2.65,
-            "under": 1.44
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.13,
-            "away": 1.8
-          },
-          "-1.5": {
-            "home": 1.89,
-            "away": 4.85
-          },
-          "1.0": {
-            "away": 2.64
-          },
-          "-1.0": {
-            "home": 1.41
-          },
-          "2.0": {
-            "away": 2.55
-          },
-          "-2.0": {
-            "home": 1.44
-          },
-          "2.5": {
-            "away": 2.4
-          },
-          "-2.5": {
-            "home": 1.49
-          },
-          "3.0": {
-            "away": 2.26
-          },
-          "-3.0": {
-            "home": 1.55
-          },
-          "3.5": {
-            "away": 2.05
-          },
-          "-3.5": {
-            "home": 1.69
-          },
-          "4.0": {
-            "away": 1.93
-          },
-          "-4.0": {
-            "home": 1.76
-          },
-          "4.5": {
-            "away": 1.84
-          },
-          "-4.5": {
-            "home": 1.85
-          },
-          "5.0": {
-            "away": 1.6
-          },
-          "-5.0": {
-            "home": 2.16
-          },
-          "5.5": {
-            "away": 1.5
-          },
-          "-5.5": {
-            "home": 2.38
-          },
-          "6.0": {
-            "away": 1.34
-          },
-          "-6.0": {
-            "home": 2.93
-          },
-          "6.5": {
-            "away": 1.28
-          },
-          "-6.5": {
-            "home": 3.26
-          },
-          "7.0": {
-            "away": 1.15
-          },
-          "-7.0": {
-            "home": 4.6
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain) (Q)",
-      "archived_at": "2026-04-20T20:09:29.020Z"
-    },
-    {
-      "event_id": "hnrlWcPr",
-      "flashscore_id": "hnrlWcPr",
-      "flashscore_sport_id": 2,
-      "home_team_id": "zZxU5MZh",
-      "away_team_id": "YuOTpKxj",
-      "tournament_id": "dhgaa2gf",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain_q",
-      "commence_time": "2026-04-20T14:40:00.000Z",
-      "time_display": "Lun. 16h40",
-      "home": "Leme Da Silva N. V.",
-      "away": "Snigur D.",
-      "match": "Leme Da Silva N. V. vs Snigur D.",
-      "prono": "win-home",
-      "pari": "Moins de 19.5 jeux",
-      "cote_retenue": 1.98,
-      "cotes": {
-        "domicile": 3.04,
-        "nul": null,
-        "exterieur": 1.38
-      },
-      "pick_category": "ou",
-      "analyse": "Natalia Leme Da Silva traverse une forme exceptionnelle : elle vient d'enchaîner quatre victoires consécutives au tournoi BJK Cup, dont trois victoires nettes 2-0 face à Hinojosa Gomez, Muelle Valdez et Giovannini, et une victoire plus serrée 2-1 face à Labrana. Snigur, de son côté, présente une forme plus irrégulière : si elle a dominé le tournoi de Murcie avec quatre 2-0 consécutifs, elle a ensuite perdu en quarts face à De Stefano (2-1) et vient de chuter dès le premier tour à Calvi face à Ryser. La surface terre battue de Madrid favorise les échanges longs et les sets disputés, mais Leme Da Silva semble en confiance et régulière dans ses performances récentes. Les deux joueuses sont des profils compétitifs avec tendance à des matchs sur deux sets complets. Compte tenu du profil des résultats récents — majoritairement des 2-0 rapides pour les deux — la ligne de 19.5 jeux 'under' représente une valeur intéressante : la plupart des matchs de ces deux joueuses se sont conclus en dessous de 20 jeux.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1775923800,
-            "tournament": "BJK",
-            "home": "Leme Da Silva N. V.",
-            "away": "Hinojosa Gomez J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775843100,
-            "tournament": "BJK",
-            "home": "Leme Da Silva N. V.",
-            "away": "Muelle Valdez Y. L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775750700,
-            "tournament": "BJK",
-            "home": "Leme Da Silva N. V.",
-            "away": "Giovannini L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775744700,
-            "tournament": "CAL",
-            "home": "Snigur D.",
-            "away": "Ryser V.",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1775664600,
-            "tournament": "BJK",
-            "home": "Leme Da Silva N. V.",
-            "away": "Labrana F.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775661600,
-            "tournament": "CAL",
-            "home": "Snigur D.",
-            "away": "Cervino Ruiz C.",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1774774800,
-            "tournament": "MUR",
-            "home": "Snigur D.",
-            "away": "Minnen G.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774700700,
-            "tournament": "MUR",
-            "home": "Snigur D.",
-            "away": "Siskova A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774689000,
-            "tournament": "MUR",
-            "home": "Snigur D.",
-            "away": "Hruncakova V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774520100,
-            "tournament": "MUR",
-            "home": "Snigur D.",
-            "away": "Jorge F.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774350600,
-            "tournament": "MUR",
-            "home": "Snigur D.",
-            "away": "Watson H.",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1773758100,
-            "tournament": "MAR",
-            "home": "De Stefano S.",
-            "away": "Snigur D.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772964600,
-            "tournament": "TRN",
-            "home": "Vandewinkel H.",
-            "away": "Snigur D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1772879700,
-            "tournament": "TRN",
-            "home": "Naef C.",
-            "away": "Snigur D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1772795400,
-            "tournament": "TRN",
-            "home": "Havlickova L.",
-            "away": "Snigur D.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.0": {
-            "over": 1.2,
-            "under": 3.68
-          },
-          "17.5": {
-            "over": 1.33,
-            "under": 2.83
-          },
-          "18.0": {
-            "over": 1.36,
-            "under": 2.7
-          },
-          "18.5": {
-            "over": 1.48,
-            "under": 2.33
-          },
-          "19.0": {
-            "over": 1.56,
-            "under": 2.18
-          },
-          "19.5": {
-            "over": 1.72,
-            "under": 1.98
-          },
-          "20.0": {
-            "over": 1.79,
-            "under": 1.89
-          },
-          "20.5": {
-            "over": 1.96,
-            "under": 1.79
-          },
-          "21.0": {
-            "over": 2.01,
-            "under": 1.7
-          },
-          "21.5": {
-            "over": 2.09,
-            "under": 1.63
-          },
-          "22.0": {
-            "over": 2.24,
-            "under": 1.53
-          },
-          "22.5": {
-            "over": 2.33,
-            "under": 1.48
-          },
-          "23.0": {
-            "over": 2.46,
-            "under": 1.43
-          },
-          "2.5": {
-            "over": 2.6,
-            "under": 1.47
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.8,
-            "away": 1.13
-          },
-          "-1.5": {
-            "home": 4.9,
-            "away": 1.87
-          },
-          "2.0": {
-            "home": 2.58
-          },
-          "-2.0": {
-            "away": 1.43
-          },
-          "2.5": {
-            "home": 2.43
-          },
-          "-2.5": {
-            "away": 1.48
-          },
-          "3.0": {
-            "home": 2.31
-          },
-          "-3.0": {
-            "away": 1.53
-          },
-          "3.5": {
-            "home": 2.14
-          },
-          "-3.5": {
-            "away": 1.62
-          },
-          "4.0": {
-            "home": 1.97
-          },
-          "-4.0": {
-            "away": 1.73
-          },
-          "4.5": {
-            "home": 1.81
-          },
-          "-4.5": {
-            "away": 1.89
-          },
-          "5.0": {
-            "home": 1.65
-          },
-          "-5.0": {
-            "away": 2.08
-          },
-          "5.5": {
-            "home": 1.53
-          },
-          "-5.5": {
-            "away": 2.3
-          },
-          "6.0": {
-            "home": 1.37
-          },
-          "-6.0": {
-            "away": 2.8
-          },
-          "6.5": {
-            "home": 1.31
-          },
-          "-6.5": {
-            "away": 3.08
-          },
-          "7.0": {
-            "home": 1.17
-          },
-          "-7.0": {
-            "away": 4.25
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain) (Q)",
-      "archived_at": "2026-04-20T20:09:29.020Z"
-    },
     {
       "event_id": "vNWkjJGE",
       "flashscore_id": "vNWkjJGE",
@@ -139986,6 +137715,1164 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP Rome (Italy)",
       "archived_at": "2026-05-10T23:36:07.961Z"
+    },
+    {
+      "event_id": "8r8XHz43",
+      "flashscore_id": "8r8XHz43",
+      "flashscore_sport_id": 3,
+      "home_team_id": "KjBIVQcI",
+      "away_team_id": "IwmkErSH",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-10T23:30:00.000Z",
+      "time_display": "Lun. 01h30",
+      "home": "Minnesota Timberwolves",
+      "away": "San Antonio Spurs",
+      "match": "Minnesota Timberwolves vs San Antonio Spurs",
+      "prono": "win-home",
+      "pari": "Moins de 218.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 2.68,
+        "nul": null,
+        "exterieur": 1.55
+      },
+      "pick_category": "ou",
+      "analyse": "Cette série entre Minnesota et San Antonio s'avère extrêmement disputée : les Wolves ont gagné le match 3 (104-102), puis les Spurs ont dominé massivement le match 4 (133-95), et San Antonio a pris l'avantage au match 5 (115-108). Sur les trois confrontations directes récentes, les totaux affichés sont 206, 228 et 221 points — une grande variabilité mais une tendance à des matchs denses en playoffs. Minnesota a montré une attaque efficace contre Denver (132-126, 119-114, 113-96) mais peut aussi jouer défensivement (96, 96, 95 accordés). San Antonio, emmené par Victor Wembanyama, alterne entre performances explosives (133 points) et matchs serrés sous les 110. Le match 4 à 228 points (133-95) est un outlier ; les matchs 3 et 5 ont produit 206 et 223 points — la moyenne des 3 H2H tourne autour de 219 points. Avec la pression des playoffs et les deux équipes défensives capables de serrer le jeu, jouer sous 218.5 offre une valeur intéressante, le total ne dépassant 218 que dans un des trois duels récents si l'on exclut l'outlier.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "114-109",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778290200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "108-115"
+          },
+          {
+            "timestamp": 1778117400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "133-95"
+          },
+          {
+            "timestamp": 1777944600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "102-104"
+          },
+          {
+            "timestamp": 1777599000,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "110-98"
+          },
+          {
+            "timestamp": 1777426200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "114-95"
+          },
+          {
+            "timestamp": 1777343400,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "125-113"
+          },
+          {
+            "timestamp": 1777231800,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "San Antonio Spurs",
+            "score": "93-114"
+          },
+          {
+            "timestamp": 1777163400,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "112-96"
+          },
+          {
+            "timestamp": 1777084200,
+            "tournament": "NBA",
+            "home": "Portland Trail Blazers",
+            "away": "San Antonio Spurs",
+            "score": "108-120"
+          },
+          {
+            "timestamp": 1776994200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "Denver Nuggets",
+            "score": "113-96"
+          },
+          {
+            "timestamp": 1776816000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "103-106"
+          },
+          {
+            "timestamp": 1776738600,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "114-119"
+          },
+          {
+            "timestamp": 1776646800,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "111-98"
+          },
+          {
+            "timestamp": 1776540600,
+            "tournament": "NBA",
+            "home": "Denver Nuggets",
+            "away": "Minnesota Timberwolves",
+            "score": "116-105"
+          },
+          {
+            "timestamp": 1776040200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "New Orleans Pelicans",
+            "score": "132-126"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "215.5": {
+            "over": 1.75,
+            "under": 1.97
+          },
+          "216.5": {
+            "over": 1.77,
+            "under": 1.94
+          },
+          "217.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "218.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "214.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "219.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "220.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "221.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "222.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "4.5": {
+            "home": 1.9
+          },
+          "-4.5": {
+            "away": 1.9
+          },
+          "1.5": {
+            "home": 2.25
+          },
+          "-1.5": {
+            "away": 1.6
+          },
+          "2.5": {
+            "home": 2.05
+          },
+          "-2.5": {
+            "away": 1.7
+          },
+          "3.5": {
+            "home": 2
+          },
+          "-3.5": {
+            "away": 1.73
+          },
+          "5.5": {
+            "home": 1.7
+          },
+          "-5.5": {
+            "away": 2.05
+          },
+          "6.5": {
+            "home": 1.6
+          },
+          "-6.5": {
+            "away": 2.25
+          },
+          "7.5": {
+            "home": 1.53
+          },
+          "-7.5": {
+            "away": 2.38
+          },
+          "8.5": {
+            "home": 1.5
+          },
+          "-8.5": {
+            "away": 2.5
+          },
+          "9.5": {
+            "home": 1.4
+          },
+          "-9.5": {
+            "away": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-11T11:45:17.933Z"
+    },
+    {
+      "event_id": "jLMn6FyI",
+      "flashscore_id": "jLMn6FyI",
+      "flashscore_sport_id": 2,
+      "home_team_id": "M9pojLqi",
+      "away_team_id": "AoOnGZEp",
+      "tournament_id": "ibvebhik",
+      "tournament_url": "/tennis/atp-singles/rome/",
+      "sport_key": "flashscore_tennis_atp_rome_italy",
+      "commence_time": "2026-05-11T09:00:00.000Z",
+      "time_display": "Lun. 11h00",
+      "home": "Bellucci M.",
+      "away": "Landaluce M.",
+      "match": "Bellucci M. vs Landaluce M.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.82,
+        "nul": null,
+        "exterieur": 2.02
+      },
+      "pick_category": "ou",
+      "analyse": "Bellucci et Landaluce se retrouvent dans un duel entre deux joueurs de niveau similaire sur la terre battue romaine, avec des formes récentes assez comparables. Bellucci vient de battre Etcheverry (1-2) et Burruchaga (0-2) à Rome, mais il alterne chaud et froid : défaites contre Dzumhur, Forejtek et Prizmic sur les semaines précédentes. Landaluce de son côté a battu Cilic (0-2) à Rome et O'Connell (2-0), mais a perdu contre Pellegrino (1-2), Quinn (1-2), Walton et Musetti récemment. Les deux joueurs perdent régulièrement en deux sets secs et remportent aussi des matchs en deux sets, ce qui laisse anticiper un match relativement compétitif avec potentiellement un troisième set. Sur terre battue, les échanges sont plus longs et les breaks plus difficiles à conclure, ce qui pousse naturellement le nombre de jeux à la hausse. Au vu du niveau équilibré des deux joueurs et de la surface, un total de jeux supérieur à 22.5 semble cohérent avec l'incertitude du match.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "0-2",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778330100,
+            "tournament": "ROM",
+            "home": "Etcheverry T. M.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778324100,
+            "tournament": "ROM",
+            "home": "Cilic M.",
+            "away": "Landaluce M.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778156100,
+            "tournament": "ROM",
+            "home": "Burruchaga R. A.",
+            "away": "Bellucci M.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777990500,
+            "tournament": "ROM",
+            "home": "Landaluce M.",
+            "away": "Pellegrino A.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777900800,
+            "tournament": "ROM",
+            "home": "Landaluce M.",
+            "away": "O'Connell C.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777557000,
+            "tournament": "CAG",
+            "home": "Bellucci M.",
+            "away": "Cadenasso G.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777549800,
+            "tournament": "AP",
+            "home": "Landaluce M.",
+            "away": "Quinn E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777476000,
+            "tournament": "CAG",
+            "home": "Sonego L.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777384500,
+            "tournament": "AP",
+            "home": "Jade D.",
+            "away": "Landaluce M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776962700,
+            "tournament": "MAD",
+            "home": "Landaluce M.",
+            "away": "Walton A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776855900,
+            "tournament": "MAD",
+            "home": "Dzumhur D.",
+            "away": "Bellucci M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776165000,
+            "tournament": "BAR",
+            "home": "Landaluce M.",
+            "away": "Musetti L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776161400,
+            "tournament": "OEI",
+            "home": "Forejtek J.",
+            "away": "Bellucci M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775904300,
+            "tournament": "MON",
+            "home": "Bellucci M.",
+            "away": "Prizmic D.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775898300,
+            "tournament": "MON",
+            "home": "Collignon R.",
+            "away": "Landaluce M.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.14,
+            "under": 4.4
+          },
+          "19.0": {
+            "over": 1.16,
+            "under": 4.1
+          },
+          "19.5": {
+            "over": 1.28,
+            "under": 3.28
+          },
+          "20.0": {
+            "over": 1.31,
+            "under": 2.97
+          },
+          "20.5": {
+            "over": 1.46,
+            "under": 2.6
+          },
+          "21.0": {
+            "over": 1.47,
+            "under": 2.46
+          },
+          "21.5": {
+            "over": 1.58,
+            "under": 2.27
+          },
+          "22.0": {
+            "over": 1.67,
+            "under": 2.11
+          },
+          "22.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "23.0": {
+            "over": 1.91,
+            "under": 1.81
+          },
+          "23.5": {
+            "over": 2.03,
+            "under": 1.73
+          },
+          "24.0": {
+            "over": 2.03,
+            "under": 1.68
+          },
+          "24.5": {
+            "over": 2.08,
+            "under": 1.67
+          },
+          "25.0": {
+            "over": 2.15,
+            "under": 1.58
+          },
+          "25.5": {
+            "over": 2.25,
+            "under": 1.56
+          },
+          "26.0": {
+            "over": 2.38,
+            "under": 1.46
+          },
+          "26.5": {
+            "over": 2.53,
+            "under": 1.46
+          },
+          "27.5": {
+            "over": 2.88,
+            "under": 1.4
+          },
+          "2.5": {
+            "over": 2.23,
+            "under": 1.62
+          },
+          "28.5": {
+            "over": 3.2,
+            "under": 1.33
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.34,
+            "away": 1.36
+          },
+          "-1.5": {
+            "home": 2.9,
+            "away": 2.9
+          },
+          "0.0": {
+            "home": 1.89,
+            "away": 1.95
+          },
+          "0.5": {
+            "home": 1.77,
+            "away": 1.81
+          },
+          "-0.5": {
+            "home": 1.9,
+            "away": 1.98
+          },
+          "1.0": {
+            "home": 1.7,
+            "away": 1.76
+          },
+          "-1.0": {
+            "home": 1.97,
+            "away": 2.05
+          },
+          "2.0": {
+            "home": 1.57,
+            "away": 1.61
+          },
+          "-2.0": {
+            "home": 2.2,
+            "away": 2.28
+          },
+          "2.5": {
+            "home": 1.52,
+            "away": 1.56
+          },
+          "-2.5": {
+            "home": 2.33,
+            "away": 2.42
+          },
+          "3.0": {
+            "home": 1.4,
+            "away": 1.44
+          },
+          "-3.0": {
+            "home": 2.62,
+            "away": 2.77
+          },
+          "3.5": {
+            "home": 1.35,
+            "away": 1.4
+          },
+          "-3.5": {
+            "home": 2.85,
+            "away": 3.04
+          },
+          "4.0": {
+            "away": 1.25
+          },
+          "-4.0": {
+            "home": 3.62
+          },
+          "4.5": {
+            "away": 1.22
+          },
+          "-4.5": {
+            "home": 3.9
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Rome (Italy)",
+      "archived_at": "2026-05-11T11:45:17.933Z"
+    },
+    {
+      "event_id": "nZpuWsfl",
+      "flashscore_id": "nZpuWsfl",
+      "flashscore_sport_id": 2,
+      "home_team_id": "AeAn4gP0",
+      "away_team_id": "0zQXLfz4",
+      "tournament_id": "ibvebhik",
+      "tournament_url": "/tennis/atp-singles/rome/",
+      "sport_key": "flashscore_tennis_atp_rome_italy",
+      "commence_time": "2026-05-11T09:00:00.000Z",
+      "time_display": "Lun. 11h00",
+      "home": "Rublev A.",
+      "away": "Davidovich Fokina A.",
+      "match": "Rublev A. vs Davidovich Fokina A.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 1.89,
+      "cotes": {
+        "domicile": 1.59,
+        "nul": null,
+        "exterieur": 2.38
+      },
+      "pick_category": "ou",
+      "analyse": "Sur terre battue à Rome, Rublev aborde ce match avec une dynamique en demi-teinte : il a certes dominé Kecmanovic 2-0 au premier tour, mais il reste sur des défaites face à Kopriva (Madrid) et Bergs (Monte-Carlo), deux joueurs bien en deçà de son niveau habituel. Davidovich Fokina, lui, vient de s'imposer nettement face à Garin 2-0 à Rome et avait battu Carreno-Busta à Madrid, montrant une bonne adaptation à la saison sur terre. La terre battue est la surface de prédilection de l'Espagnol, qui construit les points depuis le fond du court et force les longues séquences d'échange — ce qui allonge naturellement les matchs en termes de jeux. Rublev est un guerrier du fond de court qui ne lâche jamais facilement ses jeux de service, et ses matchs sur terre se terminent rarement en moins de 20 jeux. Avec deux joueurs de fond de court acharnés, dont un Rublev capable de se battre dans chaque set (victoire 2-1 face à Medjedovic à Barcelone) et un Davidovich Fokina habitué aux marathons, un total supérieur à 22.5 jeux semble largement justifié.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778328600,
+            "tournament": "ROM",
+            "home": "Garin C.",
+            "away": "Davidovich Fokina A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778317800,
+            "tournament": "ROM",
+            "home": "Rublev A.",
+            "away": "Kecmanovic M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777281000,
+            "tournament": "MAD",
+            "home": "Davidovich Fokina A.",
+            "away": "Ruud C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777108200,
+            "tournament": "MAD",
+            "home": "Davidovich Fokina A.",
+            "away": "Carreno-Busta P.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777047600,
+            "tournament": "MAD",
+            "home": "Rublev A.",
+            "away": "Kopriva V.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776607800,
+            "tournament": "BAR",
+            "home": "Rublev A.",
+            "away": "Fils A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776512400,
+            "tournament": "BAR",
+            "home": "Rublev A.",
+            "away": "Medjedovic H.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776424200,
+            "tournament": "BAR",
+            "home": "Machac T.",
+            "away": "Rublev A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776339600,
+            "tournament": "BAR",
+            "home": "Sonego L.",
+            "away": "Rublev A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776182400,
+            "tournament": "BAR",
+            "home": "Navone M.",
+            "away": "Rublev A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775639400,
+            "tournament": "MON",
+            "home": "Rublev A.",
+            "away": "Bergs Z.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1775466600,
+            "tournament": "MON",
+            "home": "Rublev A.",
+            "away": "Borges N.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775304000,
+            "tournament": "UTS",
+            "home": "Auger-Aliassime F.",
+            "away": "Rublev A.",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1775227200,
+            "tournament": "UTS",
+            "home": "Rublev A.",
+            "away": "Tsitsipas S.",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1774124400,
+            "tournament": "MIA",
+            "home": "Rublev A.",
+            "away": "Tabilo A.",
+            "score": "1-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.14,
+            "under": 4.33
+          },
+          "19.0": {
+            "over": 1.17,
+            "under": 4.05
+          },
+          "19.5": {
+            "over": 1.27,
+            "under": 3.14
+          },
+          "20.0": {
+            "over": 1.31,
+            "under": 2.97
+          },
+          "20.5": {
+            "over": 1.42,
+            "under": 2.57
+          },
+          "21.0": {
+            "over": 1.47,
+            "under": 2.46
+          },
+          "21.5": {
+            "over": 1.57,
+            "under": 2.25
+          },
+          "22.0": {
+            "over": 1.68,
+            "under": 2.08
+          },
+          "22.5": {
+            "over": 1.89,
+            "under": 1.86
+          },
+          "23.0": {
+            "over": 1.92,
+            "under": 1.8
+          },
+          "23.5": {
+            "over": 1.99,
+            "under": 1.73
+          },
+          "24.0": {
+            "over": 2.05,
+            "under": 1.67
+          },
+          "24.5": {
+            "over": 2.07,
+            "under": 1.64
+          },
+          "25.0": {
+            "over": 2.16,
+            "under": 1.57
+          },
+          "25.5": {
+            "over": 2.21,
+            "under": 1.53
+          },
+          "26.0": {
+            "over": 2.38,
+            "under": 1.46
+          },
+          "26.5": {
+            "over": 2.49,
+            "under": 1.42
+          },
+          "27.5": {
+            "over": 3.1,
+            "under": 1.34
+          },
+          "2.5": {
+            "over": 2.29,
+            "under": 1.58
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.28,
+            "away": 1.83
+          },
+          "-1.5": {
+            "home": 1.93,
+            "away": 3.4
+          },
+          "0.0": {
+            "home": 1.68,
+            "away": 2.08
+          },
+          "0.5": {
+            "home": 1.63,
+            "away": 2
+          },
+          "-0.5": {
+            "home": 1.74,
+            "away": 2.17
+          },
+          "1.0": {
+            "home": 1.57,
+            "away": 1.92
+          },
+          "-1.0": {
+            "home": 1.8,
+            "away": 2.28
+          },
+          "2.0": {
+            "home": 1.46,
+            "away": 1.75
+          },
+          "-2.0": {
+            "home": 1.99,
+            "away": 2.56
+          },
+          "2.5": {
+            "home": 1.42,
+            "away": 1.67
+          },
+          "-2.5": {
+            "home": 2.1,
+            "away": 2.69
+          },
+          "3.0": {
+            "away": 1.54
+          },
+          "-3.0": {
+            "home": 2.35
+          },
+          "3.5": {
+            "away": 1.46
+          },
+          "-3.5": {
+            "home": 2.56
+          },
+          "4.0": {
+            "away": 1.32
+          },
+          "-4.0": {
+            "home": 3.14
+          },
+          "4.5": {
+            "away": 1.27
+          },
+          "-4.5": {
+            "home": 3.48
+          },
+          "5.0": {
+            "away": 1.15
+          },
+          "-5.0": {
+            "home": 4.9
+          },
+          "5.5": {
+            "away": 1.13
+          },
+          "-5.5": {
+            "home": 5.35
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Rome (Italy)",
+      "archived_at": "2026-05-11T11:45:17.933Z"
+    },
+    {
+      "event_id": "Aomhv0m1",
+      "flashscore_id": "Aomhv0m1",
+      "flashscore_sport_id": 2,
+      "home_team_id": "fBPsm3Iq",
+      "away_team_id": "zHMiAkw6",
+      "tournament_id": "2c3kcu0l",
+      "tournament_url": "/tennis/wta-singles/rome/",
+      "sport_key": "flashscore_tennis_wta_rome_italy",
+      "commence_time": "2026-05-11T09:00:00.000Z",
+      "time_display": "Lun. 11h00",
+      "home": "Cirstea S.",
+      "away": "Noskova L.",
+      "match": "Cirstea S. vs Noskova L.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 2.02,
+      "cotes": {
+        "domicile": 1.92,
+        "nul": null,
+        "exterieur": 1.9
+      },
+      "pick_category": "ou",
+      "analyse": "Cirstea réalise un début de tournoi de Rome impressionnant : elle a éliminé Maria (2-0) puis renversé la situation face à Sabalenka, tête de série et numéro 1 mondiale, en remportant le match 2-1 après avoir perdu le premier set. Noskova est également en grande forme sur cette surface, avec deux victoires nettes (0-2) face à Zakharova et Oliynykova. Sur terre battue, les échanges ont tendance à s'allonger, favorisant des matches en plus de jeux. La confrontation entre deux joueuses offensives mais solides en fond de court suggère un match disputé, possiblement en trois sets, ce qui pousse naturellement le total de jeux vers le haut. Cirstea a montré à Rome une capacité de résistance remarquable face à l'élite, et Noskova est suffisamment combative pour prolonger les échanges. Le contexte d'une surface lente, d'un match de troisième tour entre deux joueuses en forme, plaide clairement pour un match au-delà de 22 jeux.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778335500,
+            "tournament": "ROM",
+            "home": "Sabalenka A.",
+            "away": "Cirstea S.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778321400,
+            "tournament": "ROM",
+            "home": "Oliynykova O.",
+            "away": "Noskova L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778155200,
+            "tournament": "ROM",
+            "home": "Maria T.",
+            "away": "Cirstea S.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778154900,
+            "tournament": "ROM",
+            "home": "Zakharova A.",
+            "away": "Noskova L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777486200,
+            "tournament": "MAD",
+            "home": "Kostyuk M.",
+            "away": "Noskova L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777298700,
+            "tournament": "MAD",
+            "home": "Noskova L.",
+            "away": "Gauff C.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777199400,
+            "tournament": "MAD",
+            "home": "Noskova L.",
+            "away": "Samsonova L.",
+            "score": "null-null"
+          },
+          {
+            "timestamp": 1777194600,
+            "tournament": "MAD",
+            "home": "Cirstea S.",
+            "away": "Gauff C.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777035300,
+            "tournament": "MAD",
+            "home": "Noskova L.",
+            "away": "Arango E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777032300,
+            "tournament": "MAD",
+            "home": "Cirstea S.",
+            "away": "Grant T. C.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776524400,
+            "tournament": "ROU",
+            "home": "Podrez V.",
+            "away": "Cirstea S.",
+            "score": "null-null"
+          },
+          {
+            "timestamp": 1776448800,
+            "tournament": "ROU",
+            "home": "Bondar A.",
+            "away": "Cirstea S.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776422100,
+            "tournament": "STU",
+            "home": "Noskova L.",
+            "away": "Svitolina E.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776357900,
+            "tournament": "ROU",
+            "home": "Wang Xin.",
+            "away": "Cirstea S.",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1776342900,
+            "tournament": "STU",
+            "home": "Alexandrova E.",
+            "away": "Noskova L.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.5": {
+            "over": 1.15,
+            "under": 4.3
+          },
+          "18.0": {
+            "over": 1.17,
+            "under": 3.98
+          },
+          "18.5": {
+            "over": 1.28,
+            "under": 3.08
+          },
+          "19.0": {
+            "over": 1.32,
+            "under": 2.92
+          },
+          "19.5": {
+            "over": 1.44,
+            "under": 2.51
+          },
+          "20.0": {
+            "over": 1.5,
+            "under": 2.38
+          },
+          "20.5": {
+            "over": 1.62,
+            "under": 2.16
+          },
+          "21.0": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "21.5": {
+            "over": 1.83,
+            "under": 1.95
+          },
+          "22.0": {
+            "over": 1.9,
+            "under": 1.82
+          },
+          "22.5": {
+            "over": 2.02,
+            "under": 1.71
+          },
+          "23.0": {
+            "over": 2.11,
+            "under": 1.63
+          },
+          "23.5": {
+            "over": 2.19,
+            "under": 1.57
+          },
+          "24.0": {
+            "over": 2.24,
+            "under": 1.53
+          },
+          "24.5": {
+            "over": 2.28,
+            "under": 1.5
+          },
+          "25.0": {
+            "over": 2.43,
+            "under": 1.44
+          },
+          "25.5": {
+            "over": 2.52,
+            "under": 1.41
+          },
+          "26.5": {
+            "over": 3.6,
+            "under": 1.26
+          },
+          "2.5": {
+            "over": 2.29,
+            "under": 1.58
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.57,
+            "away": 1.34
+          },
+          "-1.5": {
+            "home": 3.08,
+            "away": 2.41
+          },
+          "0.0": {
+            "home": 1.92,
+            "away": 1.8
+          },
+          "0.5": {
+            "home": 1.88,
+            "away": 1.75
+          },
+          "-0.5": {
+            "home": 1.99,
+            "away": 1.92
+          },
+          "1.0": {
+            "home": 1.81,
+            "away": 1.69
+          },
+          "-1.0": {
+            "home": 2.07,
+            "away": 1.91
+          },
+          "2.0": {
+            "home": 1.68,
+            "away": 1.59
+          },
+          "-2.0": {
+            "home": 2.24,
+            "away": 2.08
+          },
+          "2.5": {
+            "home": 1.63,
+            "away": 1.54
+          },
+          "-2.5": {
+            "home": 2.35,
+            "away": 2.17
+          },
+          "3.0": {
+            "home": 1.53,
+            "away": 1.46
+          },
+          "-3.0": {
+            "home": 2.56,
+            "away": 2.36
+          },
+          "3.5": {
+            "home": 1.48,
+            "away": 1.42
+          },
+          "-3.5": {
+            "home": 2.69,
+            "away": 2.5
+          },
+          "4.0": {
+            "home": 1.36
+          },
+          "-4.0": {
+            "away": 2.92
+          },
+          "4.5": {
+            "home": 1.32
+          },
+          "-4.5": {
+            "away": 3.14
+          },
+          "5.0": {
+            "home": 1.24
+          },
+          "-5.0": {
+            "away": 3.72
+          },
+          "5.5": {
+            "home": 1.21
+          },
+          "-5.5": {
+            "away": 4.05
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA Rome (Italy)",
+      "archived_at": "2026-05-11T11:45:17.933Z"
     }
   ],
   "combos": [
