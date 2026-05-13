@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-13T14:21:48.025Z",
+    "last_results_update": "2026-05-13T19:24:01.248Z",
     "analyses_written_at": "2026-05-13T07:48:21.073Z",
     "analyses_cost_usd": 0.0527,
-    "last_hourly_refresh": "2026-05-13T17:01:42.078Z"
+    "last_hourly_refresh": "2026-05-13T19:24:01.248Z"
   },
   "sports": {
     "foot": {
@@ -27,181 +27,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "ba03FdGk",
-              "flashscore_id": "ba03FdGk",
-              "flashscore_sport_id": 1,
-              "home_team_id": "Cr4VGaUl",
-              "away_team_id": "nP6UzIU1",
-              "tournament_id": "j9qetlpp",
-              "tournament_url": "/football/france/ligue-1/",
-              "sport_key": "flashscore_football_ligue1",
-              "commence_time": "2026-05-13T17:00:00.000Z",
-              "time_display": "Mer. 19h00",
-              "home": "Brest",
-              "away": "Strasbourg",
-              "match": "Brest vs Strasbourg",
-              "prono": "win-home",
-              "pari": "Les deux équipes marquent - Oui",
-              "cote_retenue": 1.6,
-              "cotes": {
-                "domicile": 3.34,
-                "nul": 3.59,
-                "exterieur": 2.21
-              },
-              "pick_category": "btts",
-              "analyse": "Brest traverse une période difficile avec des résultats préoccupants : défaite 1-0 contre le PSG, lourde défaite 4-0 contre Paris FC, et un nul 1-1 contre Nantes sur leurs cinq derniers matchs. Seul le match contre Lens (3-3) et Rennes (3-4) illustre une certaine propension à marquer mais aussi à encaisser. Strasbourg, de son côté, est également en méforme notable : eliminé par Rayo Vallecano en UECL, battu par Toulouse (1-2), écrasé par Rennes (0-3), et éliminé en Coupe de France par Nice (0-2). Cependant, les deux équipes montrent une tendance claire à être poreuses défensivement, Brest encaissant dans chacun de ses cinq derniers matchs, tout comme Strasbourg. Sur leurs rencontres récentes, les deux équipes combinent régulièrement des matchs à au moins deux buts marqués au total. Le contexte de fin de saison avec des enjeux incertains des deux côtés renforce l'idée d'un match ouvert où les deux équipes pourraient trouver le chemin des filets.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778439600,
-                    "tournament": "L1",
-                    "home": "PSG",
-                    "away": "Brest",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1778439600,
-                    "tournament": "L1",
-                    "home": "Angers",
-                    "away": "Strasbourg",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1778180400,
-                    "tournament": "UECL",
-                    "home": "Strasbourg",
-                    "away": "Rayo Vallecano",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1777821300,
-                    "tournament": "L1",
-                    "home": "Paris FC",
-                    "away": "Brest",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1777821300,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Toulouse",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777575600,
-                    "tournament": "UECL",
-                    "home": "Rayo Vallecano",
-                    "away": "Strasbourg",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1777208400,
-                    "tournament": "L1",
-                    "home": "Lorient",
-                    "away": "Strasbourg",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1777056300,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Lens",
-                    "score": "3-3"
-                  },
-                  {
-                    "timestamp": 1776884400,
-                    "tournament": "CDF",
-                    "home": "Strasbourg",
-                    "away": "Nice",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776611700,
-                    "tournament": "L1",
-                    "home": "Nantes",
-                    "away": "Brest",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776611700,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Rennes",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1776366000,
-                    "tournament": "UECL",
-                    "home": "Strasbourg",
-                    "away": "Mainz",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "UECL",
-                    "home": "Mainz",
-                    "away": "Strasbourg",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775322000,
-                    "tournament": "L1",
-                    "home": "Brest",
-                    "away": "Rennes",
-                    "score": "3-4"
-                  },
-                  {
-                    "timestamp": 1775314800,
-                    "tournament": "L1",
-                    "home": "Strasbourg",
-                    "away": "Nice",
-                    "score": "3-1"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.73,
-                  "draw": 3.55,
-                  "away": 2.48
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.5,
-                  "X2": 1.44
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.22,
-                    "under": 3.97
-                  },
-                  "2.5": {
-                    "over": 1.74,
-                    "under": 2.08
-                  },
-                  "3.5": {
-                    "over": 2.8,
-                    "under": 1.4
-                  }
-                },
-                "btts": {
-                  "yes": 1.6,
-                  "no": 2.24
-                },
-                "draw_no_bet": {
-                  "home": 1.95,
-                  "away": 1.75
-                }
-              }
-            },
-            {
               "event_id": "vXzxUeVr",
               "flashscore_id": "vXzxUeVr",
               "flashscore_sport_id": 1,
@@ -219,16 +44,16 @@
               "pari": "Les deux équipes marquent",
               "cote_retenue": 1.42,
               "cotes": {
-                "domicile": 3.11,
-                "nul": 4.02,
-                "exterieur": 2.25
+                "domicile": 3.49,
+                "nul": 4.2,
+                "exterieur": 1.98
               },
               "pick_category": "btts",
               "analyse": "Le PSG reste sur une forme solide avec des victoires convaincantes comme le 5-4 face au Bayern Munich en Ligue des Champions et un 3-0 contre Nantes, mais affiche quelques fragilités défensives récentes : concédé 2 buts contre Lyon (1-2), 2 contre Lorient (2-2), et un match nul épique 5-4 en C1. Lens, de son côté, est en grande forme offensive avec 10 buts inscrits lors de ses 4 derniers matchs (4-1 contre Toulouse, 3-2 contre Toulouse, 3-3 à Brest, 1-0 contre Nantes), montrant une attaque prolifique. Ces deux équipes ont des tendances offensives marquées et les deux défenses semblent perméables en ce moment : le PSG a encaissé dans 4 de ses 5 derniers matchs, Lens n'a gardé le zéro qu'une seule fois sur ses 5 derniers. Historiquement, les confrontations Lens-PSG sont souvent engagées et équilibrées, Bollaert étant un antre difficile même pour le champion de France. Au vu de ces tendances, les deux équipes devraient trouver le chemin des filets, ce qui fait du BTTS Yes le pari le plus cohérent avec la réalité du moment.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -405,16 +230,16 @@
               "pari": "Plus de 2.5 buts",
               "cote_retenue": 1.36,
               "cotes": {
-                "domicile": 1.3,
-                "nul": 6.91,
-                "exterieur": 9.75
+                "domicile": 1.32,
+                "nul": 6.13,
+                "exterieur": 9.14
               },
               "pick_category": "ou",
               "analyse": "Manchester City traverse une excellente période avec 4 victoires et 1 nul sur leurs 5 derniers matchs, notamment des succès 3-0 contre Brentford, 2-1 contre Arsenal et 3-0 contre Chelsea. Leur seul faux pas récent est un match nul 3-3 à Everton, ce qui témoigne d'une équipe capable de marquer en abondance mais parfois poreuse à l'extérieur. Crystal Palace présente une forme irrégulière : ils alternent victoires encourageantes (2-1 contre Newcastle, 3-1 en UECL contre Fiorentina) et lourdes défaites (3-0 à Bournemouth, 3-1 contre Liverpool), sans oublier un nul 0-0 à domicile contre West Ham. L'avantage du terrain de City à l'Etihad est considérable — ils y ont écrasé Chelsea 3-0 et battu Arsenal 2-1 récemment. Les deux équipes ont tendance à produire des buts : Palace marque mais encaisse beaucoup, et City est l'une des équipes les plus prolifiques de la ligue. Le marché Over 2.5 buts à 1.36 reflète bien cette dynamique : 8 des 10 derniers matchs impliquant l'une ou l'autre équipe ont vu au moins 3 buts inscrits.",
               "confiance": 4,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -574,356 +399,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "nwKccFlL",
-              "flashscore_id": "nwKccFlL",
-              "flashscore_sport_id": 1,
-              "home_team_id": "lUatW5jE",
-              "away_team_id": "h8oAv4Ts",
-              "tournament_id": "vcm2mhgk",
-              "tournament_url": "/football/spain/laliga/",
-              "sport_key": "flashscore_football_liga",
-              "commence_time": "2026-05-13T17:00:00.000Z",
-              "time_display": "Mer. 19h00",
-              "home": "Villarreal",
-              "away": "Sevilla",
-              "match": "Villarreal vs Sevilla",
-              "prono": "win-home",
-              "pari": "Les deux équipes marquent",
-              "cote_retenue": 1.69,
-              "cotes": {
-                "domicile": 2.09,
-                "nul": 3.38,
-                "exterieur": 3.88
-              },
-              "pick_category": "btts",
-              "analyse": "Villarreal présente une forme solide à domicile avec des victoires récentes convaincantes : 5-1 contre Levante, 2-1 contre Celta Vigo, et 3-1 contre la Real Sociedad lors des dernières semaines. Le sous-marin jaune a également battu l'Athletic Bilbao 2-1 en déplacement, confirmant une dynamique offensive réelle. Séville traverse quant à lui une période très irrégulière : si les Sévillans ont battu Espanyol 2-1 et l'Atlético Madrid 2-1, ils ont également concédé des défaites sèches contre Oviedo (0-1), Levante (0-2) et Valence (0-2 à domicile), révélant une défense fragile. Ce contexte de vulnérabilité défensive de Séville face à une attaque de Villarreal en confiance plaide pour un match à buts des deux côtés, d'autant que Séville montre une capacité à marquer même dans les matchs perdus. Le BTTS (Les deux équipes marquent) semble le pari le plus adapté à la situation des deux équipes sur les dernières semaines.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778414400,
-                    "tournament": "LL",
-                    "home": "Mallorca",
-                    "away": "Villarreal",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1778336100,
-                    "tournament": "LL",
-                    "home": "Sevilla",
-                    "away": "Espanyol",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777921200,
-                    "tournament": "LL",
-                    "home": "Sevilla",
-                    "away": "Real Sociedad",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1777723200,
-                    "tournament": "LL",
-                    "home": "Villarreal",
-                    "away": "Levante",
-                    "score": "5-1"
-                  },
-                  {
-                    "timestamp": 1777230000,
-                    "tournament": "LL",
-                    "home": "Villarreal",
-                    "away": "Celta Vigo",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777221000,
-                    "tournament": "LL",
-                    "home": "Osasuna",
-                    "away": "Sevilla",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776972600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Villarreal",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776963600,
-                    "tournament": "LL",
-                    "home": "Levante",
-                    "away": "Sevilla",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776020400,
-                    "tournament": "LL",
-                    "home": "Ath Bilbao",
-                    "away": "Villarreal",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775934000,
-                    "tournament": "LL",
-                    "home": "Sevilla",
-                    "away": "Atl. Madrid",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1775502000,
-                    "tournament": "LL",
-                    "home": "Girona",
-                    "away": "Villarreal",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1775406600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Sevilla",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1774123200,
-                    "tournament": "LL",
-                    "home": "Sevilla",
-                    "away": "Valencia",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1774036800,
-                    "tournament": "LL",
-                    "home": "Villarreal",
-                    "away": "Real Sociedad",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1773587700,
-                    "tournament": "LL",
-                    "home": "Barcelona",
-                    "away": "Sevilla",
-                    "score": "5-2"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.01,
-                  "draw": 3.4,
-                  "away": 3.7
-                },
-                "double_chance": {
-                  "12": 1.3,
-                  "1X": 1.27,
-                  "X2": 1.75
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.25,
-                    "under": 3.75
-                  },
-                  "2.5": {
-                    "over": 1.84,
-                    "under": 1.98
-                  },
-                  "3.5": {
-                    "over": 2.97,
-                    "under": 1.37
-                  }
-                },
-                "btts": {
-                  "yes": 1.69,
-                  "no": 2.08
-                },
-                "draw_no_bet": {
-                  "home": 1.44,
-                  "away": 2.55
-                }
-              }
-            },
-            {
-              "event_id": "4Ipfwfck",
-              "flashscore_id": "4Ipfwfck",
-              "flashscore_sport_id": 1,
-              "home_team_id": "QFfPdh1J",
-              "away_team_id": "IP5zl0cJ",
-              "tournament_id": "vcm2mhgk",
-              "tournament_url": "/football/spain/laliga/",
-              "sport_key": "flashscore_football_liga",
-              "commence_time": "2026-05-13T17:00:00.000Z",
-              "time_display": "Mer. 19h00",
-              "home": "Espanyol",
-              "away": "Ath Bilbao",
-              "match": "Espanyol vs Ath Bilbao",
-              "prono": "win-home",
-              "pari": "Moins de 2.5 buts",
-              "cote_retenue": 1.69,
-              "cotes": {
-                "domicile": 2.82,
-                "nul": 2.97,
-                "exterieur": 2.94
-              },
-              "pick_category": "ou",
-              "analyse": "Espanyol traverse une période difficile avec seulement une victoire lors de leurs 7 derniers matchs de Liga, enchaînant des défaites face au Real Madrid (0-2), Séville (1-2), Rayo Vallecano (1-0) et Barcelone (4-1). L'attaque catalane est particulièrement en panne : 4 matchs sans marquer sur leurs 7 derniers. Athletic Bilbao n'est pas en grande forme non plus, avec 3 défaites lors de leurs 5 derniers matchs (Getafe 0-2, Villarreal 1-2, Atlético 2-3), mais ils ont su gagner contre Osasuna (1-0) et Alaves (4-2). Les deux équipes affichent des difficultés à scorer régulièrement : Espanyol n'a pas marqué dans 4 de ses 7 derniers matchs, et Bilbao a disputé plusieurs rencontres à faible nombre de buts. Ce contexte de fin de saison, avec des enjeux limités pour les deux formations dans le milieu de tableau, plaide pour un match fermé et prudent. Le record récent de peu de buts dans les confrontations de ces deux équipes renforce l'idée d'un match à moins de 2,5 buts.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778422500,
-                    "tournament": "LL",
-                    "home": "Ath Bilbao",
-                    "away": "Valencia",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1778336100,
-                    "tournament": "LL",
-                    "home": "Sevilla",
-                    "away": "Espanyol",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777834800,
-                    "tournament": "LL",
-                    "home": "Espanyol",
-                    "away": "Real Madrid",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777739400,
-                    "tournament": "LL",
-                    "home": "Alaves",
-                    "away": "Ath Bilbao",
-                    "score": "2-4"
-                  },
-                  {
-                    "timestamp": 1777316400,
-                    "tournament": "LL",
-                    "home": "Espanyol",
-                    "away": "Levante",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1777143600,
-                    "tournament": "LL",
-                    "home": "Atl. Madrid",
-                    "away": "Ath Bilbao",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1776967200,
-                    "tournament": "LL",
-                    "home": "Rayo Vallecano",
-                    "away": "Espanyol",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1776790800,
-                    "tournament": "LL",
-                    "home": "Ath Bilbao",
-                    "away": "Osasuna",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1776020400,
-                    "tournament": "LL",
-                    "home": "Ath Bilbao",
-                    "away": "Villarreal",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775925000,
-                    "tournament": "LL",
-                    "home": "Barcelona",
-                    "away": "Espanyol",
-                    "score": "4-1"
-                  },
-                  {
-                    "timestamp": 1775390400,
-                    "tournament": "LL",
-                    "home": "Getafe",
-                    "away": "Ath Bilbao",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775320200,
-                    "tournament": "LL",
-                    "home": "Betis",
-                    "away": "Espanyol",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1774200600,
-                    "tournament": "LL",
-                    "home": "Ath Bilbao",
-                    "away": "Betis",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1774106100,
-                    "tournament": "LL",
-                    "home": "Espanyol",
-                    "away": "Getafe",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1773579600,
-                    "tournament": "LL",
-                    "home": "Mallorca",
-                    "away": "Espanyol",
-                    "score": "2-1"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.7,
-                  "draw": 3.2,
-                  "away": 2.73
-                },
-                "double_chance": {
-                  "12": 1.35,
-                  "1X": 1.44,
-                  "X2": 1.44
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.35,
-                    "under": 2.98
-                  },
-                  "2.5": {
-                    "over": 2.13,
-                    "under": 1.69
-                  },
-                  "3.5": {
-                    "over": 3.85,
-                    "under": 1.24
-                  }
-                },
-                "btts": {
-                  "yes": 1.85,
-                  "no": 1.91
-                },
-                "draw_no_bet": {
-                  "home": 1.83,
-                  "away": 1.85
-                }
-              }
-            },
-            {
               "event_id": "GI7Mt8np",
               "flashscore_id": "GI7Mt8np",
               "flashscore_sport_id": 1,
@@ -941,9 +416,9 @@
               "pari": "Barcelone Draw No Bet",
               "cote_retenue": 1.5,
               "cotes": {
-                "domicile": 3.27,
+                "domicile": 3.07,
                 "nul": 3.84,
-                "exterieur": 2.23
+                "exterieur": 2.33
               },
               "pick_category": "dnb",
               "analyse": "Barcelone traverse une période de forme impressionnante : victoire 2-0 contre le Real Madrid le 10 mai, succès à Osasuna (1-2), à Getafe (0-2), contre Celta Vigo (1-0) et Espanyol (4-1), soit 5 victoires consécutives en Liga. Le Barça affiche une maîtrise défensive évidente lors de ces rencontres, encaissant très peu. Alaves, de son côté, présente un bilan bien plus irrégulier : défaite 2-4 face à l'Athletic Bilbao, nul 1-1 à Elche, défaite 2-1 à Madrid — ils peinent à tenir un résultat consistant à domicile comme à l'extérieur. Cependant, Alaves marque régulièrement : ils ont scoré dans 7 de leurs 8 derniers matchs, ce qui laisse entrevoir une possible réduction du score même en cas de défaite. Le différentiel de niveau est néanmoins clair : Barcelone, en course pour le titre, dispose d'une ligne d'attaque redoutable (Lewandowski, Yamal, Raphinha) et d'une solidité collective récente qui rend une victoire des Blaugrana très probable. Le Draw No Bet en faveur de Barcelone offre une sécurité supplémentaire sans sacrifier la valeur, en cas de nul inattendu.",
@@ -1116,9 +591,9 @@
               "pari": "Moins de 2.5 buts",
               "cote_retenue": 1.44,
               "cotes": {
-                "domicile": 2.41,
-                "nul": 3.13,
-                "exterieur": 3.56
+                "domicile": 2.45,
+                "nul": 3.02,
+                "exterieur": 3.64
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre deux équipes de milieu-bas de tableau s'annonce particulièrement fermé. Getafe traverse une passe difficile à domicile : ils n'ont pas marqué lors de leurs trois dernières réceptions en Liga (0-2 contre Rayo, 0-2 contre Barcelone, 0-0 contre Oviedo ce week-end). Mallorca, de son côté, alterne le bon et le moins bon : une belle victoire à Girona (0-1), un nul à domicile contre Villarreal (1-1), mais aussi une défaite à Alavés (2-1). Les deux équipes partagent une culture défensive prononcée — Getafe reste l'un des clubs les plus bas de Liga en termes de xG produit, et Mallorca n'est pas en reste avec seulement un but sur ses deux derniers matchs. Sur les cinq dernières rencontres de chaque équipe, aucun match n'a dépassé 2 buts au total, ce qui plaide fortement pour un match frugal. Le 'Moins de 2.5 buts' apparaît comme le pari le plus solide, soutenu par les profils défensifs des deux clubs et l'enjeu d'une fin de saison sous tension.",
@@ -1557,349 +1032,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "KdxSZjQN",
-              "flashscore_id": "KdxSZjQN",
-              "flashscore_sport_id": 2,
-              "home_team_id": "zN9UpRqp",
-              "away_team_id": "4bNPtZT5",
-              "tournament_id": "ibvebhik",
-              "tournament_url": "/tennis/atp-singles/rome/",
-              "sport_key": "flashscore_tennis_atp_rome_italy",
-              "commence_time": "2026-05-13T13:00:00.000Z",
-              "time_display": "Mer. 15h00",
-              "home": "Ruud C.",
-              "away": "Khachanov K.",
-              "match": "Ruud C. vs Khachanov K.",
-              "prono": "win-home",
-              "pari": "Moins de 21.5 jeux",
-              "cote_retenue": 1.95,
-              "cotes": {
-                "domicile": 1.25,
-                "nul": null,
-                "exterieur": 4.06
-              },
-              "pick_category": "ou",
-              "analyse": "Ruud est en excellente forme sur terre battue romaine : il a enchaîné trois victoires en deux sets secs contre Svajda, Lehecka et Musetti, montrant une solidité défensive et une construction de point typique de la terre battue. Khachanov présente lui aussi une forme correcte à Rome avec des victoires sur Shevchenko (2-0) et Prizmic (2-0), mais il a dû batailler en trois sets contre Van De Zandschulp, révélant des failles face à des joueurs qui défendent bien. Or, Ruud est précisément ce type de joueur : solide défensivement, capable d'imposer de longs échanges sur ocre. Khachanov a par ailleurs subi une défaite sèche face à Mensik à Madrid (0-2), illustrant ses limites contre des adversaires de haut niveau. Sur terre battue, les échanges sont naturellement plus longs, mais face à un Ruud dominant qui conclut vite ses matchs (trois victoires 2-0 consécutives), un déroulement en deux sets serrés mais nets semble le scénario le plus probable. Le total de jeux reste raisonnablement bas si Ruud maintient ce niveau : un score autour de 6-3, 6-4 donnerait 19 jeux, ce qui plaide pour le 'Moins de 21.5 jeux' à une cote acceptable.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778577000,
-                    "tournament": "ROM",
-                    "home": "Musetti L.",
-                    "away": "Ruud C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778577000,
-                    "tournament": "ROM",
-                    "home": "Khachanov K.",
-                    "away": "Prizmic D.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778418600,
-                    "tournament": "ROM",
-                    "home": "Khachanov K.",
-                    "away": "Van De Zandschulp B.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778404200,
-                    "tournament": "ROM",
-                    "home": "Ruud C.",
-                    "away": "Lehecka J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778239200,
-                    "tournament": "ROM",
-                    "home": "Ruud C.",
-                    "away": "Svajda Z.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778231400,
-                    "tournament": "ROM",
-                    "home": "Khachanov K.",
-                    "away": "Shevchenko A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777547400,
-                    "tournament": "MAD",
-                    "home": "Ruud C.",
-                    "away": "Blockx A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777380000,
-                    "tournament": "MAD",
-                    "home": "Tsitsipas S.",
-                    "away": "Ruud C.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777317000,
-                    "tournament": "MAD",
-                    "home": "Khachanov K.",
-                    "away": "Mensik J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777281000,
-                    "tournament": "MAD",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Ruud C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777116000,
-                    "tournament": "MAD",
-                    "home": "Munar J.",
-                    "away": "Ruud C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777108500,
-                    "tournament": "MAD",
-                    "home": "Khachanov K.",
-                    "away": "Walton A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776168600,
-                    "tournament": "BAR",
-                    "home": "Ugo Carabelli C.",
-                    "away": "Khachanov K.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775731500,
-                    "tournament": "MON",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Ruud C.",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1775655600,
-                    "tournament": "MON",
-                    "home": "Moutet C.",
-                    "away": "Ruud C.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.13,
-                    "under": 4.6
-                  },
-                  "18.0": {
-                    "over": 1.15,
-                    "under": 4.25
-                  },
-                  "18.5": {
-                    "over": 1.26,
-                    "under": 3.2
-                  },
-                  "19.0": {
-                    "over": 1.31,
-                    "under": 2.97
-                  },
-                  "19.5": {
-                    "over": 1.45,
-                    "under": 2.58
-                  },
-                  "20.0": {
-                    "over": 1.51,
-                    "under": 2.35
-                  },
-                  "20.5": {
-                    "over": 1.64,
-                    "under": 2.18
-                  },
-                  "21.0": {
-                    "over": 1.73,
-                    "under": 2.02
-                  },
-                  "21.5": {
-                    "over": 1.83,
-                    "under": 1.95
-                  },
-                  "22.0": {
-                    "over": 1.99,
-                    "under": 1.75
-                  },
-                  "22.5": {
-                    "over": 2.06,
-                    "under": 1.71
-                  },
-                  "23.0": {
-                    "over": 2.28,
-                    "under": 1.54
-                  },
-                  "23.5": {
-                    "over": 2.39,
-                    "under": 1.52
-                  },
-                  "24.0": {
-                    "over": 2.41,
-                    "under": 1.46
-                  },
-                  "24.5": {
-                    "over": 2.46,
-                    "under": 1.48
-                  },
-                  "25.0": {
-                    "over": 2.56,
-                    "under": 1.4
-                  },
-                  "25.5": {
-                    "over": 2.67,
-                    "under": 1.42
-                  },
-                  "26.0": {
-                    "over": 2.66,
-                    "under": 1.37
-                  },
-                  "26.5": {
-                    "over": 2.92,
-                    "under": 1.35
-                  },
-                  "27.5": {
-                    "over": 3.15,
-                    "under": 1.35
-                  },
-                  "2.5": {
-                    "over": 2.64,
-                    "under": 1.45
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.07,
-                    "away": 2.06
-                  },
-                  "-1.5": {
-                    "home": 1.7,
-                    "away": 6.9
-                  },
-                  "0.0": {
-                    "home": 1.19,
-                    "away": 4.25
-                  },
-                  "0.5": {
-                    "home": 1.19,
-                    "away": 3.9
-                  },
-                  "-0.5": {
-                    "home": 1.23,
-                    "away": 4.42
-                  },
-                  "1.0": {
-                    "away": 3.72
-                  },
-                  "-1.0": {
-                    "home": 1.24
-                  },
-                  "2.0": {
-                    "away": 3.2
-                  },
-                  "-2.0": {
-                    "home": 1.31
-                  },
-                  "2.5": {
-                    "away": 2.85
-                  },
-                  "-2.5": {
-                    "home": 1.4
-                  },
-                  "3.0": {
-                    "away": 2.61
-                  },
-                  "-3.0": {
-                    "home": 1.44
-                  },
-                  "3.5": {
-                    "home": 1.08,
-                    "away": 2.17
-                  },
-                  "-3.5": {
-                    "home": 1.63,
-                    "away": 6
-                  },
-                  "4.0": {
-                    "away": 1.96
-                  },
-                  "-4.0": {
-                    "home": 1.77
-                  },
-                  "4.5": {
-                    "away": 1.77
-                  },
-                  "-4.5": {
-                    "home": 2.01
-                  },
-                  "5.0": {
-                    "away": 1.49
-                  },
-                  "-5.0": {
-                    "home": 2.47
-                  },
-                  "5.5": {
-                    "away": 1.38
-                  },
-                  "-5.5": {
-                    "home": 2.95
-                  },
-                  "6.0": {
-                    "away": 1.22
-                  },
-                  "-6.0": {
-                    "home": 3.9
-                  },
-                  "6.5": {
-                    "away": 1.19
-                  },
-                  "-6.5": {
-                    "home": 4.38
-                  },
-                  "7.0": {
-                    "away": 1.06
-                  },
-                  "-7.0": {
-                    "home": 7.4
-                  },
-                  "7.5": {
-                    "away": 1.05
-                  },
-                  "-7.5": {
-                    "home": 8
-                  },
-                  "8.0": {
-                    "away": 1
-                  },
-                  "-8.0": {
-                    "home": 13
-                  },
-                  "8.5": {
-                    "away": 1
-                  },
-                  "-8.5": {
-                    "home": 12.5
-                  }
-                }
-              }
-            },
-            {
               "event_id": "Wbl40tBT",
               "flashscore_id": "Wbl40tBT",
               "flashscore_sport_id": 2,
@@ -1917,9 +1049,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 2.03,
               "cotes": {
-                "domicile": 1.46,
+                "domicile": 1.45,
                 "nul": null,
-                "exterieur": 2.81
+                "exterieur": 2.85
               },
               "pick_category": "ou",
               "analyse": "Deux joueurs en excellente forme sur terre battue se retrouvent à Rome dans ce qui s'annonce comme un duel de haut vol. Jodar affiche un bilan impressionnant sur cette surface : victoires sur De Minaur, Kopriva, Borges, Arnaldi et Tien à Rome, avec une seule défaite contre Sinner à Madrid. Darderi est tout aussi en feu : il vient de battre Zverev en trois sets à Rome, après avoir dominé Hanfmann et Paul, avant d'avoir été arrêté par Cerundolo à Madrid. Les deux joueurs sont habitués aux matchs en trois sets — Jodar a disputé trois finales en 2-1 ou 1-2 lors de ses sept derniers matchs, et Darderi a livré deux matchs en trois sets lors de ses cinq derniers. Sur terre battue romaine, les échanges sont longs, les services moins dominants, et quand deux joueurs de ce calibre se rencontrent avec cette forme, les matchs tendent à durer. Un total de plus de 22.5 jeux semble tout à fait réaliste compte tenu du niveau affiché des deux côtés.",
@@ -2255,16 +1387,16 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.92,
               "cotes": {
-                "domicile": 3.12,
+                "domicile": 3.17,
                 "nul": null,
-                "exterieur": 1.39
+                "exterieur": 1.38
               },
               "pick_category": "ou",
               "analyse": "Elena Rybakina traverse une forme impressionnante à Rome, dominant successivement Sakkari, Eala et Pliskova en deux sets secs à chaque fois. Sur l'ensemble de la période analysée, elle affiche 8 victoires en 10 matchs avec une domination marquée sur terre battue romaine. Svitolina de son côté s'est également montrée solide à Rome, battant Basiletti, Baptiste et Bartunkova sans perdre un set, mais ses adversaires étaient de calibre nettement inférieur. Le style de Rybakina — service puissant, jeu agressif et frappes plates — lui permet de raccourcir les échanges même sur terre battue, ce qui limite naturellement le nombre de jeux par match. Ses trois victoires à Rome se sont conclues en deux sets expéditifs, suggérant une tendance à des matchs courts. Svitolina est solide défensivement mais n'a pas les armes pour pousser Rybakina dans des marathons, et la Kazakhe a montré qu'elle pouvait rouler sur des adversaires même compétitives (Sakkari, Pliskova). Un match en deux sets avec peu de jeux disputés semble le scénario le plus probable.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -2584,974 +1716,6 @@
     "4Ipfwfck"
   ],
   "history": [
-    {
-      "event_id": "657hGExA",
-      "flashscore_id": "657hGExA",
-      "flashscore_sport_id": 1,
-      "home_team_id": "4jDQxrbf",
-      "away_team_id": "CQeaytrD",
-      "tournament_id": "vcm2mhgk",
-      "tournament_url": "/football/spain/laliga/",
-      "sport_key": "flashscore_football_liga",
-      "commence_time": "2026-04-21T17:00:00.000Z",
-      "time_display": "Mar. 19h00",
-      "home": "Mallorca",
-      "away": "Valencia",
-      "match": "Mallorca vs Valencia",
-      "prono": "win-home",
-      "pari": "Mallorca gagne (Draw No Bet)",
-      "cote_retenue": 1.75,
-      "cotes": {
-        "domicile": 2.74,
-        "nul": 3.34,
-        "exterieur": 2.74
-      },
-      "pick_category": "dnb",
-      "analyse": "Mallorca traverse une période de forme impressionnante à domicile : victoire 3-0 contre Rayo Vallecano et 2-1 contre le Real Madrid lors de leurs deux derniers matchs à domicile, démontrant une solidité défensive et une efficacité offensive réelles. Valencia, en revanche, est en grande difficulté : défaite 1-0 contre Elche (avant-dernière journée), 2-3 contre Celta Vigo, et deux défaites en déplacement sur leurs cinq derniers matchs (Oviedo 1-0, Villarreal 2-1). Les Che encaissent régulièrement des buts en dehors de chez eux et n'inspirent pas confiance sur la route. Mallorca, fort de son Son Moix, bénéficie d'un avantage territorial et psychologique manifeste, ayant battu le Real Madrid ici récemment. Valencia a certes battu Séville 2-0, mais cette victoire fait figure d'exception dans un parcours extérieur médiocre. Le marché 'Draw No Bet' côté Mallorca à 1.75 offre une bonne protection tout en capitalisant sur la nette supériorité des locaux à domicile cette saison.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "void",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776003300,
-            "tournament": "LL",
-            "home": "Mallorca",
-            "away": "Rayo Vallecano",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1775916900,
-            "tournament": "LL",
-            "home": "Elche",
-            "away": "Valencia",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1775398500,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Celta Vigo",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1775312100,
-            "tournament": "LL",
-            "home": "Mallorca",
-            "away": "Real Madrid",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774123200,
-            "tournament": "LL",
-            "home": "Sevilla",
-            "away": "Valencia",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774098000,
-            "tournament": "LL",
-            "home": "Elche",
-            "away": "Mallorca",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1773579600,
-            "tournament": "LL",
-            "home": "Mallorca",
-            "away": "Espanyol",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1773509400,
-            "tournament": "LL",
-            "home": "Oviedo",
-            "away": "Valencia",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1773000000,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Alaves",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1772888400,
-            "tournament": "LL",
-            "home": "Osasuna",
-            "away": "Mallorca",
-            "score": "2-2"
-          },
-          {
-            "timestamp": 1772378100,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Osasuna",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1772299800,
-            "tournament": "LL",
-            "home": "Mallorca",
-            "away": "Real Sociedad",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1771790400,
-            "tournament": "LL",
-            "home": "Villarreal",
-            "away": "Valencia",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1771781400,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Mallorca",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1771185600,
-            "tournament": "LL",
-            "home": "Mallorca",
-            "away": "Betis",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.55,
-          "draw": 3.13,
-          "away": 2.9
-        },
-        "double_chance": {
-          "12": 1.35,
-          "1X": 1.4,
-          "X2": 1.5
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.35,
-            "under": 3.04
-          },
-          "2.5": {
-            "over": 2.12,
-            "under": 1.71
-          },
-          "3.5": {
-            "over": 3.85,
-            "under": 1.23
-          }
-        },
-        "btts": {
-          "yes": 1.81,
-          "no": 1.91
-        },
-        "draw_no_bet": {
-          "home": 1.75,
-          "away": 1.95
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
-    {
-      "event_id": "n5ROYvef",
-      "flashscore_id": "n5ROYvef",
-      "flashscore_sport_id": 1,
-      "home_team_id": "CUSC1dab",
-      "away_team_id": "EiQ5g3JL",
-      "tournament_id": "g01moesh",
-      "tournament_url": "/football/asia/afc-champions-league/",
-      "sport_key": "flashscore_football_ucl",
-      "commence_time": "2026-04-21T16:15:00.000Z",
-      "time_display": "Mar. 18h15",
-      "home": "Machida (Jpn)",
-      "away": "Shabab Al-Ahli Dubai (Uae)",
-      "match": "Machida (Jpn) vs Shabab Al-Ahli Dubai (Uae)",
-      "prono": "win-home",
-      "pari": "Moins de 2.5 buts",
-      "cote_retenue": 1.62,
-      "cotes": {
-        "domicile": 2.53,
-        "nul": 3.38,
-        "exterieur": 2.77
-      },
-      "pick_category": "ou",
-      "analyse": "Machida présente une forme solide en Ligue des Champions asiatique avec une victoire 1-0 contre Al Ittihad le 17 avril, mais leur jeu reste défensif et peu prolifique : 5 de leurs 6 derniers matchs en J1 ou en CL se sont conclus sur un seul but d'écart ou moins de 2 buts. Shabab Al-Ahli Dubai affiche en revanche une puissance offensive remarquable : 3-2 contre Buriram, 3-0 contre Tractor, 4-0 contre Dibba Al Fujairah, 5-1 contre Ittihad Kalba — des performances qui témoignent d'une attaque en pleine confiance. Cependant, leurs deux défaites récentes face à Al Ain (3-2) et Al Jazira en coupe (1-0) montrent une certaine vulnérabilité défensive. Machida défend généralement bas et compact, comme en témoigne leur série de victoires étriquées en J1 (1-0 contre Kashiwa, 0-1 à Tokyo, 1-0 contre Al Ittihad), ce qui devrait limiter les espaces. Le profil tactique de ce choc — équipe japonaise rigoriste face à un adversaire émirati puissant mais parfois irrégulier — pointe vers un match fermé avec peu de buts, notamment sous les 2,5.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776528900,
-            "tournament": "CL",
-            "home": "Buriram",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1776448800,
-            "tournament": "CL",
-            "home": "Machida",
-            "away": "Al Ittihad",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1776177900,
-            "tournament": "CL",
-            "home": "Tractor",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1775883600,
-            "tournament": "J1",
-            "home": "Machida",
-            "away": "Kashiwa Reysol",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1775838600,
-            "tournament": "LEA",
-            "home": "Al Ain",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1775368800,
-            "tournament": "J1",
-            "home": "FC Tokyo",
-            "away": "Machida",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1775320200,
-            "tournament": "LEA",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Al Jazira",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775037600,
-            "tournament": "J1",
-            "home": "Machida",
-            "away": "FC Tokyo",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1774674000,
-            "tournament": "J1",
-            "home": "Machida",
-            "away": "Kawasaki Frontale",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774162800,
-            "tournament": "J1",
-            "home": "Urawa Reds",
-            "away": "Machida",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1774104900,
-            "tournament": "PC",
-            "home": "Al Jazira",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1773829800,
-            "tournament": "J1",
-            "home": "Machida",
-            "away": "Kashima Antlers",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1773682200,
-            "tournament": "LEA",
-            "home": "Dibba Al Fujairah",
-            "away": "Shabab Al-Ahli Dubai",
-            "score": "0-4"
-          },
-          {
-            "timestamp": 1773464400,
-            "tournament": "J1",
-            "home": "Kashiwa Reysol",
-            "away": "Machida",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1773250200,
-            "tournament": "LEA",
-            "home": "Shabab Al-Ahli Dubai",
-            "away": "Ittihad Kalba",
-            "score": "5-1"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.4,
-          "draw": 3.17,
-          "away": 2.88
-        },
-        "double_chance": {
-          "12": 1.33,
-          "1X": 1.36,
-          "X2": 1.53
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.38,
-            "under": 2.8
-          },
-          "2.5": {
-            "over": 2.2,
-            "under": 1.62
-          },
-          "3.5": {
-            "over": 3.9,
-            "under": 1.22
-          }
-        },
-        "btts": {
-          "yes": 1.87,
-          "no": 1.85
-        },
-        "draw_no_bet": {
-          "home": 1.67,
-          "away": 2.06
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Champions League",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
-    {
-      "event_id": "Wr6Yvu5F",
-      "flashscore_id": "Wr6Yvu5F",
-      "flashscore_sport_id": 2,
-      "home_team_id": "Ovyv04To",
-      "away_team_id": "M7dojKaa",
-      "tournament_id": "0qmj1oo3",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain",
-      "commence_time": "2026-04-21T14:05:00.000Z",
-      "time_display": "Mar. 16h05",
-      "home": "Quevedo K.",
-      "away": "Williams V.",
-      "match": "Quevedo K. vs Williams V.",
-      "prono": "win-home",
-      "pari": "Moins de 20.5 jeux",
-      "cote_retenue": 1.62,
-      "cotes": {
-        "domicile": 1.23,
-        "nul": null,
-        "exterieur": 4.58
-      },
-      "pick_category": "ou",
-      "analyse": "Kristina Quevedo dispute ce tournoi WTA Madrid à domicile (joueuse espagnole), ce qui constitue un avantage non négligeable sur terre battue. Sa forme récente est contrastée : victoire solide contre Erjavec en BJK Cup (2-0), mais défaite contre Chwalinska (2-1) et contre Golubic (2-0). Elle reste cependant active et compétitive sur cette surface. Venus Williams, à 45 ans, traverse une période très difficile : trois défaites consécutives contre Jones (2-0), Parry (2-1) et Tomljanovic (2-0), sans la moindre victoire enregistrée dans ces données récentes. Face à une Quevedo jouant à domicile sur terre battue et motivée, Williams montre des signes physiques évidents de déclin. Les matchs de Quevedo ont tendance à être relativement courts quand elle s'impose (plusieurs 2-0 nets), et compte tenu de l'état actuel de Williams, un match en seulement deux sets avec peu de jeux disputés est envisageable. Le handicap de jeux sur Quevedo à -4.5 (cote 1.57) offre une valeur intéressante si la tenante du jeu espagnol surclasse Williams, mais le total de jeux sous 20.5 (cote 1.62) paraît le pari le plus solide au vu du déclin physique de Venus et du style expéditif récent de Quevedo.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776173400,
-            "tournament": "OEI",
-            "home": "Chwalinska M.",
-            "away": "Quevedo K.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775907300,
-            "tournament": "BJK",
-            "home": "Erjavec V.",
-            "away": "Quevedo K.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775819700,
-            "tournament": "BJK",
-            "home": "Zidansek T.",
-            "away": "Quevedo K.",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1774453200,
-            "tournament": "DUB",
-            "home": "Quevedo K.",
-            "away": "Erjavec V.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774262400,
-            "tournament": "DUB",
-            "home": "Salkova D.",
-            "away": "Quevedo K.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1773940500,
-            "tournament": "MIA",
-            "home": "Jones F.",
-            "away": "Williams V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1772747700,
-            "tournament": "IND",
-            "home": "Parry D.",
-            "away": "Williams V.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1771959300,
-            "tournament": "AUS",
-            "home": "Williams V.",
-            "away": "Tomljanovic A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1771601400,
-            "tournament": "OEI",
-            "home": "Golubic V.",
-            "away": "Quevedo K.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1771420800,
-            "tournament": "OEI",
-            "home": "Akli A.",
-            "away": "Quevedo K.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1771248300,
-            "tournament": "OEI",
-            "home": "Appleton E.",
-            "away": "Quevedo K.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1770894300,
-            "tournament": "OEI",
-            "home": "Jorge M.",
-            "away": "Quevedo K.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1770741600,
-            "tournament": "OEI",
-            "home": "Tomova V.",
-            "away": "Quevedo K.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1770120600,
-            "tournament": "CLU",
-            "home": "Wang Xin.",
-            "away": "Quevedo K.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1769937000,
-            "tournament": "CLU",
-            "home": "Quevedo K.",
-            "away": "Shymanovich I.",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "16.5": {
-            "over": 1.24,
-            "under": 3.34
-          },
-          "17.0": {
-            "over": 1.3,
-            "under": 3.04
-          },
-          "17.5": {
-            "over": 1.46,
-            "under": 2.55
-          },
-          "18.0": {
-            "over": 1.53,
-            "under": 2.31
-          },
-          "18.5": {
-            "over": 1.7,
-            "under": 2.05
-          },
-          "19.0": {
-            "over": 1.8,
-            "under": 1.92
-          },
-          "19.5": {
-            "over": 1.95,
-            "under": 1.82
-          },
-          "20.0": {
-            "over": 2.05,
-            "under": 1.7
-          },
-          "20.5": {
-            "over": 2.19,
-            "under": 1.62
-          },
-          "21.0": {
-            "over": 2.31,
-            "under": 1.53
-          },
-          "21.5": {
-            "over": 2.42,
-            "under": 1.5
-          },
-          "22.0": {
-            "over": 2.56,
-            "under": 1.41
-          },
-          "22.5": {
-            "over": 2.73,
-            "under": 1.4
-          },
-          "2.5": {
-            "over": 2.99,
-            "under": 1.35
-          },
-          "23.5": {
-            "over": 3.1,
-            "under": 1.35
-          },
-          "24.5": {
-            "over": 3.3,
-            "under": 1.32
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.06,
-            "away": 2.32
-          },
-          "-1.5": {
-            "home": 1.58,
-            "away": 6.85
-          },
-          "2.5": {
-            "away": 3.31
-          },
-          "-2.5": {
-            "home": 1.31
-          },
-          "3.0": {
-            "away": 3.14
-          },
-          "-3.0": {
-            "home": 1.32
-          },
-          "3.5": {
-            "away": 2.88
-          },
-          "-3.5": {
-            "home": 1.38
-          },
-          "4.0": {
-            "away": 2.62
-          },
-          "-4.0": {
-            "home": 1.44
-          },
-          "4.5": {
-            "away": 2.31
-          },
-          "-4.5": {
-            "home": 1.57
-          },
-          "5.0": {
-            "away": 2.07
-          },
-          "-5.0": {
-            "home": 1.69
-          },
-          "5.5": {
-            "away": 1.91
-          },
-          "-5.5": {
-            "home": 1.8
-          },
-          "6.0": {
-            "away": 1.64
-          },
-          "-6.0": {
-            "home": 2.15
-          },
-          "6.5": {
-            "away": 1.52
-          },
-          "-6.5": {
-            "home": 2.42
-          },
-          "7.0": {
-            "away": 1.32
-          },
-          "-7.0": {
-            "home": 3.14
-          },
-          "7.5": {
-            "away": 1.28
-          },
-          "-7.5": {
-            "home": 3.47
-          },
-          "8.0": {
-            "away": 1.13
-          },
-          "-8.0": {
-            "home": 5.25
-          },
-          "8.5": {
-            "away": 1.11
-          },
-          "-8.5": {
-            "home": 5.8
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain)",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
-    {
-      "event_id": "W2CYqRnC",
-      "flashscore_id": "W2CYqRnC",
-      "flashscore_sport_id": 2,
-      "home_team_id": "pQGynuhR",
-      "away_team_id": "rysUUciD",
-      "tournament_id": "0qmj1oo3",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain",
-      "commence_time": "2026-04-21T15:05:00.000Z",
-      "time_display": "Mar. 17h05",
-      "home": "Zakharova A.",
-      "away": "Osorio C.",
-      "match": "Zakharova A. vs Osorio C.",
-      "prono": "win-home",
-      "pari": "Plus de 20.5 jeux",
-      "cote_retenue": 1.91,
-      "cotes": {
-        "domicile": 2.86,
-        "nul": null,
-        "exterieur": 1.43
-      },
-      "pick_category": "ou",
-      "analyse": "Zakharova affiche une forme remarquable sur terre battue récemment : elle a remporté 5 de ses 6 derniers matches disputés à Miami et en Australie, avec des victoires convaincantes en 2-0 contre Sramkova, Chirico, Golubic et Stephens. Sa seule défaite récente contre Yastremska (0-2 à Charleston) montre qu'elle peut être vulnérable face à de très bonnes joueuses. Osorio de son côté présente une forme irrégulière : elle s'est inclinée 0-2 face à Ortenzi à Bogota et a perdu contre Osaka à Indian Wells, même si elle a battu Dolehide et Siniakova. Sur terre battue à Madrid, la surface favorise naturellement les échanges longs et les rallyes prolongés, ce qui augmente le nombre de jeux joués. Le profil de ces deux joueuses — Osorio combative et Zakharova en confiance mais pas dominatrice absolue — suggère un match disputé avec des jeux serrés, surtout si Osorio impose son rythme sur la terre espagnole. Les récents matches de Zakharova montrent plusieurs triomphes en 2-1, signe qu'elle peut être accrochée, ce qui milite pour un total de jeux élevé.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1775153400,
-            "tournament": "BOG",
-            "home": "Osorio C.",
-            "away": "Ortenzi J.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774977000,
-            "tournament": "BOG",
-            "home": "Osorio C.",
-            "away": "Dolehide C.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774883400,
-            "tournament": "CHA",
-            "home": "Zakharova A.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774122000,
-            "tournament": "MIA",
-            "home": "Zakharova A.",
-            "away": "Mboko V.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774038600,
-            "tournament": "MIA",
-            "home": "Muchova K.",
-            "away": "Osorio C.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774017900,
-            "tournament": "MIA",
-            "home": "Kalinskaya A.",
-            "away": "Zakharova A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1773936900,
-            "tournament": "MIA",
-            "home": "Zakharova A.",
-            "away": "Bondar A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1773795600,
-            "tournament": "MIA",
-            "home": "Siniakova K.",
-            "away": "Osorio C.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1773759900,
-            "tournament": "MIA",
-            "home": "Zakharova A.",
-            "away": "Sramkova R.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773683410,
-            "tournament": "MIA",
-            "home": "Zakharova A.",
-            "away": "Chirico L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773335400,
-            "tournament": "AUS",
-            "home": "Tararudee L.",
-            "away": "Zakharova A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773249000,
-            "tournament": "AUS",
-            "home": "Zakharova A.",
-            "away": "Fruhvirtova L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773163200,
-            "tournament": "AUS",
-            "home": "Zakharova A.",
-            "away": "Golubic V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773077100,
-            "tournament": "AUS",
-            "home": "Zakharova A.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1773003900,
-            "tournament": "IND",
-            "home": "Osorio C.",
-            "away": "Osaka N.",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.5": {
-            "over": 1.29,
-            "under": 3.21
-          },
-          "18.0": {
-            "over": 1.3,
-            "under": 3.04
-          },
-          "18.5": {
-            "over": 1.46,
-            "under": 2.52
-          },
-          "19.0": {
-            "over": 1.5,
-            "under": 2.38
-          },
-          "19.5": {
-            "over": 1.67,
-            "under": 2.12
-          },
-          "20.0": {
-            "over": 1.72,
-            "under": 2.03
-          },
-          "20.5": {
-            "over": 1.91,
-            "under": 1.88
-          },
-          "21.0": {
-            "over": 1.92,
-            "under": 1.8
-          },
-          "21.5": {
-            "over": 2.02,
-            "under": 1.71
-          },
-          "22.0": {
-            "over": 2.15,
-            "under": 1.61
-          },
-          "22.5": {
-            "over": 2.33,
-            "under": 1.54
-          },
-          "23.0": {
-            "over": 2.36,
-            "under": 1.48
-          },
-          "23.5": {
-            "over": 2.53,
-            "under": 1.45
-          },
-          "24.0": {
-            "over": 2.46,
-            "under": 1.44
-          },
-          "24.5": {
-            "over": 2.65,
-            "under": 1.42
-          },
-          "2.5": {
-            "over": 2.51,
-            "under": 1.49
-          },
-          "25.5": {
-            "over": 3.2,
-            "under": 1.34
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.83,
-            "away": 1.14
-          },
-          "-1.5": {
-            "home": 4.85,
-            "away": 1.91
-          },
-          "0.5": {
-            "home": 2.91,
-            "away": 1.32
-          },
-          "-0.5": {
-            "home": 3.25,
-            "away": 1.38
-          },
-          "1.0": {
-            "home": 2.73
-          },
-          "-1.0": {
-            "away": 1.41
-          },
-          "2.0": {
-            "home": 2.56
-          },
-          "-2.0": {
-            "away": 1.46
-          },
-          "2.5": {
-            "home": 2.45
-          },
-          "-2.5": {
-            "away": 1.51
-          },
-          "3.0": {
-            "home": 2.26
-          },
-          "-3.0": {
-            "away": 1.58
-          },
-          "3.5": {
-            "home": 2.08
-          },
-          "-3.5": {
-            "away": 1.67
-          },
-          "4.0": {
-            "home": 1.91
-          },
-          "-4.0": {
-            "away": 1.81
-          },
-          "4.5": {
-            "home": 1.81
-          },
-          "-4.5": {
-            "away": 1.96
-          },
-          "5.0": {
-            "home": 1.58
-          },
-          "-5.0": {
-            "away": 2.26
-          },
-          "5.5": {
-            "home": 1.5
-          },
-          "-5.5": {
-            "away": 2.46
-          },
-          "6.0": {
-            "home": 1.32
-          },
-          "-6.0": {
-            "away": 3.14
-          },
-          "6.5": {
-            "home": 1.31
-          },
-          "-6.5": {
-            "away": 3.31
-          },
-          "7.0": {
-            "home": 1.14
-          },
-          "-7.0": {
-            "away": 5.05
-          },
-          "7.5": {
-            "home": 1.12
-          },
-          "-7.5": {
-            "away": 5.45
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain)",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
     {
       "event_id": "YowmpFPc",
       "flashscore_id": "YowmpFPc",
@@ -137005,6 +135169,886 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rome (Italy)",
       "archived_at": "2026-05-13T14:21:48.025Z"
+    },
+    {
+      "event_id": "ba03FdGk",
+      "flashscore_id": "ba03FdGk",
+      "flashscore_sport_id": 1,
+      "home_team_id": "Cr4VGaUl",
+      "away_team_id": "nP6UzIU1",
+      "tournament_id": "j9qetlpp",
+      "tournament_url": "/football/france/ligue-1/",
+      "sport_key": "flashscore_football_ligue1",
+      "commence_time": "2026-05-13T17:00:00.000Z",
+      "time_display": "Mer. 19h00",
+      "home": "Brest",
+      "away": "Strasbourg",
+      "match": "Brest vs Strasbourg",
+      "prono": "win-home",
+      "pari": "Les deux équipes marquent - Oui",
+      "cote_retenue": 1.6,
+      "cotes": {
+        "domicile": 3.34,
+        "nul": 3.59,
+        "exterieur": 2.21
+      },
+      "pick_category": "btts",
+      "analyse": "Brest traverse une période difficile avec des résultats préoccupants : défaite 1-0 contre le PSG, lourde défaite 4-0 contre Paris FC, et un nul 1-1 contre Nantes sur leurs cinq derniers matchs. Seul le match contre Lens (3-3) et Rennes (3-4) illustre une certaine propension à marquer mais aussi à encaisser. Strasbourg, de son côté, est également en méforme notable : eliminé par Rayo Vallecano en UECL, battu par Toulouse (1-2), écrasé par Rennes (0-3), et éliminé en Coupe de France par Nice (0-2). Cependant, les deux équipes montrent une tendance claire à être poreuses défensivement, Brest encaissant dans chacun de ses cinq derniers matchs, tout comme Strasbourg. Sur leurs rencontres récentes, les deux équipes combinent régulièrement des matchs à au moins deux buts marqués au total. Le contexte de fin de saison avec des enjeux incertains des deux côtés renforce l'idée d'un match ouvert où les deux équipes pourraient trouver le chemin des filets.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778439600,
+            "tournament": "L1",
+            "home": "PSG",
+            "away": "Brest",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1778439600,
+            "tournament": "L1",
+            "home": "Angers",
+            "away": "Strasbourg",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1778180400,
+            "tournament": "UECL",
+            "home": "Strasbourg",
+            "away": "Rayo Vallecano",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1777821300,
+            "tournament": "L1",
+            "home": "Paris FC",
+            "away": "Brest",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1777821300,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Toulouse",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777575600,
+            "tournament": "UECL",
+            "home": "Rayo Vallecano",
+            "away": "Strasbourg",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1777208400,
+            "tournament": "L1",
+            "home": "Lorient",
+            "away": "Strasbourg",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1777056300,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Lens",
+            "score": "3-3"
+          },
+          {
+            "timestamp": 1776884400,
+            "tournament": "CDF",
+            "home": "Strasbourg",
+            "away": "Nice",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776611700,
+            "tournament": "L1",
+            "home": "Nantes",
+            "away": "Brest",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776611700,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Rennes",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1776366000,
+            "tournament": "UECL",
+            "home": "Strasbourg",
+            "away": "Mainz",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1775761200,
+            "tournament": "UECL",
+            "home": "Mainz",
+            "away": "Strasbourg",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775322000,
+            "tournament": "L1",
+            "home": "Brest",
+            "away": "Rennes",
+            "score": "3-4"
+          },
+          {
+            "timestamp": 1775314800,
+            "tournament": "L1",
+            "home": "Strasbourg",
+            "away": "Nice",
+            "score": "3-1"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.73,
+          "draw": 3.55,
+          "away": 2.48
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.5,
+          "X2": 1.44
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.22,
+            "under": 3.97
+          },
+          "2.5": {
+            "over": 1.74,
+            "under": 2.08
+          },
+          "3.5": {
+            "over": 2.8,
+            "under": 1.4
+          }
+        },
+        "btts": {
+          "yes": 1.6,
+          "no": 2.24
+        },
+        "draw_no_bet": {
+          "home": 1.95,
+          "away": 1.75
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Ligue 1",
+      "archived_at": "2026-05-13T19:24:01.248Z"
+    },
+    {
+      "event_id": "nwKccFlL",
+      "flashscore_id": "nwKccFlL",
+      "flashscore_sport_id": 1,
+      "home_team_id": "lUatW5jE",
+      "away_team_id": "h8oAv4Ts",
+      "tournament_id": "vcm2mhgk",
+      "tournament_url": "/football/spain/laliga/",
+      "sport_key": "flashscore_football_liga",
+      "commence_time": "2026-05-13T17:00:00.000Z",
+      "time_display": "Mer. 19h00",
+      "home": "Villarreal",
+      "away": "Sevilla",
+      "match": "Villarreal vs Sevilla",
+      "prono": "win-home",
+      "pari": "Les deux équipes marquent",
+      "cote_retenue": 1.69,
+      "cotes": {
+        "domicile": 2.08,
+        "nul": 3.38,
+        "exterieur": 3.93
+      },
+      "pick_category": "btts",
+      "analyse": "Villarreal présente une forme solide à domicile avec des victoires récentes convaincantes : 5-1 contre Levante, 2-1 contre Celta Vigo, et 3-1 contre la Real Sociedad lors des dernières semaines. Le sous-marin jaune a également battu l'Athletic Bilbao 2-1 en déplacement, confirmant une dynamique offensive réelle. Séville traverse quant à lui une période très irrégulière : si les Sévillans ont battu Espanyol 2-1 et l'Atlético Madrid 2-1, ils ont également concédé des défaites sèches contre Oviedo (0-1), Levante (0-2) et Valence (0-2 à domicile), révélant une défense fragile. Ce contexte de vulnérabilité défensive de Séville face à une attaque de Villarreal en confiance plaide pour un match à buts des deux côtés, d'autant que Séville montre une capacité à marquer même dans les matchs perdus. Le BTTS (Les deux équipes marquent) semble le pari le plus adapté à la situation des deux équipes sur les dernières semaines.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-3",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778414400,
+            "tournament": "LL",
+            "home": "Mallorca",
+            "away": "Villarreal",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1778336100,
+            "tournament": "LL",
+            "home": "Sevilla",
+            "away": "Espanyol",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777921200,
+            "tournament": "LL",
+            "home": "Sevilla",
+            "away": "Real Sociedad",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1777723200,
+            "tournament": "LL",
+            "home": "Villarreal",
+            "away": "Levante",
+            "score": "5-1"
+          },
+          {
+            "timestamp": 1777230000,
+            "tournament": "LL",
+            "home": "Villarreal",
+            "away": "Celta Vigo",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777221000,
+            "tournament": "LL",
+            "home": "Osasuna",
+            "away": "Sevilla",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776972600,
+            "tournament": "LL",
+            "home": "Oviedo",
+            "away": "Villarreal",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776963600,
+            "tournament": "LL",
+            "home": "Levante",
+            "away": "Sevilla",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776020400,
+            "tournament": "LL",
+            "home": "Ath Bilbao",
+            "away": "Villarreal",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775934000,
+            "tournament": "LL",
+            "home": "Sevilla",
+            "away": "Atl. Madrid",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1775502000,
+            "tournament": "LL",
+            "home": "Girona",
+            "away": "Villarreal",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1775406600,
+            "tournament": "LL",
+            "home": "Oviedo",
+            "away": "Sevilla",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1774123200,
+            "tournament": "LL",
+            "home": "Sevilla",
+            "away": "Valencia",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1774036800,
+            "tournament": "LL",
+            "home": "Villarreal",
+            "away": "Real Sociedad",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1773587700,
+            "tournament": "LL",
+            "home": "Barcelona",
+            "away": "Sevilla",
+            "score": "5-2"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.01,
+          "draw": 3.4,
+          "away": 3.7
+        },
+        "double_chance": {
+          "12": 1.3,
+          "1X": 1.27,
+          "X2": 1.75
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.25,
+            "under": 3.75
+          },
+          "2.5": {
+            "over": 1.84,
+            "under": 1.98
+          },
+          "3.5": {
+            "over": 2.97,
+            "under": 1.37
+          }
+        },
+        "btts": {
+          "yes": 1.69,
+          "no": 2.08
+        },
+        "draw_no_bet": {
+          "home": 1.44,
+          "away": 2.55
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "LaLiga",
+      "archived_at": "2026-05-13T19:24:01.248Z"
+    },
+    {
+      "event_id": "4Ipfwfck",
+      "flashscore_id": "4Ipfwfck",
+      "flashscore_sport_id": 1,
+      "home_team_id": "QFfPdh1J",
+      "away_team_id": "IP5zl0cJ",
+      "tournament_id": "vcm2mhgk",
+      "tournament_url": "/football/spain/laliga/",
+      "sport_key": "flashscore_football_liga",
+      "commence_time": "2026-05-13T17:00:00.000Z",
+      "time_display": "Mer. 19h00",
+      "home": "Espanyol",
+      "away": "Ath Bilbao",
+      "match": "Espanyol vs Ath Bilbao",
+      "prono": "win-home",
+      "pari": "Moins de 2.5 buts",
+      "cote_retenue": 1.69,
+      "cotes": {
+        "domicile": 2.96,
+        "nul": 2.97,
+        "exterieur": 2.81
+      },
+      "pick_category": "ou",
+      "analyse": "Espanyol traverse une période difficile avec seulement une victoire lors de leurs 7 derniers matchs de Liga, enchaînant des défaites face au Real Madrid (0-2), Séville (1-2), Rayo Vallecano (1-0) et Barcelone (4-1). L'attaque catalane est particulièrement en panne : 4 matchs sans marquer sur leurs 7 derniers. Athletic Bilbao n'est pas en grande forme non plus, avec 3 défaites lors de leurs 5 derniers matchs (Getafe 0-2, Villarreal 1-2, Atlético 2-3), mais ils ont su gagner contre Osasuna (1-0) et Alaves (4-2). Les deux équipes affichent des difficultés à scorer régulièrement : Espanyol n'a pas marqué dans 4 de ses 7 derniers matchs, et Bilbao a disputé plusieurs rencontres à faible nombre de buts. Ce contexte de fin de saison, avec des enjeux limités pour les deux formations dans le milieu de tableau, plaide pour un match fermé et prudent. Le record récent de peu de buts dans les confrontations de ces deux équipes renforce l'idée d'un match à moins de 2,5 buts.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778422500,
+            "tournament": "LL",
+            "home": "Ath Bilbao",
+            "away": "Valencia",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1778336100,
+            "tournament": "LL",
+            "home": "Sevilla",
+            "away": "Espanyol",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777834800,
+            "tournament": "LL",
+            "home": "Espanyol",
+            "away": "Real Madrid",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777739400,
+            "tournament": "LL",
+            "home": "Alaves",
+            "away": "Ath Bilbao",
+            "score": "2-4"
+          },
+          {
+            "timestamp": 1777316400,
+            "tournament": "LL",
+            "home": "Espanyol",
+            "away": "Levante",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1777143600,
+            "tournament": "LL",
+            "home": "Atl. Madrid",
+            "away": "Ath Bilbao",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1776967200,
+            "tournament": "LL",
+            "home": "Rayo Vallecano",
+            "away": "Espanyol",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1776790800,
+            "tournament": "LL",
+            "home": "Ath Bilbao",
+            "away": "Osasuna",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1776020400,
+            "tournament": "LL",
+            "home": "Ath Bilbao",
+            "away": "Villarreal",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1775925000,
+            "tournament": "LL",
+            "home": "Barcelona",
+            "away": "Espanyol",
+            "score": "4-1"
+          },
+          {
+            "timestamp": 1775390400,
+            "tournament": "LL",
+            "home": "Getafe",
+            "away": "Ath Bilbao",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775320200,
+            "tournament": "LL",
+            "home": "Betis",
+            "away": "Espanyol",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1774200600,
+            "tournament": "LL",
+            "home": "Ath Bilbao",
+            "away": "Betis",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1774106100,
+            "tournament": "LL",
+            "home": "Espanyol",
+            "away": "Getafe",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1773579600,
+            "tournament": "LL",
+            "home": "Mallorca",
+            "away": "Espanyol",
+            "score": "2-1"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.7,
+          "draw": 3.2,
+          "away": 2.73
+        },
+        "double_chance": {
+          "12": 1.35,
+          "1X": 1.44,
+          "X2": 1.44
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.35,
+            "under": 2.98
+          },
+          "2.5": {
+            "over": 2.13,
+            "under": 1.69
+          },
+          "3.5": {
+            "over": 3.85,
+            "under": 1.24
+          }
+        },
+        "btts": {
+          "yes": 1.85,
+          "no": 1.91
+        },
+        "draw_no_bet": {
+          "home": 1.83,
+          "away": 1.85
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "LaLiga",
+      "archived_at": "2026-05-13T19:24:01.248Z"
+    },
+    {
+      "event_id": "KdxSZjQN",
+      "flashscore_id": "KdxSZjQN",
+      "flashscore_sport_id": 2,
+      "home_team_id": "zN9UpRqp",
+      "away_team_id": "4bNPtZT5",
+      "tournament_id": "ibvebhik",
+      "tournament_url": "/tennis/atp-singles/rome/",
+      "sport_key": "flashscore_tennis_atp_rome_italy",
+      "commence_time": "2026-05-13T13:00:00.000Z",
+      "time_display": "Mer. 15h00",
+      "home": "Ruud C.",
+      "away": "Khachanov K.",
+      "match": "Ruud C. vs Khachanov K.",
+      "prono": "win-home",
+      "pari": "Moins de 21.5 jeux",
+      "cote_retenue": 1.95,
+      "cotes": {
+        "domicile": 1.25,
+        "nul": null,
+        "exterieur": 4.06
+      },
+      "pick_category": "ou",
+      "analyse": "Ruud est en excellente forme sur terre battue romaine : il a enchaîné trois victoires en deux sets secs contre Svajda, Lehecka et Musetti, montrant une solidité défensive et une construction de point typique de la terre battue. Khachanov présente lui aussi une forme correcte à Rome avec des victoires sur Shevchenko (2-0) et Prizmic (2-0), mais il a dû batailler en trois sets contre Van De Zandschulp, révélant des failles face à des joueurs qui défendent bien. Or, Ruud est précisément ce type de joueur : solide défensivement, capable d'imposer de longs échanges sur ocre. Khachanov a par ailleurs subi une défaite sèche face à Mensik à Madrid (0-2), illustrant ses limites contre des adversaires de haut niveau. Sur terre battue, les échanges sont naturellement plus longs, mais face à un Ruud dominant qui conclut vite ses matchs (trois victoires 2-0 consécutives), un déroulement en deux sets serrés mais nets semble le scénario le plus probable. Le total de jeux reste raisonnablement bas si Ruud maintient ce niveau : un score autour de 6-3, 6-4 donnerait 19 jeux, ce qui plaide pour le 'Moins de 21.5 jeux' à une cote acceptable.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778577000,
+            "tournament": "ROM",
+            "home": "Musetti L.",
+            "away": "Ruud C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778577000,
+            "tournament": "ROM",
+            "home": "Khachanov K.",
+            "away": "Prizmic D.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778418600,
+            "tournament": "ROM",
+            "home": "Khachanov K.",
+            "away": "Van De Zandschulp B.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778404200,
+            "tournament": "ROM",
+            "home": "Ruud C.",
+            "away": "Lehecka J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778239200,
+            "tournament": "ROM",
+            "home": "Ruud C.",
+            "away": "Svajda Z.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778231400,
+            "tournament": "ROM",
+            "home": "Khachanov K.",
+            "away": "Shevchenko A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777547400,
+            "tournament": "MAD",
+            "home": "Ruud C.",
+            "away": "Blockx A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777380000,
+            "tournament": "MAD",
+            "home": "Tsitsipas S.",
+            "away": "Ruud C.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777317000,
+            "tournament": "MAD",
+            "home": "Khachanov K.",
+            "away": "Mensik J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777281000,
+            "tournament": "MAD",
+            "home": "Davidovich Fokina A.",
+            "away": "Ruud C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777116000,
+            "tournament": "MAD",
+            "home": "Munar J.",
+            "away": "Ruud C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777108500,
+            "tournament": "MAD",
+            "home": "Khachanov K.",
+            "away": "Walton A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776168600,
+            "tournament": "BAR",
+            "home": "Ugo Carabelli C.",
+            "away": "Khachanov K.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775731500,
+            "tournament": "MON",
+            "home": "Auger-Aliassime F.",
+            "away": "Ruud C.",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1775655600,
+            "tournament": "MON",
+            "home": "Moutet C.",
+            "away": "Ruud C.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.5": {
+            "over": 1.13,
+            "under": 4.6
+          },
+          "18.0": {
+            "over": 1.15,
+            "under": 4.25
+          },
+          "18.5": {
+            "over": 1.26,
+            "under": 3.2
+          },
+          "19.0": {
+            "over": 1.31,
+            "under": 2.97
+          },
+          "19.5": {
+            "over": 1.45,
+            "under": 2.58
+          },
+          "20.0": {
+            "over": 1.51,
+            "under": 2.35
+          },
+          "20.5": {
+            "over": 1.64,
+            "under": 2.18
+          },
+          "21.0": {
+            "over": 1.73,
+            "under": 2.02
+          },
+          "21.5": {
+            "over": 1.83,
+            "under": 1.95
+          },
+          "22.0": {
+            "over": 1.99,
+            "under": 1.75
+          },
+          "22.5": {
+            "over": 2.06,
+            "under": 1.71
+          },
+          "23.0": {
+            "over": 2.28,
+            "under": 1.54
+          },
+          "23.5": {
+            "over": 2.39,
+            "under": 1.52
+          },
+          "24.0": {
+            "over": 2.41,
+            "under": 1.46
+          },
+          "24.5": {
+            "over": 2.46,
+            "under": 1.48
+          },
+          "25.0": {
+            "over": 2.56,
+            "under": 1.4
+          },
+          "25.5": {
+            "over": 2.67,
+            "under": 1.42
+          },
+          "26.0": {
+            "over": 2.66,
+            "under": 1.37
+          },
+          "26.5": {
+            "over": 2.92,
+            "under": 1.35
+          },
+          "27.5": {
+            "over": 3.15,
+            "under": 1.35
+          },
+          "2.5": {
+            "over": 2.64,
+            "under": 1.45
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.07,
+            "away": 2.06
+          },
+          "-1.5": {
+            "home": 1.7,
+            "away": 6.9
+          },
+          "0.0": {
+            "home": 1.19,
+            "away": 4.25
+          },
+          "0.5": {
+            "home": 1.19,
+            "away": 3.9
+          },
+          "-0.5": {
+            "home": 1.23,
+            "away": 4.42
+          },
+          "1.0": {
+            "away": 3.72
+          },
+          "-1.0": {
+            "home": 1.24
+          },
+          "2.0": {
+            "away": 3.2
+          },
+          "-2.0": {
+            "home": 1.31
+          },
+          "2.5": {
+            "away": 2.85
+          },
+          "-2.5": {
+            "home": 1.4
+          },
+          "3.0": {
+            "away": 2.61
+          },
+          "-3.0": {
+            "home": 1.44
+          },
+          "3.5": {
+            "home": 1.08,
+            "away": 2.17
+          },
+          "-3.5": {
+            "home": 1.63,
+            "away": 6
+          },
+          "4.0": {
+            "away": 1.96
+          },
+          "-4.0": {
+            "home": 1.77
+          },
+          "4.5": {
+            "away": 1.77
+          },
+          "-4.5": {
+            "home": 2.01
+          },
+          "5.0": {
+            "away": 1.49
+          },
+          "-5.0": {
+            "home": 2.47
+          },
+          "5.5": {
+            "away": 1.38
+          },
+          "-5.5": {
+            "home": 2.95
+          },
+          "6.0": {
+            "away": 1.22
+          },
+          "-6.0": {
+            "home": 3.9
+          },
+          "6.5": {
+            "away": 1.19
+          },
+          "-6.5": {
+            "home": 4.38
+          },
+          "7.0": {
+            "away": 1.06
+          },
+          "-7.0": {
+            "home": 7.4
+          },
+          "7.5": {
+            "away": 1.05
+          },
+          "-7.5": {
+            "home": 8
+          },
+          "8.0": {
+            "away": 1
+          },
+          "-8.0": {
+            "home": 13
+          },
+          "8.5": {
+            "away": 1
+          },
+          "-8.5": {
+            "home": 12.5
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Rome (Italy)",
+      "archived_at": "2026-05-13T19:24:01.248Z"
     }
   ],
   "combos": [
