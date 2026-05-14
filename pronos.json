@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-14T02:40:52.642Z",
+    "last_results_update": "2026-05-14T06:03:36.724Z",
     "analyses_written_at": "2026-05-13T07:48:21.073Z",
     "analyses_cost_usd": 0.0527,
-    "last_hourly_refresh": "2026-05-14T02:40:52.642Z"
+    "last_hourly_refresh": "2026-05-14T06:03:36.724Z"
   },
   "sports": {
     "foot": {
@@ -415,241 +415,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "OrtqKUnf",
-              "flashscore_id": "OrtqKUnf",
-              "flashscore_sport_id": 3,
-              "home_team_id": "UcjMRj6J",
-              "away_team_id": "xGk13Tb6",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-14T00:00:00.000Z",
-              "time_display": "Jeu. 02h00",
-              "home": "Detroit Pistons",
-              "away": "Cleveland Cavaliers",
-              "match": "Detroit Pistons vs Cleveland Cavaliers",
-              "prono": "win-home",
-              "pari": "Moins de 213.5 points",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 1.61,
-                "nul": null,
-                "exterieur": 2.52
-              },
-              "pick_category": "ou",
-              "analyse": "Cleveland et Detroit s'affrontent pour le quatrième match de ce qui ressemble à une série playoff, avec les Cavaliers qui mènent 2-1. Les deux premiers matchs chez Cleveland ont affiché des totaux de 215 et 225 points, tandis que les deux matchs à Detroit ont produit 204 et 212 points — une tendance home/away notable. Ce match 4 se joue à Detroit, où les Pistons ont remporté leurs deux rencontres à domicile avec des scores contenus (107-97 et 111-101), soit des totaux de 204 et 212 points. Les Pistons ont montré une vraie capacité défensive sur leur terrain, limitant Cleveland à 97 et 101 points. La dynamique défensive de Detroit à domicile combinée au style plus physique attendu dans un match 4 de série tendue plaide clairement pour un total sous la ligne. Même en regardant les matchs de préparation contre Orlando et Toronto, les totaux restent globalement modérés (173 à 228, mais les matchs à domicile Detroit sont tous sous 215).",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778544000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "112-103"
-                  },
-                  {
-                    "timestamp": 1778353200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1778194800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "107-97"
-                  },
-                  {
-                    "timestamp": 1778022000,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "111-101"
-                  },
-                  {
-                    "timestamp": 1777851000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "114-102"
-                  },
-                  {
-                    "timestamp": 1777836600,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "116-94"
-                  },
-                  {
-                    "timestamp": 1777678200,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "112-110"
-                  },
-                  {
-                    "timestamp": 1777676400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "79-93"
-                  },
-                  {
-                    "timestamp": 1777505400,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "125-120"
-                  },
-                  {
-                    "timestamp": 1777503600,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1777334400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "94-88"
-                  },
-                  {
-                    "timestamp": 1777222800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "93-89"
-                  },
-                  {
-                    "timestamp": 1777136400,
-                    "tournament": "NBA",
-                    "home": "Orlando Magic",
-                    "away": "Detroit Pistons",
-                    "score": "113-105"
-                  },
-                  {
-                    "timestamp": 1776988800,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "126-104"
-                  },
-                  {
-                    "timestamp": 1776898800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Orlando Magic",
-                    "score": "98-83"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "211.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "212.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "208.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "209.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "210.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "213.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "214.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "215.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "216.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "3.5": {
-                    "away": 1.9
-                  },
-                  "-3.5": {
-                    "home": 1.9
-                  },
-                  "1.5": {
-                    "home": 1.5,
-                    "away": 2.2
-                  },
-                  "-1.5": {
-                    "home": 1.62,
-                    "away": 2.5
-                  },
-                  "2.5": {
-                    "away": 2
-                  },
-                  "-2.5": {
-                    "home": 1.73
-                  },
-                  "4.5": {
-                    "away": 1.73
-                  },
-                  "-4.5": {
-                    "home": 2
-                  },
-                  "5.5": {
-                    "away": 1.62
-                  },
-                  "-5.5": {
-                    "home": 2.2
-                  },
-                  "6.5": {
-                    "away": 1.53
-                  },
-                  "-6.5": {
-                    "home": 2.38
-                  },
-                  "7.5": {
-                    "away": 1.5
-                  },
-                  "-7.5": {
-                    "home": 2.5
-                  },
-                  "8.5": {
-                    "away": 1.4
-                  },
-                  "-8.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -706,314 +472,6 @@
     "4Ipfwfck"
   ],
   "history": [
-    {
-      "event_id": "KnVPuufS",
-      "flashscore_id": "KnVPuufS",
-      "flashscore_sport_id": 2,
-      "home_team_id": "21U8Dqna",
-      "away_team_id": "zNoTPac0",
-      "tournament_id": "dhgaa2gf",
-      "tournament_url": "/tennis/wta-singles/madrid/",
-      "sport_key": "flashscore_tennis_wta_madrid_spain_q",
-      "commence_time": "2026-04-21T12:05:00.000Z",
-      "time_display": "Mar. 14h05",
-      "home": "Stephens S.",
-      "away": "Kalinina A.",
-      "match": "Stephens S. vs Kalinina A.",
-      "prono": "win-away",
-      "pari": "Kalinina gagne avec handicap -3.0 jeux",
-      "cote_retenue": 1.13,
-      "cotes": {
-        "domicile": 4.9,
-        "nul": null,
-        "exterieur": 1.13
-      },
-      "pick_category": "1x2",
-      "analyse": "Kalinina arrive en grande forme sur cette surface : elle a enchaîné cinq victoires consécutives à Dubai avant de continuer sur sa lancée à Madrid en battant Bassols 2-0 au premier tour des qualifications. Son tennis de fond de court, régulier et physique, est parfaitement adapté à la terre battue. Stephens, de son côté, présente une forme bien plus irrégulière : défaite face à Podrez, Andreeva et Zarazua lors de ses trois dernières sorties avant sa victoire ce jour contre Parry à Madrid. La victoire de Kalinina semble nettement probable dans ce contexte. Côté total de jeux, Kalinina a joué trois matchs en 2-0 et deux en 2-1 lors de ses cinq dernières sorties, tandis que Stephens a perdu deux fois 2-0 récemment — la tendance pointe vers un match relativement court, potentiellement réglé en deux sets secs. Le handicap de -3.0 jeux en faveur de Kalinina à 1.26 offre une valeur solide : même un 6-3, 6-4 suffirait à le couvrir, ce qui est un scénario très réaliste au vu de la domination récente de l'Ukrainienne.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776701400,
-            "tournament": "MAD",
-            "home": "Bassols M.",
-            "away": "Kalinina A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776699600,
-            "tournament": "MAD",
-            "home": "Parry D.",
-            "away": "Stephens S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776096900,
-            "tournament": "ROU",
-            "home": "Stephens S.",
-            "away": "Podrez V.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775736600,
-            "tournament": "LIN",
-            "home": "Kalinina A.",
-            "away": "Vekic D.",
-            "score": "null-null"
-          },
-          {
-            "timestamp": 1775667600,
-            "tournament": "LIN",
-            "home": "Andreeva M.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775655000,
-            "tournament": "LIN",
-            "home": "Kalinina A.",
-            "away": "Udvardy P.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775493900,
-            "tournament": "LIN",
-            "home": "Stephens S.",
-            "away": "Maria T.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775472900,
-            "tournament": "LIN",
-            "home": "Sasnovich A.",
-            "away": "Kalinina A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775396700,
-            "tournament": "LIN",
-            "home": "Friedsam A-L.",
-            "away": "Kalinina A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774892700,
-            "tournament": "CHA",
-            "home": "Stephens S.",
-            "away": "Zarazua R.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774789800,
-            "tournament": "DUB",
-            "home": "Lazaro Garcia A.",
-            "away": "Kalinina A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774703100,
-            "tournament": "DUB",
-            "home": "Kalinina A.",
-            "away": "Zidansek T.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774631400,
-            "tournament": "DUB",
-            "home": "Kalinina A.",
-            "away": "Hercog P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774518000,
-            "tournament": "DUB",
-            "home": "Kalinina A.",
-            "away": "Brancaccio N.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1774353600,
-            "tournament": "DUB",
-            "home": "Kalinina A.",
-            "away": "Bronzetti L.",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "16.0": {
-            "over": 1.14,
-            "under": 4.33
-          },
-          "16.5": {
-            "over": 1.29,
-            "under": 3.21
-          },
-          "17.0": {
-            "over": 1.31,
-            "under": 2.92
-          },
-          "17.5": {
-            "over": 1.48,
-            "under": 2.46
-          },
-          "18.0": {
-            "over": 1.54,
-            "under": 2.22
-          },
-          "18.5": {
-            "over": 1.72,
-            "under": 1.98
-          },
-          "19.0": {
-            "over": 1.82,
-            "under": 1.86
-          },
-          "19.5": {
-            "over": 1.98,
-            "under": 1.75
-          },
-          "20.0": {
-            "over": 2.08,
-            "under": 1.65
-          },
-          "20.5": {
-            "over": 2.19,
-            "under": 1.61
-          },
-          "21.0": {
-            "over": 2.34,
-            "under": 1.49
-          },
-          "21.5": {
-            "over": 2.46,
-            "under": 1.47
-          },
-          "22.0": {
-            "over": 2.63,
-            "under": 1.38
-          },
-          "22.5": {
-            "over": 2.55,
-            "under": 1.46
-          },
-          "23.0": {
-            "over": 2.41,
-            "under": 1.45
-          },
-          "2.5": {
-            "over": 3.17,
-            "under": 1.32
-          },
-          "23.5": {
-            "over": 3.15,
-            "under": 1.34
-          },
-          "24.5": {
-            "over": 3.4,
-            "under": 1.3
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 2.4,
-            "away": 1.05
-          },
-          "-1.5": {
-            "home": 7.3,
-            "away": 1.54
-          },
-          "2.0": {
-            "home": 2.93
-          },
-          "-2.0": {
-            "away": 1.34
-          },
-          "2.5": {
-            "home": 2.68
-          },
-          "-2.5": {
-            "away": 1.4
-          },
-          "3.0": {
-            "home": 3.4
-          },
-          "-3.0": {
-            "away": 1.26
-          },
-          "3.5": {
-            "home": 3.06
-          },
-          "-3.5": {
-            "away": 1.33
-          },
-          "4.0": {
-            "home": 2.76
-          },
-          "-4.0": {
-            "away": 1.38
-          },
-          "4.5": {
-            "home": 2.4
-          },
-          "-4.5": {
-            "away": 1.52
-          },
-          "5.0": {
-            "home": 2.18
-          },
-          "-5.0": {
-            "away": 1.59
-          },
-          "5.5": {
-            "home": 1.92
-          },
-          "-5.5": {
-            "away": 1.8
-          },
-          "6.0": {
-            "home": 1.7
-          },
-          "-6.0": {
-            "away": 2.01
-          },
-          "6.5": {
-            "home": 1.56
-          },
-          "-6.5": {
-            "away": 2.29
-          },
-          "7.0": {
-            "home": 1.35
-          },
-          "-7.0": {
-            "away": 2.88
-          },
-          "7.5": {
-            "home": 1.3
-          },
-          "-7.5": {
-            "away": 3.28
-          },
-          "8.0": {
-            "home": 1.14
-          },
-          "-8.0": {
-            "away": 4.75
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Madrid (Spain) (Q)",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
     {
       "event_id": "W2W1jV7m",
       "flashscore_id": "W2W1jV7m",
@@ -134903,6 +134361,242 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP Rome (Italy)",
       "archived_at": "2026-05-14T02:40:52.642Z"
+    },
+    {
+      "event_id": "OrtqKUnf",
+      "flashscore_id": "OrtqKUnf",
+      "flashscore_sport_id": 3,
+      "home_team_id": "UcjMRj6J",
+      "away_team_id": "xGk13Tb6",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-14T00:00:00.000Z",
+      "time_display": "Jeu. 02h00",
+      "home": "Detroit Pistons",
+      "away": "Cleveland Cavaliers",
+      "match": "Detroit Pistons vs Cleveland Cavaliers",
+      "prono": "win-home",
+      "pari": "Moins de 213.5 points",
+      "cote_retenue": 1.8,
+      "cotes": {
+        "domicile": 1.61,
+        "nul": null,
+        "exterieur": 2.52
+      },
+      "pick_category": "ou",
+      "analyse": "Cleveland et Detroit s'affrontent pour le quatrième match de ce qui ressemble à une série playoff, avec les Cavaliers qui mènent 2-1. Les deux premiers matchs chez Cleveland ont affiché des totaux de 215 et 225 points, tandis que les deux matchs à Detroit ont produit 204 et 212 points — une tendance home/away notable. Ce match 4 se joue à Detroit, où les Pistons ont remporté leurs deux rencontres à domicile avec des scores contenus (107-97 et 111-101), soit des totaux de 204 et 212 points. Les Pistons ont montré une vraie capacité défensive sur leur terrain, limitant Cleveland à 97 et 101 points. La dynamique défensive de Detroit à domicile combinée au style plus physique attendu dans un match 4 de série tendue plaide clairement pour un total sous la ligne. Même en regardant les matchs de préparation contre Orlando et Toronto, les totaux restent globalement modérés (173 à 228, mais les matchs à domicile Detroit sont tous sous 215).",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "103-103",
+      "actual_result": "draw",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778544000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "112-103"
+          },
+          {
+            "timestamp": 1778353200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1778194800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "107-97"
+          },
+          {
+            "timestamp": 1778022000,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "111-101"
+          },
+          {
+            "timestamp": 1777851000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "114-102"
+          },
+          {
+            "timestamp": 1777836600,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "116-94"
+          },
+          {
+            "timestamp": 1777678200,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "112-110"
+          },
+          {
+            "timestamp": 1777676400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "79-93"
+          },
+          {
+            "timestamp": 1777505400,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "125-120"
+          },
+          {
+            "timestamp": 1777503600,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1777334400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "94-88"
+          },
+          {
+            "timestamp": 1777222800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "93-89"
+          },
+          {
+            "timestamp": 1777136400,
+            "tournament": "NBA",
+            "home": "Orlando Magic",
+            "away": "Detroit Pistons",
+            "score": "113-105"
+          },
+          {
+            "timestamp": 1776988800,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "126-104"
+          },
+          {
+            "timestamp": 1776898800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Orlando Magic",
+            "score": "98-83"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "211.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "212.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "208.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "209.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "210.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "213.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "214.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "215.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "216.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "3.5": {
+            "away": 1.9
+          },
+          "-3.5": {
+            "home": 1.9
+          },
+          "1.5": {
+            "home": 1.5,
+            "away": 2.2
+          },
+          "-1.5": {
+            "home": 1.62,
+            "away": 2.5
+          },
+          "2.5": {
+            "away": 2
+          },
+          "-2.5": {
+            "home": 1.73
+          },
+          "4.5": {
+            "away": 1.73
+          },
+          "-4.5": {
+            "home": 2
+          },
+          "5.5": {
+            "away": 1.62
+          },
+          "-5.5": {
+            "home": 2.2
+          },
+          "6.5": {
+            "away": 1.53
+          },
+          "-6.5": {
+            "home": 2.38
+          },
+          "7.5": {
+            "away": 1.5
+          },
+          "-7.5": {
+            "home": 2.5
+          },
+          "8.5": {
+            "away": 1.4
+          },
+          "-8.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-14T06:03:36.724Z"
     }
   ],
   "combos": [
