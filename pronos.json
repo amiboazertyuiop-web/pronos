@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-13T21:10:48.382Z",
+    "last_results_update": "2026-05-14T02:40:52.642Z",
     "analyses_written_at": "2026-05-13T07:48:21.073Z",
     "analyses_cost_usd": 0.0527,
-    "last_hourly_refresh": "2026-05-13T23:52:22.227Z"
+    "last_hourly_refresh": "2026-05-14T02:40:52.642Z"
   },
   "sports": {
     "foot": {
@@ -443,7 +443,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -678,335 +678,7 @@
           "country": "",
           "panel_title": "🎾 ATP Rome (Italy)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "Wbl40tBT",
-              "flashscore_id": "Wbl40tBT",
-              "flashscore_sport_id": 2,
-              "home_team_id": "OdngshVK",
-              "away_team_id": "jeXTxMIp",
-              "tournament_id": "ibvebhik",
-              "tournament_url": "/tennis/atp-singles/rome/",
-              "sport_key": "flashscore_tennis_atp_rome_italy",
-              "commence_time": "2026-05-13T18:30:00.000Z",
-              "time_display": "Mer. 20h30",
-              "home": "Jodar R.",
-              "away": "Darderi L.",
-              "match": "Jodar R. vs Darderi L.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 2.03,
-              "cotes": {
-                "domicile": 1.45,
-                "nul": null,
-                "exterieur": 2.85
-              },
-              "pick_category": "ou",
-              "analyse": "Deux joueurs en excellente forme sur terre battue se retrouvent à Rome dans ce qui s'annonce comme un duel de haut vol. Jodar affiche un bilan impressionnant sur cette surface : victoires sur De Minaur, Kopriva, Borges, Arnaldi et Tien à Rome, avec une seule défaite contre Sinner à Madrid. Darderi est tout aussi en feu : il vient de battre Zverev en trois sets à Rome, après avoir dominé Hanfmann et Paul, avant d'avoir été arrêté par Cerundolo à Madrid. Les deux joueurs sont habitués aux matchs en trois sets — Jodar a disputé trois finales en 2-1 ou 1-2 lors de ses sept derniers matchs, et Darderi a livré deux matchs en trois sets lors de ses cinq derniers. Sur terre battue romaine, les échanges sont longs, les services moins dominants, et quand deux joueurs de ce calibre se rencontrent avec cette forme, les matchs tendent à durer. Un total de plus de 22.5 jeux semble tout à fait réaliste compte tenu du niveau affiché des deux côtés.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1778588700,
-                    "tournament": "ROM",
-                    "home": "Darderi L.",
-                    "away": "Zverev A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778581800,
-                    "tournament": "ROM",
-                    "home": "Jodar R.",
-                    "away": "Tien L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778439600,
-                    "tournament": "ROM",
-                    "home": "Arnaldi M.",
-                    "away": "Jodar R.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778429100,
-                    "tournament": "ROM",
-                    "home": "Paul T.",
-                    "away": "Darderi L.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778272500,
-                    "tournament": "ROM",
-                    "home": "Hanfmann Y.",
-                    "away": "Darderi L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778231400,
-                    "tournament": "ROM",
-                    "home": "Borges N.",
-                    "away": "Jodar R.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777471800,
-                    "tournament": "MAD",
-                    "home": "Sinner J.",
-                    "away": "Jodar R.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777385400,
-                    "tournament": "MAD",
-                    "home": "Kopriva V.",
-                    "away": "Jodar R.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777295400,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Darderi L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777236300,
-                    "tournament": "MAD",
-                    "home": "Fonseca J.",
-                    "away": "Jodar R.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777115700,
-                    "tournament": "MAD",
-                    "home": "Cerundolo J. M.",
-                    "away": "Darderi L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777054200,
-                    "tournament": "MAD",
-                    "home": "Jodar R.",
-                    "away": "De Minaur A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776879900,
-                    "tournament": "MAD",
-                    "home": "Jodar R.",
-                    "away": "De Jong J.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776521400,
-                    "tournament": "BAR",
-                    "home": "Jodar R.",
-                    "away": "Fils A.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776441000,
-                    "tournament": "BAR",
-                    "home": "Norrie C.",
-                    "away": "Jodar R.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.13,
-                    "under": 4.6
-                  },
-                  "18.0": {
-                    "over": 1.15,
-                    "under": 4.3
-                  },
-                  "18.5": {
-                    "over": 1.27,
-                    "under": 3.34
-                  },
-                  "19.0": {
-                    "over": 1.3,
-                    "under": 3.04
-                  },
-                  "19.5": {
-                    "over": 1.42,
-                    "under": 2.67
-                  },
-                  "20.0": {
-                    "over": 1.48,
-                    "under": 2.43
-                  },
-                  "20.5": {
-                    "over": 1.6,
-                    "under": 2.19
-                  },
-                  "21.0": {
-                    "over": 1.68,
-                    "under": 2.08
-                  },
-                  "21.5": {
-                    "over": 1.81,
-                    "under": 1.96
-                  },
-                  "22.0": {
-                    "over": 1.89,
-                    "under": 1.83
-                  },
-                  "22.5": {
-                    "over": 2.03,
-                    "under": 1.7
-                  },
-                  "23.0": {
-                    "over": 2.14,
-                    "under": 1.62
-                  },
-                  "23.5": {
-                    "over": 2.25,
-                    "under": 1.58
-                  },
-                  "24.0": {
-                    "over": 2.27,
-                    "under": 1.52
-                  },
-                  "24.5": {
-                    "over": 2.34,
-                    "under": 1.53
-                  },
-                  "25.0": {
-                    "over": 2.42,
-                    "under": 1.44
-                  },
-                  "25.5": {
-                    "over": 2.56,
-                    "under": 1.45
-                  },
-                  "26.5": {
-                    "over": 3.15,
-                    "under": 1.34
-                  },
-                  "2.5": {
-                    "over": 2.43,
-                    "under": 1.52
-                  },
-                  "27.5": {
-                    "over": 3.3,
-                    "under": 1.32
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.16,
-                    "away": 1.71
-                  },
-                  "-1.5": {
-                    "home": 2,
-                    "away": 4.6
-                  },
-                  "0.0": {
-                    "home": 1.38,
-                    "away": 2.85
-                  },
-                  "0.5": {
-                    "home": 1.37,
-                    "away": 2.72
-                  },
-                  "-0.5": {
-                    "home": 1.43,
-                    "away": 2.97
-                  },
-                  "1.0": {
-                    "away": 2.59
-                  },
-                  "-1.0": {
-                    "home": 1.45
-                  },
-                  "2.0": {
-                    "away": 2.32
-                  },
-                  "-2.0": {
-                    "home": 1.55
-                  },
-                  "2.5": {
-                    "home": 1.26,
-                    "away": 2.17
-                  },
-                  "-2.5": {
-                    "home": 1.63,
-                    "away": 3.75
-                  },
-                  "3.0": {
-                    "away": 2
-                  },
-                  "-3.0": {
-                    "home": 1.74
-                  },
-                  "3.5": {
-                    "away": 1.89
-                  },
-                  "-3.5": {
-                    "home": 1.89
-                  },
-                  "4.0": {
-                    "away": 1.65
-                  },
-                  "-4.0": {
-                    "home": 2.13
-                  },
-                  "4.5": {
-                    "away": 1.52
-                  },
-                  "-4.5": {
-                    "home": 2.37
-                  },
-                  "5.0": {
-                    "away": 1.36
-                  },
-                  "-5.0": {
-                    "home": 2.94
-                  },
-                  "5.5": {
-                    "away": 1.3
-                  },
-                  "-5.5": {
-                    "home": 3.35
-                  },
-                  "6.0": {
-                    "away": 1.16
-                  },
-                  "-6.0": {
-                    "home": 4.65
-                  },
-                  "6.5": {
-                    "away": 1.14
-                  },
-                  "-6.5": {
-                    "home": 5.05
-                  },
-                  "7.0": {
-                    "away": 1.05
-                  },
-                  "-7.0": {
-                    "home": 8.2
-                  },
-                  "7.5": {
-                    "away": 1.04
-                  },
-                  "-7.5": {
-                    "home": 8.7
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "wta_rome_italy",
@@ -1034,290 +706,6 @@
     "4Ipfwfck"
   ],
   "history": [
-    {
-      "event_id": "GG3f2x0T",
-      "flashscore_id": "GG3f2x0T",
-      "flashscore_sport_id": 2,
-      "home_team_id": "YcluY2Zi",
-      "away_team_id": "2BC3jj8o",
-      "tournament_id": "jluakzv0",
-      "tournament_url": "/tennis/atp-singles/madrid/",
-      "sport_key": "flashscore_tennis_atp_madrid_spain_q",
-      "commence_time": "2026-04-21T13:35:00.000Z",
-      "time_display": "Mar. 15h35",
-      "home": "Prizmic D.",
-      "away": "Piros Z.",
-      "match": "Prizmic D. vs Piros Z.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.94,
-      "cotes": {
-        "domicile": 1.52,
-        "nul": null,
-        "exterieur": 2.54
-      },
-      "pick_category": "ou",
-      "analyse": "Dino Prizmic et Zsombor Piros se présentent tous deux dans une forme remarquable sur terre battue cette semaine à Madrid. Piros a enchaîné cinq victoires consécutives dans ce tournoi de qualification (Shelbayh, Hemery, Moro Canas, Rodionov, Barrios Vera), dont plusieurs en deux sets secs, montrant une régularité impressionnante. Prizmic de son côté a battu O'Connell 2-1 aujourd'hui, après avoir enchaîné quatre victoires en deux sets à Monte-Carlo la semaine passée (Fellin, Harris, Royer, Bellucci). Deux joueurs en pleine confiance, dont les styles offensifs sur terre battue laissent présager des échanges longs et des jeux disputés. Aucun des deux ne domine clairement l'autre en termes de régularité récente, et les matchs de Piros à Madrid ont souvent été accrochés (Samuel 2-1, Shelbayh 2-1, Moro Canas 2-1). Avec deux compétiteurs au meilleur de leur forme, un match en trois sets avec un total de jeux élevé semble probable.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1776708000,
-            "tournament": "MAD",
-            "home": "Piros Z.",
-            "away": "Barrios Vera T.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776701400,
-            "tournament": "MAD",
-            "home": "Prizmic D.",
-            "away": "O'Connell C.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775992200,
-            "tournament": "MAD",
-            "home": "Piros Z.",
-            "away": "Rodionov J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775984700,
-            "tournament": "MON",
-            "home": "Collignon R.",
-            "away": "Prizmic D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775905800,
-            "tournament": "MAD",
-            "home": "Samuel T.",
-            "away": "Piros Z.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775904300,
-            "tournament": "MON",
-            "home": "Bellucci M.",
-            "away": "Prizmic D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775824800,
-            "tournament": "MON",
-            "home": "Prizmic D.",
-            "away": "Royer V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775818500,
-            "tournament": "MAD",
-            "home": "Moro Canas A.",
-            "away": "Piros Z.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775731500,
-            "tournament": "MON",
-            "home": "Prizmic D.",
-            "away": "Harris B.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775665500,
-            "tournament": "MAD",
-            "home": "Hemery C.",
-            "away": "Piros Z.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775571000,
-            "tournament": "MON",
-            "home": "Prizmic D.",
-            "away": "Fellin P. O.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775560200,
-            "tournament": "MAD",
-            "home": "Shelbayh A.",
-            "away": "Piros Z.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775211000,
-            "tournament": "BUC",
-            "home": "Altmaier D.",
-            "away": "Prizmic D.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774965300,
-            "tournament": "BUC",
-            "home": "Basilashvili N.",
-            "away": "Prizmic D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774189500,
-            "tournament": "NAP",
-            "home": "Piros Z.",
-            "away": "Carboni L.",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "19.0": {
-            "over": 1.29,
-            "under": 3.05
-          },
-          "19.5": {
-            "over": 1.4,
-            "under": 2.56
-          },
-          "20.0": {
-            "over": 1.42,
-            "under": 2.49
-          },
-          "20.5": {
-            "over": 1.53,
-            "under": 2.21
-          },
-          "21.0": {
-            "over": 1.6,
-            "under": 2.11
-          },
-          "21.5": {
-            "over": 1.71,
-            "under": 1.96
-          },
-          "22.0": {
-            "over": 1.83,
-            "under": 1.85
-          },
-          "22.5": {
-            "over": 1.94,
-            "under": 1.8
-          },
-          "23.0": {
-            "over": 2.08,
-            "under": 1.65
-          },
-          "23.5": {
-            "over": 2.15,
-            "under": 1.59
-          },
-          "24.0": {
-            "over": 2.2,
-            "under": 1.55
-          },
-          "24.5": {
-            "over": 2.21,
-            "under": 1.53
-          },
-          "25.0": {
-            "over": 2.35,
-            "under": 1.47
-          },
-          "2.5": {
-            "over": 2.34,
-            "under": 1.54
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.17,
-            "away": 1.62
-          },
-          "-1.5": {
-            "home": 2.16,
-            "away": 4.25
-          },
-          "0.0": {
-            "home": 1.44,
-            "away": 2.55
-          },
-          "0.5": {
-            "away": 2.4
-          },
-          "-0.5": {
-            "home": 1.49
-          },
-          "1.0": {
-            "away": 2.35
-          },
-          "-1.0": {
-            "home": 1.51
-          },
-          "2.0": {
-            "away": 2.13
-          },
-          "-2.0": {
-            "home": 1.62
-          },
-          "2.5": {
-            "away": 1.99
-          },
-          "-2.5": {
-            "home": 1.71
-          },
-          "3.0": {
-            "away": 1.85
-          },
-          "-3.0": {
-            "home": 1.83
-          },
-          "3.5": {
-            "away": 1.73
-          },
-          "-3.5": {
-            "home": 2.04
-          },
-          "4.0": {
-            "away": 1.55
-          },
-          "-4.0": {
-            "home": 2.26
-          },
-          "4.5": {
-            "away": 1.44
-          },
-          "-4.5": {
-            "home": 2.53
-          },
-          "5.0": {
-            "away": 1.29
-          },
-          "-5.0": {
-            "home": 3.2
-          },
-          "5.5": {
-            "away": 1.24
-          },
-          "-5.5": {
-            "home": 3.56
-          },
-          "6.0": {
-            "away": 1.12
-          },
-          "-6.0": {
-            "home": 5.05
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Madrid (Spain) (Q)",
-      "archived_at": "2026-04-21T19:54:10.342Z"
-    },
     {
       "event_id": "KnVPuufS",
       "flashscore_id": "KnVPuufS",
@@ -135185,6 +134573,336 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Rome (Italy)",
       "archived_at": "2026-05-13T21:10:48.382Z"
+    },
+    {
+      "event_id": "Wbl40tBT",
+      "flashscore_id": "Wbl40tBT",
+      "flashscore_sport_id": 2,
+      "home_team_id": "OdngshVK",
+      "away_team_id": "jeXTxMIp",
+      "tournament_id": "ibvebhik",
+      "tournament_url": "/tennis/atp-singles/rome/",
+      "sport_key": "flashscore_tennis_atp_rome_italy",
+      "commence_time": "2026-05-13T18:30:00.000Z",
+      "time_display": "Mer. 20h30",
+      "home": "Jodar R.",
+      "away": "Darderi L.",
+      "match": "Jodar R. vs Darderi L.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 2.03,
+      "cotes": {
+        "domicile": 1.45,
+        "nul": null,
+        "exterieur": 2.85
+      },
+      "pick_category": "ou",
+      "analyse": "Deux joueurs en excellente forme sur terre battue se retrouvent à Rome dans ce qui s'annonce comme un duel de haut vol. Jodar affiche un bilan impressionnant sur cette surface : victoires sur De Minaur, Kopriva, Borges, Arnaldi et Tien à Rome, avec une seule défaite contre Sinner à Madrid. Darderi est tout aussi en feu : il vient de battre Zverev en trois sets à Rome, après avoir dominé Hanfmann et Paul, avant d'avoir été arrêté par Cerundolo à Madrid. Les deux joueurs sont habitués aux matchs en trois sets — Jodar a disputé trois finales en 2-1 ou 1-2 lors de ses sept derniers matchs, et Darderi a livré deux matchs en trois sets lors de ses cinq derniers. Sur terre battue romaine, les échanges sont longs, les services moins dominants, et quand deux joueurs de ce calibre se rencontrent avec cette forme, les matchs tendent à durer. Un total de plus de 22.5 jeux semble tout à fait réaliste compte tenu du niveau affiché des deux côtés.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1778588700,
+            "tournament": "ROM",
+            "home": "Darderi L.",
+            "away": "Zverev A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778581800,
+            "tournament": "ROM",
+            "home": "Jodar R.",
+            "away": "Tien L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778439600,
+            "tournament": "ROM",
+            "home": "Arnaldi M.",
+            "away": "Jodar R.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778429100,
+            "tournament": "ROM",
+            "home": "Paul T.",
+            "away": "Darderi L.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778272500,
+            "tournament": "ROM",
+            "home": "Hanfmann Y.",
+            "away": "Darderi L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778231400,
+            "tournament": "ROM",
+            "home": "Borges N.",
+            "away": "Jodar R.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777471800,
+            "tournament": "MAD",
+            "home": "Sinner J.",
+            "away": "Jodar R.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777385400,
+            "tournament": "MAD",
+            "home": "Kopriva V.",
+            "away": "Jodar R.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777295400,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Darderi L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777236300,
+            "tournament": "MAD",
+            "home": "Fonseca J.",
+            "away": "Jodar R.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777115700,
+            "tournament": "MAD",
+            "home": "Cerundolo J. M.",
+            "away": "Darderi L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777054200,
+            "tournament": "MAD",
+            "home": "Jodar R.",
+            "away": "De Minaur A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776879900,
+            "tournament": "MAD",
+            "home": "Jodar R.",
+            "away": "De Jong J.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776521400,
+            "tournament": "BAR",
+            "home": "Jodar R.",
+            "away": "Fils A.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776441000,
+            "tournament": "BAR",
+            "home": "Norrie C.",
+            "away": "Jodar R.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.5": {
+            "over": 1.13,
+            "under": 4.6
+          },
+          "18.0": {
+            "over": 1.15,
+            "under": 4.3
+          },
+          "18.5": {
+            "over": 1.27,
+            "under": 3.34
+          },
+          "19.0": {
+            "over": 1.3,
+            "under": 3.04
+          },
+          "19.5": {
+            "over": 1.42,
+            "under": 2.67
+          },
+          "20.0": {
+            "over": 1.48,
+            "under": 2.43
+          },
+          "20.5": {
+            "over": 1.6,
+            "under": 2.19
+          },
+          "21.0": {
+            "over": 1.68,
+            "under": 2.08
+          },
+          "21.5": {
+            "over": 1.81,
+            "under": 1.96
+          },
+          "22.0": {
+            "over": 1.89,
+            "under": 1.83
+          },
+          "22.5": {
+            "over": 2.03,
+            "under": 1.7
+          },
+          "23.0": {
+            "over": 2.14,
+            "under": 1.62
+          },
+          "23.5": {
+            "over": 2.25,
+            "under": 1.58
+          },
+          "24.0": {
+            "over": 2.27,
+            "under": 1.52
+          },
+          "24.5": {
+            "over": 2.34,
+            "under": 1.53
+          },
+          "25.0": {
+            "over": 2.42,
+            "under": 1.44
+          },
+          "25.5": {
+            "over": 2.56,
+            "under": 1.45
+          },
+          "26.5": {
+            "over": 3.15,
+            "under": 1.34
+          },
+          "2.5": {
+            "over": 2.43,
+            "under": 1.52
+          },
+          "27.5": {
+            "over": 3.3,
+            "under": 1.32
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.16,
+            "away": 1.71
+          },
+          "-1.5": {
+            "home": 2,
+            "away": 4.6
+          },
+          "0.0": {
+            "home": 1.38,
+            "away": 2.85
+          },
+          "0.5": {
+            "home": 1.37,
+            "away": 2.72
+          },
+          "-0.5": {
+            "home": 1.43,
+            "away": 2.97
+          },
+          "1.0": {
+            "away": 2.59
+          },
+          "-1.0": {
+            "home": 1.45
+          },
+          "2.0": {
+            "away": 2.32
+          },
+          "-2.0": {
+            "home": 1.55
+          },
+          "2.5": {
+            "home": 1.26,
+            "away": 2.17
+          },
+          "-2.5": {
+            "home": 1.63,
+            "away": 3.75
+          },
+          "3.0": {
+            "away": 2
+          },
+          "-3.0": {
+            "home": 1.74
+          },
+          "3.5": {
+            "away": 1.89
+          },
+          "-3.5": {
+            "home": 1.89
+          },
+          "4.0": {
+            "away": 1.65
+          },
+          "-4.0": {
+            "home": 2.13
+          },
+          "4.5": {
+            "away": 1.52
+          },
+          "-4.5": {
+            "home": 2.37
+          },
+          "5.0": {
+            "away": 1.36
+          },
+          "-5.0": {
+            "home": 2.94
+          },
+          "5.5": {
+            "away": 1.3
+          },
+          "-5.5": {
+            "home": 3.35
+          },
+          "6.0": {
+            "away": 1.16
+          },
+          "-6.0": {
+            "home": 4.65
+          },
+          "6.5": {
+            "away": 1.14
+          },
+          "-6.5": {
+            "home": 5.05
+          },
+          "7.0": {
+            "away": 1.05
+          },
+          "-7.0": {
+            "home": 8.2
+          },
+          "7.5": {
+            "away": 1.04
+          },
+          "-7.5": {
+            "home": 8.7
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Rome (Italy)",
+      "archived_at": "2026-05-14T02:40:52.642Z"
     }
   ],
   "combos": [
