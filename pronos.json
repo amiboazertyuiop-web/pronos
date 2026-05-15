@@ -1,13 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-05-14T07:38:13.915Z",
+    "generated_at": "2026-05-15T07:49:11.398Z",
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
     "last_results_update": "2026-05-14T22:40:38.723Z",
-    "analyses_written_at": "2026-05-14T07:39:39.032Z",
-    "analyses_cost_usd": 0.0338,
-    "last_hourly_refresh": "2026-05-14T22:40:38.723Z"
+    "analyses_written_at": "2026-05-15T07:51:12.788Z",
+    "analyses_cost_usd": 0.0411
   },
   "sports": {
     "foot": {
@@ -18,186 +17,186 @@
       "disclaimer_html": null,
       "leagues": [
         {
-          "key": "liga",
-          "sport_key": "flashscore_football_liga",
-          "label": "LaLiga",
-          "flag": "🇪🇸",
-          "country": "Espagne",
-          "panel_title": "🇪🇸 LaLiga — Espagne",
+          "key": "epl",
+          "sport_key": "flashscore_football_epl",
+          "label": "Premier League",
+          "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+          "country": "Angleterre",
+          "panel_title": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League — Angleterre",
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "r95TigCr",
-              "flashscore_id": "r95TigCr",
+              "event_id": "AyZEYQVH",
+              "flashscore_id": "AyZEYQVH",
               "flashscore_sport_id": 1,
-              "home_team_id": "W8mj7MDD",
-              "away_team_id": "SzYzw34K",
-              "tournament_id": "vcm2mhgk",
-              "tournament_url": "/football/spain/laliga/",
-              "sport_key": "flashscore_football_liga",
-              "commence_time": "2026-05-14T19:30:00.000Z",
-              "time_display": "Jeu. 21h30",
-              "home": "Real Madrid",
-              "away": "Oviedo",
-              "match": "Real Madrid vs Oviedo",
+              "home_team_id": "W00wmLO0",
+              "away_team_id": "lId4TMwf",
+              "tournament_id": "oeeq9yvp",
+              "tournament_url": "/football/england/premier-league/",
+              "sport_key": "flashscore_football_epl",
+              "commence_time": "2026-05-15T19:00:00.000Z",
+              "time_display": "Ven. 21h00",
+              "home": "Aston Villa",
+              "away": "Liverpool",
+              "match": "Aston Villa vs Liverpool",
               "prono": "win-home",
-              "pari": "Plus de 2.5 buts",
-              "cote_retenue": 1.44,
+              "pari": "Les deux équipes marquent - Oui",
+              "cote_retenue": 1.56,
               "cotes": {
-                "domicile": 1.27,
-                "nul": 6.72,
-                "exterieur": 10.8
+                "domicile": 2.92,
+                "nul": 3.58,
+                "exterieur": 2.54
               },
-              "pick_category": "ou",
-              "analyse": "Le Real Madrid reçoit Oviedo au Bernabéu dans un contexte de fin de saison mitigé pour les Merengues : défaite 2-0 contre le Barça le 10 mai, élimination en Ligue des Champions par le Bayern (4-3, 2-1), et un bilan récent instable avec 3 victoires, 3 nuls et 3 défaites sur les neuf derniers matchs. Cependant, à domicile Madrid reste une forteresse : victoires 2-1 contre l'Atlético (3-2) et Alavés, seul un nul contre Girona. En face, Oviedo traverse une période difficile : un nul 0-0 contre Getafe, une lourde défaite 3-0 contre le Betis, et une défaite 1-2 contre Elche lors des dernières sorties. L'équipe asturienne ne parvient pas à enchaîner les bons résultats, avec seulement une victoire (0-1 à Séville) et un nul contre Villarreal sur les cinq derniers matchs de Liga. La différence de niveau entre les deux équipes est manifeste : Madrid, malgré ses difficultés récentes, possède un effectif largement supérieur face à une équipe d'Oviedo aux ambitions de maintien. Avec deux équipes qui marquent (Madrid: 2-1 Alavés, 3-2 Atlético ; Oviedo: 1-1 Villarreal, 1-0 Séville, 1-2 Elche) mais aussi une défense madrilène perfectible, un match avec au moins 3 buts semble crédible sur cette affiche déséquilibrée.",
+              "pick_category": "btts",
+              "analyse": "Liverpool arrive à Villa Park dans une forme irrégulière : nul 1-1 contre Chelsea, défaite 3-2 à Manchester United, et surtout une élimination en Ligue des Champions face au PSG (0-2) qui a pu affecter le moral du groupe. Aston Villa présente un double visage : des cartons en Europa League (4-0 contre Nottingham, 4-0 contre Bologne, 3-1 chez Bologne) mais des résultats en dents de scie en Premier League (défaite 1-2 contre Tottenham, 0-1 à Fulham, 2-2 à Burnley). Cette inconstance de part et d'autre laisse présager un match ouvert, d'autant que les deux équipes affichent des tendances offensives marquées, avec 5 des 8 derniers matchs combinés terminant avec au moins 3 buts. Le 4-3 de Villa contre Sunderland et le 3-1 de Liverpool contre Crystal Palace illustrent des défenses perméables des deux côtés. Dans ce contexte, les deux équipes trouver le chemin des filets semble probable : Liverpool a scoré dans 7 de ses 8 dernières rencontres, et Villa en fait autant lors de ses matchs à domicile. La cote à 1.56 pour les deux équipes qui marquent reflète bien un scénario attendu mais solide.",
               "confiance": 3,
-              "featured": true,
+              "featured": false,
               "score_prevu": null,
-              "status": "in_progress",
+              "status": "pending",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
               "stats": {
                 "recent_matches": [
                   {
-                    "timestamp": 1778439600,
-                    "tournament": "LL",
-                    "home": "Barcelona",
-                    "away": "Real Madrid",
-                    "score": "2-0"
+                    "timestamp": 1778418000,
+                    "tournament": "PL",
+                    "home": "Burnley",
+                    "away": "Aston Villa",
+                    "score": "2-2"
                   },
                   {
-                    "timestamp": 1778430600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Getafe",
-                    "score": "0-0"
+                    "timestamp": 1778326200,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "Chelsea",
+                    "score": "1-1"
                   },
                   {
-                    "timestamp": 1777834800,
-                    "tournament": "LL",
-                    "home": "Espanyol",
-                    "away": "Real Madrid",
-                    "score": "0-2"
+                    "timestamp": 1778180400,
+                    "tournament": "EL",
+                    "home": "Aston Villa",
+                    "away": "Nottingham",
+                    "score": "4-0"
                   },
                   {
-                    "timestamp": 1777825800,
-                    "tournament": "LL",
-                    "home": "Betis",
-                    "away": "Oviedo",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1777212900,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Elche",
+                    "timestamp": 1777831200,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "Tottenham",
                     "score": "1-2"
                   },
                   {
-                    "timestamp": 1777057200,
-                    "tournament": "LL",
-                    "home": "Betis",
-                    "away": "Real Madrid",
-                    "score": "1-1"
+                    "timestamp": 1777818600,
+                    "tournament": "PL",
+                    "home": "Manchester Utd",
+                    "away": "Liverpool",
+                    "score": "3-2"
                   },
                   {
-                    "timestamp": 1776972600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Villarreal",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776799800,
-                    "tournament": "LL",
-                    "home": "Real Madrid",
-                    "away": "Alaves",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776279600,
-                    "tournament": "CL",
-                    "home": "Bayern Munich",
-                    "away": "Real Madrid",
-                    "score": "4-3"
-                  },
-                  {
-                    "timestamp": 1776011400,
-                    "tournament": "LL",
-                    "home": "Celta Vigo",
-                    "away": "Oviedo",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1775847600,
-                    "tournament": "LL",
-                    "home": "Real Madrid",
-                    "away": "Girona",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1775588400,
-                    "tournament": "CL",
-                    "home": "Real Madrid",
-                    "away": "Bayern Munich",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1775406600,
-                    "tournament": "LL",
-                    "home": "Oviedo",
-                    "away": "Sevilla",
+                    "timestamp": 1777575600,
+                    "tournament": "EL",
+                    "home": "Nottingham",
+                    "away": "Aston Villa",
                     "score": "1-0"
                   },
                   {
-                    "timestamp": 1775312100,
-                    "tournament": "LL",
-                    "home": "Mallorca",
-                    "away": "Real Madrid",
-                    "score": "2-1"
+                    "timestamp": 1777125600,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "Crystal Palace",
+                    "score": "3-1"
                   },
                   {
-                    "timestamp": 1774209600,
-                    "tournament": "LL",
-                    "home": "Real Madrid",
-                    "away": "Atl. Madrid",
-                    "score": "3-2"
+                    "timestamp": 1777116600,
+                    "tournament": "PL",
+                    "home": "Fulham",
+                    "away": "Aston Villa",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1776603600,
+                    "tournament": "PL",
+                    "home": "Aston Villa",
+                    "away": "Sunderland",
+                    "score": "4-3"
+                  },
+                  {
+                    "timestamp": 1776603600,
+                    "tournament": "PL",
+                    "home": "Everton",
+                    "away": "Liverpool",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1776366000,
+                    "tournament": "EL",
+                    "home": "Aston Villa",
+                    "away": "Bologna",
+                    "score": "4-0"
+                  },
+                  {
+                    "timestamp": 1776193200,
+                    "tournament": "CL",
+                    "home": "Liverpool",
+                    "away": "PSG",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1775998800,
+                    "tournament": "PL",
+                    "home": "Nottingham",
+                    "away": "Aston Villa",
+                    "score": "1-1"
+                  },
+                  {
+                    "timestamp": 1775925000,
+                    "tournament": "PL",
+                    "home": "Liverpool",
+                    "away": "Fulham",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1775761200,
+                    "tournament": "EL",
+                    "home": "Bologna",
+                    "away": "Aston Villa",
+                    "score": "1-3"
                   }
                 ]
               },
               "markets": {
                 "1x2": {
-                  "home": 1.26,
-                  "draw": 6.38,
-                  "away": 9.75
+                  "home": 2.77,
+                  "draw": 3.48,
+                  "away": 2.45
                 },
                 "double_chance": {
-                  "12": 1.12,
-                  "1X": 1.06,
-                  "X2": 3.77
+                  "12": 1.3,
+                  "1X": 1.53,
+                  "X2": 1.41
                 },
                 "over_under": {
                   "1.5": {
-                    "over": 1.13,
-                    "under": 5.5
+                    "over": 1.2,
+                    "under": 4.1
                   },
                   "2.5": {
-                    "over": 1.44,
-                    "under": 2.63
+                    "over": 1.71,
+                    "under": 2.13
                   },
                   "3.5": {
-                    "over": 2.2,
-                    "under": 1.66
+                    "over": 2.73,
+                    "under": 1.43
                   }
                 },
                 "btts": {
-                  "yes": 1.86,
-                  "no": 1.89
+                  "yes": 1.56,
+                  "no": 2.38
                 },
                 "draw_no_bet": {
-                  "home": 1.08,
-                  "away": 7.5
+                  "home": 2,
+                  "away": 1.73
                 }
               }
             }
@@ -211,7 +210,493 @@
       "badge": "nba",
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>La NBA est difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. <strong>Bankroll recommandée 30% inférieure au foot.</strong></div>",
-      "leagues": []
+      "leagues": [
+        {
+          "key": "nba",
+          "sport_key": "flashscore_basketball_nba",
+          "label": "NBA",
+          "flag": "🏀",
+          "country": "USA",
+          "panel_title": "🏀 NBA",
+          "panel_meta": "Matchs des prochaines 24h",
+          "pronos": [
+            {
+              "event_id": "be3wSNq2",
+              "flashscore_id": "be3wSNq2",
+              "flashscore_sport_id": 3,
+              "home_team_id": "xGk13Tb6",
+              "away_team_id": "UcjMRj6J",
+              "tournament_id": "innccbyb",
+              "tournament_url": "/basketball/usa/nba/",
+              "sport_key": "flashscore_basketball_nba",
+              "commence_time": "2026-05-15T23:00:00.000Z",
+              "time_display": "Sam. 01h00",
+              "home": "Cleveland Cavaliers",
+              "away": "Detroit Pistons",
+              "match": "Cleveland Cavaliers vs Detroit Pistons",
+              "prono": "win-home",
+              "pari": "Plus de 209.5 points",
+              "cote_retenue": 1.85,
+              "cotes": {
+                "domicile": 1.64,
+                "nul": null,
+                "exterieur": 2.44
+              },
+              "pick_category": "ou",
+              "analyse": "Cleveland et Detroit s'affrontent dans ce qui semble être une série de playoffs, avec 5 matchs déjà disputés entre eux. Les Cavaliers mènent la série avec 3 victoires contre 2 pour les Pistons. En analysant les scores de leurs confrontations directes : 113-117, 112-103, 116-109, 107-97, 111-101 — les totaux sont respectivement 230, 215, 225, 204 et 212 points. Sur ces 5 matchs, 3 ont dépassé 209.5 points (230, 225, 215) et 2 sont restés sous (204, 212). La moyenne de ces confrontations directes tourne autour de 217 points, ce qui pointe vers l'over. Cleveland affiche un jeu offensif structuré (victoires à 112, 116, 114 points récemment) tandis que Detroit a su scorer à 113 et 116 points dans leurs derniers matchs. L'intensité d'une série de playoffs au Game 6 pousse généralement les équipes à un rythme élevé, et les deux formations ont démontré leur capacité à dépasser les 100 points chacune dans plusieurs rencontres récentes.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1778716800,
+                    "tournament": "NBA",
+                    "home": "Detroit Pistons",
+                    "away": "Cleveland Cavaliers",
+                    "score": "113-117"
+                  },
+                  {
+                    "timestamp": 1778544000,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "Detroit Pistons",
+                    "score": "112-103"
+                  },
+                  {
+                    "timestamp": 1778353200,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "Detroit Pistons",
+                    "score": "116-109"
+                  },
+                  {
+                    "timestamp": 1778194800,
+                    "tournament": "NBA",
+                    "home": "Detroit Pistons",
+                    "away": "Cleveland Cavaliers",
+                    "score": "107-97"
+                  },
+                  {
+                    "timestamp": 1778022000,
+                    "tournament": "NBA",
+                    "home": "Detroit Pistons",
+                    "away": "Cleveland Cavaliers",
+                    "score": "111-101"
+                  },
+                  {
+                    "timestamp": 1777851000,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "Toronto Raptors",
+                    "score": "114-102"
+                  },
+                  {
+                    "timestamp": 1777836600,
+                    "tournament": "NBA",
+                    "home": "Detroit Pistons",
+                    "away": "Orlando Magic",
+                    "score": "116-94"
+                  },
+                  {
+                    "timestamp": 1777678200,
+                    "tournament": "NBA",
+                    "home": "Toronto Raptors",
+                    "away": "Cleveland Cavaliers",
+                    "score": "112-110"
+                  },
+                  {
+                    "timestamp": 1777676400,
+                    "tournament": "NBA",
+                    "home": "Orlando Magic",
+                    "away": "Detroit Pistons",
+                    "score": "79-93"
+                  },
+                  {
+                    "timestamp": 1777505400,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "Toronto Raptors",
+                    "score": "125-120"
+                  },
+                  {
+                    "timestamp": 1777503600,
+                    "tournament": "NBA",
+                    "home": "Detroit Pistons",
+                    "away": "Orlando Magic",
+                    "score": "116-109"
+                  },
+                  {
+                    "timestamp": 1777334400,
+                    "tournament": "NBA",
+                    "home": "Orlando Magic",
+                    "away": "Detroit Pistons",
+                    "score": "94-88"
+                  },
+                  {
+                    "timestamp": 1777222800,
+                    "tournament": "NBA",
+                    "home": "Toronto Raptors",
+                    "away": "Cleveland Cavaliers",
+                    "score": "93-89"
+                  },
+                  {
+                    "timestamp": 1777136400,
+                    "tournament": "NBA",
+                    "home": "Orlando Magic",
+                    "away": "Detroit Pistons",
+                    "score": "113-105"
+                  },
+                  {
+                    "timestamp": 1776988800,
+                    "tournament": "NBA",
+                    "home": "Toronto Raptors",
+                    "away": "Cleveland Cavaliers",
+                    "score": "126-104"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "209.5": {
+                    "over": 1.85,
+                    "under": 1.95
+                  },
+                  "210.5": {
+                    "over": 1.87,
+                    "under": 1.81
+                  },
+                  "205.5": {
+                    "over": 1.6,
+                    "under": 2.25
+                  },
+                  "206.5": {
+                    "over": 1.62,
+                    "under": 2.2
+                  },
+                  "207.5": {
+                    "over": 1.67,
+                    "under": 2.1
+                  },
+                  "208.5": {
+                    "over": 1.73,
+                    "under": 2
+                  },
+                  "211.5": {
+                    "over": 2,
+                    "under": 1.73
+                  },
+                  "212.5": {
+                    "over": 2.05,
+                    "under": 1.7
+                  },
+                  "213.5": {
+                    "over": 2.2,
+                    "under": 1.62
+                  },
+                  "214.5": {
+                    "over": 2.3,
+                    "under": 1.57
+                  }
+                },
+                "handicap": {
+                  "3.5": {
+                    "away": 1.9
+                  },
+                  "-3.5": {
+                    "home": 1.9
+                  },
+                  "1.5": {
+                    "home": 1.53,
+                    "away": 2.2
+                  },
+                  "-1.5": {
+                    "home": 1.62,
+                    "away": 2.38
+                  },
+                  "2.5": {
+                    "away": 2
+                  },
+                  "-2.5": {
+                    "home": 1.73
+                  },
+                  "4.5": {
+                    "away": 1.73
+                  },
+                  "-4.5": {
+                    "home": 2
+                  },
+                  "5.5": {
+                    "away": 1.62
+                  },
+                  "-5.5": {
+                    "home": 2.2
+                  },
+                  "6.5": {
+                    "away": 1.53
+                  },
+                  "-6.5": {
+                    "home": 2.38
+                  },
+                  "7.5": {
+                    "away": 1.5
+                  },
+                  "-7.5": {
+                    "home": 2.5
+                  },
+                  "8.5": {
+                    "away": 1.4
+                  },
+                  "-8.5": {
+                    "home": 2.75
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "xd7fkBrC",
+              "flashscore_id": "xd7fkBrC",
+              "flashscore_sport_id": 3,
+              "home_team_id": "KjBIVQcI",
+              "away_team_id": "IwmkErSH",
+              "tournament_id": "innccbyb",
+              "tournament_url": "/basketball/usa/nba/",
+              "sport_key": "flashscore_basketball_nba",
+              "commence_time": "2026-05-16T01:30:00.000Z",
+              "time_display": "Sam. 03h30",
+              "home": "Minnesota Timberwolves",
+              "away": "San Antonio Spurs",
+              "match": "Minnesota Timberwolves vs San Antonio Spurs",
+              "prono": "win-home",
+              "pari": "Moins de 218.5 points",
+              "cote_retenue": 1.9,
+              "cotes": {
+                "domicile": 2.81,
+                "nul": null,
+                "exterieur": 1.5
+              },
+              "pick_category": "ou",
+              "analyse": "Les cinq confrontations directes récentes entre Minnesota et San Antonio révèlent une série extrêmement serrée en playoffs : les Spurs mènent 3-2 après avoir écrasé les Wolves 133-95 puis 126-97, mais Minnesota a répondu 114-109 et 104-102. La volatilité des scores est frappante : des blowouts (38 points d'écart le 07/05) côtoient des matchs très serrés (2 points le 05/05). Sur les 5 confrontations directes, le total de points oscille entre 197 (93 + 104) et 228 (133 + 95), avec une moyenne d'environ 215 points. Minnesota défend bien à domicile et a dominé Denver en playoffs (4 victoires sur 5), tandis que San Antonio affiche une attaque explosive capable de dépasser les 120 points mais aussi d'être contenue sous les 100 (95 le 13/05 à l'extérieur pour Minnesota). Au Target Center, Minnesota impose un rythme contrôlé défensivement sous Chris Finch, et les Wolves ont montré une capacité à brider l'attaque adverse (95 points concédés deux fois en H2H). La ligne à 218.5 semble haute pour un match 6 de playoffs à fort enjeu défensif, où les équipes tendent à se serrer la vis.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1778630400,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Minnesota Timberwolves",
+                    "score": "126-97"
+                  },
+                  {
+                    "timestamp": 1778455800,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "San Antonio Spurs",
+                    "score": "114-109"
+                  },
+                  {
+                    "timestamp": 1778290200,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "San Antonio Spurs",
+                    "score": "108-115"
+                  },
+                  {
+                    "timestamp": 1778117400,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Minnesota Timberwolves",
+                    "score": "133-95"
+                  },
+                  {
+                    "timestamp": 1777944600,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Minnesota Timberwolves",
+                    "score": "102-104"
+                  },
+                  {
+                    "timestamp": 1777599000,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "Denver Nuggets",
+                    "score": "110-98"
+                  },
+                  {
+                    "timestamp": 1777426200,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Portland Trail Blazers",
+                    "score": "114-95"
+                  },
+                  {
+                    "timestamp": 1777343400,
+                    "tournament": "NBA",
+                    "home": "Denver Nuggets",
+                    "away": "Minnesota Timberwolves",
+                    "score": "125-113"
+                  },
+                  {
+                    "timestamp": 1777231800,
+                    "tournament": "NBA",
+                    "home": "Portland Trail Blazers",
+                    "away": "San Antonio Spurs",
+                    "score": "93-114"
+                  },
+                  {
+                    "timestamp": 1777163400,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "Denver Nuggets",
+                    "score": "112-96"
+                  },
+                  {
+                    "timestamp": 1777084200,
+                    "tournament": "NBA",
+                    "home": "Portland Trail Blazers",
+                    "away": "San Antonio Spurs",
+                    "score": "108-120"
+                  },
+                  {
+                    "timestamp": 1776994200,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "Denver Nuggets",
+                    "score": "113-96"
+                  },
+                  {
+                    "timestamp": 1776816000,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Portland Trail Blazers",
+                    "score": "103-106"
+                  },
+                  {
+                    "timestamp": 1776738600,
+                    "tournament": "NBA",
+                    "home": "Denver Nuggets",
+                    "away": "Minnesota Timberwolves",
+                    "score": "114-119"
+                  },
+                  {
+                    "timestamp": 1776646800,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Portland Trail Blazers",
+                    "score": "111-98"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "218.5": {
+                    "over": 1.9,
+                    "under": 1.9
+                  },
+                  "214.5": {
+                    "over": 1.6,
+                    "under": 2.25
+                  },
+                  "215.5": {
+                    "over": 1.67,
+                    "under": 2.1
+                  },
+                  "216.5": {
+                    "over": 1.7,
+                    "under": 2.05
+                  },
+                  "217.5": {
+                    "over": 1.8,
+                    "under": 1.91
+                  },
+                  "219.5": {
+                    "over": 1.91,
+                    "under": 1.8
+                  },
+                  "220.5": {
+                    "over": 2,
+                    "under": 1.73
+                  },
+                  "221.5": {
+                    "over": 2.1,
+                    "under": 1.67
+                  },
+                  "222.5": {
+                    "over": 2.25,
+                    "under": 1.6
+                  }
+                },
+                "handicap": {
+                  "4.5": {
+                    "home": 1.9
+                  },
+                  "-4.5": {
+                    "away": 1.9
+                  },
+                  "1.5": {
+                    "home": 2.38
+                  },
+                  "-1.5": {
+                    "away": 1.53
+                  },
+                  "2.5": {
+                    "home": 2.2
+                  },
+                  "-2.5": {
+                    "away": 1.62
+                  },
+                  "3.5": {
+                    "home": 2
+                  },
+                  "-3.5": {
+                    "away": 1.73
+                  },
+                  "5.5": {
+                    "home": 1.73
+                  },
+                  "-5.5": {
+                    "away": 2
+                  },
+                  "6.5": {
+                    "home": 1.62
+                  },
+                  "-6.5": {
+                    "away": 2.2
+                  },
+                  "7.5": {
+                    "home": 1.53
+                  },
+                  "-7.5": {
+                    "away": 2.38
+                  },
+                  "8.5": {
+                    "home": 1.5
+                  },
+                  "-8.5": {
+                    "away": 2.5
+                  },
+                  "9.5": {
+                    "home": 1.4
+                  },
+                  "-9.5": {
+                    "away": 2.75
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     },
     "ufc": {
       "key": "ufc",
@@ -220,7 +705,680 @@
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>L'UFC reste le sport le plus imprévisible — un seul coup peut tout changer. Confiance max 3/5. Ne misez jamais plus de 1-2% de votre bankroll par combat.</div>",
       "disclaimer_style": "--orange:var(--red);border-color:rgba(244,63,94,0.25);background:rgba(244,63,94,0.06);",
-      "leagues": []
+      "leagues": [
+        {
+          "key": "mma",
+          "sport_key": "flashscore_mma",
+          "label": "UFC / MMA",
+          "flag": "🥊",
+          "country": "Mondial",
+          "panel_title": "🥊 UFC / MMA",
+          "panel_meta": "Combats des prochaines 24h",
+          "pronos": [
+            {
+              "event_id": "rZNkFPM8",
+              "flashscore_id": "rZNkFPM8",
+              "flashscore_sport_id": 28,
+              "home_team_id": "C03xjgS6",
+              "away_team_id": "nB60c7PF",
+              "tournament_id": "axmr6d4j",
+              "tournament_url": "/mma/lightweight-men/one-championship/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-05-15T12:30:00.000Z",
+              "time_display": "Ven. 14h30",
+              "home": "Ruotolo K.",
+              "away": "Tetsuka H.",
+              "match": "Ruotolo K. vs Tetsuka H.",
+              "prono": "win-home",
+              "pari": "Moins de 0.5 rounds",
+              "cote_retenue": 2.13,
+              "cotes": {
+                "domicile": 1.08,
+                "nul": null,
+                "exterieur": 5.93
+              },
+              "pick_category": "ou",
+              "analyse": "Kade Ruotolo est l'un des meilleurs jeunes talents de la grappling/soumission mondiale, champion ONE Championship en submission grappling, connu pour ses finissions rapides par soumission. Face à Tetsuka Hiroyuki, vétéran japonais de ONE qui compte de nombreux combats à son actif sur la promotion asiatique, l'écart de niveau technique est significatif. Ruotolo termine la plupart de ses combats avant la limite : sa victoire contre Vigna en 2025 et celle contre Mujtaba en 2024 illustrent sa capacité à finir tôt. Tetsuka, malgré son expérience (plus de 10 combats ONE recensés), n'a pas démontré une résistance particulière face aux finisseurs de haut niveau. Dans un contexte de grappling pur ou de MMA, Ruotolo privilégie l'attaque constante dès le début, rendant un combat long peu probable. Le marché 'moins de 0.5 rounds' (under) à 2.13 est tentant mais risqué sur 0.5 — le 'over 0.5' à 1.61 reste plus sécurisé si Tetsuka survit quelques secondes, mais la dynamique de finition rapide de Ruotolo plaide clairement pour l'under.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1763269200,
+                    "tournament": "ONE",
+                    "home": "Aoki S.",
+                    "away": "Tetsuka H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740063600,
+                    "tournament": "ONE",
+                    "home": "Ruotolo K.",
+                    "away": "Vigna N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1738990800,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "Zhang L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1731123000,
+                    "tournament": "ONE",
+                    "home": "Ruotolo K.",
+                    "away": "Mujtaba A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1725672600,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "Fitikefu I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1717815600,
+                    "tournament": "ONE",
+                    "home": "Ruotolo K.",
+                    "away": "Cooper B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712365200,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "da Silva V.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1708138800,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "Amorim A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1696638600,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "Tae Ho J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1643374800,
+                    "tournament": "ONE",
+                    "home": "Tetsuka H.",
+                    "away": "Marques E.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1636722000,
+                    "tournament": "ONE",
+                    "home": "Thani A.",
+                    "away": "Tetsuka H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1605274200,
+                    "tournament": "ONE",
+                    "home": "Ramazanov M.",
+                    "away": "Tetsuka H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1570955400,
+                    "tournament": "ONE",
+                    "home": "Perpetuo H.",
+                    "away": "Tetsuka H.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.61,
+                    "under": 2.13
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "2HR4zbmI",
+              "flashscore_id": "2HR4zbmI",
+              "flashscore_sport_id": 28,
+              "home_team_id": "Qe7nMgTf",
+              "away_team_id": "AeK2TP2F",
+              "tournament_id": "zupjj2rs",
+              "tournament_url": "/mma/heavyweight-men/one-championship/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-05-15T13:00:00.000Z",
+              "time_display": "Ven. 15h00",
+              "home": "Kane O.",
+              "away": "Malykhin A.",
+              "match": "Kane O. vs Malykhin A.",
+              "prono": "win-home",
+              "pari": "Moins de 4.5 rounds",
+              "cote_retenue": 1.44,
+              "cotes": {
+                "domicile": 2.5,
+                "nul": null,
+                "exterieur": 1.44
+              },
+              "pick_category": "ou",
+              "analyse": "Anatoly Malykhin est l'un des combattants les plus dominants de ONE Championship, détenant simultanément les ceintures des poids lourds-légers et des poids moyens. Lors de leur premier affrontement en novembre 2024 sous la bannière ONE, Malykhin avait déjà croisé Kane, ce qui constitue un H2H direct précieux. Le Russe a battu Reinier de Ridder à deux reprises (2022 et 2024), des victoires très impressionnantes face à un ancien champion incontesté. Brandon Vera Kane, de son côté, a des résultats mitigés : battu par Almeida en 2023, il manque de la régularité offensive nécessaire pour inquiéter un finisseur de l'envergure de Malykhin. Le style explosif et la puissance de frappe de Malykhin, combinés à son grappling élite, font de lui le favori évident dans cette revanche. Avec un taux de finish proche de 100% et une capacité à terminer les combats tôt, le pari sur une victoire de Malykhin avant la limite semble le plus cohérent.",
+              "confiance": 4,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1731130200,
+                    "tournament": "ONE",
+                    "home": "Malykhin A.",
+                    "away": "Kane O.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1709308800,
+                    "tournament": "ONE",
+                    "home": "De Ridder R.",
+                    "away": "Malykhin A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1691200800,
+                    "tournament": "ONE",
+                    "home": "Almeida M.",
+                    "away": "Kane O.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1687532400,
+                    "tournament": "ONE",
+                    "home": "Bhullar A.",
+                    "away": "Malykhin A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1670043600,
+                    "tournament": "ONE",
+                    "home": "De Ridder R.",
+                    "away": "Malykhin A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1670031000,
+                    "tournament": "ONE",
+                    "home": "Mirzamukhamedov Z.",
+                    "away": "Kane O.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1664454600,
+                    "tournament": "ONE",
+                    "home": "Kane O.",
+                    "away": "Gazzaev B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1644591600,
+                    "tournament": "ONE",
+                    "home": "Malykhin A.",
+                    "away": "Grishenko K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1632488400,
+                    "tournament": "ONE",
+                    "home": "Aliakbari A.",
+                    "away": "Malykhin A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1619661600,
+                    "tournament": "ONE",
+                    "home": "Kane O.",
+                    "away": "Grishenko K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1617843600,
+                    "tournament": "ONE",
+                    "home": "Kane O.",
+                    "away": "Schmid P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1614954600,
+                    "tournament": "ONE",
+                    "home": "Malykhin A.",
+                    "away": "Machado A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1611923400,
+                    "tournament": "ONE",
+                    "home": "Ngalani A.",
+                    "away": "Kane O.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": null
+            },
+            {
+              "event_id": "WQ0ANe2s",
+              "flashscore_id": "WQ0ANe2s",
+              "flashscore_sport_id": 28,
+              "home_team_id": "0AbXmXv9",
+              "away_team_id": "4SWEOFSu",
+              "tournament_id": "4dympo3k",
+              "tournament_url": "/mma/bantamweight-men/one-championship/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-05-16T02:00:00.000Z",
+              "time_display": "Sam. 04h00",
+              "home": "Saputra E. R.",
+              "away": "Adiwang L.",
+              "match": "Saputra E. R. vs Adiwang L.",
+              "prono": "win-home",
+              "pari": "Moins de 1.5 rounds",
+              "cote_retenue": 1.5,
+              "cotes": {
+                "domicile": 4.11,
+                "nul": null,
+                "exterieur": 1.18
+              },
+              "pick_category": "ou",
+              "analyse": "Saputra et Adiwang sont deux frappeurs explosifs issus de la scène ONE Championship, reconnus pour leur style agressif et leur recherche constante du finish. Adiwang, surnommé 'The Grasshopper', est un striker philippin très actif qui a notamment battu Miado et Brooks par arrêt prématuré, tandis que Saputra est un combattant indonésien puissant capable de terminer les combats rapidement. Les deux hommes ont une longue carrière sur ONE Championship avec de nombreux finishes à leur actif, ce qui rend un combat long peu probable. Leurs styles respectifs — frappeurs offensifs cherchant le KO — favorisent une conclusion rapide, bien avant la limite des rounds. Leurs derniers affrontements sur ONE se sont souvent terminés avant la fin, renforçant l'idée que ce duel restera court. Le marché Under 1.5 rounds à 1.50 est la valeur la plus logique ici : deux finishers agressifs dans la même cage, cela finit rarement au bout.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1762570800,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Mastromarini M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1762567200,
+                    "tournament": "ONE",
+                    "home": "Nakatani G.",
+                    "away": "Saputra E. R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1741402800,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Zakirov S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1738987200,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Yamakita K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1708142400,
+                    "tournament": "ONE",
+                    "home": "Williams D.",
+                    "away": "Adiwang L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1699056000,
+                    "tournament": "ONE",
+                    "home": "Miado J.",
+                    "away": "Adiwang L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1696642200,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Yong H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1695385800,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Mattheis A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1677290400,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Kingad D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1666355400,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Fairtex Y.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1648278000,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Miado J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1647001800,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Rothana C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1637940600,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Brooks J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1632484800,
+                    "tournament": "ONE",
+                    "home": "Adiwang L.",
+                    "away": "Hexi G.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1628859600,
+                    "tournament": "ONE",
+                    "home": "Saputra E. R.",
+                    "away": "Liu P.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "1.5": {
+                    "over": 2.34,
+                    "under": 1.5
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "MD8WTCRH",
+              "flashscore_id": "MD8WTCRH",
+              "flashscore_sport_id": 28,
+              "home_team_id": "p8Nt4Zvj",
+              "away_team_id": "YPEQ4s5D",
+              "tournament_id": "hiijleae",
+              "tournament_url": "/mma/strawweight-men/one-championship/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-05-16T03:00:00.000Z",
+              "time_display": "Sam. 05h00",
+              "home": "Saruta Y.",
+              "away": "Henrique F.",
+              "match": "Saruta Y. vs Henrique F.",
+              "prono": "win-home",
+              "pari": "Plus de 2.5 rounds",
+              "cote_retenue": 1.8,
+              "cotes": {
+                "domicile": 2.19,
+                "nul": null,
+                "exterieur": 1.57
+              },
+              "pick_category": "ou",
+              "analyse": "Ce duel entre Saruta Y. et Henrique F. présente des profils très intéressants à analyser. Saruta est un combattant technique issu de ONE Championship, avec une carrière marquée par des matchs souvent disputés sur la distance, comme ses trois affrontements avec Pacio J. qui ont démontré sa capacité à aller aux rounds. Son dernier combat connu remonte à août 2024 face à Yamakita K., signe d'une activité modérée. Henrique F. de son côté vient tout juste de combattre en mars 2026 face à Lee S. C. sous ONE, ce qui lui confère un avantage de fraîcheur et de rythme de compétition. Les données disponibles sur Saruta montrent un style grappling/technique typique des strawweights ONE, propice aux combats qui s'étirent dans le temps. Sans résultats nets (KO/soumissions rapides) visibles dans l'historique récent, et face à deux combattants habitués à aller chercher les décisions ou les soumissions tardives, le pari sur la durée semble le plus pertinent. Un combat dépassant 2.5 rounds paraît logique compte tenu des styles impliqués.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1773459000,
+                    "tournament": "ONE",
+                    "home": "Lee S. C.",
+                    "away": "Henrique F.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722650400,
+                    "tournament": "ONE",
+                    "home": "Yamakita K.",
+                    "away": "Saruta Y.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1708133400,
+                    "tournament": "ONE",
+                    "home": "Malachiev M.",
+                    "away": "Saruta Y.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1650630600,
+                    "tournament": "ONE",
+                    "home": "Saruta Y.",
+                    "away": "Balart G.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1632493800,
+                    "tournament": "ONE",
+                    "home": "Pacio J.",
+                    "away": "Saruta Y.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1570959000,
+                    "tournament": "ONE",
+                    "home": "Saruta Y.",
+                    "away": "Kitakata D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1555079400,
+                    "tournament": "ONE",
+                    "home": "Saruta Y.",
+                    "away": "Pacio J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1547915400,
+                    "tournament": "ONE",
+                    "home": "Pacio J.",
+                    "away": "Saruta Y.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.8,
+                    "under": 1.86
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "8ESq9CrA",
+              "flashscore_id": "8ESq9CrA",
+              "flashscore_sport_id": 28,
+              "home_team_id": "U1zMGYFo",
+              "away_team_id": "jLi09iVf",
+              "tournament_id": "vhgbrbac",
+              "tournament_url": "/mma/featherweight-men/one-championship/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-05-16T05:00:00.000Z",
+              "time_display": "Sam. 07h00",
+              "home": "Tang K.",
+              "away": "Gasanov S.",
+              "match": "Tang K. vs Gasanov S.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 2.87,
+              "cotes": {
+                "domicile": 3.23,
+                "nul": null,
+                "exterieur": 1.28
+              },
+              "pick_category": "ou",
+              "analyse": "Les données de résultats sont absentes (scores null-null), ce qui limite l'analyse factuelle des issues. Cependant, Saygid Guseyn Arslanaliev 'Dagi' Gasanov est un lutteur dominant de ONE Championship, reconnu pour ses takedowns explosifs et son grappling étouffant qui mène souvent à des finitions précoces par soumission ou TKO au sol. Tang Kai, de son côté, est un striker technique avec une bonne vitesse de mains, mais ses combats ont souvent été conclus avant la limite. L'historique de Gasanov sur ONE montre une tendance marquée aux finitions rapides — ses victoires contre des adversaires comme Amir H. ou Canarte A. ont généralement été expéditives. Un combat entre un lutteur de finish et un frappeur à la finalisation rapide favorise statistiquement un arrêt avant 2.5 rounds. La dynamique striker vs grappler à ce niveau génère rarement des décisions longues, les deux ayant démontré une capacité à conclure tôt dans leur carrière ONE.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1754105400,
+                    "tournament": "ONE",
+                    "home": "Tonon G.",
+                    "away": "Gasanov S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740072600,
+                    "tournament": "ONE",
+                    "home": "Gasanov S.",
+                    "away": "Nguyen M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1736573400,
+                    "tournament": "ONE",
+                    "home": "Tang K.",
+                    "away": "Abdullaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1733540400,
+                    "tournament": "ONE",
+                    "home": "Gasanov S.",
+                    "away": "Amir H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722655800,
+                    "tournament": "ONE",
+                    "home": "Gasanov S.",
+                    "away": "Canarte A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1709307000,
+                    "tournament": "ONE",
+                    "home": "Tang K.",
+                    "away": "Le T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1705122000,
+                    "tournament": "ONE",
+                    "home": "Gasanov S.",
+                    "away": "Taek Oh H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1689391800,
+                    "tournament": "ONE",
+                    "home": "Tonon G.",
+                    "away": "Gasanov S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1666404000,
+                    "tournament": "ONE",
+                    "home": "Woong K. J.",
+                    "away": "Gasanov S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1661526000,
+                    "tournament": "ONE",
+                    "home": "Le T.",
+                    "away": "Tang K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1648285200,
+                    "tournament": "ONE",
+                    "home": "Woong K. J.",
+                    "away": "Tang K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1636727400,
+                    "tournament": "ONE",
+                    "home": "Tang K.",
+                    "away": "Yoon C. M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1614952800,
+                    "tournament": "ONE",
+                    "home": "Takahashi R.",
+                    "away": "Tang K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1602855000,
+                    "tournament": "ONE",
+                    "home": "Subba K.",
+                    "away": "Tang K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1573898400,
+                    "tournament": "ONE",
+                    "home": "Tang K.",
+                    "away": "Kelly Ed.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.34,
+                    "under": 2.87
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     },
     "tennis": {
       "key": "tennis",
@@ -238,29 +1396,685 @@
           "country": "",
           "panel_title": "🎾 ATP Rome (Italy)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
-        },
-        {
-          "key": "wta_rome_italy",
-          "sport_key": "flashscore_tennis_wta_rome_italy",
-          "label": "WTA Rome (Italy)",
-          "flag": "🎾",
-          "country": "",
-          "panel_title": "🎾 WTA Rome (Italy)",
-          "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "WOHH2E53",
+              "flashscore_id": "WOHH2E53",
+              "flashscore_sport_id": 2,
+              "home_team_id": "zN9UpRqp",
+              "away_team_id": "jeXTxMIp",
+              "tournament_id": "ibvebhik",
+              "tournament_url": "/tennis/atp-singles/rome/",
+              "sport_key": "flashscore_tennis_atp_rome_italy",
+              "commence_time": "2026-05-15T13:30:00.000Z",
+              "time_display": "Ven. 15h30",
+              "home": "Ruud C.",
+              "away": "Darderi L.",
+              "match": "Ruud C. vs Darderi L.",
+              "prono": "win-home",
+              "pari": "Plus de 22.5 jeux",
+              "cote_retenue": 2.02,
+              "cotes": {
+                "domicile": 1.33,
+                "nul": null,
+                "exterieur": 3.48
+              },
+              "pick_category": "ou",
+              "analyse": "Ruud et Darderi sont tous deux en excellente forme à Rome 2026 : Ruud a disposé de Svajda (2-0), Lehecka (2-0), Musetti (2-0) et Khachanov (2-1), affichant une régularité impressionnante sur terre battue, sa surface de prédilection. Darderi, de son côté, a créé la sensation en battant Zverev (2-1) après avoir éliminé Hanfmann (2-0), Paul (2-1) et Jodar (2-1), confirmant une forme étincelante sur ocre. Ces deux joueurs sont des spécialistes de la terre battue qui produisent des échanges longs et des rallyes intenses, ce qui favorise des matchs en nombre de jeux élevé. Darderi a prouvé à Madrid qu'il pouvait bousculer les têtes de série (Cerundolo J.M. battu 2-0), mais a perdu contre Cerundolo F. (0-2), illustrant une certaine irrégularité. Ruud est le favori logique compte tenu de son palmarès à Rome et de son niveau de jeu actuel, mais Darderi est capable de pousser le Norvégien dans ses retranchements sur plusieurs sets. Les deux joueurs défendent bien depuis la ligne de fond et l'intensité attendue de ce quart de finale penche nettement vers un total élevé de jeux.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1778705400,
+                    "tournament": "ROM",
+                    "home": "Jodar R.",
+                    "away": "Darderi L.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1778677800,
+                    "tournament": "ROM",
+                    "home": "Ruud C.",
+                    "away": "Khachanov K.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1778588700,
+                    "tournament": "ROM",
+                    "home": "Darderi L.",
+                    "away": "Zverev A.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1778577000,
+                    "tournament": "ROM",
+                    "home": "Musetti L.",
+                    "away": "Ruud C.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1778429100,
+                    "tournament": "ROM",
+                    "home": "Paul T.",
+                    "away": "Darderi L.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1778404200,
+                    "tournament": "ROM",
+                    "home": "Ruud C.",
+                    "away": "Lehecka J.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778272500,
+                    "tournament": "ROM",
+                    "home": "Hanfmann Y.",
+                    "away": "Darderi L.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1778239200,
+                    "tournament": "ROM",
+                    "home": "Ruud C.",
+                    "away": "Svajda Z.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777547400,
+                    "tournament": "MAD",
+                    "home": "Ruud C.",
+                    "away": "Blockx A.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1777380000,
+                    "tournament": "MAD",
+                    "home": "Tsitsipas S.",
+                    "away": "Ruud C.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1777295400,
+                    "tournament": "MAD",
+                    "home": "Cerundolo F.",
+                    "away": "Darderi L.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777281000,
+                    "tournament": "MAD",
+                    "home": "Davidovich Fokina A.",
+                    "away": "Ruud C.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1777116000,
+                    "tournament": "MAD",
+                    "home": "Munar J.",
+                    "away": "Ruud C.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1777115700,
+                    "tournament": "MAD",
+                    "home": "Cerundolo J. M.",
+                    "away": "Darderi L.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1776266100,
+                    "tournament": "MUN",
+                    "home": "Kopriva V.",
+                    "away": "Darderi L.",
+                    "score": "2-1"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "17.5": {
+                    "over": 1.1,
+                    "under": 5.05
+                  },
+                  "18.0": {
+                    "over": 1.12,
+                    "under": 4.75
+                  },
+                  "18.5": {
+                    "over": 1.22,
+                    "under": 3.5
+                  },
+                  "19.0": {
+                    "over": 1.26,
+                    "under": 3.28
+                  },
+                  "19.5": {
+                    "over": 1.4,
+                    "under": 2.75
+                  },
+                  "20.0": {
+                    "over": 1.44,
+                    "under": 2.55
+                  },
+                  "20.5": {
+                    "over": 1.56,
+                    "under": 2.27
+                  },
+                  "21.0": {
+                    "over": 1.64,
+                    "under": 2.15
+                  },
+                  "21.5": {
+                    "over": 1.75,
+                    "under": 2.01
+                  },
+                  "22.0": {
+                    "over": 1.87,
+                    "under": 1.85
+                  },
+                  "22.5": {
+                    "over": 2.02,
+                    "under": 1.73
+                  },
+                  "23.0": {
+                    "over": 2.14,
+                    "under": 1.62
+                  },
+                  "23.5": {
+                    "over": 2.3,
+                    "under": 1.55
+                  },
+                  "24.0": {
+                    "over": 2.27,
+                    "under": 1.52
+                  },
+                  "24.5": {
+                    "over": 2.35,
+                    "under": 1.52
+                  },
+                  "25.0": {
+                    "over": 2.41,
+                    "under": 1.45
+                  },
+                  "25.5": {
+                    "over": 2.56,
+                    "under": 1.44
+                  },
+                  "26.0": {
+                    "over": 2.66,
+                    "under": 1.37
+                  },
+                  "26.5": {
+                    "over": 2.89,
+                    "under": 1.36
+                  },
+                  "2.5": {
+                    "over": 2.52,
+                    "under": 1.49
+                  },
+                  "27.5": {
+                    "over": 3.3,
+                    "under": 1.33
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.11,
+                    "away": 1.91
+                  },
+                  "-1.5": {
+                    "home": 1.8,
+                    "away": 5.47
+                  },
+                  "0.0": {
+                    "home": 1.28,
+                    "away": 3.4
+                  },
+                  "0.5": {
+                    "home": 1.26,
+                    "away": 3.25
+                  },
+                  "-0.5": {
+                    "home": 1.32,
+                    "away": 3.65
+                  },
+                  "1.0": {
+                    "away": 3.1
+                  },
+                  "-1.0": {
+                    "home": 1.33
+                  },
+                  "2.0": {
+                    "away": 2.69
+                  },
+                  "-2.0": {
+                    "home": 1.42
+                  },
+                  "2.5": {
+                    "away": 2.42
+                  },
+                  "-2.5": {
+                    "home": 1.5
+                  },
+                  "3.0": {
+                    "away": 2.22
+                  },
+                  "-3.0": {
+                    "home": 1.6
+                  },
+                  "3.5": {
+                    "home": 1.12,
+                    "away": 2.02
+                  },
+                  "-3.5": {
+                    "home": 1.74,
+                    "away": 5
+                  },
+                  "4.0": {
+                    "away": 1.74
+                  },
+                  "-4.0": {
+                    "home": 2
+                  },
+                  "4.5": {
+                    "away": 1.62
+                  },
+                  "-4.5": {
+                    "home": 2.15
+                  },
+                  "5.0": {
+                    "away": 1.38
+                  },
+                  "-5.0": {
+                    "home": 2.85
+                  },
+                  "5.5": {
+                    "away": 1.32
+                  },
+                  "-5.5": {
+                    "home": 3.23
+                  },
+                  "6.0": {
+                    "away": 1.16
+                  },
+                  "-6.0": {
+                    "home": 4.7
+                  },
+                  "6.5": {
+                    "away": 1.13
+                  },
+                  "-6.5": {
+                    "home": 5.2
+                  },
+                  "7.0": {
+                    "away": 1.04
+                  },
+                  "-7.0": {
+                    "home": 8.7
+                  },
+                  "7.5": {
+                    "away": 1.03
+                  },
+                  "-7.5": {
+                    "home": 9.3
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "6XMkYEio",
+              "flashscore_id": "6XMkYEio",
+              "flashscore_sport_id": 2,
+              "home_team_id": "6HdC3z4H",
+              "away_team_id": "O8qG0Nhb",
+              "tournament_id": "ibvebhik",
+              "tournament_url": "/tennis/atp-singles/rome/",
+              "sport_key": "flashscore_tennis_atp_rome_italy",
+              "commence_time": "2026-05-15T17:00:00.000Z",
+              "time_display": "Ven. 19h00",
+              "home": "Sinner J.",
+              "away": "Medvedev D.",
+              "match": "Sinner J. vs Medvedev D.",
+              "prono": "win-home",
+              "pari": "Moins de 19.5 jeux",
+              "cote_retenue": 1.83,
+              "cotes": {
+                "domicile": 1.07,
+                "nul": null,
+                "exterieur": 9.7
+              },
+              "pick_category": "ou",
+              "analyse": "Jannik Sinner traverse une forme stratosphérique sur terre battue cette saison : victoires 2-0 contre Ofner, Popyrin, Pellegrino et Rublev à Rome, et un titre à Madrid où il a notamment écrasé Zverev 2-0 en finale. L'Italien n'a pas concédé un seul set dans ce tournoi romain. Medvedev, lui, avance péniblement : battu par Cobolli à Madrid (1-2), il a souffert face à Llamas Ruiz et Landaluce à Rome (1-2 dans les deux cas), signant des victoires laborieuses en trois sets. Le Russe est structurellement en difficulté sur terre battue, surface où son jeu à plat peine à s'exprimer. Face à un Sinner dominant sur sa surface de prédilection et devant son public, on peut anticiper une victoire nette de l'Italien avec peu de jeux concédés. Le handicap -4.5 jeux pour Sinner à 1.44 représente la meilleure opportunité : au vu de la forme respective des deux joueurs, Sinner devrait s'imposer avec un écart confortable, comme il l'a fait dans tous ses matches romains cette semaine.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1778778600,
+                    "tournament": "ROM",
+                    "home": "Landaluce M.",
+                    "away": "Medvedev D.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1778757000,
+                    "tournament": "ROM",
+                    "home": "Sinner J.",
+                    "away": "Rublev A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778615700,
+                    "tournament": "ROM",
+                    "home": "Tirante T. A.",
+                    "away": "Medvedev D.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1778591100,
+                    "tournament": "ROM",
+                    "home": "Sinner J.",
+                    "away": "Pellegrino A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778513100,
+                    "tournament": "ROM",
+                    "home": "Llamas Ruiz P.",
+                    "away": "Medvedev D.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1778508000,
+                    "tournament": "ROM",
+                    "home": "Sinner J.",
+                    "away": "Popyrin A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778346600,
+                    "tournament": "ROM",
+                    "home": "Sinner J.",
+                    "away": "Ofner S.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778317200,
+                    "tournament": "ROM",
+                    "home": "Machac T.",
+                    "away": "Medvedev D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1777821000,
+                    "tournament": "MAD",
+                    "home": "Sinner J.",
+                    "away": "Zverev A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777644600,
+                    "tournament": "MAD",
+                    "home": "Sinner J.",
+                    "away": "Fils A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777471800,
+                    "tournament": "MAD",
+                    "home": "Sinner J.",
+                    "away": "Jodar R.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777403400,
+                    "tournament": "MAD",
+                    "home": "Medvedev D.",
+                    "away": "Cobolli F.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1777367700,
+                    "tournament": "MAD",
+                    "home": "Sinner J.",
+                    "away": "Norrie C.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777297200,
+                    "tournament": "MAD",
+                    "home": "Medvedev D.",
+                    "away": "Budkov Kjaer N.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1777212600,
+                    "tournament": "MAD",
+                    "home": "Sinner J.",
+                    "away": "Moller E.",
+                    "score": "2-0"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "15.5": {
+                    "over": 1.04,
+                    "under": 6.8
+                  },
+                  "16.0": {
+                    "over": 1.06,
+                    "under": 6.35
+                  },
+                  "16.5": {
+                    "over": 1.16,
+                    "under": 4.15
+                  },
+                  "17.0": {
+                    "over": 1.21,
+                    "under": 3.66
+                  },
+                  "17.5": {
+                    "over": 1.39,
+                    "under": 2.81
+                  },
+                  "18.0": {
+                    "over": 1.44,
+                    "under": 2.53
+                  },
+                  "18.5": {
+                    "over": 1.62,
+                    "under": 2.16
+                  },
+                  "19.0": {
+                    "over": 1.75,
+                    "under": 1.99
+                  },
+                  "19.5": {
+                    "over": 1.94,
+                    "under": 1.83
+                  },
+                  "20.0": {
+                    "over": 2.08,
+                    "under": 1.68
+                  },
+                  "20.5": {
+                    "over": 2.24,
+                    "under": 1.6
+                  },
+                  "21.0": {
+                    "over": 2.4,
+                    "under": 1.49
+                  },
+                  "21.5": {
+                    "over": 2.57,
+                    "under": 1.46
+                  },
+                  "22.0": {
+                    "over": 2.83,
+                    "under": 1.34
+                  },
+                  "22.5": {
+                    "over": 3.1,
+                    "under": 1.31
+                  },
+                  "23.0": {
+                    "over": 3.2,
+                    "under": 1.26
+                  },
+                  "23.5": {
+                    "over": 3.28,
+                    "under": 1.25
+                  },
+                  "24.5": {
+                    "over": 2.8,
+                    "under": 1.4
+                  },
+                  "25.5": {
+                    "over": 3.1,
+                    "under": 1.34
+                  },
+                  "2.5": {
+                    "over": 3.92,
+                    "under": 1.22
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.01,
+                    "away": 3.45
+                  },
+                  "-1.5": {
+                    "home": 1.27,
+                    "away": 12
+                  },
+                  "0.5": {
+                    "away": 8.1
+                  },
+                  "-0.5": {
+                    "home": 1.05
+                  },
+                  "1.0": {
+                    "away": 8
+                  },
+                  "-1.0": {
+                    "home": 1.05
+                  },
+                  "2.0": {
+                    "away": 6.8
+                  },
+                  "-2.0": {
+                    "home": 1.08
+                  },
+                  "2.5": {
+                    "away": 5.6
+                  },
+                  "-2.5": {
+                    "home": 1.12
+                  },
+                  "3.0": {
+                    "away": 5.25
+                  },
+                  "-3.0": {
+                    "home": 1.13
+                  },
+                  "3.5": {
+                    "away": 4.03
+                  },
+                  "-3.5": {
+                    "home": 1.23
+                  },
+                  "4.0": {
+                    "away": 3.54
+                  },
+                  "-4.0": {
+                    "home": 1.26
+                  },
+                  "4.5": {
+                    "away": 2.62
+                  },
+                  "-4.5": {
+                    "home": 1.44
+                  },
+                  "5.0": {
+                    "away": 2.35
+                  },
+                  "-5.0": {
+                    "home": 1.54
+                  },
+                  "5.5": {
+                    "away": 1.9
+                  },
+                  "-5.5": {
+                    "home": 1.84
+                  },
+                  "6.0": {
+                    "away": 1.64
+                  },
+                  "-6.0": {
+                    "home": 2.15
+                  },
+                  "6.5": {
+                    "away": 1.47
+                  },
+                  "-6.5": {
+                    "home": 2.53
+                  },
+                  "7.0": {
+                    "away": 1.26
+                  },
+                  "-7.0": {
+                    "home": 3.54
+                  },
+                  "7.5": {
+                    "away": 1.2
+                  },
+                  "-7.5": {
+                    "home": 4.28
+                  },
+                  "8.0": {
+                    "away": 1.08
+                  },
+                  "-8.0": {
+                    "home": 6.65
+                  },
+                  "8.5": {
+                    "away": 1.07
+                  },
+                  "-8.5": {
+                    "home": 7.3
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     }
   },
   "coup_de_coeur": [
-    "x4FrUA87",
-    "0nv4awzn",
-    "Wn6w4IaB",
-    "bBLBTbXg",
-    "hvRlayK8",
-    "YZgOrGZR",
-    "r95TigCr"
+    "2HR4zbmI",
+    "8ESq9CrA",
+    "WOHH2E53",
+    "xd7fkBrC",
+    "be3wSNq2",
+    "6XMkYEio",
+    "MD8WTCRH",
+    "AyZEYQVH",
+    "WQ0ANe2s",
+    "rZNkFPM8"
   ],
   "history": [
     {
@@ -134470,83 +136284,206 @@
     {
       "strategy": "safe",
       "label": "Triple sûr du jour",
-      "reasoning": "Ces trois picks combinent deux certitudes tennis ATP Rome à haute confiance (⭐4) avec un match de football à cote modérée. Sinner, grand favori à Rome sur ses terres, a tendance à dominer rapidement ses adversaires, ce qui favorise un match court. Medvedev face à Landaluce, joueur de bas classement, est une victoire quasi-certaine. Real Madrid contre Oviedo, club de D2, est une affiche très déséquilibrée qui promet des buts. Ces trois legs sont indépendants, couvrent deux sports et trois matchs distincts pour une cote combinée solide et défendable.",
+      "reasoning": "Kane vs Malykhin est le pick le plus solide du jour avec une confiance maximale (⭐4) et une cote raisonnable à 1.44 sur un combat MMA à finition rapide probable. On y ajoute Saputra vs Adiwang (Moins de 1.5 rounds, 1.50) et Aston Villa vs Liverpool BTTS (1.56), deux paris bien argumentés sur des sports différents qui stabilisent l'ensemble. La combinaison de ces trois legs offre une cote totale autour de 2.00, idéale pour une mise confortable avec une variance minimale.",
       "legs": [
         {
-          "event_id": "x4FrUA87",
-          "match": "Sinner J. vs Rublev A.",
-          "pari": "Moins de 20.5 jeux",
-          "sport_key": "flashscore_tennis_atp_rome_italy",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 1.4,
-          "home": "Sinner J.",
-          "away": "Rublev A.",
-          "time_display": "Jeu. 13h00",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "0nv4awzn",
-          "match": "Landaluce M. vs Medvedev D.",
-          "pari": "Victoire Medvedev",
-          "sport_key": "flashscore_tennis_atp_rome_italy",
-          "pick_category": "1x2",
-          "prono": "win-away",
-          "cote": 1.31,
-          "home": "Landaluce M.",
-          "away": "Medvedev D.",
-          "time_display": "Jeu. 19h00",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "r95TigCr",
-          "match": "Real Madrid vs Oviedo",
-          "pari": "Plus de 2.5 buts",
-          "sport_key": "flashscore_football_liga",
+          "event_id": "2HR4zbmI",
+          "match": "Kane O. vs Malykhin A.",
+          "pari": "Moins de 4.5 rounds",
+          "sport_key": "flashscore_mma",
           "pick_category": "ou",
           "prono": "win-home",
           "cote": 1.44,
-          "home": "Real Madrid",
-          "away": "Oviedo",
-          "time_display": "Jeu. 21h30",
+          "home": "Kane O.",
+          "away": "Malykhin A.",
+          "time_display": "Ven. 15h00",
+          "sport_label": "🥊 UFC"
+        },
+        {
+          "event_id": "WQ0ANe2s",
+          "match": "Saputra E. R. vs Adiwang L.",
+          "pari": "Moins de 1.5 rounds",
+          "sport_key": "flashscore_mma",
+          "pick_category": "ou",
+          "prono": "win-home",
+          "cote": 1.5,
+          "home": "Saputra E. R.",
+          "away": "Adiwang L.",
+          "time_display": "Sam. 04h00",
+          "sport_label": "🥊 UFC"
+        },
+        {
+          "event_id": "AyZEYQVH",
+          "match": "Aston Villa vs Liverpool",
+          "pari": "Les deux équipes marquent - Oui",
+          "sport_key": "flashscore_football_epl",
+          "pick_category": "btts",
+          "prono": "win-home",
+          "cote": 1.56,
+          "home": "Aston Villa",
+          "away": "Liverpool",
+          "time_display": "Ven. 21h00",
           "sport_label": "⚽ Foot"
         }
       ],
-      "total_cote": 2.64
+      "total_cote": 3.37
     },
     {
       "strategy": "value",
       "label": "Combo value du jour",
-      "reasoning": "Ce duo value mise sur deux dynamiques complémentaires en tennis WTA Rome et football espagnol. Swiatek-Svitolina promet un match accroché avec Svitolina connue pour sa défensive et sa résistance, ce qui plaide pour un décompte élevé de jeux. Valencia-Rayo Vallecano est un choc de milieu de tableau Liga tendu, où les deux équipes ont peu à jouer, favorisant la prudence défensive. Ces deux picks à cote supérieure (1.94 et 1.73) offrent une cote combinée attractive autour de 3.35 pour une mise raisonnable.",
+      "reasoning": "Tang vs Gasanov (Moins de 2.5 rounds, 2.87) est un pari value avec un beau potentiel de finish précoce en MMA, combiné à Ruud vs Darderi (Plus de 22.5 jeux, 2.02) sur un match de terre battue entre deux joueurs offensifs tendant vers les longues manches. Ces deux legs issus de sports très différents (MMA et tennis ATP Rome) se complètent bien et offrent une cote totale autour de 5.80, parfaite pour une mise réduite à fort upside.",
       "legs": [
         {
-          "event_id": "bBLBTbXg",
-          "match": "Swiatek I. vs Svitolina E.",
-          "pari": "Plus de 20.5 jeux",
-          "sport_key": "flashscore_tennis_wta_rome_italy",
+          "event_id": "8ESq9CrA",
+          "match": "Tang K. vs Gasanov S.",
+          "pari": "Moins de 2.5 rounds",
+          "sport_key": "flashscore_mma",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.94,
-          "home": "Swiatek I.",
-          "away": "Svitolina E.",
-          "time_display": "Jeu. 20h30",
-          "sport_label": "🎾 Tennis"
+          "cote": 2.87,
+          "home": "Tang K.",
+          "away": "Gasanov S.",
+          "time_display": "Sam. 07h00",
+          "sport_label": "🥊 UFC"
         },
         {
-          "event_id": "hvRlayK8",
-          "match": "Valencia vs Rayo Vallecano",
-          "pari": "Moins de 2.5 buts",
-          "sport_key": "flashscore_football_liga",
+          "event_id": "WOHH2E53",
+          "match": "Ruud C. vs Darderi L.",
+          "pari": "Plus de 22.5 jeux",
+          "sport_key": "flashscore_tennis_atp_rome_italy",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.73,
-          "home": "Valencia",
-          "away": "Rayo Vallecano",
-          "time_display": "Jeu. 19h00",
-          "sport_label": "⚽ Foot"
+          "cote": 2.02,
+          "home": "Ruud C.",
+          "away": "Darderi L.",
+          "time_display": "Ven. 15h30",
+          "sport_label": "🎾 Tennis"
         }
       ],
-      "total_cote": 3.36
+      "total_cote": 5.8
     }
-  ]
+  ],
+  "fun": {
+    "yolo_picks": [
+      {
+        "event_id": "AyZEYQVH",
+        "match": "Aston Villa vs Liverpool",
+        "home": "Aston Villa",
+        "away": "Liverpool",
+        "pari": "Nul - Aston Villa vs Liverpool",
+        "cote": 3.58,
+        "analyse_fun": "Villa Park en feu, les Villans n'ont rien à perdre et tout à prouver face aux Reds ! Liverpool peut avoir la tête ailleurs avec son calendrier dingue, et un match nul épique entre deux équipes qui se respectent, ça s'est déjà vu. À 3.58, t'as pas besoin d'être fou pour jouer ça, juste un peu courageux !",
+        "sport_key": "flashscore_football_epl",
+        "time_display": "Ven. 21h00"
+      },
+      {
+        "event_id": "WQ0ANe2s",
+        "match": "Saputra E. R. vs Adiwang L.",
+        "home": "Saputra E. R.",
+        "away": "Adiwang L.",
+        "pari": "Victoire Saputra E. R.",
+        "cote": 4.11,
+        "analyse_fun": "Adiwang part grand favori, mais dans les cages tout peut basculer en une seconde ! Saputra joue à domicile dans son coin du monde et une cote à 4.11 sur un combat MMA, c'est cadeau — un KO surprise et t'as quadruplé la mise. Le MMA c'est le sport des miracles, alors pourquoi pas ce soir ?",
+        "sport_key": "flashscore_mma",
+        "time_display": "Sam. 04h00"
+      }
+    ],
+    "mega_combo": {
+      "label": "🚀 LE COMBO JACKPOT DU SIÈCLE 🚀",
+      "reasoning": "On mélange le football anglais, le basket NBA, le tennis à Rome et les cages du MMA pour un cocktail explosif qui va faire chauffer les serveurs du bookmaker ! Chaque leg est soigneusement choisi pour être défendable, mais ensemble ils forment une bombe à retardement prête à exploser en cash. Mise 5€, rêve de 75 000€ — c'est mathématique, c'est beau, c'est YOLO !",
+      "legs": [
+        {
+          "event_id": "AyZEYQVH",
+          "match": "Aston Villa vs Liverpool",
+          "home": "Aston Villa",
+          "away": "Liverpool",
+          "pari": "Les deux équipes marquent - Oui",
+          "cote": 1.56,
+          "sport_key": "flashscore_football_epl",
+          "time_display": "Ven. 21h00"
+        },
+        {
+          "event_id": "be3wSNq2",
+          "match": "Cleveland Cavaliers vs Detroit Pistons",
+          "home": "Cleveland Cavaliers",
+          "away": "Detroit Pistons",
+          "pari": "Plus de 209.5 points",
+          "cote": 1.85,
+          "sport_key": "flashscore_basketball_nba",
+          "time_display": "Sam. 01h00"
+        },
+        {
+          "event_id": "xd7fkBrC",
+          "match": "Minnesota Timberwolves vs San Antonio Spurs",
+          "home": "Minnesota Timberwolves",
+          "away": "San Antonio Spurs",
+          "pari": "Moins de 218.5 points",
+          "cote": 1.9,
+          "sport_key": "flashscore_basketball_nba",
+          "time_display": "Sam. 03h30"
+        },
+        {
+          "event_id": "rZNkFPM8",
+          "match": "Ruotolo K. vs Tetsuka H.",
+          "home": "Ruotolo K.",
+          "away": "Tetsuka H.",
+          "pari": "Moins de 0.5 rounds",
+          "cote": 2.13,
+          "sport_key": "flashscore_mma",
+          "time_display": "Ven. 14h30"
+        },
+        {
+          "event_id": "8ESq9CrA",
+          "match": "Tang K. vs Gasanov S.",
+          "home": "Tang K.",
+          "away": "Gasanov S.",
+          "pari": "Moins de 2.5 rounds",
+          "cote": 2.87,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 07h00"
+        },
+        {
+          "event_id": "MD8WTCRH",
+          "match": "Saruta Y. vs Henrique F.",
+          "home": "Saruta Y.",
+          "away": "Henrique F.",
+          "pari": "Plus de 2.5 rounds",
+          "cote": 1.8,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 05h00"
+        },
+        {
+          "event_id": "WQ0ANe2s",
+          "match": "Saputra E. R. vs Adiwang L.",
+          "home": "Saputra E. R.",
+          "away": "Adiwang L.",
+          "pari": "Moins de 1.5 rounds",
+          "cote": 1.5,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 04h00"
+        },
+        {
+          "event_id": "WOHH2E53",
+          "match": "Ruud C. vs Darderi L.",
+          "home": "Ruud C.",
+          "away": "Darderi L.",
+          "pari": "Plus de 22.5 jeux",
+          "cote": 2.02,
+          "sport_key": "flashscore_tennis_atp_rome_italy",
+          "time_display": "Ven. 15h30"
+        },
+        {
+          "event_id": "6XMkYEio",
+          "match": "Sinner J. vs Medvedev D.",
+          "home": "Sinner J.",
+          "away": "Medvedev D.",
+          "pari": "Moins de 19.5 jeux",
+          "cote": 1.83,
+          "sport_key": "flashscore_tennis_atp_rome_italy",
+          "time_display": "Ven. 19h00"
+        }
+      ],
+      "total_cote": 334.56
+    }
+  }
 }
