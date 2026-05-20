@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-20T20:07:17.410Z",
+    "last_results_update": "2026-05-20T22:14:46.156Z",
     "analyses_written_at": "2026-05-20T08:37:05.124Z",
     "analyses_cost_usd": 0.3596,
-    "last_hourly_refresh": "2026-05-20T20:07:17.410Z"
+    "last_hourly_refresh": "2026-05-20T22:14:46.156Z"
   },
   "sports": {
     "foot": {
@@ -239,9 +239,9 @@
               "pari": "Plus de 215.5 points",
               "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.42,
+                "domicile": 1.43,
                 "nul": null,
-                "exterieur": 3.15
+                "exterieur": 3.12
               },
               "pick_category": "ou",
               "analyse": "Le contexte est exceptionnel : San Antonio a battu Oklahoma City 122-115 lors du dernier face-à-face le 19 mai, dans ce qui semble être une série de playoffs. Les Spurs sont en feu offensivement, ayant inscrit 133, 126, 115, 115 et 122 points lors de leurs 5 derniers matchs — une moyenne offensive proche de 122 points. OKC, de son côté, tourne également à haut régime avec 131, 115, 125, 108 et 121 points marqués sur leurs récents matchs. Les deux équipes attaquent fort et ne ralentissent pas : 8 des 10 derniers matchs recensés dépassent les 215 points combinés. Le face-à-face direct du 19 mai a produit 237 points (115+122), confirmant que les deux rosters génèrent un rythme de jeu élevé. San Antonio affiche une séquence de forme extraordinaire (133, 126, 115, 115 points marqués), ce qui pousse clairement vers l'over. La ligne à 215.5 semble sous-évaluée au regard de ces tendances récentes.",
@@ -503,269 +503,7 @@
           "country": "",
           "panel_title": "🎾 ATP Hamburg (Germany)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "0SHZl6Pb",
-              "flashscore_id": "0SHZl6Pb",
-              "flashscore_sport_id": 2,
-              "home_team_id": "jeXTxMIp",
-              "away_team_id": "zLJYYbhm",
-              "tournament_id": "s6g5mp3d",
-              "tournament_url": "/tennis/atp-singles/hamburg/",
-              "sport_key": "flashscore_tennis_atp_hamburg_germany",
-              "commence_time": "2026-05-20T16:00:00.000Z",
-              "time_display": "Mer. 18h00",
-              "home": "Darderi L.",
-              "away": "Hanfmann Y.",
-              "match": "Darderi L. vs Hanfmann Y.",
-              "prono": "win-home",
-              "pari": "Victoire en 2-0",
-              "cote_retenue": 1.33,
-              "cotes": {
-                "domicile": 1.45,
-                "nul": null,
-                "exterieur": 2.8
-              },
-              "pick_category": "cs",
-              "analyse": "Le H2H récent est particulièrement parlant : Darderi a battu Hanfmann 2-0 à Rome le 8 mai dernier, confirmant une nette domination sur terre battue. L'Italien est en très grande forme sur cette surface : victoire contre Zverev 2-1 à Rome, puis contre Paul, avant de tomber logiquement contre Ruud (n°2 mondial). Hanfmann, lui, a certes battu Hurkacz à Rome 2-1 mais a perdu contre Blockx à Munich 2-0 et contre Cerundolo F. à Madrid 2-0, montrant des fragilités. En termes de durée de match, leurs confrontations récentes sur terre battue sont globalement concises : leur H2H du 8 mai s'est conclu en 2 sets sans accroc, et Darderi enchaîne plusieurs victoires rapides (2-0 contre Burruchaga ici même à Hambourg). Le style de jeu de Darderi, agressif et incisif sur argile, est taillé pour finir les matchs rapidement. Sur la base de ces données, un score 2-0 en faveur de Darderi semble le scénario le plus probable.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779189000,
-                    "tournament": "HAM",
-                    "home": "Darderi L.",
-                    "away": "Burruchaga R. A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779107700,
-                    "tournament": "HAM",
-                    "home": "Hanfmann Y.",
-                    "away": "Schoenhaus M.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778852700,
-                    "tournament": "ROM",
-                    "home": "Ruud C.",
-                    "away": "Darderi L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778705400,
-                    "tournament": "ROM",
-                    "home": "Jodar R.",
-                    "away": "Darderi L.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778588700,
-                    "tournament": "ROM",
-                    "home": "Darderi L.",
-                    "away": "Zverev A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778429100,
-                    "tournament": "ROM",
-                    "home": "Paul T.",
-                    "away": "Darderi L.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778272500,
-                    "tournament": "ROM",
-                    "home": "Hanfmann Y.",
-                    "away": "Darderi L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778065800,
-                    "tournament": "ROM",
-                    "home": "Hurkacz H.",
-                    "away": "Hanfmann Y.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777295400,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Darderi L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777115700,
-                    "tournament": "MAD",
-                    "home": "Cerundolo J. M.",
-                    "away": "Darderi L.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777108500,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Hanfmann Y.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776935400,
-                    "tournament": "MAD",
-                    "home": "Hanfmann Y.",
-                    "away": "Giron M.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776266100,
-                    "tournament": "MUN",
-                    "home": "Kopriva V.",
-                    "away": "Darderi L.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776157800,
-                    "tournament": "MUN",
-                    "home": "Zhang Z.",
-                    "away": "Darderi L.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776093900,
-                    "tournament": "MUN",
-                    "home": "Blockx A.",
-                    "away": "Hanfmann Y.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "20.0": {
-                    "over": 1.33,
-                    "under": 2.88
-                  },
-                  "20.5": {
-                    "over": 1.44,
-                    "under": 2.51
-                  },
-                  "21.0": {
-                    "over": 1.5,
-                    "under": 2.38
-                  },
-                  "21.5": {
-                    "over": 1.58,
-                    "under": 2.23
-                  },
-                  "22.0": {
-                    "over": 1.71,
-                    "under": 2.04
-                  },
-                  "22.5": {
-                    "over": 1.83,
-                    "under": 1.89
-                  },
-                  "23.0": {
-                    "over": 1.97,
-                    "under": 1.76
-                  },
-                  "23.5": {
-                    "over": 2.05,
-                    "under": 1.69
-                  },
-                  "24.0": {
-                    "over": 2.1,
-                    "under": 1.64
-                  },
-                  "24.5": {
-                    "over": 2.11,
-                    "under": 1.62
-                  },
-                  "25.0": {
-                    "over": 2.2,
-                    "under": 1.55
-                  },
-                  "2.5": {
-                    "over": 2.25,
-                    "under": 1.59
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.21,
-                    "away": 1.55
-                  },
-                  "-1.5": {
-                    "home": 2.3,
-                    "away": 4.05
-                  },
-                  "0.0": {
-                    "home": 1.5,
-                    "away": 2.45
-                  },
-                  "0.5": {
-                    "away": 2.17
-                  },
-                  "-0.5": {
-                    "home": 1.63
-                  },
-                  "1.0": {
-                    "away": 2.24
-                  },
-                  "-1.0": {
-                    "home": 1.59
-                  },
-                  "2.0": {
-                    "away": 2
-                  },
-                  "-2.0": {
-                    "home": 1.74
-                  },
-                  "2.5": {
-                    "away": 1.9
-                  },
-                  "-2.5": {
-                    "home": 1.84
-                  },
-                  "3.0": {
-                    "away": 1.72
-                  },
-                  "-3.0": {
-                    "home": 2.03
-                  },
-                  "3.5": {
-                    "away": 1.61
-                  },
-                  "-3.5": {
-                    "home": 2.2
-                  },
-                  "4.0": {
-                    "away": 1.43
-                  },
-                  "-4.0": {
-                    "home": 2.66
-                  },
-                  "4.5": {
-                    "away": 1.35
-                  },
-                  "-4.5": {
-                    "home": 2.98
-                  },
-                  "5.0": {
-                    "away": 1.21
-                  },
-                  "-5.0": {
-                    "home": 4.05
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "wta_rabat_morocco",
@@ -1095,318 +833,6 @@
     "tYPfuqqR"
   ],
   "history": [
-    {
-      "event_id": "xW9PROwg",
-      "flashscore_id": "xW9PROwg",
-      "flashscore_sport_id": 2,
-      "home_team_id": "dGbzUtWd",
-      "away_team_id": "x81l09qG",
-      "tournament_id": "2c3kcu0l",
-      "tournament_url": "/tennis/wta-singles/rome/",
-      "sport_key": "flashscore_tennis_wta_rome_italy",
-      "commence_time": "2026-05-06T13:45:00.000Z",
-      "time_display": "Mer. 15h45",
-      "home": "Galfi D.",
-      "away": "Potapova A.",
-      "match": "Galfi D. vs Potapova A.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 2.25,
-      "cotes": {
-        "domicile": 3.2,
-        "nul": null,
-        "exterieur": 1.36
-      },
-      "pick_category": "ou",
-      "analyse": "Anastasia Potapova affiche une forme remarquable sur terre battue cette saison : elle a notamment battu Rybakina et Zhang à Madrid avant d'atteindre un stade avancé du tournoi. À Rome, elle a déjà disposé de Begu (2-0) et Bartunkova (2-1), confirmant sa constance. Galfi, de son côté, a également bien débuté à Rome avec des victoires convaincantes sur Parks (2-0) et Grabher (2-0), mais ses récents revers face à Andreeva et Charaeva rappellent ses limites contre les joueuses de haut niveau. Les deux joueuses jouent sur terre battue, surface propice aux échanges longs et aux matchs disputés, ce qui favorise un total de jeux élevé. Les récents matchs de Potapova montrent une tendance aux sets accrochés (deux victoires en 2-1 sur les cinq derniers), et Galfi est capable de tenir tête sur la durée comme elle l'a prouvé à Madrid. Compte tenu du niveau équivalent des deux joueuses sur cette surface et de leur style de jeu, un total dépassant 22.5 jeux semble raisonnable.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1777969500,
-            "tournament": "ROM",
-            "home": "Potapova A.",
-            "away": "Bartunkova N.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777968600,
-            "tournament": "ROM",
-            "home": "Galfi D.",
-            "away": "Grabher J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777895700,
-            "tournament": "ROM",
-            "home": "Parks A.",
-            "away": "Galfi D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777881900,
-            "tournament": "ROM",
-            "home": "Potapova A.",
-            "away": "Begu I.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777579500,
-            "tournament": "MAD",
-            "home": "Kostyuk M.",
-            "away": "Potapova A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777460700,
-            "tournament": "MAD",
-            "home": "Pliskova Ka.",
-            "away": "Potapova A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777395000,
-            "tournament": "LAB",
-            "home": "Charaeva A.",
-            "away": "Galfi D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777320600,
-            "tournament": "MAD",
-            "home": "Potapova A.",
-            "away": "Rybakina E.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777232400,
-            "tournament": "MAD",
-            "home": "Potapova A.",
-            "away": "Ostapenko J.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777115400,
-            "tournament": "MAD",
-            "home": "Andreeva M.",
-            "away": "Galfi D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777021800,
-            "tournament": "MAD",
-            "home": "Potapova A.",
-            "away": "Zhang S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776947400,
-            "tournament": "MAD",
-            "home": "Galfi D.",
-            "away": "Kalinskaya A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776856800,
-            "tournament": "MAD",
-            "home": "Galfi D.",
-            "away": "Tomljanovic A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776788100,
-            "tournament": "MAD",
-            "home": "Potapova A.",
-            "away": "Kraus S.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776785400,
-            "tournament": "MAD",
-            "home": "Galfi D.",
-            "away": "Vidmanova D.",
-            "score": "2-0"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.5": {
-            "over": 1.27,
-            "under": 3.41
-          },
-          "18.0": {
-            "over": 1.28,
-            "under": 3.14
-          },
-          "18.5": {
-            "over": 1.42,
-            "under": 2.65
-          },
-          "19.0": {
-            "over": 1.47,
-            "under": 2.46
-          },
-          "19.5": {
-            "over": 1.63,
-            "under": 2.21
-          },
-          "20.0": {
-            "over": 1.68,
-            "under": 2.08
-          },
-          "20.5": {
-            "over": 1.84,
-            "under": 1.92
-          },
-          "21.0": {
-            "over": 1.89,
-            "under": 1.83
-          },
-          "21.5": {
-            "over": 1.98,
-            "under": 1.74
-          },
-          "22.0": {
-            "over": 2.11,
-            "under": 1.63
-          },
-          "22.5": {
-            "over": 2.25,
-            "under": 1.57
-          },
-          "23.0": {
-            "over": 2.34,
-            "under": 1.49
-          },
-          "23.5": {
-            "over": 2.48,
-            "under": 1.47
-          },
-          "2.5": {
-            "over": 2.55,
-            "under": 1.48
-          },
-          "24.5": {
-            "over": 2.65,
-            "under": 1.45
-          },
-          "25.5": {
-            "over": 3,
-            "under": 1.37
-          },
-          "26.5": {
-            "over": 3.4,
-            "under": 1.3
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.79,
-            "away": 1.15
-          },
-          "-1.5": {
-            "home": 4.85,
-            "away": 1.91
-          },
-          "0.5": {
-            "home": 2.88,
-            "away": 1.34
-          },
-          "-0.5": {
-            "home": 3.15,
-            "away": 1.39
-          },
-          "1.0": {
-            "home": 2.77
-          },
-          "-1.0": {
-            "away": 1.4
-          },
-          "2.0": {
-            "home": 2.53
-          },
-          "-2.0": {
-            "away": 1.47
-          },
-          "2.5": {
-            "home": 2.38
-          },
-          "-2.5": {
-            "away": 1.54
-          },
-          "3.0": {
-            "home": 2.22
-          },
-          "-3.0": {
-            "away": 1.6
-          },
-          "3.5": {
-            "home": 2.05
-          },
-          "-3.5": {
-            "away": 1.7
-          },
-          "4.0": {
-            "home": 1.87
-          },
-          "-4.0": {
-            "away": 1.85
-          },
-          "4.5": {
-            "home": 1.73
-          },
-          "-4.5": {
-            "away": 2.03
-          },
-          "5.0": {
-            "home": 1.55
-          },
-          "-5.0": {
-            "away": 2.32
-          },
-          "5.5": {
-            "home": 1.46
-          },
-          "-5.5": {
-            "away": 2.61
-          },
-          "6.0": {
-            "home": 1.3
-          },
-          "-6.0": {
-            "away": 3.26
-          },
-          "6.5": {
-            "home": 1.27
-          },
-          "-6.5": {
-            "away": 3.54
-          },
-          "7.0": {
-            "home": 1.12
-          },
-          "-7.0": {
-            "away": 5.4
-          },
-          "7.5": {
-            "home": 1.11
-          },
-          "-7.5": {
-            "away": 5.85
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rome (Italy)",
-      "archived_at": "2026-05-06T20:58:29.487Z"
-    },
     {
       "event_id": "CSvJif8t",
       "flashscore_id": "CSvJif8t",
@@ -120746,6 +120172,270 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA French Open (France) (Q)",
       "archived_at": "2026-05-20T20:07:17.410Z"
+    },
+    {
+      "event_id": "0SHZl6Pb",
+      "flashscore_id": "0SHZl6Pb",
+      "flashscore_sport_id": 2,
+      "home_team_id": "jeXTxMIp",
+      "away_team_id": "zLJYYbhm",
+      "tournament_id": "s6g5mp3d",
+      "tournament_url": "/tennis/atp-singles/hamburg/",
+      "sport_key": "flashscore_tennis_atp_hamburg_germany",
+      "commence_time": "2026-05-20T16:00:00.000Z",
+      "time_display": "Mer. 18h00",
+      "home": "Darderi L.",
+      "away": "Hanfmann Y.",
+      "match": "Darderi L. vs Hanfmann Y.",
+      "prono": "win-home",
+      "pari": "Victoire en 2-0",
+      "cote_retenue": 1.33,
+      "cotes": {
+        "domicile": 1.45,
+        "nul": null,
+        "exterieur": 2.8
+      },
+      "pick_category": "cs",
+      "analyse": "Le H2H récent est particulièrement parlant : Darderi a battu Hanfmann 2-0 à Rome le 8 mai dernier, confirmant une nette domination sur terre battue. L'Italien est en très grande forme sur cette surface : victoire contre Zverev 2-1 à Rome, puis contre Paul, avant de tomber logiquement contre Ruud (n°2 mondial). Hanfmann, lui, a certes battu Hurkacz à Rome 2-1 mais a perdu contre Blockx à Munich 2-0 et contre Cerundolo F. à Madrid 2-0, montrant des fragilités. En termes de durée de match, leurs confrontations récentes sur terre battue sont globalement concises : leur H2H du 8 mai s'est conclu en 2 sets sans accroc, et Darderi enchaîne plusieurs victoires rapides (2-0 contre Burruchaga ici même à Hambourg). Le style de jeu de Darderi, agressif et incisif sur argile, est taillé pour finir les matchs rapidement. Sur la base de ces données, un score 2-0 en faveur de Darderi semble le scénario le plus probable.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779189000,
+            "tournament": "HAM",
+            "home": "Darderi L.",
+            "away": "Burruchaga R. A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779107700,
+            "tournament": "HAM",
+            "home": "Hanfmann Y.",
+            "away": "Schoenhaus M.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778852700,
+            "tournament": "ROM",
+            "home": "Ruud C.",
+            "away": "Darderi L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778705400,
+            "tournament": "ROM",
+            "home": "Jodar R.",
+            "away": "Darderi L.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778588700,
+            "tournament": "ROM",
+            "home": "Darderi L.",
+            "away": "Zverev A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778429100,
+            "tournament": "ROM",
+            "home": "Paul T.",
+            "away": "Darderi L.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778272500,
+            "tournament": "ROM",
+            "home": "Hanfmann Y.",
+            "away": "Darderi L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778065800,
+            "tournament": "ROM",
+            "home": "Hurkacz H.",
+            "away": "Hanfmann Y.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777295400,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Darderi L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777115700,
+            "tournament": "MAD",
+            "home": "Cerundolo J. M.",
+            "away": "Darderi L.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777108500,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Hanfmann Y.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776935400,
+            "tournament": "MAD",
+            "home": "Hanfmann Y.",
+            "away": "Giron M.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776266100,
+            "tournament": "MUN",
+            "home": "Kopriva V.",
+            "away": "Darderi L.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776157800,
+            "tournament": "MUN",
+            "home": "Zhang Z.",
+            "away": "Darderi L.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776093900,
+            "tournament": "MUN",
+            "home": "Blockx A.",
+            "away": "Hanfmann Y.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "20.0": {
+            "over": 1.33,
+            "under": 2.88
+          },
+          "20.5": {
+            "over": 1.44,
+            "under": 2.51
+          },
+          "21.0": {
+            "over": 1.5,
+            "under": 2.38
+          },
+          "21.5": {
+            "over": 1.58,
+            "under": 2.23
+          },
+          "22.0": {
+            "over": 1.71,
+            "under": 2.04
+          },
+          "22.5": {
+            "over": 1.83,
+            "under": 1.89
+          },
+          "23.0": {
+            "over": 1.97,
+            "under": 1.76
+          },
+          "23.5": {
+            "over": 2.05,
+            "under": 1.69
+          },
+          "24.0": {
+            "over": 2.1,
+            "under": 1.64
+          },
+          "24.5": {
+            "over": 2.11,
+            "under": 1.62
+          },
+          "25.0": {
+            "over": 2.2,
+            "under": 1.55
+          },
+          "2.5": {
+            "over": 2.25,
+            "under": 1.59
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.21,
+            "away": 1.55
+          },
+          "-1.5": {
+            "home": 2.3,
+            "away": 4.05
+          },
+          "0.0": {
+            "home": 1.5,
+            "away": 2.45
+          },
+          "0.5": {
+            "away": 2.17
+          },
+          "-0.5": {
+            "home": 1.63
+          },
+          "1.0": {
+            "away": 2.24
+          },
+          "-1.0": {
+            "home": 1.59
+          },
+          "2.0": {
+            "away": 2
+          },
+          "-2.0": {
+            "home": 1.74
+          },
+          "2.5": {
+            "away": 1.9
+          },
+          "-2.5": {
+            "home": 1.84
+          },
+          "3.0": {
+            "away": 1.72
+          },
+          "-3.0": {
+            "home": 2.03
+          },
+          "3.5": {
+            "away": 1.61
+          },
+          "-3.5": {
+            "home": 2.2
+          },
+          "4.0": {
+            "away": 1.43
+          },
+          "-4.0": {
+            "home": 2.66
+          },
+          "4.5": {
+            "away": 1.35
+          },
+          "-4.5": {
+            "home": 2.98
+          },
+          "5.0": {
+            "away": 1.21
+          },
+          "-5.0": {
+            "home": 4.05
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Hamburg (Germany)",
+      "archived_at": "2026-05-20T22:14:46.156Z"
     }
   ],
   "combos": [
