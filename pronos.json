@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-19T21:59:39.874Z",
+    "last_results_update": "2026-05-20T05:50:36.942Z",
     "analyses_written_at": "2026-05-19T08:44:45.657Z",
     "analyses_cost_usd": 0.5038,
-    "last_hourly_refresh": "2026-05-20T01:35:12.686Z"
+    "last_hourly_refresh": "2026-05-20T05:50:36.942Z"
   },
   "sports": {
     "foot": {
@@ -54,255 +54,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "vZEx3Osh",
-              "flashscore_id": "vZEx3Osh",
-              "flashscore_sport_id": 3,
-              "home_team_id": "WCNO4nbt",
-              "away_team_id": "xGk13Tb6",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-20T00:00:00.000Z",
-              "time_display": "Mer. 02h00",
-              "home": "New York Knicks",
-              "away": "Cleveland Cavaliers",
-              "match": "New York Knicks vs Cleveland Cavaliers",
-              "prono": "win-home",
-              "pari": "Plus de 217.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.46,
-                "nul": null,
-                "exterieur": 2.97
-              },
-              "pick_category": "ou",
-              "analyse": "Les Knicks arrivent en pleine confiance après avoir dominé Philadelphia en 3 matchs consécutifs, inscrivant 108, 137 et 144 points lors de leurs trois dernières sorties — une puissance offensive remarquable. Cleveland, de son côté, vient de terminer sa série contre Detroit avec des scores variables : 116-109, 94-115, 125-94 en faveur des Cavs sur certains matchs, mais aussi deux défaites à 97 et 101 points encaissés. La tendance des Knicks à scorer massivement (137, 144, 108 sur les trois derniers matchs) contraste avec les scores plus contenus des Cavaliers face à Detroit (94-125, 107-97, 94-115). Cette demi-finale de Conférence met face à face deux équipes de niveau similaire qui ont toutes deux le potentiel d'un match à haute intensité offensive, surtout avec le Madison Square Garden en feu. Les Knicks ont scoré plus de 108 points dans 4 de leurs 5 derniers matchs, et Cleveland a encaissé 125 points lors de son dernier match. Le total ligne à 217.5 points semble conservateur au vu de ces récentes performances offensives cumulées.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779062400,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "94-125"
-                  },
-                  {
-                    "timestamp": 1778886000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "94-115"
-                  },
-                  {
-                    "timestamp": 1778716800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "113-117"
-                  },
-                  {
-                    "timestamp": 1778544000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "112-103"
-                  },
-                  {
-                    "timestamp": 1778441400,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "New York Knicks",
-                    "score": "114-144"
-                  },
-                  {
-                    "timestamp": 1778353200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1778281200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "New York Knicks",
-                    "score": "94-108"
-                  },
-                  {
-                    "timestamp": 1778194800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "107-97"
-                  },
-                  {
-                    "timestamp": 1778108400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "108-102"
-                  },
-                  {
-                    "timestamp": 1778022000,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "111-101"
-                  },
-                  {
-                    "timestamp": 1777939200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "137-98"
-                  },
-                  {
-                    "timestamp": 1777851000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "114-102"
-                  },
-                  {
-                    "timestamp": 1777678200,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "112-110"
-                  },
-                  {
-                    "timestamp": 1777590000,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "89-140"
-                  },
-                  {
-                    "timestamp": 1777505400,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "125-120"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "215.5": {
-                    "over": 1.77,
-                    "under": 1.94
-                  },
-                  "216.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "217.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "212.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "213.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "214.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "218.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "219.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "220.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "221.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "6.5": {
-                    "away": 1.95
-                  },
-                  "-6.5": {
-                    "home": 1.81
-                  },
-                  "7.5": {
-                    "away": 1.9
-                  },
-                  "-7.5": {
-                    "home": 1.9
-                  },
-                  "10.5": {
-                    "away": 1.53
-                  },
-                  "-10.5": {
-                    "home": 2.38
-                  },
-                  "11.5": {
-                    "away": 1.5
-                  },
-                  "-11.5": {
-                    "home": 2.5
-                  },
-                  "2.5": {
-                    "away": 2.5
-                  },
-                  "-2.5": {
-                    "home": 1.5
-                  },
-                  "3.5": {
-                    "away": 2.5
-                  },
-                  "-3.5": {
-                    "home": 1.5
-                  },
-                  "4.5": {
-                    "away": 2.25
-                  },
-                  "-4.5": {
-                    "home": 1.6
-                  },
-                  "5.5": {
-                    "away": 2.2
-                  },
-                  "-5.5": {
-                    "home": 1.62
-                  },
-                  "8.5": {
-                    "away": 1.7
-                  },
-                  "-8.5": {
-                    "home": 2.05
-                  },
-                  "9.5": {
-                    "away": 1.62
-                  },
-                  "-9.5": {
-                    "home": 2.2
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -627,11 +379,11 @@
               "match": "Butvilas E. vs Bublik A.",
               "prono": "win-home",
               "pari": "Victoire Butvilas",
-              "cote_retenue": 3.62,
+              "cote_retenue": 3.34,
               "cotes": {
-                "domicile": 3.62,
+                "domicile": 3.34,
                 "nul": null,
-                "exterieur": 1.31
+                "exterieur": 1.35
               },
               "pick_category": "1x2",
               "analyse": "Butvilas traverse une forme exceptionnelle à Genève : il a successivement battu Muller, Duckworth et Sonego (tous en 2-0) pour atteindre ce stade du tournoi. Sur ses 10 derniers matchs, il affiche 7 victoires, dont plusieurs sur terre battue en sets secs. Bublik, de son côté, présente une forme plus irrégulière : battu par Tsitsipas à Madrid (0-2), par Molcan à Munich (0-2), puis par Tien à Bucarest (1-2). Son seul succès récent notable est contre Baez (2-0) à Bucarest. Sur terre battue, Bublik souffre de son style de jeu atypique (service-volée, gestes imprévisibles) face à des joueurs en confiance. Butvilas est clairement dans la dynamique du tournoi, jouant à domicile sur la surface où il enchaîne les victoires convaincantes. Le handicap -3.5 jeux en faveur de Bublik à 1.80 paraît accessible pour Butvilas, mais le pari le plus solide reste la victoire de Butvilas avec le handicap +3.5 jeux à 2.02 — en réalité, opter pour Butvilas vainqueur simple via le handicap sets semble risqué contre un Top 50 ATP. La tendance récente de Bublik à perdre en sets secs et la dynamique de Butvilas pointent vers un match où Butvilas peut gagner ou tenir le coup sur la distance, rendant le total de jeux élevé plausible sur terre battue.",
@@ -892,9 +644,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.84,
               "cotes": {
-                "domicile": 2.17,
+                "domicile": 2.13,
                 "nul": null,
-                "exterieur": 1.72
+                "exterieur": 1.75
               },
               "pick_category": "ou",
               "analyse": "Navone est en très bonne forme sur terre battue cette saison : il a éliminé Shapovalov (2-0), Auger-Aliassime (2-0) et Borges (2-0) à Madrid, avant de remporter son match d'ouverture à Genève contre Trungelliti (2-1). Ses seules défaites récentes sont face à des Top 10 (Zverev, Medjedovic en pleine forme). Norrie traverse une période plus difficile : battu 2-0 par Sinner à Madrid, puis surtout sorti par Tirante à Rome (2-0), un adversaire de son niveau. Cependant, Norrie est un gratteur classique sur terre battue, capable de longues batailles physiques — il a montré de la solidité contre Machac (2-1) et Wawrinka (2-1). Ce profil de deux joueurs de fond de court accroché à la terre battue, combiné à des styles similaires défensifs-hargneux, suggère fortement un match en trois sets avec de longs échanges. La surface de Genève favorise les rallyes prolongés. Avec deux joueurs qui aiment construire les points et une rivalité équilibrée, dépasser 22.5 jeux totaux semble très probable.",
@@ -1436,9 +1188,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.86,
               "cotes": {
-                "domicile": 2.45,
+                "domicile": 2.42,
                 "nul": null,
-                "exterieur": 1.58
+                "exterieur": 1.59
               },
               "pick_category": "ou",
               "analyse": "Wawrinka, 40 ans, dispute son tournoi à domicile à Genève sur terre battue, une surface qui lui convient historiquement. Il a battu Brancaccio en deux sets lors du premier tour (1-2 score inversé, soit victoire de Wawrinka 2-1), après avoir battu Travaglia 2-1 à Rome. Michelsen de son côté est en forme mitigée : victoire nette 2-0 contre Baez aujourd'hui à Genève, mais il reste sur plusieurs défaites récentes face à Ofner (0-2 à Rome), Lehecka (0-2 à Madrid) et Rinderknech (0-2 à Munich). Avec deux joueurs au profil offensif — le revers à une main de Wawrinka est dévastateur sur terre, Michelsen est un frappeur puissant de fond de court — les échanges risquent d'être intenses et potentiellement longs. Les deux protagonistes ont montré des matchs en trois sets récemment (Wawrinka bat Travaglia 2-1, Michelsen perd 1-2 face à Martin Tiffon), ce qui suggère un duel disputé dépassant facilement les 22-23 jeux. La surface terre battue, propice aux rallyes, et l'enjeu du tournoi local pour Wawrinka militent pour un match animé avec de nombreux jeux disputés.",
@@ -2875,7 +2627,7 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.91,
               "cotes": {
-                "domicile": 1.73,
+                "domicile": 1.72,
                 "nul": null,
                 "exterieur": 2.11
               },
@@ -3409,9 +3161,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 2.35,
+                "domicile": 2.46,
                 "nul": null,
-                "exterieur": 1.6
+                "exterieur": 1.55
               },
               "pick_category": "ou",
               "analyse": "Jaqueline Cristian arrive en forme à Strasbourg après avoir éliminé Kessler en deux sets secs (0-2) dès le premier tour du tournoi. Sur terre battue, surface qui lui convient bien, elle affiche un bilan globalement solide ces dernières semaines avec des victoires sur Starodubtseva, Rakotomanga Rajaonah, Alexandrova et Stearns. Caroline Tauson, en revanche, sort d'une défaite en deux sets face à Oliynykova à Rome (0-1 en sets), et a quitté Miami sur un match non terminé contre Boulter. Sa forme est moins lisible et moins convaincante que celle de Cristian en ce moment. Les deux joueuses sont de niveau WTA intermédiaire, ce qui laisse supposer des échanges disputés sur cette surface lente favorisant les rallyes. La ligne 21.5 jeux semble pertinente : Cristian joue méthodiquement et ses récents matchs incluent plusieurs batailles en trois sets, tandis que Tauson peut tenir un set avant de céder, ce qui pousse le total vers le haut.",
@@ -3968,9 +3720,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.94,
               "cotes": {
-                "domicile": 4.92,
+                "domicile": 4.66,
                 "nul": null,
-                "exterieur": 1.19
+                "exterieur": 1.2
               },
               "pick_category": "ou",
               "analyse": "Llamas Ruiz présente une forme impressionnante sur terre battue ces dernières semaines : il a remporté 5 de ses 6 derniers matchs, dont des victoires sur Moutet et Faria à Rome, et vient d'éliminer Mejia 2-0 au premier tour des qualifs de Roland-Garros. Blanchet, de son côté, affiche un bilan plus instable avec seulement une victoire lors de ses 5 derniers matchs (face à Broom au premier tour des qualifs et Chazal à Bordeaux), ayant perdu notamment contre Delage, Squire et Garin. L'Espagnol Llamas Ruiz, spécialiste de la terre battue, a montré une solidité défensive remarquable, poussant plusieurs matchs jusqu'au troisième set. Sur cette surface à Roland-Garros, les échanges ont tendance à s'allonger, générant davantage de jeux joués. Blanchet possède tout de même un niveau correct et s'est accroché face à Broom (victoire 2-1), suggérant qu'il peut disputer des matchs serrés. La différence de niveau en faveur de Llamas Ruiz est réelle mais pas écrasante, et les deux joueurs ont montré des tendances à jouer en 3 sets récemment, ce qui plaide pour un total de jeux élevé sur une surface lente.",
@@ -4741,7 +4493,7 @@
               "cotes": {
                 "domicile": 1.19,
                 "nul": null,
-                "exterieur": 4.91
+                "exterieur": 4.92
               },
               "pick_category": "ou",
               "analyse": "Cina et Tomic s'affrontent au premier tour des qualifications de Roland-Garros, deux joueurs en forme fragile mais avec des profils distincts. Cina (Suisse) vient de s'imposer 2-0 face à Watanuki au premier tour des qualifs, mais sa forme récente sur terre battue est préoccupante : défaite 0-2 contre Montes-De La Torre en Tunisie, et une série de défaites sur terre (Blockx, Cerundolo, Moller, Rodionov, Muller, Sachko). Sur ses 8 derniers matchs, Cina n'a remporté que 3 victoires, dont deux sur des adversaires modestes. Tomic (Australie, ex-top 30) a lui aussi une forme irrégulière : battu 0-2 par Coppejans, Ayeni et Sharipov, mais vainqueur 2-0 d'Ouakaa et vainqueur 2-1 d'Echargui en qualifs. Tomic, malgré son déclin, conserve une lecture du jeu supérieure et une expérience de Grand Chelem que Cina n'a pas. Le match de Cina contre Echargui s'est terminé en trois sets, et celui de Tomic aussi contre Watanuki côté Cina — les deux joueurs semblent actuellement capables d'aller en trois sets. Compte tenu de la tendance des deux joueurs à concéder des sets et de la surface terre battue favorisant les échanges prolongés, le over 2.5 sets à 2.60 est attrayant.",
@@ -4898,9 +4650,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.95,
               "cotes": {
-                "domicile": 1.28,
+                "domicile": 1.29,
                 "nul": null,
-                "exterieur": 3.81
+                "exterieur": 3.71
               },
               "pick_category": "ou",
               "analyse": "De Jong domine nettement ce duel de qualifications à Roland-Garros. Le Néerlandais a remporté son premier tour de qualifs contre Sun en deux sets secs (2-0), et affiche une belle régularité sur terre battue avec des victoires consécutives à Cagliari contre Mannarino et Travaglia. Sa forme récente sur ocre est solide : 4 victoires sur les 6 derniers matchs sur cette surface. En face, Draxl traverse une période difficile : éliminé en deux sets par Nava à Oeiras, battu deux fois en deux sets à Savannah et Tallahassee. Sa seule victoire au premier tour ici contre Simakin s'est disputée en trois sets (2-1), montrant une certaine irrégularité. Le profil de De Jong sur terre battue — joueur à l'aise dans les échanges longs — contraste avec les difficultés récurrentes de Draxl sur cette surface. Le handicap jeux -4.5 en faveur de De Jong à 1.91 est intéressant, mais le plus fiable reste le total de jeux : deux joueurs sans explosivité majeure au service sur terre battue, les matchs tendent à durer. Le line 21.5 jeux over à 1.95 reflète bien la dynamique d'un match disputé sur ocre où De Jong a tendance à construire ses points longuement.",
@@ -5247,11 +4999,11 @@
               "match": "Gaubas V. vs Reis Da Silva J.",
               "prono": "win-home",
               "pari": "Victoire Gaubas",
-              "cote_retenue": 1.33,
+              "cote_retenue": 1.32,
               "cotes": {
-                "domicile": 1.33,
+                "domicile": 1.32,
                 "nul": null,
-                "exterieur": 3.41
+                "exterieur": 3.49
               },
               "pick_category": "1x2",
               "analyse": "Gaubas figure parmi les joueurs les mieux classés de ce tableau de qualification, avec une expérience solide sur le circuit ATP et une affinité reconnue pour la terre battue, surface qui favorise son jeu de fond de court patient et régulier. Face à Reis Da Silva, joueur brésilien évoluant principalement sur le circuit Challenger et ITF, l'écart de niveau est notable : le Brésilien peine à enchaîner les victoires contre des adversaires du calibre de Gaubas. En qualification à Roland-Garros, la pression est maximale et l'expérience des grands tournois devient un facteur déterminant, avantage clairement du côté du Lituanien. Le jeu de Gaubas sur terre battue repose sur une solidité au fond qui peut étouffer les joueurs moins aguerris à ce niveau. On s'attend à une victoire nette du Lituanien, potentiellement en deux sets sans trop de résistance. La cote à 1.40 reflète ce rapport de forces, mais pour sécuriser davantage le pari avec une cote intéressante, l'option victoire directe reste la plus logique.",
@@ -5281,11 +5033,11 @@
               "match": "Glinka D. vs Prado Angelo J. C.",
               "prono": "win-away",
               "pari": "Victoire Prado Angelo J. C.",
-              "cote_retenue": 1.47,
+              "cote_retenue": 1.51,
               "cotes": {
-                "domicile": 2.73,
+                "domicile": 2.6,
                 "nul": null,
-                "exterieur": 1.47
+                "exterieur": 1.51
               },
               "pick_category": "1x2",
               "analyse": "Juan Carlos Prado Angelo s'impose comme le favori logique de cette rencontre de qualification à Roland-Garros, surface sur laquelle les joueurs sud-américains évoluant sur terre battue disposent d'un avantage structurel évident. Prado Angelo, Bolivien formé sur ocre, possède le profil type du joueur de terre : jeu de fond de court patient, bonne tolérance à l'effort physique et habitude des longues journées de qualification dans les Grands Chelems. Glinka D., sans doute d'origine est-européenne, affronte un spécialiste dans son domaine de prédilection, ce qui représente un désavantage notable dès l'entame. Les qualifications de Roland-Garros réunissent des joueurs classés entre 100 et 300 ATP, et sur cette surface l'expérience de la terre battue devient déterminante sur trois sets. La cote proposée pour Prado Angelo reflète une supériorité technique attendue, et un match en deux sets secs est tout à fait envisageable si l'Américain impose son jeu dès le départ. Au regard du profil des deux joueurs et de la surface, la victoire de Prado Angelo apparaît comme le scénario le plus probable.",
@@ -5383,11 +5135,11 @@
               "match": "Pellegrino A. vs Harris L.",
               "prono": "win-home",
               "pari": "Victoire Pellegrino",
-              "cote_retenue": 1.51,
+              "cote_retenue": 1.44,
               "cotes": {
-                "domicile": 1.51,
+                "domicile": 1.44,
                 "nul": null,
-                "exterieur": 2.6
+                "exterieur": 2.84
               },
               "pick_category": "1x2",
               "analyse": "Pellegrino et Harris s'affrontent en qualification à Roland-Garros, sur la terre battue parisienne qui représente la surface par excellence pour les spécialistes européens. Andrea Pellegrino, joueur italien, est un clayman naturel qui a grandi sur cette surface et qui possède un jeu de fond de court solide, adapté aux longues joutes sur terre. Lloyd Harris, le Sud-Africain, est davantage un joueur de surface rapide, avec un jeu basé sur le service et les frappes plates, ce qui le pénalise structurellement sur la terre battue de Roland-Garros. En l'absence de données chiffrées récentes dans les stats disponibles, le contexte de surface reste l'argument central : Harris a régulièrement montré des difficultés à confirmer sur terre, où son service perd de son efficacité et ses coups droits à plat rebondissent moins dangereusement. Pellegrino, en tant que joueur de terre habitué au circuit challenger européen, part favori logique dans cette configuration de qualification. La cote proposée pour l'Italien reste raisonnable et justifie le pari sans prendre un risque excessif.",
@@ -5451,11 +5203,11 @@
               "match": "Samuel T. vs Goffin D.",
               "prono": "win-away",
               "pari": "Victoire Goffin D.",
-              "cote_retenue": 2.24,
+              "cote_retenue": 2.08,
               "cotes": {
-                "domicile": 1.66,
+                "domicile": 1.77,
                 "nul": null,
-                "exterieur": 2.24
+                "exterieur": 2.08
               },
               "pick_category": "1x2",
               "analyse": "Ce match des qualifications de Roland-Garros oppose deux joueurs de niveaux comparables sur terre battue. David Goffin, ancien top 10 mondial, possède une expérience considérable sur ocre et à Paris en particulier, avec un jeu de fond de court précis et régulier qui convient parfaitement à la surface. Samuel Travaglia est un joueur de qualification dont le niveau est nettement inférieur à celui d'un Goffin en forme sur sa surface de prédilection. Sur terre battue, Goffin est capable de construire patiemment ses points et d'exploiter la régularité caractéristique de la surface pour faire la différence. La cote proposée sur Goffin à 2.10 représente une valeur intéressante compte tenu de l'écart de palmarès et d'expérience entre les deux joueurs. En qualifications de Grand Chelem, les matches se jouent en 3 sets, ce qui donne à Goffin la capacité de renverser une mauvaise entame grâce à son mental de vétéran du circuit.",
@@ -5602,7 +5354,7 @@
               "cotes": {
                 "domicile": 1.09,
                 "nul": null,
-                "exterieur": 7.75
+                "exterieur": 7.7
               },
               "pick_category": "cs",
               "analyse": "Magdalena Chwalinska s'impose comme une nette favorite dans cette rencontre des qualifications de Roland-Garros. La Polonaise, classée bien au-dessus de Clémence Monnet sur le circuit WTA, est une joueuse de fond de court solide particulièrement à l'aise sur terre battue, surface lente qui favorise son jeu physique et sa constance. Monnet, joueuse française du circuit ITF/bas de classement WTA, aura l'avantage du soutien du public parisien mais affrontera un écart de niveau difficile à combler. Sur terre battue, les échanges sont généralement longs et les services moins dominants, ce qui favorise la meilleure joueuse sur la durée — en l'occurrence Chwalinska. Une victoire en deux sets secs semble le scénario le plus probable, Chwalinska ayant la régularité et la puissance pour ne pas laisser s'installer Monnet dans le match. Avec une cote à 1.07 trop basse pour la victoire simple, le pari sur le score en 2-0 offre une valeur bien plus intéressante tout en restant cohérent avec la domination attendue.",
@@ -5632,11 +5384,11 @@
               "match": "Costoulas S. vs Hontama M.",
               "prono": "win-home",
               "pari": "Victoire Costoulas",
-              "cote_retenue": 1.37,
+              "cote_retenue": 1.38,
               "cotes": {
-                "domicile": 1.37,
+                "domicile": 1.38,
                 "nul": null,
-                "exterieur": 3.16
+                "exterieur": 3.11
               },
               "pick_category": "1x2",
               "analyse": "Ce duel de qualifications à Roland-Garros oppose la Belge Sofía Costoulas à la Japonaise Mai Hontama. Costoulas, jeune talent formée sur terre battue européenne, évolue dans son élément sur la terre battue parisienne et bénéficie d'un avantage de surface non négligeable. Hontama, classée aux alentours du top 100, a montré de la régularité sur les tournées asiatiques mais la terre battue européenne représente historiquement une surface moins favorable pour les joueuses japonaises, davantage à l'aise sur dur. Costoulas, encore junior de haut niveau en transition, possède des coups de fond de court puissants qui s'adaptent parfaitement aux conditions lentes de Roland-Garros. Sans données H2H disponibles entre ces deux joueuses, on se base sur l'avantage surface et le contexte domicile en quelque sorte pour la Belge, qui est habituée à jouer en Europe centrale sur cette surface. La cote proposée pour Costoulas reste raisonnable pour un match de qualifications où son profil terre battue constitue un atout décisif.",
@@ -5702,9 +5454,9 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.44,
               "cotes": {
-                "domicile": 3.05,
+                "domicile": 3.01,
                 "nul": null,
-                "exterieur": 1.39
+                "exterieur": 1.4
               },
               "pick_category": "cs",
               "analyse": "Himeno Sakatsume s'impose comme la favorite logique de cette rencontre de qualifications à Roland-Garros. La joueuse japonaise dispose d'un meilleur classement WTA et d'une expérience significative sur terre battue, surface qui favorise son jeu régulier depuis le fond de court. Klara Deichmann, joueuse danoise moins bien classée, aborde ce match avec une moindre expérience sur cette surface et en Grand Chelem. Sakatsume présente un meilleur palmarès récent sur terre battue avec des victoires convaincantes sur cette surface, là où Deichmann peine à enchaîner les succès face à des adversaires de ce niveau. En qualifications de Roland-Garros, la régularité et la maîtrise mentale sur la glaise parisienne sont déterminantes, des qualités que Sakatsume maîtrise davantage. L'avantage technique et la supériorité sur cette surface devraient permettre à la Japonaise de s'imposer en deux sets sans trop de difficultés.",
@@ -5804,9 +5556,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.54,
               "cotes": {
-                "domicile": 1.42,
+                "domicile": 1.43,
                 "nul": null,
-                "exterieur": 2.93
+                "exterieur": 2.88
               },
               "pick_category": "ou",
               "analyse": "Ce duel de qualifications à Roland-Garros oppose deux joueuses évoluant en bas de classement WTA, sur la surface la plus exigeante physiquement et tactiquement. La terre battue favorise naturellement les échanges longs, les rallyes intenses et les sets disputés, ce qui tend à gonfler le nombre de jeux joués. Kraus, joueuse germano-autrichienne habituée aux qualifications de Grand Chelem sur terre, présente l'avantage de l'expérience sur cette surface. Noha Akugue, jeune Allemande prometteuse (née en 2004), monte en puissance et possède un jeu offensif agressif, mais son inexpérience à ce stade de compétition peut peser. Sur terre battue en qualifications de Roland-Garros, les matchs entre joueuses de ce niveau se jouent souvent en trois sets avec des jeux serrés, rendant un total élevé de jeux particulièrement probable. La cote sur Kraus reflète un léger avantage, mais le niveau très proche des deux joueuses laisse présager un match long et âprement disputé.",
@@ -5906,9 +5658,9 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.28,
               "cotes": {
-                "domicile": 1.37,
+                "domicile": 1.38,
                 "nul": null,
-                "exterieur": 3.16
+                "exterieur": 3.11
               },
               "pick_category": "cs",
               "analyse": "Pridankina affronte Avdeeva dans les qualifications de Roland-Garros, un tournoi sur terre battue qui favorise les joueuses de fond de court techniques. Pridankina est nettement favorite dans ce duel, ce qui se reflète dans l'écart de cotes entre les deux joueuses. Sur terre battue, les échanges ont tendance à être plus longs, ce qui avantage les joueuses au niveau physique supérieur. Avdeeva, moins bien classée sur le circuit WTA, peine généralement à s'imposer face à des adversaires de ce calibre en qualification. Pridankina bénéficie d'une expérience notable sur la surface parisienne et son jeu de fond de court est bien adapté à la lenteur de la terre battue. Un succès net en deux sets paraît l'issue la plus probable, rendant le pari sur un score 2-0 attractif avec une cote correcte.",
@@ -5938,11 +5690,11 @@
               "match": "Salkova D. vs Bandecchi S.",
               "prono": "win-home",
               "pari": "Victoire Salkova",
-              "cote_retenue": 1.39,
+              "cote_retenue": 1.38,
               "cotes": {
-                "domicile": 1.39,
+                "domicile": 1.38,
                 "nul": null,
-                "exterieur": 3.06
+                "exterieur": 3.11
               },
               "pick_category": "1x2",
               "analyse": "Dominika Salkova aborde ce match de qualifications à Roland-Garros en position de favorite sur terre battue, surface qui convient aux joueuses d'Europe de l'Est formées sur ocre. Sans données de forme récente disponibles dans les statistiques, on s'appuie sur le classement et le contexte : Salkova est mieux classée et plus expérimentée dans les qualifications des Grand Chelems que Bandecchi. Susan Bandecchi, joueuse suisse, peine à s'imposer régulièrement dans ce type de compétition et son bilan en qualifications de tournois majeurs est limité. La surface de Roland-Garros favorise les échanges longs et les joueuses ayant une bonne endurance physique et technique sur terre, domaine où Salkova semble avoir l'avantage. Un match en deux sets est envisageable si Salkova impose d'emblée son niveau, mais les qualifications de Grand Chelem peuvent réserver des surprises. La cote sur Salkova reste raisonnable pour un pari direct sur la victoire.",
@@ -6110,184 +5862,6 @@
     "KGvhqZN6"
   ],
   "history": [
-    {
-      "event_id": "URtGhaAm",
-      "flashscore_id": "URtGhaAm",
-      "flashscore_sport_id": 1,
-      "home_team_id": "QDdvI0zl",
-      "away_team_id": "8Sa8HInO",
-      "tournament_id": "6pwwasa7",
-      "tournament_url": "/football/italy/serie-a/",
-      "sport_key": "flashscore_football_seriea",
-      "commence_time": "2026-05-03T13:00:00.000Z",
-      "time_display": "Dim. 15h00",
-      "home": "Sassuolo",
-      "away": "AC Milan",
-      "match": "Sassuolo vs AC Milan",
-      "prono": "win-home",
-      "pari": "Moins de 2.5 buts",
-      "cote_retenue": 2.1,
-      "cotes": {
-        "domicile": 4.33,
-        "nul": 4.08,
-        "exterieur": 1.81
-      },
-      "pick_category": "ou",
-      "analyse": "AC Milan arrive à Reggio Emilia dans une forme très irrégulière : les Rossoneri n'ont remporté qu'un seul de leurs cinq derniers matchs de Serie A (victoire 1-0 contre Verona), avec notamment une cuisante défaite 0-3 contre Udinese et des nuls 0-0 face à la Juventus. Sassuolo, de son côté, affiche une forme contrastée mais reste compétitif à domicile, avec des victoires contre Como (2-1), Cagliari (2-1) et Atalanta (2-1), bien qu'ils aient été accrochés 0-0 par la Fiorentina lors de leur dernier match. La tendance défensive est frappante des deux côtés sur les matchs récents : quatre des cinq derniers matchs de Milan ont produit moins de 2.5 buts, et Sassuolo a également plusieurs matchs serrés. Milan traverse une crise de confiance offensive visible — zéro but marqué lors de deux de leurs cinq derniers matchs — ce qui rend le pari sur un faible nombre de buts pertinent. Le profil défensif de ces deux équipes en ce moment, combiné à l'incertitude tactique de Milan, oriente vers un match fermé avec peu de buts.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1777229100,
-            "tournament": "SA",
-            "home": "AC Milan",
-            "away": "Juventus",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1777199400,
-            "tournament": "SA",
-            "home": "Fiorentina",
-            "away": "Sassuolo",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1776603600,
-            "tournament": "SA",
-            "home": "Verona",
-            "away": "AC Milan",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1776443400,
-            "tournament": "SA",
-            "home": "Sassuolo",
-            "away": "Como",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775989800,
-            "tournament": "SA",
-            "home": "Genoa",
-            "away": "Sassuolo",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775923200,
-            "tournament": "SA",
-            "home": "AC Milan",
-            "away": "Udinese",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1775501100,
-            "tournament": "SA",
-            "home": "Napoli",
-            "away": "AC Milan",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1775307600,
-            "tournament": "SA",
-            "home": "Sassuolo",
-            "away": "Cagliari",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774122300,
-            "tournament": "SA",
-            "home": "Juventus",
-            "away": "Sassuolo",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1774112400,
-            "tournament": "SA",
-            "home": "AC Milan",
-            "away": "Torino",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1773603900,
-            "tournament": "SA",
-            "home": "Lazio",
-            "away": "AC Milan",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1773583200,
-            "tournament": "SA",
-            "home": "Sassuolo",
-            "away": "Bologna",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1773085500,
-            "tournament": "SA",
-            "home": "Lazio",
-            "away": "Sassuolo",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1772999100,
-            "tournament": "SA",
-            "home": "AC Milan",
-            "away": "Inter",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1772373600,
-            "tournament": "SA",
-            "home": "Sassuolo",
-            "away": "Atalanta",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 4.55,
-          "draw": 3.88,
-          "away": 1.73
-        },
-        "double_chance": {
-          "12": 1.23,
-          "1X": 2.1,
-          "X2": 1.19
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.22,
-            "under": 4.17
-          },
-          "2.5": {
-            "over": 1.71,
-            "under": 2.1
-          },
-          "3.5": {
-            "over": 2.75,
-            "under": 1.42
-          }
-        },
-        "btts": {
-          "yes": 1.68,
-          "no": 2.11
-        },
-        "draw_no_bet": {
-          "home": 3.3,
-          "away": 1.3
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Serie A",
-      "archived_at": "2026-05-03T17:33:22.822Z"
-    },
     {
       "event_id": "tAEqnqlD",
       "flashscore_id": "tAEqnqlD",
@@ -126530,6 +126104,256 @@
       "sport_label": "⚽ Football",
       "league_label": "Premier League",
       "archived_at": "2026-05-19T21:59:39.874Z"
+    },
+    {
+      "event_id": "vZEx3Osh",
+      "flashscore_id": "vZEx3Osh",
+      "flashscore_sport_id": 3,
+      "home_team_id": "WCNO4nbt",
+      "away_team_id": "xGk13Tb6",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-20T00:00:00.000Z",
+      "time_display": "Mer. 02h00",
+      "home": "New York Knicks",
+      "away": "Cleveland Cavaliers",
+      "match": "New York Knicks vs Cleveland Cavaliers",
+      "prono": "win-home",
+      "pari": "Plus de 217.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.46,
+        "nul": null,
+        "exterieur": 2.97
+      },
+      "pick_category": "ou",
+      "analyse": "Les Knicks arrivent en pleine confiance après avoir dominé Philadelphia en 3 matchs consécutifs, inscrivant 108, 137 et 144 points lors de leurs trois dernières sorties — une puissance offensive remarquable. Cleveland, de son côté, vient de terminer sa série contre Detroit avec des scores variables : 116-109, 94-115, 125-94 en faveur des Cavs sur certains matchs, mais aussi deux défaites à 97 et 101 points encaissés. La tendance des Knicks à scorer massivement (137, 144, 108 sur les trois derniers matchs) contraste avec les scores plus contenus des Cavaliers face à Detroit (94-125, 107-97, 94-115). Cette demi-finale de Conférence met face à face deux équipes de niveau similaire qui ont toutes deux le potentiel d'un match à haute intensité offensive, surtout avec le Madison Square Garden en feu. Les Knicks ont scoré plus de 108 points dans 4 de leurs 5 derniers matchs, et Cleveland a encaissé 125 points lors de son dernier match. Le total ligne à 217.5 points semble conservateur au vu de ces récentes performances offensives cumulées.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "101-101",
+      "actual_result": "draw",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779062400,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "94-125"
+          },
+          {
+            "timestamp": 1778886000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "94-115"
+          },
+          {
+            "timestamp": 1778716800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "113-117"
+          },
+          {
+            "timestamp": 1778544000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "112-103"
+          },
+          {
+            "timestamp": 1778441400,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "New York Knicks",
+            "score": "114-144"
+          },
+          {
+            "timestamp": 1778353200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1778281200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "New York Knicks",
+            "score": "94-108"
+          },
+          {
+            "timestamp": 1778194800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "107-97"
+          },
+          {
+            "timestamp": 1778108400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "108-102"
+          },
+          {
+            "timestamp": 1778022000,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "111-101"
+          },
+          {
+            "timestamp": 1777939200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "137-98"
+          },
+          {
+            "timestamp": 1777851000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "114-102"
+          },
+          {
+            "timestamp": 1777678200,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "112-110"
+          },
+          {
+            "timestamp": 1777590000,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "89-140"
+          },
+          {
+            "timestamp": 1777505400,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "125-120"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "215.5": {
+            "over": 1.77,
+            "under": 1.94
+          },
+          "216.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "217.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "212.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "213.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "214.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "218.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "219.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "220.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "221.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "6.5": {
+            "away": 1.95
+          },
+          "-6.5": {
+            "home": 1.81
+          },
+          "7.5": {
+            "away": 1.9
+          },
+          "-7.5": {
+            "home": 1.9
+          },
+          "10.5": {
+            "away": 1.53
+          },
+          "-10.5": {
+            "home": 2.38
+          },
+          "11.5": {
+            "away": 1.5
+          },
+          "-11.5": {
+            "home": 2.5
+          },
+          "2.5": {
+            "away": 2.5
+          },
+          "-2.5": {
+            "home": 1.5
+          },
+          "3.5": {
+            "away": 2.5
+          },
+          "-3.5": {
+            "home": 1.5
+          },
+          "4.5": {
+            "away": 2.25
+          },
+          "-4.5": {
+            "home": 1.6
+          },
+          "5.5": {
+            "away": 2.2
+          },
+          "-5.5": {
+            "home": 1.62
+          },
+          "8.5": {
+            "away": 1.7
+          },
+          "-8.5": {
+            "home": 2.05
+          },
+          "9.5": {
+            "away": 1.62
+          },
+          "-9.5": {
+            "home": 2.2
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-20T05:50:36.942Z"
     }
   ],
   "combos": [
