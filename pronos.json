@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-22T18:54:18.019Z",
+    "last_results_update": "2026-05-22T20:40:30.339Z",
     "analyses_written_at": "2026-05-22T08:24:06.512Z",
     "analyses_cost_usd": 0.1312,
-    "last_hourly_refresh": "2026-05-22T18:54:18.019Z"
+    "last_hourly_refresh": "2026-05-22T20:40:30.339Z"
   },
   "sports": {
     "foot": {
@@ -25,183 +25,7 @@
           "country": "Italie",
           "panel_title": "🇮🇹 Serie A — Italie",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "ln2VQVwR",
-              "flashscore_id": "ln2VQVwR",
-              "flashscore_sport_id": 1,
-              "home_team_id": "Q3A3IbXH",
-              "away_team_id": "8C9JjMXu",
-              "tournament_id": "6pwwasa7",
-              "tournament_url": "/football/italy/serie-a/",
-              "sport_key": "flashscore_football_seriea",
-              "commence_time": "2026-05-22T18:45:00.000Z",
-              "time_display": "Ven. 20h45",
-              "home": "Fiorentina",
-              "away": "Atalanta",
-              "match": "Fiorentina vs Atalanta",
-              "prono": "win-home",
-              "pari": "Moins de 2.5 buts",
-              "cote_retenue": 2.19,
-              "cotes": {
-                "domicile": 3.38,
-                "nul": 3.68,
-                "exterieur": 2.16
-              },
-              "pick_category": "ou",
-              "analyse": "Ce choc de Serie A met aux prises deux équipes aux formes récentes contrastées. La Fiorentina arrive sur une belle dynamique : victoire 2-0 à la Juventus lors de la dernière journée, après avoir tenu la Lazio en Serie A (1-0) et éliminé Crystal Palace en UECL. Cependant, les Viola montrent une tendance défensive marquée : 5 des 8 derniers matchs toutes compétitions confondues se sont terminés avec un ou zéro but à la clé (0-0 vs Genoa, 0-0 vs Sassuolo, 1-1 vs Lecce). L'Atalanta de part son côté traverse une véritable crise : défaite 0-1 face à Bologne lors du dernier match, après avoir perdu à Cagliari 3-2 et concédé une élimination en Coupe d'Italie face à la Lazio (1-2). La Bergamasque a marqué peu et manque de régularité offensive ces dernières semaines malgré une victoire spectaculaire à Milan (2-3). La tendance générale des deux équipes ces dernières semaines pointe clairement vers des matchs peu prolifiques : sur les 10 derniers matchs combinés en championnat, la majorité sont restés sous les 2.5 buts. Le fait que les deux équipes se retrouvent dans le bas du tableau de forme et présentent des attaques en difficulté renforce la probabilité d'un match fermé à l'Artemio Franchi.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779033600,
-                    "tournament": "SA",
-                    "home": "Atalanta",
-                    "away": "Bologna",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1779012000,
-                    "tournament": "SA",
-                    "home": "Juventus",
-                    "away": "Fiorentina",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778438700,
-                    "tournament": "SA",
-                    "home": "AC Milan",
-                    "away": "Atalanta",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1778418000,
-                    "tournament": "SA",
-                    "home": "Fiorentina",
-                    "away": "Genoa",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1777920300,
-                    "tournament": "SA",
-                    "home": "AS Roma",
-                    "away": "Fiorentina",
-                    "score": "4-0"
-                  },
-                  {
-                    "timestamp": 1777747500,
-                    "tournament": "SA",
-                    "home": "Atalanta",
-                    "away": "Genoa",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1777307400,
-                    "tournament": "SA",
-                    "home": "Cagliari",
-                    "away": "Atalanta",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1777199400,
-                    "tournament": "SA",
-                    "home": "Fiorentina",
-                    "away": "Sassuolo",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1776884400,
-                    "tournament": "COP",
-                    "home": "Atalanta",
-                    "away": "Lazio",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776710700,
-                    "tournament": "SA",
-                    "home": "Lecce",
-                    "away": "Fiorentina",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776537900,
-                    "tournament": "SA",
-                    "home": "AS Roma",
-                    "away": "Atalanta",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776366000,
-                    "tournament": "UECL",
-                    "home": "Fiorentina",
-                    "away": "Crystal Palace",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776105900,
-                    "tournament": "SA",
-                    "home": "Fiorentina",
-                    "away": "Lazio",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1775933100,
-                    "tournament": "SA",
-                    "home": "Atalanta",
-                    "away": "Juventus",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1775761200,
-                    "tournament": "UECL",
-                    "home": "Crystal Palace",
-                    "away": "Fiorentina",
-                    "score": "3-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.73,
-                  "draw": 3.45,
-                  "away": 2.5
-                },
-                "double_chance": {
-                  "12": 1.3,
-                  "1X": 1.5,
-                  "X2": 1.45
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.2,
-                    "under": 4.45
-                  },
-                  "2.5": {
-                    "over": 1.67,
-                    "under": 2.19
-                  },
-                  "3.5": {
-                    "over": 2.63,
-                    "under": 1.46
-                  }
-                },
-                "btts": {
-                  "yes": 1.53,
-                  "no": 2.38
-                },
-                "draw_no_bet": {
-                  "home": 1.91,
-                  "away": 1.8
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "uecl",
@@ -211,183 +35,7 @@
           "country": "Europe",
           "panel_title": "🥉 Conference League — Europe",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "GAOyTi0e",
-              "flashscore_id": "GAOyTi0e",
-              "flashscore_sport_id": 1,
-              "home_team_id": "6c17idcf",
-              "away_team_id": "rejcUFSs",
-              "tournament_id": "jmyatudu",
-              "tournament_url": "/football/austria/bundesliga/",
-              "sport_key": "flashscore_football_uecl",
-              "commence_time": "2026-05-22T17:30:00.000Z",
-              "time_display": "Ven. 19h30",
-              "home": "Ried",
-              "away": "SK Rapid",
-              "match": "Ried vs SK Rapid",
-              "prono": "win-home",
-              "pari": "Les deux équipes marquent - Oui",
-              "cote_retenue": 1.68,
-              "cotes": {
-                "domicile": 2.38,
-                "nul": 3.19,
-                "exterieur": 3.25
-              },
-              "pick_category": "btts",
-              "analyse": "Ce match de Conference League oppose deux clubs autrichiens en méforme notable. SK Rapid traverse une période difficile avec seulement 1 victoire sur leurs 6 derniers matchs (W1 D1 L4), encaissant notamment 2-0 contre Sturm Graz et Austria Vienna, et 3-1 face au LASK. Ried n'est guère plus rassurant : sur leurs 6 dernières sorties, les Riediens comptent 3 victoires et 3 défaites, avec des résultats volatiles (2-0 vs BW Linz, mais 2-0 concédé face à Altach et 0-1 contre Wolfsberger). Les deux équipes semblent offensivement actives mais défensivement poreuses : Ried a marqué dans 4 de leurs 5 derniers matchs à domicile, et Rapid a participé à des matchs à buts dans 5 de leurs 6 dernières sorties (incluant des défaites à plusieurs buts). La tendance des deux équipes à marquer mais aussi à concéder plaide clairement pour les deux équipes qui scorent. Avec des défenses aussi fragiles des deux côtés, le BTTS Yes à 1.68 représente le pari le plus cohérent avec les données de forme récente.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779208200,
-                    "tournament": "BUN",
-                    "home": "Ried",
-                    "away": "Wolfsberger AC",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1779021000,
-                    "tournament": "BUN",
-                    "home": "Sturm Graz",
-                    "away": "SK Rapid",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778943600,
-                    "tournament": "BUN",
-                    "home": "Altach",
-                    "away": "Ried",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778425200,
-                    "tournament": "BUN",
-                    "home": "SK Rapid",
-                    "away": "Austria Vienna",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778338800,
-                    "tournament": "BUN",
-                    "home": "Ried",
-                    "away": "Wolfsberger AC",
-                    "score": "0-1"
-                  },
-                  {
-                    "timestamp": 1777919400,
-                    "tournament": "BUN",
-                    "home": "LASK",
-                    "away": "SK Rapid",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1777734000,
-                    "tournament": "BUN",
-                    "home": "Ried",
-                    "away": "BW Linz",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777206600,
-                    "tournament": "BUN",
-                    "home": "SK Rapid",
-                    "away": "Salzburg",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1777129200,
-                    "tournament": "BUN",
-                    "home": "Tirol",
-                    "away": "Ried",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1776875400,
-                    "tournament": "BUN",
-                    "home": "SK Rapid",
-                    "away": "Hartberg",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1776796200,
-                    "tournament": "BUN",
-                    "home": "Ried",
-                    "away": "Grazer AK",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776601800,
-                    "tournament": "BUN",
-                    "home": "Hartberg",
-                    "away": "SK Rapid",
-                    "score": "2-2"
-                  },
-                  {
-                    "timestamp": 1776447000,
-                    "tournament": "BUN",
-                    "home": "Grazer AK",
-                    "away": "Ried",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776006000,
-                    "tournament": "BUN",
-                    "home": "Austria Vienna",
-                    "away": "SK Rapid",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1775919600,
-                    "tournament": "BUN",
-                    "home": "Wolfsberger AC",
-                    "away": "Ried",
-                    "score": "0-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.62,
-                  "draw": 3.25,
-                  "away": 2.5
-                },
-                "double_chance": {
-                  "12": 1.32,
-                  "1X": 1.48,
-                  "X2": 1.44
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.27,
-                    "under": 3.4
-                  },
-                  "2.5": {
-                    "over": 1.9,
-                    "under": 1.84
-                  },
-                  "3.5": {
-                    "over": 3.23,
-                    "under": 1.31
-                  }
-                },
-                "btts": {
-                  "yes": 1.68,
-                  "no": 2.05
-                },
-                "draw_no_bet": {
-                  "home": 1.88,
-                  "away": 1.81
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -820,666 +468,6 @@
     "YiGDMiAF"
   ],
   "history": [
-    {
-      "event_id": "byHJkddt",
-      "flashscore_id": "byHJkddt",
-      "flashscore_sport_id": 2,
-      "home_team_id": "U73k5I15",
-      "away_team_id": "0zQXLfz4",
-      "tournament_id": "ibvebhik",
-      "tournament_url": "/tennis/atp-singles/rome/",
-      "sport_key": "flashscore_tennis_atp_rome_italy",
-      "commence_time": "2026-05-09T12:00:00.000Z",
-      "time_display": "Sam. 14h00",
-      "home": "Garin C.",
-      "away": "Davidovich Fokina A.",
-      "match": "Garin C. vs Davidovich Fokina A.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.9,
-      "cotes": {
-        "domicile": 2.44,
-        "nul": null,
-        "exterieur": 1.57
-      },
-      "pick_category": "ou",
-      "analyse": "Sur terre battue à Rome, Garin traverse une forme remarquable avec cinq victoires lors de ses six derniers matchs sur ocre, dont deux victoires nettes 2-0 contre Cerundolo et Echargui cette semaine même. Son tennis sur cette surface est solide et régulier, avec une capacité à aller en trois sets (victoire 2-1 contre Choinski). Davidovich Fokina, lui, n'a disputé que deux matchs depuis Madrid fin avril, avec une défaite 0-2 contre Ruud et une victoire 2-0 contre Carreno-Busta, sans rythme de compétition récent. Les deux joueurs sont des terrariens typiques, adeptes de longs échanges et de sets disputés point par point sur ocre lente romaine. Garin enchaîne les matches et pourrait dominer un Davidovich Fokina en manque de rythme, mais l'Espagnol est capable de hausser son niveau sur cette surface. Un match en trois sets avec beaucoup de jeux disputés semble probable, rendant le total de jeux élevé très attractif.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778163900,
-            "tournament": "ROM",
-            "home": "Garin C.",
-            "away": "Cerundolo J. M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777969200,
-            "tournament": "ROM",
-            "home": "Garin C.",
-            "away": "Choinski J.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777882200,
-            "tournament": "ROM",
-            "home": "Garin C.",
-            "away": "Echargui M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777540200,
-            "tournament": "CAG",
-            "home": "Garin C.",
-            "away": "Borges N.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777398000,
-            "tournament": "CAG",
-            "home": "Echargui M.",
-            "away": "Garin C.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777281000,
-            "tournament": "MAD",
-            "home": "Davidovich Fokina A.",
-            "away": "Ruud C.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777108200,
-            "tournament": "MAD",
-            "home": "Davidovich Fokina A.",
-            "away": "Carreno-Busta P.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776935400,
-            "tournament": "MAD",
-            "home": "Garin C.",
-            "away": "Blockx A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776762600,
-            "tournament": "MAD",
-            "home": "Garin C.",
-            "away": "Damm M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776672600,
-            "tournament": "MAD",
-            "home": "Garin C.",
-            "away": "Blanchet U.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775643900,
-            "tournament": "MON",
-            "home": "Garin C.",
-            "away": "Zverev A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775478900,
-            "tournament": "MON",
-            "home": "Garin C.",
-            "away": "Arnaldi M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775379900,
-            "tournament": "MON",
-            "home": "Basilashvili N.",
-            "away": "Garin C.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775301000,
-            "tournament": "MON",
-            "home": "Garin C.",
-            "away": "De Jong J.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1774105800,
-            "tournament": "MIA",
-            "home": "Davidovich Fokina A.",
-            "away": "Halys Q.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "19.5": {
-            "over": 1.34,
-            "under": 2.96
-          },
-          "20.0": {
-            "over": 1.39,
-            "under": 2.63
-          },
-          "20.5": {
-            "over": 1.5,
-            "under": 2.42
-          },
-          "21.0": {
-            "over": 1.57,
-            "under": 2.22
-          },
-          "21.5": {
-            "over": 1.65,
-            "under": 2.14
-          },
-          "22.0": {
-            "over": 1.79,
-            "under": 1.94
-          },
-          "22.5": {
-            "over": 1.9,
-            "under": 1.87
-          },
-          "23.0": {
-            "over": 2.04,
-            "under": 1.71
-          },
-          "23.5": {
-            "over": 2.12,
-            "under": 1.68
-          },
-          "24.0": {
-            "over": 2.16,
-            "under": 1.6
-          },
-          "24.5": {
-            "over": 2.19,
-            "under": 1.61
-          },
-          "25.0": {
-            "over": 2.29,
-            "under": 1.51
-          },
-          "25.5": {
-            "over": 2.38,
-            "under": 1.51
-          },
-          "2.5": {
-            "over": 2.29,
-            "under": 1.58
-          },
-          "26.5": {
-            "over": 2.7,
-            "under": 1.44
-          },
-          "27.5": {
-            "over": 3,
-            "under": 1.37
-          },
-          "28.5": {
-            "over": 3.35,
-            "under": 1.3
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.71,
-            "away": 1.23
-          },
-          "-1.5": {
-            "home": 3.7,
-            "away": 2.08
-          },
-          "0.0": {
-            "home": 2.3,
-            "away": 1.56
-          },
-          "0.5": {
-            "home": 2.24,
-            "away": 1.52
-          },
-          "-0.5": {
-            "home": 2.42,
-            "away": 1.61
-          },
-          "1.0": {
-            "home": 2.11,
-            "away": 1.51
-          },
-          "-1.0": {
-            "home": 2.42,
-            "away": 1.66
-          },
-          "2.0": {
-            "home": 1.92
-          },
-          "-2.0": {
-            "away": 1.8
-          },
-          "2.5": {
-            "home": 1.86,
-            "away": 1.35
-          },
-          "-2.5": {
-            "home": 3.1,
-            "away": 1.9
-          },
-          "3.0": {
-            "home": 1.7
-          },
-          "-3.0": {
-            "away": 2.05
-          },
-          "3.5": {
-            "home": 1.6
-          },
-          "-3.5": {
-            "away": 2.25
-          },
-          "4.0": {
-            "home": 1.44
-          },
-          "-4.0": {
-            "away": 2.62
-          },
-          "4.5": {
-            "home": 1.37
-          },
-          "-4.5": {
-            "away": 2.97
-          },
-          "5.0": {
-            "home": 1.23
-          },
-          "-5.0": {
-            "away": 3.8
-          },
-          "5.5": {
-            "home": 1.19
-          },
-          "-5.5": {
-            "away": 4.2
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Rome (Italy)",
-      "archived_at": "2026-05-09T14:34:50.916Z"
-    },
-    {
-      "event_id": "S0Ucp9eJ",
-      "flashscore_id": "S0Ucp9eJ",
-      "flashscore_sport_id": 2,
-      "home_team_id": "WSu6zx5t",
-      "away_team_id": "zHMiAkw6",
-      "tournament_id": "2c3kcu0l",
-      "tournament_url": "/tennis/wta-singles/rome/",
-      "sport_key": "flashscore_tennis_wta_rome_italy",
-      "commence_time": "2026-05-09T10:30:00.000Z",
-      "time_display": "Sam. 12h30",
-      "home": "Oliynykova O.",
-      "away": "Noskova L.",
-      "match": "Oliynykova O. vs Noskova L.",
-      "prono": "win-home",
-      "pari": "Noskova -3.5 jeux (handicap)",
-      "cote_retenue": 1.56,
-      "cotes": {
-        "domicile": 3.53,
-        "nul": null,
-        "exterieur": 1.31
-      },
-      "pick_category": "ou",
-      "analyse": "Noskova a réalisé un parcours solide cette saison, notamment en battant Gauff, Bencic et Alexandrova, tout en dominant Arango et Zakharova en deux sets à Rome. Son seul revers récent est une défaite contre Kostyuk à Madrid et une contre Svitolina à Stuttgart, montrant qu'elle peut vaciller face aux meilleures mais reste une joueuse de haut niveau. Oliynykova, de son côté, affiche deux victoires consécutives à Rome (contre Marcinko et Tauson), mais elle a cédé contre Waltert et Bondar récemment, ce qui relativise sa forme. Le niveau de Noskova est clairement supérieur sur la globalité de la saison, avec des victoires sur des joueuses du top 10 et 20. Sur terre battue romaine, Noskova impose un tennis agressif depuis la ligne de fond qui colle bien à la surface. Le handicap -3.5 jeux pour Noskova à 1.56 est la ligne la plus intéressante : son niveau supérieur devrait lui permettre de dominer nettement les échanges de jeux, sans nécessiter un 2-0 parfait.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "void",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778158800,
-            "tournament": "ROM",
-            "home": "Tauson C.",
-            "away": "Oliynykova O.",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1778154900,
-            "tournament": "ROM",
-            "home": "Zakharova A.",
-            "away": "Noskova L.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777978500,
-            "tournament": "ROM",
-            "home": "Marcinko P.",
-            "away": "Oliynykova O.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777486200,
-            "tournament": "MAD",
-            "home": "Kostyuk M.",
-            "away": "Noskova L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777298700,
-            "tournament": "MAD",
-            "home": "Noskova L.",
-            "away": "Gauff C.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777199400,
-            "tournament": "MAD",
-            "home": "Noskova L.",
-            "away": "Samsonova L.",
-            "score": "null-null"
-          },
-          {
-            "timestamp": 1777035300,
-            "tournament": "MAD",
-            "home": "Noskova L.",
-            "away": "Arango E.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776871200,
-            "tournament": "MAD",
-            "home": "Oliynykova O.",
-            "away": "Waltert S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776422100,
-            "tournament": "STU",
-            "home": "Noskova L.",
-            "away": "Svitolina E.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776362400,
-            "tournament": "ROU",
-            "home": "Bondar A.",
-            "away": "Oliynykova O.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776342900,
-            "tournament": "STU",
-            "home": "Alexandrova E.",
-            "away": "Noskova L.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776261600,
-            "tournament": "STU",
-            "home": "Zhang S.",
-            "away": "Noskova L.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776246000,
-            "tournament": "ROU",
-            "home": "Oliynykova O.",
-            "away": "Tagger L.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775916600,
-            "tournament": "BJK",
-            "home": "Bencic B.",
-            "away": "Noskova L.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775915700,
-            "tournament": "BJK",
-            "home": "Klimovicova L.",
-            "away": "Oliynykova O.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "15.5": {
-            "over": 1.06,
-            "under": 6.25
-          },
-          "16.0": {
-            "over": 1.07,
-            "under": 5.85
-          },
-          "16.5": {
-            "over": 1.13,
-            "under": 4.65
-          },
-          "17.0": {
-            "over": 1.15,
-            "under": 4.25
-          },
-          "17.5": {
-            "over": 1.29,
-            "under": 3.25
-          },
-          "18.0": {
-            "over": 1.32,
-            "under": 2.92
-          },
-          "18.5": {
-            "over": 1.46,
-            "under": 2.54
-          },
-          "19.0": {
-            "over": 1.53,
-            "under": 2.31
-          },
-          "19.5": {
-            "over": 1.67,
-            "under": 2.09
-          },
-          "20.0": {
-            "over": 1.76,
-            "under": 1.97
-          },
-          "20.5": {
-            "over": 1.88,
-            "under": 1.85
-          },
-          "21.0": {
-            "over": 1.99,
-            "under": 1.75
-          },
-          "21.5": {
-            "over": 2.09,
-            "under": 1.69
-          },
-          "22.0": {
-            "over": 2.22,
-            "under": 1.57
-          },
-          "22.5": {
-            "over": 2.35,
-            "under": 1.53
-          },
-          "23.0": {
-            "over": 2.46,
-            "under": 1.44
-          },
-          "23.5": {
-            "over": 2.58,
-            "under": 1.44
-          },
-          "24.0": {
-            "over": 2.63,
-            "under": 1.38
-          },
-          "24.5": {
-            "over": 2.75,
-            "under": 1.39
-          },
-          "25.0": {
-            "over": 2.52,
-            "under": 1.41
-          },
-          "25.5": {
-            "over": 2.84,
-            "under": 1.37
-          },
-          "26.5": {
-            "over": 3.03,
-            "under": 1.31
-          },
-          "2.5": {
-            "over": 2.69,
-            "under": 1.44
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 2,
-            "away": 1.09
-          },
-          "-1.5": {
-            "home": 5.8,
-            "away": 1.72
-          },
-          "0.0": {
-            "home": 3.26,
-            "away": 1.3
-          },
-          "0.5": {
-            "home": 3.36,
-            "away": 1.29
-          },
-          "-0.5": {
-            "home": 3.36,
-            "away": 1.29
-          },
-          "1.0": {
-            "home": 3.26
-          },
-          "-1.0": {
-            "away": 1.3
-          },
-          "2.0": {
-            "home": 2.94
-          },
-          "-2.0": {
-            "away": 1.36
-          },
-          "2.5": {
-            "home": 2.76
-          },
-          "-2.5": {
-            "away": 1.41
-          },
-          "3.0": {
-            "home": 2.56
-          },
-          "-3.0": {
-            "away": 1.46
-          },
-          "3.5": {
-            "home": 2.33
-          },
-          "-3.5": {
-            "away": 1.56
-          },
-          "4.0": {
-            "home": 2.11
-          },
-          "-4.0": {
-            "away": 1.66
-          },
-          "4.5": {
-            "home": 1.9
-          },
-          "-4.5": {
-            "away": 1.85
-          },
-          "5.0": {
-            "home": 1.7
-          },
-          "-5.0": {
-            "away": 2.05
-          },
-          "5.5": {
-            "home": 1.57
-          },
-          "-5.5": {
-            "away": 2.3
-          },
-          "6.0": {
-            "home": 1.38
-          },
-          "-6.0": {
-            "away": 2.85
-          },
-          "6.5": {
-            "home": 1.32
-          },
-          "-6.5": {
-            "away": 3.2
-          },
-          "7.0": {
-            "home": 1.17
-          },
-          "-7.0": {
-            "away": 4.55
-          },
-          "7.5": {
-            "home": 1.14
-          },
-          "-7.5": {
-            "away": 5.05
-          },
-          "8.0": {
-            "home": 1.05
-          },
-          "-8.0": {
-            "away": 8
-          },
-          "8.5": {
-            "home": 1.04
-          },
-          "-8.5": {
-            "away": 8.5
-          },
-          "9.0": {
-            "home": 1.01
-          },
-          "-9.0": {
-            "away": 12
-          },
-          "9.5": {
-            "home": 1
-          },
-          "-9.5": {
-            "away": 12.5
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rome (Italy)",
-      "archived_at": "2026-05-09T14:34:50.916Z"
-    },
     {
       "event_id": "SKnhaxMh",
       "flashscore_id": "SKnhaxMh",
@@ -119745,6 +118733,362 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Strasbourg (France)",
       "archived_at": "2026-05-22T18:54:18.019Z"
+    },
+    {
+      "event_id": "ln2VQVwR",
+      "flashscore_id": "ln2VQVwR",
+      "flashscore_sport_id": 1,
+      "home_team_id": "Q3A3IbXH",
+      "away_team_id": "8C9JjMXu",
+      "tournament_id": "6pwwasa7",
+      "tournament_url": "/football/italy/serie-a/",
+      "sport_key": "flashscore_football_seriea",
+      "commence_time": "2026-05-22T18:45:00.000Z",
+      "time_display": "Ven. 20h45",
+      "home": "Fiorentina",
+      "away": "Atalanta",
+      "match": "Fiorentina vs Atalanta",
+      "prono": "win-home",
+      "pari": "Moins de 2.5 buts",
+      "cote_retenue": 2.19,
+      "cotes": {
+        "domicile": 3.38,
+        "nul": 3.68,
+        "exterieur": 2.16
+      },
+      "pick_category": "ou",
+      "analyse": "Ce choc de Serie A met aux prises deux équipes aux formes récentes contrastées. La Fiorentina arrive sur une belle dynamique : victoire 2-0 à la Juventus lors de la dernière journée, après avoir tenu la Lazio en Serie A (1-0) et éliminé Crystal Palace en UECL. Cependant, les Viola montrent une tendance défensive marquée : 5 des 8 derniers matchs toutes compétitions confondues se sont terminés avec un ou zéro but à la clé (0-0 vs Genoa, 0-0 vs Sassuolo, 1-1 vs Lecce). L'Atalanta de part son côté traverse une véritable crise : défaite 0-1 face à Bologne lors du dernier match, après avoir perdu à Cagliari 3-2 et concédé une élimination en Coupe d'Italie face à la Lazio (1-2). La Bergamasque a marqué peu et manque de régularité offensive ces dernières semaines malgré une victoire spectaculaire à Milan (2-3). La tendance générale des deux équipes ces dernières semaines pointe clairement vers des matchs peu prolifiques : sur les 10 derniers matchs combinés en championnat, la majorité sont restés sous les 2.5 buts. Le fait que les deux équipes se retrouvent dans le bas du tableau de forme et présentent des attaques en difficulté renforce la probabilité d'un match fermé à l'Artemio Franchi.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-1",
+      "actual_result": "draw",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779033600,
+            "tournament": "SA",
+            "home": "Atalanta",
+            "away": "Bologna",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1779012000,
+            "tournament": "SA",
+            "home": "Juventus",
+            "away": "Fiorentina",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778438700,
+            "tournament": "SA",
+            "home": "AC Milan",
+            "away": "Atalanta",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1778418000,
+            "tournament": "SA",
+            "home": "Fiorentina",
+            "away": "Genoa",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1777920300,
+            "tournament": "SA",
+            "home": "AS Roma",
+            "away": "Fiorentina",
+            "score": "4-0"
+          },
+          {
+            "timestamp": 1777747500,
+            "tournament": "SA",
+            "home": "Atalanta",
+            "away": "Genoa",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1777307400,
+            "tournament": "SA",
+            "home": "Cagliari",
+            "away": "Atalanta",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1777199400,
+            "tournament": "SA",
+            "home": "Fiorentina",
+            "away": "Sassuolo",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1776884400,
+            "tournament": "COP",
+            "home": "Atalanta",
+            "away": "Lazio",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776710700,
+            "tournament": "SA",
+            "home": "Lecce",
+            "away": "Fiorentina",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776537900,
+            "tournament": "SA",
+            "home": "AS Roma",
+            "away": "Atalanta",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776366000,
+            "tournament": "UECL",
+            "home": "Fiorentina",
+            "away": "Crystal Palace",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776105900,
+            "tournament": "SA",
+            "home": "Fiorentina",
+            "away": "Lazio",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1775933100,
+            "tournament": "SA",
+            "home": "Atalanta",
+            "away": "Juventus",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1775761200,
+            "tournament": "UECL",
+            "home": "Crystal Palace",
+            "away": "Fiorentina",
+            "score": "3-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.73,
+          "draw": 3.45,
+          "away": 2.5
+        },
+        "double_chance": {
+          "12": 1.3,
+          "1X": 1.5,
+          "X2": 1.45
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.2,
+            "under": 4.45
+          },
+          "2.5": {
+            "over": 1.67,
+            "under": 2.19
+          },
+          "3.5": {
+            "over": 2.63,
+            "under": 1.46
+          }
+        },
+        "btts": {
+          "yes": 1.53,
+          "no": 2.38
+        },
+        "draw_no_bet": {
+          "home": 1.91,
+          "away": 1.8
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Serie A",
+      "archived_at": "2026-05-22T20:40:30.339Z"
+    },
+    {
+      "event_id": "GAOyTi0e",
+      "flashscore_id": "GAOyTi0e",
+      "flashscore_sport_id": 1,
+      "home_team_id": "6c17idcf",
+      "away_team_id": "rejcUFSs",
+      "tournament_id": "jmyatudu",
+      "tournament_url": "/football/austria/bundesliga/",
+      "sport_key": "flashscore_football_uecl",
+      "commence_time": "2026-05-22T17:30:00.000Z",
+      "time_display": "Ven. 19h30",
+      "home": "Ried",
+      "away": "SK Rapid",
+      "match": "Ried vs SK Rapid",
+      "prono": "win-home",
+      "pari": "Les deux équipes marquent - Oui",
+      "cote_retenue": 1.68,
+      "cotes": {
+        "domicile": 2.38,
+        "nul": 3.19,
+        "exterieur": 3.25
+      },
+      "pick_category": "btts",
+      "analyse": "Ce match de Conference League oppose deux clubs autrichiens en méforme notable. SK Rapid traverse une période difficile avec seulement 1 victoire sur leurs 6 derniers matchs (W1 D1 L4), encaissant notamment 2-0 contre Sturm Graz et Austria Vienna, et 3-1 face au LASK. Ried n'est guère plus rassurant : sur leurs 6 dernières sorties, les Riediens comptent 3 victoires et 3 défaites, avec des résultats volatiles (2-0 vs BW Linz, mais 2-0 concédé face à Altach et 0-1 contre Wolfsberger). Les deux équipes semblent offensivement actives mais défensivement poreuses : Ried a marqué dans 4 de leurs 5 derniers matchs à domicile, et Rapid a participé à des matchs à buts dans 5 de leurs 6 dernières sorties (incluant des défaites à plusieurs buts). La tendance des deux équipes à marquer mais aussi à concéder plaide clairement pour les deux équipes qui scorent. Avec des défenses aussi fragiles des deux côtés, le BTTS Yes à 1.68 représente le pari le plus cohérent avec les données de forme récente.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779208200,
+            "tournament": "BUN",
+            "home": "Ried",
+            "away": "Wolfsberger AC",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1779021000,
+            "tournament": "BUN",
+            "home": "Sturm Graz",
+            "away": "SK Rapid",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778943600,
+            "tournament": "BUN",
+            "home": "Altach",
+            "away": "Ried",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778425200,
+            "tournament": "BUN",
+            "home": "SK Rapid",
+            "away": "Austria Vienna",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778338800,
+            "tournament": "BUN",
+            "home": "Ried",
+            "away": "Wolfsberger AC",
+            "score": "0-1"
+          },
+          {
+            "timestamp": 1777919400,
+            "tournament": "BUN",
+            "home": "LASK",
+            "away": "SK Rapid",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1777734000,
+            "tournament": "BUN",
+            "home": "Ried",
+            "away": "BW Linz",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777206600,
+            "tournament": "BUN",
+            "home": "SK Rapid",
+            "away": "Salzburg",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1777129200,
+            "tournament": "BUN",
+            "home": "Tirol",
+            "away": "Ried",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1776875400,
+            "tournament": "BUN",
+            "home": "SK Rapid",
+            "away": "Hartberg",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1776796200,
+            "tournament": "BUN",
+            "home": "Ried",
+            "away": "Grazer AK",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776601800,
+            "tournament": "BUN",
+            "home": "Hartberg",
+            "away": "SK Rapid",
+            "score": "2-2"
+          },
+          {
+            "timestamp": 1776447000,
+            "tournament": "BUN",
+            "home": "Grazer AK",
+            "away": "Ried",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776006000,
+            "tournament": "BUN",
+            "home": "Austria Vienna",
+            "away": "SK Rapid",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1775919600,
+            "tournament": "BUN",
+            "home": "Wolfsberger AC",
+            "away": "Ried",
+            "score": "0-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.62,
+          "draw": 3.25,
+          "away": 2.5
+        },
+        "double_chance": {
+          "12": 1.32,
+          "1X": 1.48,
+          "X2": 1.44
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.27,
+            "under": 3.4
+          },
+          "2.5": {
+            "over": 1.9,
+            "under": 1.84
+          },
+          "3.5": {
+            "over": 3.23,
+            "under": 1.31
+          }
+        },
+        "btts": {
+          "yes": 1.68,
+          "no": 2.05
+        },
+        "draw_no_bet": {
+          "home": 1.88,
+          "away": 1.81
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Conference League",
+      "archived_at": "2026-05-22T20:40:30.339Z"
     }
   ],
   "combos": [
