@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-21T22:04:57.927Z",
+    "last_results_update": "2026-05-22T05:49:14.884Z",
     "analyses_written_at": "2026-05-21T08:35:04.297Z",
     "analyses_cost_usd": 0.1685,
-    "last_hourly_refresh": "2026-05-22T01:34:45.901Z"
+    "last_hourly_refresh": "2026-05-22T05:49:14.884Z"
   },
   "sports": {
     "foot": {
@@ -220,259 +220,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "CnDp12C4",
-              "flashscore_id": "CnDp12C4",
-              "flashscore_sport_id": 3,
-              "home_team_id": "WCNO4nbt",
-              "away_team_id": "xGk13Tb6",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-22T00:00:00.000Z",
-              "time_display": "Ven. 02h00",
-              "home": "New York Knicks",
-              "away": "Cleveland Cavaliers",
-              "match": "New York Knicks vs Cleveland Cavaliers",
-              "prono": "win-home",
-              "pari": "Plus de 216.5 points",
-              "cote_retenue": 1.95,
-              "cotes": {
-                "domicile": 1.52,
-                "nul": null,
-                "exterieur": 2.76
-              },
-              "pick_category": "ou",
-              "analyse": "Le seul H2H disponible dans cette série de playoffs donne New York vainqueur 115-104, soit un total de 219 points — au-dessus de la ligne médiane. Les Knicks affichent une forme offensive explosive : +39 contre Philadelphie (144-114), +39 contre Atlanta (140-89), et une victoire 108-102 également confortable. Cleveland de son côté a enchaîné 5 matchs contre Detroit avec des totaux oscillant entre 204 et 234 points, dont plusieurs matchs à plus de 220 points (116-109, 112-103, 117-113). Les deux équipes défendent à haut niveau en playoffs, mais les Knicks génèrent des écarts significatifs grâce à un rythme soutenu et une profondeur de banc fiable. Le MSG comme salle intimidante pour Cleveland pourrait forcer le jeu et allonger les possessions. Compte tenu des totaux récents des deux équipes en playoffs et du H2H direct à 219 points, la ligne à 216.5 semble légèrement basse.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779235200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "115-104"
-                  },
-                  {
-                    "timestamp": 1779062400,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "94-125"
-                  },
-                  {
-                    "timestamp": 1778886000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "94-115"
-                  },
-                  {
-                    "timestamp": 1778716800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "113-117"
-                  },
-                  {
-                    "timestamp": 1778544000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "112-103"
-                  },
-                  {
-                    "timestamp": 1778441400,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "New York Knicks",
-                    "score": "114-144"
-                  },
-                  {
-                    "timestamp": 1778353200,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Detroit Pistons",
-                    "score": "116-109"
-                  },
-                  {
-                    "timestamp": 1778281200,
-                    "tournament": "NBA",
-                    "home": "Philadelphia 76ers",
-                    "away": "New York Knicks",
-                    "score": "94-108"
-                  },
-                  {
-                    "timestamp": 1778194800,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "107-97"
-                  },
-                  {
-                    "timestamp": 1778108400,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "108-102"
-                  },
-                  {
-                    "timestamp": 1778022000,
-                    "tournament": "NBA",
-                    "home": "Detroit Pistons",
-                    "away": "Cleveland Cavaliers",
-                    "score": "111-101"
-                  },
-                  {
-                    "timestamp": 1777939200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Philadelphia 76ers",
-                    "score": "137-98"
-                  },
-                  {
-                    "timestamp": 1777851000,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "Toronto Raptors",
-                    "score": "114-102"
-                  },
-                  {
-                    "timestamp": 1777678200,
-                    "tournament": "NBA",
-                    "home": "Toronto Raptors",
-                    "away": "Cleveland Cavaliers",
-                    "score": "112-110"
-                  },
-                  {
-                    "timestamp": 1777590000,
-                    "tournament": "NBA",
-                    "home": "Atlanta Hawks",
-                    "away": "New York Knicks",
-                    "score": "89-140"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "214.5": {
-                    "over": 1.81,
-                    "under": 1.95
-                  },
-                  "215.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "216.5": {
-                    "over": 1.95,
-                    "under": 1.85
-                  },
-                  "210.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "211.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "212.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "217.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "218.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "219.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "220.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "6.5": {
-                    "away": 1.81
-                  },
-                  "-6.5": {
-                    "home": 1.95
-                  },
-                  "7.5": {
-                    "away": 1.75
-                  },
-                  "-7.5": {
-                    "home": 1.98
-                  },
-                  "10.5": {
-                    "away": 1.5
-                  },
-                  "-10.5": {
-                    "home": 2.5
-                  },
-                  "1.5": {
-                    "away": 2.5
-                  },
-                  "-1.5": {
-                    "home": 1.5
-                  },
-                  "2.5": {
-                    "away": 2.25
-                  },
-                  "-2.5": {
-                    "home": 1.6
-                  },
-                  "3.5": {
-                    "away": 2.2
-                  },
-                  "-3.5": {
-                    "home": 1.62
-                  },
-                  "4.5": {
-                    "away": 2.05
-                  },
-                  "-4.5": {
-                    "home": 1.7
-                  },
-                  "5.5": {
-                    "away": 1.91
-                  },
-                  "-5.5": {
-                    "home": 1.91
-                  },
-                  "8.5": {
-                    "away": 1.6
-                  },
-                  "-8.5": {
-                    "home": 2.25
-                  },
-                  "9.5": {
-                    "away": 1.5
-                  },
-                  "-9.5": {
-                    "home": 2.5
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -569,300 +317,6 @@
     "CnDp12C4"
   ],
   "history": [
-    {
-      "event_id": "QiQcK8jI",
-      "flashscore_id": "QiQcK8jI",
-      "flashscore_sport_id": 2,
-      "home_team_id": "YgVnM5vO",
-      "away_team_id": "lWQ3G6gB",
-      "tournament_id": "ibvebhik",
-      "tournament_url": "/tennis/atp-singles/rome/",
-      "sport_key": "flashscore_tennis_atp_rome_italy",
-      "commence_time": "2026-05-08T12:30:00.000Z",
-      "time_display": "Ven. 14h30",
-      "home": "Tabilo A.",
-      "away": "Cerundolo F.",
-      "match": "Tabilo A. vs Cerundolo F.",
-      "prono": "win-home",
-      "pari": "Moins de 22.5 jeux",
-      "cote_retenue": 1.89,
-      "cotes": {
-        "domicile": 2.32,
-        "nul": null,
-        "exterieur": 1.63
-      },
-      "pick_category": "ou",
-      "analyse": "Tabilo arrive à Rome dans une forme exceptionnelle : il enchaîne cinq victoires consécutives, dont un titre à Auckland/Estoril et une victoire d'entrée à Rome contre Carreno-Busta (2-0). Le Chilien a perdu uniquement contre Lehecka en trois sets à Madrid, ce qui relativise légèrement sa domination. Cerundolo, de son côté, présente une forme plus irrégulière : battu en deux sets par Blockx à Madrid après de bonnes victoires contre Darderi et Hanfmann, et sorti dès les quarts à Munich par Zverev. Sur terre battue, les deux joueurs sont capables de longues séquences de jeu, avec des échanges depuis le fond de court caractéristiques de la terre romaine. L'analyse des récents matchs montre que Tabilo conclut souvent en deux sets nets (5 victoires sur 6 en 2-0), tandis que Cerundolo mélange 2-0 et 2-1. La ligne de total à 22.5 jeux représente le point d'équilibre : compte tenu de la tendance de Tabilo à expédier les matchs efficacement et du niveau légèrement en deçà de Cerundolo en ce moment, un match sous cette barre semble probable.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778084400,
-            "tournament": "ROM",
-            "home": "Carreno-Busta P.",
-            "away": "Tabilo A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777813800,
-            "tournament": "AP",
-            "home": "Bergs Z.",
-            "away": "Tabilo A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777730100,
-            "tournament": "AP",
-            "home": "Quinn E.",
-            "away": "Tabilo A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777651800,
-            "tournament": "AP",
-            "home": "Buse I.",
-            "away": "Tabilo A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777563300,
-            "tournament": "AP",
-            "home": "Bautista-Agut R.",
-            "away": "Tabilo A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777396200,
-            "tournament": "MAD",
-            "home": "Cerundolo F.",
-            "away": "Blockx A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777295400,
-            "tournament": "MAD",
-            "home": "Cerundolo F.",
-            "away": "Darderi L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777108500,
-            "tournament": "MAD",
-            "home": "Cerundolo F.",
-            "away": "Hanfmann Y.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777033800,
-            "tournament": "MAD",
-            "home": "Lehecka J.",
-            "away": "Tabilo A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776882900,
-            "tournament": "MAD",
-            "home": "Tabilo A.",
-            "away": "Royer V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776423600,
-            "tournament": "MUN",
-            "home": "Zverev A.",
-            "away": "Cerundolo F.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776330600,
-            "tournament": "MUN",
-            "home": "Van De Zandschulp B.",
-            "away": "Cerundolo F.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776157800,
-            "tournament": "MUN",
-            "home": "Tabilo A.",
-            "away": "Fonseca J.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776078600,
-            "tournament": "MUN",
-            "home": "Nagal S.",
-            "away": "Cerundolo F.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775650200,
-            "tournament": "MON",
-            "home": "Cerundolo F.",
-            "away": "Machac T.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "19.5": {
-            "over": 1.31,
-            "under": 3.09
-          },
-          "20.0": {
-            "over": 1.34,
-            "under": 2.83
-          },
-          "20.5": {
-            "over": 1.48,
-            "under": 2.49
-          },
-          "21.0": {
-            "over": 1.51,
-            "under": 2.35
-          },
-          "21.5": {
-            "over": 1.63,
-            "under": 2.19
-          },
-          "22.0": {
-            "over": 1.72,
-            "under": 2.03
-          },
-          "22.5": {
-            "over": 1.9,
-            "under": 1.89
-          },
-          "23.0": {
-            "over": 1.97,
-            "under": 1.76
-          },
-          "23.5": {
-            "over": 2.11,
-            "under": 1.67
-          },
-          "24.0": {
-            "over": 2.1,
-            "under": 1.64
-          },
-          "24.5": {
-            "over": 2.16,
-            "under": 1.63
-          },
-          "25.0": {
-            "over": 2.2,
-            "under": 1.55
-          },
-          "25.5": {
-            "over": 2.33,
-            "under": 1.52
-          },
-          "2.5": {
-            "over": 2.3,
-            "under": 1.57
-          },
-          "26.5": {
-            "over": 2.7,
-            "under": 1.44
-          },
-          "27.5": {
-            "over": 2.95,
-            "under": 1.38
-          },
-          "28.5": {
-            "over": 3.35,
-            "under": 1.3
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.73,
-            "away": 1.23
-          },
-          "-1.5": {
-            "home": 3.75,
-            "away": 2.08
-          },
-          "0.0": {
-            "home": 2.32,
-            "away": 1.55
-          },
-          "0.5": {
-            "home": 2.24,
-            "away": 1.52
-          },
-          "-0.5": {
-            "home": 2.44,
-            "away": 1.6
-          },
-          "1.0": {
-            "home": 2.11
-          },
-          "-1.0": {
-            "away": 1.66
-          },
-          "2.0": {
-            "home": 1.91
-          },
-          "-2.0": {
-            "away": 1.81
-          },
-          "2.5": {
-            "home": 1.83,
-            "away": 1.35
-          },
-          "-2.5": {
-            "home": 3.05,
-            "away": 1.91
-          },
-          "3.0": {
-            "home": 1.67
-          },
-          "-3.0": {
-            "away": 2.11
-          },
-          "3.5": {
-            "home": 1.6
-          },
-          "-3.5": {
-            "away": 2.26
-          },
-          "4.0": {
-            "home": 1.4
-          },
-          "-4.0": {
-            "away": 2.77
-          },
-          "4.5": {
-            "home": 1.33
-          },
-          "-4.5": {
-            "away": 3.17
-          },
-          "5.0": {
-            "home": 1.2
-          },
-          "-5.0": {
-            "away": 4.2
-          },
-          "5.5": {
-            "home": 1.17
-          },
-          "-5.5": {
-            "away": 4.6
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Rome (Italy)",
-      "archived_at": "2026-05-08T16:06:46.101Z"
-    },
     {
       "event_id": "2ok1vVKE",
       "flashscore_id": "2ok1vVKE",
@@ -119590,6 +119044,260 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP Geneva (Switzerland)",
       "archived_at": "2026-05-21T22:04:57.927Z"
+    },
+    {
+      "event_id": "CnDp12C4",
+      "flashscore_id": "CnDp12C4",
+      "flashscore_sport_id": 3,
+      "home_team_id": "WCNO4nbt",
+      "away_team_id": "xGk13Tb6",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-22T00:00:00.000Z",
+      "time_display": "Ven. 02h00",
+      "home": "New York Knicks",
+      "away": "Cleveland Cavaliers",
+      "match": "New York Knicks vs Cleveland Cavaliers",
+      "prono": "win-home",
+      "pari": "Plus de 216.5 points",
+      "cote_retenue": 1.95,
+      "cotes": {
+        "domicile": 1.52,
+        "nul": null,
+        "exterieur": 2.76
+      },
+      "pick_category": "ou",
+      "analyse": "Le seul H2H disponible dans cette série de playoffs donne New York vainqueur 115-104, soit un total de 219 points — au-dessus de la ligne médiane. Les Knicks affichent une forme offensive explosive : +39 contre Philadelphie (144-114), +39 contre Atlanta (140-89), et une victoire 108-102 également confortable. Cleveland de son côté a enchaîné 5 matchs contre Detroit avec des totaux oscillant entre 204 et 234 points, dont plusieurs matchs à plus de 220 points (116-109, 112-103, 117-113). Les deux équipes défendent à haut niveau en playoffs, mais les Knicks génèrent des écarts significatifs grâce à un rythme soutenu et une profondeur de banc fiable. Le MSG comme salle intimidante pour Cleveland pourrait forcer le jeu et allonger les possessions. Compte tenu des totaux récents des deux équipes en playoffs et du H2H direct à 219 points, la ligne à 216.5 semble légèrement basse.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "109-93",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779235200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Cleveland Cavaliers",
+            "score": "115-104"
+          },
+          {
+            "timestamp": 1779062400,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "94-125"
+          },
+          {
+            "timestamp": 1778886000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "94-115"
+          },
+          {
+            "timestamp": 1778716800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "113-117"
+          },
+          {
+            "timestamp": 1778544000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "112-103"
+          },
+          {
+            "timestamp": 1778441400,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "New York Knicks",
+            "score": "114-144"
+          },
+          {
+            "timestamp": 1778353200,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Detroit Pistons",
+            "score": "116-109"
+          },
+          {
+            "timestamp": 1778281200,
+            "tournament": "NBA",
+            "home": "Philadelphia 76ers",
+            "away": "New York Knicks",
+            "score": "94-108"
+          },
+          {
+            "timestamp": 1778194800,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "107-97"
+          },
+          {
+            "timestamp": 1778108400,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "108-102"
+          },
+          {
+            "timestamp": 1778022000,
+            "tournament": "NBA",
+            "home": "Detroit Pistons",
+            "away": "Cleveland Cavaliers",
+            "score": "111-101"
+          },
+          {
+            "timestamp": 1777939200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Philadelphia 76ers",
+            "score": "137-98"
+          },
+          {
+            "timestamp": 1777851000,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "Toronto Raptors",
+            "score": "114-102"
+          },
+          {
+            "timestamp": 1777678200,
+            "tournament": "NBA",
+            "home": "Toronto Raptors",
+            "away": "Cleveland Cavaliers",
+            "score": "112-110"
+          },
+          {
+            "timestamp": 1777590000,
+            "tournament": "NBA",
+            "home": "Atlanta Hawks",
+            "away": "New York Knicks",
+            "score": "89-140"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "214.5": {
+            "over": 1.81,
+            "under": 1.95
+          },
+          "215.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "216.5": {
+            "over": 1.95,
+            "under": 1.85
+          },
+          "210.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "211.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "212.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "217.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "218.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "219.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "220.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "6.5": {
+            "away": 1.81
+          },
+          "-6.5": {
+            "home": 1.95
+          },
+          "7.5": {
+            "away": 1.75
+          },
+          "-7.5": {
+            "home": 1.98
+          },
+          "10.5": {
+            "away": 1.5
+          },
+          "-10.5": {
+            "home": 2.5
+          },
+          "1.5": {
+            "away": 2.5
+          },
+          "-1.5": {
+            "home": 1.5
+          },
+          "2.5": {
+            "away": 2.25
+          },
+          "-2.5": {
+            "home": 1.6
+          },
+          "3.5": {
+            "away": 2.2
+          },
+          "-3.5": {
+            "home": 1.62
+          },
+          "4.5": {
+            "away": 2.05
+          },
+          "-4.5": {
+            "home": 1.7
+          },
+          "5.5": {
+            "away": 1.91
+          },
+          "-5.5": {
+            "home": 1.91
+          },
+          "8.5": {
+            "away": 1.6
+          },
+          "-8.5": {
+            "home": 2.25
+          },
+          "9.5": {
+            "away": 1.5
+          },
+          "-9.5": {
+            "home": 2.5
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-22T05:49:14.884Z"
     }
   ],
   "combos": [
