@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-24T22:39:52.405Z",
+    "last_results_update": "2026-05-25T06:22:54.145Z",
     "analyses_written_at": "2026-05-24T08:01:07.600Z",
     "analyses_cost_usd": 0.3278,
-    "last_hourly_refresh": "2026-05-25T01:52:48.798Z"
+    "last_hourly_refresh": "2026-05-25T06:22:54.145Z"
   },
   "sports": {
     "foot": {
@@ -260,243 +260,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "A1knSoiU",
-              "flashscore_id": "A1knSoiU",
-              "flashscore_sport_id": 3,
-              "home_team_id": "IwmkErSH",
-              "away_team_id": "0fHFHEWD",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-25T00:00:00.000Z",
-              "time_display": "Lun. 02h00",
-              "home": "San Antonio Spurs",
-              "away": "Oklahoma City Thunder",
-              "match": "San Antonio Spurs vs Oklahoma City Thunder",
-              "prono": "win-home",
-              "pari": "Plus de 218.5 points",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.69,
-                "nul": null,
-                "exterieur": 2.33
-              },
-              "pick_category": "ou",
-              "analyse": "La série entre San Antonio et Oklahoma City est disputée : les Spurs ont remporté le match 3 (122-115 à OKC) mais ont perdu les deux suivants, dont une large défaite 108-123 lors du match 5. OKC a montré une puissance offensive dominante tout au long des playoffs, notamment en écrasant les Lakers 131-108 et 125-107, et San Antonio avait lui aussi affiché une forme offensive impressionnante contre Minnesota (133-95, 126-97, 139-109). Sur les 3 H2H de cette série, les totaux de points sont respectivement 231, 235 et 237, soit systématiquement au-dessus de 218.5. Les deux équipes jouent à un rythme élevé, OKC avec Shai Gilgeous-Alexander dominant et San Antonio autour de Wembanyama en pleine montée en puissance. Aucun des matchs de la série n'est passé sous 228 points combinés, ce qui rend le dépassement de la ligne à 218.5 particulièrement solide. La tendance offensive des deux équipes en playoffs 2026 est claire et constante.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779496200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-123"
-                  },
-                  {
-                    "timestamp": 1779323400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "122-113"
-                  },
-                  {
-                    "timestamp": 1779150600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "115-122"
-                  },
-                  {
-                    "timestamp": 1778895000,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "109-139"
-                  },
-                  {
-                    "timestamp": 1778630400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "126-97"
-                  },
-                  {
-                    "timestamp": 1778553000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "110-115"
-                  },
-                  {
-                    "timestamp": 1778455800,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "114-109"
-                  },
-                  {
-                    "timestamp": 1778373000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-131"
-                  },
-                  {
-                    "timestamp": 1778290200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "108-115"
-                  },
-                  {
-                    "timestamp": 1778203800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "125-107"
-                  },
-                  {
-                    "timestamp": 1778117400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "133-95"
-                  },
-                  {
-                    "timestamp": 1778027400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "108-90"
-                  },
-                  {
-                    "timestamp": 1777944600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "102-104"
-                  },
-                  {
-                    "timestamp": 1777426200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Portland Trail Blazers",
-                    "score": "114-95"
-                  },
-                  {
-                    "timestamp": 1777339800,
-                    "tournament": "NBA",
-                    "home": "Phoenix Suns",
-                    "away": "Oklahoma City Thunder",
-                    "score": "122-131"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "218.5": {
-                    "over": 1.85,
-                    "under": 1.9
-                  },
-                  "219.5": {
-                    "over": 1.95,
-                    "under": 1.85
-                  },
-                  "214.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "215.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "216.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "217.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "220.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "221.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "222.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "223.5": {
-                    "over": 2.3,
-                    "under": 1.57
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.62,
-                    "away": 1.95
-                  },
-                  "-1.5": {
-                    "home": 1.81,
-                    "away": 2.2
-                  },
-                  "2.5": {
-                    "home": 1.53,
-                    "away": 1.9
-                  },
-                  "-2.5": {
-                    "home": 1.9,
-                    "away": 2.38
-                  },
-                  "3.5": {
-                    "home": 1.53,
-                    "away": 1.7
-                  },
-                  "-3.5": {
-                    "home": 2.05,
-                    "away": 2.38
-                  },
-                  "4.5": {
-                    "away": 1.62
-                  },
-                  "-4.5": {
-                    "home": 2.2
-                  },
-                  "5.5": {
-                    "away": 1.53
-                  },
-                  "-5.5": {
-                    "home": 2.38
-                  },
-                  "6.5": {
-                    "away": 1.5
-                  },
-                  "-6.5": {
-                    "home": 2.5
-                  },
-                  "7.5": {
-                    "away": 1.4
-                  },
-                  "-7.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1185,308 +949,6 @@
     "pbrbPrAT"
   ],
   "history": [
-    {
-      "event_id": "jLMn6FyI",
-      "flashscore_id": "jLMn6FyI",
-      "flashscore_sport_id": 2,
-      "home_team_id": "M9pojLqi",
-      "away_team_id": "AoOnGZEp",
-      "tournament_id": "ibvebhik",
-      "tournament_url": "/tennis/atp-singles/rome/",
-      "sport_key": "flashscore_tennis_atp_rome_italy",
-      "commence_time": "2026-05-11T09:00:00.000Z",
-      "time_display": "Lun. 11h00",
-      "home": "Bellucci M.",
-      "away": "Landaluce M.",
-      "match": "Bellucci M. vs Landaluce M.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.85,
-      "cotes": {
-        "domicile": 1.82,
-        "nul": null,
-        "exterieur": 2.02
-      },
-      "pick_category": "ou",
-      "analyse": "Bellucci et Landaluce se retrouvent dans un duel entre deux joueurs de niveau similaire sur la terre battue romaine, avec des formes récentes assez comparables. Bellucci vient de battre Etcheverry (1-2) et Burruchaga (0-2) à Rome, mais il alterne chaud et froid : défaites contre Dzumhur, Forejtek et Prizmic sur les semaines précédentes. Landaluce de son côté a battu Cilic (0-2) à Rome et O'Connell (2-0), mais a perdu contre Pellegrino (1-2), Quinn (1-2), Walton et Musetti récemment. Les deux joueurs perdent régulièrement en deux sets secs et remportent aussi des matchs en deux sets, ce qui laisse anticiper un match relativement compétitif avec potentiellement un troisième set. Sur terre battue, les échanges sont plus longs et les breaks plus difficiles à conclure, ce qui pousse naturellement le nombre de jeux à la hausse. Au vu du niveau équilibré des deux joueurs et de la surface, un total de jeux supérieur à 22.5 semble cohérent avec l'incertitude du match.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778330100,
-            "tournament": "ROM",
-            "home": "Etcheverry T. M.",
-            "away": "Bellucci M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778324100,
-            "tournament": "ROM",
-            "home": "Cilic M.",
-            "away": "Landaluce M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778156100,
-            "tournament": "ROM",
-            "home": "Burruchaga R. A.",
-            "away": "Bellucci M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777990500,
-            "tournament": "ROM",
-            "home": "Landaluce M.",
-            "away": "Pellegrino A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777900800,
-            "tournament": "ROM",
-            "home": "Landaluce M.",
-            "away": "O'Connell C.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777557000,
-            "tournament": "CAG",
-            "home": "Bellucci M.",
-            "away": "Cadenasso G.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777549800,
-            "tournament": "AP",
-            "home": "Landaluce M.",
-            "away": "Quinn E.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777476000,
-            "tournament": "CAG",
-            "home": "Sonego L.",
-            "away": "Bellucci M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777384500,
-            "tournament": "AP",
-            "home": "Jade D.",
-            "away": "Landaluce M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776962700,
-            "tournament": "MAD",
-            "home": "Landaluce M.",
-            "away": "Walton A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776855900,
-            "tournament": "MAD",
-            "home": "Dzumhur D.",
-            "away": "Bellucci M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776165000,
-            "tournament": "BAR",
-            "home": "Landaluce M.",
-            "away": "Musetti L.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776161400,
-            "tournament": "OEI",
-            "home": "Forejtek J.",
-            "away": "Bellucci M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775904300,
-            "tournament": "MON",
-            "home": "Bellucci M.",
-            "away": "Prizmic D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775898300,
-            "tournament": "MON",
-            "home": "Collignon R.",
-            "away": "Landaluce M.",
-            "score": "2-0"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "18.5": {
-            "over": 1.14,
-            "under": 4.4
-          },
-          "19.0": {
-            "over": 1.16,
-            "under": 4.1
-          },
-          "19.5": {
-            "over": 1.28,
-            "under": 3.28
-          },
-          "20.0": {
-            "over": 1.31,
-            "under": 2.97
-          },
-          "20.5": {
-            "over": 1.46,
-            "under": 2.6
-          },
-          "21.0": {
-            "over": 1.47,
-            "under": 2.46
-          },
-          "21.5": {
-            "over": 1.58,
-            "under": 2.27
-          },
-          "22.0": {
-            "over": 1.67,
-            "under": 2.11
-          },
-          "22.5": {
-            "over": 1.85,
-            "under": 1.9
-          },
-          "23.0": {
-            "over": 1.91,
-            "under": 1.81
-          },
-          "23.5": {
-            "over": 2.03,
-            "under": 1.73
-          },
-          "24.0": {
-            "over": 2.03,
-            "under": 1.68
-          },
-          "24.5": {
-            "over": 2.08,
-            "under": 1.67
-          },
-          "25.0": {
-            "over": 2.15,
-            "under": 1.58
-          },
-          "25.5": {
-            "over": 2.25,
-            "under": 1.56
-          },
-          "26.0": {
-            "over": 2.38,
-            "under": 1.46
-          },
-          "26.5": {
-            "over": 2.53,
-            "under": 1.46
-          },
-          "27.5": {
-            "over": 2.88,
-            "under": 1.4
-          },
-          "2.5": {
-            "over": 2.23,
-            "under": 1.62
-          },
-          "28.5": {
-            "over": 3.2,
-            "under": 1.33
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.34,
-            "away": 1.36
-          },
-          "-1.5": {
-            "home": 2.9,
-            "away": 2.9
-          },
-          "0.0": {
-            "home": 1.89,
-            "away": 1.95
-          },
-          "0.5": {
-            "home": 1.77,
-            "away": 1.81
-          },
-          "-0.5": {
-            "home": 1.9,
-            "away": 1.98
-          },
-          "1.0": {
-            "home": 1.7,
-            "away": 1.76
-          },
-          "-1.0": {
-            "home": 1.97,
-            "away": 2.05
-          },
-          "2.0": {
-            "home": 1.57,
-            "away": 1.61
-          },
-          "-2.0": {
-            "home": 2.2,
-            "away": 2.28
-          },
-          "2.5": {
-            "home": 1.52,
-            "away": 1.56
-          },
-          "-2.5": {
-            "home": 2.33,
-            "away": 2.42
-          },
-          "3.0": {
-            "home": 1.4,
-            "away": 1.44
-          },
-          "-3.0": {
-            "home": 2.62,
-            "away": 2.77
-          },
-          "3.5": {
-            "home": 1.35,
-            "away": 1.4
-          },
-          "-3.5": {
-            "home": 2.85,
-            "away": 3.04
-          },
-          "4.0": {
-            "away": 1.25
-          },
-          "-4.0": {
-            "home": 3.62
-          },
-          "4.5": {
-            "away": 1.22
-          },
-          "-4.5": {
-            "home": 3.9
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Rome (Italy)",
-      "archived_at": "2026-05-11T11:45:17.933Z"
-    },
     {
       "event_id": "nZpuWsfl",
       "flashscore_id": "nZpuWsfl",
@@ -121240,6 +120702,244 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP French Open (France)",
       "archived_at": "2026-05-24T22:39:52.404Z"
+    },
+    {
+      "event_id": "A1knSoiU",
+      "flashscore_id": "A1knSoiU",
+      "flashscore_sport_id": 3,
+      "home_team_id": "IwmkErSH",
+      "away_team_id": "0fHFHEWD",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-25T00:00:00.000Z",
+      "time_display": "Lun. 02h00",
+      "home": "San Antonio Spurs",
+      "away": "Oklahoma City Thunder",
+      "match": "San Antonio Spurs vs Oklahoma City Thunder",
+      "prono": "win-home",
+      "pari": "Plus de 218.5 points",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.69,
+        "nul": null,
+        "exterieur": 2.33
+      },
+      "pick_category": "ou",
+      "analyse": "La série entre San Antonio et Oklahoma City est disputée : les Spurs ont remporté le match 3 (122-115 à OKC) mais ont perdu les deux suivants, dont une large défaite 108-123 lors du match 5. OKC a montré une puissance offensive dominante tout au long des playoffs, notamment en écrasant les Lakers 131-108 et 125-107, et San Antonio avait lui aussi affiché une forme offensive impressionnante contre Minnesota (133-95, 126-97, 139-109). Sur les 3 H2H de cette série, les totaux de points sont respectivement 231, 235 et 237, soit systématiquement au-dessus de 218.5. Les deux équipes jouent à un rythme élevé, OKC avec Shai Gilgeous-Alexander dominant et San Antonio autour de Wembanyama en pleine montée en puissance. Aucun des matchs de la série n'est passé sous 228 points combinés, ce qui rend le dépassement de la ligne à 218.5 particulièrement solide. La tendance offensive des deux équipes en playoffs 2026 est claire et constante.",
+      "confiance": 4,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "103-82",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779496200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "108-123"
+          },
+          {
+            "timestamp": 1779323400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "122-113"
+          },
+          {
+            "timestamp": 1779150600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "115-122"
+          },
+          {
+            "timestamp": 1778895000,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "109-139"
+          },
+          {
+            "timestamp": 1778630400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "126-97"
+          },
+          {
+            "timestamp": 1778553000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "110-115"
+          },
+          {
+            "timestamp": 1778455800,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "114-109"
+          },
+          {
+            "timestamp": 1778373000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "108-131"
+          },
+          {
+            "timestamp": 1778290200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "108-115"
+          },
+          {
+            "timestamp": 1778203800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "125-107"
+          },
+          {
+            "timestamp": 1778117400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "133-95"
+          },
+          {
+            "timestamp": 1778027400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "108-90"
+          },
+          {
+            "timestamp": 1777944600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "102-104"
+          },
+          {
+            "timestamp": 1777426200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Portland Trail Blazers",
+            "score": "114-95"
+          },
+          {
+            "timestamp": 1777339800,
+            "tournament": "NBA",
+            "home": "Phoenix Suns",
+            "away": "Oklahoma City Thunder",
+            "score": "122-131"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "218.5": {
+            "over": 1.85,
+            "under": 1.9
+          },
+          "219.5": {
+            "over": 1.95,
+            "under": 1.85
+          },
+          "214.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "215.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "216.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "217.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "220.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "221.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "222.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "223.5": {
+            "over": 2.3,
+            "under": 1.57
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.62,
+            "away": 1.95
+          },
+          "-1.5": {
+            "home": 1.81,
+            "away": 2.2
+          },
+          "2.5": {
+            "home": 1.53,
+            "away": 1.9
+          },
+          "-2.5": {
+            "home": 1.9,
+            "away": 2.38
+          },
+          "3.5": {
+            "home": 1.53,
+            "away": 1.7
+          },
+          "-3.5": {
+            "home": 2.05,
+            "away": 2.38
+          },
+          "4.5": {
+            "away": 1.62
+          },
+          "-4.5": {
+            "home": 2.2
+          },
+          "5.5": {
+            "away": 1.53
+          },
+          "-5.5": {
+            "home": 2.38
+          },
+          "6.5": {
+            "away": 1.5
+          },
+          "-6.5": {
+            "home": 2.5
+          },
+          "7.5": {
+            "away": 1.4
+          },
+          "-7.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-25T06:22:54.145Z"
     }
   ],
   "combos": [
