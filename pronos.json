@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-30T16:01:14.199Z",
+    "last_results_update": "2026-05-30T17:44:41.923Z",
     "analyses_written_at": "2026-05-30T07:43:13.304Z",
     "analyses_cost_usd": 0.1486,
-    "last_hourly_refresh": "2026-05-30T16:01:14.199Z"
+    "last_hourly_refresh": "2026-05-30T17:44:41.923Z"
   },
   "sports": {
     "foot": {
@@ -53,7 +53,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -2363,371 +2363,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "dtjt9iEU",
-              "flashscore_id": "dtjt9iEU",
-              "flashscore_sport_id": 2,
-              "home_team_id": "OhwtM7N8",
-              "away_team_id": "SxKK0RUD",
-              "tournament_id": "zlw8ihql",
-              "tournament_url": "/tennis/atp-singles/french-open/",
-              "sport_key": "flashscore_tennis_atp_french_open_france",
-              "commence_time": "2026-05-30T11:00:00.000Z",
-              "time_display": "Sam. 13h00",
-              "home": "Berrettini M.",
-              "away": "Comesana F.",
-              "match": "Berrettini M. vs Comesana F.",
-              "prono": "win-home",
-              "pari": "Plus de 37.5 jeux",
-              "cote_retenue": 1.81,
-              "cotes": {
-                "domicile": 1.47,
-                "nul": null,
-                "exterieur": 2.89
-              },
-              "pick_category": "ou",
-              "analyse": "Berrettini aborde ce troisième tour de Roland-Garros en pleine confiance, avec deux victoires nettes en trois sets face à Fucsovics (1-3) puis Rinderknech (0-3), affichant un tennis solide sur la terre battue parisienne. L'Italien possède un service puissant et un coup droit dévastateur qui lui confèrent un avantage structurel sur cette surface. Comesana est lui aussi en forme au FO, ayant battu Quinn (0-3) et Darderi dans un match serré en cinq sets (3-2), mais ce dernier résultat trahit une tendance aux matchs longs et disputés. L'Argentin a par ailleurs concédé des défaites sèches face à Carreno-Busta (0-2) et Struff (0-2) récemment sur terre, montrant des limites contre des joueurs de gabarit et de puissance. Berrettini a lui aussi des vulnérabilités (défaites contre Carabelli et Popyrin), mais Roland-Garros semble lui réussir particulièrement cette saison. Compte tenu du profil de Comesana, adepte des longues joutes depuis le fond, et de la puissance de Berrettini qui peut forcer des erreurs mais aussi subir des retours, un match avec un volume de jeux élevé est tout à fait plausible, en particulier si Comesana résiste dans au moins un set.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779993000,
-                    "tournament": "FO",
-                    "home": "Rinderknech A.",
-                    "away": "Berrettini M.",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1779981900,
-                    "tournament": "FO",
-                    "home": "Comesana F.",
-                    "away": "Darderi L.",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1779811800,
-                    "tournament": "FO",
-                    "home": "Quinn E.",
-                    "away": "Comesana F.",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1779700500,
-                    "tournament": "FO",
-                    "home": "Fucsovics M.",
-                    "away": "Berrettini M.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1779275400,
-                    "tournament": "GEN",
-                    "home": "Comesana F.",
-                    "away": "Munar J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779100800,
-                    "tournament": "GEN",
-                    "home": "Royer V.",
-                    "away": "Comesana F.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1779019500,
-                    "tournament": "GEN",
-                    "home": "Rehberg M. H.",
-                    "away": "Comesana F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778927700,
-                    "tournament": "GEN",
-                    "home": "Bernet H.",
-                    "away": "Comesana F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778770200,
-                    "tournament": "VAL",
-                    "home": "Ugo Carabelli C.",
-                    "away": "Berrettini M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778688600,
-                    "tournament": "VAL",
-                    "home": "Berrettini M.",
-                    "away": "Daniel T.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778594700,
-                    "tournament": "VAL",
-                    "home": "Carreno-Busta P.",
-                    "away": "Comesana F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778145300,
-                    "tournament": "ROM",
-                    "home": "Popyrin A.",
-                    "away": "Berrettini M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778073900,
-                    "tournament": "ROM",
-                    "home": "Struff J-L.",
-                    "away": "Comesana F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777970400,
-                    "tournament": "ROM",
-                    "home": "Comesana F.",
-                    "away": "Riedi L.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777881900,
-                    "tournament": "ROM",
-                    "home": "Comesana F.",
-                    "away": "Harris B.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "33.5": {
-                    "over": 1.46,
-                    "under": 2.52
-                  },
-                  "34.0": {
-                    "over": 1.47,
-                    "under": 2.35
-                  },
-                  "34.5": {
-                    "over": 1.52,
-                    "under": 2.37
-                  },
-                  "35.0": {
-                    "over": 1.53,
-                    "under": 2.21
-                  },
-                  "35.5": {
-                    "over": 1.6,
-                    "under": 2.19
-                  },
-                  "36.0": {
-                    "over": 1.62,
-                    "under": 2.08
-                  },
-                  "36.5": {
-                    "over": 1.71,
-                    "under": 2.04
-                  },
-                  "37.0": {
-                    "over": 1.73,
-                    "under": 1.97
-                  },
-                  "37.5": {
-                    "over": 1.81,
-                    "under": 1.92
-                  },
-                  "38.0": {
-                    "over": 1.86,
-                    "under": 1.86
-                  },
-                  "38.5": {
-                    "over": 1.94,
-                    "under": 1.87
-                  },
-                  "39.0": {
-                    "over": 1.99,
-                    "under": 1.75
-                  },
-                  "39.5": {
-                    "over": 2.05,
-                    "under": 1.71
-                  },
-                  "40.0": {
-                    "over": 2.11,
-                    "under": 1.63
-                  },
-                  "40.5": {
-                    "over": 2.2,
-                    "under": 1.61
-                  },
-                  "41.0": {
-                    "over": 2.27,
-                    "under": 1.52
-                  },
-                  "41.5": {
-                    "over": 2.38,
-                    "under": 1.52
-                  },
-                  "42.0": {
-                    "over": 2.43,
-                    "under": 1.44
-                  },
-                  "42.5": {
-                    "over": 2.56,
-                    "under": 1.44
-                  },
-                  "3.5": {
-                    "over": 1.55,
-                    "under": 2.39
-                  },
-                  "4.5": {
-                    "over": 3.45,
-                    "under": 1.32
-                  },
-                  "31.5": {
-                    "over": 1.34,
-                    "under": 3.2
-                  },
-                  "32.5": {
-                    "over": 1.42,
-                    "under": 2.85
-                  },
-                  "43.5": {
-                    "over": 2.85,
-                    "under": 1.41
-                  },
-                  "44.5": {
-                    "over": 3.15,
-                    "under": 1.35
-                  },
-                  "45.5": {
-                    "over": 3.45,
-                    "under": 1.3
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.21,
-                    "away": 1.96
-                  },
-                  "-1.5": {
-                    "home": 1.8,
-                    "away": 3.83
-                  },
-                  "2.5": {
-                    "home": 1.07,
-                    "away": 1.77
-                  },
-                  "-2.5": {
-                    "home": 2.38,
-                    "away": 7.3
-                  },
-                  "0.0": {
-                    "home": 1.41,
-                    "away": 2.73
-                  },
-                  "0.5": {
-                    "home": 1.38,
-                    "away": 2.68
-                  },
-                  "-0.5": {
-                    "home": 1.44,
-                    "away": 2.88
-                  },
-                  "1.0": {
-                    "away": 2.53
-                  },
-                  "-1.0": {
-                    "home": 1.47
-                  },
-                  "2.0": {
-                    "away": 2.3
-                  },
-                  "-2.0": {
-                    "home": 1.56
-                  },
-                  "3.0": {
-                    "away": 2.08
-                  },
-                  "-3.0": {
-                    "home": 1.68
-                  },
-                  "3.5": {
-                    "home": 1.22,
-                    "away": 1.97
-                  },
-                  "-3.5": {
-                    "home": 1.75,
-                    "away": 4.1
-                  },
-                  "4.0": {
-                    "away": 1.86
-                  },
-                  "-4.0": {
-                    "home": 1.86
-                  },
-                  "4.5": {
-                    "away": 1.8
-                  },
-                  "-4.5": {
-                    "home": 1.98
-                  },
-                  "5.0": {
-                    "away": 1.65
-                  },
-                  "-5.0": {
-                    "home": 2.13
-                  },
-                  "5.5": {
-                    "away": 1.59
-                  },
-                  "-5.5": {
-                    "home": 2.28
-                  },
-                  "6.0": {
-                    "away": 1.44
-                  },
-                  "-6.0": {
-                    "home": 2.61
-                  },
-                  "6.5": {
-                    "away": 1.38
-                  },
-                  "-6.5": {
-                    "home": 2.91
-                  },
-                  "7.0": {
-                    "away": 1.28
-                  },
-                  "-7.0": {
-                    "home": 3.4
-                  },
-                  "7.5": {
-                    "away": 1.26
-                  },
-                  "-7.5": {
-                    "home": 3.66
-                  },
-                  "8.0": {
-                    "away": 1.15
-                  },
-                  "-8.0": {
-                    "home": 4.8
-                  },
-                  "8.5": {
-                    "away": 1.14
-                  },
-                  "-8.5": {
-                    "home": 5.1
-                  }
-                }
-              }
-            },
-            {
               "event_id": "QuAXkKrB",
               "flashscore_id": "QuAXkKrB",
               "flashscore_sport_id": 2,
@@ -3866,9 +3501,9 @@
               "pari": "Moins de 4.5 rounds",
               "cote_retenue": 1.34,
               "cotes": {
-                "domicile": 2.54,
+                "domicile": 2.62,
                 "nul": null,
-                "exterieur": 1.58
+                "exterieur": 1.55
               },
               "pick_category": "ou",
               "analyse": "Joao Faria traverse une forme exceptionnelle sur terre battue, alignant 7 victoires consécutives à Roland-Garros cette saison, dont des succès notables contre Dimitrov (2-1) et Shapovalov (3-0), et vient d'éliminer Struff en trois sets. Tiafoe présente une forme plus irrégulière : s'il a battu Hurkacz en cinq sets et Spizzirri en trois, il a subi des défaites à Hamburg contre Carabelli et à Rome contre Pellegrino, signe d'une fragilité sur terre battue. Faria est clairement dans son élément sur ocre et démontre une capacité à construire des points depuis le fond de court, ce qui force les longs échanges caractéristiques de Roland-Garros. Tiafoe est un frappeur puissant qui perd en efficacité sur terre, surface qui neutralise partiellement son jeu agressif basé sur le service et les coups gagnants rapides. Les deux joueurs ont montré des matchs en trois et cinq sets récemment, et la dynamique de Faria sur cette surface laisse penser que le match sera disputé mais confortable pour le Portugais, qui devrait l'emporter sans aller au cinquième set.",
@@ -4221,9 +3856,9 @@
               "pari": "Plus de 36.5 jeux",
               "cote_retenue": 1.71,
               "cotes": {
-                "domicile": 1.35,
+                "domicile": 1.34,
                 "nul": null,
-                "exterieur": 3.5
+                "exterieur": 3.57
               },
               "pick_category": "ou",
               "analyse": "Auger-Aliassime aborde ce troisième tour de Roland-Garros avec une forme solide sur la terre battue parisienne : victoire 3-1 contre Burruchaga puis une remontée spectaculaire 3-2 contre Altmaier, témoignant d'une résilience certaine sur ocre. Nakashima, de son côté, a écarté Bautista-Agut 3-0 puis van Assche en cinq sets, montrant une belle solidité mais aussi une tendance à disputer des matchs longs. Sur terre battue, les deux joueurs affichent un style orienté vers les échanges prolongés et la construction de points, ce qui favorise naturellement un volume élevé de jeux. La présence de Nakashima dans deux matchs en 5 sets récents (van Assche) et la tendance d'Auger-Aliassime à connaître des sets serrés (3-2 contre Altmaier) suggèrent un duel qui ira au bout de ses possibilités. Les marchés situant le total autour de 33-35 jeux paraissent très bas pour un face-à-face entre deux joueurs en confiance, avec un FAA potentiellement mené avant de réagir. Un total dépassant les 36.5 jeux semble tout à fait réaliste compte tenu du profil des deux compétiteurs et des conditions Roland-Garros.",
@@ -4595,16 +4230,16 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 1.76,
               "cotes": {
-                "domicile": 1.91,
+                "domicile": 1.82,
                 "nul": null,
-                "exterieur": 1.99
+                "exterieur": 2.01
               },
               "pick_category": "ou",
               "analyse": "Madison Keys arrive à Roland-Garros dans une forme exceptionnelle : elle a remporté 7 de ses 8 derniers matchs, enchaînant notamment 4 victoires consécutives en 2 sets lors du tournoi de Paris (Ferro, Rakotomanga, Zakharova, Starodubtseva). Au premier tour de Roland-Garros, elle a dominé Vandewinkel 2-0, puis Ruzic 2-0 au deuxième tour, confirmant une domination nette sur la terre battue parisienne. Victoria Mboko, 19 ans, a quant à elle réalisé une belle performance en battant Siniakova 2-1 après avoir écarté Bartunkova 2-0, montrant un certain niveau sur la surface. Cependant, Mboko a connu un revers face à Navarro à Strasbourg (1-2), révélant des limites contre des joueuses de haut niveau. Keys, tenante de l'US Open, possède une puissance de frappe redoutable et une expérience incomparable par rapport à la jeune Canadienne. Sur terre battue, son revers à deux mains et sa capacité à dicter les échanges longs constituent des atouts décisifs. On anticipe un match potentiellement décidé en deux sets serrés avec un total de jeux modéré, Keys gérant son effort contre une adversaire talentueuse mais encore inexpérimentée à ce stade.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -5261,184 +4896,6 @@
     "zqDwM7Sa"
   ],
   "history": [
-    {
-      "event_id": "vyaxjXte",
-      "flashscore_id": "vyaxjXte",
-      "flashscore_sport_id": 1,
-      "home_team_id": "IP5zl0cJ",
-      "away_team_id": "8pvUZFhf",
-      "tournament_id": "vcm2mhgk",
-      "tournament_url": "/football/spain/laliga/",
-      "sport_key": "flashscore_football_liga",
-      "commence_time": "2026-05-17T17:00:00.000Z",
-      "time_display": "Dim. 19h00",
-      "home": "Ath Bilbao",
-      "away": "Celta Vigo",
-      "match": "Ath Bilbao vs Celta Vigo",
-      "prono": "win-home",
-      "pari": "Les deux équipes marquent - Oui",
-      "cote_retenue": 1.83,
-      "cotes": {
-        "domicile": 2.16,
-        "nul": 3.29,
-        "exterieur": 3.8
-      },
-      "pick_category": "btts",
-      "analyse": "Bilbao traverse une période de forme irrégulière : défaite 2-0 face à l'Espanyol et 0-1 contre Valencia lors des deux dernières journées, après une belle victoire 4-2 à Alavés. Les Basques restent toutefois plus solides à domicile, où ils ont dominé Osasuna 1-0 et Villarreal 1-2 dans un match serré. Celta Vigo de son côté présente une forme en dents de scie : victoire encourageante 1-0 à l'Atlético de Madrid le 9 mai, mais aussi défaite 2-3 contre Levante à domicile le 12 mai, et une humiliation européenne face à Freiburg (0-3, 1-3). Côté buts, les deux équipes ont tendance à produire des matchs animés : Celta a encaissé dans 4 de ses 5 derniers matchs, et Bilbao a marqué dans 4 de ses 5 derniers. Les deux défenses sont poreuses, ce qui favorise un scénario avec des buts des deux côtés. Le marché BTTS offre une cote intéressante à 1.83, bien justifiée par ces tendances offensives et défensives réciproques.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-1",
-      "actual_result": "draw",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778691600,
-            "tournament": "LL",
-            "home": "Espanyol",
-            "away": "Ath Bilbao",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778605200,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Levante",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1778422500,
-            "tournament": "LL",
-            "home": "Ath Bilbao",
-            "away": "Valencia",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1778344200,
-            "tournament": "LL",
-            "home": "Atl. Madrid",
-            "away": "Celta Vigo",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1777809600,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Elche",
-            "score": "3-1"
-          },
-          {
-            "timestamp": 1777739400,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Ath Bilbao",
-            "score": "2-4"
-          },
-          {
-            "timestamp": 1777230000,
-            "tournament": "LL",
-            "home": "Villarreal",
-            "away": "Celta Vigo",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777143600,
-            "tournament": "LL",
-            "home": "Atl. Madrid",
-            "away": "Ath Bilbao",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1776886200,
-            "tournament": "LL",
-            "home": "Barcelona",
-            "away": "Celta Vigo",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1776790800,
-            "tournament": "LL",
-            "home": "Ath Bilbao",
-            "away": "Osasuna",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1776357900,
-            "tournament": "EL",
-            "home": "Celta Vigo",
-            "away": "Freiburg",
-            "score": "1-3"
-          },
-          {
-            "timestamp": 1776020400,
-            "tournament": "LL",
-            "home": "Ath Bilbao",
-            "away": "Villarreal",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776011400,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Oviedo",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1775761200,
-            "tournament": "EL",
-            "home": "Freiburg",
-            "away": "Celta Vigo",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1775398500,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Celta Vigo",
-            "score": "2-3"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 2.2,
-          "draw": 3.2,
-          "away": 3.5
-        },
-        "double_chance": {
-          "12": 1.35,
-          "1X": 1.3,
-          "X2": 1.65
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.34,
-            "under": 3.05
-          },
-          "2.5": {
-            "over": 2.1,
-            "under": 1.71
-          },
-          "3.5": {
-            "over": 3.75,
-            "under": 1.25
-          }
-        },
-        "btts": {
-          "yes": 1.83,
-          "no": 1.88
-        },
-        "draw_no_bet": {
-          "home": 1.55,
-          "away": 2.3
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-05-17T19:51:30.064Z"
-    },
     {
       "event_id": "llRR0leD",
       "flashscore_id": "llRR0leD",
@@ -135291,6 +134748,374 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA French Open (France)",
       "archived_at": "2026-05-30T16:01:14.199Z"
+    },
+    {
+      "event_id": "dtjt9iEU",
+      "flashscore_id": "dtjt9iEU",
+      "flashscore_sport_id": 2,
+      "home_team_id": "OhwtM7N8",
+      "away_team_id": "SxKK0RUD",
+      "tournament_id": "zlw8ihql",
+      "tournament_url": "/tennis/atp-singles/french-open/",
+      "sport_key": "flashscore_tennis_atp_french_open_france",
+      "commence_time": "2026-05-30T11:00:00.000Z",
+      "time_display": "Sam. 13h00",
+      "home": "Berrettini M.",
+      "away": "Comesana F.",
+      "match": "Berrettini M. vs Comesana F.",
+      "prono": "win-home",
+      "pari": "Plus de 37.5 jeux",
+      "cote_retenue": 1.81,
+      "cotes": {
+        "domicile": 1.47,
+        "nul": null,
+        "exterieur": 2.89
+      },
+      "pick_category": "ou",
+      "analyse": "Berrettini aborde ce troisième tour de Roland-Garros en pleine confiance, avec deux victoires nettes en trois sets face à Fucsovics (1-3) puis Rinderknech (0-3), affichant un tennis solide sur la terre battue parisienne. L'Italien possède un service puissant et un coup droit dévastateur qui lui confèrent un avantage structurel sur cette surface. Comesana est lui aussi en forme au FO, ayant battu Quinn (0-3) et Darderi dans un match serré en cinq sets (3-2), mais ce dernier résultat trahit une tendance aux matchs longs et disputés. L'Argentin a par ailleurs concédé des défaites sèches face à Carreno-Busta (0-2) et Struff (0-2) récemment sur terre, montrant des limites contre des joueurs de gabarit et de puissance. Berrettini a lui aussi des vulnérabilités (défaites contre Carabelli et Popyrin), mais Roland-Garros semble lui réussir particulièrement cette saison. Compte tenu du profil de Comesana, adepte des longues joutes depuis le fond, et de la puissance de Berrettini qui peut forcer des erreurs mais aussi subir des retours, un match avec un volume de jeux élevé est tout à fait plausible, en particulier si Comesana résiste dans au moins un set.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "3-2",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779993000,
+            "tournament": "FO",
+            "home": "Rinderknech A.",
+            "away": "Berrettini M.",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1779981900,
+            "tournament": "FO",
+            "home": "Comesana F.",
+            "away": "Darderi L.",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1779811800,
+            "tournament": "FO",
+            "home": "Quinn E.",
+            "away": "Comesana F.",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1779700500,
+            "tournament": "FO",
+            "home": "Fucsovics M.",
+            "away": "Berrettini M.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1779275400,
+            "tournament": "GEN",
+            "home": "Comesana F.",
+            "away": "Munar J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779100800,
+            "tournament": "GEN",
+            "home": "Royer V.",
+            "away": "Comesana F.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1779019500,
+            "tournament": "GEN",
+            "home": "Rehberg M. H.",
+            "away": "Comesana F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778927700,
+            "tournament": "GEN",
+            "home": "Bernet H.",
+            "away": "Comesana F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778770200,
+            "tournament": "VAL",
+            "home": "Ugo Carabelli C.",
+            "away": "Berrettini M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778688600,
+            "tournament": "VAL",
+            "home": "Berrettini M.",
+            "away": "Daniel T.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778594700,
+            "tournament": "VAL",
+            "home": "Carreno-Busta P.",
+            "away": "Comesana F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778145300,
+            "tournament": "ROM",
+            "home": "Popyrin A.",
+            "away": "Berrettini M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778073900,
+            "tournament": "ROM",
+            "home": "Struff J-L.",
+            "away": "Comesana F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777970400,
+            "tournament": "ROM",
+            "home": "Comesana F.",
+            "away": "Riedi L.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777881900,
+            "tournament": "ROM",
+            "home": "Comesana F.",
+            "away": "Harris B.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "33.5": {
+            "over": 1.46,
+            "under": 2.52
+          },
+          "34.0": {
+            "over": 1.47,
+            "under": 2.35
+          },
+          "34.5": {
+            "over": 1.52,
+            "under": 2.37
+          },
+          "35.0": {
+            "over": 1.53,
+            "under": 2.21
+          },
+          "35.5": {
+            "over": 1.6,
+            "under": 2.19
+          },
+          "36.0": {
+            "over": 1.62,
+            "under": 2.08
+          },
+          "36.5": {
+            "over": 1.71,
+            "under": 2.04
+          },
+          "37.0": {
+            "over": 1.73,
+            "under": 1.97
+          },
+          "37.5": {
+            "over": 1.81,
+            "under": 1.92
+          },
+          "38.0": {
+            "over": 1.86,
+            "under": 1.86
+          },
+          "38.5": {
+            "over": 1.94,
+            "under": 1.87
+          },
+          "39.0": {
+            "over": 1.99,
+            "under": 1.75
+          },
+          "39.5": {
+            "over": 2.05,
+            "under": 1.71
+          },
+          "40.0": {
+            "over": 2.11,
+            "under": 1.63
+          },
+          "40.5": {
+            "over": 2.2,
+            "under": 1.61
+          },
+          "41.0": {
+            "over": 2.27,
+            "under": 1.52
+          },
+          "41.5": {
+            "over": 2.38,
+            "under": 1.52
+          },
+          "42.0": {
+            "over": 2.43,
+            "under": 1.44
+          },
+          "42.5": {
+            "over": 2.56,
+            "under": 1.44
+          },
+          "3.5": {
+            "over": 1.55,
+            "under": 2.39
+          },
+          "4.5": {
+            "over": 3.45,
+            "under": 1.32
+          },
+          "31.5": {
+            "over": 1.34,
+            "under": 3.2
+          },
+          "32.5": {
+            "over": 1.42,
+            "under": 2.85
+          },
+          "43.5": {
+            "over": 2.85,
+            "under": 1.41
+          },
+          "44.5": {
+            "over": 3.15,
+            "under": 1.35
+          },
+          "45.5": {
+            "over": 3.45,
+            "under": 1.3
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.21,
+            "away": 1.96
+          },
+          "-1.5": {
+            "home": 1.8,
+            "away": 3.83
+          },
+          "2.5": {
+            "home": 1.07,
+            "away": 1.77
+          },
+          "-2.5": {
+            "home": 2.38,
+            "away": 7.3
+          },
+          "0.0": {
+            "home": 1.41,
+            "away": 2.73
+          },
+          "0.5": {
+            "home": 1.38,
+            "away": 2.68
+          },
+          "-0.5": {
+            "home": 1.44,
+            "away": 2.88
+          },
+          "1.0": {
+            "away": 2.53
+          },
+          "-1.0": {
+            "home": 1.47
+          },
+          "2.0": {
+            "away": 2.3
+          },
+          "-2.0": {
+            "home": 1.56
+          },
+          "3.0": {
+            "away": 2.08
+          },
+          "-3.0": {
+            "home": 1.68
+          },
+          "3.5": {
+            "home": 1.22,
+            "away": 1.97
+          },
+          "-3.5": {
+            "home": 1.75,
+            "away": 4.1
+          },
+          "4.0": {
+            "away": 1.86
+          },
+          "-4.0": {
+            "home": 1.86
+          },
+          "4.5": {
+            "away": 1.8
+          },
+          "-4.5": {
+            "home": 1.98
+          },
+          "5.0": {
+            "away": 1.65
+          },
+          "-5.0": {
+            "home": 2.13
+          },
+          "5.5": {
+            "away": 1.59
+          },
+          "-5.5": {
+            "home": 2.28
+          },
+          "6.0": {
+            "away": 1.44
+          },
+          "-6.0": {
+            "home": 2.61
+          },
+          "6.5": {
+            "away": 1.38
+          },
+          "-6.5": {
+            "home": 2.91
+          },
+          "7.0": {
+            "away": 1.28
+          },
+          "-7.0": {
+            "home": 3.4
+          },
+          "7.5": {
+            "away": 1.26
+          },
+          "-7.5": {
+            "home": 3.66
+          },
+          "8.0": {
+            "away": 1.15
+          },
+          "-8.0": {
+            "home": 4.8
+          },
+          "8.5": {
+            "away": 1.14
+          },
+          "-8.5": {
+            "home": 5.1
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP French Open (France)",
+      "archived_at": "2026-05-30T17:44:41.923Z"
     }
   ],
   "combos": [
