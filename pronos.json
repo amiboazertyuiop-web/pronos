@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-30T11:57:45.693Z",
+    "last_results_update": "2026-05-30T13:42:01.746Z",
     "analyses_written_at": "2026-05-30T07:43:13.304Z",
     "analyses_cost_usd": 0.1486,
-    "last_hourly_refresh": "2026-05-30T11:57:45.693Z"
+    "last_hourly_refresh": "2026-05-30T13:42:01.746Z"
   },
   "sports": {
     "foot": {
@@ -44,9 +44,9 @@
               "pari": "Moins de 2.5 buts",
               "cote_retenue": 1.67,
               "cotes": {
-                "domicile": 2.49,
-                "nul": 3.35,
-                "exterieur": 3.18
+                "domicile": 2.55,
+                "nul": 3.33,
+                "exterieur": 3.1
               },
               "pick_category": "ou",
               "analyse": "Le PSG arrive en demi-finale retour après un match nul 1-1 à Munich lors de l'aller, avec un parcours européen récent impressionnant : victoire 5-4 sur le Bayern à domicile le 28 avril, montrant une équipe capable de produire un football offensif spectaculaire. Arsenal, de son côté, a éliminé l'Atlético Madrid sur deux matchs très fermés (1-1, 1-0), confirmant une solidité défensive exemplaire avec une seule victoire 1-0 lors des dernières rencontres européennes. La forme des deux équipes est contrastée : Arsenal enchaîne les succès serrés (1-0 contre Burnley, West Ham, Newcastle, Atlético), tandis que le PSG alterne entre matches à buts multiples et contre-performances surprenantes (défaite 2-1 contre Paris FC en L1). Ces deux styles antagonistes — bloc défensif Arsenal vs PSG offensif mais irrégulier — plaident pour un match tendu avec peu de buts, d'autant que les rencontres à enjeu élevé en Champions League tendent à être prudentes. Le sous-total de 2.5 buts semble le scénario le plus probable, les deux équipes étant susceptibles de gérer les risques défensivement.",
@@ -2363,389 +2363,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "QFAD1bV9",
-              "flashscore_id": "QFAD1bV9",
-              "flashscore_sport_id": 2,
-              "home_team_id": "lWQ3G6gB",
-              "away_team_id": "vynGYhMa",
-              "tournament_id": "zlw8ihql",
-              "tournament_url": "/tennis/atp-singles/french-open/",
-              "sport_key": "flashscore_tennis_atp_french_open_france",
-              "commence_time": "2026-05-30T09:00:00.000Z",
-              "time_display": "Sam. 11h00",
-              "home": "Cerundolo F.",
-              "away": "Svajda Z.",
-              "match": "Cerundolo F. vs Svajda Z.",
-              "prono": "win-home",
-              "pari": "Moins de 28.5 jeux",
-              "cote_retenue": 2.38,
-              "cotes": {
-                "domicile": 1.12,
-                "nul": null,
-                "exterieur": 6.57
-              },
-              "pick_category": "ou",
-              "analyse": "Cerundolo est un spécialiste de la terre battue, actuellement en confiance à Roland-Garros après des victoires en sets 3-1 contre Van De Zandschulp puis Gaston. Svajda, joueur américain moins expérimenté sur ocre, a lui aussi remporté ses deux premiers tours (contre Popyrin 3-1 et Walton 3-1), mais ses récents résultats sur terre montrent des limites : éliminé 0-2 par Rehberg à Genève et 2-0 par Ruud à Rome. Cerundolo, de son côté, a atteint le 3e tour à Madrid et dispose d'un jeu de fond de court solide sur cette surface. Le niveau technique de Cerundolo, supérieur sur terre battue, laisse entrevoir une victoire en deux sets, ce qui limiterait le total de jeux. Cependant, Svajda a déjà pris un set dans ses deux victoires, suggérant une certaine résistance. Le match devrait rester serré dans les échanges de fond, avec un total de jeux autour de la ligne 28.5, favorisant légèrement l'under compte tenu de la dominance attendue de Cerundolo mais de la capacité de Svajda à tenir des sets.",
-              "confiance": 2,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779967200,
-                    "tournament": "FO",
-                    "home": "Cerundolo F.",
-                    "away": "Gaston H.",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1779959400,
-                    "tournament": "FO",
-                    "home": "Svajda Z.",
-                    "away": "Walton A.",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1779786600,
-                    "tournament": "FO",
-                    "home": "Popyrin A.",
-                    "away": "Svajda Z.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1779722400,
-                    "tournament": "FO",
-                    "home": "Cerundolo F.",
-                    "away": "Van De Zandschulp B.",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1779099000,
-                    "tournament": "HAM",
-                    "home": "Cerundolo F.",
-                    "away": "De Minaur A.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778942100,
-                    "tournament": "GEN",
-                    "home": "Svajda Z.",
-                    "away": "Rehberg M. H.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778418900,
-                    "tournament": "ROM",
-                    "home": "Musetti L.",
-                    "away": "Cerundolo F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778250000,
-                    "tournament": "ROM",
-                    "home": "Tabilo A.",
-                    "away": "Cerundolo F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778239200,
-                    "tournament": "ROM",
-                    "home": "Ruud C.",
-                    "away": "Svajda Z.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778064000,
-                    "tournament": "ROM",
-                    "home": "Trungelliti M.",
-                    "away": "Svajda Z.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1777396200,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Blockx A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777391700,
-                    "tournament": "CAG",
-                    "home": "Svajda Z.",
-                    "away": "Hurkacz H.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777295400,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Darderi L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777108500,
-                    "tournament": "MAD",
-                    "home": "Cerundolo F.",
-                    "away": "Hanfmann Y.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776672600,
-                    "tournament": "MAD",
-                    "home": "Svajda Z.",
-                    "away": "Sakamoto R.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "26.5": {
-                    "over": 1.3,
-                    "under": 3.17
-                  },
-                  "27.0": {
-                    "over": 1.29,
-                    "under": 3.04
-                  },
-                  "27.5": {
-                    "over": 1.36,
-                    "under": 2.84
-                  },
-                  "28.0": {
-                    "over": 1.38,
-                    "under": 2.63
-                  },
-                  "28.5": {
-                    "over": 1.53,
-                    "under": 2.38
-                  },
-                  "29.0": {
-                    "over": 1.51,
-                    "under": 2.29
-                  },
-                  "29.5": {
-                    "over": 1.65,
-                    "under": 2.14
-                  },
-                  "30.0": {
-                    "over": 1.67,
-                    "under": 2.05
-                  },
-                  "30.5": {
-                    "over": 1.81,
-                    "under": 1.9
-                  },
-                  "31.0": {
-                    "over": 1.82,
-                    "under": 1.9
-                  },
-                  "31.5": {
-                    "over": 1.94,
-                    "under": 1.85
-                  },
-                  "32.0": {
-                    "over": 1.95,
-                    "under": 1.78
-                  },
-                  "32.5": {
-                    "over": 2.04,
-                    "under": 1.7
-                  },
-                  "33.0": {
-                    "over": 2.06,
-                    "under": 1.66
-                  },
-                  "33.5": {
-                    "over": 2.17,
-                    "under": 1.62
-                  },
-                  "34.0": {
-                    "over": 2.18,
-                    "under": 1.56
-                  },
-                  "34.5": {
-                    "over": 2.31,
-                    "under": 1.53
-                  },
-                  "35.0": {
-                    "over": 2.33,
-                    "under": 1.48
-                  },
-                  "35.5": {
-                    "over": 2.48,
-                    "under": 1.46
-                  },
-                  "36.0": {
-                    "over": 2.3,
-                    "under": 1.49
-                  },
-                  "36.5": {
-                    "over": 2.69,
-                    "under": 1.42
-                  },
-                  "3.5": {
-                    "over": 2.17,
-                    "under": 1.65
-                  },
-                  "4.5": {
-                    "over": 5.8,
-                    "under": 1.13
-                  },
-                  "37.5": {
-                    "over": 3.25,
-                    "under": 1.32
-                  },
-                  "20.5": {
-                    "over": 1.01,
-                    "under": 29
-                  },
-                  "21.5": {
-                    "over": 1.01,
-                    "under": 15
-                  },
-                  "22.5": {
-                    "over": 1.02,
-                    "under": 9.25
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.02,
-                    "away": 4
-                  },
-                  "-1.5": {
-                    "home": 1.19,
-                    "away": 11.2
-                  },
-                  "2.5": {
-                    "away": 2.06
-                  },
-                  "-2.5": {
-                    "home": 1.72
-                  },
-                  "10.5": {
-                    "away": 1.27
-                  },
-                  "-10.5": {
-                    "home": 3.51
-                  },
-                  "11.0": {
-                    "away": 1.13
-                  },
-                  "-11.0": {
-                    "home": 5.2
-                  },
-                  "11.5": {
-                    "away": 1.11
-                  },
-                  "-11.5": {
-                    "home": 5.6
-                  },
-                  "12.0": {
-                    "away": 1.04
-                  },
-                  "-12.0": {
-                    "home": 8.5
-                  },
-                  "12.5": {
-                    "away": 1.04
-                  },
-                  "-12.5": {
-                    "home": 8.9
-                  },
-                  "3.5": {
-                    "away": 4.25
-                  },
-                  "-3.5": {
-                    "home": 1.19
-                  },
-                  "4.0": {
-                    "away": 4.05
-                  },
-                  "-4.0": {
-                    "home": 1.21
-                  },
-                  "4.5": {
-                    "away": 4.2
-                  },
-                  "-4.5": {
-                    "home": 1.2
-                  },
-                  "5.0": {
-                    "away": 3.9
-                  },
-                  "-5.0": {
-                    "home": 1.22
-                  },
-                  "5.5": {
-                    "away": 3.36
-                  },
-                  "-5.5": {
-                    "home": 1.29
-                  },
-                  "6.0": {
-                    "away": 3.14
-                  },
-                  "-6.0": {
-                    "home": 1.32
-                  },
-                  "6.5": {
-                    "away": 2.66
-                  },
-                  "-6.5": {
-                    "home": 1.44
-                  },
-                  "7.0": {
-                    "away": 2.45
-                  },
-                  "-7.0": {
-                    "home": 1.5
-                  },
-                  "7.5": {
-                    "away": 2.13
-                  },
-                  "-7.5": {
-                    "home": 1.65
-                  },
-                  "8.0": {
-                    "away": 1.91
-                  },
-                  "-8.0": {
-                    "home": 1.81
-                  },
-                  "8.5": {
-                    "away": 1.72
-                  },
-                  "-8.5": {
-                    "home": 2.06
-                  },
-                  "9.0": {
-                    "away": 1.54
-                  },
-                  "-9.0": {
-                    "home": 2.35
-                  },
-                  "9.5": {
-                    "away": 1.44
-                  },
-                  "-9.5": {
-                    "home": 2.62
-                  },
-                  "10.0": {
-                    "away": 1.29
-                  },
-                  "-10.0": {
-                    "home": 3.32
-                  }
-                }
-              }
-            },
-            {
               "event_id": "dtjt9iEU",
               "flashscore_id": "dtjt9iEU",
               "flashscore_sport_id": 2,
@@ -3130,14 +2747,14 @@
               "cotes": {
                 "domicile": 1.68,
                 "nul": null,
-                "exterieur": 2.33
+                "exterieur": 2.22
               },
               "pick_category": "ou",
               "analyse": "Cerundolo traverse une forme spectaculaire sur terre battue : il a éliminé Sinner en 5 sets à Roland-Garros, puis dominé Fearnley 3-0, tout en ayant remporté le tournoi de Bordeaux avec quatre victoires consécutives dont deux en deux sets secs. Landaluce, qualifié espagnol de 21 ans, a lui aussi su créer la surprise en battant Kopriva et Prado Angelo en cinq sets au premier tour, mais ses matchs révèlent des parties très disputées et longues. La confrontation promet d'être accrocheuse : Landaluce joue un tennis offensif sur terre avec de longues séquences d'échanges, comme le montre son passage à Rome où il avait battu Cilic, Bellucci et Medjedovic avant de tomber face à Medvedev. Sur une surface lente favorisant les longs rallyes, et avec Cerundolo habitué aux batailles en cinq sets (voir son récent duel contre Sinner), les conditions sont réunies pour un match avec un volume de jeux élevé. Un total supérieur à 38.5 jeux semble justifié au regard du profil des deux joueurs et de leurs récents matchs disputés.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -3507,9 +3124,9 @@
               "pari": "Plus de 34.5 jeux",
               "cote_retenue": 1.82,
               "cotes": {
-                "domicile": 4.69,
+                "domicile": 4.86,
                 "nul": null,
-                "exterieur": 1.23
+                "exterieur": 1.22
               },
               "pick_category": "ou",
               "analyse": "Alejandro Tabilo aborde ce match avec une confiance remarquable : depuis fin avril, il a enchaîné les victoires à Aix-en-Provence, Rome et a déjà éliminé Majchrzak 3-0 au premier tour de Roland-Garros. Sa seule défaite récente est contre Cerundolo (tête de série) et face à Kecmanovic à Valence. En face, Michael Kouame réalise une belle campagne en battant Cilic 3-0 puis Vallejo en cinq sets, mais il s'agit d'un joueur de qualification sans grande expérience sur le circuit principal. Tabilo est un joueur de fond de court solide sur terre battue, capable de gérer les échanges longs, ce qui favorise les matchs en sets complets et donc un volume de jeux élevé. Kouame a poussé Vallejo jusqu'au set décisif (2-3), ce qui laisse penser qu'il a la capacité de prolonger les échanges et de disputer des sets accrochés. Sur Roland-Garros, la surface lente amplifie les rallyes et les jeux disputés ; avec un Tabilo dominateur mais un Kouame combatif, un total supérieur à 34.5 jeux paraît raisonnable.",
@@ -3892,9 +3509,9 @@
               "pari": "Plus de 36.5 jeux",
               "cote_retenue": 1.71,
               "cotes": {
-                "domicile": 2.78,
+                "domicile": 2.82,
                 "nul": null,
-                "exterieur": 1.5
+                "exterieur": 1.49
               },
               "pick_category": "ou",
               "analyse": "Collignon traverse une forme exceptionnelle sur terre battue : il a remporté 9 de ses 10 derniers matchs sur cette surface, dont deux victoires nettes en 2 sets à Roland-Garros contre Vukic puis Shelton (3-0 en sets dans les deux cas). Sa montée en puissance depuis Bordeaux (5 victoires consécutives en tournoi challenger) confirme qu'il est en pleine confiance. Arnaldi est lui aussi en bonne forme à Roland-Garros, battant Griekspoor puis Tsitsipas (3-1 en sets), mais sa route a été plus accidentée avec une défaite à Rome contre Jodar. Les deux joueurs évoluent bien sur terre et ont montré qu'ils peuvent s'étirer en longs échanges — Arnaldi a notamment eu besoin de 4 sets contre Tsitsipas et Griekspoor. La confrontation entre un Collignon au sommet de sa confiance et un Arnaldi compétitif laisse présager un match disputé avec de nombreux jeux. Sur terre battue à Roland-Garros, les échanges sont longs et les breaks moins fréquents qu'attendu entre joueurs de ce calibre, ce qui pousse naturellement le total de jeux vers le haut.",
@@ -4249,7 +3866,7 @@
               "pari": "Moins de 4.5 rounds",
               "cote_retenue": 1.34,
               "cotes": {
-                "domicile": 2.54,
+                "domicile": 2.56,
                 "nul": null,
                 "exterieur": 1.58
               },
@@ -4961,319 +4578,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "MkW2B0up",
-              "flashscore_id": "MkW2B0up",
-              "flashscore_sport_id": 2,
-              "home_team_id": "bmWvBlnL",
-              "away_team_id": "MDM4BKiA",
-              "tournament_id": "0n2yc0d5",
-              "tournament_url": "/tennis/wta-singles/french-open/",
-              "sport_key": "flashscore_tennis_wta_french_open_france",
-              "commence_time": "2026-05-30T09:00:00.000Z",
-              "time_display": "Sam. 11h00",
-              "home": "Jovic I.",
-              "away": "Osaka N.",
-              "match": "Jovic I. vs Osaka N.",
-              "prono": "win-home",
-              "pari": "Plus de 22.5 jeux",
-              "cote_retenue": 1.99,
-              "cotes": {
-                "domicile": 1.92,
-                "nul": null,
-                "exterieur": 1.9
-              },
-              "pick_category": "ou",
-              "analyse": "Ivana Jovic arrive en huitièmes de Roland-Garros sur une excellente dynamique : deux victoires convaincantes en 2-0 contre Eala puis Navarro à Paris, confirmant son aisance sur terre battue. Naomi Osaka est elle aussi en grande forme sur cette quinzaine, avec des succès nets 2-0 contre Siegemund et Vekic, même si elle avait chuté 0-2 face à Swiatek à Rome. Les deux joueuses semblent en confiance, mais leurs styles distincts — Jovic, combative et régulière sur ocre, contre Osaka, puissante mais parfois irrégulière — laissent présager un match disputé. Les marchés suggèrent un match relativement court (under 17.5 très probable selon les cotes), mais compte tenu de la compétitivité des deux joueuses et du niveau du tableau, un match en trois sets avec un volume de jeux plus élevé est envisageable. Sur terre battue à Paris, les échanges s'allongent naturellement, ce qui favorise un total de jeux plus important que les lignes basses le suggèrent. Le line de 22.5 jeux à 1.99 représente un bon équilibre entre valeur et probabilité réelle, notamment si le match va au troisième set.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779959700,
-                    "tournament": "FO",
-                    "home": "Jovic I.",
-                    "away": "Navarro E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779959400,
-                    "tournament": "FO",
-                    "home": "Vekic D.",
-                    "away": "Osaka N.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779800100,
-                    "tournament": "FO",
-                    "home": "Siegemund L.",
-                    "away": "Osaka N.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779786600,
-                    "tournament": "FO",
-                    "home": "Jovic I.",
-                    "away": "Eala A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779291000,
-                    "tournament": "STR",
-                    "home": "Navarro E.",
-                    "away": "Jovic I.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778522100,
-                    "tournament": "ROM",
-                    "home": "Osaka N.",
-                    "away": "Swiatek I.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778496600,
-                    "tournament": "ROM",
-                    "home": "Gauff C.",
-                    "away": "Jovic I.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778416200,
-                    "tournament": "ROM",
-                    "home": "Osaka N.",
-                    "away": "Shnaider D.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778354400,
-                    "tournament": "ROM",
-                    "home": "Townsend T.",
-                    "away": "Jovic I.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778248500,
-                    "tournament": "ROM",
-                    "home": "Osaka N.",
-                    "away": "Lys E.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778181000,
-                    "tournament": "ROM",
-                    "home": "Kessler M.",
-                    "away": "Jovic I.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777288200,
-                    "tournament": "MAD",
-                    "home": "Sabalenka A.",
-                    "away": "Osaka N.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1777146000,
-                    "tournament": "MAD",
-                    "home": "Kalinina A.",
-                    "away": "Osaka N.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777114500,
-                    "tournament": "MAD",
-                    "home": "Fernandez L.",
-                    "away": "Jovic I.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1776958800,
-                    "tournament": "MAD",
-                    "home": "Linette M.",
-                    "away": "Jovic I.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.13,
-                    "under": 4.5
-                  },
-                  "18.0": {
-                    "over": 1.16,
-                    "under": 4.15
-                  },
-                  "18.5": {
-                    "over": 1.3,
-                    "under": 3.2
-                  },
-                  "19.0": {
-                    "over": 1.3,
-                    "under": 3.04
-                  },
-                  "19.5": {
-                    "over": 1.46,
-                    "under": 2.56
-                  },
-                  "20.0": {
-                    "over": 1.48,
-                    "under": 2.43
-                  },
-                  "20.5": {
-                    "over": 1.64,
-                    "under": 2.17
-                  },
-                  "21.0": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "21.5": {
-                    "over": 1.83,
-                    "under": 1.94
-                  },
-                  "22.0": {
-                    "over": 1.88,
-                    "under": 1.84
-                  },
-                  "22.5": {
-                    "over": 1.99,
-                    "under": 1.73
-                  },
-                  "23.0": {
-                    "over": 2.1,
-                    "under": 1.64
-                  },
-                  "23.5": {
-                    "over": 2.22,
-                    "under": 1.6
-                  },
-                  "24.0": {
-                    "over": 2.22,
-                    "under": 1.54
-                  },
-                  "24.5": {
-                    "over": 2.33,
-                    "under": 1.54
-                  },
-                  "25.0": {
-                    "over": 2.41,
-                    "under": 1.45
-                  },
-                  "25.5": {
-                    "over": 2.57,
-                    "under": 1.44
-                  },
-                  "26.0": {
-                    "over": 2.66,
-                    "under": 1.37
-                  },
-                  "26.5": {
-                    "over": 2.89,
-                    "under": 1.36
-                  },
-                  "27.5": {
-                    "over": 3.33,
-                    "under": 1.31
-                  },
-                  "2.5": {
-                    "over": 2.33,
-                    "under": 1.58
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.4,
-                    "away": 1.33
-                  },
-                  "-1.5": {
-                    "home": 3,
-                    "away": 2.65
-                  },
-                  "0.0": {
-                    "home": 1.92,
-                    "away": 1.8
-                  },
-                  "0.5": {
-                    "home": 1.9,
-                    "away": 1.75
-                  },
-                  "-0.5": {
-                    "home": 2.02,
-                    "away": 1.85
-                  },
-                  "1.0": {
-                    "home": 1.81,
-                    "away": 1.69
-                  },
-                  "-1.0": {
-                    "home": 2.07,
-                    "away": 1.91
-                  },
-                  "2.0": {
-                    "home": 1.68,
-                    "away": 1.58
-                  },
-                  "-2.0": {
-                    "home": 2.26,
-                    "away": 2.08
-                  },
-                  "2.5": {
-                    "home": 1.65,
-                    "away": 1.54
-                  },
-                  "-2.5": {
-                    "home": 2.38,
-                    "away": 2.17
-                  },
-                  "3.0": {
-                    "home": 1.53,
-                    "away": 1.45
-                  },
-                  "-3.0": {
-                    "home": 2.59,
-                    "away": 2.38
-                  },
-                  "3.5": {
-                    "home": 1.5,
-                    "away": 1.42
-                  },
-                  "-3.5": {
-                    "home": 2.76,
-                    "away": 2.51
-                  },
-                  "4.0": {
-                    "home": 1.36,
-                    "away": 1.31
-                  },
-                  "-4.0": {
-                    "home": 3.2,
-                    "away": 2.94
-                  },
-                  "4.5": {
-                    "home": 1.33,
-                    "away": 1.27
-                  },
-                  "-4.5": {
-                    "home": 3.54,
-                    "away": 3.17
-                  },
-                  "5.5": {
-                    "home": 1.21
-                  },
-                  "-5.5": {
-                    "away": 4.25
-                  }
-                }
-              }
-            },
-            {
               "event_id": "phqWZGON",
               "flashscore_id": "phqWZGON",
               "flashscore_sport_id": 2,
@@ -5291,16 +4595,16 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.32,
               "cotes": {
-                "domicile": 1.07,
+                "domicile": 1.1,
                 "nul": null,
-                "exterieur": 10.9
+                "exterieur": 8.35
               },
               "pick_category": "cs",
               "analyse": "Sabalenka, numéro 1 mondiale et double tenante du titre à Roland-Garros, affiche une forme impeccable sur terre en 2026 avec deux victoires nettes 2-0 en début de tournoi contre Jacquemot et Bouzas Maneiro. Son seul revers récent remonte à Rome contre Cirstea (1-2), mais elle avait auparavant étrillé Krejcikova 2-0. Sa puissance de frappe et son jeu agressif sont particulièrement efficaces sur la terre battue parisienne. Kasatkina, de son côté, est en grande forme sur cette surface : elle affiche 5 victoires en 6 matchs sur terre depuis début mai (Strasbourg + Roland-Garros), dont quatre en 2-0, avec une seule défaite contre Cristian. Néanmoins, l'écart de calibre entre les deux joueuses est significatif, et Sabalenka a les moyens d'imposer son rythme pour clore rapidement les échanges. La dominance de Sabalenka et sa capacité à frapper des coups gagnants sur terre laissent présager une victoire en deux sets, sans laisser trop d'espace à Kasatkina pour développer son jeu de contre.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -5626,16 +4930,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 2.04,
               "cotes": {
-                "domicile": 1.9,
+                "domicile": 1.74,
                 "nul": null,
-                "exterieur": 2
+                "exterieur": 2.12
               },
               "pick_category": "ou",
               "analyse": "Ce match oppose deux joueuses en forme sur terre battue à Roland-Garros, avec des profils offensifs similaires. Kalinskaya a dominé ses deux premiers tours à Roland-Garros en deux sets secs (2-0 contre Korneeva et 2-0 contre Boisson), confirmant sa maîtrise sur cette surface. De son côté, Osorio est en feu depuis plusieurs semaines : cinq victoires en six matchs sur terre (Paris, Rabat, Roland-Garros), dont un 2-0 contre Alexandrova et une victoire récente 2-1 contre Putintseva. La surface de terre battue favorise les échanges prolongés et les jeux serrés, ce qui allonge naturellement les matchs. Les deux joueuses sont de niveau très proche (handicap autour de 0 en sets), ce qui suggère un match disputé pouvant aller en trois sets, ou au moins des jeux à rallonge. Compte tenu du profil des deux joueuses et de la surface, un total de jeux élevé est attendu, et le seuil de 22.5 jeux à 2.04 offre une valeur intéressante pour un match qui devrait être accroché.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -5927,16 +5231,16 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.98,
               "cotes": {
-                "domicile": 4.69,
+                "domicile": 4.54,
                 "nul": null,
-                "exterieur": 1.23
+                "exterieur": 1.21
               },
               "pick_category": "ou",
               "analyse": "Diane Parry, joueuse française évoluant à domicile à Roland-Garros, affiche une forme solide sur terre battue ces dernières semaines : victoires contre Li A. (2-0), Kalinina (2-1) à Roland-Garros, ainsi que contre Haddad Maia (2-0) et Raducanu (2-0) lors des tournois préparatoires. Amanda Anisimova, de son côté, a écrasé ses deux adversaires à Roland-Garros sans perdre un set (Rakotomanga 2-0, Grabher 2-0), affichant une précision redoutable depuis les lignes de fond. Ces deux profils offensifs, à l'aise sur ocre, tendent à produire des échanges intenses avec des jeux serrés plutôt que des matchs expédiés. La pression du public pour Parry et la constance affichée par Anisimova laissent présager un match compétitif sur au moins deux sets. Les matchs récents de Parry incluent plusieurs rencontres en trois sets (Kalinina 2-1, Paquet 2-1), confirmant une tendance aux matchs disputés. Un total dépassant 20,5 jeux apparaît comme la ligne la plus solide dans ce contexte.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -6274,9 +5578,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 1.76,
               "cotes": {
-                "domicile": 1.86,
+                "domicile": 1.87,
                 "nul": null,
-                "exterieur": 2.05
+                "exterieur": 2.04
               },
               "pick_category": "ou",
               "analyse": "Madison Keys arrive à Roland-Garros dans une forme exceptionnelle : elle a remporté 7 de ses 8 derniers matchs, enchaînant notamment 4 victoires consécutives en 2 sets lors du tournoi de Paris (Ferro, Rakotomanga, Zakharova, Starodubtseva). Au premier tour de Roland-Garros, elle a dominé Vandewinkel 2-0, puis Ruzic 2-0 au deuxième tour, confirmant une domination nette sur la terre battue parisienne. Victoria Mboko, 19 ans, a quant à elle réalisé une belle performance en battant Siniakova 2-1 après avoir écarté Bartunkova 2-0, montrant un certain niveau sur la surface. Cependant, Mboko a connu un revers face à Navarro à Strasbourg (1-2), révélant des limites contre des joueuses de haut niveau. Keys, tenante de l'US Open, possède une puissance de frappe redoutable et une expérience incomparable par rapport à la jeune Canadienne. Sur terre battue, son revers à deux mains et sa capacité à dicter les échanges longs constituent des atouts décisifs. On anticipe un match potentiellement décidé en deux sets serrés avec un total de jeux modéré, Keys gérant son effort contre une adversaire talentueuse mais encore inexpérimentée à ce stade.",
@@ -6940,362 +6244,6 @@
     "zqDwM7Sa"
   ],
   "history": [
-    {
-      "event_id": "n12plBB7",
-      "flashscore_id": "n12plBB7",
-      "flashscore_sport_id": 1,
-      "home_team_id": "jaarqpLQ",
-      "away_team_id": "nNNpcUSL",
-      "tournament_id": "vcm2mhgk",
-      "tournament_url": "/football/spain/laliga/",
-      "sport_key": "flashscore_football_liga",
-      "commence_time": "2026-05-17T17:00:00.000Z",
-      "time_display": "Dim. 19h00",
-      "home": "Atl. Madrid",
-      "away": "Girona",
-      "match": "Atl. Madrid vs Girona",
-      "prono": "win-home",
-      "pari": "Les deux équipes marquent - Oui",
-      "cote_retenue": 1.64,
-      "cotes": {
-        "domicile": 1.82,
-        "nul": 3.86,
-        "exterieur": 4.49
-      },
-      "pick_category": "btts",
-      "analyse": "L'Atlético Madrid traverse une période de turbulences inquiétante : sur leurs 8 derniers matchs toutes compétitions confondues, ils n'ont remporté que 2 victoires (Osasuna 1-2, Valencia 0-2), avec des défaites face à Celta Vigo à domicile (0-1), Arsenal en Champions League (1-0), Elche (3-2) et Séville (2-1). Girona n'est pas en forme non plus, avec deux nuls consécutifs contre Real Sociedad (1-1) et Rayo Vallecano (1-1), et des défaites récentes face à Mallorca (0-1), Valencia (2-1) et Betis (2-3). La solidité défensive des deux équipes est clairement mise en défaut : l'Atlético encaisse des buts dans ses récents matchs à domicile (0-1 vs Celta, 3-2 vs Ath Bilbao, 1-2 vs Barcelona en C1), tandis que Girona concède régulièrement. Ces tendances défensives défaillantes des deux côtés, combinées à une Girona qui marque malgré ses contre-performances, orientent vers un match avec des buts des deux côtés. Le BTTS Yes semble justifié par la fébrilité des deux arrière-gardes et la capacité offensive des Girons à trouver le filet même dans les matchs perdus.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "1-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778781600,
-            "tournament": "LL",
-            "home": "Girona",
-            "away": "Real Sociedad",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1778614200,
-            "tournament": "LL",
-            "home": "Osasuna",
-            "away": "Atl. Madrid",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778526000,
-            "tournament": "LL",
-            "home": "Rayo Vallecano",
-            "away": "Girona",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1778344200,
-            "tournament": "LL",
-            "home": "Atl. Madrid",
-            "away": "Celta Vigo",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1778007600,
-            "tournament": "CL",
-            "home": "Arsenal",
-            "away": "Atl. Madrid",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1777731300,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Atl. Madrid",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777662000,
-            "tournament": "LL",
-            "home": "Girona",
-            "away": "Mallorca",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1777489200,
-            "tournament": "CL",
-            "home": "Atl. Madrid",
-            "away": "Arsenal",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1777143600,
-            "tournament": "LL",
-            "home": "Atl. Madrid",
-            "away": "Ath Bilbao",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1777134600,
-            "tournament": "LL",
-            "home": "Valencia",
-            "away": "Girona",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776877200,
-            "tournament": "LL",
-            "home": "Elche",
-            "away": "Atl. Madrid",
-            "score": "3-2"
-          },
-          {
-            "timestamp": 1776799800,
-            "tournament": "LL",
-            "home": "Girona",
-            "away": "Betis",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1776538800,
-            "tournament": "CDR",
-            "home": "Atl. Madrid",
-            "away": "Real Sociedad",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1776193200,
-            "tournament": "CL",
-            "home": "Atl. Madrid",
-            "away": "Barcelona",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775934000,
-            "tournament": "LL",
-            "home": "Sevilla",
-            "away": "Atl. Madrid",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.79,
-          "draw": 3.8,
-          "away": 4.42
-        },
-        "double_chance": {
-          "12": 1.26,
-          "1X": 1.21,
-          "X2": 2
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.2,
-            "under": 4.24
-          },
-          "2.5": {
-            "over": 1.7,
-            "under": 2.12
-          },
-          "3.5": {
-            "over": 2.7,
-            "under": 1.44
-          }
-        },
-        "btts": {
-          "yes": 1.64,
-          "no": 2.17
-        },
-        "draw_no_bet": {
-          "home": 1.3,
-          "away": 3.1
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-05-17T19:51:30.064Z"
-    },
-    {
-      "event_id": "C0sw852t",
-      "flashscore_id": "C0sw852t",
-      "flashscore_sport_id": 1,
-      "home_team_id": "SzYzw34K",
-      "away_team_id": "hxt57t2q",
-      "tournament_id": "vcm2mhgk",
-      "tournament_url": "/football/spain/laliga/",
-      "sport_key": "flashscore_football_liga",
-      "commence_time": "2026-05-17T17:00:00.000Z",
-      "time_display": "Dim. 19h00",
-      "home": "Oviedo",
-      "away": "Alaves",
-      "match": "Oviedo vs Alaves",
-      "prono": "win-home",
-      "pari": "Les deux équipes marquent - Oui",
-      "cote_retenue": 1.76,
-      "cotes": {
-        "domicile": 4,
-        "nul": 3.26,
-        "exterieur": 2.11
-      },
-      "pick_category": "btts",
-      "analyse": "Alaves arrive dans ce match avec un léger avantage de forme globale, mais les deux équipes présentent des résultats très irréguliers. Alaves a battu le FC Barcelone 1-0 le 13 mai, un résultat surprenant, mais a encaissé 4 buts contre l'Athletic Bilbao (2-4) début mai. Oviedo reste sur un 0-0 contre Getafe à domicile, sans marquer lors de ses deux dernières sorties (0-0 et 0-2 contre le Real Madrid). Sur les 15 derniers matchs impliquant ces équipes, les deux formations ont montré une tendance à concéder des buts : Alaves a participé à des matchs à 6 buts (3-3 contre la Real Sociedad), 5 buts (2-1, 4-3), tandis qu'Oviedo a alterné entre des scores fermés et des rencontres ouvertes. Oviedo à domicile a scoré dans plusieurs matchs récents (1-1 vs Villarreal, 1-0 vs Séville, 1-0 vs Celta Vigo), mais leur attaque semble en manque de tranchant sur les dernières journées. Alaves, malgré son irrégularité, marque souvent. La cote BTTS Yes à 1.76 reflète bien cette double propension des deux équipes à s'impliquer offensivement tout en étant perméables défensivement.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-1",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778787000,
-            "tournament": "LL",
-            "home": "Real Madrid",
-            "away": "Oviedo",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778700600,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Barcelona",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1778430600,
-            "tournament": "LL",
-            "home": "Oviedo",
-            "away": "Getafe",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1778328000,
-            "tournament": "LL",
-            "home": "Elche",
-            "away": "Alaves",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1777825800,
-            "tournament": "LL",
-            "home": "Betis",
-            "away": "Oviedo",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1777739400,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Ath Bilbao",
-            "score": "2-4"
-          },
-          {
-            "timestamp": 1777212900,
-            "tournament": "LL",
-            "home": "Oviedo",
-            "away": "Elche",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777118400,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Mallorca",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776972600,
-            "tournament": "LL",
-            "home": "Oviedo",
-            "away": "Villarreal",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1776799800,
-            "tournament": "LL",
-            "home": "Real Madrid",
-            "away": "Alaves",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776011400,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Oviedo",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1775908800,
-            "tournament": "LL",
-            "home": "Real Sociedad",
-            "away": "Alaves",
-            "score": "3-3"
-          },
-          {
-            "timestamp": 1775415600,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Osasuna",
-            "score": "2-2"
-          },
-          {
-            "timestamp": 1775406600,
-            "tournament": "LL",
-            "home": "Oviedo",
-            "away": "Sevilla",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1774192500,
-            "tournament": "LL",
-            "home": "Celta Vigo",
-            "away": "Alaves",
-            "score": "3-4"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 3.85,
-          "draw": 3.5,
-          "away": 2
-        },
-        "double_chance": {
-          "12": 1.29,
-          "1X": 1.84,
-          "X2": 1.25
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.29,
-            "under": 3.45
-          },
-          "2.5": {
-            "over": 1.9,
-            "under": 1.86
-          },
-          "3.5": {
-            "over": 3.27,
-            "under": 1.31
-          }
-        },
-        "btts": {
-          "yes": 1.76,
-          "no": 1.96
-        },
-        "draw_no_bet": {
-          "home": 2.7,
-          "away": 1.4
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-05-17T19:51:30.064Z"
-    },
     {
       "event_id": "K8ZA4Wel",
       "flashscore_id": "K8ZA4Wel",
@@ -136166,6 +135114,708 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA French Open (France)",
       "archived_at": "2026-05-30T11:57:45.693Z"
+    },
+    {
+      "event_id": "QFAD1bV9",
+      "flashscore_id": "QFAD1bV9",
+      "flashscore_sport_id": 2,
+      "home_team_id": "lWQ3G6gB",
+      "away_team_id": "vynGYhMa",
+      "tournament_id": "zlw8ihql",
+      "tournament_url": "/tennis/atp-singles/french-open/",
+      "sport_key": "flashscore_tennis_atp_french_open_france",
+      "commence_time": "2026-05-30T09:00:00.000Z",
+      "time_display": "Sam. 11h00",
+      "home": "Cerundolo F.",
+      "away": "Svajda Z.",
+      "match": "Cerundolo F. vs Svajda Z.",
+      "prono": "win-home",
+      "pari": "Moins de 28.5 jeux",
+      "cote_retenue": 2.38,
+      "cotes": {
+        "domicile": 1.12,
+        "nul": null,
+        "exterieur": 6.57
+      },
+      "pick_category": "ou",
+      "analyse": "Cerundolo est un spécialiste de la terre battue, actuellement en confiance à Roland-Garros après des victoires en sets 3-1 contre Van De Zandschulp puis Gaston. Svajda, joueur américain moins expérimenté sur ocre, a lui aussi remporté ses deux premiers tours (contre Popyrin 3-1 et Walton 3-1), mais ses récents résultats sur terre montrent des limites : éliminé 0-2 par Rehberg à Genève et 2-0 par Ruud à Rome. Cerundolo, de son côté, a atteint le 3e tour à Madrid et dispose d'un jeu de fond de court solide sur cette surface. Le niveau technique de Cerundolo, supérieur sur terre battue, laisse entrevoir une victoire en deux sets, ce qui limiterait le total de jeux. Cependant, Svajda a déjà pris un set dans ses deux victoires, suggérant une certaine résistance. Le match devrait rester serré dans les échanges de fond, avec un total de jeux autour de la ligne 28.5, favorisant légèrement l'under compte tenu de la dominance attendue de Cerundolo mais de la capacité de Svajda à tenir des sets.",
+      "confiance": 2,
+      "featured": true,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-3",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779967200,
+            "tournament": "FO",
+            "home": "Cerundolo F.",
+            "away": "Gaston H.",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1779959400,
+            "tournament": "FO",
+            "home": "Svajda Z.",
+            "away": "Walton A.",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1779786600,
+            "tournament": "FO",
+            "home": "Popyrin A.",
+            "away": "Svajda Z.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1779722400,
+            "tournament": "FO",
+            "home": "Cerundolo F.",
+            "away": "Van De Zandschulp B.",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1779099000,
+            "tournament": "HAM",
+            "home": "Cerundolo F.",
+            "away": "De Minaur A.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778942100,
+            "tournament": "GEN",
+            "home": "Svajda Z.",
+            "away": "Rehberg M. H.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778418900,
+            "tournament": "ROM",
+            "home": "Musetti L.",
+            "away": "Cerundolo F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778250000,
+            "tournament": "ROM",
+            "home": "Tabilo A.",
+            "away": "Cerundolo F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778239200,
+            "tournament": "ROM",
+            "home": "Ruud C.",
+            "away": "Svajda Z.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778064000,
+            "tournament": "ROM",
+            "home": "Trungelliti M.",
+            "away": "Svajda Z.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1777396200,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Blockx A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777391700,
+            "tournament": "CAG",
+            "home": "Svajda Z.",
+            "away": "Hurkacz H.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777295400,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Darderi L.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777108500,
+            "tournament": "MAD",
+            "home": "Cerundolo F.",
+            "away": "Hanfmann Y.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776672600,
+            "tournament": "MAD",
+            "home": "Svajda Z.",
+            "away": "Sakamoto R.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "26.5": {
+            "over": 1.3,
+            "under": 3.17
+          },
+          "27.0": {
+            "over": 1.29,
+            "under": 3.04
+          },
+          "27.5": {
+            "over": 1.36,
+            "under": 2.84
+          },
+          "28.0": {
+            "over": 1.38,
+            "under": 2.63
+          },
+          "28.5": {
+            "over": 1.53,
+            "under": 2.38
+          },
+          "29.0": {
+            "over": 1.51,
+            "under": 2.29
+          },
+          "29.5": {
+            "over": 1.65,
+            "under": 2.14
+          },
+          "30.0": {
+            "over": 1.67,
+            "under": 2.05
+          },
+          "30.5": {
+            "over": 1.81,
+            "under": 1.9
+          },
+          "31.0": {
+            "over": 1.82,
+            "under": 1.9
+          },
+          "31.5": {
+            "over": 1.94,
+            "under": 1.85
+          },
+          "32.0": {
+            "over": 1.95,
+            "under": 1.78
+          },
+          "32.5": {
+            "over": 2.04,
+            "under": 1.7
+          },
+          "33.0": {
+            "over": 2.06,
+            "under": 1.66
+          },
+          "33.5": {
+            "over": 2.17,
+            "under": 1.62
+          },
+          "34.0": {
+            "over": 2.18,
+            "under": 1.56
+          },
+          "34.5": {
+            "over": 2.31,
+            "under": 1.53
+          },
+          "35.0": {
+            "over": 2.33,
+            "under": 1.48
+          },
+          "35.5": {
+            "over": 2.48,
+            "under": 1.46
+          },
+          "36.0": {
+            "over": 2.3,
+            "under": 1.49
+          },
+          "36.5": {
+            "over": 2.69,
+            "under": 1.42
+          },
+          "3.5": {
+            "over": 2.17,
+            "under": 1.65
+          },
+          "4.5": {
+            "over": 5.8,
+            "under": 1.13
+          },
+          "37.5": {
+            "over": 3.25,
+            "under": 1.32
+          },
+          "20.5": {
+            "over": 1.01,
+            "under": 29
+          },
+          "21.5": {
+            "over": 1.01,
+            "under": 15
+          },
+          "22.5": {
+            "over": 1.02,
+            "under": 9.25
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.02,
+            "away": 4
+          },
+          "-1.5": {
+            "home": 1.19,
+            "away": 11.2
+          },
+          "2.5": {
+            "away": 2.06
+          },
+          "-2.5": {
+            "home": 1.72
+          },
+          "10.5": {
+            "away": 1.27
+          },
+          "-10.5": {
+            "home": 3.51
+          },
+          "11.0": {
+            "away": 1.13
+          },
+          "-11.0": {
+            "home": 5.2
+          },
+          "11.5": {
+            "away": 1.11
+          },
+          "-11.5": {
+            "home": 5.6
+          },
+          "12.0": {
+            "away": 1.04
+          },
+          "-12.0": {
+            "home": 8.5
+          },
+          "12.5": {
+            "away": 1.04
+          },
+          "-12.5": {
+            "home": 8.9
+          },
+          "3.5": {
+            "away": 4.25
+          },
+          "-3.5": {
+            "home": 1.19
+          },
+          "4.0": {
+            "away": 4.05
+          },
+          "-4.0": {
+            "home": 1.21
+          },
+          "4.5": {
+            "away": 4.2
+          },
+          "-4.5": {
+            "home": 1.2
+          },
+          "5.0": {
+            "away": 3.9
+          },
+          "-5.0": {
+            "home": 1.22
+          },
+          "5.5": {
+            "away": 3.36
+          },
+          "-5.5": {
+            "home": 1.29
+          },
+          "6.0": {
+            "away": 3.14
+          },
+          "-6.0": {
+            "home": 1.32
+          },
+          "6.5": {
+            "away": 2.66
+          },
+          "-6.5": {
+            "home": 1.44
+          },
+          "7.0": {
+            "away": 2.45
+          },
+          "-7.0": {
+            "home": 1.5
+          },
+          "7.5": {
+            "away": 2.13
+          },
+          "-7.5": {
+            "home": 1.65
+          },
+          "8.0": {
+            "away": 1.91
+          },
+          "-8.0": {
+            "home": 1.81
+          },
+          "8.5": {
+            "away": 1.72
+          },
+          "-8.5": {
+            "home": 2.06
+          },
+          "9.0": {
+            "away": 1.54
+          },
+          "-9.0": {
+            "home": 2.35
+          },
+          "9.5": {
+            "away": 1.44
+          },
+          "-9.5": {
+            "home": 2.62
+          },
+          "10.0": {
+            "away": 1.29
+          },
+          "-10.0": {
+            "home": 3.32
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP French Open (France)",
+      "archived_at": "2026-05-30T13:42:01.745Z"
+    },
+    {
+      "event_id": "MkW2B0up",
+      "flashscore_id": "MkW2B0up",
+      "flashscore_sport_id": 2,
+      "home_team_id": "bmWvBlnL",
+      "away_team_id": "MDM4BKiA",
+      "tournament_id": "0n2yc0d5",
+      "tournament_url": "/tennis/wta-singles/french-open/",
+      "sport_key": "flashscore_tennis_wta_french_open_france",
+      "commence_time": "2026-05-30T09:00:00.000Z",
+      "time_display": "Sam. 11h00",
+      "home": "Jovic I.",
+      "away": "Osaka N.",
+      "match": "Jovic I. vs Osaka N.",
+      "prono": "win-home",
+      "pari": "Plus de 22.5 jeux",
+      "cote_retenue": 1.99,
+      "cotes": {
+        "domicile": 1.92,
+        "nul": null,
+        "exterieur": 1.9
+      },
+      "pick_category": "ou",
+      "analyse": "Ivana Jovic arrive en huitièmes de Roland-Garros sur une excellente dynamique : deux victoires convaincantes en 2-0 contre Eala puis Navarro à Paris, confirmant son aisance sur terre battue. Naomi Osaka est elle aussi en grande forme sur cette quinzaine, avec des succès nets 2-0 contre Siegemund et Vekic, même si elle avait chuté 0-2 face à Swiatek à Rome. Les deux joueuses semblent en confiance, mais leurs styles distincts — Jovic, combative et régulière sur ocre, contre Osaka, puissante mais parfois irrégulière — laissent présager un match disputé. Les marchés suggèrent un match relativement court (under 17.5 très probable selon les cotes), mais compte tenu de la compétitivité des deux joueuses et du niveau du tableau, un match en trois sets avec un volume de jeux plus élevé est envisageable. Sur terre battue à Paris, les échanges s'allongent naturellement, ce qui favorise un total de jeux plus important que les lignes basses le suggèrent. Le line de 22.5 jeux à 1.99 représente un bon équilibre entre valeur et probabilité réelle, notamment si le match va au troisième set.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779959700,
+            "tournament": "FO",
+            "home": "Jovic I.",
+            "away": "Navarro E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779959400,
+            "tournament": "FO",
+            "home": "Vekic D.",
+            "away": "Osaka N.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779800100,
+            "tournament": "FO",
+            "home": "Siegemund L.",
+            "away": "Osaka N.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779786600,
+            "tournament": "FO",
+            "home": "Jovic I.",
+            "away": "Eala A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779291000,
+            "tournament": "STR",
+            "home": "Navarro E.",
+            "away": "Jovic I.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778522100,
+            "tournament": "ROM",
+            "home": "Osaka N.",
+            "away": "Swiatek I.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778496600,
+            "tournament": "ROM",
+            "home": "Gauff C.",
+            "away": "Jovic I.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778416200,
+            "tournament": "ROM",
+            "home": "Osaka N.",
+            "away": "Shnaider D.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778354400,
+            "tournament": "ROM",
+            "home": "Townsend T.",
+            "away": "Jovic I.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778248500,
+            "tournament": "ROM",
+            "home": "Osaka N.",
+            "away": "Lys E.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778181000,
+            "tournament": "ROM",
+            "home": "Kessler M.",
+            "away": "Jovic I.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777288200,
+            "tournament": "MAD",
+            "home": "Sabalenka A.",
+            "away": "Osaka N.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1777146000,
+            "tournament": "MAD",
+            "home": "Kalinina A.",
+            "away": "Osaka N.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777114500,
+            "tournament": "MAD",
+            "home": "Fernandez L.",
+            "away": "Jovic I.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1776958800,
+            "tournament": "MAD",
+            "home": "Linette M.",
+            "away": "Jovic I.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.5": {
+            "over": 1.13,
+            "under": 4.5
+          },
+          "18.0": {
+            "over": 1.16,
+            "under": 4.15
+          },
+          "18.5": {
+            "over": 1.3,
+            "under": 3.2
+          },
+          "19.0": {
+            "over": 1.3,
+            "under": 3.04
+          },
+          "19.5": {
+            "over": 1.46,
+            "under": 2.56
+          },
+          "20.0": {
+            "over": 1.48,
+            "under": 2.43
+          },
+          "20.5": {
+            "over": 1.64,
+            "under": 2.17
+          },
+          "21.0": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "21.5": {
+            "over": 1.83,
+            "under": 1.94
+          },
+          "22.0": {
+            "over": 1.88,
+            "under": 1.84
+          },
+          "22.5": {
+            "over": 1.99,
+            "under": 1.73
+          },
+          "23.0": {
+            "over": 2.1,
+            "under": 1.64
+          },
+          "23.5": {
+            "over": 2.22,
+            "under": 1.6
+          },
+          "24.0": {
+            "over": 2.22,
+            "under": 1.54
+          },
+          "24.5": {
+            "over": 2.33,
+            "under": 1.54
+          },
+          "25.0": {
+            "over": 2.41,
+            "under": 1.45
+          },
+          "25.5": {
+            "over": 2.57,
+            "under": 1.44
+          },
+          "26.0": {
+            "over": 2.66,
+            "under": 1.37
+          },
+          "26.5": {
+            "over": 2.89,
+            "under": 1.36
+          },
+          "27.5": {
+            "over": 3.33,
+            "under": 1.31
+          },
+          "2.5": {
+            "over": 2.33,
+            "under": 1.58
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.4,
+            "away": 1.33
+          },
+          "-1.5": {
+            "home": 3,
+            "away": 2.65
+          },
+          "0.0": {
+            "home": 1.92,
+            "away": 1.8
+          },
+          "0.5": {
+            "home": 1.9,
+            "away": 1.75
+          },
+          "-0.5": {
+            "home": 2.02,
+            "away": 1.85
+          },
+          "1.0": {
+            "home": 1.81,
+            "away": 1.69
+          },
+          "-1.0": {
+            "home": 2.07,
+            "away": 1.91
+          },
+          "2.0": {
+            "home": 1.68,
+            "away": 1.58
+          },
+          "-2.0": {
+            "home": 2.26,
+            "away": 2.08
+          },
+          "2.5": {
+            "home": 1.65,
+            "away": 1.54
+          },
+          "-2.5": {
+            "home": 2.38,
+            "away": 2.17
+          },
+          "3.0": {
+            "home": 1.53,
+            "away": 1.45
+          },
+          "-3.0": {
+            "home": 2.59,
+            "away": 2.38
+          },
+          "3.5": {
+            "home": 1.5,
+            "away": 1.42
+          },
+          "-3.5": {
+            "home": 2.76,
+            "away": 2.51
+          },
+          "4.0": {
+            "home": 1.36,
+            "away": 1.31
+          },
+          "-4.0": {
+            "home": 3.2,
+            "away": 2.94
+          },
+          "4.5": {
+            "home": 1.33,
+            "away": 1.27
+          },
+          "-4.5": {
+            "home": 3.54,
+            "away": 3.17
+          },
+          "5.5": {
+            "home": 1.21
+          },
+          "-5.5": {
+            "away": 4.25
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA French Open (France)",
+      "archived_at": "2026-05-30T13:42:01.746Z"
     }
   ],
   "combos": [
