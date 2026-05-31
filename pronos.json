@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-31T17:46:06.135Z",
+    "last_results_update": "2026-05-31T20:41:07.360Z",
     "analyses_written_at": "2026-05-31T08:11:58.083Z",
     "analyses_cost_usd": 0.0482,
-    "last_hourly_refresh": "2026-05-31T19:08:24.546Z"
+    "last_hourly_refresh": "2026-05-31T20:41:07.360Z"
   },
   "sports": {
     "foot": {
@@ -25,183 +25,7 @@
           "country": "Europe",
           "panel_title": "🥉 Conference League — Europe",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "Cf3QMydJ",
-              "flashscore_id": "Cf3QMydJ",
-              "flashscore_sport_id": 1,
-              "home_team_id": "MgkzUx7T",
-              "away_team_id": "r3jWUIiN",
-              "tournament_id": "kgj2nu9m",
-              "tournament_url": "/football/belgium/jupiler-pro-league/",
-              "sport_key": "flashscore_football_uecl",
-              "commence_time": "2026-05-31T16:30:00.000Z",
-              "time_display": "Dim. 18h30",
-              "home": "Gent",
-              "away": "Genk",
-              "match": "Gent vs Genk",
-              "prono": "win-home",
-              "pari": "Les deux équipes ne marquent pas (BTTS Non)",
-              "cote_retenue": 2.26,
-              "cotes": {
-                "domicile": 2.08,
-                "nul": 3.73,
-                "exterieur": 3.55
-              },
-              "pick_category": "btts",
-              "analyse": "Ce duel 100% belge en Conference League oppose deux équipes en fin de saison avec une forme récente très terne. Gent n'a marqué qu'une seule fois lors de ses 5 derniers matchs (1-1 vs Anderlecht) et enchaîne les matchs sans but : 0-0 vs Union SG, 0-0 vs St. Truiden, 0-2 vs Club Brugge. De son côté, Genk reste sur un 0-0 face à Antwerp, un 0-0 contre St. Liège, un revers 2-0 à Charleroi, ne trouvant le filet que lors d'un 3-0 contre Westerlo. Sur les 10 derniers matchs combinés des deux équipes, on compte seulement 5 buts marqués au total, soit une moyenne de 0,5 but par match. Cette pénurie offensive chronique des deux côtés pointe clairement vers un match peu prolifique, avec une forte probabilité que l'une des deux équipes ne marque pas. Le marché BTTS No à 2.26 reflète bien cette réalité statistique et offre la meilleure valeur du tableau.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1779640200,
-                    "tournament": "JL",
-                    "home": "Club Brugge KV",
-                    "away": "Gent",
-                    "score": "5-0"
-                  },
-                  {
-                    "timestamp": 1779561900,
-                    "tournament": "JL",
-                    "home": "Leuven",
-                    "away": "Genk",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779388200,
-                    "tournament": "JL",
-                    "home": "Gent",
-                    "away": "Royale Union SG",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1779215400,
-                    "tournament": "JL",
-                    "home": "Genk",
-                    "away": "Antwerp",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1778957100,
-                    "tournament": "JL",
-                    "home": "St. Truiden",
-                    "away": "Gent",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1778948100,
-                    "tournament": "JL",
-                    "home": "St. Liege",
-                    "away": "Genk",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1778433300,
-                    "tournament": "JL",
-                    "home": "Genk",
-                    "away": "Westerlo",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1778412600,
-                    "tournament": "JL",
-                    "home": "Gent",
-                    "away": "Anderlecht",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1777807800,
-                    "tournament": "JL",
-                    "home": "KV Mechelen",
-                    "away": "Gent",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1777738500,
-                    "tournament": "JL",
-                    "home": "Charleroi",
-                    "away": "Genk",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777203000,
-                    "tournament": "JL",
-                    "home": "Gent",
-                    "away": "Club Brugge KV",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777133700,
-                    "tournament": "JL",
-                    "home": "Genk",
-                    "away": "St. Liege",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776882600,
-                    "tournament": "JL",
-                    "home": "Royale Union SG",
-                    "away": "Gent",
-                    "score": "0-0"
-                  },
-                  {
-                    "timestamp": 1776796200,
-                    "tournament": "JL",
-                    "home": "Genk",
-                    "away": "Charleroi",
-                    "score": "1-1"
-                  },
-                  {
-                    "timestamp": 1776598200,
-                    "tournament": "JL",
-                    "home": "Gent",
-                    "away": "St. Truiden",
-                    "score": "0-0"
-                  }
-                ]
-              },
-              "markets": {
-                "1x2": {
-                  "home": 2.6,
-                  "draw": 3.56,
-                  "away": 2.48
-                },
-                "double_chance": {
-                  "12": 1.29,
-                  "1X": 1.5,
-                  "X2": 1.46
-                },
-                "over_under": {
-                  "1.5": {
-                    "over": 1.2,
-                    "under": 4
-                  },
-                  "2.5": {
-                    "over": 1.68,
-                    "under": 2.1
-                  },
-                  "3.5": {
-                    "over": 2.7,
-                    "under": 1.4
-                  }
-                },
-                "btts": {
-                  "yes": 1.57,
-                  "no": 2.26
-                },
-                "draw_no_bet": {
-                  "home": 1.95,
-                  "away": 1.75
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1012,254 +836,6 @@
     "0hwIq7Tq"
   ],
   "history": [
-    {
-      "event_id": "WC5fCNwI",
-      "flashscore_id": "WC5fCNwI",
-      "flashscore_sport_id": 3,
-      "home_team_id": "UcjMRj6J",
-      "away_team_id": "xGk13Tb6",
-      "tournament_id": "innccbyb",
-      "tournament_url": "/basketball/usa/nba/",
-      "sport_key": "flashscore_basketball_nba",
-      "commence_time": "2026-05-18T00:00:00.000Z",
-      "time_display": "Lun. 02h00",
-      "home": "Detroit Pistons",
-      "away": "Cleveland Cavaliers",
-      "match": "Detroit Pistons vs Cleveland Cavaliers",
-      "prono": "win-home",
-      "pari": "Plus de 205.5 points",
-      "cote_retenue": 1.85,
-      "cotes": {
-        "domicile": 1.56,
-        "nul": null,
-        "exterieur": 2.44
-      },
-      "pick_category": "ou",
-      "analyse": "Ce duel Detroit-Cleveland en est déjà au sixième affrontement consécutif entre ces deux équipes, ce qui confirme qu'on est en pleine série de playoffs. L'analyse des H2H récents révèle une série extrêmement serrée : Cleveland mène 4-2 avec des scores comme 116-109, 112-103, 116-109, mais Detroit a répliqué par 94-115 (victoire éclatante lors du match le plus récent), 107-97 et 111-101. Les totaux de points combinés sur les 6 confrontations directes donnent : 209, 230, 215, 225, 204, 212 — soit une moyenne d'environ 216 points, avec tous les matchs au-dessus de 200. Les deux équipes évoluent à un rythme offensif soutenu avec des scores systématiquement dans la fourchette 200-230. Detroit vient de remporter le match 5 sur le score de 94-115, montrant une défense éblouissante au bon moment, mais les rencontres précédentes suggèrent que les deux franchises ont du mal à contenir durablement l'adversaire sur une nuit entière. Compte tenu de la pression playoff, de l'intensité croissante et de la tendance lourde à dépasser les 200 points dans cette série, le pari sur le total est bien ancré dans les faits.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "94-125",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778886000,
-            "tournament": "NBA",
-            "home": "Cleveland Cavaliers",
-            "away": "Detroit Pistons",
-            "score": "94-115"
-          },
-          {
-            "timestamp": 1778716800,
-            "tournament": "NBA",
-            "home": "Detroit Pistons",
-            "away": "Cleveland Cavaliers",
-            "score": "113-117"
-          },
-          {
-            "timestamp": 1778544000,
-            "tournament": "NBA",
-            "home": "Cleveland Cavaliers",
-            "away": "Detroit Pistons",
-            "score": "112-103"
-          },
-          {
-            "timestamp": 1778353200,
-            "tournament": "NBA",
-            "home": "Cleveland Cavaliers",
-            "away": "Detroit Pistons",
-            "score": "116-109"
-          },
-          {
-            "timestamp": 1778194800,
-            "tournament": "NBA",
-            "home": "Detroit Pistons",
-            "away": "Cleveland Cavaliers",
-            "score": "107-97"
-          },
-          {
-            "timestamp": 1778022000,
-            "tournament": "NBA",
-            "home": "Detroit Pistons",
-            "away": "Cleveland Cavaliers",
-            "score": "111-101"
-          },
-          {
-            "timestamp": 1777851000,
-            "tournament": "NBA",
-            "home": "Cleveland Cavaliers",
-            "away": "Toronto Raptors",
-            "score": "114-102"
-          },
-          {
-            "timestamp": 1777836600,
-            "tournament": "NBA",
-            "home": "Detroit Pistons",
-            "away": "Orlando Magic",
-            "score": "116-94"
-          },
-          {
-            "timestamp": 1777678200,
-            "tournament": "NBA",
-            "home": "Toronto Raptors",
-            "away": "Cleveland Cavaliers",
-            "score": "112-110"
-          },
-          {
-            "timestamp": 1777676400,
-            "tournament": "NBA",
-            "home": "Orlando Magic",
-            "away": "Detroit Pistons",
-            "score": "79-93"
-          },
-          {
-            "timestamp": 1777505400,
-            "tournament": "NBA",
-            "home": "Cleveland Cavaliers",
-            "away": "Toronto Raptors",
-            "score": "125-120"
-          },
-          {
-            "timestamp": 1777503600,
-            "tournament": "NBA",
-            "home": "Detroit Pistons",
-            "away": "Orlando Magic",
-            "score": "116-109"
-          },
-          {
-            "timestamp": 1777334400,
-            "tournament": "NBA",
-            "home": "Orlando Magic",
-            "away": "Detroit Pistons",
-            "score": "94-88"
-          },
-          {
-            "timestamp": 1777222800,
-            "tournament": "NBA",
-            "home": "Toronto Raptors",
-            "away": "Cleveland Cavaliers",
-            "score": "93-89"
-          },
-          {
-            "timestamp": 1777136400,
-            "tournament": "NBA",
-            "home": "Orlando Magic",
-            "away": "Detroit Pistons",
-            "score": "113-105"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "205.5": {
-            "over": 1.85,
-            "under": 1.9
-          },
-          "206.5": {
-            "over": 1.9,
-            "under": 1.9
-          },
-          "201.5": {
-            "over": 1.57,
-            "under": 2.3
-          },
-          "202.5": {
-            "over": 1.6,
-            "under": 2.25
-          },
-          "203.5": {
-            "over": 1.67,
-            "under": 2.1
-          },
-          "204.5": {
-            "over": 1.73,
-            "under": 2
-          },
-          "207.5": {
-            "over": 2,
-            "under": 1.73
-          },
-          "208.5": {
-            "over": 2.05,
-            "under": 1.7
-          },
-          "209.5": {
-            "over": 2.2,
-            "under": 1.62
-          },
-          "210.5": {
-            "over": 2.3,
-            "under": 1.57
-          }
-        },
-        "handicap": {
-          "3.5": {
-            "away": 1.96
-          },
-          "-3.5": {
-            "home": 1.77
-          },
-          "4.5": {
-            "away": 1.9
-          },
-          "-4.5": {
-            "home": 1.9
-          },
-          "1.5": {
-            "home": 1.5,
-            "away": 2.38
-          },
-          "-1.5": {
-            "home": 1.53,
-            "away": 2.5
-          },
-          "2.5": {
-            "home": 1.5,
-            "away": 2.2
-          },
-          "-2.5": {
-            "home": 1.62,
-            "away": 2.5
-          },
-          "5.5": {
-            "away": 1.73
-          },
-          "-5.5": {
-            "home": 2
-          },
-          "6.5": {
-            "away": 1.62
-          },
-          "-6.5": {
-            "home": 2.2
-          },
-          "7.5": {
-            "away": 1.53
-          },
-          "-7.5": {
-            "home": 2.38
-          },
-          "8.5": {
-            "away": 1.5
-          },
-          "-8.5": {
-            "home": 2.5
-          },
-          "9.5": {
-            "away": 1.4
-          },
-          "-9.5": {
-            "home": 2.75
-          }
-        }
-      },
-      "sport_label": "🏀 Basketball",
-      "league_label": "NBA",
-      "archived_at": "2026-05-18T05:57:24.855Z"
-    },
     {
       "event_id": "nu25Ven2",
       "flashscore_id": "nu25Ven2",
@@ -133664,6 +133240,184 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA French Open (France)",
       "archived_at": "2026-05-31T17:46:06.135Z"
+    },
+    {
+      "event_id": "Cf3QMydJ",
+      "flashscore_id": "Cf3QMydJ",
+      "flashscore_sport_id": 1,
+      "home_team_id": "MgkzUx7T",
+      "away_team_id": "r3jWUIiN",
+      "tournament_id": "kgj2nu9m",
+      "tournament_url": "/football/belgium/jupiler-pro-league/",
+      "sport_key": "flashscore_football_uecl",
+      "commence_time": "2026-05-31T16:30:00.000Z",
+      "time_display": "Dim. 18h30",
+      "home": "Gent",
+      "away": "Genk",
+      "match": "Gent vs Genk",
+      "prono": "win-home",
+      "pari": "Les deux équipes ne marquent pas (BTTS Non)",
+      "cote_retenue": 2.26,
+      "cotes": {
+        "domicile": 2.08,
+        "nul": 3.73,
+        "exterieur": 3.55
+      },
+      "pick_category": "btts",
+      "analyse": "Ce duel 100% belge en Conference League oppose deux équipes en fin de saison avec une forme récente très terne. Gent n'a marqué qu'une seule fois lors de ses 5 derniers matchs (1-1 vs Anderlecht) et enchaîne les matchs sans but : 0-0 vs Union SG, 0-0 vs St. Truiden, 0-2 vs Club Brugge. De son côté, Genk reste sur un 0-0 face à Antwerp, un 0-0 contre St. Liège, un revers 2-0 à Charleroi, ne trouvant le filet que lors d'un 3-0 contre Westerlo. Sur les 10 derniers matchs combinés des deux équipes, on compte seulement 5 buts marqués au total, soit une moyenne de 0,5 but par match. Cette pénurie offensive chronique des deux côtés pointe clairement vers un match peu prolifique, avec une forte probabilité que l'une des deux équipes ne marque pas. Le marché BTTS No à 2.26 reflète bien cette réalité statistique et offre la meilleure valeur du tableau.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "0-0",
+      "actual_result": "draw",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1779640200,
+            "tournament": "JL",
+            "home": "Club Brugge KV",
+            "away": "Gent",
+            "score": "5-0"
+          },
+          {
+            "timestamp": 1779561900,
+            "tournament": "JL",
+            "home": "Leuven",
+            "away": "Genk",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779388200,
+            "tournament": "JL",
+            "home": "Gent",
+            "away": "Royale Union SG",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1779215400,
+            "tournament": "JL",
+            "home": "Genk",
+            "away": "Antwerp",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1778957100,
+            "tournament": "JL",
+            "home": "St. Truiden",
+            "away": "Gent",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1778948100,
+            "tournament": "JL",
+            "home": "St. Liege",
+            "away": "Genk",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1778433300,
+            "tournament": "JL",
+            "home": "Genk",
+            "away": "Westerlo",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1778412600,
+            "tournament": "JL",
+            "home": "Gent",
+            "away": "Anderlecht",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1777807800,
+            "tournament": "JL",
+            "home": "KV Mechelen",
+            "away": "Gent",
+            "score": "1-0"
+          },
+          {
+            "timestamp": 1777738500,
+            "tournament": "JL",
+            "home": "Charleroi",
+            "away": "Genk",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777203000,
+            "tournament": "JL",
+            "home": "Gent",
+            "away": "Club Brugge KV",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777133700,
+            "tournament": "JL",
+            "home": "Genk",
+            "away": "St. Liege",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776882600,
+            "tournament": "JL",
+            "home": "Royale Union SG",
+            "away": "Gent",
+            "score": "0-0"
+          },
+          {
+            "timestamp": 1776796200,
+            "tournament": "JL",
+            "home": "Genk",
+            "away": "Charleroi",
+            "score": "1-1"
+          },
+          {
+            "timestamp": 1776598200,
+            "tournament": "JL",
+            "home": "Gent",
+            "away": "St. Truiden",
+            "score": "0-0"
+          }
+        ]
+      },
+      "markets": {
+        "1x2": {
+          "home": 2.6,
+          "draw": 3.56,
+          "away": 2.48
+        },
+        "double_chance": {
+          "12": 1.29,
+          "1X": 1.5,
+          "X2": 1.46
+        },
+        "over_under": {
+          "1.5": {
+            "over": 1.2,
+            "under": 4
+          },
+          "2.5": {
+            "over": 1.68,
+            "under": 2.1
+          },
+          "3.5": {
+            "over": 2.7,
+            "under": 1.4
+          }
+        },
+        "btts": {
+          "yes": 1.57,
+          "no": 2.26
+        },
+        "draw_no_bet": {
+          "home": 1.95,
+          "away": 1.75
+        }
+      },
+      "sport_label": "⚽ Football",
+      "league_label": "Conference League",
+      "archived_at": "2026-05-31T20:41:07.360Z"
     }
   ],
   "combos": [
