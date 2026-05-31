@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-30T23:41:39.734Z",
+    "last_results_update": "2026-05-31T06:13:43.574Z",
     "analyses_written_at": "2026-05-30T07:43:13.304Z",
     "analyses_cost_usd": 0.1486,
-    "last_hourly_refresh": "2026-05-31T01:51:59.913Z"
+    "last_hourly_refresh": "2026-05-31T06:13:43.574Z"
   },
   "sports": {
     "foot": {
@@ -44,241 +44,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "zqDwM7Sa",
-              "flashscore_id": "zqDwM7Sa",
-              "flashscore_sport_id": 3,
-              "home_team_id": "0fHFHEWD",
-              "away_team_id": "IwmkErSH",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-05-31T00:00:00.000Z",
-              "time_display": "Dim. 02h00",
-              "home": "Oklahoma City Thunder",
-              "away": "San Antonio Spurs",
-              "match": "Oklahoma City Thunder vs San Antonio Spurs",
-              "prono": "win-home",
-              "pari": "Plus de 212.5 points",
-              "cote_retenue": 1.9,
-              "cotes": {
-                "domicile": 1.71,
-                "nul": null,
-                "exterieur": 2.3
-              },
-              "pick_category": "ou",
-              "analyse": "Ce match 6 de la série OKC-San Antonio est extrêmement serré : les Spurs mènent 3-2 après leur victoire convaincante 118-91 lors du match 5 (écart de 27 points). En analysant les 5 confrontations directes de cette série, on observe une grande variabilité dans les scores totaux : 209 (M1), 241 (M2), 185 (M3), 231 (M4), 235 (M5). Les deux derniers matchs ont tous deux dépassé 220 points, les Spurs démontrant une attaque explosive face à OKC (139 pts vs Minnesota, 126 pts). OKC a répondu avec de l'intensité défensive lors du match 3 (82 pts concédés), mais les Spurs ont su s'adapter. Le contexte de match éliminatoire pour OKC pousse généralement vers plus d'intensité défensive, mais les deux équipes ont montré lors de cette série qu'elles peuvent produire des totaux élevés dès que le rythme s'emballe. Avec 3 des 5 derniers affrontements dépassant 220 points et une tendance offensive confirmée pour San Antonio, le pari sur le dépassement de 212.5 points à cote équilibrée semble le plus solide.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1780014600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "118-91"
-                  },
-                  {
-                    "timestamp": 1779841800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "127-114"
-                  },
-                  {
-                    "timestamp": 1779667200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "103-82"
-                  },
-                  {
-                    "timestamp": 1779496200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-123"
-                  },
-                  {
-                    "timestamp": 1779323400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "122-113"
-                  },
-                  {
-                    "timestamp": 1779150600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "115-122"
-                  },
-                  {
-                    "timestamp": 1778895000,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "109-139"
-                  },
-                  {
-                    "timestamp": 1778630400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "126-97"
-                  },
-                  {
-                    "timestamp": 1778553000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "110-115"
-                  },
-                  {
-                    "timestamp": 1778455800,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "114-109"
-                  },
-                  {
-                    "timestamp": 1778373000,
-                    "tournament": "NBA",
-                    "home": "Los Angeles Lakers",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-131"
-                  },
-                  {
-                    "timestamp": 1778290200,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "108-115"
-                  },
-                  {
-                    "timestamp": 1778203800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "125-107"
-                  },
-                  {
-                    "timestamp": 1778117400,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Minnesota Timberwolves",
-                    "score": "133-95"
-                  },
-                  {
-                    "timestamp": 1778027400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "Los Angeles Lakers",
-                    "score": "108-90"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "211.5": {
-                    "over": 1.81,
-                    "under": 1.87
-                  },
-                  "212.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "208.5": {
-                    "over": 1.57,
-                    "under": 2.3
-                  },
-                  "209.5": {
-                    "over": 1.62,
-                    "under": 2.2
-                  },
-                  "210.5": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "213.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "214.5": {
-                    "over": 2,
-                    "under": 1.73
-                  },
-                  "215.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "216.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "3.5": {
-                    "away": 1.9
-                  },
-                  "-3.5": {
-                    "home": 1.9
-                  },
-                  "1.5": {
-                    "home": 1.53,
-                    "away": 2.2
-                  },
-                  "-1.5": {
-                    "home": 1.62,
-                    "away": 2.38
-                  },
-                  "2.5": {
-                    "away": 2
-                  },
-                  "-2.5": {
-                    "home": 1.73
-                  },
-                  "4.5": {
-                    "away": 1.73
-                  },
-                  "-4.5": {
-                    "home": 2
-                  },
-                  "5.5": {
-                    "away": 1.7
-                  },
-                  "-5.5": {
-                    "home": 2.05
-                  },
-                  "6.5": {
-                    "away": 1.6
-                  },
-                  "-6.5": {
-                    "home": 2.25
-                  },
-                  "7.5": {
-                    "away": 1.5
-                  },
-                  "-7.5": {
-                    "home": 2.5
-                  },
-                  "8.5": {
-                    "away": 1.4
-                  },
-                  "-8.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -2213,184 +1979,6 @@
     "zqDwM7Sa"
   ],
   "history": [
-    {
-      "event_id": "xbwdLg87",
-      "flashscore_id": "xbwdLg87",
-      "flashscore_sport_id": 1,
-      "home_team_id": "SblU3Hee",
-      "away_team_id": "d2nnj1IE",
-      "tournament_id": "j9qetlpp",
-      "tournament_url": "/football/france/ligue-1/",
-      "sport_key": "flashscore_football_ligue1",
-      "commence_time": "2026-05-17T19:00:00.000Z",
-      "time_display": "Dim. 21h00",
-      "home": "Marseille",
-      "away": "Rennes",
-      "match": "Marseille vs Rennes",
-      "prono": "win-home",
-      "pari": "Les deux équipes marquent",
-      "cote_retenue": 1.44,
-      "cotes": {
-        "domicile": 1.85,
-        "nul": 4.3,
-        "exterieur": 3.89
-      },
-      "pick_category": "btts",
-      "analyse": "Marseille reçoit Rennes dans un choc de fin de saison en Ligue 1. Les Phocéens présentent une forme très irrégulière : si leur victoire à Le Havre (0-1) rassure, ils ont concédé une lourde défaite face à Nantes (3-0) et encaissé des buts contre Nice (1-1), Lorient (2-0) et Lille (1-2). Leur défense est clairement friable à domicile. Rennes, de son côté, traverse une excellente période avec quatre victoires lors des cinq derniers matches, dont un remarquable 4-3 à Brest et des succès contre Nantes, Angers et Strasbourg. Seule la défaite à Lyon (4-2) ternit ce bilan, mais elle confirme que les deux équipes produisent du jeu offensif. Les deux formations ont montré une tendance nette à marquer ET à encaisser : Rennes a inscrit 11 buts lors de ses cinq derniers matches tout en en prenant 7, tandis que Marseille a marqué dans 4 de ses 5 derniers. Dans ce contexte, les deux équipes qui scorent semble le pari le plus justifié, d'autant que le Vélodrome pousse à l'attaque.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "3-1",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778439600,
-            "tournament": "L1",
-            "home": "Le Havre",
-            "away": "Marseille",
-            "score": "0-1"
-          },
-          {
-            "timestamp": 1778439600,
-            "tournament": "L1",
-            "home": "Rennes",
-            "away": "Paris FC",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777833900,
-            "tournament": "L1",
-            "home": "Lyon",
-            "away": "Rennes",
-            "score": "4-2"
-          },
-          {
-            "timestamp": 1777726800,
-            "tournament": "L1",
-            "home": "Nantes",
-            "away": "Marseille",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1777229100,
-            "tournament": "L1",
-            "home": "Marseille",
-            "away": "Nice",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1777216500,
-            "tournament": "L1",
-            "home": "Rennes",
-            "away": "Nantes",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776611700,
-            "tournament": "L1",
-            "home": "Strasbourg",
-            "away": "Rennes",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1776524400,
-            "tournament": "L1",
-            "home": "Lorient",
-            "away": "Marseille",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775934300,
-            "tournament": "L1",
-            "home": "Rennes",
-            "away": "Angers",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775847900,
-            "tournament": "L1",
-            "home": "Marseille",
-            "away": "Metz",
-            "score": "3-1"
-          },
-          {
-            "timestamp": 1775414700,
-            "tournament": "L1",
-            "home": "Monaco",
-            "away": "Marseille",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775322000,
-            "tournament": "L1",
-            "home": "Brest",
-            "away": "Rennes",
-            "score": "3-4"
-          },
-          {
-            "timestamp": 1774196100,
-            "tournament": "L1",
-            "home": "Marseille",
-            "away": "Lille",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1774196100,
-            "tournament": "L1",
-            "home": "Rennes",
-            "away": "Metz",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1773603900,
-            "tournament": "L1",
-            "home": "Rennes",
-            "away": "Lille",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 2,
-          "draw": 3.77,
-          "away": 3.4
-        },
-        "double_chance": {
-          "12": 1.25,
-          "1X": 1.31,
-          "X2": 1.77
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.13,
-            "under": 5.45
-          },
-          "2.5": {
-            "over": 1.44,
-            "under": 2.58
-          },
-          "3.5": {
-            "over": 2.15,
-            "under": 1.67
-          }
-        },
-        "btts": {
-          "yes": 1.44,
-          "no": 2.65
-        },
-        "draw_no_bet": {
-          "home": 1.5,
-          "away": 2.4
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "Ligue 1",
-      "archived_at": "2026-05-17T21:39:11.259Z"
-    },
     {
       "event_id": "44Vsqc0E",
       "flashscore_id": "44Vsqc0E",
@@ -133713,6 +133301,242 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP French Open (France)",
       "archived_at": "2026-05-30T23:41:39.734Z"
+    },
+    {
+      "event_id": "zqDwM7Sa",
+      "flashscore_id": "zqDwM7Sa",
+      "flashscore_sport_id": 3,
+      "home_team_id": "0fHFHEWD",
+      "away_team_id": "IwmkErSH",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-05-31T00:00:00.000Z",
+      "time_display": "Dim. 02h00",
+      "home": "Oklahoma City Thunder",
+      "away": "San Antonio Spurs",
+      "match": "Oklahoma City Thunder vs San Antonio Spurs",
+      "prono": "win-home",
+      "pari": "Plus de 212.5 points",
+      "cote_retenue": 1.9,
+      "cotes": {
+        "domicile": 1.71,
+        "nul": null,
+        "exterieur": 2.3
+      },
+      "pick_category": "ou",
+      "analyse": "Ce match 6 de la série OKC-San Antonio est extrêmement serré : les Spurs mènent 3-2 après leur victoire convaincante 118-91 lors du match 5 (écart de 27 points). En analysant les 5 confrontations directes de cette série, on observe une grande variabilité dans les scores totaux : 209 (M1), 241 (M2), 185 (M3), 231 (M4), 235 (M5). Les deux derniers matchs ont tous deux dépassé 220 points, les Spurs démontrant une attaque explosive face à OKC (139 pts vs Minnesota, 126 pts). OKC a répondu avec de l'intensité défensive lors du match 3 (82 pts concédés), mais les Spurs ont su s'adapter. Le contexte de match éliminatoire pour OKC pousse généralement vers plus d'intensité défensive, mais les deux équipes ont montré lors de cette série qu'elles peuvent produire des totaux élevés dès que le rythme s'emballe. Avec 3 des 5 derniers affrontements dépassant 220 points et une tendance offensive confirmée pour San Antonio, le pari sur le dépassement de 212.5 points à cote équilibrée semble le plus solide.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "103-111",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1780014600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "118-91"
+          },
+          {
+            "timestamp": 1779841800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "127-114"
+          },
+          {
+            "timestamp": 1779667200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "103-82"
+          },
+          {
+            "timestamp": 1779496200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "108-123"
+          },
+          {
+            "timestamp": 1779323400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "122-113"
+          },
+          {
+            "timestamp": 1779150600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "115-122"
+          },
+          {
+            "timestamp": 1778895000,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "109-139"
+          },
+          {
+            "timestamp": 1778630400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "126-97"
+          },
+          {
+            "timestamp": 1778553000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "110-115"
+          },
+          {
+            "timestamp": 1778455800,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "114-109"
+          },
+          {
+            "timestamp": 1778373000,
+            "tournament": "NBA",
+            "home": "Los Angeles Lakers",
+            "away": "Oklahoma City Thunder",
+            "score": "108-131"
+          },
+          {
+            "timestamp": 1778290200,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "108-115"
+          },
+          {
+            "timestamp": 1778203800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "125-107"
+          },
+          {
+            "timestamp": 1778117400,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Minnesota Timberwolves",
+            "score": "133-95"
+          },
+          {
+            "timestamp": 1778027400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "Los Angeles Lakers",
+            "score": "108-90"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "211.5": {
+            "over": 1.81,
+            "under": 1.87
+          },
+          "212.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "208.5": {
+            "over": 1.57,
+            "under": 2.3
+          },
+          "209.5": {
+            "over": 1.62,
+            "under": 2.2
+          },
+          "210.5": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "213.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "214.5": {
+            "over": 2,
+            "under": 1.73
+          },
+          "215.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "216.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "3.5": {
+            "away": 1.9
+          },
+          "-3.5": {
+            "home": 1.9
+          },
+          "1.5": {
+            "home": 1.53,
+            "away": 2.2
+          },
+          "-1.5": {
+            "home": 1.62,
+            "away": 2.38
+          },
+          "2.5": {
+            "away": 2
+          },
+          "-2.5": {
+            "home": 1.73
+          },
+          "4.5": {
+            "away": 1.73
+          },
+          "-4.5": {
+            "home": 2
+          },
+          "5.5": {
+            "away": 1.7
+          },
+          "-5.5": {
+            "home": 2.05
+          },
+          "6.5": {
+            "away": 1.6
+          },
+          "-6.5": {
+            "home": 2.25
+          },
+          "7.5": {
+            "away": 1.5
+          },
+          "-7.5": {
+            "home": 2.5
+          },
+          "8.5": {
+            "away": 1.4
+          },
+          "-8.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-05-31T06:13:43.574Z"
     }
   ],
   "combos": [
