@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-05-31T11:19:41.088Z",
+    "last_results_update": "2026-05-31T15:05:01.666Z",
     "analyses_written_at": "2026-05-31T08:11:58.083Z",
     "analyses_cost_usd": 0.0482,
-    "last_hourly_refresh": "2026-05-31T13:01:26.776Z"
+    "last_hourly_refresh": "2026-05-31T15:05:01.666Z"
   },
   "sports": {
     "foot": {
@@ -44,9 +44,9 @@
               "pari": "Les deux équipes ne marquent pas (BTTS Non)",
               "cote_retenue": 2.26,
               "cotes": {
-                "domicile": 2.25,
-                "nul": 3.53,
-                "exterieur": 3.12
+                "domicile": 2.21,
+                "nul": 3.52,
+                "exterieur": 3.22
               },
               "pick_category": "btts",
               "analyse": "Ce duel 100% belge en Conference League oppose deux équipes en fin de saison avec une forme récente très terne. Gent n'a marqué qu'une seule fois lors de ses 5 derniers matchs (1-1 vs Anderlecht) et enchaîne les matchs sans but : 0-0 vs Union SG, 0-0 vs St. Truiden, 0-2 vs Club Brugge. De son côté, Genk reste sur un 0-0 face à Antwerp, un 0-0 contre St. Liège, un revers 2-0 à Charleroi, ne trouvant le filet que lors d'un 3-0 contre Westerlo. Sur les 10 derniers matchs combinés des deux équipes, on compte seulement 5 buts marqués au total, soit une moyenne de 0,5 but par match. Cette pénurie offensive chronique des deux côtés pointe clairement vers un match peu prolifique, avec une forte probabilité que l'une des deux équipes ne marque pas. Le marché BTTS No à 2.26 reflète bien cette réalité statistique et offre la meilleure valeur du tableau.",
@@ -640,16 +640,16 @@
               "pari": "Moins de 35.5 jeux",
               "cote_retenue": 1.45,
               "cotes": {
-                "domicile": 15.5,
+                "domicile": 9.96,
                 "nul": null,
-                "exterieur": 1.04
+                "exterieur": 1.06
               },
               "pick_category": "ou",
               "analyse": "Alexander Zverev s'impose comme le grand favori de ce quart de finale à Roland-Garros, ayant éliminé Bonzi (3-0), Machac (3-0) et Halys (3-1) sans perdre un set lors de ses deux premiers tours à Paris cette année. De son côté, Jiri De Jong réalise un parcours surprenant en battant Sun, Draxl, Wawrinka (3-1), Cina (3-0) et Khachanov (3-2), mais il a aussi perdu face à Zheng M. en qualifications (0-2) et face à Borges à Rome (0-2). Le différentiel de niveau est considérable : Zverev est tête de série, domine physiquement et tactiquement sur terre battue, tandis que De Jong est un joueur de fond de tableau sans palmarès sur ce type de scène. Le fait que De Jong ait souvent joué des matchs longs (3-2, 3-1) suggère qu'il peut gratter des jeux, mais face à Zverev, on attend un match expédié rapidement, probablement en 3 sets nets. Le handicap -3.5 jeux en faveur de Zverev à 1.11 est trop bas, mais la ligne 'Moins de 35.5 jeux' à 1.45 offre une valeur acceptable : Zverev a remporté ses 3 matchs à Paris pour un total de jeux très contenu, et une victoire 6-3 6-4 6-2 ou similaire resterait sous ce seuil.",
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -1023,9 +1023,9 @@
               "pari": "Plus de 38.5 jeux",
               "cote_retenue": 1.78,
               "cotes": {
-                "domicile": 2.08,
+                "domicile": 2.1,
                 "nul": null,
-                "exterieur": 1.84
+                "exterieur": 1.82
               },
               "pick_category": "ou",
               "analyse": "Mensik traverse Roland-Garros avec une belle régularité : victoires convaincantes sur Droguet (3-0), Navone (3-2 après un set perdu) et De Minaur (3-1), montrant une capacité à gérer les matchs difficiles sur terre battue. Rublev de son côté affiche trois victoires nettes à Paris — Buse (3-1), Carabelli (3-1), Borges (3-0) — mais a été balayé 2-0 par Sinner à Rome récemment. Les deux joueurs sont en huitième de finale et jouent avec confiance, mais aucun ne domine franchement l'autre sur le papier : Rublev est un guerrier de terre battue avec un jeu de fond de court très solide, tandis que Mensik a montré à Hamburg et Paris qu'il peut rivaliser avec les meilleurs. Le parcours de Mensik, plus chahuté (2 sets perdus vs Navone), suggère qu'il est capable de disputer des matchs longs, ce qui favorise un total de jeux élevé. Les deux compétiteurs ont tendance à jouer des échanges intenses depuis la ligne de fond sur terre battue, et un duel en 3 ou 4 sets semble probable, poussant le comptage de jeux au-delà des lignes basses proposées. La ligne 38.5 à 1.78 représente un équilibre intéressant entre valeur et probabilité réelle.",
@@ -1384,7 +1384,7 @@
               "pari": "Plus de 38.5 jeux",
               "cote_retenue": 1.9,
               "cotes": {
-                "domicile": 1.57,
+                "domicile": 1.58,
                 "nul": null,
                 "exterieur": 2.56
               },
@@ -1763,337 +1763,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "ziou9syS",
-              "flashscore_id": "ziou9syS",
-              "flashscore_sport_id": 2,
-              "home_team_id": "jyngIesG",
-              "away_team_id": "ObGlDvu0",
-              "tournament_id": "0n2yc0d5",
-              "tournament_url": "/tennis/wta-singles/french-open/",
-              "sport_key": "flashscore_tennis_wta_french_open_france",
-              "commence_time": "2026-05-31T10:30:00.000Z",
-              "time_display": "Dim. 12h30",
-              "home": "Svitolina E.",
-              "away": "Bencic B.",
-              "match": "Svitolina E. vs Bencic B.",
-              "prono": "win-home",
-              "pari": "Moins de 22.5 jeux",
-              "cote_retenue": 1.74,
-              "cotes": {
-                "domicile": 1.56,
-                "nul": null,
-                "exterieur": 2.59
-              },
-              "pick_category": "ou",
-              "analyse": "Svitolina traverse une période de forme absolument remarquable : elle a remporté 8 de ses 9 derniers matchs, dont des victoires retentissantes à Rome face à Swiatek et Gauff, deux Top 5 mondiales. Sur terre battue à Roland-Garros cette année, elle a écrasé Quevedo et Korpatsch en deux sets secs. Bencic, de son côté, présente une forme plus irrégulière : trois victoires nettes à Roland-Garros mais une élimination précoce à Rome contre Kalinskaya et une défaite à Madrid face à Baptiste. Le niveau de Svitolina sur cette surface est nettement supérieur en ce moment, avec une intensité défensive et une régularité dans les échanges qui lui permettent de dominer des adversaires de haut rang. Les matches de Svitolina à Roland-Garros 2026 ont été relativement expéditifs (deux victoires en deux sets et une en trois), tandis que Bencic a également joué trois matchs dont deux en deux sets, suggérant que la rencontre pourrait rester dans un total de jeux modéré. Compte tenu de la solidité de Svitolina et de la tendance récente des deux joueuses à conclure leurs matchs sans s'éterniser, le total sous 22.5 jeux représente une option solide.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1780080000,
-                    "tournament": "FO",
-                    "home": "Stearns P.",
-                    "away": "Bencic B.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1780065300,
-                    "tournament": "FO",
-                    "home": "Svitolina E.",
-                    "away": "Korpatsch T.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779883500,
-                    "tournament": "FO",
-                    "home": "Svitolina E.",
-                    "away": "Quevedo K.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779873000,
-                    "tournament": "FO",
-                    "home": "McNally C.",
-                    "away": "Bencic B.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779710700,
-                    "tournament": "FO",
-                    "home": "Svitolina E.",
-                    "away": "Bondar A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1779617400,
-                    "tournament": "FO",
-                    "home": "Kraus S.",
-                    "away": "Bencic B.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778947800,
-                    "tournament": "ROM",
-                    "home": "Gauff C.",
-                    "away": "Svitolina E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778790000,
-                    "tournament": "ROM",
-                    "home": "Swiatek I.",
-                    "away": "Svitolina E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778695200,
-                    "tournament": "ROM",
-                    "home": "Svitolina E.",
-                    "away": "Rybakina E.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778506800,
-                    "tournament": "ROM",
-                    "home": "Svitolina E.",
-                    "away": "Bartunkova N.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778404200,
-                    "tournament": "ROM",
-                    "home": "Svitolina E.",
-                    "away": "Baptiste H.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778355000,
-                    "tournament": "ROM",
-                    "home": "Bencic B.",
-                    "away": "Kalinskaya A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778260200,
-                    "tournament": "ROM",
-                    "home": "Svitolina E.",
-                    "away": "Basiletti N.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778171700,
-                    "tournament": "ROM",
-                    "home": "Bencic B.",
-                    "away": "Andreescu B.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777281000,
-                    "tournament": "MAD",
-                    "home": "Bencic B.",
-                    "away": "Baptiste H.",
-                    "score": "1-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.17,
-                    "under": 4
-                  },
-                  "18.0": {
-                    "over": 1.19,
-                    "under": 3.74
-                  },
-                  "18.5": {
-                    "over": 1.33,
-                    "under": 3.06
-                  },
-                  "19.0": {
-                    "over": 1.34,
-                    "under": 2.83
-                  },
-                  "19.5": {
-                    "over": 1.48,
-                    "under": 2.51
-                  },
-                  "20.0": {
-                    "over": 1.51,
-                    "under": 2.35
-                  },
-                  "20.5": {
-                    "over": 1.62,
-                    "under": 2.16
-                  },
-                  "21.0": {
-                    "over": 1.69,
-                    "under": 2.07
-                  },
-                  "21.5": {
-                    "over": 1.83,
-                    "under": 1.95
-                  },
-                  "22.0": {
-                    "over": 1.87,
-                    "under": 1.85
-                  },
-                  "22.5": {
-                    "over": 1.99,
-                    "under": 1.74
-                  },
-                  "23.0": {
-                    "over": 2.06,
-                    "under": 1.66
-                  },
-                  "23.5": {
-                    "over": 2.2,
-                    "under": 1.62
-                  },
-                  "24.0": {
-                    "over": 2.18,
-                    "under": 1.56
-                  },
-                  "24.5": {
-                    "over": 2.32,
-                    "under": 1.54
-                  },
-                  "25.0": {
-                    "over": 2.41,
-                    "under": 1.45
-                  },
-                  "25.5": {
-                    "over": 2.6,
-                    "under": 1.44
-                  },
-                  "2.5": {
-                    "over": 2.3,
-                    "under": 1.58
-                  },
-                  "26.5": {
-                    "over": 3.05,
-                    "under": 1.38
-                  },
-                  "27.5": {
-                    "over": 3.5,
-                    "under": 1.3
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.21,
-                    "away": 1.85
-                  },
-                  "-1.5": {
-                    "home": 1.94,
-                    "away": 3.8
-                  },
-                  "0.0": {
-                    "home": 1.5,
-                    "away": 2.45
-                  },
-                  "0.5": {
-                    "home": 1.47,
-                    "away": 2.4
-                  },
-                  "-0.5": {
-                    "home": 1.54,
-                    "away": 2.62
-                  },
-                  "1.0": {
-                    "home": 1.43,
-                    "away": 2.24
-                  },
-                  "-1.0": {
-                    "home": 1.59,
-                    "away": 2.66
-                  },
-                  "2.0": {
-                    "away": 2.05
-                  },
-                  "-2.0": {
-                    "home": 1.7
-                  },
-                  "2.5": {
-                    "home": 1.34,
-                    "away": 1.96
-                  },
-                  "-2.5": {
-                    "home": 1.78,
-                    "away": 3.25
-                  },
-                  "3.0": {
-                    "away": 1.83
-                  },
-                  "-3.0": {
-                    "home": 1.89
-                  },
-                  "3.5": {
-                    "home": 1.26,
-                    "away": 1.73
-                  },
-                  "-3.5": {
-                    "home": 2,
-                    "away": 3.9
-                  },
-                  "4.0": {
-                    "away": 1.58
-                  },
-                  "-4.0": {
-                    "home": 2.26
-                  },
-                  "4.5": {
-                    "away": 1.52
-                  },
-                  "-4.5": {
-                    "home": 2.46
-                  },
-                  "5.0": {
-                    "away": 1.36
-                  },
-                  "-5.0": {
-                    "home": 2.94
-                  },
-                  "5.5": {
-                    "away": 1.33
-                  },
-                  "-5.5": {
-                    "home": 3.23
-                  },
-                  "6.0": {
-                    "away": 1.18
-                  },
-                  "-6.0": {
-                    "home": 4.4
-                  },
-                  "6.5": {
-                    "away": 1.16
-                  },
-                  "-6.5": {
-                    "home": 4.75
-                  },
-                  "7.0": {
-                    "away": 1.07
-                  },
-                  "-7.0": {
-                    "home": 7.2
-                  },
-                  "7.5": {
-                    "away": 1.06
-                  },
-                  "-7.5": {
-                    "home": 7.7
-                  }
-                }
-              }
-            },
-            {
               "event_id": "0hwIq7Tq",
               "flashscore_id": "0hwIq7Tq",
               "flashscore_sport_id": 2,
@@ -2113,7 +1782,7 @@
               "cotes": {
                 "domicile": 1.14,
                 "nul": null,
-                "exterieur": 6.82
+                "exterieur": 6.59
               },
               "pick_category": "1x2",
               "analyse": "Andreeva et Teichmann se rencontrent en 3e tour à Roland-Garros dans un duel entre deux joueuses en excellente forme sur terre battue. Andreeva a remporté 4 de ses 5 derniers matchs, dont trois victoires à Roland-Garros cette semaine (2-0 vs Ferro, 2-0 vs Bouzkova, 2-1 vs Bassols), montrant une solidité indéniable sur ocre. Teichmann, de son côté, affiche quatre victoires consécutives à Roland-Garros (2-0 vs Muchova, 2-0 vs Frech, 2-0 vs Samsonova) après avoir enchaîné les bons résultats à Rabat. La Suissesse a toutefois concédé un set à Kabbaj à Rabat et a perdu en finale face à Masarova début mai, signe qu'elle n'est pas invincible. Andreeva, 18 ans, est la 7e mondiale et possède une puissance de frappe supérieure ainsi qu'une meilleure progression sur surface lente. Les cotes sur le handicap jeux suggèrent une domination nette d'Andreeva, et le marché over/under indique une ligne autour de 18-19 jeux, cohérente avec les matchs récents des deux joueuses (plusieurs 2-0 nets). Compte tenu du niveau d'Andreeva et de son avantage de forme, une victoire en 2 sets secs avec au moins 4 jeux d'écart est plausible : le handicap -4.5 jeux en faveur d'Andreeva à 1.35 offre une valeur intéressante.",
@@ -2433,184 +2102,6 @@
     "0hwIq7Tq"
   ],
   "history": [
-    {
-      "event_id": "SduXBE3E",
-      "flashscore_id": "SduXBE3E",
-      "flashscore_sport_id": 1,
-      "home_team_id": "SKbpVP5K",
-      "away_team_id": "vJbTeCGP",
-      "tournament_id": "vcm2mhgk",
-      "tournament_url": "/football/spain/laliga/",
-      "sport_key": "flashscore_football_liga",
-      "commence_time": "2026-05-17T19:15:00.000Z",
-      "time_display": "Dim. 21h15",
-      "home": "Barcelona",
-      "away": "Betis",
-      "match": "Barcelona vs Betis",
-      "prono": "win-home",
-      "pari": "Plus de 2.5 buts",
-      "cote_retenue": 1.31,
-      "cotes": {
-        "domicile": 1.38,
-        "nul": 6.21,
-        "exterieur": 6.9
-      },
-      "pick_category": "ou",
-      "analyse": "Le Barça reste une machine à domicile cette saison, avec des victoires récentes contre le Real Madrid (2-0), Osasuna (2-1), Getafe (2-0), Celta Vigo (1-0) et Espanyol (4-1), ne concédant qu'un seul but dans ces cinq rencontres à domicile ou en déplacement. Seule une défaite surprise à Alaves (1-0) le 13 mai vient ternir leur parcours, probablement dans un contexte de rotation en fin de saison. Betis affiche une forme correcte avec des victoires contre Elche (2-1), Oviedo (3-0) et Girona (3-2), mais reste vulnérable défensivement — ils ont encaissé en Europa League face à Braga (2-4) et concédé le nul contre Osasuna et la Real Sociedad. Face au Real Madrid chez eux (1-1), Betis a tenu, mais le niveau offensif barcelonais est supérieur. L'attaque du Barça est prolifique à domicile et Betis concède régulièrement, ce qui rend une victoire barcelonaise nette très plausible. Le total de buts est intéressant : Betis marque souvent mais prend aussi des buts, et le Barça pourrait dérouler devant son public. Plus de 2.5 buts semble une option solide au regard des deux profils offensifs en présence.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "3-1",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1778700600,
-            "tournament": "LL",
-            "home": "Alaves",
-            "away": "Barcelona",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1778608800,
-            "tournament": "LL",
-            "home": "Betis",
-            "away": "Elche",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778439600,
-            "tournament": "LL",
-            "home": "Barcelona",
-            "away": "Real Madrid",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778353200,
-            "tournament": "LL",
-            "home": "Real Sociedad",
-            "away": "Betis",
-            "score": "2-2"
-          },
-          {
-            "timestamp": 1777825800,
-            "tournament": "LL",
-            "home": "Betis",
-            "away": "Oviedo",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1777748400,
-            "tournament": "LL",
-            "home": "Osasuna",
-            "away": "Barcelona",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777126500,
-            "tournament": "LL",
-            "home": "Getafe",
-            "away": "Barcelona",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777057200,
-            "tournament": "LL",
-            "home": "Betis",
-            "away": "Real Madrid",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1776886200,
-            "tournament": "LL",
-            "home": "Barcelona",
-            "away": "Celta Vigo",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1776799800,
-            "tournament": "LL",
-            "home": "Girona",
-            "away": "Betis",
-            "score": "2-3"
-          },
-          {
-            "timestamp": 1776366000,
-            "tournament": "EL",
-            "home": "Betis",
-            "away": "Braga",
-            "score": "2-4"
-          },
-          {
-            "timestamp": 1776193200,
-            "tournament": "CL",
-            "home": "Atl. Madrid",
-            "away": "Barcelona",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1775995200,
-            "tournament": "LL",
-            "home": "Osasuna",
-            "away": "Betis",
-            "score": "1-1"
-          },
-          {
-            "timestamp": 1775925000,
-            "tournament": "LL",
-            "home": "Barcelona",
-            "away": "Espanyol",
-            "score": "4-1"
-          },
-          {
-            "timestamp": 1775674800,
-            "tournament": "CL",
-            "home": "Barcelona",
-            "away": "Atl. Madrid",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "1x2": {
-          "home": 1.32,
-          "draw": 6,
-          "away": 8
-        },
-        "double_chance": {
-          "12": 1.13,
-          "1X": 1.08,
-          "X2": 3.3
-        },
-        "over_under": {
-          "1.5": {
-            "over": 1.08,
-            "under": 7
-          },
-          "2.5": {
-            "over": 1.31,
-            "under": 3.33
-          },
-          "3.5": {
-            "over": 1.83,
-            "under": 2
-          }
-        },
-        "btts": {
-          "yes": 1.54,
-          "no": 2.37
-        },
-        "draw_no_bet": {
-          "home": 1.11,
-          "away": 6
-        }
-      },
-      "sport_label": "⚽ Football",
-      "league_label": "LaLiga",
-      "archived_at": "2026-05-17T21:39:11.259Z"
-    },
     {
       "event_id": "YH84GNJi",
       "flashscore_id": "YH84GNJi",
@@ -134365,6 +133856,340 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA French Open (France)",
       "archived_at": "2026-05-31T11:19:41.088Z"
+    },
+    {
+      "event_id": "ziou9syS",
+      "flashscore_id": "ziou9syS",
+      "flashscore_sport_id": 2,
+      "home_team_id": "jyngIesG",
+      "away_team_id": "ObGlDvu0",
+      "tournament_id": "0n2yc0d5",
+      "tournament_url": "/tennis/wta-singles/french-open/",
+      "sport_key": "flashscore_tennis_wta_french_open_france",
+      "commence_time": "2026-05-31T10:30:00.000Z",
+      "time_display": "Dim. 12h30",
+      "home": "Svitolina E.",
+      "away": "Bencic B.",
+      "match": "Svitolina E. vs Bencic B.",
+      "prono": "win-home",
+      "pari": "Moins de 22.5 jeux",
+      "cote_retenue": 1.74,
+      "cotes": {
+        "domicile": 1.56,
+        "nul": null,
+        "exterieur": 2.59
+      },
+      "pick_category": "ou",
+      "analyse": "Svitolina traverse une période de forme absolument remarquable : elle a remporté 8 de ses 9 derniers matchs, dont des victoires retentissantes à Rome face à Swiatek et Gauff, deux Top 5 mondiales. Sur terre battue à Roland-Garros cette année, elle a écrasé Quevedo et Korpatsch en deux sets secs. Bencic, de son côté, présente une forme plus irrégulière : trois victoires nettes à Roland-Garros mais une élimination précoce à Rome contre Kalinskaya et une défaite à Madrid face à Baptiste. Le niveau de Svitolina sur cette surface est nettement supérieur en ce moment, avec une intensité défensive et une régularité dans les échanges qui lui permettent de dominer des adversaires de haut rang. Les matches de Svitolina à Roland-Garros 2026 ont été relativement expéditifs (deux victoires en deux sets et une en trois), tandis que Bencic a également joué trois matchs dont deux en deux sets, suggérant que la rencontre pourrait rester dans un total de jeux modéré. Compte tenu de la solidité de Svitolina et de la tendance récente des deux joueuses à conclure leurs matchs sans s'éterniser, le total sous 22.5 jeux représente une option solide.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1780080000,
+            "tournament": "FO",
+            "home": "Stearns P.",
+            "away": "Bencic B.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1780065300,
+            "tournament": "FO",
+            "home": "Svitolina E.",
+            "away": "Korpatsch T.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779883500,
+            "tournament": "FO",
+            "home": "Svitolina E.",
+            "away": "Quevedo K.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779873000,
+            "tournament": "FO",
+            "home": "McNally C.",
+            "away": "Bencic B.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779710700,
+            "tournament": "FO",
+            "home": "Svitolina E.",
+            "away": "Bondar A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1779617400,
+            "tournament": "FO",
+            "home": "Kraus S.",
+            "away": "Bencic B.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778947800,
+            "tournament": "ROM",
+            "home": "Gauff C.",
+            "away": "Svitolina E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778790000,
+            "tournament": "ROM",
+            "home": "Swiatek I.",
+            "away": "Svitolina E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778695200,
+            "tournament": "ROM",
+            "home": "Svitolina E.",
+            "away": "Rybakina E.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778506800,
+            "tournament": "ROM",
+            "home": "Svitolina E.",
+            "away": "Bartunkova N.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778404200,
+            "tournament": "ROM",
+            "home": "Svitolina E.",
+            "away": "Baptiste H.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778355000,
+            "tournament": "ROM",
+            "home": "Bencic B.",
+            "away": "Kalinskaya A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778260200,
+            "tournament": "ROM",
+            "home": "Svitolina E.",
+            "away": "Basiletti N.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778171700,
+            "tournament": "ROM",
+            "home": "Bencic B.",
+            "away": "Andreescu B.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777281000,
+            "tournament": "MAD",
+            "home": "Bencic B.",
+            "away": "Baptiste H.",
+            "score": "1-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.5": {
+            "over": 1.17,
+            "under": 4
+          },
+          "18.0": {
+            "over": 1.19,
+            "under": 3.74
+          },
+          "18.5": {
+            "over": 1.33,
+            "under": 3.06
+          },
+          "19.0": {
+            "over": 1.34,
+            "under": 2.83
+          },
+          "19.5": {
+            "over": 1.48,
+            "under": 2.51
+          },
+          "20.0": {
+            "over": 1.51,
+            "under": 2.35
+          },
+          "20.5": {
+            "over": 1.62,
+            "under": 2.16
+          },
+          "21.0": {
+            "over": 1.69,
+            "under": 2.07
+          },
+          "21.5": {
+            "over": 1.83,
+            "under": 1.95
+          },
+          "22.0": {
+            "over": 1.87,
+            "under": 1.85
+          },
+          "22.5": {
+            "over": 1.99,
+            "under": 1.74
+          },
+          "23.0": {
+            "over": 2.06,
+            "under": 1.66
+          },
+          "23.5": {
+            "over": 2.2,
+            "under": 1.62
+          },
+          "24.0": {
+            "over": 2.18,
+            "under": 1.56
+          },
+          "24.5": {
+            "over": 2.32,
+            "under": 1.54
+          },
+          "25.0": {
+            "over": 2.41,
+            "under": 1.45
+          },
+          "25.5": {
+            "over": 2.6,
+            "under": 1.44
+          },
+          "2.5": {
+            "over": 2.3,
+            "under": 1.58
+          },
+          "26.5": {
+            "over": 3.05,
+            "under": 1.38
+          },
+          "27.5": {
+            "over": 3.5,
+            "under": 1.3
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.21,
+            "away": 1.85
+          },
+          "-1.5": {
+            "home": 1.94,
+            "away": 3.8
+          },
+          "0.0": {
+            "home": 1.5,
+            "away": 2.45
+          },
+          "0.5": {
+            "home": 1.47,
+            "away": 2.4
+          },
+          "-0.5": {
+            "home": 1.54,
+            "away": 2.62
+          },
+          "1.0": {
+            "home": 1.43,
+            "away": 2.24
+          },
+          "-1.0": {
+            "home": 1.59,
+            "away": 2.66
+          },
+          "2.0": {
+            "away": 2.05
+          },
+          "-2.0": {
+            "home": 1.7
+          },
+          "2.5": {
+            "home": 1.34,
+            "away": 1.96
+          },
+          "-2.5": {
+            "home": 1.78,
+            "away": 3.25
+          },
+          "3.0": {
+            "away": 1.83
+          },
+          "-3.0": {
+            "home": 1.89
+          },
+          "3.5": {
+            "home": 1.26,
+            "away": 1.73
+          },
+          "-3.5": {
+            "home": 2,
+            "away": 3.9
+          },
+          "4.0": {
+            "away": 1.58
+          },
+          "-4.0": {
+            "home": 2.26
+          },
+          "4.5": {
+            "away": 1.52
+          },
+          "-4.5": {
+            "home": 2.46
+          },
+          "5.0": {
+            "away": 1.36
+          },
+          "-5.0": {
+            "home": 2.94
+          },
+          "5.5": {
+            "away": 1.33
+          },
+          "-5.5": {
+            "home": 3.23
+          },
+          "6.0": {
+            "away": 1.18
+          },
+          "-6.0": {
+            "home": 4.4
+          },
+          "6.5": {
+            "away": 1.16
+          },
+          "-6.5": {
+            "home": 4.75
+          },
+          "7.0": {
+            "away": 1.07
+          },
+          "-7.0": {
+            "home": 7.2
+          },
+          "7.5": {
+            "away": 1.06
+          },
+          "-7.5": {
+            "home": 7.7
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA French Open (France)",
+      "archived_at": "2026-05-31T15:05:01.666Z"
     }
   ],
   "combos": [
