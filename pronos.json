@@ -1,13 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-06-02T09:01:58.481Z",
+    "generated_at": "2026-06-03T09:21:48.417Z",
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
     "last_results_update": "2026-06-02T22:50:36.335Z",
-    "analyses_written_at": "2026-06-02T09:03:43.401Z",
-    "analyses_cost_usd": 0.0431,
-    "last_hourly_refresh": "2026-06-03T05:31:33.427Z"
+    "analyses_written_at": "2026-06-03T09:22:43.480Z",
+    "analyses_cost_usd": 0.0204
   },
   "sports": {
     "foot": {
@@ -24,7 +23,260 @@
       "badge": "nba",
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>La NBA est difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. <strong>Bankroll recommandée 30% inférieure au foot.</strong></div>",
-      "leagues": []
+      "leagues": [
+        {
+          "key": "nba",
+          "sport_key": "flashscore_basketball_nba",
+          "label": "NBA",
+          "flag": "🏀",
+          "country": "USA",
+          "panel_title": "🏀 NBA",
+          "panel_meta": "Matchs des prochaines 24h",
+          "pronos": [
+            {
+              "event_id": "4zPsYSbC",
+              "flashscore_id": "4zPsYSbC",
+              "flashscore_sport_id": 3,
+              "home_team_id": "IwmkErSH",
+              "away_team_id": "WCNO4nbt",
+              "tournament_id": "innccbyb",
+              "tournament_url": "/basketball/usa/nba/",
+              "sport_key": "flashscore_basketball_nba",
+              "commence_time": "2026-06-04T00:30:00.000Z",
+              "time_display": "Jeu. 02h30",
+              "home": "San Antonio Spurs",
+              "away": "New York Knicks",
+              "match": "San Antonio Spurs vs New York Knicks",
+              "prono": "win-home",
+              "pari": "Plus de 217.5 points",
+              "cote_retenue": 1.8,
+              "cotes": {
+                "domicile": 1.53,
+                "nul": null,
+                "exterieur": 2.74
+              },
+              "pick_category": "ou",
+              "analyse": "Les New York Knicks arrivent dans cette finale NBA en pleine confiance après avoir dominé Cleveland en 4 matchs, avec des victoires écrasantes comme 130-93 et 121-108 en fin de série. Leur attaque tourne à haut régime, inscrivant 115, 109, 121 et 130 points lors de leurs quatre derniers matchs. Les San Antonio Spurs, de leur côté, sortent d'une série très intense contre Oklahoma City Thunder en 7 matchs, avec des rencontres souvent défensives (103-82, 103-111, 118-91) — un calendrier éproisant physiquement. Les totaux relevés lors des matchs des Spurs contre OKC gravitaient autour de 185-229 points, avec une moyenne plutôt contenue (~205 points/match), tandis que New York produisait des totaux plus élevés contre Cleveland (213, 229, 231, 223). Avec les Knicks en forme offensive et les Spurs potentiellement fatigués d'une série longue, le rythme de New York devrait imposer un total de points confortable au-dessus de la ligne. Le total de 217.5 semble une cible raisonnable au vu des récentes performances offensives des Knicks et du style de jeu attendu en finale.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1780185600,
+                    "tournament": "NBA",
+                    "home": "Oklahoma City Thunder",
+                    "away": "San Antonio Spurs",
+                    "score": "103-111"
+                  },
+                  {
+                    "timestamp": 1780014600,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Oklahoma City Thunder",
+                    "score": "118-91"
+                  },
+                  {
+                    "timestamp": 1779841800,
+                    "tournament": "NBA",
+                    "home": "Oklahoma City Thunder",
+                    "away": "San Antonio Spurs",
+                    "score": "127-114"
+                  },
+                  {
+                    "timestamp": 1779753600,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "New York Knicks",
+                    "score": "93-130"
+                  },
+                  {
+                    "timestamp": 1779667200,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Oklahoma City Thunder",
+                    "score": "103-82"
+                  },
+                  {
+                    "timestamp": 1779580800,
+                    "tournament": "NBA",
+                    "home": "Cleveland Cavaliers",
+                    "away": "New York Knicks",
+                    "score": "108-121"
+                  },
+                  {
+                    "timestamp": 1779496200,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Oklahoma City Thunder",
+                    "score": "108-123"
+                  },
+                  {
+                    "timestamp": 1779408000,
+                    "tournament": "NBA",
+                    "home": "New York Knicks",
+                    "away": "Cleveland Cavaliers",
+                    "score": "109-93"
+                  },
+                  {
+                    "timestamp": 1779323400,
+                    "tournament": "NBA",
+                    "home": "Oklahoma City Thunder",
+                    "away": "San Antonio Spurs",
+                    "score": "122-113"
+                  },
+                  {
+                    "timestamp": 1779235200,
+                    "tournament": "NBA",
+                    "home": "New York Knicks",
+                    "away": "Cleveland Cavaliers",
+                    "score": "115-104"
+                  },
+                  {
+                    "timestamp": 1779150600,
+                    "tournament": "NBA",
+                    "home": "Oklahoma City Thunder",
+                    "away": "San Antonio Spurs",
+                    "score": "115-122"
+                  },
+                  {
+                    "timestamp": 1778895000,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "San Antonio Spurs",
+                    "score": "109-139"
+                  },
+                  {
+                    "timestamp": 1778630400,
+                    "tournament": "NBA",
+                    "home": "San Antonio Spurs",
+                    "away": "Minnesota Timberwolves",
+                    "score": "126-97"
+                  },
+                  {
+                    "timestamp": 1778455800,
+                    "tournament": "NBA",
+                    "home": "Minnesota Timberwolves",
+                    "away": "San Antonio Spurs",
+                    "score": "114-109"
+                  },
+                  {
+                    "timestamp": 1778441400,
+                    "tournament": "NBA",
+                    "home": "Philadelphia 76ers",
+                    "away": "New York Knicks",
+                    "score": "114-144"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "217.5": {
+                    "over": 1.8,
+                    "under": 1.91
+                  },
+                  "218.5": {
+                    "over": 1.9,
+                    "under": 1.9
+                  },
+                  "213.5": {
+                    "over": 1.6,
+                    "under": 2.25
+                  },
+                  "214.5": {
+                    "over": 1.6,
+                    "under": 2.25
+                  },
+                  "215.5": {
+                    "over": 1.67,
+                    "under": 2.1
+                  },
+                  "216.5": {
+                    "over": 1.7,
+                    "under": 2.05
+                  },
+                  "219.5": {
+                    "over": 1.91,
+                    "under": 1.8
+                  },
+                  "220.5": {
+                    "over": 2,
+                    "under": 1.73
+                  },
+                  "221.5": {
+                    "over": 2.1,
+                    "under": 1.67
+                  },
+                  "222.5": {
+                    "over": 2.25,
+                    "under": 1.6
+                  }
+                },
+                "handicap": {
+                  "4.5": {
+                    "away": 1.9
+                  },
+                  "-4.5": {
+                    "home": 1.9
+                  },
+                  "5.5": {
+                    "away": 1.71
+                  },
+                  "-5.5": {
+                    "home": 2.02
+                  },
+                  "1.5": {
+                    "away": 2.25
+                  },
+                  "-1.5": {
+                    "home": 1.6
+                  },
+                  "2.5": {
+                    "away": 2.05
+                  },
+                  "-2.5": {
+                    "home": 1.7
+                  },
+                  "3.5": {
+                    "away": 2
+                  },
+                  "-3.5": {
+                    "home": 1.73
+                  },
+                  "6.5": {
+                    "away": 1.6
+                  },
+                  "-6.5": {
+                    "home": 2.25
+                  },
+                  "7.5": {
+                    "away": 1.5
+                  },
+                  "-7.5": {
+                    "home": 2.5
+                  },
+                  "8.5": {
+                    "away": 1.4
+                  },
+                  "-8.5": {
+                    "home": 2.75
+                  },
+                  "9.5": {
+                    "away": 1.36
+                  },
+                  "-9.5": {
+                    "home": 3
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     },
     "ufc": {
       "key": "ufc",
@@ -61,21 +313,21 @@
               "tournament_id": "zlw8ihql",
               "tournament_url": "/tennis/atp-singles/french-open/",
               "sport_key": "flashscore_tennis_atp_french_open_france",
-              "commence_time": "2026-06-03T09:00:00.000Z",
-              "time_display": "Mer. 11h00",
+              "commence_time": "2026-06-03T12:00:00.000Z",
+              "time_display": "Mer. 14h00",
               "home": "Auger-Aliassime F.",
               "away": "Cobolli F.",
               "match": "Auger-Aliassime F. vs Cobolli F.",
               "prono": "win-home",
-              "pari": "Plus de 38.5 jeux",
-              "cote_retenue": 1.78,
+              "pari": "Plus de 39.5 jeux",
+              "cote_retenue": 1.86,
               "cotes": {
                 "domicile": 1.98,
                 "nul": null,
                 "exterieur": 1.93
               },
               "pick_category": "ou",
-              "analyse": "Ce huitième de finale de Roland-Garros met aux prises deux joueurs en excellente forme sur la terre battue parisienne. Auger-Aliassime affiche un bilan parfait de 4 victoires en 4 matchs à Roland-Garros 2026, dont une victoire accrochée en cinq sets contre Altmaier (3-2) qui témoigne de sa solidité mentale, puis des succès nets contre Burruchaga, Nakashima et Tabilo. Cobolli est tout aussi impressionnant avec trois victoires en trois sets dans ses quatre premières rencontres (3-0 contre Pellegrino, Wu et Tien, 3-1 contre Svajda), montrant une domination franche et peu de jeux perdus. Le Canadien a toutefois montré qu'il pouvait être mis en difficulté (défaite 1-2 contre Kovacevic à Hambourg, 0-2 contre Navone à Rome), tandis que Cobolli a subi des revers rapides face à des adversaires de calibre supérieur (0-2 contre Zverev à Madrid, 0-2 contre Buse à Hambourg). Avec deux profils offensifs sur terre battue et un niveau très équilibré dans les marchés de handicap, les conditions sont réunies pour un match long et disputé. Sur une surface lente favorisant les échanges et les longs rallyes, un total élevé de jeux paraît logique pour un duel de ce niveau au stade des huitièmes de finale.",
+              "analyse": "Ce quart de finale de Roland-Garros met aux prises deux joueurs en excellente forme sur la terre battue parisienne. Auger-Aliassime a remporté ses quatre matchs à Roland-Garros cette édition, dont trois victoires 3-0 face à Tabilo et une victoire 3-2 arrachée contre Altmaier, signe d'un niveau solide mais pas encore parfait. Cobolli impressionne davantage : trois victoires 3-0 (Pellegrino, Wu, Tien) et un succès 3-1 contre Svajda, soit aucun set concédé dans trois de ses quatre matchs à ce tournoi. Le Canadien a montré des limites en Allemagne à Hambourg (défaite contre Kovacevic) et à Rome (défaite contre Navone), là où l'Italien perd également contre des têtes de série mais domine sur la surface parisienne cette année. Avec deux joueurs de style offensif sur terre battue — FAA au service-volée puissant, Cobolli aux échanges intenses — les sets risquent d'être disputés et longs. Sur cette surface propice aux longs rallyes, une ligne autour de 39.5 jeux totaux paraît conservatrice : les deux précédents matchs de FAA contre Nakashima et Altmaier ont été particulièrement disputés, et le niveau serré entre les deux joueurs (handicap marché quasi équilibré) suggère un match en 4 ou 5 sets riche en jeux.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
@@ -219,7 +471,7 @@
                     "under": 2.09
                   },
                   "38.5": {
-                    "over": 1.78,
+                    "over": 1.77,
                     "under": 2.02
                   },
                   "39.0": {
@@ -228,19 +480,19 @@
                   },
                   "39.5": {
                     "over": 1.86,
-                    "under": 1.89
+                    "under": 1.9
                   },
                   "40.0": {
                     "over": 1.94,
                     "under": 1.84
                   },
                   "40.5": {
-                    "over": 2.01,
-                    "under": 1.77
+                    "over": 1.99,
+                    "under": 1.78
                   },
                   "41.0": {
-                    "over": 2.08,
-                    "under": 1.7
+                    "over": 2.06,
+                    "under": 1.71
                   },
                   "41.5": {
                     "over": 2.13,
@@ -255,24 +507,28 @@
                     "under": 1.56
                   },
                   "43.0": {
-                    "over": 2.38,
-                    "under": 1.49
+                    "over": 2.34,
+                    "under": 1.5
                   },
                   "43.5": {
-                    "over": 2.53,
+                    "over": 2.52,
                     "under": 1.47
                   },
-                  "44.5": {
-                    "over": 2.7,
+                  "44.0": {
+                    "over": 2.48,
                     "under": 1.45
                   },
+                  "44.5": {
+                    "over": 2.71,
+                    "under": 1.42
+                  },
                   "3.5": {
-                    "over": 1.44,
-                    "under": 2.69
+                    "over": 1.42,
+                    "under": 2.76
                   },
                   "4.5": {
-                    "over": 3.1,
-                    "under": 1.37
+                    "over": 3,
+                    "under": 1.4
                   },
                   "32.5": {
                     "over": 1.34,
@@ -301,39 +557,39 @@
                 },
                 "handicap": {
                   "1.5": {
-                    "home": 1.59,
-                    "away": 1.58
+                    "home": 1.58,
+                    "away": 1.57
                   },
                   "-1.5": {
-                    "home": 2.31,
-                    "away": 2.33
+                    "home": 2.3,
+                    "away": 2.31
                   },
                   "2.5": {
-                    "home": 1.39,
+                    "home": 1.38,
                     "away": 1.39
                   },
                   "-2.5": {
                     "home": 3.62,
-                    "away": 3.66
+                    "away": 3.67
                   },
                   "0.0": {
                     "home": 1.91,
                     "away": 1.91
                   },
                   "0.5": {
-                    "home": 1.83,
-                    "away": 1.85
+                    "home": 1.81,
+                    "away": 1.83
                   },
                   "-0.5": {
-                    "home": 1.91,
-                    "away": 1.92
+                    "home": 1.92,
+                    "away": 1.94
                   },
                   "1.0": {
                     "home": 1.76,
-                    "away": 1.77
+                    "away": 1.78
                   },
                   "-1.0": {
-                    "home": 2.03,
+                    "home": 2.01,
                     "away": 2.04
                   },
                   "2.0": {
@@ -353,12 +609,12 @@
                     "away": 2.5
                   },
                   "3.5": {
-                    "home": 1.5,
-                    "away": 1.5
+                    "home": 1.49,
+                    "away": 1.51
                   },
                   "-3.5": {
-                    "home": 2.59,
-                    "away": 2.56
+                    "home": 2.54,
+                    "away": 2.6
                   },
                   "4.0": {
                     "home": 1.4,
@@ -369,26 +625,26 @@
                     "away": 2.9
                   },
                   "4.5": {
-                    "home": 1.39,
+                    "home": 1.37,
                     "away": 1.4
                   },
                   "-4.5": {
-                    "home": 2.95,
-                    "away": 3.02
+                    "home": 2.92,
+                    "away": 3.06
                   },
                   "5.5": {
-                    "home": 1.3,
-                    "away": 1.29
+                    "home": 1.29,
+                    "away": 1.3
                   },
                   "-5.5": {
-                    "home": 3.6,
-                    "away": 3.55
+                    "home": 3.55,
+                    "away": 3.6
                   },
                   "6.5": {
-                    "away": 1.21
+                    "away": 1.22
                   },
                   "-6.5": {
-                    "home": 4.4
+                    "home": 4.35
                   }
                 }
               }
@@ -402,21 +658,21 @@
               "tournament_id": "zlw8ihql",
               "tournament_url": "/tennis/atp-singles/french-open/",
               "sport_key": "flashscore_tennis_atp_french_open_france",
-              "commence_time": "2026-06-03T09:00:00.000Z",
-              "time_display": "Mer. 11h00",
+              "commence_time": "2026-06-03T18:15:00.000Z",
+              "time_display": "Mer. 20h15",
               "home": "Berrettini M.",
               "away": "Arnaldi M.",
               "match": "Berrettini M. vs Arnaldi M.",
               "prono": "win-home",
               "pari": "Plus de 38.5 jeux",
-              "cote_retenue": 1.88,
+              "cote_retenue": 1.85,
               "cotes": {
-                "domicile": 1.55,
+                "domicile": 1.54,
                 "nul": null,
-                "exterieur": 2.63
+                "exterieur": 2.66
               },
               "pick_category": "ou",
-              "analyse": "Berrettini et Arnaldi s'affrontent en huitièmes de finale à Roland-Garros dans un derby italien prometteur. Berrettini affiche une forme impeccable sur la terre parisienne : victoires convaincantes sur Fucsovics (3-1), Rinderknech (3-0), Comesana (3-2) et Cerundolo (3-0), soit 4 victoires en 4 matchs sur cette édition. Arnaldi n'est pas en reste avec des succès notables contre Tsitsipas (3-1), Griekspoor (3-1), Collignon (3-2) et Tiafoe (3-2), confirmant une excellente dynamique sur ocre. Les deux joueurs ont chacun disputé des matchs en 5 sets (Berrettini vs Comesana, Arnaldi vs Tiafoe et Collignon), suggérant qu'ils peuvent aller dans la durée. Sur terre battue, les échanges sont naturellement plus longs et avec deux joueurs de fond de court robustes et capables de longues batailles, ce choc entre compatriotes devrait produire un volume de jeux élevé. La ligne à 38.5 jeux représente un seuil raisonnable compte tenu des 5 sets possibles et du style de jeu des deux protagonistes.",
+              "analyse": "Ce duel 100% italien à Roland-Garros promet un match de haute intensité sur terre battue. Berrettini s'est montré dominateur dans ce tournoi avec trois victoires nettes, dont un 3-0 expéditif contre Cerundolo et des succès en 5 sets contre Comesana, témoignant de sa capacité à se battre dans les longs matchs. Arnaldi de son côté enchaîne les performances de qualité : victoire sur Tsitsipas en 4 sets, puis un marathon de 5 sets pour écarter Tiafoe au tour précédent. Les deux joueurs ont déjà disputé des matchs en 5 sets lors de ce Roland-Garros, ce qui traduit une intensité et un potentiel de durée élevé. Sur terre battue, le style de jeu des deux Italiens — fond de court, échanges longs, gestion physique — favorise naturellement les matchs riches en jeux. Un derby transalpin entre deux joueurs en pleine forme sur cette surface devrait donner un match long et disputé, avec un nombre de jeux bien au-delà de la barre des 38.5.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
@@ -536,216 +792,216 @@
               "markets": {
                 "over_under": {
                   "34.5": {
-                    "over": 1.49,
-                    "under": 2.46
+                    "over": 1.48,
+                    "under": 2.51
                   },
                   "35.0": {
-                    "over": 1.49,
-                    "under": 2.38
+                    "over": 1.47,
+                    "under": 2.42
                   },
                   "35.5": {
-                    "over": 1.58,
-                    "under": 2.29
+                    "over": 1.56,
+                    "under": 2.34
                   },
                   "36.0": {
-                    "over": 1.58,
-                    "under": 2.23
+                    "over": 1.57,
+                    "under": 2.25
                   },
                   "36.5": {
-                    "over": 1.67,
-                    "under": 2.13
+                    "over": 1.65,
+                    "under": 2.18
                   },
                   "37.0": {
-                    "over": 1.68,
-                    "under": 2.11
+                    "over": 1.66,
+                    "under": 2.14
                   },
                   "37.5": {
-                    "over": 1.74,
-                    "under": 2.04
+                    "over": 1.72,
+                    "under": 2.07
                   },
                   "38.0": {
-                    "over": 1.8,
-                    "under": 1.99
+                    "over": 1.78,
+                    "under": 2.01
                   },
                   "38.5": {
-                    "over": 1.88,
-                    "under": 1.91
+                    "over": 1.85,
+                    "under": 1.92
                   },
                   "39.0": {
-                    "over": 1.91,
-                    "under": 1.87
+                    "over": 1.89,
+                    "under": 1.89
                   },
                   "39.5": {
                     "over": 1.92,
-                    "under": 1.8
+                    "under": 1.82
                   },
                   "40.0": {
-                    "over": 2.04,
-                    "under": 1.73
+                    "over": 2.01,
+                    "under": 1.75
                   },
                   "40.5": {
-                    "over": 2.15,
-                    "under": 1.67
+                    "over": 2.12,
+                    "under": 1.69
                   },
                   "41.0": {
-                    "over": 2.17,
-                    "under": 1.61
+                    "over": 2.14,
+                    "under": 1.63
                   },
                   "41.5": {
-                    "over": 2.31,
-                    "under": 1.56
+                    "over": 2.27,
+                    "under": 1.59
                   },
                   "42.0": {
-                    "over": 2.32,
-                    "under": 1.51
+                    "over": 2.3,
+                    "under": 1.52
                   },
                   "42.5": {
-                    "over": 2.5,
-                    "under": 1.48
+                    "over": 2.44,
+                    "under": 1.5
                   },
                   "43.0": {
                     "over": 2.48,
                     "under": 1.45
                   },
                   "43.5": {
-                    "over": 2.67,
-                    "under": 1.42
+                    "over": 2.64,
+                    "under": 1.44
                   },
                   "3.5": {
-                    "over": 1.52,
-                    "under": 2.48
+                    "over": 1.51,
+                    "under": 2.5
                   },
                   "4.5": {
-                    "over": 3.4,
-                    "under": 1.32
+                    "over": 3.3,
+                    "under": 1.33
                   },
                   "31.5": {
                     "over": 1.32,
-                    "under": 3.3
+                    "under": 3.45
                   },
                   "32.5": {
                     "over": 1.4,
-                    "under": 2.9
+                    "under": 3
                   },
                   "33.5": {
-                    "over": 1.46,
-                    "under": 2.7
+                    "over": 1.45,
+                    "under": 2.75
                   },
                   "44.5": {
-                    "over": 3.1,
-                    "under": 1.36
+                    "over": 3.05,
+                    "under": 1.38
                   },
                   "45.5": {
-                    "over": 3.4,
-                    "under": 1.32
+                    "over": 3.35,
+                    "under": 1.33
                   }
                 },
                 "handicap": {
                   "1.5": {
-                    "home": 1.29,
-                    "away": 1.89
+                    "home": 1.26,
+                    "away": 1.92
                   },
                   "-1.5": {
                     "home": 1.8,
                     "away": 3.4
                   },
                   "2.5": {
-                    "home": 1.1,
+                    "home": 1.09,
                     "away": 1.91
                   },
                   "-2.5": {
-                    "home": 1.81,
-                    "away": 6.85
+                    "home": 1.79,
+                    "away": 7.2
                   },
                   "0.0": {
-                    "home": 1.51,
-                    "away": 2.52
+                    "home": 1.48,
+                    "away": 2.61
                   },
                   "0.5": {
-                    "home": 1.5,
-                    "away": 2.38
+                    "home": 1.46,
+                    "away": 2.49
                   },
                   "-0.5": {
-                    "home": 1.57,
-                    "away": 2.55
+                    "home": 1.53,
+                    "away": 2.71
                   },
                   "1.0": {
                     "home": 1.48,
-                    "away": 2.31
+                    "away": 2.4
                   },
                   "-1.0": {
-                    "home": 1.6,
+                    "home": 1.56,
                     "away": 2.61
                   },
                   "2.0": {
-                    "away": 2.11
+                    "away": 2.18
                   },
                   "-2.0": {
-                    "home": 1.71
+                    "home": 1.67
                   },
                   "3.0": {
-                    "away": 1.92
+                    "away": 1.97
                   },
                   "-3.0": {
-                    "home": 1.86
+                    "home": 1.82
                   },
                   "3.5": {
-                    "home": 1.3,
-                    "away": 1.86
+                    "home": 1.27,
+                    "away": 1.85
                   },
                   "-3.5": {
-                    "home": 1.92,
-                    "away": 3.45
-                  },
-                  "4.0": {
-                    "away": 1.73
-                  },
-                  "-4.0": {
-                    "home": 2.09
-                  },
-                  "4.5": {
-                    "home": 1.26,
-                    "away": 1.62
-                  },
-                  "-4.5": {
-                    "home": 2.21,
+                    "home": 1.89,
                     "away": 3.8
                   },
+                  "4.0": {
+                    "away": 1.77
+                  },
+                  "-4.0": {
+                    "home": 2.03
+                  },
+                  "4.5": {
+                    "home": 1.23,
+                    "away": 1.67
+                  },
+                  "-4.5": {
+                    "home": 2.16,
+                    "away": 4.2
+                  },
                   "5.0": {
-                    "away": 1.54
+                    "away": 1.56
                   },
                   "-5.0": {
-                    "home": 2.44
+                    "home": 2.4
                   },
                   "5.5": {
-                    "away": 1.49
+                    "away": 1.52
                   },
                   "-5.5": {
-                    "home": 2.58
+                    "home": 2.52
                   },
                   "6.0": {
-                    "away": 1.36
+                    "away": 1.38
                   },
                   "-6.0": {
-                    "home": 3.08
+                    "home": 2.99
                   },
                   "6.5": {
                     "away": 1.31
                   },
                   "-6.5": {
-                    "home": 3.43
+                    "home": 3.38
                   },
                   "7.0": {
-                    "away": 1.22
+                    "away": 1.23
                   },
                   "-7.0": {
-                    "home": 4.2
+                    "home": 4.1
                   },
                   "7.5": {
                     "away": 1.21
                   },
                   "-7.5": {
-                    "home": 4.38
+                    "home": 4.33
                   }
                 }
               }
@@ -762,311 +1018,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "KW8StHt3",
-              "flashscore_id": "KW8StHt3",
-              "flashscore_sport_id": 2,
-              "home_team_id": "KGdcQnEf",
-              "away_team_id": "OIxOD54s",
-              "tournament_id": "0n2yc0d5",
-              "tournament_url": "/tennis/wta-singles/french-open/",
-              "sport_key": "flashscore_tennis_wta_french_open_france",
-              "commence_time": "2026-06-03T09:00:00.000Z",
-              "time_display": "Mer. 11h00",
-              "home": "Kalinskaya A.",
-              "away": "Chwalinska M.",
-              "match": "Kalinskaya A. vs Chwalinska M.",
-              "prono": "win-home",
-              "pari": "Plus de 23.5 jeux",
-              "cote_retenue": 2.29,
-              "cotes": {
-                "domicile": 1.71,
-                "nul": null,
-                "exterieur": 2.26
-              },
-              "pick_category": "ou",
-              "analyse": "Chwalinska traverse Roland-Garros dans une forme extraordinaire : elle a remporté 7 de ses 8 derniers matchs sur cette surface, dont des victoires convaincantes 2-0 face à Zheng Q., Sakkari M. et Mertens E. Son jeu sur terre battue est particulièrement adapté aux rallyes longs et à la construction de point. Kalinskaya, de son côté, affiche également une belle série à FO avec quatre victoires consécutives, dont un 2-0 sur Korneeva et Boisson, mais a dû batailler en trois sets contre Osorio et Potapova. Le handicap en sets à 0.0 donne des cotes quasi équilibrées (1.84/1.94), signe que le marché voit un match très ouvert. Deux joueuses en pleine confiance sur terre battue, habituées aux échanges longs : on peut s'attendre à un volume de jeux élevé, avec des sets disputés et de nombreux jeux serrés. La ligne des 23.5 jeux à 2.29 représente une valeur intéressante au vu du profil terre-battue des deux compétitrices et de leurs récents matchs en 3 sets.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1780318500,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Parry D.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1780305300,
-                    "tournament": "FO",
-                    "home": "Potapova A.",
-                    "away": "Kalinskaya A.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1780144500,
-                    "tournament": "FO",
-                    "home": "Kalinskaya A.",
-                    "away": "Osorio C.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780132200,
-                    "tournament": "FO",
-                    "home": "Sakkari M.",
-                    "away": "Chwalinska M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1779975000,
-                    "tournament": "FO",
-                    "home": "Kalinskaya A.",
-                    "away": "Korneeva A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779969600,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Mertens E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779808500,
-                    "tournament": "FO",
-                    "home": "Kalinskaya A.",
-                    "away": "Boisson L.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779700200,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Zheng Q.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779354600,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Lamens S.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779264300,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Monnet C.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779100800,
-                    "tournament": "FO",
-                    "home": "Chwalinska M.",
-                    "away": "Rame A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778518800,
-                    "tournament": "PAR",
-                    "home": "Urgesi F.",
-                    "away": "Chwalinska M.",
-                    "score": "1-0"
-                  },
-                  {
-                    "timestamp": 1778497500,
-                    "tournament": "ROM",
-                    "home": "Kalinskaya A.",
-                    "away": "Ostapenko J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778355000,
-                    "tournament": "ROM",
-                    "home": "Bencic B.",
-                    "away": "Kalinskaya A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778265000,
-                    "tournament": "SAI",
-                    "home": "Chwalinska M.",
-                    "away": "Ponchet J.",
-                    "score": "1-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.5": {
-                    "over": 1.17,
-                    "under": 4.1
-                  },
-                  "18.0": {
-                    "over": 1.21,
-                    "under": 3.74
-                  },
-                  "18.5": {
-                    "over": 1.35,
-                    "under": 3.02
-                  },
-                  "19.0": {
-                    "over": 1.37,
-                    "under": 2.84
-                  },
-                  "19.5": {
-                    "over": 1.52,
-                    "under": 2.45
-                  },
-                  "20.0": {
-                    "over": 1.56,
-                    "under": 2.33
-                  },
-                  "20.5": {
-                    "over": 1.68,
-                    "under": 2.1
-                  },
-                  "21.0": {
-                    "over": 1.76,
-                    "under": 2.04
-                  },
-                  "21.5": {
-                    "over": 1.88,
-                    "under": 1.89
-                  },
-                  "22.0": {
-                    "over": 1.98,
-                    "under": 1.81
-                  },
-                  "22.5": {
-                    "over": 2.07,
-                    "under": 1.71
-                  },
-                  "23.0": {
-                    "over": 2.19,
-                    "under": 1.63
-                  },
-                  "23.5": {
-                    "over": 2.29,
-                    "under": 1.59
-                  },
-                  "24.0": {
-                    "over": 2.34,
-                    "under": 1.53
-                  },
-                  "24.5": {
-                    "over": 2.43,
-                    "under": 1.52
-                  },
-                  "25.0": {
-                    "over": 2.54,
-                    "under": 1.43
-                  },
-                  "25.5": {
-                    "over": 2.69,
-                    "under": 1.42
-                  },
-                  "2.5": {
-                    "over": 2.31,
-                    "under": 1.58
-                  },
-                  "26.5": {
-                    "over": 3.15,
-                    "under": 1.35
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.5,
-                    "away": 1.42
-                  },
-                  "-1.5": {
-                    "home": 2.85,
-                    "away": 2.58
-                  },
-                  "0.0": {
-                    "home": 1.84,
-                    "away": 1.94
-                  },
-                  "0.5": {
-                    "home": 1.79,
-                    "away": 1.91
-                  },
-                  "-0.5": {
-                    "home": 1.87,
-                    "away": 1.95
-                  },
-                  "1.0": {
-                    "home": 1.73,
-                    "away": 1.83
-                  },
-                  "-1.0": {
-                    "home": 1.95,
-                    "away": 2.09
-                  },
-                  "2.0": {
-                    "home": 1.62,
-                    "away": 1.71
-                  },
-                  "-2.0": {
-                    "home": 2.11,
-                    "away": 2.27
-                  },
-                  "2.5": {
-                    "home": 1.56,
-                    "away": 1.69
-                  },
-                  "-2.5": {
-                    "home": 2.15,
-                    "away": 2.4
-                  },
-                  "3.0": {
-                    "home": 1.49,
-                    "away": 1.56
-                  },
-                  "-3.0": {
-                    "home": 2.4,
-                    "away": 2.58
-                  },
-                  "3.5": {
-                    "home": 1.44,
-                    "away": 1.54
-                  },
-                  "-3.5": {
-                    "home": 2.45,
-                    "away": 2.75
-                  },
-                  "4.0": {
-                    "home": 1.36,
-                    "away": 1.4
-                  },
-                  "-4.0": {
-                    "home": 2.9,
-                    "away": 3.1
-                  },
-                  "4.5": {
-                    "home": 1.31,
-                    "away": 1.38
-                  },
-                  "-4.5": {
-                    "home": 3.04,
-                    "away": 3.41
-                  },
-                  "5.5": {
-                    "away": 1.25
-                  },
-                  "-5.5": {
-                    "home": 3.85
-                  }
-                }
-              }
-            },
-            {
               "event_id": "Kx28rsbn",
               "flashscore_id": "Kx28rsbn",
               "flashscore_sport_id": 2,
@@ -1075,21 +1026,21 @@
               "tournament_id": "0n2yc0d5",
               "tournament_url": "/tennis/wta-singles/french-open/",
               "sport_key": "flashscore_tennis_wta_french_open_france",
-              "commence_time": "2026-06-03T09:00:00.000Z",
-              "time_display": "Mer. 11h00",
+              "commence_time": "2026-06-03T10:30:00.000Z",
+              "time_display": "Mer. 12h30",
               "home": "Sabalenka A.",
               "away": "Shnaider D.",
               "match": "Sabalenka A. vs Shnaider D.",
               "prono": "win-home",
-              "pari": "Sabalenka avec handicap -4.5 jeux",
-              "cote_retenue": 1.15,
+              "pari": "Victoire Sabalenka",
+              "cote_retenue": 1.43,
               "cotes": {
-                "domicile": 1.15,
+                "domicile": 1.12,
                 "nul": null,
-                "exterieur": 6.52
+                "exterieur": 7.34
               },
               "pick_category": "1x2",
-              "analyse": "Sabalenka domine Roland-Garros 2026 de manière impressionnante : quatre victoires consécutives toutes en 2-0 (Bouzas Maneiro, Jacquemot, Kasatkina, Osaka), sans perdre le moindre set. Shnaider, de son côté, affiche également un parcours solide avec trois victoires en 2-0 (Zarazua, Kessler, Oliynykova) avant de battre la tête de série Madison Keys en trois sets (2-1). Ce match de quart ou demi-finale oppose donc deux joueuses en grande forme sur terre battue, mais le niveau de Sabalenka est nettement supérieur : numéro 1 mondiale, elle n'a concédé aucun set sur cette surface lors de ce tournoi. Shnaider, solide mais inexpérimentée à ce stade d'un Grand Chelem, a déjà montré ses limites en perdant 2-0 face à Osaka à Rome (2026). La rencontre Keys-Shnaider en 2-1 montre que Shnaider peut être poussée dans ses retranchements, et face à la puissance de frappe de Sabalenka, un score 2-0 expéditif semble le scénario le plus probable. La forme de Sabalenka sur terre battue en 2026, conjuguée à son autorité sur ce tournoi, plaide clairement pour un handicap en jeux négatif.",
+              "analyse": "Sabalenka domine ce tournoi de Roland-Garros 2026 de manière impressionnante : quatre victoires consécutives toutes en 2-0, contre Bouzas Maneiro, Jacquemot, Kasatkina et Osaka, sans concéder le moindre set. Shnaider traverse également un excellent tournoi avec trois victoires 2-0 (Zarazua, Kessler, Oliynykova) avant de décrocher un succès 2-1 contre Keys en huitièmes, montrant une certaine solidité face à une joueuse coriace. Cependant, le niveau entre les deux joueuses reste très éloigné : Sabalenka est numéro 1 mondiale et une des meilleures sur terre battue en ce moment, tandis que Shnaider n'a encore jamais affronté une adversaire de ce calibre dans ce tournoi. La seule défaite récente de Sabalenka à Rome face à Cirstea (2-1) montre qu'elle peut parfois être bousculée, mais à Roland-Garros elle est en mode rouleau compresseur. Les cotes sur le handicap jeux suggèrent que la rencontre devrait être largement dominée par Sabalenka, et un handicap de -4.5 jeux en sa faveur à 1.48 représente une valeur raisonnable compte tenu de sa domination actuelle.",
               "confiance": 4,
               "featured": true,
               "score_prevu": null,
@@ -1209,186 +1160,186 @@
               "markets": {
                 "over_under": {
                   "15.5": {
-                    "over": 1.06,
-                    "under": 6.5
+                    "over": 1.07,
+                    "under": 5.95
                   },
                   "16.0": {
-                    "over": 1.08,
-                    "under": 6.15
+                    "over": 1.1,
+                    "under": 5.55
                   },
                   "16.5": {
-                    "over": 1.18,
-                    "under": 4.15
+                    "over": 1.22,
+                    "under": 3.74
                   },
                   "17.0": {
-                    "over": 1.23,
-                    "under": 3.72
+                    "over": 1.27,
+                    "under": 3.4
                   },
                   "17.5": {
-                    "over": 1.4,
-                    "under": 2.87
+                    "over": 1.44,
+                    "under": 2.71
                   },
                   "18.0": {
-                    "over": 1.45,
-                    "under": 2.63
+                    "over": 1.52,
+                    "under": 2.43
                   },
                   "18.5": {
-                    "over": 1.58,
-                    "under": 2.26
+                    "over": 1.65,
+                    "under": 2.15
                   },
                   "19.0": {
-                    "over": 1.71,
-                    "under": 2.11
+                    "over": 1.82,
+                    "under": 1.97
                   },
                   "19.5": {
-                    "over": 1.82,
-                    "under": 1.92
+                    "over": 1.92,
+                    "under": 1.84
                   },
                   "20.0": {
-                    "over": 1.98,
-                    "under": 1.81
-                  },
-                  "20.5": {
-                    "over": 2.1,
+                    "over": 2.13,
                     "under": 1.7
                   },
+                  "20.5": {
+                    "over": 2.2,
+                    "under": 1.62
+                  },
                   "21.0": {
-                    "over": 2.25,
-                    "under": 1.6
+                    "over": 2.43,
+                    "under": 1.52
                   },
                   "21.5": {
-                    "over": 2.35,
-                    "under": 1.57
+                    "over": 2.5,
+                    "under": 1.53
                   },
                   "22.0": {
-                    "over": 2.55,
-                    "under": 1.45
+                    "over": 2.76,
+                    "under": 1.39
                   },
                   "22.5": {
-                    "over": 2.71,
-                    "under": 1.42
+                    "over": 2.87,
+                    "under": 1.39
                   },
                   "23.0": {
-                    "over": 2.84,
-                    "under": 1.35
+                    "over": 3.04,
+                    "under": 1.31
                   },
                   "23.5": {
-                    "over": 2.96,
-                    "under": 1.35
+                    "over": 3.15,
+                    "under": 1.32
                   },
                   "2.5": {
-                    "over": 3.1,
-                    "under": 1.34
+                    "over": 3.28,
+                    "under": 1.31
                   },
                   "24.5": {
-                    "over": 3.2,
-                    "under": 1.34
+                    "over": 3.35,
+                    "under": 1.33
                   }
                 },
                 "handicap": {
                   "1.5": {
-                    "home": 1.04,
-                    "away": 2.53
+                    "home": 1.03,
+                    "away": 2.75
                   },
                   "-1.5": {
-                    "home": 1.48,
-                    "away": 9.1
+                    "home": 1.43,
+                    "away": 11
                   },
                   "2.0": {
-                    "away": 4.5
+                    "away": 5.45
                   },
                   "-2.0": {
-                    "home": 1.2
+                    "home": 1.14
                   },
                   "2.5": {
-                    "away": 4.08
+                    "away": 4.67
                   },
                   "-2.5": {
-                    "home": 1.23
+                    "home": 1.19
                   },
                   "3.0": {
-                    "away": 3.68
+                    "away": 4.5
                   },
                   "-3.0": {
-                    "home": 1.27
+                    "home": 1.2
                   },
                   "3.5": {
-                    "away": 3.14
+                    "away": 3.55
                   },
                   "-3.5": {
-                    "home": 1.34
+                    "home": 1.3
                   },
                   "4.0": {
-                    "away": 2.86
+                    "away": 3.32
                   },
                   "-4.0": {
-                    "home": 1.41
+                    "home": 1.32
                   },
                   "4.5": {
-                    "away": 2.4
+                    "away": 2.5
                   },
                   "-4.5": {
-                    "home": 1.55
+                    "home": 1.48
                   },
                   "5.0": {
-                    "away": 2.11
+                    "away": 2.38
                   },
                   "-5.0": {
-                    "home": 1.71
+                    "home": 1.57
                   },
                   "5.5": {
-                    "away": 1.82
+                    "away": 1.96
                   },
                   "-5.5": {
-                    "home": 1.93
+                    "home": 1.81
                   },
                   "6.0": {
-                    "away": 1.6
+                    "away": 1.73
                   },
                   "-6.0": {
-                    "home": 2.31
+                    "home": 2.09
                   },
                   "6.5": {
                     "away": 1.47
                   },
                   "-6.5": {
-                    "home": 2.6
+                    "home": 2.5
                   },
                   "7.0": {
-                    "away": 1.28
+                    "away": 1.33
                   },
                   "-7.0": {
-                    "home": 3.6
+                    "home": 3.26
                   },
                   "7.5": {
-                    "away": 1.22
+                    "away": 1.25
                   },
                   "-7.5": {
-                    "home": 4.2
+                    "home": 3.89
                   },
                   "8.0": {
-                    "away": 1.1
+                    "away": 1.13
                   },
                   "-8.0": {
-                    "home": 6.65
+                    "home": 5.85
                   },
                   "8.5": {
-                    "away": 1.09
+                    "away": 1.11
                   },
                   "-8.5": {
-                    "home": 7.3
+                    "home": 6.45
                   },
                   "9.0": {
-                    "away": 1.02
+                    "away": 1.03
                   },
                   "-9.0": {
-                    "home": 13.2
+                    "home": 12
                   },
                   "9.5": {
-                    "away": 1.01
+                    "away": 1.02
                   },
                   "-9.5": {
-                    "home": 13.7
+                    "home": 12.5
                   }
                 }
               }
@@ -1400,13 +1351,9 @@
   },
   "coup_de_coeur": [
     "Kx28rsbn",
-    "ppkhJhzo",
-    "KW8StHt3",
-    "QqE92fyn",
-    "Esb5o0eA",
-    "xfKv2kTb",
+    "C80slxrg",
     "Qsu7A0tQ",
-    "C80slxrg"
+    "4zPsYSbC"
   ],
   "history": [
     {
@@ -134868,71 +134815,71 @@
   "combos": [
     {
       "strategy": "safe",
-      "label": "Double sûr Roland-Garros",
-      "reasoning": "Sabalenka est la grande favorite de ce tournoi et affrontera une Shnaider bien moins expérimentée sur terre battue : le handicap -4.5 jeux est très accessible pour une tête de série numéro 1 en pleine forme. On associe ce pick solide (cote 1.55, ⭐4) avec le over 38.5 jeux Auger-Aliassime/Cobolli (cote 1.78, ⭐3), deux joueurs offensifs aux styles qui génèrent naturellement de l'échange. Ensemble, ces deux legs donnent une cote totale d'environ 2.76, dans la cible safe, avec une variance maîtrisée et des arguments de fond solides.",
+      "label": "Double sûr du jour",
+      "reasoning": "Sabalenka est la grande favorite de ce Roland-Garros, sa domination sur Shnaider ne fait aucun doute avec une cote reflet d'une confiance maximale. On y associe le Over points NBA Spurs/Knicks, deux équipes qui jouent à un rythme offensif élevé en fin de saison, pour un combo équilibré à faible variance sur deux sports différents.",
       "legs": [
         {
           "event_id": "Kx28rsbn",
           "match": "Sabalenka A. vs Shnaider D.",
-          "pari": "Sabalenka avec handicap -4.5 jeux",
+          "pari": "Victoire Sabalenka",
           "sport_key": "flashscore_tennis_wta_french_open_france",
           "pick_category": "1x2",
           "prono": "win-home",
-          "cote": 1.55,
+          "cote": 1.43,
           "home": "Sabalenka A.",
           "away": "Shnaider D.",
-          "time_display": "Mer. 11h00",
+          "time_display": "Mer. 12h30",
           "sport_label": "🎾 Tennis"
         },
         {
+          "event_id": "4zPsYSbC",
+          "match": "San Antonio Spurs vs New York Knicks",
+          "pari": "Plus de 217.5 points",
+          "sport_key": "flashscore_basketball_nba",
+          "pick_category": "ou",
+          "prono": "win-home",
+          "cote": 1.8,
+          "home": "San Antonio Spurs",
+          "away": "New York Knicks",
+          "time_display": "Jeu. 02h30",
+          "sport_label": "🏀 NBA"
+        }
+      ],
+      "total_cote": 2.57
+    },
+    {
+      "strategy": "value",
+      "label": "Combo value tennis Roland-Garros",
+      "reasoning": "Auger-Aliassime et Cobolli sont deux joueurs très offensifs sur terre battue, propices aux longs échanges et aux sets disputés, ce qui rend le Over 39.5 jeux très crédible. On associe Berrettini vs Arnaldi, duel entre deux Italiens à gros service mais aussi à forte intensité sur la terre battue parisienne, où le Over 38.5 jeux a une belle valeur. Ces deux legs partagent la même logique de volume de jeu sur la même surface, ce qui renforce la cohérence du combo.",
+      "legs": [
+        {
           "event_id": "C80slxrg",
           "match": "Auger-Aliassime F. vs Cobolli F.",
+          "pari": "Plus de 39.5 jeux",
+          "sport_key": "flashscore_tennis_atp_french_open_france",
+          "pick_category": "ou",
+          "prono": "win-home",
+          "cote": 1.86,
+          "home": "Auger-Aliassime F.",
+          "away": "Cobolli F.",
+          "time_display": "Mer. 14h00",
+          "sport_label": "🎾 Tennis"
+        },
+        {
+          "event_id": "Qsu7A0tQ",
+          "match": "Berrettini M. vs Arnaldi M.",
           "pari": "Plus de 38.5 jeux",
           "sport_key": "flashscore_tennis_atp_french_open_france",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.78,
-          "home": "Auger-Aliassime F.",
-          "away": "Cobolli F.",
-          "time_display": "Mer. 11h00",
+          "cote": 1.85,
+          "home": "Berrettini M.",
+          "away": "Arnaldi M.",
+          "time_display": "Mer. 20h15",
           "sport_label": "🎾 Tennis"
         }
       ],
-      "total_cote": 2.76
-    },
-    {
-      "strategy": "value",
-      "label": "Combo value jeux Roland-Garros",
-      "reasoning": "On associe le under 32.5 jeux Jodar/Zverev (cote 3.20, ⭐3) — Zverev est bien supérieur et peut expédier ce match rapidement face à un qualifié — avec le over 23.5 jeux Kalinskaya/Chwalinska (cote 2.29, ⭐3), deux joueuses au profil combatif sur terre qui ont tendance à s'étirer en longueur. Ces deux paris sont dans des directions opposées (under/over) et sur des profils de matchs très différents, ce qui limite la corrélation de risque et offre un beau potentiel à cote combinée d'environ 7.33.",
-      "legs": [
-        {
-          "event_id": "ppkhJhzo",
-          "match": "Jodar R. vs Zverev A.",
-          "pari": "Moins de 32.5 jeux",
-          "sport_key": "flashscore_tennis_atp_french_open_france",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 3.2,
-          "home": "Jodar R.",
-          "away": "Zverev A.",
-          "time_display": "Mar. 14h00",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "KW8StHt3",
-          "match": "Kalinskaya A. vs Chwalinska M.",
-          "pari": "Plus de 23.5 jeux",
-          "sport_key": "flashscore_tennis_wta_french_open_france",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 2.29,
-          "home": "Kalinskaya A.",
-          "away": "Chwalinska M.",
-          "time_display": "Mer. 11h00",
-          "sport_label": "🎾 Tennis"
-        }
-      ],
-      "total_cote": 7.33
+      "total_cote": 3.44
     }
   ]
 }
