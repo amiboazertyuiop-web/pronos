@@ -1,13 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-06-03T09:21:48.417Z",
+    "generated_at": "2026-06-04T08:43:06.408Z",
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
     "last_results_update": "2026-06-04T05:26:56.362Z",
-    "analyses_written_at": "2026-06-03T09:22:43.480Z",
-    "analyses_cost_usd": 0.0204,
-    "last_hourly_refresh": "2026-06-04T05:26:56.362Z"
+    "analyses_written_at": "2026-06-04T08:43:43.518Z",
+    "analyses_cost_usd": 0.0106
   },
   "sports": {
     "foot": {
@@ -24,18 +23,7 @@
       "badge": "nba",
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>La NBA est difficile à pronostiquer en fin de saison régulière — beaucoup d'équipes gèrent leurs effectifs avant les playoffs. <strong>Bankroll recommandée 30% inférieure au foot.</strong></div>",
-      "leagues": [
-        {
-          "key": "nba",
-          "sport_key": "flashscore_basketball_nba",
-          "label": "NBA",
-          "flag": "🏀",
-          "country": "USA",
-          "panel_title": "🏀 NBA",
-          "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
-        }
-      ]
+      "leagues": []
     },
     "ufc": {
       "key": "ufc",
@@ -55,16 +43,6 @@
       "disclaimer_style": "--orange:var(--green);border-color:rgba(16,185,129,0.25);background:rgba(16,185,129,0.06);",
       "leagues": [
         {
-          "key": "atp_french_open_france",
-          "sport_key": "flashscore_tennis_atp_french_open_france",
-          "label": "ATP French Open (France)",
-          "flag": "🎾",
-          "country": "",
-          "panel_title": "🎾 ATP French Open (France)",
-          "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
-        },
-        {
           "key": "wta_french_open_france",
           "sport_key": "flashscore_tennis_wta_french_open_france",
           "label": "WTA French Open (France)",
@@ -72,16 +50,665 @@
           "country": "",
           "panel_title": "🎾 WTA French Open (France)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "tMeHmEwK",
+              "flashscore_id": "tMeHmEwK",
+              "flashscore_sport_id": 2,
+              "home_team_id": "8CZqQdSa",
+              "away_team_id": "lI6fOOat",
+              "tournament_id": "0n2yc0d5",
+              "tournament_url": "/tennis/wta-singles/french-open/",
+              "sport_key": "flashscore_tennis_wta_french_open_france",
+              "commence_time": "2026-06-04T13:00:00.000Z",
+              "time_display": "Jeu. 15h00",
+              "home": "Kostyuk M.",
+              "away": "Andreeva M.",
+              "match": "Kostyuk M. vs Andreeva M.",
+              "prono": "win-home",
+              "pari": "Moins de 22.5 jeux",
+              "cote_retenue": 1.73,
+              "cotes": {
+                "domicile": 1.75,
+                "nul": null,
+                "exterieur": 2.2
+              },
+              "pick_category": "ou",
+              "analyse": "Ce quart de finale de Roland-Garros oppose deux joueuses en grande forme sur la terre battue parisienne. Andreeva a été dominante lors de ce tournoi : trois victoires en 2-0 (Ferro, Bouzkova, Teichmann, Cirstea) avant un match plus serré en 2-1 face à Bassols. Kostyuk, de son côté, a réalisé l'exploit de battre Swiatek 2-0 au troisième tour, après des victoires nettes sur Golubic et Selekhmeteva. Le H2H récent est parlant : à Madrid début mai, Kostyuk avait battu Andreeva 2-0. Ces deux joueuses pratiquent un tennis agressif depuis la ligne de fond, avec des échanges intenses sur terre battue. Cependant, la majorité des sets joués dans ce tournoi par les deux joueuses ont été remportés rapidement (nombreux scores 2-0), ce qui suggère que l'une d'elles pourrait dominer nettement. Avec des sets souvent expéditifs des deux côtés, un total de jeux sous 22.5 est crédible, même si la tension d'un quart de finale peut allonger les échanges. Le handicap jeux +4.5 en faveur de Kostyuk à 1.24 est trop bas ; le meilleur compromis cote/valeur reste le total de jeux avec Moins de 22.5 à 1.73.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1780396200,
+                    "tournament": "FO",
+                    "home": "Svitolina E.",
+                    "away": "Kostyuk M.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1780391400,
+                    "tournament": "FO",
+                    "home": "Andreeva M.",
+                    "away": "Cirstea S.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780241700,
+                    "tournament": "FO",
+                    "home": "Andreeva M.",
+                    "away": "Teichmann J.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780218600,
+                    "tournament": "FO",
+                    "home": "Kostyuk M.",
+                    "away": "Swiatek I.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780056000,
+                    "tournament": "FO",
+                    "home": "Andreeva M.",
+                    "away": "Bouzkova M.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780045800,
+                    "tournament": "FO",
+                    "home": "Kostyuk M.",
+                    "away": "Golubic V.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779904800,
+                    "tournament": "FO",
+                    "home": "Andreeva M.",
+                    "away": "Bassols M.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1779885000,
+                    "tournament": "FO",
+                    "home": "Kostyuk M.",
+                    "away": "Volynets K.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1779633300,
+                    "tournament": "FO",
+                    "home": "Andreeva M.",
+                    "away": "Ferro F.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779613800,
+                    "tournament": "FO",
+                    "home": "Kostyuk M.",
+                    "away": "Selekhmeteva O.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778605500,
+                    "tournament": "ROM",
+                    "home": "Gauff C.",
+                    "away": "Andreeva M.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1778503500,
+                    "tournament": "ROM",
+                    "home": "Mertens E.",
+                    "away": "Andreeva M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1778346600,
+                    "tournament": "ROM",
+                    "home": "Golubic V.",
+                    "away": "Andreeva M.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1778145000,
+                    "tournament": "ROM",
+                    "home": "Ruzic A.",
+                    "away": "Andreeva M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1777734600,
+                    "tournament": "MAD",
+                    "home": "Andreeva M.",
+                    "away": "Kostyuk M.",
+                    "score": "0-2"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "17.5": {
+                    "over": 1.17,
+                    "under": 4.6
+                  },
+                  "18.0": {
+                    "over": 1.14,
+                    "under": 4.7
+                  },
+                  "18.5": {
+                    "over": 1.31,
+                    "under": 3.31
+                  },
+                  "19.0": {
+                    "over": 1.29,
+                    "under": 3.3
+                  },
+                  "19.5": {
+                    "over": 1.46,
+                    "under": 2.64
+                  },
+                  "20.0": {
+                    "over": 1.48,
+                    "under": 2.54
+                  },
+                  "20.5": {
+                    "over": 1.67,
+                    "under": 2.18
+                  },
+                  "21.0": {
+                    "over": 1.69,
+                    "under": 2.14
+                  },
+                  "21.5": {
+                    "over": 1.83,
+                    "under": 1.97
+                  },
+                  "22.0": {
+                    "over": 1.92,
+                    "under": 1.86
+                  },
+                  "22.5": {
+                    "over": 2.05,
+                    "under": 1.73
+                  },
+                  "23.0": {
+                    "over": 2.19,
+                    "under": 1.63
+                  },
+                  "23.5": {
+                    "over": 2.27,
+                    "under": 1.6
+                  },
+                  "24.0": {
+                    "over": 2.34,
+                    "under": 1.53
+                  },
+                  "24.5": {
+                    "over": 2.38,
+                    "under": 1.54
+                  },
+                  "25.0": {
+                    "over": 2.5,
+                    "under": 1.44
+                  },
+                  "25.5": {
+                    "over": 2.63,
+                    "under": 1.44
+                  },
+                  "26.5": {
+                    "over": 3.33,
+                    "under": 1.32
+                  },
+                  "2.5": {
+                    "over": 2.28,
+                    "under": 1.57
+                  },
+                  "27.5": {
+                    "over": 3.45,
+                    "under": 1.3
+                  },
+                  "28.5": {
+                    "over": 4.2,
+                    "under": 1.23
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.33,
+                    "away": 1.87
+                  },
+                  "-1.5": {
+                    "home": 1.89,
+                    "away": 3.2
+                  },
+                  "0.0": {
+                    "home": 1.7,
+                    "away": 2.13
+                  },
+                  "0.5": {
+                    "home": 1.65,
+                    "away": 2.05
+                  },
+                  "-0.5": {
+                    "home": 1.72,
+                    "away": 2.23
+                  },
+                  "1.0": {
+                    "home": 1.61,
+                    "away": 1.99
+                  },
+                  "-1.0": {
+                    "home": 1.8,
+                    "away": 2.29
+                  },
+                  "2.0": {
+                    "home": 1.51,
+                    "away": 1.83
+                  },
+                  "-2.0": {
+                    "home": 1.95,
+                    "away": 2.52
+                  },
+                  "2.5": {
+                    "home": 1.46,
+                    "away": 1.76
+                  },
+                  "-2.5": {
+                    "home": 1.97,
+                    "away": 2.67
+                  },
+                  "3.0": {
+                    "away": 1.64
+                  },
+                  "-3.0": {
+                    "home": 2.23
+                  },
+                  "3.5": {
+                    "home": 1.38,
+                    "away": 1.6
+                  },
+                  "-3.5": {
+                    "home": 2.33,
+                    "away": 2.92
+                  },
+                  "4.0": {
+                    "away": 1.42
+                  },
+                  "-4.0": {
+                    "home": 2.82
+                  },
+                  "4.5": {
+                    "home": 1.24,
+                    "away": 1.41
+                  },
+                  "-4.5": {
+                    "home": 2.92,
+                    "away": 4.1
+                  },
+                  "5.0": {
+                    "away": 1.23
+                  },
+                  "-5.0": {
+                    "home": 4.1
+                  },
+                  "5.5": {
+                    "away": 1.23
+                  },
+                  "-5.5": {
+                    "home": 4.13
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "6J1JWr7N",
+              "flashscore_id": "6J1JWr7N",
+              "flashscore_sport_id": 2,
+              "home_team_id": "028BdVOj",
+              "away_team_id": "OIxOD54s",
+              "tournament_id": "0n2yc0d5",
+              "tournament_url": "/tennis/wta-singles/french-open/",
+              "sport_key": "flashscore_tennis_wta_french_open_france",
+              "commence_time": "2026-06-04T14:30:00.000Z",
+              "time_display": "Jeu. 16h30",
+              "home": "Shnaider D.",
+              "away": "Chwalinska M.",
+              "match": "Shnaider D. vs Chwalinska M.",
+              "prono": "win-home",
+              "pari": "Moins de 21.5 jeux",
+              "cote_retenue": 1.86,
+              "cotes": {
+                "domicile": 1.57,
+                "nul": null,
+                "exterieur": 2.57
+              },
+              "pick_category": "ou",
+              "analyse": "Les deux joueuses arrivent à ce quart ou demi de tableau dans une forme remarquable sur terre battue à Roland-Garros. Chwalinska affiche un bilan impressionnant de 8 victoires consécutives à Roland-Garros cette année, avec notamment des succès en 2-0 sur Zheng Q. (tête de série), Sakkari, et Kalinskaya — des victoires nettes qui témoignent d'une domination sur la surface. Shnaider est tout aussi en feu : elle a éliminé Sabalenka en trois sets après des victoires 2-0 sur Zarazua, Kessler, Oliynykova et Keys. Les deux joueuses jouent un tennis offensif et agressif sur terre battue, Chwalinska notamment avec une tactique de fond de court puissante. L'historique récent montre que Chwalinska remporte ses matchs majoritairement en deux sets (2-0 dans 8 de ses 9 dernières rencontres à Roland-Garros), tandis que Shnaider a dû aller en trois sets contre Sabalenka. Avec deux joueuses en grande confiance et un style potentiellement équilibré, un match disputé en 3 sets est envisageable, mais la densité des victoires en 2-0 des deux côtés suggère plutôt une issue rapide et un nombre de jeux contenu.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1780486200,
+                    "tournament": "FO",
+                    "home": "Sabalenka A.",
+                    "away": "Shnaider D.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1780477800,
+                    "tournament": "FO",
+                    "home": "Kalinskaya A.",
+                    "away": "Chwalinska M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1780318500,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Parry D.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780317000,
+                    "tournament": "FO",
+                    "home": "Keys M.",
+                    "away": "Shnaider D.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1780135800,
+                    "tournament": "FO",
+                    "home": "Shnaider D.",
+                    "away": "Oliynykova O.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780132200,
+                    "tournament": "FO",
+                    "home": "Sakkari M.",
+                    "away": "Chwalinska M.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1779969600,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Mertens E.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779968400,
+                    "tournament": "FO",
+                    "home": "Shnaider D.",
+                    "away": "Kessler M.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779732600,
+                    "tournament": "FO",
+                    "home": "Shnaider D.",
+                    "away": "Zarazua R.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779700200,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Zheng Q.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779354600,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Lamens S.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779264300,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Monnet C.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779100800,
+                    "tournament": "FO",
+                    "home": "Chwalinska M.",
+                    "away": "Rame A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1778518800,
+                    "tournament": "PAR",
+                    "home": "Urgesi F.",
+                    "away": "Chwalinska M.",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1778416200,
+                    "tournament": "ROM",
+                    "home": "Osaka N.",
+                    "away": "Shnaider D.",
+                    "score": "2-0"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "17.5": {
+                    "over": 1.21,
+                    "under": 3.96
+                  },
+                  "18.0": {
+                    "over": 1.22,
+                    "under": 3.65
+                  },
+                  "18.5": {
+                    "over": 1.36,
+                    "under": 2.99
+                  },
+                  "19.0": {
+                    "over": 1.39,
+                    "under": 2.76
+                  },
+                  "19.5": {
+                    "over": 1.52,
+                    "under": 2.45
+                  },
+                  "20.0": {
+                    "over": 1.59,
+                    "under": 2.27
+                  },
+                  "20.5": {
+                    "over": 1.71,
+                    "under": 2.09
+                  },
+                  "21.0": {
+                    "over": 1.8,
+                    "under": 1.99
+                  },
+                  "21.5": {
+                    "over": 1.85,
+                    "under": 1.86
+                  },
+                  "22.0": {
+                    "over": 2.03,
+                    "under": 1.77
+                  },
+                  "22.5": {
+                    "over": 2.12,
+                    "under": 1.67
+                  },
+                  "23.0": {
+                    "over": 2.25,
+                    "under": 1.6
+                  },
+                  "23.5": {
+                    "over": 2.31,
+                    "under": 1.58
+                  },
+                  "24.0": {
+                    "over": 2.39,
+                    "under": 1.51
+                  },
+                  "24.5": {
+                    "over": 2.44,
+                    "under": 1.52
+                  },
+                  "25.0": {
+                    "over": 2.6,
+                    "under": 1.41
+                  },
+                  "25.5": {
+                    "over": 2.71,
+                    "under": 1.42
+                  },
+                  "26.5": {
+                    "over": 3.17,
+                    "under": 1.34
+                  },
+                  "2.5": {
+                    "over": 2.3,
+                    "under": 1.58
+                  },
+                  "27.5": {
+                    "over": 3.65,
+                    "under": 1.28
+                  },
+                  "28.5": {
+                    "over": 4.4,
+                    "under": 1.21
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.23,
+                    "away": 1.85
+                  },
+                  "-1.5": {
+                    "home": 1.94,
+                    "away": 3.75
+                  },
+                  "0.0": {
+                    "home": 1.51,
+                    "away": 2.52
+                  },
+                  "0.5": {
+                    "home": 1.48,
+                    "away": 2.42
+                  },
+                  "-0.5": {
+                    "home": 1.56,
+                    "away": 2.62
+                  },
+                  "1.0": {
+                    "home": 1.44,
+                    "away": 2.33
+                  },
+                  "-1.0": {
+                    "home": 1.59,
+                    "away": 2.73
+                  },
+                  "2.0": {
+                    "away": 2.13
+                  },
+                  "-2.0": {
+                    "home": 1.7
+                  },
+                  "2.5": {
+                    "home": 1.35,
+                    "away": 2.01
+                  },
+                  "-2.5": {
+                    "home": 1.75,
+                    "away": 3.2
+                  },
+                  "3.0": {
+                    "away": 1.9
+                  },
+                  "-3.0": {
+                    "home": 1.88
+                  },
+                  "3.5": {
+                    "home": 1.27,
+                    "away": 1.81
+                  },
+                  "-3.5": {
+                    "home": 1.98,
+                    "away": 3.75
+                  },
+                  "4.0": {
+                    "away": 1.64
+                  },
+                  "-4.0": {
+                    "home": 2.23
+                  },
+                  "4.5": {
+                    "away": 1.55
+                  },
+                  "-4.5": {
+                    "home": 2.44
+                  },
+                  "5.0": {
+                    "away": 1.39
+                  },
+                  "-5.0": {
+                    "home": 2.95
+                  },
+                  "5.5": {
+                    "away": 1.35
+                  },
+                  "-5.5": {
+                    "home": 3.21
+                  },
+                  "6.0": {
+                    "away": 1.21
+                  },
+                  "-6.0": {
+                    "home": 4.3
+                  },
+                  "6.5": {
+                    "away": 1.19
+                  },
+                  "-6.5": {
+                    "home": 4.6
+                  },
+                  "7.0": {
+                    "away": 1.08
+                  },
+                  "-7.0": {
+                    "home": 7.4
+                  },
+                  "7.5": {
+                    "away": 1.07
+                  },
+                  "-7.5": {
+                    "home": 8
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     }
   },
   "coup_de_coeur": [
-    "Kx28rsbn",
-    "C80slxrg",
-    "Qsu7A0tQ",
-    "4zPsYSbC"
+    "6J1JWr7N",
+    "tMeHmEwK"
   ],
   "history": [
     {
@@ -133714,76 +134341,6 @@
       "sport_label": "🏀 Basketball",
       "league_label": "NBA",
       "archived_at": "2026-06-04T05:26:56.362Z"
-    }
-  ],
-  "combos": [
-    {
-      "strategy": "safe",
-      "label": "Double sûr du jour",
-      "reasoning": "Sabalenka est la grande favorite de ce Roland-Garros, sa domination sur Shnaider ne fait aucun doute avec une cote reflet d'une confiance maximale. On y associe le Over points NBA Spurs/Knicks, deux équipes qui jouent à un rythme offensif élevé en fin de saison, pour un combo équilibré à faible variance sur deux sports différents.",
-      "legs": [
-        {
-          "event_id": "Kx28rsbn",
-          "match": "Sabalenka A. vs Shnaider D.",
-          "pari": "Victoire Sabalenka",
-          "sport_key": "flashscore_tennis_wta_french_open_france",
-          "pick_category": "1x2",
-          "prono": "win-home",
-          "cote": 1.43,
-          "home": "Sabalenka A.",
-          "away": "Shnaider D.",
-          "time_display": "Mer. 12h30",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "4zPsYSbC",
-          "match": "San Antonio Spurs vs New York Knicks",
-          "pari": "Plus de 217.5 points",
-          "sport_key": "flashscore_basketball_nba",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 1.8,
-          "home": "San Antonio Spurs",
-          "away": "New York Knicks",
-          "time_display": "Jeu. 02h30",
-          "sport_label": "🏀 NBA"
-        }
-      ],
-      "total_cote": 2.57
-    },
-    {
-      "strategy": "value",
-      "label": "Combo value tennis Roland-Garros",
-      "reasoning": "Auger-Aliassime et Cobolli sont deux joueurs très offensifs sur terre battue, propices aux longs échanges et aux sets disputés, ce qui rend le Over 39.5 jeux très crédible. On associe Berrettini vs Arnaldi, duel entre deux Italiens à gros service mais aussi à forte intensité sur la terre battue parisienne, où le Over 38.5 jeux a une belle valeur. Ces deux legs partagent la même logique de volume de jeu sur la même surface, ce qui renforce la cohérence du combo.",
-      "legs": [
-        {
-          "event_id": "C80slxrg",
-          "match": "Auger-Aliassime F. vs Cobolli F.",
-          "pari": "Plus de 39.5 jeux",
-          "sport_key": "flashscore_tennis_atp_french_open_france",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 1.86,
-          "home": "Auger-Aliassime F.",
-          "away": "Cobolli F.",
-          "time_display": "Mer. 14h00",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "Qsu7A0tQ",
-          "match": "Berrettini M. vs Arnaldi M.",
-          "pari": "Plus de 38.5 jeux",
-          "sport_key": "flashscore_tennis_atp_french_open_france",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 1.85,
-          "home": "Berrettini M.",
-          "away": "Arnaldi M.",
-          "time_display": "Mer. 20h15",
-          "sport_label": "🎾 Tennis"
-        }
-      ],
-      "total_cote": 3.44
     }
   ]
 }
