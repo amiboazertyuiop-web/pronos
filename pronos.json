@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-10T18:27:11.993Z",
+    "last_results_update": "2026-06-11T07:17:11.702Z",
     "analyses_written_at": "2026-06-10T08:49:00.004Z",
     "analyses_cost_usd": 0.1276,
-    "last_hourly_refresh": "2026-06-11T02:03:47.183Z"
+    "last_hourly_refresh": "2026-06-11T07:17:11.702Z"
   },
   "sports": {
     "foot": {
@@ -33,243 +33,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "Y957llqg",
-              "flashscore_id": "Y957llqg",
-              "flashscore_sport_id": 3,
-              "home_team_id": "WCNO4nbt",
-              "away_team_id": "IwmkErSH",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-06-11T00:30:00.000Z",
-              "time_display": "Jeu. 02h30",
-              "home": "New York Knicks",
-              "away": "San Antonio Spurs",
-              "match": "New York Knicks vs San Antonio Spurs",
-              "prono": "win-home",
-              "pari": "Moins de 215.5 points",
-              "cote_retenue": 1.91,
-              "cotes": {
-                "domicile": 1.72,
-                "nul": null,
-                "exterieur": 2.12
-              },
-              "pick_category": "ou",
-              "analyse": "Ces deux équipes s'affrontent dans ce qui semble être une série de playoffs, avec les Knicks qui mènent 2-1 après leurs victoires en matchs 2 (105-104) et 3 (105-95) avant de s'incliner en match 4 (111-115). Les totaux de cette série sont révélateurs : 209, 209, 200, 226 — soit une moyenne de 211 points, avec trois matchs sous 215.5 sur quatre. New York joue un basket très contrôlé en playoffs sous Tom Thibodeau, limitant le rythme et étouffant les attaques adverses, comme en témoignent leurs victoires contre Cleveland (109-93, 115-104, 121-108, 130-93). San Antonio a montré un jeu plus ouvert contre Oklahoma City, mais la défense new-yorkaise au MSG est parmi les plus imperméables de la ligue. Sur les 4 confrontations directes dans cette série, 3 sont restées sous 215.5 points, et les deux équipes montrent des tendances défensives marquées dans les matchs à élimination. Le match 5, souvent le plus serré et le plus âprement disputé d'une série, s'annonce comme un duel de basse intensité offensive.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1780965000,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "San Antonio Spurs",
-                    "score": "111-115"
-                  },
-                  {
-                    "timestamp": 1780705800,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "New York Knicks",
-                    "score": "104-105"
-                  },
-                  {
-                    "timestamp": 1780533000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "New York Knicks",
-                    "score": "95-105"
-                  },
-                  {
-                    "timestamp": 1780185600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "103-111"
-                  },
-                  {
-                    "timestamp": 1780014600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "118-91"
-                  },
-                  {
-                    "timestamp": 1779841800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "127-114"
-                  },
-                  {
-                    "timestamp": 1779753600,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "New York Knicks",
-                    "score": "93-130"
-                  },
-                  {
-                    "timestamp": 1779667200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "103-82"
-                  },
-                  {
-                    "timestamp": 1779580800,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "New York Knicks",
-                    "score": "108-121"
-                  },
-                  {
-                    "timestamp": 1779496200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-123"
-                  },
-                  {
-                    "timestamp": 1779408000,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "109-93"
-                  },
-                  {
-                    "timestamp": 1779323400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "122-113"
-                  },
-                  {
-                    "timestamp": 1779235200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "115-104"
-                  },
-                  {
-                    "timestamp": 1779150600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "115-122"
-                  },
-                  {
-                    "timestamp": 1778895000,
-                    "tournament": "NBA",
-                    "home": "Minnesota Timberwolves",
-                    "away": "San Antonio Spurs",
-                    "score": "109-139"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "215.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "216.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "211.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "212.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "214.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "217.5": {
-                    "over": 1.91,
-                    "under": 1.8
-                  },
-                  "218.5": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "219.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "220.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.62,
-                    "away": 1.95
-                  },
-                  "-1.5": {
-                    "home": 1.81,
-                    "away": 2.2
-                  },
-                  "2.5": {
-                    "home": 1.6,
-                    "away": 1.91
-                  },
-                  "-2.5": {
-                    "home": 1.91,
-                    "away": 2.25
-                  },
-                  "3.5": {
-                    "home": 1.53,
-                    "away": 1.7
-                  },
-                  "-3.5": {
-                    "home": 2.05,
-                    "away": 2.38
-                  },
-                  "4.5": {
-                    "away": 1.62
-                  },
-                  "-4.5": {
-                    "home": 2.2
-                  },
-                  "5.5": {
-                    "away": 1.53
-                  },
-                  "-5.5": {
-                    "home": 2.38
-                  },
-                  "6.5": {
-                    "away": 1.5
-                  },
-                  "-6.5": {
-                    "home": 2.5
-                  },
-                  "7.5": {
-                    "away": 1.4
-                  },
-                  "-7.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -600,9 +364,9 @@
               "pari": "Moins de 23.5 jeux",
               "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 1.96,
+                "domicile": 1.98,
                 "nul": null,
-                "exterieur": 1.82
+                "exterieur": 1.8
               },
               "pick_category": "ou",
               "analyse": "Sur gazon à Hertogenbosch, Cilic reste un serveur redoutable sur cette surface et vient de battre Shapovalov 2-1 en trois sets lors de son entrée en lice. Borges, lui, a dominé Atmane 2-0 de façon convaincante au premier tour. Les deux joueurs arrivent dans des formes honorables : Borges a atteint le troisième tour à Roland-Garros (battu par Rublev) et Cilic a été éliminé d'emblée à Paris par Kouame. Sur gazon, le service est roi et les échanges sont généralement plus courts qu'en terre battue, ce qui favorise les matches en peu de jeux. La victoire de Cilic sur Shapovalov s'est disputée en trois sets, ce qui indique que Cilic peut pousser Borges dans ses retranchements même si ce dernier semble en meilleure forme générale. Un match en deux sets serrés sur gazon, entre deux serveurs solides, pointe davantage vers un total de jeux modéré. Le marché à 21.5 jeux en over offre la meilleure cote viable, mais compte tenu de la régularité des matchs de gazon en peu de jeux, miser sur le 'Moins de 23.5 jeux' à cote intéressante semble le choix le plus judicieux.",
@@ -1420,9 +1184,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 1.97,
               "cotes": {
-                "domicile": 3.05,
+                "domicile": 3.15,
                 "nul": null,
-                "exterieur": 1.37
+                "exterieur": 1.35
               },
               "pick_category": "ou",
               "analyse": "Tiafoe vient de battre Altmaier 2-1 à Stuttgart au premier tour, confirmant une bonne adaptation à la surface gazon cette semaine. Sa forme récente est solide avec trois victoires consécutives à Roland-Garros (Spizzirri, Hurkacz, Faria) avant une élimination en 5 sets face à Arnaldi. Hijikata, de son côté, a battu Gentzsch 2-1 à Stuttgart au premier tour, mais sa trajectoire récente est plus fragile : défaite contre Altmaier à Hambourg et élimination dès le premier tour à Birmingham face à Fery. L'Australien a montré des limites évidentes sur gazon cette saison. Tiafoe, joueur explosif et frappeur puissant, est clairement favori sur cette surface. Sur gazon, les services dominent et les échanges restent courts, ce qui pousse vers un match avec peu de jeux au total. La ligne 20.5 jeux (under à 2.84) est trop basse, mais le under 22.5 à 1.97 représente une valeur raisonnable compte tenu du style des deux joueurs et de la surface rapide.",
@@ -1699,9 +1463,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 2.08,
               "cotes": {
-                "domicile": 1.3,
+                "domicile": 1.28,
                 "nul": null,
-                "exterieur": 3.45
+                "exterieur": 3.6
               },
               "pick_category": "ou",
               "analyse": "Lehecka est clairement le favori sur cette rencontre à Stuttgart, tournoi sur gazon où son jeu agressif et son service puissant constituent des atouts majeurs. Sur sa récente forme, le Tchèque a enchaîné plusieurs victoires convaincantes à Madrid (Tabilo, Michelsen, Musetti en 2-0) avant de s'incliner face à des têtes de série solides (Ruud, Fils, Carreno-Busta). Duckworth, lui, affiche une forme mitigée : il vient de battre Dedura à Stuttgart au premier tour mais reste sur une élimination précoce à Roland-Garros et deux défaites sur cinq derniers matchs sur terre. Sur gazon, l'écart de niveau est sensiblement en faveur de Lehecka, dont le jeu service-volée et les frappes de fond est particulièrement adapté à la surface. Le match devrait être expédié en deux sets par Lehecka, mais la résistance de Duckworth (adepte des longs échanges, 3 sets sur plusieurs récents matchs) laisse envisager un total de jeux élevé. Sur gazon néanmoins, les services dominent et les sets se concluent souvent rapidement, ce qui plaide pour un total modéré autour de 20-22 jeux si Lehecka s'impose nettement.",
@@ -1980,9 +1744,9 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 1.48,
               "cotes": {
-                "domicile": 1.35,
+                "domicile": 1.36,
                 "nul": null,
-                "exterieur": 3.15
+                "exterieur": 3.1
               },
               "pick_category": "ou",
               "analyse": "Ben Shelton aborde ce match à Stuttgart après une forme récente mitigée : éliminé au premier tour de Roland-Garros par Collignon (0-3), il avait également chuté face à Altmaier à Hambourg (1-2) et contre Basilashvili à Rome (1-2). Marcos Giron, de son côté, vient de battre Bautista-Agut en deux sets à Stuttgart cette semaine, ce qui démontre une bonne adaptation au gazon en ce moment. Le H2H récent à Hambourg (2026-05-18) a vu Shelton s'imposer 2-1, ce qui indique que leurs confrontations sont tendues et peuvent aller en trois sets. Stuttgart se dispute sur gazon, surface qui favorise les gros serveurs comme Shelton dont le service est une arme redoutable, mais Giron a montré qu'il savait s'adapter à cette surface. Compte tenu du niveau comparable des deux joueurs sur cette surface et de leur H2H récent en trois manches, un match disputé avec de nombreux jeux est attendu, rendant le 'Plus de 22.5 jeux' particulièrement attractif à une cote correcte.",
@@ -2285,9 +2049,9 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 2.57,
               "cotes": {
-                "domicile": 2.28,
+                "domicile": 2.36,
                 "nul": null,
-                "exterieur": 1.6
+                "exterieur": 1.56
               },
               "pick_category": "ou",
               "analyse": "Nick Kyrgios fait son retour sur le circuit à Stuttgart, sur gazon, une surface qui lui a toujours convenu grâce à son service dévastateur et son jeu agressif. Il vient de dominer Moutet 2-0 à l'entame du tournoi, signe d'une mise en route solide. En face, Sho Shimabukuro est en belle forme récente : il enchaîne les victoires à Stuttgart (Sakellaridis, Rodionov, Halys) après un bon parcours à Birmingham, mais ses adversaires sont pour la plupart classés bien en dessous du niveau de Kyrgios. Le gazon favorise les grosses premières balles et les échanges courts, ce qui réduit naturellement le nombre de jeux disputés, surtout quand un serveur-volleyeur dominant comme Kyrgios est en confiance. Les matchs de Kyrgios sur gazon sont historiquement expéditifs lorsqu'il est dans un bon jour : peu de débreaks, services dominants des deux côtés. Un total sous les 21.5 jeux semble cohérent avec la dynamique attendue de cette rencontre.",
@@ -2844,9 +2608,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.26,
               "cotes": {
-                "domicile": 2.3,
+                "domicile": 2.34,
                 "nul": null,
-                "exterieur": 1.6
+                "exterieur": 1.58
               },
               "pick_category": "ou",
               "analyse": "Ce quart de finale à Hertogenbosch oppose deux joueuses en excellente forme sur gazon. Montgomery a battu Yuan, Garland puis la coriace Kasatkina (2-1) pour atteindre ce stade, affichant trois victoires consécutives sur cette surface. Minnen est tout aussi impressionnante : cinq victoires sur ses six derniers matchs dont trois à Hertogenbosch (Tomova 2-0, Seidel 2-1, Tjen 2-0), avec une seule défaite face à Charaeva à Birmingham. Sur gazon, les services sont dominants et les points souvent courts, ce qui favorise les matchs en moins de jeux. Montgomery semble légèrement supérieure grâce à sa victoire sur Kasatkina (top 30), mais Minnen sur gazon est redoutable. Les cotes indiquent un match relativement serré mais la tendance des deux joueuses à conclure rapidement (trois victoires 2-0 pour Minnen, deux pour Montgomery lors de ce tournoi) plaide fortement pour un total de jeux contenu. Le seuil de 20.5 jeux à 1.56 représente la meilleure valeur pour miser sur un match expédié en deux sets sans accroc.",
@@ -3113,9 +2877,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.27,
               "cotes": {
-                "domicile": 1.74,
+                "domicile": 1.78,
                 "nul": null,
-                "exterieur": 2.06
+                "exterieur": 2
               },
               "pick_category": "ou",
               "analyse": "Linette et Pohankova se retrouvent toutes deux en bonne dynamique après leurs victoires au premier tour à Hertogenbosch. Linette a battu Birrell en trois sets (2-1) hier, confirmant sa capacité à disputer des matchs longs sur gazon après un bon parcours à Roland-Garros (victoire sur Ostapenko et Valentova avant de chuter face à Swiatek). Pohankova de son côté a dominé Tauson 2-0 en ne laissant aucun set, et affichait une forme solide à Vienne avec 4 victoires dont un parcours jusqu'en quarts. Sur gazon, le style de jeu tend à favoriser des échanges plus rapides avec des services dominants, ce qui raccourcit les matchs. Pohankova a montré une capacité à conclure vite (3 victoires en 2 sets sur ses 5 derniers matchs), et Linette, bien que capable de longues batailles, a aussi perdu plusieurs matchs en 2 sets secs. Un total sous 22.5 jeux est plausible sur cette surface rapide entre deux joueuses qui peuvent chacune forcer la décision rapidement. La ligne à 20.5 jeux à 2.27 offre une valeur intéressante pour un match qui pourrait rester compact en deux sets décisifs.",
@@ -3388,9 +3152,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 1.8,
               "cotes": {
-                "domicile": 3.5,
+                "domicile": 3.65,
                 "nul": null,
-                "exterieur": 1.29
+                "exterieur": 1.27
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre Ruse et Mertens se dispute sur gazon à Hertogenbosch, une surface qui favorise les services dominants et les échanges courts. Mertens vient de battre Andreescu 2-0 au tour précédent dans ce même tournoi, confirmant une bonne adaptation au gazon, et elle avait aussi battu Maria et Paolini sur dur récemment, montrant une forme solide depuis plusieurs semaines. Ruse a de son côté disposé de Korpatsch 2-0 ici à Hertogenbosch, mais sa forme globale est plus irrégulière : défaite face à Frech en 2 sets à Roland-Garros et deux défaites sur terre battue à Bucarest. Sur gazon, les matchs tendent à être expéditifs quand l'une des joueuses prend le contrôle du service, et les deux ont montré une capacité à conclure rapidement (plusieurs victoires 2-0 dans leurs historiques récents). Avec deux joueuses capables de terminer les sets rapidement et une surface propice aux jeux tenus facilement, un total sous 20.5 jeux paraît raisonnable, avec une configuration probable en deux sets sans beaucoup de bris.",
@@ -3945,43 +3709,6 @@
     "zBX3iPZP"
   ],
   "history": [
-    {
-      "event_id": "hliSxIrp",
-      "flashscore_id": "hliSxIrp",
-      "flashscore_sport_id": 2,
-      "home_team_id": "jqcBin0G",
-      "away_team_id": "Ovyv04To",
-      "tournament_id": "8c5tdvrh",
-      "tournament_url": "/tennis/wta-singles/french-open/",
-      "sport_key": "flashscore_tennis_wta_french_open_france_q",
-      "commence_time": "2026-05-19T09:30:00.000Z",
-      "time_display": "Mar. 11h30",
-      "home": "Brancaccio N.",
-      "away": "Quevedo K.",
-      "match": "Brancaccio N. vs Quevedo K.",
-      "prono": "win-home",
-      "pari": "Victoire en 2-0",
-      "cote_retenue": 1.4,
-      "cotes": {
-        "domicile": 3.04,
-        "nul": null,
-        "exterieur": 1.38
-      },
-      "pick_category": "cs",
-      "analyse": "Kamilla Quevedo s'impose comme la favorite claire de cette rencontre du qualifying de Roland-Garros. La Colombienne est une joueuse formée sur terre battue sud-américaine, surface sur laquelle elle exprime le mieux son jeu de fond de court patient et régulier. Brancaccio, joueuse italienne présente dans les qualifications, affiche un classement et un niveau nettement inférieur à celui de Quevedo sur ocre. Sur terre battue, les échanges tendant à s'allonger, Quevedo dispose de l'endurance et de la constance nécessaires pour gérer des rallyes prolongés. L'avantage en termes de puissance de frappe et de construction de point devrait permettre à la Colombienne de s'imposer sans laisser trop d'espaces à l'Italienne. Un score en deux sets directs semble l'issue la plus probable, au regard de l'écart de niveau entre les deux joueuses dans ce contexte de qualification sur surface lente.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": null,
-      "markets": null,
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA French Open (France) (Q)",
-      "archived_at": "2026-05-19T16:40:46.189Z"
-    },
     {
       "event_id": "WEbI0thl",
       "flashscore_id": "WEbI0thl",
@@ -142833,6 +142560,244 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA London (United Kingdom)",
       "archived_at": "2026-06-10T18:27:11.993Z"
+    },
+    {
+      "event_id": "Y957llqg",
+      "flashscore_id": "Y957llqg",
+      "flashscore_sport_id": 3,
+      "home_team_id": "WCNO4nbt",
+      "away_team_id": "IwmkErSH",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-06-11T00:30:00.000Z",
+      "time_display": "Jeu. 02h30",
+      "home": "New York Knicks",
+      "away": "San Antonio Spurs",
+      "match": "New York Knicks vs San Antonio Spurs",
+      "prono": "win-home",
+      "pari": "Moins de 215.5 points",
+      "cote_retenue": 1.91,
+      "cotes": {
+        "domicile": 1.72,
+        "nul": null,
+        "exterieur": 2.12
+      },
+      "pick_category": "ou",
+      "analyse": "Ces deux équipes s'affrontent dans ce qui semble être une série de playoffs, avec les Knicks qui mènent 2-1 après leurs victoires en matchs 2 (105-104) et 3 (105-95) avant de s'incliner en match 4 (111-115). Les totaux de cette série sont révélateurs : 209, 209, 200, 226 — soit une moyenne de 211 points, avec trois matchs sous 215.5 sur quatre. New York joue un basket très contrôlé en playoffs sous Tom Thibodeau, limitant le rythme et étouffant les attaques adverses, comme en témoignent leurs victoires contre Cleveland (109-93, 115-104, 121-108, 130-93). San Antonio a montré un jeu plus ouvert contre Oklahoma City, mais la défense new-yorkaise au MSG est parmi les plus imperméables de la ligue. Sur les 4 confrontations directes dans cette série, 3 sont restées sous 215.5 points, et les deux équipes montrent des tendances défensives marquées dans les matchs à élimination. Le match 5, souvent le plus serré et le plus âprement disputé d'une série, s'annonce comme un duel de basse intensité offensive.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "107-106",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1780965000,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "San Antonio Spurs",
+            "score": "111-115"
+          },
+          {
+            "timestamp": 1780705800,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "New York Knicks",
+            "score": "104-105"
+          },
+          {
+            "timestamp": 1780533000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "New York Knicks",
+            "score": "95-105"
+          },
+          {
+            "timestamp": 1780185600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "103-111"
+          },
+          {
+            "timestamp": 1780014600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "118-91"
+          },
+          {
+            "timestamp": 1779841800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "127-114"
+          },
+          {
+            "timestamp": 1779753600,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "New York Knicks",
+            "score": "93-130"
+          },
+          {
+            "timestamp": 1779667200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "103-82"
+          },
+          {
+            "timestamp": 1779580800,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "New York Knicks",
+            "score": "108-121"
+          },
+          {
+            "timestamp": 1779496200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "108-123"
+          },
+          {
+            "timestamp": 1779408000,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Cleveland Cavaliers",
+            "score": "109-93"
+          },
+          {
+            "timestamp": 1779323400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "122-113"
+          },
+          {
+            "timestamp": 1779235200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Cleveland Cavaliers",
+            "score": "115-104"
+          },
+          {
+            "timestamp": 1779150600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "115-122"
+          },
+          {
+            "timestamp": 1778895000,
+            "tournament": "NBA",
+            "home": "Minnesota Timberwolves",
+            "away": "San Antonio Spurs",
+            "score": "109-139"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "215.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "216.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "211.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "212.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "214.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "217.5": {
+            "over": 1.91,
+            "under": 1.8
+          },
+          "218.5": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "219.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "220.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.62,
+            "away": 1.95
+          },
+          "-1.5": {
+            "home": 1.81,
+            "away": 2.2
+          },
+          "2.5": {
+            "home": 1.6,
+            "away": 1.91
+          },
+          "-2.5": {
+            "home": 1.91,
+            "away": 2.25
+          },
+          "3.5": {
+            "home": 1.53,
+            "away": 1.7
+          },
+          "-3.5": {
+            "home": 2.05,
+            "away": 2.38
+          },
+          "4.5": {
+            "away": 1.62
+          },
+          "-4.5": {
+            "home": 2.2
+          },
+          "5.5": {
+            "away": 1.53
+          },
+          "-5.5": {
+            "home": 2.38
+          },
+          "6.5": {
+            "away": 1.5
+          },
+          "-6.5": {
+            "home": 2.5
+          },
+          "7.5": {
+            "away": 1.4
+          },
+          "-7.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-06-11T07:17:11.702Z"
     }
   ],
   "combos": [
