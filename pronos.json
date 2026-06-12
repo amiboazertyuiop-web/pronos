@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-12T17:26:44.376Z",
+    "last_results_update": "2026-06-12T19:33:48.813Z",
     "analyses_written_at": "2026-06-12T08:56:57.334Z",
     "analyses_cost_usd": 0.0683,
-    "last_hourly_refresh": "2026-06-12T17:26:44.376Z"
+    "last_hourly_refresh": "2026-06-12T19:33:48.813Z"
   },
   "sports": {
     "foot": {
@@ -61,297 +61,7 @@
           "country": "",
           "panel_title": "🎾 ATP Stuttgart (Germany)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "SQLVFs2M",
-              "flashscore_id": "SQLVFs2M",
-              "flashscore_sport_id": 2,
-              "home_team_id": "M9pojLqi",
-              "away_team_id": "UH09iaZ6",
-              "tournament_id": "z7ul7oiq",
-              "tournament_url": "/tennis/atp-singles/stuttgart/",
-              "sport_key": "flashscore_tennis_atp_stuttgart_germany",
-              "commence_time": "2026-06-12T11:15:00.000Z",
-              "time_display": "Ven. 13h15",
-              "home": "Bellucci M.",
-              "away": "Fritz T.",
-              "match": "Bellucci M. vs Fritz T.",
-              "prono": "win-home",
-              "pari": "Moins de 22.5 jeux",
-              "cote_retenue": 2.11,
-              "cotes": {
-                "domicile": 3.65,
-                "nul": null,
-                "exterieur": 1.28
-              },
-              "pick_category": "ou",
-              "analyse": "Taylor Fritz aborde ce quart de finale à Stuttgart en position de nette supériorité. Sur gazon, le serveur américain (top 10 mondial) est particulièrement redoutable grâce à un premier service dominant et une capacité à terminer les points rapidement. Il a écarté Landaluce en trois sets lors de son dernier match à Stuttgart, montrant sa solidité sur la surface. Bellucci, lui, traverse une période difficile : sur les 15 derniers résultats, on compte de nombreuses défaites face à des joueurs de niveau inférieur (Landaluce, Bolt, Halys, Cadenazzo, Forejtek, Prizmic), même s'il a réussi à passer deux tours ici à Stuttgart contre Davidovich Fokina et Hanfmann. Sur gazon, les échanges courts et les services dominants de Fritz devraient limiter le nombre total de jeux. Un Fritz qui s'impose en deux sets nets, avec peu de jeux concédés, semble le scénario le plus probable. Le handicap Fritz -4.5 jeux à 3.10 est intéressant mais risqué ; le Moins de 22.5 jeux offre une cote correcte à 2.11 avec une vraie logique de surface : gazon = points express, Fritz dominant = sets rapides.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1781189100,
-                    "tournament": "STU",
-                    "home": "Landaluce M.",
-                    "away": "Fritz T.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781082600,
-                    "tournament": "STU",
-                    "home": "Bellucci M.",
-                    "away": "Hanfmann Y.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780909800,
-                    "tournament": "STU",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1780393200,
-                    "tournament": "BIR",
-                    "home": "Bellucci M.",
-                    "away": "Bolt A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779636600,
-                    "tournament": "FO",
-                    "home": "Halys Q.",
-                    "away": "Bellucci M.",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1779636600,
-                    "tournament": "FO",
-                    "home": "Fritz T.",
-                    "away": "Basavareddy N.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1779274200,
-                    "tournament": "GEN",
-                    "home": "Fritz T.",
-                    "away": "Popyrin A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778490900,
-                    "tournament": "ROM",
-                    "home": "Bellucci M.",
-                    "away": "Landaluce M.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778330100,
-                    "tournament": "ROM",
-                    "home": "Etcheverry T. M.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778156100,
-                    "tournament": "ROM",
-                    "home": "Burruchaga R. A.",
-                    "away": "Bellucci M.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777557000,
-                    "tournament": "CAG",
-                    "home": "Bellucci M.",
-                    "away": "Cadenasso G.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1777476000,
-                    "tournament": "CAG",
-                    "home": "Sonego L.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1776855900,
-                    "tournament": "MAD",
-                    "home": "Dzumhur D.",
-                    "away": "Bellucci M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1776161400,
-                    "tournament": "OEI",
-                    "home": "Forejtek J.",
-                    "away": "Bellucci M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1775904300,
-                    "tournament": "MON",
-                    "home": "Bellucci M.",
-                    "away": "Prizmic D.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "19.5": {
-                    "over": 1.3,
-                    "under": 3.4
-                  },
-                  "20.5": {
-                    "over": 1.3,
-                    "under": 3.1
-                  },
-                  "21.0": {
-                    "over": 1.3,
-                    "under": 3.04
-                  },
-                  "21.5": {
-                    "over": 1.38,
-                    "under": 2.71
-                  },
-                  "22.0": {
-                    "over": 1.47,
-                    "under": 2.46
-                  },
-                  "22.5": {
-                    "over": 1.65,
-                    "under": 2.11
-                  },
-                  "23.0": {
-                    "over": 1.8,
-                    "under": 1.92
-                  },
-                  "23.5": {
-                    "over": 1.98,
-                    "under": 1.79
-                  },
-                  "24.0": {
-                    "over": 1.98,
-                    "under": 1.76
-                  },
-                  "24.5": {
-                    "over": 1.99,
-                    "under": 1.73
-                  },
-                  "25.0": {
-                    "over": 2.05,
-                    "under": 1.67
-                  },
-                  "25.5": {
-                    "over": 2.12,
-                    "under": 1.65
-                  },
-                  "26.0": {
-                    "over": 2.29,
-                    "under": 1.51
-                  },
-                  "26.5": {
-                    "over": 2.42,
-                    "under": 1.52
-                  },
-                  "27.5": {
-                    "over": 2.48,
-                    "under": 1.5
-                  },
-                  "2.5": {
-                    "over": 2.52,
-                    "under": 1.5
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.91,
-                    "away": 1.1
-                  },
-                  "-1.5": {
-                    "home": 6.05,
-                    "away": 1.78
-                  },
-                  "0.0": {
-                    "home": 3.48,
-                    "away": 1.27
-                  },
-                  "0.5": {
-                    "home": 3.33
-                  },
-                  "-0.5": {
-                    "away": 1.31
-                  },
-                  "1.0": {
-                    "home": 3.08
-                  },
-                  "-1.0": {
-                    "away": 1.33
-                  },
-                  "2.0": {
-                    "home": 2.5
-                  },
-                  "-2.0": {
-                    "away": 1.48
-                  },
-                  "2.5": {
-                    "home": 2.2
-                  },
-                  "-2.5": {
-                    "away": 1.6
-                  },
-                  "3.0": {
-                    "home": 1.86
-                  },
-                  "-3.0": {
-                    "away": 1.86
-                  },
-                  "3.5": {
-                    "home": 1.62
-                  },
-                  "-3.5": {
-                    "away": 2.21
-                  },
-                  "4.0": {
-                    "home": 1.38
-                  },
-                  "-4.0": {
-                    "away": 2.85
-                  },
-                  "4.5": {
-                    "home": 1.3
-                  },
-                  "-4.5": {
-                    "away": 3.1
-                  },
-                  "5.0": {
-                    "home": 1.13
-                  },
-                  "-5.0": {
-                    "away": 5.3
-                  },
-                  "5.5": {
-                    "home": 1.1
-                  },
-                  "-5.5": {
-                    "away": 5.9
-                  },
-                  "6.0": {
-                    "home": 1.03
-                  },
-                  "-6.0": {
-                    "away": 10
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "wta_hertogenbosch_netherlands",
@@ -389,318 +99,6 @@
     "ILi2GX95"
   ],
   "history": [
-    {
-      "event_id": "YujPZhGL",
-      "flashscore_id": "YujPZhGL",
-      "flashscore_sport_id": 2,
-      "home_team_id": "IPR8h9gM",
-      "away_team_id": "QNuG0Gzb",
-      "tournament_id": "s6g5mp3d",
-      "tournament_url": "/tennis/atp-singles/hamburg/",
-      "sport_key": "flashscore_tennis_atp_hamburg_germany",
-      "commence_time": "2026-05-19T16:00:00.000Z",
-      "time_display": "Mar. 18h00",
-      "home": "Altmaier D.",
-      "away": "Shelton B.",
-      "match": "Altmaier D. vs Shelton B.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.83,
-      "cotes": {
-        "domicile": 2.96,
-        "nul": null,
-        "exterieur": 1.41
-      },
-      "pick_category": "ou",
-      "analyse": "Ben Shelton est clairement le favori de ce duel sur terre battue à Hambourg, malgré une surface qui n'est pas sa préférée. Sur sa récente séquence, il a remporté quatre matchs consécutifs à Munich (Blockx, Fonseca, Molcan, Cobolli) avant de s'incliner face à Prizmic à Madrid et Basilashvili à Rome — deux défaites en deux sets. Altmaier, lui, est un joueur bien plus adapté à la terre battue : il a battu Zhang et Hijikata en deux sets secs, et vient d'éliminer Hijikata 2-0 au premier tour de Hambourg. Sa défaite contre Zverev (2-0) à Rome est compréhensible, tout comme son revers contre Lajovic (2-1 en trois sets) qui montre qu'il peut aller en trois manches. Ce profil d'Altmaier — défenseur de fond de court, joueur de rallyes sur terre — contre un Shelton au service et au jeu explosif mais moins à l'aise sur la surface suggère un match avec de l'échange et des jeux disputés. Les deux joueurs tendent à jouer des matchs comptant un nombre correct de jeux : Shelton a souvent joué 20+ jeux même en deux sets serrés à Munich, et Altmaier est connu pour ses longues batailles. Un total dépassant 22.5 jeux paraît solide.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-1",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779117000,
-            "tournament": "HAM",
-            "home": "Giron M.",
-            "away": "Shelton B.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779113700,
-            "tournament": "HAM",
-            "home": "Altmaier D.",
-            "away": "Hijikata R.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778757000,
-            "tournament": "VAL",
-            "home": "Lajovic D.",
-            "away": "Altmaier D.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778669700,
-            "tournament": "VAL",
-            "home": "Squire H.",
-            "away": "Altmaier D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778340600,
-            "tournament": "ROM",
-            "home": "Basilashvili N.",
-            "away": "Shelton B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778242200,
-            "tournament": "ROM",
-            "home": "Altmaier D.",
-            "away": "Zverev A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778058600,
-            "tournament": "ROM",
-            "home": "Zhang Z.",
-            "away": "Altmaier D.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777029600,
-            "tournament": "MAD",
-            "home": "Shelton B.",
-            "away": "Prizmic D.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776957300,
-            "tournament": "MAD",
-            "home": "Altmaier D.",
-            "away": "Cerundolo J. M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776598800,
-            "tournament": "MUN",
-            "home": "Cobolli F.",
-            "away": "Shelton B.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776519300,
-            "tournament": "MUN",
-            "home": "Molcan A.",
-            "away": "Shelton B.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776433200,
-            "tournament": "MUN",
-            "home": "Fonseca J.",
-            "away": "Shelton B.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776335700,
-            "tournament": "MUN",
-            "home": "Altmaier D.",
-            "away": "Molcan A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776253200,
-            "tournament": "MUN",
-            "home": "Blockx A.",
-            "away": "Shelton B.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776172500,
-            "tournament": "MUN",
-            "home": "Cilic M.",
-            "away": "Altmaier D.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.5": {
-            "over": 1.16,
-            "under": 4.4
-          },
-          "18.5": {
-            "over": 1.29,
-            "under": 3.13
-          },
-          "19.0": {
-            "over": 1.26,
-            "under": 3.28
-          },
-          "19.5": {
-            "over": 1.38,
-            "under": 2.83
-          },
-          "20.0": {
-            "over": 1.27,
-            "under": 3.2
-          },
-          "20.5": {
-            "over": 1.42,
-            "under": 2.67
-          },
-          "21.0": {
-            "over": 1.43,
-            "under": 2.58
-          },
-          "21.5": {
-            "over": 1.57,
-            "under": 2.32
-          },
-          "22.0": {
-            "over": 1.64,
-            "under": 2.15
-          },
-          "22.5": {
-            "over": 1.83,
-            "under": 1.92
-          },
-          "23.0": {
-            "over": 1.92,
-            "under": 1.8
-          },
-          "23.5": {
-            "over": 2.06,
-            "under": 1.69
-          },
-          "24.0": {
-            "over": 2.07,
-            "under": 1.66
-          },
-          "24.5": {
-            "over": 2.09,
-            "under": 1.66
-          },
-          "25.0": {
-            "over": 2.15,
-            "under": 1.58
-          },
-          "25.5": {
-            "over": 2.63,
-            "under": 1.44
-          },
-          "2.5": {
-            "over": 2.3,
-            "under": 1.57
-          },
-          "26.5": {
-            "over": 2.85,
-            "under": 1.4
-          },
-          "27.5": {
-            "over": 3.1,
-            "under": 1.35
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.74,
-            "away": 1.14
-          },
-          "-1.5": {
-            "home": 5.15,
-            "away": 1.98
-          },
-          "1.0": {
-            "home": 2.73
-          },
-          "-1.0": {
-            "away": 1.41
-          },
-          "2.0": {
-            "home": 2.35
-          },
-          "-2.0": {
-            "away": 1.54
-          },
-          "2.5": {
-            "home": 2.13
-          },
-          "-2.5": {
-            "away": 1.65
-          },
-          "3.0": {
-            "home": 1.89
-          },
-          "-3.0": {
-            "away": 1.83
-          },
-          "3.5": {
-            "home": 1.74
-          },
-          "-3.5": {
-            "away": 2.02
-          },
-          "4.0": {
-            "home": 1.48
-          },
-          "-4.0": {
-            "away": 2.5
-          },
-          "4.5": {
-            "home": 1.41
-          },
-          "-4.5": {
-            "away": 2.75
-          },
-          "5.0": {
-            "home": 1.21
-          },
-          "-5.0": {
-            "away": 4.05
-          },
-          "5.5": {
-            "home": 1.17
-          },
-          "-5.5": {
-            "away": 4.55
-          },
-          "6.0": {
-            "home": 1.07
-          },
-          "-6.0": {
-            "away": 7.2
-          },
-          "6.5": {
-            "home": 1.18
-          },
-          "-6.5": {
-            "away": 4.12
-          },
-          "7.0": {
-            "home": 1.08
-          },
-          "-7.0": {
-            "away": 6.8
-          },
-          "0.5": {
-            "home": 2.8
-          },
-          "-0.5": {
-            "away": 1.4
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Hamburg (Germany)",
-      "archived_at": "2026-05-19T20:19:20.315Z"
-    },
     {
       "event_id": "EPv2zVLh",
       "flashscore_id": "EPv2zVLh",
@@ -143086,6 +142484,298 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA London (United Kingdom)",
       "archived_at": "2026-06-12T17:26:44.376Z"
+    },
+    {
+      "event_id": "SQLVFs2M",
+      "flashscore_id": "SQLVFs2M",
+      "flashscore_sport_id": 2,
+      "home_team_id": "M9pojLqi",
+      "away_team_id": "UH09iaZ6",
+      "tournament_id": "z7ul7oiq",
+      "tournament_url": "/tennis/atp-singles/stuttgart/",
+      "sport_key": "flashscore_tennis_atp_stuttgart_germany",
+      "commence_time": "2026-06-12T11:15:00.000Z",
+      "time_display": "Ven. 13h15",
+      "home": "Bellucci M.",
+      "away": "Fritz T.",
+      "match": "Bellucci M. vs Fritz T.",
+      "prono": "win-home",
+      "pari": "Moins de 22.5 jeux",
+      "cote_retenue": 2.11,
+      "cotes": {
+        "domicile": 3.65,
+        "nul": null,
+        "exterieur": 1.28
+      },
+      "pick_category": "ou",
+      "analyse": "Taylor Fritz aborde ce quart de finale à Stuttgart en position de nette supériorité. Sur gazon, le serveur américain (top 10 mondial) est particulièrement redoutable grâce à un premier service dominant et une capacité à terminer les points rapidement. Il a écarté Landaluce en trois sets lors de son dernier match à Stuttgart, montrant sa solidité sur la surface. Bellucci, lui, traverse une période difficile : sur les 15 derniers résultats, on compte de nombreuses défaites face à des joueurs de niveau inférieur (Landaluce, Bolt, Halys, Cadenazzo, Forejtek, Prizmic), même s'il a réussi à passer deux tours ici à Stuttgart contre Davidovich Fokina et Hanfmann. Sur gazon, les échanges courts et les services dominants de Fritz devraient limiter le nombre total de jeux. Un Fritz qui s'impose en deux sets nets, avec peu de jeux concédés, semble le scénario le plus probable. Le handicap Fritz -4.5 jeux à 3.10 est intéressant mais risqué ; le Moins de 22.5 jeux offre une cote correcte à 2.11 avec une vraie logique de surface : gazon = points express, Fritz dominant = sets rapides.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1781189100,
+            "tournament": "STU",
+            "home": "Landaluce M.",
+            "away": "Fritz T.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781082600,
+            "tournament": "STU",
+            "home": "Bellucci M.",
+            "away": "Hanfmann Y.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780909800,
+            "tournament": "STU",
+            "home": "Davidovich Fokina A.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1780393200,
+            "tournament": "BIR",
+            "home": "Bellucci M.",
+            "away": "Bolt A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779636600,
+            "tournament": "FO",
+            "home": "Halys Q.",
+            "away": "Bellucci M.",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1779636600,
+            "tournament": "FO",
+            "home": "Fritz T.",
+            "away": "Basavareddy N.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1779274200,
+            "tournament": "GEN",
+            "home": "Fritz T.",
+            "away": "Popyrin A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778490900,
+            "tournament": "ROM",
+            "home": "Bellucci M.",
+            "away": "Landaluce M.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778330100,
+            "tournament": "ROM",
+            "home": "Etcheverry T. M.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778156100,
+            "tournament": "ROM",
+            "home": "Burruchaga R. A.",
+            "away": "Bellucci M.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777557000,
+            "tournament": "CAG",
+            "home": "Bellucci M.",
+            "away": "Cadenasso G.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1777476000,
+            "tournament": "CAG",
+            "home": "Sonego L.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1776855900,
+            "tournament": "MAD",
+            "home": "Dzumhur D.",
+            "away": "Bellucci M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1776161400,
+            "tournament": "OEI",
+            "home": "Forejtek J.",
+            "away": "Bellucci M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1775904300,
+            "tournament": "MON",
+            "home": "Bellucci M.",
+            "away": "Prizmic D.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "19.5": {
+            "over": 1.3,
+            "under": 3.4
+          },
+          "20.5": {
+            "over": 1.3,
+            "under": 3.1
+          },
+          "21.0": {
+            "over": 1.3,
+            "under": 3.04
+          },
+          "21.5": {
+            "over": 1.38,
+            "under": 2.71
+          },
+          "22.0": {
+            "over": 1.47,
+            "under": 2.46
+          },
+          "22.5": {
+            "over": 1.65,
+            "under": 2.11
+          },
+          "23.0": {
+            "over": 1.8,
+            "under": 1.92
+          },
+          "23.5": {
+            "over": 1.98,
+            "under": 1.79
+          },
+          "24.0": {
+            "over": 1.98,
+            "under": 1.76
+          },
+          "24.5": {
+            "over": 1.99,
+            "under": 1.73
+          },
+          "25.0": {
+            "over": 2.05,
+            "under": 1.67
+          },
+          "25.5": {
+            "over": 2.12,
+            "under": 1.65
+          },
+          "26.0": {
+            "over": 2.29,
+            "under": 1.51
+          },
+          "26.5": {
+            "over": 2.42,
+            "under": 1.52
+          },
+          "27.5": {
+            "over": 2.48,
+            "under": 1.5
+          },
+          "2.5": {
+            "over": 2.52,
+            "under": 1.5
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.91,
+            "away": 1.1
+          },
+          "-1.5": {
+            "home": 6.05,
+            "away": 1.78
+          },
+          "0.0": {
+            "home": 3.48,
+            "away": 1.27
+          },
+          "0.5": {
+            "home": 3.33
+          },
+          "-0.5": {
+            "away": 1.31
+          },
+          "1.0": {
+            "home": 3.08
+          },
+          "-1.0": {
+            "away": 1.33
+          },
+          "2.0": {
+            "home": 2.5
+          },
+          "-2.0": {
+            "away": 1.48
+          },
+          "2.5": {
+            "home": 2.2
+          },
+          "-2.5": {
+            "away": 1.6
+          },
+          "3.0": {
+            "home": 1.86
+          },
+          "-3.0": {
+            "away": 1.86
+          },
+          "3.5": {
+            "home": 1.62
+          },
+          "-3.5": {
+            "away": 2.21
+          },
+          "4.0": {
+            "home": 1.38
+          },
+          "-4.0": {
+            "away": 2.85
+          },
+          "4.5": {
+            "home": 1.3
+          },
+          "-4.5": {
+            "away": 3.1
+          },
+          "5.0": {
+            "home": 1.13
+          },
+          "-5.0": {
+            "away": 5.3
+          },
+          "5.5": {
+            "home": 1.1
+          },
+          "-5.5": {
+            "away": 5.9
+          },
+          "6.0": {
+            "home": 1.03
+          },
+          "-6.0": {
+            "away": 10
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Stuttgart (Germany)",
+      "archived_at": "2026-06-12T19:33:48.813Z"
     }
   ],
   "combos": [
