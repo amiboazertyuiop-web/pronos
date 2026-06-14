@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-13T20:13:46.929Z",
+    "last_results_update": "2026-06-14T05:19:46.982Z",
     "analyses_written_at": "2026-06-13T08:25:39.467Z",
     "analyses_cost_usd": 0.2045,
-    "last_hourly_refresh": "2026-06-14T00:15:17.113Z"
+    "last_hourly_refresh": "2026-06-14T05:19:46.982Z"
   },
   "sports": {
     "foot": {
@@ -33,245 +33,7 @@
           "country": "USA",
           "panel_title": "🏀 NBA",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "pnOhtTOH",
-              "flashscore_id": "pnOhtTOH",
-              "flashscore_sport_id": 3,
-              "home_team_id": "IwmkErSH",
-              "away_team_id": "WCNO4nbt",
-              "tournament_id": "innccbyb",
-              "tournament_url": "/basketball/usa/nba/",
-              "sport_key": "flashscore_basketball_nba",
-              "commence_time": "2026-06-14T00:30:00.000Z",
-              "time_display": "Dim. 02h30",
-              "home": "San Antonio Spurs",
-              "away": "New York Knicks",
-              "match": "San Antonio Spurs vs New York Knicks",
-              "prono": "win-home",
-              "pari": "Moins de 214.5 points",
-              "cote_retenue": 2,
-              "cotes": {
-                "domicile": 1.46,
-                "nul": null,
-                "exterieur": 2.72
-              },
-              "pick_category": "ou",
-              "analyse": "Les données révèlent que nous sommes en plein cœur des Finales NBA 2026, avec San Antonio et New York déjà à 2-2 dans cette série après quatre matchs extrêmement disputés. Les scores de cette série sont éloquents : 107-106, 115-111, 105-104, 105-95 — trois des quatre matchs ont été décidés à un ou deux points, témoignant d'une intensité défensive maximale propre aux Finales. Le total cumulé de ces quatre rencontres oscille autour de 200-215 points, bien en deçà des lignes proposées autour de 216-218. Les Spurs ont battu OKC en série précédente avec des scores également contenus (103-82, 118-91, 103-111), confirmant leur identité défensive et leur capacité à ralentir le rythme. Les Knicks, eux, ont dominé Cleveland avec des totaux également maîtrisés (109-93, 115-104, 121-108, 130-93), mais leurs duels directs contre San Antonio restent extrêmement bas en scoring. Dans un Game 5 de Finales, à enjeu maximal, les deux staffs vont clairement prioriser la défense et la gestion du rythme, ce qui pointe fermement vers l'under.",
-              "confiance": 4,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1781137800,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "San Antonio Spurs",
-                    "score": "107-106"
-                  },
-                  {
-                    "timestamp": 1780965000,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "San Antonio Spurs",
-                    "score": "111-115"
-                  },
-                  {
-                    "timestamp": 1780705800,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "New York Knicks",
-                    "score": "104-105"
-                  },
-                  {
-                    "timestamp": 1780533000,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "New York Knicks",
-                    "score": "95-105"
-                  },
-                  {
-                    "timestamp": 1780185600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "103-111"
-                  },
-                  {
-                    "timestamp": 1780014600,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "118-91"
-                  },
-                  {
-                    "timestamp": 1779841800,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "127-114"
-                  },
-                  {
-                    "timestamp": 1779753600,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "New York Knicks",
-                    "score": "93-130"
-                  },
-                  {
-                    "timestamp": 1779667200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "103-82"
-                  },
-                  {
-                    "timestamp": 1779580800,
-                    "tournament": "NBA",
-                    "home": "Cleveland Cavaliers",
-                    "away": "New York Knicks",
-                    "score": "108-121"
-                  },
-                  {
-                    "timestamp": 1779496200,
-                    "tournament": "NBA",
-                    "home": "San Antonio Spurs",
-                    "away": "Oklahoma City Thunder",
-                    "score": "108-123"
-                  },
-                  {
-                    "timestamp": 1779408000,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "109-93"
-                  },
-                  {
-                    "timestamp": 1779323400,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "122-113"
-                  },
-                  {
-                    "timestamp": 1779235200,
-                    "tournament": "NBA",
-                    "home": "New York Knicks",
-                    "away": "Cleveland Cavaliers",
-                    "score": "115-104"
-                  },
-                  {
-                    "timestamp": 1779150600,
-                    "tournament": "NBA",
-                    "home": "Oklahoma City Thunder",
-                    "away": "San Antonio Spurs",
-                    "score": "115-122"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "216.5": {
-                    "over": 1.9,
-                    "under": 1.9
-                  },
-                  "217.5": {
-                    "over": 1.87,
-                    "under": 1.81
-                  },
-                  "218.5": {
-                    "over": 1.94,
-                    "under": 1.77
-                  },
-                  "212.5": {
-                    "over": 1.6,
-                    "under": 2.25
-                  },
-                  "213.5": {
-                    "over": 1.67,
-                    "under": 2.1
-                  },
-                  "214.5": {
-                    "over": 1.73,
-                    "under": 2
-                  },
-                  "215.5": {
-                    "over": 1.8,
-                    "under": 1.91
-                  },
-                  "219.5": {
-                    "over": 2.1,
-                    "under": 1.67
-                  },
-                  "220.5": {
-                    "over": 2.25,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "5.5": {
-                    "away": 1.85
-                  },
-                  "-5.5": {
-                    "home": 1.95
-                  },
-                  "1.5": {
-                    "away": 2.38
-                  },
-                  "-1.5": {
-                    "home": 1.53
-                  },
-                  "2.5": {
-                    "away": 2.2
-                  },
-                  "-2.5": {
-                    "home": 1.62
-                  },
-                  "3.5": {
-                    "away": 2.05
-                  },
-                  "-3.5": {
-                    "home": 1.7
-                  },
-                  "4.5": {
-                    "away": 2
-                  },
-                  "-4.5": {
-                    "home": 1.73
-                  },
-                  "6.5": {
-                    "away": 1.7
-                  },
-                  "-6.5": {
-                    "home": 2.05
-                  },
-                  "7.5": {
-                    "away": 1.6
-                  },
-                  "-7.5": {
-                    "home": 2.25
-                  },
-                  "8.5": {
-                    "away": 1.5
-                  },
-                  "-8.5": {
-                    "home": 2.5
-                  },
-                  "9.5": {
-                    "away": 1.4
-                  },
-                  "-9.5": {
-                    "home": 2.75
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         }
       ]
     },
@@ -1162,9 +924,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.76,
               "cotes": {
-                "domicile": 1.56,
+                "domicile": 1.58,
                 "nul": null,
-                "exterieur": 2.28
+                "exterieur": 2.24
               },
               "pick_category": "ou",
               "analyse": "Diane Parry aborde ce match avec une bonne dynamique sur terre battue, ayant atteint le troisième tour à Roland-Garros en battant Kalinina, Li et Anisimova avant de s'incliner face à Chwalinska. Elle a également battu Raducanu à Strasbourg. Parry est clairement la joueuse en meilleure forme des deux sur la surface. Seidel, de son côté, a été éliminée dès le premier tour à Roland-Garros par Ostapenko (2-0) et a perdu à Zagreb face à Andreeva après avoir battu Rinaldo Persson. À Berlin, elle a passé Liu C. en 2 sets mais vient de s'incliner face à Minnen en 3 sets. Le niveau de Seidel reste inférieur à celui de Parry sur terre battue, mais l'Allemande joue à domicile et connaît bien la surface du Steffi-Graf-Stadion, ce qui pourrait pimenter le match. Les deux joueuses ont tendance à produire des rencontres en 2-3 sets avec des échanges prolongés sur terre battue, ce qui plaide pour un total de jeux élevé. La ligne des 21.5 jeux semble conservatrice au vu du profil des deux tenniswoomen.",
@@ -1666,9 +1428,9 @@
               "pari": "Victoire en 2-0 (Timofeeva)",
               "cote_retenue": 2.48,
               "cotes": {
-                "domicile": 1.6,
+                "domicile": 1.62,
                 "nul": null,
-                "exterieur": 2.2
+                "exterieur": 2.18
               },
               "pick_category": "cs",
               "analyse": "Timofeeva M. est en forme exceptionnelle sur terre battue : elle a remporté 5 victoires consécutives à Makarska (dont des 2-0 contre Semenistaja, Sorribes Tormo, Kabbaj, Boskovic et Andreeva), confirmant une domination nette et régulière sur la surface. Ses matchs récents se concluent presque tous en deux sets secs, témoignant d'une efficacité redoutable et d'un jeu solide. En face, Zarazua R. traverse une période difficile : elle vient de s'incliner 0-2 face à Krejcikova à Hertogenbosch, et avait déjà perdu 0-2 contre Shnaider à Roland-Garros et 0-2 contre Kessler à Strasbourg, soit trois défaites en deux sets sur ses quatre derniers matchs. L'écart de forme entre les deux joueuses est manifeste, avec Timofeeva qui s'impose systématiquement sans lâcher de set ces dernières semaines. Sur la terre battue berlinoise, Timofeeva semble largement en mesure d'imposer son jeu et de conclure en deux sets. Le handicap sets à +1.5 pour Timofeeva (cote 1.25) est cohérent, mais le pari sur une victoire nette 2-0 offre davantage de valeur à 2.48 pour une joueuse qui ne lâche quasiment jamais de set en ce moment.",
@@ -1923,9 +1685,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.78,
               "cotes": {
-                "domicile": 1.66,
+                "domicile": 1.68,
                 "nul": null,
-                "exterieur": 2.08
+                "exterieur": 2.06
               },
               "pick_category": "ou",
               "analyse": "Ce match de qualifications à Berlin entre Polina Kudermetova et Sara Kraus présente deux joueuses de niveau similaire, ce qui laisse entrevoir un match disputé. Kudermetova affiche une forme récente correcte : victoires contre Charaeva et Hon à Londres (2-1 chacune), mais une défaite nette face à Bouzkova (0-2) et une élimination prématurée à Roland-Garros contre Wang (0-2). Kraus, de son côté, a été éliminée dès le premier tour à Ilkley par Prozorova (0-2), mais avait montré de la résistance à Roland-Garros avec trois victoires, dont deux en trois sets. La surface terre battue favorise des échanges plus longs et des sets accrochés, et les deux joueuses ont démontré leur capacité à disputer des troisièmes sets (Kraus : 2-1 contre Noha Akugue et Naef ; Kudermetova : 2-1 contre Tomova). Un match en trois sets reste plausible, soutenant un total de jeux élevé. Avec des niveaux proches et une surface lente, le seuil de 21.5 jeux paraît raisonnable à dépasser.",
@@ -2172,7 +1934,7 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.87,
               "cotes": {
-                "domicile": 2.42,
+                "domicile": 2.46,
                 "nul": null,
                 "exterieur": 1.5
               },
@@ -2684,278 +2446,6 @@
     "61K8pJVP"
   ],
   "history": [
-    {
-      "event_id": "S4SJQuzB",
-      "flashscore_id": "S4SJQuzB",
-      "flashscore_sport_id": 2,
-      "home_team_id": "6sR0zPpf",
-      "away_team_id": "OGYNaUZG",
-      "tournament_id": "kp8nj20c",
-      "tournament_url": "/tennis/wta-singles/rabat/",
-      "sport_key": "flashscore_tennis_wta_rabat_morocco",
-      "commence_time": "2026-05-20T11:30:00.000Z",
-      "time_display": "Mer. 13h30",
-      "home": "Kabbaj Y.",
-      "away": "Maria T.",
-      "match": "Kabbaj Y. vs Maria T.",
-      "prono": "win-home",
-      "pari": "Moins de 20.5 jeux",
-      "cote_retenue": 1.66,
-      "cotes": {
-        "domicile": 4.01,
-        "nul": null,
-        "exterieur": 1.25
-      },
-      "pick_category": "ou",
-      "analyse": "Tatjana Maria aborde ce match en pleine confiance après avoir battu El Jardi 2-0 au premier tour à Rabat, et présente une forme solide sur terre battue avec plusieurs victoires récentes (Linette, Shymanovich, Salkova, Jacquemot). Cependant, elle a aussi subi des défaites nettes face à des joueuses de bon niveau (Cirstea 0-2, Samson 0-2, Kostyuk 0-2). Kabbaj, joueuse locale à Rabat, a démarré le tournoi par un 2-0 convaincant contre Cengiz et profite d'un soutien du public marocain. Sur ses derniers matchs, elle montre un niveau inégal : victoires contre Parry et Inisan, mais défaites face à Ponchet et Nguyen Tan L. Maria est clairement la favorite mais le niveau des deux joueuses laisse présager un match en deux sets sans forcément beaucoup de jeux. La ligne de handicap à -3.5 jeux en faveur de Maria à 1.43 reflète un avantage marqué mais pas écrasant. Le total de jeux sous 20.5 à 1.66 paraît attrayant : les deux joueuses ont tendance à boucler leurs matchs rapidement sur terre (la plupart des sets se jouent serré ou en ligne droite), et un 2-0 resserré donnerait facilement moins de 20 jeux.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779198000,
-            "tournament": "RAB",
-            "home": "El Jardi D.",
-            "away": "Maria T.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779191400,
-            "tournament": "RAB",
-            "home": "Kabbaj Y.",
-            "away": "Cengiz B.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778155200,
-            "tournament": "ROM",
-            "home": "Maria T.",
-            "away": "Cirstea S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778058300,
-            "tournament": "ROM",
-            "home": "Linette M.",
-            "away": "Maria T.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777540200,
-            "tournament": "SAI",
-            "home": "Kabbaj Y.",
-            "away": "Ponchet J.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777375500,
-            "tournament": "SAI",
-            "home": "Parry D.",
-            "away": "Kabbaj Y.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777287900,
-            "tournament": "SAI",
-            "home": "Nguyen Tan L.",
-            "away": "Kabbaj Y.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777202700,
-            "tournament": "SAI",
-            "home": "Inisan E.",
-            "away": "Kabbaj Y.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776773400,
-            "tournament": "CHI",
-            "home": "Zavatska K.",
-            "away": "Kabbaj Y.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776762600,
-            "tournament": "MAD",
-            "home": "Maria T.",
-            "away": "Samson L.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776519600,
-            "tournament": "ROU",
-            "home": "Kostyuk M.",
-            "away": "Maria T.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776425700,
-            "tournament": "ROU",
-            "home": "Shymanovich I.",
-            "away": "Maria T.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776332400,
-            "tournament": "ROU",
-            "home": "Salkova D.",
-            "away": "Maria T.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776255300,
-            "tournament": "ROU",
-            "home": "Maria T.",
-            "away": "Jacquemot E.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775493900,
-            "tournament": "LIN",
-            "home": "Stephens S.",
-            "away": "Maria T.",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "16.5": {
-            "over": 1.2,
-            "under": 3.89
-          },
-          "17.5": {
-            "over": 1.4,
-            "under": 2.77
-          },
-          "18.5": {
-            "over": 1.6,
-            "under": 2.21
-          },
-          "19.0": {
-            "over": 1.69,
-            "under": 2.07
-          },
-          "19.5": {
-            "over": 1.82,
-            "under": 1.86
-          },
-          "20.0": {
-            "over": 1.92,
-            "under": 1.8
-          },
-          "20.5": {
-            "over": 2.11,
-            "under": 1.66
-          },
-          "21.5": {
-            "over": 2.35,
-            "under": 1.54
-          },
-          "22.5": {
-            "over": 2.7,
-            "under": 1.41
-          },
-          "23.5": {
-            "over": 2.99,
-            "under": 1.34
-          },
-          "24.5": {
-            "over": 3.22,
-            "under": 1.31
-          },
-          "2.5": {
-            "over": 2.88,
-            "under": 1.39
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 2.1,
-            "away": 1.07
-          },
-          "-1.5": {
-            "home": 6.5,
-            "away": 1.63
-          },
-          "3.5": {
-            "home": 2.69
-          },
-          "-3.5": {
-            "away": 1.43
-          },
-          "4.0": {
-            "home": 2.42
-          },
-          "-4.0": {
-            "away": 1.51
-          },
-          "4.5": {
-            "home": 2.17
-          },
-          "-4.5": {
-            "away": 1.65
-          },
-          "5.0": {
-            "home": 1.92
-          },
-          "-5.0": {
-            "away": 1.8
-          },
-          "5.5": {
-            "home": 1.74
-          },
-          "-5.5": {
-            "away": 2
-          },
-          "6.0": {
-            "home": 1.53
-          },
-          "-6.0": {
-            "away": 2.36
-          },
-          "6.5": {
-            "home": 1.46
-          },
-          "-6.5": {
-            "away": 2.63
-          },
-          "7.0": {
-            "home": 1.26
-          },
-          "-7.0": {
-            "away": 3.54
-          },
-          "7.5": {
-            "home": 1.22
-          },
-          "-7.5": {
-            "away": 3.9
-          },
-          "8.0": {
-            "home": 1.13
-          },
-          "-8.0": {
-            "away": 4.81
-          },
-          "2.5": {
-            "home": 3.3
-          },
-          "-2.5": {
-            "away": 1.32
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Rabat (Morocco)",
-      "archived_at": "2026-05-20T14:50:19.245Z"
-    },
     {
       "event_id": "OCe2H3Sg",
       "flashscore_id": "OCe2H3Sg",
@@ -146528,6 +146018,246 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Nottingham (United Kingdom) (Q)",
       "archived_at": "2026-06-13T20:13:46.929Z"
+    },
+    {
+      "event_id": "pnOhtTOH",
+      "flashscore_id": "pnOhtTOH",
+      "flashscore_sport_id": 3,
+      "home_team_id": "IwmkErSH",
+      "away_team_id": "WCNO4nbt",
+      "tournament_id": "innccbyb",
+      "tournament_url": "/basketball/usa/nba/",
+      "sport_key": "flashscore_basketball_nba",
+      "commence_time": "2026-06-14T00:30:00.000Z",
+      "time_display": "Dim. 02h30",
+      "home": "San Antonio Spurs",
+      "away": "New York Knicks",
+      "match": "San Antonio Spurs vs New York Knicks",
+      "prono": "win-home",
+      "pari": "Moins de 214.5 points",
+      "cote_retenue": 2,
+      "cotes": {
+        "domicile": 1.47,
+        "nul": null,
+        "exterieur": 2.68
+      },
+      "pick_category": "ou",
+      "analyse": "Les données révèlent que nous sommes en plein cœur des Finales NBA 2026, avec San Antonio et New York déjà à 2-2 dans cette série après quatre matchs extrêmement disputés. Les scores de cette série sont éloquents : 107-106, 115-111, 105-104, 105-95 — trois des quatre matchs ont été décidés à un ou deux points, témoignant d'une intensité défensive maximale propre aux Finales. Le total cumulé de ces quatre rencontres oscille autour de 200-215 points, bien en deçà des lignes proposées autour de 216-218. Les Spurs ont battu OKC en série précédente avec des scores également contenus (103-82, 118-91, 103-111), confirmant leur identité défensive et leur capacité à ralentir le rythme. Les Knicks, eux, ont dominé Cleveland avec des totaux également maîtrisés (109-93, 115-104, 121-108, 130-93), mais leurs duels directs contre San Antonio restent extrêmement bas en scoring. Dans un Game 5 de Finales, à enjeu maximal, les deux staffs vont clairement prioriser la défense et la gestion du rythme, ce qui pointe fermement vers l'under.",
+      "confiance": 4,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "90-94",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1781137800,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "San Antonio Spurs",
+            "score": "107-106"
+          },
+          {
+            "timestamp": 1780965000,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "San Antonio Spurs",
+            "score": "111-115"
+          },
+          {
+            "timestamp": 1780705800,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "New York Knicks",
+            "score": "104-105"
+          },
+          {
+            "timestamp": 1780533000,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "New York Knicks",
+            "score": "95-105"
+          },
+          {
+            "timestamp": 1780185600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "103-111"
+          },
+          {
+            "timestamp": 1780014600,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "118-91"
+          },
+          {
+            "timestamp": 1779841800,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "127-114"
+          },
+          {
+            "timestamp": 1779753600,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "New York Knicks",
+            "score": "93-130"
+          },
+          {
+            "timestamp": 1779667200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "103-82"
+          },
+          {
+            "timestamp": 1779580800,
+            "tournament": "NBA",
+            "home": "Cleveland Cavaliers",
+            "away": "New York Knicks",
+            "score": "108-121"
+          },
+          {
+            "timestamp": 1779496200,
+            "tournament": "NBA",
+            "home": "San Antonio Spurs",
+            "away": "Oklahoma City Thunder",
+            "score": "108-123"
+          },
+          {
+            "timestamp": 1779408000,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Cleveland Cavaliers",
+            "score": "109-93"
+          },
+          {
+            "timestamp": 1779323400,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "122-113"
+          },
+          {
+            "timestamp": 1779235200,
+            "tournament": "NBA",
+            "home": "New York Knicks",
+            "away": "Cleveland Cavaliers",
+            "score": "115-104"
+          },
+          {
+            "timestamp": 1779150600,
+            "tournament": "NBA",
+            "home": "Oklahoma City Thunder",
+            "away": "San Antonio Spurs",
+            "score": "115-122"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "216.5": {
+            "over": 1.9,
+            "under": 1.9
+          },
+          "217.5": {
+            "over": 1.87,
+            "under": 1.81
+          },
+          "218.5": {
+            "over": 1.94,
+            "under": 1.77
+          },
+          "212.5": {
+            "over": 1.6,
+            "under": 2.25
+          },
+          "213.5": {
+            "over": 1.67,
+            "under": 2.1
+          },
+          "214.5": {
+            "over": 1.73,
+            "under": 2
+          },
+          "215.5": {
+            "over": 1.8,
+            "under": 1.91
+          },
+          "219.5": {
+            "over": 2.1,
+            "under": 1.67
+          },
+          "220.5": {
+            "over": 2.25,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "5.5": {
+            "away": 1.85
+          },
+          "-5.5": {
+            "home": 1.95
+          },
+          "1.5": {
+            "away": 2.38
+          },
+          "-1.5": {
+            "home": 1.53
+          },
+          "2.5": {
+            "away": 2.2
+          },
+          "-2.5": {
+            "home": 1.62
+          },
+          "3.5": {
+            "away": 2.05
+          },
+          "-3.5": {
+            "home": 1.7
+          },
+          "4.5": {
+            "away": 2
+          },
+          "-4.5": {
+            "home": 1.73
+          },
+          "6.5": {
+            "away": 1.7
+          },
+          "-6.5": {
+            "home": 2.05
+          },
+          "7.5": {
+            "away": 1.6
+          },
+          "-7.5": {
+            "home": 2.25
+          },
+          "8.5": {
+            "away": 1.5
+          },
+          "-8.5": {
+            "home": 2.5
+          },
+          "9.5": {
+            "away": 1.4
+          },
+          "-9.5": {
+            "home": 2.75
+          }
+        }
+      },
+      "sport_label": "🏀 Basketball",
+      "league_label": "NBA",
+      "archived_at": "2026-06-14T05:19:46.982Z"
     }
   ],
   "combos": [
