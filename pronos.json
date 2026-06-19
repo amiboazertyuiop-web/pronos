@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-19T18:21:13.722Z",
+    "last_results_update": "2026-06-19T21:48:53.316Z",
     "analyses_written_at": "2026-06-19T09:28:11.872Z",
     "analyses_cost_usd": 0.0736,
-    "last_hourly_refresh": "2026-06-19T18:21:13.722Z"
+    "last_hourly_refresh": "2026-06-19T21:48:53.316Z"
   },
   "sports": {
     "foot": {
@@ -171,297 +171,7 @@
           "country": "",
           "panel_title": "🎾 ATP Halle (Germany)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "E9fihY2N",
-              "flashscore_id": "E9fihY2N",
-              "flashscore_sport_id": 2,
-              "home_team_id": "AHDLJaph",
-              "away_team_id": "CzXh4LAb",
-              "tournament_id": "lp6eypi6",
-              "tournament_url": "/tennis/atp-singles/halle/",
-              "sport_key": "flashscore_tennis_atp_halle_germany",
-              "commence_time": "2026-06-19T14:00:00.000Z",
-              "time_display": "Ven. 16h00",
-              "home": "Tiafoe F.",
-              "away": "Auger-Aliassime F.",
-              "match": "Tiafoe F. vs Auger-Aliassime F.",
-              "prono": "win-home",
-              "pari": "Moins de 21.5 jeux",
-              "cote_retenue": 3.09,
-              "cotes": {
-                "domicile": 2.36,
-                "nul": null,
-                "exterieur": 1.56
-              },
-              "pick_category": "ou",
-              "analyse": "Tiafoe et Auger-Aliassime se retrouvent à Halle sur gazon, surface qui favorise les services dominants et les échanges courts. Tiafoe est en excellente forme à Halle : victoires nettes 2-0 contre Shimabukuro et Cobolli en deux sets secs, après un parcours solide à Stuttgart (victoires contre Hijikata et Altmaier). Auger-Aliassime a montré des signes contradictoires : battu 0-2 par Majchrzak à Herrsching mais avec deux victoires en deux sets à Halle contre Borges et Tien (ce dernier en 3 sets). Sur gazon, les deux sont de bons serveurs qui tendent à expédier les sets rapidement lorsqu'ils sont en confiance. La majorité des derniers matches de Tiafoe à Halle se sont conclus en 2 sets avec peu de jeux disputés. En croisant les styles de jeu offensifs-serveurs et la surface gazon, un total inférieur à 21.5 jeux semble très plausible, les deux joueurs ayant démontré une capacité à conclure rapidement sur cette surface cette semaine.",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1781704200,
-                    "tournament": "HAL",
-                    "home": "Tien L.",
-                    "away": "Auger-Aliassime F.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781696100,
-                    "tournament": "HAL",
-                    "home": "Tiafoe F.",
-                    "away": "Shimabukuro S.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781535900,
-                    "tournament": "HAL",
-                    "home": "Cobolli F.",
-                    "away": "Tiafoe F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781527800,
-                    "tournament": "HAL",
-                    "home": "Borges N.",
-                    "away": "Auger-Aliassime F.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781279700,
-                    "tournament": "STU",
-                    "home": "Lehecka J.",
-                    "away": "Tiafoe F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781274600,
-                    "tournament": "HER",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Majchrzak K.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781182200,
-                    "tournament": "HER",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Fucsovics M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781175300,
-                    "tournament": "STU",
-                    "home": "Hijikata R.",
-                    "away": "Tiafoe F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781015700,
-                    "tournament": "STU",
-                    "home": "Altmaier D.",
-                    "away": "Tiafoe F.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1780495800,
-                    "tournament": "FO",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Cobolli F.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1780335900,
-                    "tournament": "FO",
-                    "home": "Tiafoe F.",
-                    "away": "Arnaldi M.",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1780326600,
-                    "tournament": "FO",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Tabilo A.",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1780167000,
-                    "tournament": "FO",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Nakashima B.",
-                    "score": "3-1"
-                  },
-                  {
-                    "timestamp": 1780165500,
-                    "tournament": "FO",
-                    "home": "Faria J.",
-                    "away": "Tiafoe F.",
-                    "score": "2-3"
-                  },
-                  {
-                    "timestamp": 1779979200,
-                    "tournament": "FO",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Burruchaga R. A.",
-                    "score": "3-1"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "19.5": {
-                    "over": 1.24,
-                    "under": 3.8
-                  },
-                  "20.5": {
-                    "over": 1.36,
-                    "under": 3
-                  },
-                  "21.0": {
-                    "over": 1.25,
-                    "under": 3.34
-                  },
-                  "21.5": {
-                    "over": 1.32,
-                    "under": 3.09
-                  },
-                  "22.0": {
-                    "over": 1.34,
-                    "under": 2.83
-                  },
-                  "22.5": {
-                    "over": 1.52,
-                    "under": 2.38
-                  },
-                  "23.0": {
-                    "over": 1.62,
-                    "under": 2.13
-                  },
-                  "23.5": {
-                    "over": 1.79,
-                    "under": 1.94
-                  },
-                  "24.0": {
-                    "over": 1.81,
-                    "under": 1.91
-                  },
-                  "24.5": {
-                    "over": 1.83,
-                    "under": 1.91
-                  },
-                  "25.0": {
-                    "over": 1.88,
-                    "under": 1.84
-                  },
-                  "25.5": {
-                    "over": 1.94,
-                    "under": 1.79
-                  },
-                  "26.0": {
-                    "over": 2.11,
-                    "under": 1.63
-                  },
-                  "26.5": {
-                    "over": 2.33,
-                    "under": 1.54
-                  },
-                  "27.0": {
-                    "over": 2.3,
-                    "under": 1.52
-                  },
-                  "27.5": {
-                    "over": 2.31,
-                    "under": 1.5
-                  },
-                  "28.5": {
-                    "over": 2.55,
-                    "under": 1.48
-                  },
-                  "2.5": {
-                    "over": 2.2,
-                    "under": 1.6
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.72,
-                    "away": 1.22
-                  },
-                  "-1.5": {
-                    "home": 3.9,
-                    "away": 2.08
-                  },
-                  "0.0": {
-                    "home": 2.36,
-                    "away": 1.53
-                  },
-                  "0.5": {
-                    "home": 2.2,
-                    "away": 1.5
-                  },
-                  "-0.5": {
-                    "home": 2.46,
-                    "away": 1.61
-                  },
-                  "1.0": {
-                    "home": 2.1,
-                    "away": 1.43
-                  },
-                  "-1.0": {
-                    "home": 2.66,
-                    "away": 1.67
-                  },
-                  "2.0": {
-                    "home": 1.8
-                  },
-                  "-2.0": {
-                    "away": 1.92
-                  },
-                  "2.5": {
-                    "home": 1.67
-                  },
-                  "-2.5": {
-                    "away": 2.08
-                  },
-                  "3.0": {
-                    "home": 1.46
-                  },
-                  "-3.0": {
-                    "away": 2.56
-                  },
-                  "3.5": {
-                    "home": 1.37
-                  },
-                  "-3.5": {
-                    "away": 2.92
-                  },
-                  "4.0": {
-                    "home": 1.19
-                  },
-                  "-4.0": {
-                    "away": 4.2
-                  },
-                  "4.5": {
-                    "home": 1.18
-                  },
-                  "-4.5": {
-                    "away": 4.45
-                  },
-                  "5.0": {
-                    "home": 1.06
-                  },
-                  "-5.0": {
-                    "away": 7.4
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "atp_london_united_kingdom",
@@ -509,300 +219,6 @@
     "vDRpkh64"
   ],
   "history": [
-    {
-      "event_id": "hOm6ZxiC",
-      "flashscore_id": "hOm6ZxiC",
-      "flashscore_sport_id": 2,
-      "home_team_id": "xUHOBJK6",
-      "away_team_id": "t0WN9vR6",
-      "tournament_id": "6ehldgk5",
-      "tournament_url": "/tennis/atp-singles/geneva/",
-      "sport_key": "flashscore_tennis_atp_geneva_switzerland",
-      "commence_time": "2026-05-22T13:30:00.000Z",
-      "time_display": "Ven. 15h30",
-      "home": "Tien L.",
-      "away": "Bublik A.",
-      "match": "Tien L. vs Bublik A.",
-      "prono": "win-home",
-      "pari": "Plus de 22.5 jeux",
-      "cote_retenue": 1.77,
-      "cotes": {
-        "domicile": 2.17,
-        "nul": null,
-        "exterieur": 1.72
-      },
-      "pick_category": "ou",
-      "analyse": "Le H2H récent est particulièrement instructif : à Rome il y a deux semaines, Tien a battu Bublik en trois sets (2-1), un match qui a donc produit du jeu. Ce tournoi de Genève confirme la bonne forme des deux joueurs : Tien a sorti Tsitsipas en deux sets mercredi, puis Michelsen jeudi, tandis que Bublik a écarté Butvilas puis Rinderknech, ce dernier après avoir lâché le premier set (1-2). Bublik est un joueur au service imprévisible et aux comportements erratiques sur terre battue, capable de grandes séries mais aussi de passages à vide, ce qui alimente les breaks et prolonge les échanges. Tien, joueur américain de 20 ans en pleine progression, affiche un niveau défensif solide et une belle régularité depuis quelques semaines. La surface en terre battue à Genève favorise des échanges plus longs et des break points plus fréquents. Compte tenu du H2H récent en trois sets, de la forme compétitive des deux joueurs, et du style imprévisible de Bublik qui génère naturellement des matches disputés, un total de jeux élevé semble très probable.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-1",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779387900,
-            "tournament": "GEN",
-            "home": "Rinderknech A.",
-            "away": "Bublik A.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779379800,
-            "tournament": "GEN",
-            "home": "Michelsen A.",
-            "away": "Tien L.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779301200,
-            "tournament": "GEN",
-            "home": "Butvilas E.",
-            "away": "Bublik A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779266400,
-            "tournament": "GEN",
-            "home": "Tsitsipas S.",
-            "away": "Tien L.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778581800,
-            "tournament": "ROM",
-            "home": "Jodar R.",
-            "away": "Tien L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778428800,
-            "tournament": "ROM",
-            "home": "Tien L.",
-            "away": "Bublik A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778255700,
-            "tournament": "ROM",
-            "home": "Baez S.",
-            "away": "Bublik A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778250900,
-            "tournament": "ROM",
-            "home": "Tien L.",
-            "away": "Dzumhur D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777146900,
-            "tournament": "MAD",
-            "home": "Bublik A.",
-            "away": "Tsitsipas S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777130700,
-            "tournament": "MAD",
-            "home": "Tien L.",
-            "away": "Vallejo D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776174000,
-            "tournament": "MUN",
-            "home": "Molcan A.",
-            "away": "Bublik A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775830200,
-            "tournament": "MON",
-            "home": "Alcaraz C.",
-            "away": "Bublik A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775739600,
-            "tournament": "MON",
-            "home": "Lehecka J.",
-            "away": "Bublik A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775567700,
-            "tournament": "MON",
-            "home": "Monfils G.",
-            "away": "Bublik A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775300400,
-            "tournament": "UTS",
-            "home": "Ruud C.",
-            "away": "Bublik A.",
-            "score": "3-0"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "19.5": {
-            "over": 1.22,
-            "under": 3.5
-          },
-          "20.0": {
-            "over": 1.26,
-            "under": 3.28
-          },
-          "20.5": {
-            "over": 1.4,
-            "under": 2.79
-          },
-          "21.0": {
-            "over": 1.41,
-            "under": 2.64
-          },
-          "21.5": {
-            "over": 1.5,
-            "under": 2.41
-          },
-          "22.0": {
-            "over": 1.6,
-            "under": 2.22
-          },
-          "22.5": {
-            "over": 1.77,
-            "under": 1.98
-          },
-          "23.0": {
-            "over": 1.86,
-            "under": 1.86
-          },
-          "23.5": {
-            "over": 2.02,
-            "under": 1.75
-          },
-          "24.0": {
-            "over": 1.99,
-            "under": 1.71
-          },
-          "24.5": {
-            "over": 2.04,
-            "under": 1.71
-          },
-          "25.0": {
-            "over": 2.06,
-            "under": 1.63
-          },
-          "25.5": {
-            "over": 2.19,
-            "under": 1.6
-          },
-          "26.0": {
-            "over": 2.29,
-            "under": 1.51
-          },
-          "26.5": {
-            "over": 2.48,
-            "under": 1.48
-          },
-          "27.5": {
-            "over": 2.73,
-            "under": 1.44
-          },
-          "2.5": {
-            "over": 2.26,
-            "under": 1.58
-          },
-          "28.5": {
-            "over": 3.05,
-            "under": 1.37
-          },
-          "29.5": {
-            "over": 3.5,
-            "under": 1.3
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.87,
-            "away": 1.25
-          },
-          "-1.5": {
-            "home": 3.4,
-            "away": 1.89
-          },
-          "0.0": {
-            "home": 2.18,
-            "away": 1.62
-          },
-          "0.5": {
-            "home": 2.06,
-            "away": 1.58
-          },
-          "-0.5": {
-            "home": 2.3,
-            "away": 1.69
-          },
-          "1.0": {
-            "home": 1.99,
-            "away": 1.52
-          },
-          "-1.0": {
-            "home": 2.39,
-            "away": 1.75
-          },
-          "2.0": {
-            "home": 1.79
-          },
-          "-2.0": {
-            "away": 1.94
-          },
-          "2.5": {
-            "home": 1.69,
-            "away": 1.37
-          },
-          "-2.5": {
-            "home": 3.05,
-            "away": 2.05
-          },
-          "3.0": {
-            "home": 1.54
-          },
-          "-3.0": {
-            "away": 2.35
-          },
-          "3.5": {
-            "home": 1.48,
-            "away": 1.25
-          },
-          "-3.5": {
-            "home": 3.9,
-            "away": 2.55
-          },
-          "4.0": {
-            "home": 1.3
-          },
-          "-4.0": {
-            "away": 3.26
-          },
-          "4.5": {
-            "home": 1.27
-          },
-          "-4.5": {
-            "away": 3.61
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Geneva (Switzerland)",
-      "archived_at": "2026-05-22T16:56:52.732Z"
-    },
     {
       "event_id": "niG0T0Vi",
       "flashscore_id": "niG0T0Vi",
@@ -145614,6 +145030,298 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Nottingham (United Kingdom)",
       "archived_at": "2026-06-19T18:21:13.722Z"
+    },
+    {
+      "event_id": "E9fihY2N",
+      "flashscore_id": "E9fihY2N",
+      "flashscore_sport_id": 2,
+      "home_team_id": "AHDLJaph",
+      "away_team_id": "CzXh4LAb",
+      "tournament_id": "lp6eypi6",
+      "tournament_url": "/tennis/atp-singles/halle/",
+      "sport_key": "flashscore_tennis_atp_halle_germany",
+      "commence_time": "2026-06-19T14:00:00.000Z",
+      "time_display": "Ven. 16h00",
+      "home": "Tiafoe F.",
+      "away": "Auger-Aliassime F.",
+      "match": "Tiafoe F. vs Auger-Aliassime F.",
+      "prono": "win-home",
+      "pari": "Moins de 21.5 jeux",
+      "cote_retenue": 3.09,
+      "cotes": {
+        "domicile": 2.36,
+        "nul": null,
+        "exterieur": 1.56
+      },
+      "pick_category": "ou",
+      "analyse": "Tiafoe et Auger-Aliassime se retrouvent à Halle sur gazon, surface qui favorise les services dominants et les échanges courts. Tiafoe est en excellente forme à Halle : victoires nettes 2-0 contre Shimabukuro et Cobolli en deux sets secs, après un parcours solide à Stuttgart (victoires contre Hijikata et Altmaier). Auger-Aliassime a montré des signes contradictoires : battu 0-2 par Majchrzak à Herrsching mais avec deux victoires en deux sets à Halle contre Borges et Tien (ce dernier en 3 sets). Sur gazon, les deux sont de bons serveurs qui tendent à expédier les sets rapidement lorsqu'ils sont en confiance. La majorité des derniers matches de Tiafoe à Halle se sont conclus en 2 sets avec peu de jeux disputés. En croisant les styles de jeu offensifs-serveurs et la surface gazon, un total inférieur à 21.5 jeux semble très plausible, les deux joueurs ayant démontré une capacité à conclure rapidement sur cette surface cette semaine.",
+      "confiance": 2,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1781704200,
+            "tournament": "HAL",
+            "home": "Tien L.",
+            "away": "Auger-Aliassime F.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781696100,
+            "tournament": "HAL",
+            "home": "Tiafoe F.",
+            "away": "Shimabukuro S.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781535900,
+            "tournament": "HAL",
+            "home": "Cobolli F.",
+            "away": "Tiafoe F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781527800,
+            "tournament": "HAL",
+            "home": "Borges N.",
+            "away": "Auger-Aliassime F.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781279700,
+            "tournament": "STU",
+            "home": "Lehecka J.",
+            "away": "Tiafoe F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781274600,
+            "tournament": "HER",
+            "home": "Auger-Aliassime F.",
+            "away": "Majchrzak K.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781182200,
+            "tournament": "HER",
+            "home": "Auger-Aliassime F.",
+            "away": "Fucsovics M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781175300,
+            "tournament": "STU",
+            "home": "Hijikata R.",
+            "away": "Tiafoe F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781015700,
+            "tournament": "STU",
+            "home": "Altmaier D.",
+            "away": "Tiafoe F.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1780495800,
+            "tournament": "FO",
+            "home": "Auger-Aliassime F.",
+            "away": "Cobolli F.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1780335900,
+            "tournament": "FO",
+            "home": "Tiafoe F.",
+            "away": "Arnaldi M.",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1780326600,
+            "tournament": "FO",
+            "home": "Auger-Aliassime F.",
+            "away": "Tabilo A.",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1780167000,
+            "tournament": "FO",
+            "home": "Auger-Aliassime F.",
+            "away": "Nakashima B.",
+            "score": "3-1"
+          },
+          {
+            "timestamp": 1780165500,
+            "tournament": "FO",
+            "home": "Faria J.",
+            "away": "Tiafoe F.",
+            "score": "2-3"
+          },
+          {
+            "timestamp": 1779979200,
+            "tournament": "FO",
+            "home": "Auger-Aliassime F.",
+            "away": "Burruchaga R. A.",
+            "score": "3-1"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "19.5": {
+            "over": 1.24,
+            "under": 3.8
+          },
+          "20.5": {
+            "over": 1.36,
+            "under": 3
+          },
+          "21.0": {
+            "over": 1.25,
+            "under": 3.34
+          },
+          "21.5": {
+            "over": 1.32,
+            "under": 3.09
+          },
+          "22.0": {
+            "over": 1.34,
+            "under": 2.83
+          },
+          "22.5": {
+            "over": 1.52,
+            "under": 2.38
+          },
+          "23.0": {
+            "over": 1.62,
+            "under": 2.13
+          },
+          "23.5": {
+            "over": 1.79,
+            "under": 1.94
+          },
+          "24.0": {
+            "over": 1.81,
+            "under": 1.91
+          },
+          "24.5": {
+            "over": 1.83,
+            "under": 1.91
+          },
+          "25.0": {
+            "over": 1.88,
+            "under": 1.84
+          },
+          "25.5": {
+            "over": 1.94,
+            "under": 1.79
+          },
+          "26.0": {
+            "over": 2.11,
+            "under": 1.63
+          },
+          "26.5": {
+            "over": 2.33,
+            "under": 1.54
+          },
+          "27.0": {
+            "over": 2.3,
+            "under": 1.52
+          },
+          "27.5": {
+            "over": 2.31,
+            "under": 1.5
+          },
+          "28.5": {
+            "over": 2.55,
+            "under": 1.48
+          },
+          "2.5": {
+            "over": 2.2,
+            "under": 1.6
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.72,
+            "away": 1.22
+          },
+          "-1.5": {
+            "home": 3.9,
+            "away": 2.08
+          },
+          "0.0": {
+            "home": 2.36,
+            "away": 1.53
+          },
+          "0.5": {
+            "home": 2.2,
+            "away": 1.5
+          },
+          "-0.5": {
+            "home": 2.46,
+            "away": 1.61
+          },
+          "1.0": {
+            "home": 2.1,
+            "away": 1.43
+          },
+          "-1.0": {
+            "home": 2.66,
+            "away": 1.67
+          },
+          "2.0": {
+            "home": 1.8
+          },
+          "-2.0": {
+            "away": 1.92
+          },
+          "2.5": {
+            "home": 1.67
+          },
+          "-2.5": {
+            "away": 2.08
+          },
+          "3.0": {
+            "home": 1.46
+          },
+          "-3.0": {
+            "away": 2.56
+          },
+          "3.5": {
+            "home": 1.37
+          },
+          "-3.5": {
+            "away": 2.92
+          },
+          "4.0": {
+            "home": 1.19
+          },
+          "-4.0": {
+            "away": 4.2
+          },
+          "4.5": {
+            "home": 1.18
+          },
+          "-4.5": {
+            "away": 4.45
+          },
+          "5.0": {
+            "home": 1.06
+          },
+          "-5.0": {
+            "away": 7.4
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Halle (Germany)",
+      "archived_at": "2026-06-19T21:48:53.316Z"
     }
   ],
   "combos": [
