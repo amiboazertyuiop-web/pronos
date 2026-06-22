@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-22T18:59:17.825Z",
+    "last_results_update": "2026-06-22T21:33:03.965Z",
     "analyses_written_at": "2026-06-22T10:49:18.250Z",
     "analyses_cost_usd": 0.3844,
-    "last_hourly_refresh": "2026-06-22T18:59:17.825Z"
+    "last_hourly_refresh": "2026-06-22T21:33:03.965Z"
   },
   "sports": {
     "foot": {
@@ -319,269 +319,6 @@
                   "-4.0": {
                     "home": 3.98,
                     "away": 4.05
-                  }
-                }
-              }
-            },
-            {
-              "event_id": "MNJolaWj",
-              "flashscore_id": "MNJolaWj",
-              "flashscore_sport_id": 2,
-              "home_team_id": "SbeTx1o8",
-              "away_team_id": "zZieQm4D",
-              "tournament_id": "ucjjk12k",
-              "tournament_url": "/tennis/atp-singles/eastbourne/",
-              "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
-              "commence_time": "2026-06-22T15:00:00.000Z",
-              "time_display": "Lun. 17h00",
-              "home": "Bergs Z.",
-              "away": "Munar J.",
-              "match": "Bergs Z. vs Munar J.",
-              "prono": "win-home",
-              "pari": "Moins de 21.5 jeux",
-              "cote_retenue": 2.58,
-              "cotes": {
-                "domicile": 1.68,
-                "nul": null,
-                "exterieur": 2.16
-              },
-              "pick_category": "ou",
-              "analyse": "Ce match entre Zizou Bergs et Jaume Munar se joue sur gazon à Eastbourne, une surface qui favorise les serveurs et tend à produire des matchs plus expéditifs. Bergs arrive en mauvaise forme : défaite contre Fritz à Halle (1-2) puis contre McCabe à Hertogenbosch (1-2), soit deux éliminations consécutives sur gazon. Munar n'est pas en grande forme non plus : sorti dès le premier tour à Hertogenbosch par Damm (0-2) après des résultats contrastés sur terre battue. Les deux joueurs se retrouvent pour la première fois dans ces stats récentes, sans H2H exploitable. Sur gazon, les échanges sont courts, les services dominants, ce qui réduit mécaniquement le nombre de jeux joués. Bergs est un joueur solide mais pas un serveur écrasant, et Munar est surtout à l'aise sur terre battue — leurs niveaux actuels semblent comparables, mais la surface gazon plaide pour un match en 2 sets relativement rapides, donc sous les 22 jeux totaux.",
-              "confiance": 2,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1781689200,
-                    "tournament": "HAL",
-                    "home": "Bergs Z.",
-                    "away": "Fritz T.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781082600,
-                    "tournament": "HER",
-                    "home": "McCabe J.",
-                    "away": "Bergs Z.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780998900,
-                    "tournament": "HER",
-                    "home": "Munar J.",
-                    "away": "Damm M.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779715500,
-                    "tournament": "FO",
-                    "home": "Munar J.",
-                    "away": "Hurkacz H.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1779621600,
-                    "tournament": "FO",
-                    "home": "Machac T.",
-                    "away": "Bergs Z.",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1779361800,
-                    "tournament": "GEN",
-                    "home": "Navone M.",
-                    "away": "Munar J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779275400,
-                    "tournament": "GEN",
-                    "home": "Comesana F.",
-                    "away": "Munar J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779192300,
-                    "tournament": "GEN",
-                    "home": "Basavareddy N.",
-                    "away": "Munar J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778951100,
-                    "tournament": "VAL",
-                    "home": "Vallejo D.",
-                    "away": "Munar J.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1778860800,
-                    "tournament": "VAL",
-                    "home": "Carreno-Busta P.",
-                    "away": "Munar J.",
-                    "score": "null-null"
-                  },
-                  {
-                    "timestamp": 1778854200,
-                    "tournament": "VAL",
-                    "home": "Vallejo D.",
-                    "away": "Bergs Z.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778767800,
-                    "tournament": "VAL",
-                    "home": "Dzumhur D.",
-                    "away": "Munar J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778757000,
-                    "tournament": "VAL",
-                    "home": "Bautista-Agut R.",
-                    "away": "Bergs Z.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1778144700,
-                    "tournament": "ROM",
-                    "home": "Bergs Z.",
-                    "away": "Atmane T.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778075400,
-                    "tournament": "ROM",
-                    "home": "Arnaldi M.",
-                    "away": "Munar J.",
-                    "score": "2-1"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "21.0": {
-                    "over": 1.33,
-                    "under": 2.88
-                  },
-                  "21.5": {
-                    "over": 1.44,
-                    "under": 2.58
-                  },
-                  "22.0": {
-                    "over": 1.5,
-                    "under": 2.38
-                  },
-                  "22.5": {
-                    "over": 1.71,
-                    "under": 2.07
-                  },
-                  "23.0": {
-                    "over": 1.79,
-                    "under": 1.94
-                  },
-                  "23.5": {
-                    "over": 1.96,
-                    "under": 1.83
-                  },
-                  "24.0": {
-                    "over": 1.94,
-                    "under": 1.79
-                  },
-                  "24.5": {
-                    "over": 1.95,
-                    "under": 1.76
-                  },
-                  "25.0": {
-                    "over": 2.01,
-                    "under": 1.7
-                  },
-                  "25.5": {
-                    "over": 2.07,
-                    "under": 1.66
-                  },
-                  "26.0": {
-                    "over": 2.2,
-                    "under": 1.55
-                  },
-                  "27.0": {
-                    "over": 2.34,
-                    "under": 1.5
-                  },
-                  "27.5": {
-                    "over": 2.36,
-                    "under": 1.48
-                  },
-                  "2.5": {
-                    "over": 2.24,
-                    "under": 1.61
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.26,
-                    "away": 1.8
-                  },
-                  "-1.5": {
-                    "home": 1.87,
-                    "away": 3.4
-                  },
-                  "0.0": {
-                    "home": 1.62,
-                    "away": 2.1
-                  },
-                  "0.5": {
-                    "home": 1.57,
-                    "away": 2
-                  },
-                  "-0.5": {
-                    "home": 1.69,
-                    "away": 2.18
-                  },
-                  "1.0": {
-                    "home": 1.51,
-                    "away": 1.91
-                  },
-                  "-1.0": {
-                    "home": 1.76,
-                    "away": 2.32
-                  },
-                  "2.0": {
-                    "home": 1.43,
-                    "away": 1.7
-                  },
-                  "-2.0": {
-                    "home": 1.98,
-                    "away": 2.54
-                  },
-                  "2.5": {
-                    "away": 1.68
-                  },
-                  "-2.5": {
-                    "home": 2.05
-                  },
-                  "3.0": {
-                    "away": 1.46
-                  },
-                  "-3.0": {
-                    "home": 2.46
-                  },
-                  "3.5": {
-                    "away": 1.38
-                  },
-                  "-3.5": {
-                    "home": 2.73
-                  },
-                  "4.0": {
-                    "away": 1.22
-                  },
-                  "-4.0": {
-                    "home": 3.66
                   }
                 }
               }
@@ -3398,295 +3135,6 @@
           "panel_title": "🎾 WTA Bad Homburg (Germany)",
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
-            {
-              "event_id": "KzRoGHnB",
-              "flashscore_id": "KzRoGHnB",
-              "flashscore_sport_id": 2,
-              "home_team_id": "ppu9X7PH",
-              "away_team_id": "Y1ZrrUtl",
-              "tournament_id": "2htmscnl",
-              "tournament_url": "/tennis/wta-singles/bad-homburg/",
-              "sport_key": "flashscore_tennis_wta_bad_homburg_germany",
-              "commence_time": "2026-06-22T15:30:00.000Z",
-              "time_display": "Lun. 17h30",
-              "home": "Eala A.",
-              "away": "Mertens E.",
-              "match": "Eala A. vs Mertens E.",
-              "prono": "win-home",
-              "pari": "Moins de 21.5 jeux",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 2.1,
-                "nul": null,
-                "exterieur": 1.7
-              },
-              "pick_category": "ou",
-              "analyse": "Alex Eala traverse une période de forme impressionnante sur gazon : elle a enchaîné des victoires convaincantes face à Vekic, Rybakina et Svitolina lors du tournoi de Berlin, ne s'inclinant qu'en demi-finale contre Noskova (2-0). Sa progression sur cette surface est remarquable avec 8 victoires en sets directs lors de ses 10 derniers matchs. Elise Mertens, de son côté, présente un bilan plus mitigé : défaite nette face à Bartunkova (0-2) à Berlin, et une élimination précoce à Hertogenbosch contre Ruse (0-2), compensées par une victoire en trois sets contre Samsonova. Le gazon favorise les services dominants et les échanges courts, ce qui profite aux joueuses offensives comme Eala. Les handicaps de jeux disponibles sont très équilibrés, reflétant l'incertitude sur l'issue du match, mais les cotes sur le total de jeux suggèrent une attente de match assez compact. Compte tenu du style direct d'Eala sur gazon et de la tendance aux victoires en deux sets de chaque côté, un total inférieur à 21.5 jeux semble pertinent.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1781971500,
-                    "tournament": "BER",
-                    "home": "Noskova L.",
-                    "away": "Eala A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781886000,
-                    "tournament": "BER",
-                    "home": "Svitolina E.",
-                    "away": "Eala A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781797200,
-                    "tournament": "BER",
-                    "home": "Eala A.",
-                    "away": "Rybakina E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781687400,
-                    "tournament": "BER",
-                    "home": "Vekic D.",
-                    "away": "Eala A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781687400,
-                    "tournament": "BER",
-                    "home": "Mertens E.",
-                    "away": "Bartunkova N.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781539800,
-                    "tournament": "BER",
-                    "home": "Mertens E.",
-                    "away": "Samsonova L.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1781169000,
-                    "tournament": "HER",
-                    "home": "Ruse G.",
-                    "away": "Mertens E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781088000,
-                    "tournament": "LON",
-                    "home": "Jovic I.",
-                    "away": "Eala A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781015400,
-                    "tournament": "LON",
-                    "home": "Zhang S.",
-                    "away": "Eala A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1780916700,
-                    "tournament": "HER",
-                    "home": "Andreescu B.",
-                    "away": "Mertens E.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1780832100,
-                    "tournament": "BIR",
-                    "home": "Eala A.",
-                    "away": "Bartunkova N.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780744200,
-                    "tournament": "BIR",
-                    "home": "Eala A.",
-                    "away": "Masarova R.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780677300,
-                    "tournament": "BIR",
-                    "home": "Eala A.",
-                    "away": "Sawangkaew M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1780578000,
-                    "tournament": "BIR",
-                    "home": "Eala A.",
-                    "away": "Charaeva A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1780393200,
-                    "tournament": "BIR",
-                    "home": "Eala A.",
-                    "away": "Hon P.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "18.5": {
-                    "over": 1.31,
-                    "under": 3.23
-                  },
-                  "19.5": {
-                    "over": 1.47,
-                    "under": 2.58
-                  },
-                  "20.5": {
-                    "over": 1.65,
-                    "under": 2.16
-                  },
-                  "21.5": {
-                    "over": 1.8,
-                    "under": 1.97
-                  },
-                  "22.0": {
-                    "over": 1.81,
-                    "under": 1.91
-                  },
-                  "22.5": {
-                    "over": 2.02,
-                    "under": 1.72
-                  },
-                  "23.0": {
-                    "over": 2.05,
-                    "under": 1.7
-                  },
-                  "23.5": {
-                    "over": 2.3,
-                    "under": 1.58
-                  },
-                  "24.5": {
-                    "over": 2.44,
-                    "under": 1.52
-                  },
-                  "25.5": {
-                    "over": 2.71,
-                    "under": 1.44
-                  },
-                  "26.5": {
-                    "over": 3.08,
-                    "under": 1.35
-                  },
-                  "27.5": {
-                    "over": 3.24,
-                    "under": 1.29
-                  },
-                  "2.5": {
-                    "over": 2.3,
-                    "under": 1.56
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.83,
-                    "away": 1.41
-                  },
-                  "-1.5": {
-                    "home": 2.84,
-                    "away": 1.89
-                  },
-                  "0.0": {
-                    "home": 2.13,
-                    "away": 1.65
-                  },
-                  "0.5": {
-                    "home": 2.04,
-                    "away": 1.61
-                  },
-                  "-0.5": {
-                    "home": 2.2,
-                    "away": 1.71
-                  },
-                  "1.0": {
-                    "home": 1.97,
-                    "away": 1.64
-                  },
-                  "-1.0": {
-                    "home": 2.15,
-                    "away": 1.76
-                  },
-                  "2.0": {
-                    "home": 1.82,
-                    "away": 1.69
-                  },
-                  "-2.0": {
-                    "home": 2,
-                    "away": 1.9
-                  },
-                  "2.5": {
-                    "home": 1.77,
-                    "away": 1.46
-                  },
-                  "-2.5": {
-                    "home": 2.63,
-                    "away": 1.98
-                  },
-                  "3.0": {
-                    "home": 1.63,
-                    "away": 1.54
-                  },
-                  "-3.0": {
-                    "home": 2.26,
-                    "away": 2.17
-                  },
-                  "3.5": {
-                    "home": 1.58,
-                    "away": 1.35
-                  },
-                  "-3.5": {
-                    "home": 2.98,
-                    "away": 2.29
-                  },
-                  "4.0": {
-                    "home": 1.44,
-                    "away": 1.41
-                  },
-                  "-4.0": {
-                    "home": 2.62,
-                    "away": 2.52
-                  },
-                  "4.5": {
-                    "home": 1.39,
-                    "away": 1.26
-                  },
-                  "-4.5": {
-                    "home": 3.35,
-                    "away": 2.92
-                  },
-                  "5.5": {
-                    "home": 1.22,
-                    "away": 1.21
-                  },
-                  "-5.5": {
-                    "home": 3.72,
-                    "away": 4
-                  },
-                  "6.5": {
-                    "home": 1.12
-                  },
-                  "-6.5": {
-                    "away": 5.5
-                  }
-                }
-              }
-            },
             {
               "event_id": "h2vgEeHN",
               "flashscore_id": "h2vgEeHN",
@@ -7533,636 +6981,6 @@
     "dp2RrPG8"
   ],
   "history": [
-    {
-      "event_id": "SSQMN2OM",
-      "flashscore_id": "SSQMN2OM",
-      "flashscore_sport_id": 2,
-      "home_team_id": "OU6w8nNa",
-      "away_team_id": "WMS3AdAb",
-      "tournament_id": "0n2yc0d5",
-      "tournament_url": "/tennis/wta-singles/french-open/",
-      "sport_key": "flashscore_tennis_wta_french_open_france",
-      "commence_time": "2026-05-27T12:00:00.000Z",
-      "time_display": "Mer. 14h00",
-      "home": "Jones F.",
-      "away": "Bouzkova M.",
-      "match": "Jones F. vs Bouzkova M.",
-      "prono": "win-home",
-      "pari": "Plus de 20.5 jeux",
-      "cote_retenue": 1.92,
-      "cotes": {
-        "domicile": 3.74,
-        "nul": null,
-        "exterieur": 1.29
-      },
-      "pick_category": "ou",
-      "analyse": "Bouzkova aborde ce deuxième tour de Roland-Garros en grande forme sur terre battue : elle vient de battre Bronzetti 2-0 au premier tour à Paris, et avait déjà dominé Siniakova 2-0 à Strasbourg. Jones, de son côté, a livré un match en trois sets serré face à Haddad Maia (2-1) au premier tour, signe de matchs tendus et disputés. Sur la terre battue cette saison, Jones a accumulé les sets perdus : défaite en 3 sets à Rabat contre Kotliar, défaite en 3 sets à Vienne contre Pohankova. La surface ocre favorise naturellement les échanges longs et les matchs en trois sets, ce qui plaide pour un total de jeux élevé. Jones est joueuse compétitive qui arrache des sets même dans ses défaites, ce qui devrait allonger la rencontre. Bouzkova est solide mais pas expéditive : ses victoires récentes en 2-0 masquent souvent des sets accrochés à 7-5 ou en tie-break. Un total dépassant 20.5 jeux paraît très raisonnable compte tenu du profil des deux joueuses sur cette surface.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "0-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779629700,
-            "tournament": "FO",
-            "home": "Jones F.",
-            "away": "Haddad Maia B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1779614100,
-            "tournament": "FO",
-            "home": "Bronzetti L.",
-            "away": "Bouzkova M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779352800,
-            "tournament": "STR",
-            "home": "Bouzkova M.",
-            "away": "Li A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779266100,
-            "tournament": "STR",
-            "home": "Bouzkova M.",
-            "away": "Oliynykova O.",
-            "score": "0-0"
-          },
-          {
-            "timestamp": 1779185100,
-            "tournament": "RAB",
-            "home": "Jones F.",
-            "away": "Kotliar Y.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779118800,
-            "tournament": "STR",
-            "home": "Bouzkova M.",
-            "away": "Siniakova K.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778233200,
-            "tournament": "IST",
-            "home": "Timofeeva M.",
-            "away": "Jones F.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1778173200,
-            "tournament": "ROM",
-            "home": "Bouzkova M.",
-            "away": "Townsend T.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778154000,
-            "tournament": "IST",
-            "home": "Monnet C.",
-            "away": "Jones F.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777991400,
-            "tournament": "IST",
-            "home": "Gorgodze E.",
-            "away": "Jones F.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777722000,
-            "tournament": "WIE",
-            "home": "Jones F.",
-            "away": "Pohankova M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777638300,
-            "tournament": "WIE",
-            "home": "Grabher J.",
-            "away": "Jones F.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777551900,
-            "tournament": "WIE",
-            "home": "Bronzetti L.",
-            "away": "Jones F.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1777462200,
-            "tournament": "WIE",
-            "home": "Seibold E.",
-            "away": "Jones F.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1776947700,
-            "tournament": "MAD",
-            "home": "Bouzkova M.",
-            "away": "Kalinina A.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.5": {
-            "over": 1.33,
-            "under": 3.05
-          },
-          "18.0": {
-            "over": 1.34,
-            "under": 2.83
-          },
-          "18.5": {
-            "over": 1.48,
-            "under": 2.45
-          },
-          "19.0": {
-            "over": 1.55,
-            "under": 2.26
-          },
-          "19.5": {
-            "over": 1.69,
-            "under": 2.07
-          },
-          "20.0": {
-            "over": 1.79,
-            "under": 1.94
-          },
-          "20.5": {
-            "over": 1.92,
-            "under": 1.81
-          },
-          "21.0": {
-            "over": 2.02,
-            "under": 1.73
-          },
-          "21.5": {
-            "over": 2.11,
-            "under": 1.67
-          },
-          "22.0": {
-            "over": 2.26,
-            "under": 1.55
-          },
-          "22.5": {
-            "over": 2.39,
-            "under": 1.51
-          },
-          "23.0": {
-            "over": 2.5,
-            "under": 1.43
-          },
-          "23.5": {
-            "over": 2.63,
-            "under": 1.42
-          },
-          "24.0": {
-            "over": 2.44,
-            "under": 1.45
-          },
-          "24.5": {
-            "over": 2.68,
-            "under": 1.42
-          },
-          "2.5": {
-            "over": 2.69,
-            "under": 1.44
-          },
-          "25.5": {
-            "over": 3.25,
-            "under": 1.32
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 2.08,
-            "away": 1.09
-          },
-          "-1.5": {
-            "home": 5.9,
-            "away": 1.71
-          },
-          "2.0": {
-            "home": 2.98
-          },
-          "-2.0": {
-            "away": 1.35
-          },
-          "2.5": {
-            "home": 2.88
-          },
-          "-2.5": {
-            "away": 1.38
-          },
-          "3.0": {
-            "home": 2.62
-          },
-          "-3.0": {
-            "away": 1.44
-          },
-          "3.5": {
-            "home": 2.38
-          },
-          "-3.5": {
-            "away": 1.53
-          },
-          "4.0": {
-            "home": 2.17
-          },
-          "-4.0": {
-            "away": 1.63
-          },
-          "4.5": {
-            "home": 1.94
-          },
-          "-4.5": {
-            "away": 1.78
-          },
-          "5.0": {
-            "home": 1.74
-          },
-          "-5.0": {
-            "away": 2
-          },
-          "5.5": {
-            "home": 1.61
-          },
-          "-5.5": {
-            "away": 2.22
-          },
-          "6.0": {
-            "home": 1.41
-          },
-          "-6.0": {
-            "away": 2.73
-          },
-          "6.5": {
-            "home": 1.35
-          },
-          "-6.5": {
-            "away": 3.03
-          },
-          "7.0": {
-            "home": 1.18
-          },
-          "-7.0": {
-            "away": 4.35
-          },
-          "7.5": {
-            "home": 1.15
-          },
-          "-7.5": {
-            "away": 4.8
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA French Open (France)",
-      "archived_at": "2026-05-27T14:42:18.545Z"
-    },
-    {
-      "event_id": "zB9jZ2nB",
-      "flashscore_id": "zB9jZ2nB",
-      "flashscore_sport_id": 2,
-      "home_team_id": "YoPUeL3o",
-      "away_team_id": "UFj257G8",
-      "tournament_id": "zlw8ihql",
-      "tournament_url": "/tennis/atp-singles/french-open/",
-      "sport_key": "flashscore_tennis_atp_french_open_france",
-      "commence_time": "2026-05-27T11:00:00.000Z",
-      "time_display": "Mer. 13h00",
-      "home": "Navone M.",
-      "away": "Mensik J.",
-      "match": "Navone M. vs Mensik J.",
-      "prono": "win-home",
-      "pari": "Plus de 36.5 jeux",
-      "cote_retenue": 1.65,
-      "cotes": {
-        "domicile": 2.02,
-        "nul": null,
-        "exterieur": 1.82
-      },
-      "pick_category": "ou",
-      "analyse": "Navone traverse une période de forme remarquable sur terre battue : il a battu Ruud, Norrie, Munar et Auger-Aliassime lors de ses récents tournois sur ocre, avec une seule défaite en cinq sets (contre Tien à Genève). À Roland-Garros, il vient d'étriller Brooksby 3-0 au premier tour. Mensik, lui, présente un bilan plus mitigé : sorti par Buse à Hambourg et par Popyrin à Rome, même s'il a battu Struff et dominé Droguet (3-0) au premier tour à Paris. La surface est clairement l'habitat naturel de Navone, joueur de fond de court habitué aux longues constructions sur ocre, ce qui génère typiquement des échanges prolongés et des matches en cinq sets lorsqu'il est poussé. Mensik est un frappeur puissant avec un bon premier service, mais sa régularité sur terre reste inférieure à celle de Navone. Avec deux joueurs capables de tenir de longs échanges sur une surface lente favorisant les rallyes, un match en trois à cinq sets semble très probable, poussant le total de jeux au-delà de la barre basse proposée.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "lost",
-      "actual_score": "2-3",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779712200,
-            "tournament": "FO",
-            "home": "Navone M.",
-            "away": "Brooksby J.",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1779626700,
-            "tournament": "FO",
-            "home": "Droguet T.",
-            "away": "Mensik J.",
-            "score": "0-3"
-          },
-          {
-            "timestamp": 1779541800,
-            "tournament": "GEN",
-            "home": "Navone M.",
-            "away": "Tien L.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779451800,
-            "tournament": "GEN",
-            "home": "Ruud C.",
-            "away": "Navone M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779361800,
-            "tournament": "GEN",
-            "home": "Navone M.",
-            "away": "Munar J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1779276300,
-            "tournament": "HAM",
-            "home": "Buse I.",
-            "away": "Mensik J.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1779268200,
-            "tournament": "GEN",
-            "home": "Norrie C.",
-            "away": "Navone M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779126600,
-            "tournament": "HAM",
-            "home": "Mensik J.",
-            "away": "Struff J-L.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1779019800,
-            "tournament": "GEN",
-            "home": "Trungelliti M.",
-            "away": "Navone M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778502900,
-            "tournament": "ROM",
-            "home": "Navone M.",
-            "away": "Medjedovic H.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778359800,
-            "tournament": "ROM",
-            "home": "Popyrin A.",
-            "away": "Mensik J.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778326800,
-            "tournament": "ROM",
-            "home": "Auger-Aliassime F.",
-            "away": "Navone M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778177400,
-            "tournament": "ROM",
-            "home": "Shapovalov D.",
-            "away": "Navone M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777553400,
-            "tournament": "CAG",
-            "home": "Navone M.",
-            "away": "Berrettini M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777410300,
-            "tournament": "MAD",
-            "home": "Mensik J.",
-            "away": "Zverev A.",
-            "score": "1-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "34.5": {
-            "over": 1.48,
-            "under": 2.42
-          },
-          "35.0": {
-            "over": 1.53,
-            "under": 2.24
-          },
-          "35.5": {
-            "over": 1.55,
-            "under": 2.26
-          },
-          "36.0": {
-            "over": 1.59,
-            "under": 2.13
-          },
-          "36.5": {
-            "over": 1.65,
-            "under": 2.12
-          },
-          "37.0": {
-            "over": 1.7,
-            "under": 2.01
-          },
-          "37.5": {
-            "over": 1.76,
-            "under": 1.95
-          },
-          "38.0": {
-            "over": 1.82,
-            "under": 1.9
-          },
-          "38.5": {
-            "over": 1.84,
-            "under": 1.9
-          },
-          "39.0": {
-            "over": 1.95,
-            "under": 1.78
-          },
-          "39.5": {
-            "over": 2,
-            "under": 1.72
-          },
-          "40.0": {
-            "over": 2.08,
-            "under": 1.65
-          },
-          "40.5": {
-            "over": 2.2,
-            "under": 1.6
-          },
-          "41.0": {
-            "over": 2.22,
-            "under": 1.54
-          },
-          "41.5": {
-            "over": 2.38,
-            "under": 1.51
-          },
-          "3.5": {
-            "over": 1.46,
-            "under": 2.63
-          },
-          "4.5": {
-            "over": 3.3,
-            "under": 1.32
-          },
-          "31.5": {
-            "over": 1.34,
-            "under": 3.15
-          },
-          "32.5": {
-            "over": 1.41,
-            "under": 2.8
-          },
-          "33.5": {
-            "over": 1.47,
-            "under": 2.6
-          },
-          "42.5": {
-            "over": 2.7,
-            "under": 1.45
-          },
-          "43.5": {
-            "over": 2.95,
-            "under": 1.38
-          },
-          "44.5": {
-            "over": 3.25,
-            "under": 1.33
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.67,
-            "away": 1.41
-          },
-          "-1.5": {
-            "home": 2.65,
-            "away": 2.11
-          },
-          "2.5": {
-            "home": 1.69,
-            "away": 1.32
-          },
-          "-2.5": {
-            "home": 3.82,
-            "away": 2.07
-          },
-          "0.0": {
-            "home": 1.97,
-            "away": 1.76
-          },
-          "0.5": {
-            "home": 1.95,
-            "away": 1.71
-          },
-          "-0.5": {
-            "home": 2.06,
-            "away": 1.8
-          },
-          "1.0": {
-            "home": 1.86,
-            "away": 1.66
-          },
-          "-1.0": {
-            "home": 2.11,
-            "away": 1.86
-          },
-          "2.0": {
-            "home": 1.74,
-            "away": 1.56
-          },
-          "-2.0": {
-            "home": 2.3,
-            "away": 2
-          },
-          "3.0": {
-            "home": 1.62
-          },
-          "-3.0": {
-            "away": 2.19
-          },
-          "3.5": {
-            "home": 1.61,
-            "away": 1.43
-          },
-          "-3.5": {
-            "home": 2.75,
-            "away": 2.23
-          },
-          "4.0": {
-            "home": 1.5
-          },
-          "-4.0": {
-            "away": 2.45
-          },
-          "4.5": {
-            "home": 1.51,
-            "away": 1.32
-          },
-          "-4.5": {
-            "home": 3.25,
-            "away": 2.47
-          },
-          "5.0": {
-            "home": 1.46
-          },
-          "-5.0": {
-            "away": 2.56
-          },
-          "5.5": {
-            "home": 1.4
-          },
-          "-5.5": {
-            "away": 2.8
-          },
-          "6.5": {
-            "home": 1.32
-          },
-          "-6.5": {
-            "away": 3.3
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP French Open (France)",
-      "archived_at": "2026-05-27T17:44:43.161Z"
-    },
     {
       "event_id": "vVC89C3C",
       "flashscore_id": "vVC89C3C",
@@ -145121,6 +143939,564 @@
       "sport_label": "🎾 Tennis",
       "league_label": "ATP Wimbledon (United Kingdom) (Q)",
       "archived_at": "2026-06-22T18:59:17.824Z"
+    },
+    {
+      "event_id": "MNJolaWj",
+      "flashscore_id": "MNJolaWj",
+      "flashscore_sport_id": 2,
+      "home_team_id": "SbeTx1o8",
+      "away_team_id": "zZieQm4D",
+      "tournament_id": "ucjjk12k",
+      "tournament_url": "/tennis/atp-singles/eastbourne/",
+      "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
+      "commence_time": "2026-06-22T15:00:00.000Z",
+      "time_display": "Lun. 17h00",
+      "home": "Bergs Z.",
+      "away": "Munar J.",
+      "match": "Bergs Z. vs Munar J.",
+      "prono": "win-home",
+      "pari": "Moins de 21.5 jeux",
+      "cote_retenue": 2.58,
+      "cotes": {
+        "domicile": 1.68,
+        "nul": null,
+        "exterieur": 2.16
+      },
+      "pick_category": "ou",
+      "analyse": "Ce match entre Zizou Bergs et Jaume Munar se joue sur gazon à Eastbourne, une surface qui favorise les serveurs et tend à produire des matchs plus expéditifs. Bergs arrive en mauvaise forme : défaite contre Fritz à Halle (1-2) puis contre McCabe à Hertogenbosch (1-2), soit deux éliminations consécutives sur gazon. Munar n'est pas en grande forme non plus : sorti dès le premier tour à Hertogenbosch par Damm (0-2) après des résultats contrastés sur terre battue. Les deux joueurs se retrouvent pour la première fois dans ces stats récentes, sans H2H exploitable. Sur gazon, les échanges sont courts, les services dominants, ce qui réduit mécaniquement le nombre de jeux joués. Bergs est un joueur solide mais pas un serveur écrasant, et Munar est surtout à l'aise sur terre battue — leurs niveaux actuels semblent comparables, mais la surface gazon plaide pour un match en 2 sets relativement rapides, donc sous les 22 jeux totaux.",
+      "confiance": 2,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1781689200,
+            "tournament": "HAL",
+            "home": "Bergs Z.",
+            "away": "Fritz T.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781082600,
+            "tournament": "HER",
+            "home": "McCabe J.",
+            "away": "Bergs Z.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780998900,
+            "tournament": "HER",
+            "home": "Munar J.",
+            "away": "Damm M.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779715500,
+            "tournament": "FO",
+            "home": "Munar J.",
+            "away": "Hurkacz H.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1779621600,
+            "tournament": "FO",
+            "home": "Machac T.",
+            "away": "Bergs Z.",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1779361800,
+            "tournament": "GEN",
+            "home": "Navone M.",
+            "away": "Munar J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779275400,
+            "tournament": "GEN",
+            "home": "Comesana F.",
+            "away": "Munar J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779192300,
+            "tournament": "GEN",
+            "home": "Basavareddy N.",
+            "away": "Munar J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778951100,
+            "tournament": "VAL",
+            "home": "Vallejo D.",
+            "away": "Munar J.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1778860800,
+            "tournament": "VAL",
+            "home": "Carreno-Busta P.",
+            "away": "Munar J.",
+            "score": "null-null"
+          },
+          {
+            "timestamp": 1778854200,
+            "tournament": "VAL",
+            "home": "Vallejo D.",
+            "away": "Bergs Z.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778767800,
+            "tournament": "VAL",
+            "home": "Dzumhur D.",
+            "away": "Munar J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778757000,
+            "tournament": "VAL",
+            "home": "Bautista-Agut R.",
+            "away": "Bergs Z.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1778144700,
+            "tournament": "ROM",
+            "home": "Bergs Z.",
+            "away": "Atmane T.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778075400,
+            "tournament": "ROM",
+            "home": "Arnaldi M.",
+            "away": "Munar J.",
+            "score": "2-1"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "21.0": {
+            "over": 1.33,
+            "under": 2.88
+          },
+          "21.5": {
+            "over": 1.44,
+            "under": 2.58
+          },
+          "22.0": {
+            "over": 1.5,
+            "under": 2.38
+          },
+          "22.5": {
+            "over": 1.71,
+            "under": 2.07
+          },
+          "23.0": {
+            "over": 1.79,
+            "under": 1.94
+          },
+          "23.5": {
+            "over": 1.96,
+            "under": 1.83
+          },
+          "24.0": {
+            "over": 1.94,
+            "under": 1.79
+          },
+          "24.5": {
+            "over": 1.95,
+            "under": 1.76
+          },
+          "25.0": {
+            "over": 2.01,
+            "under": 1.7
+          },
+          "25.5": {
+            "over": 2.07,
+            "under": 1.66
+          },
+          "26.0": {
+            "over": 2.2,
+            "under": 1.55
+          },
+          "27.0": {
+            "over": 2.34,
+            "under": 1.5
+          },
+          "27.5": {
+            "over": 2.36,
+            "under": 1.48
+          },
+          "2.5": {
+            "over": 2.24,
+            "under": 1.61
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.26,
+            "away": 1.8
+          },
+          "-1.5": {
+            "home": 1.87,
+            "away": 3.4
+          },
+          "0.0": {
+            "home": 1.62,
+            "away": 2.1
+          },
+          "0.5": {
+            "home": 1.57,
+            "away": 2
+          },
+          "-0.5": {
+            "home": 1.69,
+            "away": 2.18
+          },
+          "1.0": {
+            "home": 1.51,
+            "away": 1.91
+          },
+          "-1.0": {
+            "home": 1.76,
+            "away": 2.32
+          },
+          "2.0": {
+            "home": 1.43,
+            "away": 1.7
+          },
+          "-2.0": {
+            "home": 1.98,
+            "away": 2.54
+          },
+          "2.5": {
+            "away": 1.68
+          },
+          "-2.5": {
+            "home": 2.05
+          },
+          "3.0": {
+            "away": 1.46
+          },
+          "-3.0": {
+            "home": 2.46
+          },
+          "3.5": {
+            "away": 1.38
+          },
+          "-3.5": {
+            "home": 2.73
+          },
+          "4.0": {
+            "away": 1.22
+          },
+          "-4.0": {
+            "home": 3.66
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Eastbourne (United Kingdom)",
+      "archived_at": "2026-06-22T21:33:03.965Z"
+    },
+    {
+      "event_id": "KzRoGHnB",
+      "flashscore_id": "KzRoGHnB",
+      "flashscore_sport_id": 2,
+      "home_team_id": "ppu9X7PH",
+      "away_team_id": "Y1ZrrUtl",
+      "tournament_id": "2htmscnl",
+      "tournament_url": "/tennis/wta-singles/bad-homburg/",
+      "sport_key": "flashscore_tennis_wta_bad_homburg_germany",
+      "commence_time": "2026-06-22T15:30:00.000Z",
+      "time_display": "Lun. 17h30",
+      "home": "Eala A.",
+      "away": "Mertens E.",
+      "match": "Eala A. vs Mertens E.",
+      "prono": "win-home",
+      "pari": "Moins de 21.5 jeux",
+      "cote_retenue": 1.8,
+      "cotes": {
+        "domicile": 2.1,
+        "nul": null,
+        "exterieur": 1.7
+      },
+      "pick_category": "ou",
+      "analyse": "Alex Eala traverse une période de forme impressionnante sur gazon : elle a enchaîné des victoires convaincantes face à Vekic, Rybakina et Svitolina lors du tournoi de Berlin, ne s'inclinant qu'en demi-finale contre Noskova (2-0). Sa progression sur cette surface est remarquable avec 8 victoires en sets directs lors de ses 10 derniers matchs. Elise Mertens, de son côté, présente un bilan plus mitigé : défaite nette face à Bartunkova (0-2) à Berlin, et une élimination précoce à Hertogenbosch contre Ruse (0-2), compensées par une victoire en trois sets contre Samsonova. Le gazon favorise les services dominants et les échanges courts, ce qui profite aux joueuses offensives comme Eala. Les handicaps de jeux disponibles sont très équilibrés, reflétant l'incertitude sur l'issue du match, mais les cotes sur le total de jeux suggèrent une attente de match assez compact. Compte tenu du style direct d'Eala sur gazon et de la tendance aux victoires en deux sets de chaque côté, un total inférieur à 21.5 jeux semble pertinent.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "0-2",
+      "actual_result": "away",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1781971500,
+            "tournament": "BER",
+            "home": "Noskova L.",
+            "away": "Eala A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781886000,
+            "tournament": "BER",
+            "home": "Svitolina E.",
+            "away": "Eala A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781797200,
+            "tournament": "BER",
+            "home": "Eala A.",
+            "away": "Rybakina E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781687400,
+            "tournament": "BER",
+            "home": "Vekic D.",
+            "away": "Eala A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781687400,
+            "tournament": "BER",
+            "home": "Mertens E.",
+            "away": "Bartunkova N.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781539800,
+            "tournament": "BER",
+            "home": "Mertens E.",
+            "away": "Samsonova L.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1781169000,
+            "tournament": "HER",
+            "home": "Ruse G.",
+            "away": "Mertens E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781088000,
+            "tournament": "LON",
+            "home": "Jovic I.",
+            "away": "Eala A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781015400,
+            "tournament": "LON",
+            "home": "Zhang S.",
+            "away": "Eala A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1780916700,
+            "tournament": "HER",
+            "home": "Andreescu B.",
+            "away": "Mertens E.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1780832100,
+            "tournament": "BIR",
+            "home": "Eala A.",
+            "away": "Bartunkova N.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780744200,
+            "tournament": "BIR",
+            "home": "Eala A.",
+            "away": "Masarova R.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780677300,
+            "tournament": "BIR",
+            "home": "Eala A.",
+            "away": "Sawangkaew M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1780578000,
+            "tournament": "BIR",
+            "home": "Eala A.",
+            "away": "Charaeva A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1780393200,
+            "tournament": "BIR",
+            "home": "Eala A.",
+            "away": "Hon P.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "18.5": {
+            "over": 1.31,
+            "under": 3.23
+          },
+          "19.5": {
+            "over": 1.47,
+            "under": 2.58
+          },
+          "20.5": {
+            "over": 1.65,
+            "under": 2.16
+          },
+          "21.5": {
+            "over": 1.8,
+            "under": 1.97
+          },
+          "22.0": {
+            "over": 1.81,
+            "under": 1.91
+          },
+          "22.5": {
+            "over": 2.02,
+            "under": 1.72
+          },
+          "23.0": {
+            "over": 2.05,
+            "under": 1.7
+          },
+          "23.5": {
+            "over": 2.3,
+            "under": 1.58
+          },
+          "24.5": {
+            "over": 2.44,
+            "under": 1.52
+          },
+          "25.5": {
+            "over": 2.71,
+            "under": 1.44
+          },
+          "26.5": {
+            "over": 3.08,
+            "under": 1.35
+          },
+          "27.5": {
+            "over": 3.24,
+            "under": 1.29
+          },
+          "2.5": {
+            "over": 2.3,
+            "under": 1.56
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.83,
+            "away": 1.41
+          },
+          "-1.5": {
+            "home": 2.84,
+            "away": 1.89
+          },
+          "0.0": {
+            "home": 2.13,
+            "away": 1.65
+          },
+          "0.5": {
+            "home": 2.04,
+            "away": 1.61
+          },
+          "-0.5": {
+            "home": 2.2,
+            "away": 1.71
+          },
+          "1.0": {
+            "home": 1.97,
+            "away": 1.64
+          },
+          "-1.0": {
+            "home": 2.15,
+            "away": 1.76
+          },
+          "2.0": {
+            "home": 1.82,
+            "away": 1.69
+          },
+          "-2.0": {
+            "home": 2,
+            "away": 1.9
+          },
+          "2.5": {
+            "home": 1.77,
+            "away": 1.46
+          },
+          "-2.5": {
+            "home": 2.63,
+            "away": 1.98
+          },
+          "3.0": {
+            "home": 1.63,
+            "away": 1.54
+          },
+          "-3.0": {
+            "home": 2.26,
+            "away": 2.17
+          },
+          "3.5": {
+            "home": 1.58,
+            "away": 1.35
+          },
+          "-3.5": {
+            "home": 2.98,
+            "away": 2.29
+          },
+          "4.0": {
+            "home": 1.44,
+            "away": 1.41
+          },
+          "-4.0": {
+            "home": 2.62,
+            "away": 2.52
+          },
+          "4.5": {
+            "home": 1.39,
+            "away": 1.26
+          },
+          "-4.5": {
+            "home": 3.35,
+            "away": 2.92
+          },
+          "5.5": {
+            "home": 1.22,
+            "away": 1.21
+          },
+          "-5.5": {
+            "home": 3.72,
+            "away": 4
+          },
+          "6.5": {
+            "home": 1.12
+          },
+          "-6.5": {
+            "away": 5.5
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA Bad Homburg (Germany)",
+      "archived_at": "2026-06-22T21:33:03.965Z"
     }
   ],
   "combos": [
