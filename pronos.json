@@ -4,9 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-24T21:11:54.298Z",
+    "last_results_update": "2026-06-25T11:21:13.411Z",
     "analyses_written_at": "2026-06-25T08:27:23.085Z",
-    "analyses_cost_usd": 0.2257
+    "analyses_cost_usd": 0.2257,
+    "last_hourly_refresh": "2026-06-25T11:21:13.411Z"
   },
   "sports": {
     "foot": {
@@ -69,16 +70,16 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 2.3,
               "cotes": {
-                "domicile": 1.94,
+                "domicile": 1.88,
                 "nul": null,
-                "exterieur": 1.84
+                "exterieur": 1.9
               },
               "pick_category": "ou",
               "analyse": "Ce match entre Samuel et Cerundolo à Eastbourne se joue sur gazon, une surface rapide qui favorise généralement les échanges courts et les services dominants, tendant vers des totaux de jeux plus bas. Samuel est en forme sur gazon avec une victoire nette 2-0 contre Tirante à Eastbourne même le 24 juin, et une victoire 2-0 contre Halys le 20 juin, bien qu'il ait perdu en trois sets contre Arnaldi le 21 juin. Cerundolo affiche aussi une belle dynamique avec deux victoires consécutives à Eastbourne (2-0 contre Fery, 2-1 contre Collignon), mais il vient de perdre 0-3 contre Berrettini à Roland-Garros, montrant une adaptation difficile sur herbe. Les deux joueurs arrivent avec de la confiance après leurs victoires respectives en quarts, mais leur niveau sur gazon reste inférieur à leurs performances sur terre. Les handicaps sont très serrés (0.0 à 1.83/1.89), suggérant un match équilibré. Sur gazon, les sets ont tendance à être expéditifs avec peu de breaks, et les deux joueurs ont montré leur capacité à conclure en deux sets, ce qui oriente vers un total de jeux sous la barre des 21 jeux.",
               "confiance": 2,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -605,9 +606,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.77,
               "cotes": {
-                "domicile": 1.39,
+                "domicile": 1.41,
                 "nul": null,
-                "exterieur": 2.94
+                "exterieur": 2.88
               },
               "pick_category": "ou",
               "analyse": "Jack Draper évolue à domicile sur gazon à Eastbourne, surface sur laquelle il excelle grâce à sa puissance de service et ses frappes rasantes. Sa forme récente dans ce tournoi est impeccable : victoire nette 2-0 contre Pinnington Jones puis 2-0 contre Giron, deux succès sans perdre un set. À l'inverse, Gabriel Diallo traverse une période difficile avec de nombreuses défaites au premier tour depuis le printemps (Fonseca, Molcan, Humbert, Duckworth). Sur gazon, il vient d'être sorti 2-0 par De Minaur à Queen's. Certes Diallo a su accrocher deux victoires en trois sets à Eastbourne cette semaine (contre Etcheverry et Atmane), mais le niveau de Draper sur gazon à domicile est nettement supérieur. Les deux précédentes confrontations à Eastbourne montrent une tendance aux expéditions rapides pour Draper, rendant un match en peu de jeux très probable. Le gazon anglais favorise les services dominants et les échanges courts, ce qui plaide largement pour rester sous la barre des 20.5 jeux.",
@@ -1179,293 +1180,6 @@
           "panel_meta": "Matchs des prochaines 24h",
           "pronos": [
             {
-              "event_id": "6BJ0ZJ6k",
-              "flashscore_id": "6BJ0ZJ6k",
-              "flashscore_sport_id": 2,
-              "home_team_id": "fDEtnFgg",
-              "away_team_id": "EHGKxKDL",
-              "tournament_id": "sppot5u3",
-              "tournament_url": "/tennis/atp-singles/mallorca/",
-              "sport_key": "flashscore_tennis_atp_mallorca_spain",
-              "commence_time": "2026-06-25T09:00:00.000Z",
-              "time_display": "Jeu. 11h00",
-              "home": "Quinn E.",
-              "away": "Kopriva V.",
-              "match": "Quinn E. vs Kopriva V.",
-              "prono": "win-home",
-              "pari": "Moins de 22.5 jeux",
-              "cote_retenue": 1.92,
-              "cotes": {
-                "domicile": 1.52,
-                "nul": null,
-                "exterieur": 2.5
-              },
-              "pick_category": "ou",
-              "analyse": "Quinn et Kopriva se retrouvent tous deux en forme à Mallorca après des premiers tours convaincants. Quinn a battu Royer 2-0 puis Cassone 2-1, montrant une bonne régularité sur gazon. Kopriva de son côté a dominé Dzumhur 2-0 puis Buse 2-0, avec des victoires nettes qui témoignent d'un jeu efficace sur cette surface rapide. Sur gazon, les services sont dominants et les échanges courts, ce qui favorise nettement les matchs en deux sets secs avec peu de jeux. Les deux joueurs ont montré une capacité à conclure rapidement leurs rencontres ce tournoi, et le style de jeu sur herbe — surface la plus rapide — tend à raccourcir les matches. La ligne des 20.5 jeux apparaît comme un seuil pertinent : si l'un des deux s'impose nettement comme Quinn ou Kopriva l'ont fait en tours précédents, on reste bien sous 21 jeux (6-3 6-3 = 18 jeux, 6-4 6-4 = 20 jeux).",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1782297300,
-                    "tournament": "MAL",
-                    "home": "Kopriva V.",
-                    "away": "Buse I.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782295500,
-                    "tournament": "MAL",
-                    "home": "Cassone M.",
-                    "away": "Quinn E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1782209100,
-                    "tournament": "MAL",
-                    "home": "Dzumhur D.",
-                    "away": "Kopriva V.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1782123000,
-                    "tournament": "MAL",
-                    "home": "Quinn E.",
-                    "away": "Royer V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781781000,
-                    "tournament": "HAL",
-                    "home": "Shelton B.",
-                    "away": "Quinn E.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1781615400,
-                    "tournament": "HAL",
-                    "home": "Zverev A.",
-                    "away": "Kopriva V.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1781602800,
-                    "tournament": "HAL",
-                    "home": "Khachanov K.",
-                    "away": "Quinn E.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1780564200,
-                    "tournament": "PRO",
-                    "home": "Sachko V.",
-                    "away": "Kopriva V.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780395300,
-                    "tournament": "PRO",
-                    "home": "Martin A.",
-                    "away": "Kopriva V.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779970500,
-                    "tournament": "FO",
-                    "home": "Landaluce M.",
-                    "away": "Kopriva V.",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1779811800,
-                    "tournament": "FO",
-                    "home": "Quinn E.",
-                    "away": "Comesana F.",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1779797700,
-                    "tournament": "FO",
-                    "home": "Kopriva V.",
-                    "away": "Moutet C.",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1779192300,
-                    "tournament": "HAM",
-                    "home": "Auger-Aliassime F.",
-                    "away": "Kopriva V.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779028800,
-                    "tournament": "HAM",
-                    "home": "Paul T.",
-                    "away": "Quinn E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778264700,
-                    "tournament": "ROM",
-                    "home": "Humbert U.",
-                    "away": "Kopriva V.",
-                    "score": "2-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "20.0": {
-                    "over": 1.3,
-                    "under": 3.04
-                  },
-                  "20.5": {
-                    "over": 1.44,
-                    "under": 2.63
-                  },
-                  "21.0": {
-                    "over": 1.46,
-                    "under": 2.49
-                  },
-                  "21.5": {
-                    "over": 1.56,
-                    "under": 2.27
-                  },
-                  "22.0": {
-                    "over": 1.67,
-                    "under": 2.11
-                  },
-                  "22.5": {
-                    "over": 1.81,
-                    "under": 1.92
-                  },
-                  "23.0": {
-                    "over": 1.94,
-                    "under": 1.79
-                  },
-                  "23.5": {
-                    "over": 2.08,
-                    "under": 1.69
-                  },
-                  "24.0": {
-                    "over": 2.06,
-                    "under": 1.66
-                  },
-                  "24.5": {
-                    "over": 2.1,
-                    "under": 1.66
-                  },
-                  "25.0": {
-                    "over": 2.16,
-                    "under": 1.57
-                  },
-                  "2.5": {
-                    "over": 2.29,
-                    "under": 1.57
-                  },
-                  "19.5": {
-                    "over": 1.3,
-                    "under": 3.35
-                  },
-                  "25.5": {
-                    "over": 2.32,
-                    "under": 1.58
-                  },
-                  "26.5": {
-                    "over": 2.63,
-                    "under": 1.46
-                  },
-                  "27.5": {
-                    "over": 2.85,
-                    "under": 1.4
-                  },
-                  "28.5": {
-                    "over": 3.2,
-                    "under": 1.33
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.19,
-                    "away": 1.88
-                  },
-                  "-1.5": {
-                    "home": 1.92,
-                    "away": 4.17
-                  },
-                  "0.0": {
-                    "home": 1.47,
-                    "away": 2.53
-                  },
-                  "0.5": {
-                    "home": 1.5,
-                    "away": 2.4
-                  },
-                  "-0.5": {
-                    "home": 1.54,
-                    "away": 2.5
-                  },
-                  "1.0": {
-                    "home": 1.48,
-                    "away": 2.3
-                  },
-                  "-1.0": {
-                    "home": 1.56,
-                    "away": 2.5
-                  },
-                  "2.0": {
-                    "away": 2.04
-                  },
-                  "-2.0": {
-                    "home": 1.71
-                  },
-                  "2.5": {
-                    "home": 1.3,
-                    "away": 1.92
-                  },
-                  "-2.5": {
-                    "home": 1.82,
-                    "away": 3.4
-                  },
-                  "3.0": {
-                    "away": 1.73
-                  },
-                  "-3.0": {
-                    "home": 2.01
-                  },
-                  "3.5": {
-                    "away": 1.61
-                  },
-                  "-3.5": {
-                    "home": 2.2
-                  },
-                  "4.0": {
-                    "away": 1.42
-                  },
-                  "-4.0": {
-                    "home": 2.69
-                  },
-                  "4.5": {
-                    "away": 1.35
-                  },
-                  "-4.5": {
-                    "home": 3.07
-                  },
-                  "5.0": {
-                    "away": 1.19
-                  },
-                  "-5.0": {
-                    "home": 4.25
-                  }
-                }
-              }
-            },
-            {
               "event_id": "rXSTxMNq",
               "flashscore_id": "rXSTxMNq",
               "flashscore_sport_id": 2,
@@ -1483,9 +1197,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 1.98,
               "cotes": {
-                "domicile": 2.4,
+                "domicile": 2.48,
                 "nul": null,
-                "exterieur": 1.54
+                "exterieur": 1.52
               },
               "pick_category": "ou",
               "analyse": "Borges est en excellente forme sur gazon à Mallorca, ayant éliminé Mannarino (2-0) puis Struff (2-0) sans perdre un set. Sa victoire sur Auger-Aliassime à Halle en un set (1-2) montre une certaine solidité sur cette surface, même si son parcours sur gazon reste récent. Darderi, de son côté, a battu Hanfmann 2-0 au premier tour de ce même tournoi, mais sa saison récente révèle des défaites nettes face à De Minaur (0-2) et Ruud (0-2), confirmant ses limites face aux joueurs mieux classés. Borges est globalement plus à l'aise sur surface rapide : ses matchs sur gazon sont dominés avec autorité, et Darderi reste avant tout un joueur de terre battue (finaliste de matchs en 3 sets à Roland-Garros). Les deux ont tendance à conclure rapidement leurs matchs quand ils sont dominants — on compte 5 victoires en 2-0 sur 6 derniers matchs combinés — ce qui oriente vers un match court sur gazon. Le handicap -1.5 sets en faveur de Borges à 2.04 est intéressant, mais le pari le plus solide reste 'Moins de 22.5 jeux' au vu du style expéditif des deux joueurs sur cette surface.",
@@ -2049,9 +1763,9 @@
               "pari": "Moins de 22.5 jeux",
               "cote_retenue": 2.16,
               "cotes": {
-                "domicile": 2.4,
+                "domicile": 2.28,
                 "nul": null,
-                "exterieur": 1.54
+                "exterieur": 1.6
               },
               "pick_category": "ou",
               "analyse": "Dimitrov aborde ce quart de finale sur gazon à Mallorca en grande forme : il a éliminé Polmans puis Shelbayh en deux sets nets (0-2, 0-2) sans concéder le moindre set. Le Bulgare, dont le jeu fluide et son service redoutable s'expriment parfaitement sur gazon, semble retrouver un niveau d'élite sur cette surface. Davidovich Fokina a lui aussi affiché une belle régularité cette semaine à Mallorca (0-2 contre Walton), mais son récent parcours est plus contrasté : défaite sèche contre Tommy Paul à Queen's (0-2) et élimination précoce à Stuttgart contre Bellucci. Sur gazon, l'Espagnol produit un tennis séduisant mais irrégulier, moins à l'aise que Dimitrov sur cette surface rapide. Avec deux joueurs techniquement solides mais au niveau défensif limité sur herbe, les échanges risquent d'être expéditifs et les jeux courts. Un total de moins de 22.5 jeux semble cohérent au vu de la domination de Dimitrov qui pourrait clore le débat rapidement en deux sets assez secs.",
@@ -2349,14 +2063,14 @@
               "cotes": {
                 "domicile": 1.58,
                 "nul": null,
-                "exterieur": 2.34
+                "exterieur": 2.32
               },
               "pick_category": "ou",
               "analyse": "Osaka et Alexandrova se retrouvent en demi-finale à Bad Homburg avec des trajectoires similaires mais des profils distincts. Osaka a dominé ses deux adversaires à Bad Homburg en deux sets secs (2-0 contre Frech, 2-0 contre Mertens), confirmant une belle forme sur gazon avec un jeu de service percutant qui convient parfaitement à la surface. Alexandrova affiche également deux victoires en deux sets cette semaine (2-0 contre Andreeva, 2-1 contre Li), mais a subi une défaite sévère face à Sabalenka (0-2) à Berlin la semaine précédente. Le gazon favorise les échanges courts et les services dominants, ce qui tend à réduire le nombre total de jeux — les quatre derniers matchs des deux joueuses à Bad Homburg ont tous été réglés en deux sets avec des scores compacts. Ni l'une ni l'autre ne montre de tendance aux longs sets serrés sur cette surface, Osaka en particulier s'appuyant sur sa puissance de frappe pour clore rapidement les points. Un match disputé sous la barre des 20 jeux semble tout à fait plausible au regard de ces données.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -2642,9 +2356,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.15,
               "cotes": {
-                "domicile": 1.62,
+                "domicile": 1.64,
                 "nul": null,
-                "exterieur": 2.24
+                "exterieur": 2.22
               },
               "pick_category": "ou",
               "analyse": "Emma Navarro traverse une forme exceptionnelle cette semaine à Bad Homburg, ayant éliminé Lys puis renversé la situation face à Iga Swiatek (victoire 2-1), démontrant une solidité mentale et physique remarquable. Gabriel Ruse est elle aussi en grande forme sur ce tournoi : victoires convaincantes contre Zhang (2-0), Noskova (2-0) et Townsend (2-1) avant de dominer Kalinskaya (2-0), soit quatre succès en cinq jours. Les deux joueuses arrivent donc à ce stade avec une confiance maximale et sans match épuisant récent en termes de sets — Ruse a même enchaîné deux 2-0 consécutifs. Sur gazon, le service joue un rôle prépondérant et les échanges ont tendance à rester courts, ce qui favorise des scores compacts. Les deux finalistes affichent des victoires rapides en deux sets lors de leurs dernières sorties, ce qui laisse présager un match de haute intensité mais potentiellement ramassé. Un total inférieur à 20.5 jeux paraît bien calibré pour une finale où les deux joueuses dominent leurs adversaires en peu d'échanges.",
@@ -2943,9 +2657,9 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.13,
               "cotes": {
-                "domicile": 1.43,
+                "domicile": 1.45,
                 "nul": null,
-                "exterieur": 2.8
+                "exterieur": 2.72
               },
               "pick_category": "ou",
               "analyse": "Muchova et Tauson se retrouvent dans un quart de finale à Bad Homburg, deux joueuses au profil technique similaire, capables de longues constructions de points sur gazon. Côté forme, Muchova a battu Begu 2-0 au tour précédent mais affiche une séquence mitigée : elle a perdu contre Keys, Teichmann, Potapova et Rybakina récemment, toutes en 2-0, ce qui indique des défaites nettes mais aussi des victoires souvent expédiées. Tauson, elle, a remporté ses deux derniers matchs à Bad Homburg (Shnaider 2-0, puis Zheng renversé 2-1) mais a subi des défaites sèches à Berlin contre Parry et à Strasbourg contre Cristian. Le gazon de Bad Homburg favorise les échanges relativement courts et les services dominants, ce qui tend à comprimer le nombre de jeux. Les deux joueuses ont une puissance de frappe qui peut clore les points rapidement sur cette surface, et leurs défaites récentes se sont souvent terminées en deux sets sans tie-break. Avec une ligne à 20.5 jeux, l'under à 2.13 offre une valeur intéressante compte tenu de la tendance des deux joueuses à conclure rapidement leurs victoires.",
@@ -3245,16 +2959,16 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2.04,
               "cotes": {
-                "domicile": 1.45,
+                "domicile": 1.48,
                 "nul": null,
-                "exterieur": 2.68
+                "exterieur": 2.56
               },
               "pick_category": "ou",
               "analyse": "Jelena Ostapenko aborde ce match sur gazon en excellente forme à Eastbourne, avec deux victoires en deux matches : un succès net 2-0 contre Jones F. puis une victoire 2-1 contre Udvardy P. Son jeu agressif et puissant, basé sur des frappes à plat et des winners directs, correspond parfaitement au gazon d'Eastbourne où elle peut dominer dès le service. Zeynep Sonmez est en très belle forme sur cette séquence herbeuse (victoires à Nottingham et à Eastbourne), ayant battu Dart, Jacquemot et Vandewinkel, mais elle a aussi enchaîné plusieurs matchs en 3 sets récemment (2-1 contre Dart, 2-1 contre Jacquemot), signe qu'elle peut aller loin dans les matchs. Le gazon favorise les services dominants et les échanges courts, ce qui pousse vers un match en moins de jeux totaux. Ostapenko est une joueuse à gros coups pouvant expédier les échanges rapidement, et face à Sonmez qui n'est pas une grande spécialiste du gazon, on peut anticiper un match décidé en 2 sets avec peu de jeux. Le total de 19.5 jeux sous semble la ligne la plus prudente, mais 20.5 sous offre une marge confortable tout en proposant une cote intéressante.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -4082,9 +3796,9 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.75,
               "cotes": {
-                "domicile": 1.36,
+                "domicile": 1.35,
                 "nul": null,
-                "exterieur": 3.1
+                "exterieur": 3.15
               },
               "pick_category": "ou",
               "analyse": "McNally et Marcinko se retrouvent toutes deux en bonne forme sur gazon à Eastbourne, ayant chacune passé deux tours. McNally a dominé Arango en 2-0 puis battu Tjen en 2-1, confirmant sa solidité sur la surface. Marcinko a elle aussi signé deux victoires en 2-0 (Birrell) et 2-1 (Ruzic), après avoir perdu face à Snigur plus tôt dans la semaine. Sur gazon, les services dominants et les échanges courts tendent à produire des matchs avec moins de jeux. Les deux joueuses évoluent à un niveau WTA similaire (qualifiées/classement intermédiaire), sans écart de standing majeur. Cependant, la majorité de leurs matchs récents se terminent en 2-0, souvent sur des scores serrés en gazon où les sets peuvent filer rapidement (6-4, 6-3). Un total sous 21.5 jeux semble bien couvrir ce profil : des sets rapides sur une surface qui favorise les services et réduit les prolongations.",
@@ -4382,18 +4096,18 @@
               "match": "Basing M. vs Bertola R.",
               "prono": "win-away",
               "pari": "Victoire Bertola R.",
-              "cote_retenue": 1.72,
+              "cote_retenue": 1.35,
               "cotes": {
-                "domicile": 2.94,
+                "domicile": 3.05,
                 "nul": null,
-                "exterieur": 1.37
+                "exterieur": 1.35
               },
               "pick_category": "1x2",
               "analyse": "Bertola s'impose comme le favori logique de ce match des qualifications de Wimbledon, affichant une forme impressionnante sur gazon : il a remporté 5 de ses 6 derniers matchs sur cette surface (NOT et WIM), avec notamment des victoires sur Nardi, Mochizuki et Wu, avant de battre Draxl (1-2) puis Rodionov (2-1) à Wimbledon cette semaine. Sa seule défaite récente sur gazon est contre O'Connell, joueur de bien plus haut rang. Basing présente une forme plus irrégulière : deux victoires à Wimbledon (Maestrelli en 2 sets, Gentzsch en 2 sets) mais battu par Holmgren à Nottingham et par Jubb à Ilkley. Le fait que Bertola ait concédé des sets à Rodionov et Draxl suggère des matchs disputés, et Basing, en confiance après deux victoires en 2 sets, pourrait en arracher un. Le handicap jeux en faveur de Bertola (-4.5 jeux, cote 1.89) reflète un avantage net mais sans domination totale. Compte tenu de la tendance de Bertola à avoir des matchs en 3 sets ces dernières semaines, le total de jeux 'Plus de 37.5' semble une option solide, mais le handicap sets -1.5 pour Bertola (cote 1.72) offre un bon équilibre entre valeur et probabilité, Bertola ayant les moyens de s'imposer en 2 sets malgré la résistance de Basing.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -4683,14 +4397,14 @@
               "cotes": {
                 "domicile": 1.66,
                 "nul": null,
-                "exterieur": 2.12
+                "exterieur": 2.14
               },
               "pick_category": "ou",
               "analyse": "Ce match de qualification à Wimbledon oppose deux joueurs en forme similaire sur gazon, ayant tous deux remporté leurs deux premières rencontres de qualification en deux sets secs (Boyer 2-0 contre Pellegrino et 2-0 contre Olivieri, Llamas Ruiz 2-0 contre Martin Tiffon et 2-0 contre Added). Sur gazon, le service est dominant et les échanges courts, ce qui favorise naturellement des matchs avec peu de jeux joués. Les deux joueurs ont démontré une efficacité en deux sets sans aller au tie-break lors de leurs qualifs à Wimbledon, signe de parties rapides et maîtrisées. Llamas Ruiz semble légèrement plus stable côté résultats récents sur les semaines précédentes, mais Boyer a aussi montré une bonne régularité sur terre avant de basculer sur gazon. Compte tenu du style de jeu sur gazon (services gagnants, retours difficiles, peu de longs échanges), un total inférieur à 35.5 jeux est plausible, mais la ligne disponible la plus basse est 35.5 — le 'under' à 2.25 offre une valeur réelle si les deux joueurs maintiennent leur efficacité sur service observée lors de leurs qualifications précédentes.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -4966,16 +4680,16 @@
               "pari": "Moins de 40.5 jeux",
               "cote_retenue": 1.82,
               "cotes": {
-                "domicile": 2.26,
+                "domicile": 2.22,
                 "nul": null,
-                "exterieur": 1.6
+                "exterieur": 1.62
               },
               "pick_category": "ou",
               "analyse": "O'Connell traverse une forme exceptionnelle sur gazon et sur surface rapide : il a remporté 6 de ses 7 derniers matchs, dont des victoires convaincantes à Nottingham (Bonzi, Clarke, Rocha, Bertola, Virtanen) et deux succès nets en 2 sets à Wimbledon contre Schwaerzler et Tomic. McDonald présente une forme plus contrastée : il a battu Carballes Baena 2-0 et Meligeni Alves 2-1 à Wimbledon, mais il a perdu face à Mochizuki à Nottingham et s'est incliné à Birmingham et Hertfordshire ces dernières semaines. O'Connell domine clairement cette période sur gazon, enchaînant les victoires en deux sets, ce qui suggère des matchs courts et décisifs. Sur gazon, les services sont dominants et les échanges courts, ce qui favorise les partials en moins de jeux. Compte tenu des deux finalités possibles en deux sets sans prolongement majeur, un total de jeux sous 40.5 semble bien positionné, les deux joueurs ayant tendance à conclure rapidement leurs récents duels sur cette surface.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -5266,7 +4980,7 @@
               "confiance": 3,
               "featured": true,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -5554,16 +5268,16 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.78,
               "cotes": {
-                "domicile": 1.42,
+                "domicile": 1.43,
                 "nul": null,
-                "exterieur": 2.72
+                "exterieur": 2.68
               },
               "pick_category": "cs",
               "analyse": "Safiullin s'est montré particulièrement dominant à Wimbledon cette semaine, s'imposant 2-0 face à Coppejans puis 2-0 face à McCabe, sans laisser le moindre set. Sa seule défaite récente sur gazon remonte à Nottingham contre Zhang (2-1), mais il avait auparavant dominé Holmgren 2-0 et Tarvet 2-1 sur cette même surface. Kym, lui, a passé deux tours mais a dû batailler en 3 sets contre Bueno, et a perdu 2-1 face à Droguet sur gazon à Dubaï, ce qui trahit une certaine fragilité. Sur le gazon de Wimbledon, Safiullin affiche un jeu de service solide et agressif qui favorise les matchs courts et peu de jeux disputés. Le niveau de Safiullin sur herbe cette saison est nettement supérieur à celui de Kym, et un succès en deux sets secs semble le scénario le plus probable. Avec un handicap de sets à -1.5 à 1.78, miser sur une victoire nette de Safiullin offre une valeur intéressante compte tenu de sa régularité sur cette surface.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -5851,14 +5565,14 @@
               "cotes": {
                 "domicile": 2.28,
                 "nul": null,
-                "exterieur": 1.58
+                "exterieur": 1.56
               },
               "pick_category": "ou",
               "analyse": "Ce match de qualification à Wimbledon oppose deux joueurs en forme correcte sur gazon. Smith C. a remporté ses deux premiers tours à Wimbledon en battant Andrade (2-1) puis Gojo (2-0), montrant une belle solidité sur la surface. Zheng M. a lui aussi passé ses deux tours en dominant Squire (2-0) et Djere (2-0), affichant un jeu efficace sur gazon. Sur gazon, le service est dominant et les échanges courts, ce qui favorise les matchs en 2 sets avec peu de jeux. Les cotes disponibles sur le total de jeux montrent un marché équilibré autour de 37-38 jeux. Compte tenu du profil gazon des deux joueurs — rapides, serveurs efficaces — et de leurs victoires récentes en deux sets sans tiebreak prolongé, un match relativement fermé sous 37.5 jeux est plausible. Smith joue à domicile en terres britanniques, ce qui pourrait lui conférer un léger avantage psychologique, mais Zheng a montré plus de régularité récente sur cette surface avec deux blancs consécutifs en sets.",
               "confiance": 2,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -6136,7 +5850,7 @@
               "pari": "Moins de 38.5 jeux",
               "cote_retenue": 1.89,
               "cotes": {
-                "domicile": 2.32,
+                "domicile": 2.34,
                 "nul": null,
                 "exterieur": 1.56
               },
@@ -6145,7 +5859,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -6448,7 +6162,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -6716,7 +6430,7 @@
               "pari": "Moins de 36.5 jeux",
               "cote_retenue": 2.15,
               "cotes": {
-                "domicile": 1.41,
+                "domicile": 1.42,
                 "nul": null,
                 "exterieur": 2.76
               },
@@ -6725,7 +6439,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": true,
@@ -7014,7 +6728,7 @@
               "confiance": 2,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -7294,11 +7008,11 @@
               "match": "Budkov Kjaer N. vs Virtanen O.",
               "prono": "win-away",
               "pari": "Victoire Virtanen O.",
-              "cote_retenue": 1.59,
+              "cote_retenue": 1.26,
               "cotes": {
                 "domicile": 3.65,
                 "nul": null,
-                "exterieur": 1.25
+                "exterieur": 1.26
               },
               "pick_category": "1x2",
               "analyse": "Virtanen domine nettement la forme récente sur gazon : il a enchaîné cinq victoires consécutives à Nottingham avant de s'incliner face à O'Connell, puis a battu successivement Martinez et Nardi à Wimbledon lors des qualifications. Son niveau sur gazon cette saison est clairement au-dessus de sa moyenne, avec des victoires expéditives en 2-0 à répétition. Budkov Kjaer a certes battu Reis Da Silva et Dodig à Wimbledon, mais son parcours est moins impressionnant : défaite contre McDonald à Nottingham et contre Holmgren à Ilkley. Sur gazon, Virtanen paraît plus solide et plus à l'aise, confirmant un avantage net à l'extérieur. Les marchés de handicap reflètent un écart de niveau conséquent en faveur de Virtanen, et le handicap -3.5 jeux away à 1.68 offre une valeur raisonnable compte tenu de la supériorité affichée du Finlandais sur cette surface. Le style de jeu sur gazon favorise les services dominants et les échanges courts, ce qui convient aux deux joueurs, mais Virtanen semble plus efficace pour conclure rapidement ses sets.",
@@ -7880,9 +7594,9 @@
               "pari": "Plus de 35.5 jeux",
               "cote_retenue": 1.67,
               "cotes": {
-                "domicile": 1.3,
+                "domicile": 1.32,
                 "nul": null,
-                "exterieur": 3.35
+                "exterieur": 3.2
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre Hugo Gaston et Moez Echargui se déroule sur le gazon de Wimbledon, surface qui favorise naturellement les services dominants et les échanges courts. Gaston arrive avec une bonne dynamique sur herbe : il a remporté ses deux matchs à Wimbledon cette semaine, dominant Cina (2-0) puis Midon (2-1). Echargui a lui aussi bien démarré à Wimbledon avec deux victoires en trois sets contre Butvilas (2-1) et Smith (2-1), mais il a perdu en 2-0 face à Faria récemment sur gazon à Nottingham. Gaston est un joueur tactique avec un jeu très varié (slices, lifts, amorties) qui peut s'adapter à toutes les surfaces, mais Echargui semble tenir le coup en 3 sets sur herbe cette semaine. Les deux joueurs semblent capables de tenir des matchs longs, et leurs récents matchs à Wimbledon ont tous nécessité au moins 3 sets pour l'un ou l'autre. Sur gazon, les services facilitent des jeux rapides, mais avec deux joueurs de qualité similaire, un match en 3 sets avec au moins 35+ jeux reste très plausible.",
@@ -8179,9 +7893,9 @@
               "pari": "Moins de 36.5 jeux",
               "cote_retenue": 2.13,
               "cotes": {
-                "domicile": 1.88,
+                "domicile": 1.84,
                 "nul": null,
-                "exterieur": 1.84
+                "exterieur": 1.9
               },
               "pick_category": "ou",
               "analyse": "Gaubas et Lajovic se retrouvent tous deux en pleine confiance après avoir chacun remporté leurs deux premiers tours de qualification à Wimbledon. Gaubas a battu Searle (2-0) et Mmoh (2-1), montrant une solidité sur gazon, tandis que Lajovic a dominé Rodesch (2-0) et Neumayer (2-0) sans lâcher le moindre set. Sur gazon, les services sont dominants et les échanges généralement courts, ce qui tend à comprimer le nombre de jeux. Lajovic avait connu une forme en dents de scie en mai-juin sur terre battue (défaites contre Rocha et Rodionov), mais il semble avoir retrouvé son niveau sur cette surface rapide. Gaubas est également de retour à son meilleur niveau après des défaites sur terre (Lyon, Roland-Garros). Le gazon favorise les matchs expéditifs avec moins de breaks, et compte tenu que les deux joueurs gagnent en deux sets, un score serré mais rapide est plausible. La ligne à 36.5 jeux semble judicieuse : sur gazon en qualifications, les matchs en 2 sets donnent souvent 18 à 21 jeux par set, soit 36-42 au total, rendant le 'moins de 36.5' légèrement favorable.",
@@ -8454,9 +8168,9 @@
               "pari": "Moins de 38.5 jeux",
               "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 2.54,
+                "domicile": 2.5,
                 "nul": null,
-                "exterieur": 1.48
+                "exterieur": 1.49
               },
               "pick_category": "ou",
               "analyse": "Ce qualificatif de Wimbledon oppose deux joueurs en forme sur gazon, mais avec des profils distincts. Moro Canas a validé sa place en deux sets secs face à Mayot (2-0) et a éliminé Comesana en trois sets, montrant une belle régularité sur gazon cette semaine. Kwon a lui aussi progressé, battant Gea en trois sets après avoir écarté Sanchez Izquierdo en deux sets. Les marchés handicap placent clairement Kwon comme favori (handicap -1.5 jeux à 1.88 en sets suggère une victoire attendue en deux sets). Sur gazon, les échanges tendent à être courts et les services dominants, ce qui favorise les matchs en deux sets rapides. Kwon a certes connu deux défaites consécutives à Nottingham avant Wimbledon (contre Virtanen et Matusevich), mais sa transition vers Wimbledon semble positive. Moro Canas a lui aussi montré des vulnérabilités récentes (défaite vs Coppejans, Squire, Travaglia), mais reste compétitif en deux-trois sets. Compte tenu du gazon, des deux joueurs en mesure de défendre leur service, et de la tendance des qualifs Wimbledon vers des matchs en deux sets serrés, jouer le total sous 35 jeux semble risqué ; le match ira probablement autour de 35-38 jeux avec un résultat en deux sets pour Kwon.",
@@ -8747,11 +8461,11 @@
               "match": "Skatov T. vs Jacquet K.",
               "prono": "win-away",
               "pari": "Victoire Jacquet avec handicap -1.5 sets",
-              "cote_retenue": 1.71,
+              "cote_retenue": 1.38,
               "cotes": {
-                "domicile": 2.92,
+                "domicile": 2.9,
                 "nul": null,
-                "exterieur": 1.37
+                "exterieur": 1.38
               },
               "pick_category": "1x2",
               "analyse": "Ce duel entre Skatov et Jacquet à Wimbledon (qualifications) oppose deux joueurs en forme sur gazon. Jacquet affiche un bilan impressionnant récemment sur cette surface : victoires consécutives contre Guerrieri et Boscardin Dias en deux sets secs à Wimbledon, et avant cela un parcours solide à Dublin avec des succès contre Onclin, Rottgering et même Dimitrov. Skatov n'est pas en reste sur gazon : il a dominé Ymer et Barrena en 2-0 à Wimbledon cette semaine, mais ses résultats sur d'autres surfaces sont plus mitigés (défaites contre Watt, Daniel et Rocha). Les deux joueurs semblent capables de remporter des sets et ont démontré de la régularité sur gazon. Sur cette surface rapide, les services sont dominants et les échanges plus courts, ce qui pousse plutôt vers des matchs en moins de jeux. Cependant, les deux joueurs ont montré une forme similaire et du répondant, ce qui laisse entrevoir un match en 3 sets potentiel. Le total de 35 jeux en dessous à 2.15 offre une valeur intéressante si l'un des deux prend nettement le dessus rapidement, mais l'équilibre des forces plaide pour un total avoisinant les 37-38 jeux. Le handicap jeux -1.5 en faveur de Jacquet à 1.71 représente le pari le plus solide : Jacquet a remporté tous ses matchs à Wimbledon en 2-0 avec une constance remarquable, et son style sur gazon paraît plus affûté que celui de Skatov.",
@@ -9072,7 +8786,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -9342,16 +9056,16 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.87,
               "cotes": {
-                "domicile": 2.14,
+                "domicile": 2.16,
                 "nul": null,
-                "exterieur": 1.64
+                "exterieur": 1.62
               },
               "pick_category": "ou",
               "analyse": "Kawa K. traverse une forme exceptionnelle en ce moment, enchaînant les victoires avec autorité : elle a remporté 6 de ses 7 derniers matches, dont deux victoires sèches 2-0 à Wimbledon contre Bandecchi puis un succès en trois sets contre Stefanini. Day K. présente une forme plus irrégulière : deux victoires convaincantes 2-0 au premier tour des qualifications de Wimbledon (contre Brace puis Andreeva), mais des défaites récentes contre Stoiana et Sawangkaew. Sur gazon, les services sont dominants et les points souvent courts, ce qui tend à réduire le total de jeux. Les deux joueuses ont montré une capacité à conclure rapidement (plusieurs 2-0 dans leurs parcours récents), suggérant un match sans prolongements excessifs. Kawa semble en légère position de force, mais la surface gazon nivelle les écarts et Day a déjà montré sa solidité en qualifications. Un total de jeux contenu sous 21.5 paraît raisonnable compte tenu du style de jeu sur gazon et des victoires nettes accumulées par les deux protagonistes.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -9598,295 +9312,6 @@
               }
             },
             {
-              "event_id": "WUCeDLyB",
-              "flashscore_id": "WUCeDLyB",
-              "flashscore_sport_id": 2,
-              "home_team_id": "OlQsiYlU",
-              "away_team_id": "UJuILIk9",
-              "tournament_id": "pvuyzkss",
-              "tournament_url": "/tennis/wta-singles/wimbledon/",
-              "sport_key": "flashscore_tennis_wta_wimbledon_united_kingdom_q",
-              "commence_time": "2026-06-25T10:00:00.000Z",
-              "time_display": "Jeu. 12h00",
-              "home": "Korneeva A.",
-              "away": "Crawley F.",
-              "match": "Korneeva A. vs Crawley F.",
-              "prono": "win-home",
-              "pari": "Plus de 19.5 jeux",
-              "cote_retenue": 1.8,
-              "cotes": {
-                "domicile": 1.2,
-                "nul": null,
-                "exterieur": 4.2
-              },
-              "pick_category": "ou",
-              "analyse": "Korneeva s'est imposée à deux reprises en qualifications à Wimbledon cette semaine, battant Shubladze (2-1) puis Lazaro Garcia (2-1), montrant une belle solidité sur gazon malgré des sets disputés. Elle affiche une forme globalement positive depuis Roland-Garros avec de nombreux succès en 2-0, ce qui témoigne d'une efficacité certaine. Crawley de son côté s'est qualifiée en battant Sakatsume (2-1) puis Riera (2-1), deux victoires en trois sets — signe que ses matchs sont tendus et âprement disputés. Sur gazon à Wimbledon, les services dominent et les échanges sont généralement plus courts qu'en terre battue, ce qui favorise les matchs en peu de jeux. Cependant, les deux joueuses ont toutes deux disputé des sets très serrés (2-1 systématiquement) lors de leurs tours précédents, laissant présager un match compétitif pouvant aller en trois sets. Le marché à 19.5 jeux représente un bon équilibre : si Korneeva confirme son statut légèrement supérieur et s'impose en deux sets serrés (6-4, 6-4 par exemple), on atteint exactement 20 jeux. Un match en trois sets ferait dépasser ce total très facilement. La ligne Over 19.5 à 1.80 est attractive compte tenu du profil des matchs récents des deux joueuses.",
-              "confiance": 3,
-              "featured": true,
-              "score_prevu": null,
-              "status": "pending",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": false,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1782306900,
-                    "tournament": "WIM",
-                    "home": "Korneeva A.",
-                    "away": "Lazaro Garcia A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1782306900,
-                    "tournament": "WIM",
-                    "home": "Riera J.",
-                    "away": "Crawley F.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1782209100,
-                    "tournament": "WIM",
-                    "home": "Korneeva A.",
-                    "away": "Shubladze A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1782209100,
-                    "tournament": "WIM",
-                    "home": "Crawley F.",
-                    "away": "Sakatsume H.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1781777100,
-                    "tournament": "FIG",
-                    "home": "Korneeva A.",
-                    "away": "Kubka M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781627400,
-                    "tournament": "FIG",
-                    "home": "Korneeva A.",
-                    "away": "Tian F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781004300,
-                    "tournament": "ILK",
-                    "home": "Korneeva A.",
-                    "away": "Naef C.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1779975000,
-                    "tournament": "FO",
-                    "home": "Kalinskaya A.",
-                    "away": "Korneeva A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779805800,
-                    "tournament": "FO",
-                    "home": "Korneeva A.",
-                    "away": "Cocciaretto E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779370200,
-                    "tournament": "FO",
-                    "home": "Korneeva A.",
-                    "away": "Riera J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779276900,
-                    "tournament": "FO",
-                    "home": "Korneeva A.",
-                    "away": "Ortenzi J.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1779119400,
-                    "tournament": "FO",
-                    "home": "Korneeva A.",
-                    "away": "Hibino N.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1778500200,
-                    "tournament": "PAR",
-                    "home": "Korneeva A.",
-                    "away": "Volynets K.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1778058300,
-                    "tournament": "ROM",
-                    "home": "Udvardy P.",
-                    "away": "Korneeva A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1777975800,
-                    "tournament": "ROM",
-                    "home": "Tagger L.",
-                    "away": "Korneeva A.",
-                    "score": "0-2"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "17.0": {
-                    "over": 1.2,
-                    "under": 3.8
-                  },
-                  "17.5": {
-                    "over": 1.33,
-                    "under": 2.93
-                  },
-                  "18.0": {
-                    "over": 1.4,
-                    "under": 2.68
-                  },
-                  "18.5": {
-                    "over": 1.56,
-                    "under": 2.29
-                  },
-                  "19.0": {
-                    "over": 1.63,
-                    "under": 2.17
-                  },
-                  "19.5": {
-                    "over": 1.8,
-                    "under": 1.93
-                  },
-                  "20.0": {
-                    "over": 1.86,
-                    "under": 1.86
-                  },
-                  "20.5": {
-                    "over": 1.98,
-                    "under": 1.74
-                  },
-                  "21.0": {
-                    "over": 2.1,
-                    "under": 1.64
-                  },
-                  "21.5": {
-                    "over": 2.19,
-                    "under": 1.57
-                  },
-                  "22.0": {
-                    "over": 2.34,
-                    "under": 1.49
-                  },
-                  "22.5": {
-                    "over": 2.45,
-                    "under": 1.46
-                  },
-                  "23.0": {
-                    "over": 2.6,
-                    "under": 1.4
-                  },
-                  "2.5": {
-                    "over": 2.88,
-                    "under": 1.38
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.07,
-                    "away": 2.11
-                  },
-                  "-1.5": {
-                    "home": 1.65,
-                    "away": 6.75
-                  },
-                  "2.0": {
-                    "away": 3.4
-                  },
-                  "-2.0": {
-                    "home": 1.28
-                  },
-                  "2.5": {
-                    "away": 3.1
-                  },
-                  "-2.5": {
-                    "home": 1.33
-                  },
-                  "3.0": {
-                    "away": 2.94
-                  },
-                  "-3.0": {
-                    "home": 1.36
-                  },
-                  "3.5": {
-                    "away": 2.62
-                  },
-                  "-3.5": {
-                    "home": 1.44
-                  },
-                  "4.0": {
-                    "away": 2.39
-                  },
-                  "-4.0": {
-                    "home": 1.52
-                  },
-                  "4.5": {
-                    "away": 2.11
-                  },
-                  "-4.5": {
-                    "home": 1.67
-                  },
-                  "5.0": {
-                    "away": 1.88
-                  },
-                  "-5.0": {
-                    "home": 1.84
-                  },
-                  "5.5": {
-                    "away": 1.73
-                  },
-                  "-5.5": {
-                    "home": 2.11
-                  },
-                  "6.0": {
-                    "away": 1.49
-                  },
-                  "-6.0": {
-                    "home": 2.47
-                  },
-                  "6.5": {
-                    "away": 1.39
-                  },
-                  "-6.5": {
-                    "home": 2.81
-                  },
-                  "7.0": {
-                    "away": 1.23
-                  },
-                  "-7.0": {
-                    "home": 3.8
-                  },
-                  "7.5": {
-                    "away": 1.18
-                  },
-                  "-7.5": {
-                    "home": 4.33
-                  },
-                  "8.0": {
-                    "away": 1.08
-                  },
-                  "-8.0": {
-                    "home": 6.75
-                  }
-                }
-              }
-            },
-            {
               "event_id": "6RscemGP",
               "flashscore_id": "6RscemGP",
               "flashscore_sport_id": 2,
@@ -9904,16 +9329,16 @@
               "pari": "Plus de 22.5 jeux",
               "cote_retenue": 2.05,
               "cotes": {
-                "domicile": 1.54,
+                "domicile": 1.52,
                 "nul": null,
-                "exterieur": 2.34
+                "exterieur": 2.36
               },
               "pick_category": "ou",
               "analyse": "Liu C. et Pridankina E. se retrouvent toutes deux en bonne forme à Wimbledon après des victoires nettes en deux sets lors de leurs premiers tours respectifs : Liu a dominé Papamichail (2-0) puis Quevedo (2-0), tandis que Pridankina a battu Tubello (2-0) avant de s'imposer en trois sets face à Lamens (2-1). Cette rencontre oppose deux joueuses qui progressent dans les qualifications de Wimbledon sur gazon, une surface qui favorise généralement les services dominants et les échanges courts. La ligne de total jeux est fixée très bas, à partir de 19 jeux, ce qui reflète une attente de matchs expéditifs. Cependant, le récent combat en trois sets de Pridankina contre Lamens (2-1) et les antécédents de Liu sur terre battue comme à Roland-Garros (match en 3 sets contre Uchijima) laissent penser que ce duel pourrait être plus disputé qu'attendu. Les deux joueuses ont un profil comparable en termes de niveau WTA qualifications, ce qui rend un troisième set ou des jeux serrés plausibles. Un total dépassant 22.5 jeux semble raisonnable au vu du profil équilibré des deux concurrentes et de la résistance montrée par Pridankina dans son dernier match.",
               "confiance": 2,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -10190,7 +9615,7 @@
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -10466,16 +9891,16 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.89,
               "cotes": {
-                "domicile": 1.9,
+                "domicile": 1.92,
                 "nul": null,
-                "exterieur": 1.8
+                "exterieur": 1.82
               },
               "pick_category": "ou",
               "analyse": "Ce match de qualifications à Wimbledon oppose deux joueuses en forme sur gazon. Tan H. a remporté ses deux premiers tours des qualifs en dominant Adeshina (2-0) puis en écartant Pohankova (2-1), montrant une belle adaptabilité sur la surface. Grant T. C. présente un parcours similaire avec deux victoires nettes sur gazon (Garland 2-0, Preston 2-1), après une excellente série en juin (4 victoires sur 5 matchs à Foggia). Les deux joueuses ont tendance à conclure rapidement leurs matchs : sur leurs 5 derniers matchs combinés à Wimbledon, seul un a nécessité un troisième set. Le gazon favorise les services dominants et les échanges courts, ce qui oriente vers un total de jeux réduit. Avec des niveaux très proches (aucune ne s'impose clairement), un match en deux sets serrés reste probable, mais la tendance des deux joueuses à trancher rapidement plaide pour rester sous la barre des 21.5 jeux.",
               "confiance": 3,
               "featured": false,
               "score_prevu": null,
-              "status": "pending",
+              "status": "in_progress",
               "actual_score": null,
               "actual_result": null,
               "coup_de_coeur": false,
@@ -11297,9 +10722,9 @@
               "pari": "Plus de 20.5 jeux",
               "cote_retenue": 1.9,
               "cotes": {
-                "domicile": 3.1,
+                "domicile": 3.15,
                 "nul": null,
-                "exterieur": 1.33
+                "exterieur": 1.32
               },
               "pick_category": "ou",
               "analyse": "Bronzetti arrive à Wimbledon dans une excellente dynamique : elle a remporté ses deux premiers tours de qualification en deux sets secs contre Inglis (1-2 pour elle) et Mikulskyte (0-2), sans perdre un set. Sur gazon, le service et les échanges courts favorisent les joueuses capables de conclure rapidement, ce qui semble être le cas pour l'Italienne actuellement. Gjorcheska a également débuté en force avec deux victoires 2-0 contre Fita Boluda et Jorge, mais ses statistiques globales révèlent plus de fragilité — elle a été éliminée 1-2 à Zagreb par Kazionova en juin. Le marché des jeux est très bas avec l'over 18.5 proposé à seulement 1.44, ce qui suggère un match attendu court. Cependant, ces deux joueuses ont toutes les deux dominé leurs adversaires en deux sets sans concéder beaucoup de jeux : des matchs en 6-2, 6-3 typiques du gazon donnent déjà 17 jeux. Un seul tie-break ou un set disputé porterait facilement le total au-dessus de 20 jeux. Au vu de la compétitivité des deux joueuses sur l'herbe et de leurs parcours similaires en qualifications, un total de jeux plus élevé semble plausible.",
@@ -11566,7 +10991,7 @@
               "pari": "Moins de 20.5 jeux",
               "cote_retenue": 2,
               "cotes": {
-                "domicile": 2.48,
+                "domicile": 2.5,
                 "nul": null,
                 "exterieur": 1.48
               },
@@ -12122,7 +11547,7 @@
               "cotes": {
                 "domicile": 1.74,
                 "nul": null,
-                "exterieur": 1.98
+                "exterieur": 2
               },
               "pick_category": "ou",
               "analyse": "Ce duel entre Polina Kudermetova et Anna Charaeva nous offre un H2H récent très instructif : le 7 juin à Londres, Kudermetova s'est imposée 2-1 face à Charaeva, signe d'un match disputé en trois sets. Kudermetova arrive à Wimbledon en bonne forme sur gazon avec deux victoires consécutives : 2-0 contre Ngounoue et 2-1 contre Ponchet. Charaeva, elle aussi, enchaîne les succès : deux victoires 2-0 à Wimbledon cette semaine contre Mandlik et Werner, et une série de bons résultats sur ITF. Sur gazon, la surface favorise les services dominants et les échanges courts, ce qui tend naturellement à réduire le nombre total de jeux. Le H2H récent (2-1 en sets) suggère toutefois que ces deux joueuses peuvent s'accrocher, mais les conditions de Wimbledon et les formes actuelles très solides des deux côtés rendent un match serré en peu de jeux probable. Le seuil de 20.5 jeux sous offre un bon compromis : même en cas de deux sets serrés (par exemple 6-4, 6-4 = 20 jeux), on passe sous la barre.",
@@ -12642,9 +12067,9 @@
               "pari": "Plus de 21.5 jeux",
               "cote_retenue": 1.79,
               "cotes": {
-                "domicile": 1.62,
+                "domicile": 1.68,
                 "nul": null,
-                "exterieur": 2.16
+                "exterieur": 2.06
               },
               "pick_category": "ou",
               "analyse": "Semenistaja et Gasanova se retrouvent toutes deux en grande forme à Wimbledon, ayant chacune remporté leurs deux premiers tours en qualifications (toutes les deux en 2-1, donc en trois sets). Semenistaja affiche une belle régularité sur gazon cette semaine, après une campagne printanière chargée sur terre battue où elle a notamment atteint le dernier carré à Makarska. Gasanova, de son côté, a montré de la résilience en battant Lepchenko puis Jones, mais elle enchaîne les matches en trois sets depuis le début des qualifs. Sur gazon, les échanges sont généralement plus courts, mais les deux joueuses ont tendance à aller au bout de leurs matchs, avec plusieurs décisions au troisième set dans leurs bilans récents. Leur niveau de jeu comparable et leur propension à disputer des matches serrés suggèrent un troisième set probable, ce qui pousse naturellement le compteur de jeux à la hausse. Avec 5 des 6 derniers matchs combinés de ces deux joueuses disputés en trois sets, un total de plus de 21.5 jeux apparaît réaliste malgré la surface rapide de Wimbledon.",
@@ -12913,9 +12338,9 @@
               "pari": "Moins de 21.5 jeux",
               "cote_retenue": 1.88,
               "cotes": {
-                "domicile": 1.78,
+                "domicile": 1.66,
                 "nul": null,
-                "exterieur": 1.94
+                "exterieur": 2.1
               },
               "pick_category": "ou",
               "analyse": "Timofeeva traverse Wimbledon en grande forme : deux victoires 2-0 consécutives en qualifications contre Podrez et Osuigwe, avec aucun set concédé. Sur sa lancée de juin, elle avait enchaîné quatre victoires 2-0 à Makarska avant d'atteindre une finale de tournoi ITF. Watson est également en bonne forme sur le gazon londonien, s'imposant 2-0 contre Sherif avant de perdre un set contre Prozorova en deux sets perdus (1-2). La Britannique joue à domicile à Wimbledon, ce qui est un facteur psychologique non négligeable. Sur gazon, les services dominants et les échanges courts favorisent des matchs plus ramassés en nombre de jeux. Les deux joueuses ont montré une tendance marquée aux victoires nettes 2-0, ce qui plaide pour un faible nombre de jeux total. Le seuil de 19.5 jeux offre une cote de 2.38 pour l'under, mais le plus cohérent avec la dynamique de jeu rapide sur gazon reste de jouer sous 21.5 jeux, où les deux protagonistes se retrouvent équilibrées.",
@@ -13176,9 +12601,9 @@
               "pari": "Victoire en 2-0",
               "cote_retenue": 1.62,
               "cotes": {
-                "domicile": 1.21,
+                "domicile": 1.23,
                 "nul": null,
-                "exterieur": 3.95
+                "exterieur": 3.75
               },
               "pick_category": "cs",
               "analyse": "Volynets s'est montrée très solide sur gazon cette semaine à Wimbledon, avec deux victoires nettes en 2-0 contre Yaneva et Samson. Elle arrive dans ce match avec une excellente dynamique sur herbe, ayant également atteint les demi-finales à Nottingham (défaite seulement contre Bouzas Maneiro). Jeanjean, de son côté, a gagné deux matchs de qualification en trois sets puis en deux sets, mais ses rencontres se sont révélées relativement longues (victoire en 3 sets contre You, puis 2-0 contre Gorgodze). Sur gazon, le style de Volynets — service solide, jeu direct — s'adapte mieux que le profil de Jeanjean, plus à l'aise sur terre battue. La Française avait d'ailleurs été éliminée dès le premier tour à Roland-Garros cette année. Volynets apparaît nettement plus régulière et rodée sur cette surface, et un succès 2-0 de l'Américaine est le scénario le plus probable.",
@@ -13465,570 +12890,6 @@
     "AD1cUSUh"
   ],
   "history": [
-    {
-      "event_id": "dSpgHNH0",
-      "flashscore_id": "dSpgHNH0",
-      "flashscore_sport_id": 2,
-      "home_team_id": "CWtkHlUE",
-      "away_team_id": "jVCKq0LH",
-      "tournament_id": "hdwbnkam",
-      "tournament_url": "/tennis/wta-singles/hertogenbosch/",
-      "sport_key": "flashscore_tennis_wta_hertogenbosch_netherlands",
-      "commence_time": "2026-06-09T09:00:00.000Z",
-      "time_display": "Mar. 11h00",
-      "home": "Yastremska D.",
-      "away": "Bejlek S.",
-      "match": "Yastremska D. vs Bejlek S.",
-      "prono": "win-home",
-      "pari": "Moins de 20.5 jeux",
-      "cote_retenue": 2,
-      "cotes": {
-        "domicile": 1.49,
-        "nul": null,
-        "exterieur": 2.66
-      },
-      "pick_category": "ou",
-      "analyse": "Yastremska aborde ce match sur gazon en bien meilleure forme que sa rivale : elle a enchaîné quatre victoires consécutives à Paris (contre Bosio, Vandewinkel, Sierra et Krejcikova) avant de s'incliner face à Paolini en deux sets. Son jeu agressif, fondé sur une première balle puissante, est particulièrement adapté aux surfaces rapides comme le gazon de 's-Hertogenbosch. De son côté, Bejlek présente une forme irrégulière : après une défaite nette face à Charaeva à Paris, elle a certes battu Stephens à Roland-Garros avant d'être dominée 0-2 par Swiatek. La Tchèque a également subi deux défaites en sets secs récemment (Navarro, Siegemund), ce qui trahit un manque de constance. Le gazon favorise le service dominant et les points courts, ce qui joue en faveur de Yastremska et suggère un match expédié sans excès de jeux. Un total sous les 20.5 jeux paraît solide au vu du niveau affiché des deux joueuses et de la surface rapide.",
-      "confiance": 3,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779876300,
-            "tournament": "FO",
-            "home": "Bejlek S.",
-            "away": "Swiatek I.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779700200,
-            "tournament": "FO",
-            "home": "Paolini J.",
-            "away": "Yastremska D.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1779640500,
-            "tournament": "FO",
-            "home": "Bejlek S.",
-            "away": "Stephens S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1779019500,
-            "tournament": "STR",
-            "home": "Bejlek S.",
-            "away": "Navarro E.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778938800,
-            "tournament": "PAR",
-            "home": "Krejcikova B.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778922000,
-            "tournament": "PAR",
-            "home": "Yastremska D.",
-            "away": "Bouzas Maneiro J.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778766600,
-            "tournament": "PAR",
-            "home": "Sierra S.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778670000,
-            "tournament": "PAR",
-            "home": "Vandewinkel H.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778581800,
-            "tournament": "PAR",
-            "home": "Bosio V.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778574600,
-            "tournament": "PAR",
-            "home": "Bejlek S.",
-            "away": "Charaeva A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778071200,
-            "tournament": "ROM",
-            "home": "Siegemund L.",
-            "away": "Bejlek S.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777987500,
-            "tournament": "ROM",
-            "home": "Zakharova A.",
-            "away": "Yastremska D.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1776866100,
-            "tournament": "MAD",
-            "home": "Yastremska D.",
-            "away": "Sierra S.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1775643000,
-            "tournament": "LIN",
-            "home": "Ruse G.",
-            "away": "Yastremska D.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775556600,
-            "tournament": "LIN",
-            "home": "Yastremska D.",
-            "away": "Li A.",
-            "score": "2-1"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "17.5": {
-            "over": 1.2,
-            "under": 3.82
-          },
-          "18.5": {
-            "over": 1.35,
-            "under": 2.84
-          },
-          "19.5": {
-            "over": 1.52,
-            "under": 2.35
-          },
-          "20.5": {
-            "over": 1.71,
-            "under": 2
-          },
-          "21.0": {
-            "over": 1.76,
-            "under": 1.97
-          },
-          "21.5": {
-            "over": 1.87,
-            "under": 1.84
-          },
-          "22.0": {
-            "over": 1.99,
-            "under": 1.75
-          },
-          "22.5": {
-            "over": 2.1,
-            "under": 1.68
-          },
-          "23.5": {
-            "over": 2.43,
-            "under": 1.5
-          },
-          "24.5": {
-            "over": 2.7,
-            "under": 1.38
-          },
-          "25.5": {
-            "over": 3.05,
-            "under": 1.31
-          },
-          "26.5": {
-            "over": 3.44,
-            "under": 1.25
-          },
-          "27.5": {
-            "over": 3.15,
-            "under": 1.29
-          },
-          "2.5": {
-            "over": 2.34,
-            "under": 1.56
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.21,
-            "away": 1.73
-          },
-          "-1.5": {
-            "home": 2,
-            "away": 4
-          },
-          "0.0": {
-            "home": 1.48,
-            "away": 2.4
-          },
-          "0.5": {
-            "home": 1.56,
-            "away": 2.36
-          },
-          "-0.5": {
-            "home": 1.52,
-            "away": 2.2
-          },
-          "1.0": {
-            "home": 1.5,
-            "away": 2.45
-          },
-          "-1.0": {
-            "home": 1.46,
-            "away": 2.34
-          },
-          "2.0": {
-            "home": 1.49,
-            "away": 2.11
-          },
-          "-2.0": {
-            "home": 1.61,
-            "away": 2.38
-          },
-          "2.5": {
-            "away": 2
-          },
-          "-2.5": {
-            "home": 1.73
-          },
-          "3.0": {
-            "away": 1.88
-          },
-          "-3.0": {
-            "home": 1.78
-          },
-          "3.5": {
-            "away": 1.77
-          },
-          "-3.5": {
-            "home": 1.91
-          },
-          "4.0": {
-            "away": 1.61
-          },
-          "-4.0": {
-            "home": 2.11
-          },
-          "4.5": {
-            "away": 1.52
-          },
-          "-4.5": {
-            "home": 2.31
-          },
-          "5.0": {
-            "away": 1.37
-          },
-          "-5.0": {
-            "home": 2.77
-          },
-          "5.5": {
-            "away": 1.31
-          },
-          "-5.5": {
-            "home": 3.05
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Hertogenbosch (Netherlands)",
-      "archived_at": "2026-06-09T12:25:07.034Z"
-    },
-    {
-      "event_id": "8tZRkrOP",
-      "flashscore_id": "8tZRkrOP",
-      "flashscore_sport_id": 2,
-      "home_team_id": "2TgBLj6G",
-      "away_team_id": "fLOdtByM",
-      "tournament_id": "y9xuhp3j",
-      "tournament_url": "/tennis/atp-singles/hertogenbosch/",
-      "sport_key": "flashscore_tennis_atp_hertogenbosch_netherlands",
-      "commence_time": "2026-06-09T09:00:00.000Z",
-      "time_display": "Mar. 11h00",
-      "home": "Diallo G.",
-      "away": "Mannarino A.",
-      "match": "Diallo G. vs Mannarino A.",
-      "prono": "win-home",
-      "pari": "Moins de 22.5 jeux",
-      "cote_retenue": 2.05,
-      "cotes": {
-        "domicile": 2.16,
-        "nul": null,
-        "exterieur": 1.71
-      },
-      "pick_category": "ou",
-      "analyse": "Ce match oppose deux joueurs en grande difficulté de forme, mais sur une surface gazon qui favorise les services dominants et les échanges courts. Mannarino traverse une période catastrophique : 7 défaites consécutives en sets (Humbert 3-0 à Roland-Garros, Collignon 2-0, Dzumhur 2-0, De Jong 2-1, Buse 2-0, Borges 2-0, Bergs 2-0), sans la moindre victoire depuis plusieurs semaines. Diallo n'est guère plus rassurant avec des défaites face à Duckworth, Moller, Zverev et Fonseca, même s'il a battu Sachko en mars. Sur gazon à Hertogenbosch, la surface rapide profite aux joueurs qui servent bien et raccourcissent les points, ce qui tend à réduire le nombre total de jeux joués. Avec deux joueurs en méforme, les breaks seront probablement rares et les sets potentiellement expéditifs, surtout sur cette surface rapide. Un total sous les 20.5 jeux paraît envisageable, mais la cote la plus intéressante reste le 'Moins de 22.5 jeux' à 2.05, compte tenu de l'incertitude générale sur le niveau des deux joueurs.",
-      "confiance": 2,
-      "featured": false,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": false,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1779714900,
-            "tournament": "FO",
-            "home": "Humbert U.",
-            "away": "Mannarino A.",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1779613800,
-            "tournament": "FO",
-            "home": "Duckworth J.",
-            "away": "Diallo G.",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1779207000,
-            "tournament": "GEN",
-            "home": "Mannarino A.",
-            "away": "Collignon R.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778058600,
-            "tournament": "ROM",
-            "home": "Dzumhur D.",
-            "away": "Mannarino A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1777543800,
-            "tournament": "CAG",
-            "home": "De Jong J.",
-            "away": "Mannarino A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1777028100,
-            "tournament": "MAD",
-            "home": "Moller E.",
-            "away": "Diallo G.",
-            "score": "1-0"
-          },
-          {
-            "timestamp": 1776853500,
-            "tournament": "MAD",
-            "home": "Buse I.",
-            "away": "Mannarino A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776343200,
-            "tournament": "MUN",
-            "home": "Zverev A.",
-            "away": "Diallo G.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776096600,
-            "tournament": "BAR",
-            "home": "Borges N.",
-            "away": "Mannarino A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776079200,
-            "tournament": "MUN",
-            "home": "Diallo G.",
-            "away": "Sachko V.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775485500,
-            "tournament": "MON",
-            "home": "Fonseca J.",
-            "away": "Diallo G.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775472900,
-            "tournament": "MON",
-            "home": "Bergs Z.",
-            "away": "Mannarino A.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775199900,
-            "tournament": "BUC",
-            "home": "Merida Aguilar D.",
-            "away": "Mannarino A.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1775052600,
-            "tournament": "BUC",
-            "home": "Diallo G.",
-            "away": "Molcan A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1774133700,
-            "tournament": "MIA",
-            "home": "Diallo G.",
-            "away": "Humbert U.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "20.0": {
-            "over": 1.29,
-            "under": 3.13
-          },
-          "20.5": {
-            "over": 1.38,
-            "under": 2.84
-          },
-          "21.0": {
-            "over": 1.35,
-            "under": 2.79
-          },
-          "21.5": {
-            "over": 1.44,
-            "under": 2.59
-          },
-          "22.0": {
-            "over": 1.52,
-            "under": 2.33
-          },
-          "22.5": {
-            "over": 1.67,
-            "under": 2.05
-          },
-          "23.0": {
-            "over": 1.81,
-            "under": 1.91
-          },
-          "23.5": {
-            "over": 1.91,
-            "under": 1.83
-          },
-          "24.0": {
-            "over": 1.96,
-            "under": 1.77
-          },
-          "24.5": {
-            "over": 1.96,
-            "under": 1.78
-          },
-          "25.0": {
-            "over": 2.03,
-            "under": 1.68
-          },
-          "25.5": {
-            "over": 2.09,
-            "under": 1.63
-          },
-          "26.0": {
-            "over": 2.24,
-            "under": 1.53
-          },
-          "26.5": {
-            "over": 2.43,
-            "under": 1.47
-          },
-          "27.5": {
-            "over": 2.64,
-            "under": 1.4
-          },
-          "28.5": {
-            "over": 2.93,
-            "under": 1.33
-          },
-          "2.5": {
-            "over": 2.23,
-            "under": 1.64
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.59,
-            "away": 1.39
-          },
-          "-1.5": {
-            "home": 2.81,
-            "away": 2.3
-          },
-          "0.0": {
-            "home": 2.04,
-            "away": 1.66
-          },
-          "0.5": {
-            "home": 1.92,
-            "away": 1.68
-          },
-          "-0.5": {
-            "home": 2.1,
-            "away": 1.77
-          },
-          "1.0": {
-            "home": 1.86,
-            "away": 1.55
-          },
-          "-1.0": {
-            "home": 2.24,
-            "away": 1.8
-          },
-          "2.0": {
-            "home": 1.67,
-            "away": 1.43
-          },
-          "-2.0": {
-            "home": 2.55,
-            "away": 2.02
-          },
-          "2.5": {
-            "home": 1.58,
-            "away": 1.83
-          },
-          "-2.5": {
-            "home": 1.83,
-            "away": 2.25
-          },
-          "3.0": {
-            "home": 1.44
-          },
-          "-3.0": {
-            "away": 2.52
-          },
-          "3.5": {
-            "home": 1.37
-          },
-          "-3.5": {
-            "away": 2.77
-          },
-          "4.0": {
-            "home": 1.22
-          },
-          "-4.0": {
-            "away": 3.66
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Hertogenbosch (Netherlands)",
-      "archived_at": "2026-06-09T17:46:44.889Z"
-    },
     {
       "event_id": "0duQVMWg",
       "flashscore_id": "0duQVMWg",
@@ -136743,6 +135604,588 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Wimbledon (United Kingdom) (Q)",
       "archived_at": "2026-06-24T21:11:54.298Z"
+    },
+    {
+      "event_id": "6BJ0ZJ6k",
+      "flashscore_id": "6BJ0ZJ6k",
+      "flashscore_sport_id": 2,
+      "home_team_id": "fDEtnFgg",
+      "away_team_id": "EHGKxKDL",
+      "tournament_id": "sppot5u3",
+      "tournament_url": "/tennis/atp-singles/mallorca/",
+      "sport_key": "flashscore_tennis_atp_mallorca_spain",
+      "commence_time": "2026-06-25T09:00:00.000Z",
+      "time_display": "Jeu. 11h00",
+      "home": "Quinn E.",
+      "away": "Kopriva V.",
+      "match": "Quinn E. vs Kopriva V.",
+      "prono": "win-home",
+      "pari": "Moins de 22.5 jeux",
+      "cote_retenue": 1.92,
+      "cotes": {
+        "domicile": 1.5,
+        "nul": null,
+        "exterieur": 2.52
+      },
+      "pick_category": "ou",
+      "analyse": "Quinn et Kopriva se retrouvent tous deux en forme à Mallorca après des premiers tours convaincants. Quinn a battu Royer 2-0 puis Cassone 2-1, montrant une bonne régularité sur gazon. Kopriva de son côté a dominé Dzumhur 2-0 puis Buse 2-0, avec des victoires nettes qui témoignent d'un jeu efficace sur cette surface rapide. Sur gazon, les services sont dominants et les échanges courts, ce qui favorise nettement les matchs en deux sets secs avec peu de jeux. Les deux joueurs ont montré une capacité à conclure rapidement leurs rencontres ce tournoi, et le style de jeu sur herbe — surface la plus rapide — tend à raccourcir les matches. La ligne des 20.5 jeux apparaît comme un seuil pertinent : si l'un des deux s'impose nettement comme Quinn ou Kopriva l'ont fait en tours précédents, on reste bien sous 21 jeux (6-3 6-3 = 18 jeux, 6-4 6-4 = 20 jeux).",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "2-1",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1782297300,
+            "tournament": "MAL",
+            "home": "Kopriva V.",
+            "away": "Buse I.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782295500,
+            "tournament": "MAL",
+            "home": "Cassone M.",
+            "away": "Quinn E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1782209100,
+            "tournament": "MAL",
+            "home": "Dzumhur D.",
+            "away": "Kopriva V.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1782123000,
+            "tournament": "MAL",
+            "home": "Quinn E.",
+            "away": "Royer V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781781000,
+            "tournament": "HAL",
+            "home": "Shelton B.",
+            "away": "Quinn E.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1781615400,
+            "tournament": "HAL",
+            "home": "Zverev A.",
+            "away": "Kopriva V.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1781602800,
+            "tournament": "HAL",
+            "home": "Khachanov K.",
+            "away": "Quinn E.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1780564200,
+            "tournament": "PRO",
+            "home": "Sachko V.",
+            "away": "Kopriva V.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780395300,
+            "tournament": "PRO",
+            "home": "Martin A.",
+            "away": "Kopriva V.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779970500,
+            "tournament": "FO",
+            "home": "Landaluce M.",
+            "away": "Kopriva V.",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1779811800,
+            "tournament": "FO",
+            "home": "Quinn E.",
+            "away": "Comesana F.",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1779797700,
+            "tournament": "FO",
+            "home": "Kopriva V.",
+            "away": "Moutet C.",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1779192300,
+            "tournament": "HAM",
+            "home": "Auger-Aliassime F.",
+            "away": "Kopriva V.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779028800,
+            "tournament": "HAM",
+            "home": "Paul T.",
+            "away": "Quinn E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778264700,
+            "tournament": "ROM",
+            "home": "Humbert U.",
+            "away": "Kopriva V.",
+            "score": "2-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "20.0": {
+            "over": 1.3,
+            "under": 3.04
+          },
+          "20.5": {
+            "over": 1.44,
+            "under": 2.63
+          },
+          "21.0": {
+            "over": 1.46,
+            "under": 2.49
+          },
+          "21.5": {
+            "over": 1.56,
+            "under": 2.27
+          },
+          "22.0": {
+            "over": 1.67,
+            "under": 2.11
+          },
+          "22.5": {
+            "over": 1.81,
+            "under": 1.92
+          },
+          "23.0": {
+            "over": 1.94,
+            "under": 1.79
+          },
+          "23.5": {
+            "over": 2.08,
+            "under": 1.69
+          },
+          "24.0": {
+            "over": 2.06,
+            "under": 1.66
+          },
+          "24.5": {
+            "over": 2.1,
+            "under": 1.66
+          },
+          "25.0": {
+            "over": 2.16,
+            "under": 1.57
+          },
+          "2.5": {
+            "over": 2.29,
+            "under": 1.57
+          },
+          "19.5": {
+            "over": 1.3,
+            "under": 3.35
+          },
+          "25.5": {
+            "over": 2.32,
+            "under": 1.58
+          },
+          "26.5": {
+            "over": 2.63,
+            "under": 1.46
+          },
+          "27.5": {
+            "over": 2.85,
+            "under": 1.4
+          },
+          "28.5": {
+            "over": 3.2,
+            "under": 1.33
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.19,
+            "away": 1.88
+          },
+          "-1.5": {
+            "home": 1.92,
+            "away": 4.17
+          },
+          "0.0": {
+            "home": 1.47,
+            "away": 2.53
+          },
+          "0.5": {
+            "home": 1.5,
+            "away": 2.4
+          },
+          "-0.5": {
+            "home": 1.54,
+            "away": 2.5
+          },
+          "1.0": {
+            "home": 1.48,
+            "away": 2.3
+          },
+          "-1.0": {
+            "home": 1.56,
+            "away": 2.5
+          },
+          "2.0": {
+            "away": 2.04
+          },
+          "-2.0": {
+            "home": 1.71
+          },
+          "2.5": {
+            "home": 1.3,
+            "away": 1.92
+          },
+          "-2.5": {
+            "home": 1.82,
+            "away": 3.4
+          },
+          "3.0": {
+            "away": 1.73
+          },
+          "-3.0": {
+            "home": 2.01
+          },
+          "3.5": {
+            "away": 1.61
+          },
+          "-3.5": {
+            "home": 2.2
+          },
+          "4.0": {
+            "away": 1.42
+          },
+          "-4.0": {
+            "home": 2.69
+          },
+          "4.5": {
+            "away": 1.35
+          },
+          "-4.5": {
+            "home": 3.07
+          },
+          "5.0": {
+            "away": 1.19
+          },
+          "-5.0": {
+            "home": 4.25
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Mallorca (Spain)",
+      "archived_at": "2026-06-25T11:21:13.411Z"
+    },
+    {
+      "event_id": "WUCeDLyB",
+      "flashscore_id": "WUCeDLyB",
+      "flashscore_sport_id": 2,
+      "home_team_id": "OlQsiYlU",
+      "away_team_id": "UJuILIk9",
+      "tournament_id": "pvuyzkss",
+      "tournament_url": "/tennis/wta-singles/wimbledon/",
+      "sport_key": "flashscore_tennis_wta_wimbledon_united_kingdom_q",
+      "commence_time": "2026-06-25T10:00:00.000Z",
+      "time_display": "Jeu. 12h00",
+      "home": "Korneeva A.",
+      "away": "Crawley F.",
+      "match": "Korneeva A. vs Crawley F.",
+      "prono": "win-home",
+      "pari": "Plus de 19.5 jeux",
+      "cote_retenue": 1.8,
+      "cotes": {
+        "domicile": 1.19,
+        "nul": null,
+        "exterieur": 4.2
+      },
+      "pick_category": "ou",
+      "analyse": "Korneeva s'est imposée à deux reprises en qualifications à Wimbledon cette semaine, battant Shubladze (2-1) puis Lazaro Garcia (2-1), montrant une belle solidité sur gazon malgré des sets disputés. Elle affiche une forme globalement positive depuis Roland-Garros avec de nombreux succès en 2-0, ce qui témoigne d'une efficacité certaine. Crawley de son côté s'est qualifiée en battant Sakatsume (2-1) puis Riera (2-1), deux victoires en trois sets — signe que ses matchs sont tendus et âprement disputés. Sur gazon à Wimbledon, les services dominent et les échanges sont généralement plus courts qu'en terre battue, ce qui favorise les matchs en peu de jeux. Cependant, les deux joueuses ont toutes deux disputé des sets très serrés (2-1 systématiquement) lors de leurs tours précédents, laissant présager un match compétitif pouvant aller en trois sets. Le marché à 19.5 jeux représente un bon équilibre : si Korneeva confirme son statut légèrement supérieur et s'impose en deux sets serrés (6-4, 6-4 par exemple), on atteint exactement 20 jeux. Un match en trois sets ferait dépasser ce total très facilement. La ligne Over 19.5 à 1.80 est attractive compte tenu du profil des matchs récents des deux joueuses.",
+      "confiance": 3,
+      "featured": true,
+      "score_prevu": null,
+      "status": "lost",
+      "actual_score": "2-0",
+      "actual_result": "home",
+      "coup_de_coeur": false,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1782306900,
+            "tournament": "WIM",
+            "home": "Korneeva A.",
+            "away": "Lazaro Garcia A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1782306900,
+            "tournament": "WIM",
+            "home": "Riera J.",
+            "away": "Crawley F.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1782209100,
+            "tournament": "WIM",
+            "home": "Korneeva A.",
+            "away": "Shubladze A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1782209100,
+            "tournament": "WIM",
+            "home": "Crawley F.",
+            "away": "Sakatsume H.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1781777100,
+            "tournament": "FIG",
+            "home": "Korneeva A.",
+            "away": "Kubka M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781627400,
+            "tournament": "FIG",
+            "home": "Korneeva A.",
+            "away": "Tian F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781004300,
+            "tournament": "ILK",
+            "home": "Korneeva A.",
+            "away": "Naef C.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1779975000,
+            "tournament": "FO",
+            "home": "Kalinskaya A.",
+            "away": "Korneeva A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779805800,
+            "tournament": "FO",
+            "home": "Korneeva A.",
+            "away": "Cocciaretto E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779370200,
+            "tournament": "FO",
+            "home": "Korneeva A.",
+            "away": "Riera J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779276900,
+            "tournament": "FO",
+            "home": "Korneeva A.",
+            "away": "Ortenzi J.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1779119400,
+            "tournament": "FO",
+            "home": "Korneeva A.",
+            "away": "Hibino N.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1778500200,
+            "tournament": "PAR",
+            "home": "Korneeva A.",
+            "away": "Volynets K.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1778058300,
+            "tournament": "ROM",
+            "home": "Udvardy P.",
+            "away": "Korneeva A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1777975800,
+            "tournament": "ROM",
+            "home": "Tagger L.",
+            "away": "Korneeva A.",
+            "score": "0-2"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "17.0": {
+            "over": 1.2,
+            "under": 3.8
+          },
+          "17.5": {
+            "over": 1.33,
+            "under": 2.93
+          },
+          "18.0": {
+            "over": 1.4,
+            "under": 2.68
+          },
+          "18.5": {
+            "over": 1.56,
+            "under": 2.29
+          },
+          "19.0": {
+            "over": 1.63,
+            "under": 2.17
+          },
+          "19.5": {
+            "over": 1.8,
+            "under": 1.93
+          },
+          "20.0": {
+            "over": 1.86,
+            "under": 1.86
+          },
+          "20.5": {
+            "over": 1.98,
+            "under": 1.74
+          },
+          "21.0": {
+            "over": 2.1,
+            "under": 1.64
+          },
+          "21.5": {
+            "over": 2.19,
+            "under": 1.57
+          },
+          "22.0": {
+            "over": 2.34,
+            "under": 1.49
+          },
+          "22.5": {
+            "over": 2.45,
+            "under": 1.46
+          },
+          "23.0": {
+            "over": 2.6,
+            "under": 1.4
+          },
+          "2.5": {
+            "over": 2.88,
+            "under": 1.38
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.07,
+            "away": 2.11
+          },
+          "-1.5": {
+            "home": 1.65,
+            "away": 6.75
+          },
+          "2.0": {
+            "away": 3.4
+          },
+          "-2.0": {
+            "home": 1.28
+          },
+          "2.5": {
+            "away": 3.1
+          },
+          "-2.5": {
+            "home": 1.33
+          },
+          "3.0": {
+            "away": 2.94
+          },
+          "-3.0": {
+            "home": 1.36
+          },
+          "3.5": {
+            "away": 2.62
+          },
+          "-3.5": {
+            "home": 1.44
+          },
+          "4.0": {
+            "away": 2.39
+          },
+          "-4.0": {
+            "home": 1.52
+          },
+          "4.5": {
+            "away": 2.11
+          },
+          "-4.5": {
+            "home": 1.67
+          },
+          "5.0": {
+            "away": 1.88
+          },
+          "-5.0": {
+            "home": 1.84
+          },
+          "5.5": {
+            "away": 1.73
+          },
+          "-5.5": {
+            "home": 2.11
+          },
+          "6.0": {
+            "away": 1.49
+          },
+          "-6.0": {
+            "home": 2.47
+          },
+          "6.5": {
+            "away": 1.39
+          },
+          "-6.5": {
+            "home": 2.81
+          },
+          "7.0": {
+            "away": 1.23
+          },
+          "-7.0": {
+            "home": 3.8
+          },
+          "7.5": {
+            "away": 1.18
+          },
+          "-7.5": {
+            "home": 4.33
+          },
+          "8.0": {
+            "away": 1.08
+          },
+          "-8.0": {
+            "home": 6.75
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "WTA Wimbledon (United Kingdom) (Q)",
+      "archived_at": "2026-06-25T11:21:13.411Z"
     }
   ],
   "combos": [
