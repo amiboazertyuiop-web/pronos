@@ -4,10 +4,10 @@
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
-    "last_results_update": "2026-06-26T17:22:37.720Z",
+    "last_results_update": "2026-06-26T19:21:58.733Z",
     "analyses_written_at": "2026-06-26T08:27:20.372Z",
     "analyses_cost_usd": 0.0397,
-    "last_hourly_refresh": "2026-06-26T17:22:37.720Z"
+    "last_hourly_refresh": "2026-06-26T19:21:58.733Z"
   },
   "sports": {
     "foot": {
@@ -51,291 +51,7 @@
           "country": "",
           "panel_title": "🎾 ATP Eastbourne (United Kingdom)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "G6Knir4m",
-              "flashscore_id": "G6Knir4m",
-              "flashscore_sport_id": 2,
-              "home_team_id": "SWxNhpmK",
-              "away_team_id": "O4ywE5Ah",
-              "tournament_id": "ucjjk12k",
-              "tournament_url": "/tennis/atp-singles/eastbourne/",
-              "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
-              "commence_time": "2026-06-26T15:00:00.000Z",
-              "time_display": "Ven. 17h00",
-              "home": "Draper J.",
-              "away": "Humbert U.",
-              "match": "Draper J. vs Humbert U.",
-              "prono": "win-home",
-              "pari": "Moins de 23.5 jeux",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 1.49,
-                "nul": null,
-                "exterieur": 2.58
-              },
-              "pick_category": "ou",
-              "analyse": "Jack Draper évolue à domicile sur gazon, sa surface de prédilection, et affiche une forme impeccable à Eastbourne avec trois victoires consécutives toutes acquises en deux sets secs (2-0 contre Giron, Pinnington Jones et Diallo). Le Britannique n'a pas laissé le moindre set dans ce tournoi, signe d'une dominance technique et mentale remarquable sur cette surface. Humbert, de son côté, présente un bilan plus mitigé : s'il a remporté ses deux derniers matchs à Eastbourne (2-0 contre Halys et Brooksby), il a subi un 2-0 sévère face à Paul à Queen's la semaine passée et reste sur une demi-finale difficile contre Bellucci où il a lâché un set. Sur gazon, Draper dispose d'un service dévastateur et d'un tennis agressif particulièrement adapté à la surface qui rend ses premiers balles quasi-imprenable. Compte tenu de la supériorité actuelle de Draper sur gazon et de son avantage à domicile, un match expédié en deux sets rapides semble probable, orientant vers un total de jeux modéré. Le 'Moins de 22.5 jeux' à 2.18 offre une valeur intéressante si Draper impose son rythme dès le départ, mais la résistance d'Humbert en Grand Chelem et son niveau global justifient de viser un total légèrement au-dessus : le 'Moins de 23.5 jeux' à 1.85 constitue le meilleur compromis entre valeur et sécurité.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1782399900,
-                    "tournament": "EAS",
-                    "home": "Humbert U.",
-                    "away": "Halys Q.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782394800,
-                    "tournament": "EAS",
-                    "home": "Draper J.",
-                    "away": "Diallo G.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782317700,
-                    "tournament": "EAS",
-                    "home": "Draper J.",
-                    "away": "Pinnington Jones J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782306300,
-                    "tournament": "EAS",
-                    "home": "Humbert U.",
-                    "away": "Brooksby J.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782231300,
-                    "tournament": "EAS",
-                    "home": "Humbert U.",
-                    "away": "Bellucci M.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1782134400,
-                    "tournament": "EAS",
-                    "home": "Giron M.",
-                    "away": "Draper J.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781968200,
-                    "tournament": "LON",
-                    "home": "Paul T.",
-                    "away": "Humbert U.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781889900,
-                    "tournament": "LON",
-                    "home": "Humbert U.",
-                    "away": "Hijikata R.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781871900,
-                    "tournament": "LON",
-                    "home": "Medjedovic H.",
-                    "away": "Humbert U.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1781624700,
-                    "tournament": "LON",
-                    "home": "Humbert U.",
-                    "away": "Cilic M.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781169000,
-                    "tournament": "HER",
-                    "home": "Humbert U.",
-                    "away": "Bonzi B.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1780934700,
-                    "tournament": "HER",
-                    "home": "Humbert U.",
-                    "away": "Ymer E.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1779892500,
-                    "tournament": "FO",
-                    "home": "Humbert U.",
-                    "away": "Halys Q.",
-                    "score": "0-3"
-                  },
-                  {
-                    "timestamp": 1779714900,
-                    "tournament": "FO",
-                    "home": "Humbert U.",
-                    "away": "Mannarino A.",
-                    "score": "3-0"
-                  },
-                  {
-                    "timestamp": 1779358200,
-                    "tournament": "HAM",
-                    "home": "Buse I.",
-                    "away": "Humbert U.",
-                    "score": "2-1"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "20.5": {
-                    "over": 1.34,
-                    "under": 2.95
-                  },
-                  "21.0": {
-                    "over": 1.3,
-                    "under": 3.04
-                  },
-                  "21.5": {
-                    "over": 1.37,
-                    "under": 2.85
-                  },
-                  "22.0": {
-                    "over": 1.46,
-                    "under": 2.49
-                  },
-                  "22.5": {
-                    "over": 1.59,
-                    "under": 2.18
-                  },
-                  "23.0": {
-                    "over": 1.75,
-                    "under": 1.99
-                  },
-                  "23.5": {
-                    "over": 1.87,
-                    "under": 1.85
-                  },
-                  "24.0": {
-                    "over": 1.91,
-                    "under": 1.81
-                  },
-                  "24.5": {
-                    "over": 1.89,
-                    "under": 1.8
-                  },
-                  "25.0": {
-                    "over": 1.98,
-                    "under": 1.72
-                  },
-                  "25.5": {
-                    "over": 2.02,
-                    "under": 1.71
-                  },
-                  "26.0": {
-                    "over": 2.18,
-                    "under": 1.56
-                  },
-                  "26.5": {
-                    "over": 2.3,
-                    "under": 1.52
-                  },
-                  "27.0": {
-                    "over": 2.38,
-                    "under": 1.46
-                  },
-                  "2.5": {
-                    "over": 2.19,
-                    "under": 1.56
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 1.21,
-                    "away": 1.75
-                  },
-                  "-1.5": {
-                    "home": 2.04,
-                    "away": 3.8
-                  },
-                  "0.0": {
-                    "home": 1.53,
-                    "away": 2.38
-                  },
-                  "0.5": {
-                    "home": 1.49,
-                    "away": 2.24
-                  },
-                  "-0.5": {
-                    "home": 1.59,
-                    "away": 2.49
-                  },
-                  "1.0": {
-                    "home": 1.44,
-                    "away": 2.13
-                  },
-                  "-1.0": {
-                    "home": 1.65,
-                    "away": 2.65
-                  },
-                  "2.0": {
-                    "away": 1.86
-                  },
-                  "-2.0": {
-                    "home": 1.86
-                  },
-                  "2.5": {
-                    "away": 1.72
-                  },
-                  "-2.5": {
-                    "home": 2.04
-                  },
-                  "3.0": {
-                    "away": 1.55
-                  },
-                  "-3.0": {
-                    "home": 2.32
-                  },
-                  "3.5": {
-                    "away": 1.44
-                  },
-                  "-3.5": {
-                    "home": 2.63
-                  },
-                  "4.0": {
-                    "away": 1.27
-                  },
-                  "-4.0": {
-                    "home": 3.48
-                  },
-                  "4.5": {
-                    "away": 1.22
-                  },
-                  "-4.5": {
-                    "home": 3.9
-                  },
-                  "5.0": {
-                    "away": 1.09
-                  },
-                  "-5.0": {
-                    "home": 6.2
-                  },
-                  "5.5": {
-                    "away": 1.08
-                  },
-                  "-5.5": {
-                    "home": 6.8
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "atp_mallorca_spain",
@@ -345,309 +61,7 @@
           "country": "",
           "panel_title": "🎾 ATP Mallorca (Spain)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": [
-            {
-              "event_id": "x03mVMcC",
-              "flashscore_id": "x03mVMcC",
-              "flashscore_sport_id": 2,
-              "home_team_id": "I1mux0lj",
-              "away_team_id": "0zQXLfz4",
-              "tournament_id": "sppot5u3",
-              "tournament_url": "/tennis/atp-singles/mallorca/",
-              "sport_key": "flashscore_tennis_atp_mallorca_spain",
-              "commence_time": "2026-06-26T15:30:00.000Z",
-              "time_display": "Ven. 17h30",
-              "home": "Marozsan F.",
-              "away": "Davidovich Fokina A.",
-              "match": "Marozsan F. vs Davidovich Fokina A.",
-              "prono": "win-home",
-              "pari": "Moins de 22.5 jeux",
-              "cote_retenue": 1.85,
-              "cotes": {
-                "domicile": 3,
-                "nul": null,
-                "exterieur": 1.39
-              },
-              "pick_category": "ou",
-              "analyse": "Ce quart de finale à Mallorca oppose deux joueurs en grande forme sur gazon cette semaine. Davidovich Fokina a enchaîné trois victoires convaincantes en deux sets face à Norrie, Moutet, Walton et Dimitrov, montrant une domination claire sur cette surface. Marozsan, de son côté, a remporté ses deux premiers matches à Mallorca contre Tabilo (2-0) et Molcan (2-1), après une défaite en demi-finale à Halle contre Fritz. Sur gazon, le service joue un rôle prépondérant : les échanges sont courts, les breaks rares, ce qui favorise mécaniquement des matchs ramassés en nombre de jeux. Les deux joueurs ont démontré une efficacité sur leur mise en jeu, Davidovich Fokina en particulier semblant expédier ses adversaires sans laisser la partie s'étirer. Avec Davidovich Fokina légèrement favori mais Marozsan très compétitif à domicile (il est né en Hongrie mais joue sur une surface qu'il maîtrise cette semaine), un match décidé en deux sets secs est très probable. Sur gazon, la surface la plus rapide du circuit, même un troisième set improbable ne dépasserait pas facilement 22 jeux au total.",
-              "confiance": 3,
-              "featured": false,
-              "score_prevu": null,
-              "status": "in_progress",
-              "actual_score": null,
-              "actual_result": null,
-              "coup_de_coeur": true,
-              "stats": {
-                "recent_matches": [
-                  {
-                    "timestamp": 1782402000,
-                    "tournament": "MAL",
-                    "home": "Dimitrov G.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1782393900,
-                    "tournament": "MAL",
-                    "home": "Kecmanovic M.",
-                    "away": "Marozsan F.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1782306300,
-                    "tournament": "MAL",
-                    "home": "Walton A.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1782209100,
-                    "tournament": "MAL",
-                    "home": "Marozsan F.",
-                    "away": "Tabilo A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1782128700,
-                    "tournament": "MAL",
-                    "home": "Marozsan F.",
-                    "away": "Molcan A.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1781887200,
-                    "tournament": "LON",
-                    "home": "Paul T.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1781779200,
-                    "tournament": "LON",
-                    "home": "Moutet C.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781775600,
-                    "tournament": "HAL",
-                    "home": "Marozsan F.",
-                    "away": "Fritz T.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781629500,
-                    "tournament": "LON",
-                    "home": "Norrie C.",
-                    "away": "Davidovich Fokina A.",
-                    "score": "0-2"
-                  },
-                  {
-                    "timestamp": 1781616600,
-                    "tournament": "HAL",
-                    "home": "Marozsan F.",
-                    "away": "Kecmanovic M.",
-                    "score": "2-1"
-                  },
-                  {
-                    "timestamp": 1780927800,
-                    "tournament": "STU",
-                    "home": "Onclin G.",
-                    "away": "Marozsan F.",
-                    "score": "2-0"
-                  },
-                  {
-                    "timestamp": 1780909800,
-                    "tournament": "STU",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Bellucci M.",
-                    "score": "1-2"
-                  },
-                  {
-                    "timestamp": 1779873000,
-                    "tournament": "FO",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Tirante T. A.",
-                    "score": "1-3"
-                  },
-                  {
-                    "timestamp": 1779614100,
-                    "tournament": "FO",
-                    "home": "Davidovich Fokina A.",
-                    "away": "Dzumhur D.",
-                    "score": "3-2"
-                  },
-                  {
-                    "timestamp": 1779613800,
-                    "tournament": "FO",
-                    "home": "Kecmanovic M.",
-                    "away": "Marozsan F.",
-                    "score": "3-0"
-                  }
-                ]
-              },
-              "markets": {
-                "over_under": {
-                  "19.5": {
-                    "over": 1.27,
-                    "under": 3.14
-                  },
-                  "20.0": {
-                    "over": 1.32,
-                    "under": 2.92
-                  },
-                  "20.5": {
-                    "over": 1.46,
-                    "under": 2.54
-                  },
-                  "21.0": {
-                    "over": 1.48,
-                    "under": 2.43
-                  },
-                  "21.5": {
-                    "over": 1.6,
-                    "under": 2.24
-                  },
-                  "22.0": {
-                    "over": 1.7,
-                    "under": 2.05
-                  },
-                  "22.5": {
-                    "over": 1.86,
-                    "under": 1.85
-                  },
-                  "23.0": {
-                    "over": 1.99,
-                    "under": 1.75
-                  },
-                  "23.5": {
-                    "over": 2.11,
-                    "under": 1.65
-                  },
-                  "24.0": {
-                    "over": 2.13,
-                    "under": 1.62
-                  },
-                  "24.5": {
-                    "over": 2.18,
-                    "under": 1.6
-                  },
-                  "25.0": {
-                    "over": 2.22,
-                    "under": 1.54
-                  },
-                  "25.5": {
-                    "over": 2.34,
-                    "under": 1.52
-                  },
-                  "2.5": {
-                    "over": 2.49,
-                    "under": 1.51
-                  },
-                  "26.5": {
-                    "over": 2.75,
-                    "under": 1.42
-                  },
-                  "27.5": {
-                    "over": 2.95,
-                    "under": 1.38
-                  },
-                  "28.5": {
-                    "over": 3.35,
-                    "under": 1.3
-                  }
-                },
-                "handicap": {
-                  "1.5": {
-                    "home": 2.13,
-                    "away": 1.13
-                  },
-                  "-1.5": {
-                    "home": 5.15,
-                    "away": 1.71
-                  },
-                  "0.0": {
-                    "home": 2.94,
-                    "away": 1.36
-                  },
-                  "0.5": {
-                    "home": 2.85,
-                    "away": 1.34
-                  },
-                  "-0.5": {
-                    "home": 3.09,
-                    "away": 1.4
-                  },
-                  "1.0": {
-                    "home": 2.73
-                  },
-                  "-1.0": {
-                    "away": 1.41
-                  },
-                  "2.0": {
-                    "home": 2.38
-                  },
-                  "-2.0": {
-                    "away": 1.53
-                  },
-                  "2.5": {
-                    "home": 2.15
-                  },
-                  "-2.5": {
-                    "away": 1.65
-                  },
-                  "3.0": {
-                    "home": 1.95
-                  },
-                  "-3.0": {
-                    "away": 1.78
-                  },
-                  "3.5": {
-                    "home": 1.81
-                  },
-                  "-3.5": {
-                    "away": 1.96
-                  },
-                  "4.0": {
-                    "home": 1.53
-                  },
-                  "-4.0": {
-                    "away": 2.36
-                  },
-                  "4.5": {
-                    "home": 1.38
-                  },
-                  "-4.5": {
-                    "away": 2.92
-                  },
-                  "5.0": {
-                    "home": 1.25
-                  },
-                  "-5.0": {
-                    "away": 3.62
-                  },
-                  "5.5": {
-                    "home": 1.2
-                  },
-                  "-5.5": {
-                    "away": 4.15
-                  },
-                  "6.0": {
-                    "home": 1.09
-                  },
-                  "-6.0": {
-                    "away": 6.35
-                  },
-                  "6.5": {
-                    "home": 1.08
-                  },
-                  "-6.5": {
-                    "away": 6.85
-                  }
-                }
-              }
-            }
-          ]
+          "pronos": []
         },
         {
           "key": "wta_bad_homburg_germany",
@@ -683,596 +97,6 @@
     "l8l6cfCM"
   ],
   "history": [
-    {
-      "event_id": "SQLVFs2M",
-      "flashscore_id": "SQLVFs2M",
-      "flashscore_sport_id": 2,
-      "home_team_id": "M9pojLqi",
-      "away_team_id": "UH09iaZ6",
-      "tournament_id": "z7ul7oiq",
-      "tournament_url": "/tennis/atp-singles/stuttgart/",
-      "sport_key": "flashscore_tennis_atp_stuttgart_germany",
-      "commence_time": "2026-06-12T11:15:00.000Z",
-      "time_display": "Ven. 13h15",
-      "home": "Bellucci M.",
-      "away": "Fritz T.",
-      "match": "Bellucci M. vs Fritz T.",
-      "prono": "win-home",
-      "pari": "Moins de 22.5 jeux",
-      "cote_retenue": 2.11,
-      "cotes": {
-        "domicile": 3.65,
-        "nul": null,
-        "exterieur": 1.28
-      },
-      "pick_category": "ou",
-      "analyse": "Taylor Fritz aborde ce quart de finale à Stuttgart en position de nette supériorité. Sur gazon, le serveur américain (top 10 mondial) est particulièrement redoutable grâce à un premier service dominant et une capacité à terminer les points rapidement. Il a écarté Landaluce en trois sets lors de son dernier match à Stuttgart, montrant sa solidité sur la surface. Bellucci, lui, traverse une période difficile : sur les 15 derniers résultats, on compte de nombreuses défaites face à des joueurs de niveau inférieur (Landaluce, Bolt, Halys, Cadenazzo, Forejtek, Prizmic), même s'il a réussi à passer deux tours ici à Stuttgart contre Davidovich Fokina et Hanfmann. Sur gazon, les échanges courts et les services dominants de Fritz devraient limiter le nombre total de jeux. Un Fritz qui s'impose en deux sets nets, avec peu de jeux concédés, semble le scénario le plus probable. Le handicap Fritz -4.5 jeux à 3.10 est intéressant mais risqué ; le Moins de 22.5 jeux offre une cote correcte à 2.11 avec une vraie logique de surface : gazon = points express, Fritz dominant = sets rapides.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "1-2",
-      "actual_result": "away",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1781189100,
-            "tournament": "STU",
-            "home": "Landaluce M.",
-            "away": "Fritz T.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1781082600,
-            "tournament": "STU",
-            "home": "Bellucci M.",
-            "away": "Hanfmann Y.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1780909800,
-            "tournament": "STU",
-            "home": "Davidovich Fokina A.",
-            "away": "Bellucci M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1780393200,
-            "tournament": "BIR",
-            "home": "Bellucci M.",
-            "away": "Bolt A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779636600,
-            "tournament": "FO",
-            "home": "Halys Q.",
-            "away": "Bellucci M.",
-            "score": "3-0"
-          },
-          {
-            "timestamp": 1779636600,
-            "tournament": "FO",
-            "home": "Fritz T.",
-            "away": "Basavareddy N.",
-            "score": "1-3"
-          },
-          {
-            "timestamp": 1779274200,
-            "tournament": "GEN",
-            "home": "Fritz T.",
-            "away": "Popyrin A.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778490900,
-            "tournament": "ROM",
-            "home": "Bellucci M.",
-            "away": "Landaluce M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778330100,
-            "tournament": "ROM",
-            "home": "Etcheverry T. M.",
-            "away": "Bellucci M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778156100,
-            "tournament": "ROM",
-            "home": "Burruchaga R. A.",
-            "away": "Bellucci M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777557000,
-            "tournament": "CAG",
-            "home": "Bellucci M.",
-            "away": "Cadenasso G.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1777476000,
-            "tournament": "CAG",
-            "home": "Sonego L.",
-            "away": "Bellucci M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1776855900,
-            "tournament": "MAD",
-            "home": "Dzumhur D.",
-            "away": "Bellucci M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1776161400,
-            "tournament": "OEI",
-            "home": "Forejtek J.",
-            "away": "Bellucci M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1775904300,
-            "tournament": "MON",
-            "home": "Bellucci M.",
-            "away": "Prizmic D.",
-            "score": "0-2"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "19.5": {
-            "over": 1.3,
-            "under": 3.4
-          },
-          "20.5": {
-            "over": 1.3,
-            "under": 3.1
-          },
-          "21.0": {
-            "over": 1.3,
-            "under": 3.04
-          },
-          "21.5": {
-            "over": 1.38,
-            "under": 2.71
-          },
-          "22.0": {
-            "over": 1.47,
-            "under": 2.46
-          },
-          "22.5": {
-            "over": 1.65,
-            "under": 2.11
-          },
-          "23.0": {
-            "over": 1.8,
-            "under": 1.92
-          },
-          "23.5": {
-            "over": 1.98,
-            "under": 1.79
-          },
-          "24.0": {
-            "over": 1.98,
-            "under": 1.76
-          },
-          "24.5": {
-            "over": 1.99,
-            "under": 1.73
-          },
-          "25.0": {
-            "over": 2.05,
-            "under": 1.67
-          },
-          "25.5": {
-            "over": 2.12,
-            "under": 1.65
-          },
-          "26.0": {
-            "over": 2.29,
-            "under": 1.51
-          },
-          "26.5": {
-            "over": 2.42,
-            "under": 1.52
-          },
-          "27.5": {
-            "over": 2.48,
-            "under": 1.5
-          },
-          "2.5": {
-            "over": 2.52,
-            "under": 1.5
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.91,
-            "away": 1.1
-          },
-          "-1.5": {
-            "home": 6.05,
-            "away": 1.78
-          },
-          "0.0": {
-            "home": 3.48,
-            "away": 1.27
-          },
-          "0.5": {
-            "home": 3.33
-          },
-          "-0.5": {
-            "away": 1.31
-          },
-          "1.0": {
-            "home": 3.08
-          },
-          "-1.0": {
-            "away": 1.33
-          },
-          "2.0": {
-            "home": 2.5
-          },
-          "-2.0": {
-            "away": 1.48
-          },
-          "2.5": {
-            "home": 2.2
-          },
-          "-2.5": {
-            "away": 1.6
-          },
-          "3.0": {
-            "home": 1.86
-          },
-          "-3.0": {
-            "away": 1.86
-          },
-          "3.5": {
-            "home": 1.62
-          },
-          "-3.5": {
-            "away": 2.21
-          },
-          "4.0": {
-            "home": 1.38
-          },
-          "-4.0": {
-            "away": 2.85
-          },
-          "4.5": {
-            "home": 1.3
-          },
-          "-4.5": {
-            "away": 3.1
-          },
-          "5.0": {
-            "home": 1.13
-          },
-          "-5.0": {
-            "away": 5.3
-          },
-          "5.5": {
-            "home": 1.1
-          },
-          "-5.5": {
-            "away": 5.9
-          },
-          "6.0": {
-            "home": 1.03
-          },
-          "-6.0": {
-            "away": 10
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "ATP Stuttgart (Germany)",
-      "archived_at": "2026-06-12T19:33:48.813Z"
-    },
-    {
-      "event_id": "Gjrdqj8c",
-      "flashscore_id": "Gjrdqj8c",
-      "flashscore_sport_id": 2,
-      "home_team_id": "2FyACZYi",
-      "away_team_id": "vXvzyRlq",
-      "tournament_id": "hdwbnkam",
-      "tournament_url": "/tennis/wta-singles/hertogenbosch/",
-      "sport_key": "flashscore_tennis_wta_hertogenbosch_netherlands",
-      "commence_time": "2026-06-13T09:00:00.000Z",
-      "time_display": "Sam. 11h00",
-      "home": "Krejcikova B.",
-      "away": "Linette M.",
-      "match": "Krejcikova B. vs Linette M.",
-      "prono": "win-home",
-      "pari": "Moins de 19.5 jeux",
-      "cote_retenue": 2.37,
-      "cotes": {
-        "domicile": 1.32,
-        "nul": null,
-        "exterieur": 3.3
-      },
-      "pick_category": "ou",
-      "analyse": "Krejcikova affiche une forme impressionnante sur gazon à Hertogenbosch, avec trois victoires consécutives toutes acquises en deux sets secs (2-0 contre Zarazua, Vandewinkel et Ruse), sans concéder le moindre set dans ce tournoi. Linette progresse également bien mais a dû batailler face à Birrell en trois sets (2-1), ce qui révèle une certaine vulnérabilité. La Tchèque, ancienne numéro 2 mondiale et double lauréate du Grand Chelem, est parfaitement à l'aise sur gazon grâce à son tennis varié et son sens tactique, une surface qui favorise les matches expéditifs avec des jeux de service dominants. La rapidité des surfaces herbeuses tend à raccourcir les échanges et à limiter le nombre total de jeux joués. Compte tenu de la domination de Krejcikova cette semaine et du format gazon propice aux 2-0 nets, miser sur moins de 19.5 jeux représente une valeur solide.",
-      "confiance": 3,
-      "featured": true,
-      "score_prevu": null,
-      "status": "won",
-      "actual_score": "2-0",
-      "actual_result": "home",
-      "coup_de_coeur": true,
-      "stats": {
-        "recent_matches": [
-          {
-            "timestamp": 1781268900,
-            "tournament": "HER",
-            "home": "Sonmez Z.",
-            "away": "Linette M.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1781255400,
-            "tournament": "HER",
-            "home": "Krejcikova B.",
-            "away": "Ruse G.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1781178600,
-            "tournament": "HER",
-            "home": "Krejcikova B.",
-            "away": "Vandewinkel H.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1781172900,
-            "tournament": "HER",
-            "home": "Linette M.",
-            "away": "Pohankova M.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1781004600,
-            "tournament": "HER",
-            "home": "Krejcikova B.",
-            "away": "Zarazua R.",
-            "score": "2-0"
-          },
-          {
-            "timestamp": 1780909800,
-            "tournament": "HER",
-            "home": "Linette M.",
-            "away": "Birrell K.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1780049400,
-            "tournament": "FO",
-            "home": "Linette M.",
-            "away": "Swiatek I.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1779883200,
-            "tournament": "FO",
-            "home": "Ostapenko J.",
-            "away": "Linette M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1779624900,
-            "tournament": "FO",
-            "home": "Baptiste H.",
-            "away": "Krejcikova B.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1779624600,
-            "tournament": "FO",
-            "home": "Valentova T.",
-            "away": "Linette M.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778938800,
-            "tournament": "PAR",
-            "home": "Krejcikova B.",
-            "away": "Yastremska D.",
-            "score": "0-2"
-          },
-          {
-            "timestamp": 1778849400,
-            "tournament": "PAR",
-            "home": "Osorio C.",
-            "away": "Krejcikova B.",
-            "score": "1-2"
-          },
-          {
-            "timestamp": 1778756700,
-            "tournament": "PAR",
-            "home": "Krejcikova B.",
-            "away": "Golubic V.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778663400,
-            "tournament": "PAR",
-            "home": "Krejcikova B.",
-            "away": "Friedsam A-L.",
-            "score": "2-1"
-          },
-          {
-            "timestamp": 1778523000,
-            "tournament": "PAR",
-            "home": "Krejcikova B.",
-            "away": "Jimenez Kasintseva V.",
-            "score": "2-0"
-          }
-        ]
-      },
-      "markets": {
-        "over_under": {
-          "18.5": {
-            "over": 1.33,
-            "under": 2.81
-          },
-          "19.0": {
-            "over": 1.39,
-            "under": 2.63
-          },
-          "19.5": {
-            "over": 1.51,
-            "under": 2.37
-          },
-          "20.0": {
-            "over": 1.6,
-            "under": 2.16
-          },
-          "20.5": {
-            "over": 1.71,
-            "under": 2.02
-          },
-          "21.0": {
-            "over": 1.82,
-            "under": 1.9
-          },
-          "21.5": {
-            "over": 1.9,
-            "under": 1.86
-          },
-          "22.0": {
-            "over": 2.07,
-            "under": 1.69
-          },
-          "22.5": {
-            "over": 2.14,
-            "under": 1.62
-          },
-          "23.0": {
-            "over": 2.3,
-            "under": 1.53
-          },
-          "23.5": {
-            "over": 2.38,
-            "under": 1.52
-          },
-          "24.0": {
-            "over": 2.44,
-            "under": 1.45
-          },
-          "24.5": {
-            "over": 2.46,
-            "under": 1.43
-          },
-          "2.5": {
-            "over": 2.59,
-            "under": 1.47
-          }
-        },
-        "handicap": {
-          "1.5": {
-            "home": 1.13,
-            "away": 1.85
-          },
-          "-1.5": {
-            "home": 1.87,
-            "away": 5.25
-          },
-          "0.5": {
-            "away": 3.01
-          },
-          "-0.5": {
-            "home": 1.35
-          },
-          "1.0": {
-            "away": 2.92
-          },
-          "-1.0": {
-            "home": 1.36
-          },
-          "2.0": {
-            "away": 2.61
-          },
-          "-2.0": {
-            "home": 1.44
-          },
-          "2.5": {
-            "away": 2.42
-          },
-          "-2.5": {
-            "home": 1.5
-          },
-          "3.0": {
-            "away": 2.26
-          },
-          "-3.0": {
-            "home": 1.58
-          },
-          "3.5": {
-            "away": 2.04
-          },
-          "-3.5": {
-            "home": 1.71
-          },
-          "4.0": {
-            "away": 1.86
-          },
-          "-4.0": {
-            "home": 1.86
-          },
-          "4.5": {
-            "away": 1.71
-          },
-          "-4.5": {
-            "home": 2.1
-          },
-          "5.0": {
-            "away": 1.51
-          },
-          "-5.0": {
-            "home": 2.42
-          },
-          "5.5": {
-            "away": 1.42
-          },
-          "-5.5": {
-            "home": 2.69
-          },
-          "6.0": {
-            "away": 1.26
-          },
-          "-6.0": {
-            "home": 3.54
-          },
-          "6.5": {
-            "away": 1.22
-          },
-          "-6.5": {
-            "home": 3.9
-          },
-          "7.0": {
-            "away": 1.1
-          },
-          "-7.0": {
-            "home": 6.05
-          },
-          "7.5": {
-            "away": 1.08
-          },
-          "-7.5": {
-            "home": 6.55
-          }
-        }
-      },
-      "sport_label": "🎾 Tennis",
-      "league_label": "WTA Hertogenbosch (Netherlands)",
-      "archived_at": "2026-06-13T11:32:43.880Z"
-    },
     {
       "event_id": "8OqLvla4",
       "flashscore_id": "8OqLvla4",
@@ -124315,6 +123139,596 @@
       "sport_label": "🎾 Tennis",
       "league_label": "WTA Eastbourne (United Kingdom)",
       "archived_at": "2026-06-26T17:22:37.720Z"
+    },
+    {
+      "event_id": "G6Knir4m",
+      "flashscore_id": "G6Knir4m",
+      "flashscore_sport_id": 2,
+      "home_team_id": "SWxNhpmK",
+      "away_team_id": "O4ywE5Ah",
+      "tournament_id": "ucjjk12k",
+      "tournament_url": "/tennis/atp-singles/eastbourne/",
+      "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
+      "commence_time": "2026-06-26T15:00:00.000Z",
+      "time_display": "Ven. 17h00",
+      "home": "Draper J.",
+      "away": "Humbert U.",
+      "match": "Draper J. vs Humbert U.",
+      "prono": "win-home",
+      "pari": "Moins de 23.5 jeux",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 1.49,
+        "nul": null,
+        "exterieur": 2.58
+      },
+      "pick_category": "ou",
+      "analyse": "Jack Draper évolue à domicile sur gazon, sa surface de prédilection, et affiche une forme impeccable à Eastbourne avec trois victoires consécutives toutes acquises en deux sets secs (2-0 contre Giron, Pinnington Jones et Diallo). Le Britannique n'a pas laissé le moindre set dans ce tournoi, signe d'une dominance technique et mentale remarquable sur cette surface. Humbert, de son côté, présente un bilan plus mitigé : s'il a remporté ses deux derniers matchs à Eastbourne (2-0 contre Halys et Brooksby), il a subi un 2-0 sévère face à Paul à Queen's la semaine passée et reste sur une demi-finale difficile contre Bellucci où il a lâché un set. Sur gazon, Draper dispose d'un service dévastateur et d'un tennis agressif particulièrement adapté à la surface qui rend ses premiers balles quasi-imprenable. Compte tenu de la supériorité actuelle de Draper sur gazon et de son avantage à domicile, un match expédié en deux sets rapides semble probable, orientant vers un total de jeux modéré. Le 'Moins de 22.5 jeux' à 2.18 offre une valeur intéressante si Draper impose son rythme dès le départ, mais la résistance d'Humbert en Grand Chelem et son niveau global justifient de viser un total légèrement au-dessus : le 'Moins de 23.5 jeux' à 1.85 constitue le meilleur compromis entre valeur et sécurité.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "0-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1782399900,
+            "tournament": "EAS",
+            "home": "Humbert U.",
+            "away": "Halys Q.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782394800,
+            "tournament": "EAS",
+            "home": "Draper J.",
+            "away": "Diallo G.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782317700,
+            "tournament": "EAS",
+            "home": "Draper J.",
+            "away": "Pinnington Jones J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782306300,
+            "tournament": "EAS",
+            "home": "Humbert U.",
+            "away": "Brooksby J.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782231300,
+            "tournament": "EAS",
+            "home": "Humbert U.",
+            "away": "Bellucci M.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1782134400,
+            "tournament": "EAS",
+            "home": "Giron M.",
+            "away": "Draper J.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781968200,
+            "tournament": "LON",
+            "home": "Paul T.",
+            "away": "Humbert U.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781889900,
+            "tournament": "LON",
+            "home": "Humbert U.",
+            "away": "Hijikata R.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781871900,
+            "tournament": "LON",
+            "home": "Medjedovic H.",
+            "away": "Humbert U.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1781624700,
+            "tournament": "LON",
+            "home": "Humbert U.",
+            "away": "Cilic M.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781169000,
+            "tournament": "HER",
+            "home": "Humbert U.",
+            "away": "Bonzi B.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1780934700,
+            "tournament": "HER",
+            "home": "Humbert U.",
+            "away": "Ymer E.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1779892500,
+            "tournament": "FO",
+            "home": "Humbert U.",
+            "away": "Halys Q.",
+            "score": "0-3"
+          },
+          {
+            "timestamp": 1779714900,
+            "tournament": "FO",
+            "home": "Humbert U.",
+            "away": "Mannarino A.",
+            "score": "3-0"
+          },
+          {
+            "timestamp": 1779358200,
+            "tournament": "HAM",
+            "home": "Buse I.",
+            "away": "Humbert U.",
+            "score": "2-1"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "20.5": {
+            "over": 1.34,
+            "under": 2.95
+          },
+          "21.0": {
+            "over": 1.3,
+            "under": 3.04
+          },
+          "21.5": {
+            "over": 1.37,
+            "under": 2.85
+          },
+          "22.0": {
+            "over": 1.46,
+            "under": 2.49
+          },
+          "22.5": {
+            "over": 1.59,
+            "under": 2.18
+          },
+          "23.0": {
+            "over": 1.75,
+            "under": 1.99
+          },
+          "23.5": {
+            "over": 1.87,
+            "under": 1.85
+          },
+          "24.0": {
+            "over": 1.91,
+            "under": 1.81
+          },
+          "24.5": {
+            "over": 1.89,
+            "under": 1.8
+          },
+          "25.0": {
+            "over": 1.98,
+            "under": 1.72
+          },
+          "25.5": {
+            "over": 2.02,
+            "under": 1.71
+          },
+          "26.0": {
+            "over": 2.18,
+            "under": 1.56
+          },
+          "26.5": {
+            "over": 2.3,
+            "under": 1.52
+          },
+          "27.0": {
+            "over": 2.38,
+            "under": 1.46
+          },
+          "2.5": {
+            "over": 2.19,
+            "under": 1.56
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 1.21,
+            "away": 1.75
+          },
+          "-1.5": {
+            "home": 2.04,
+            "away": 3.8
+          },
+          "0.0": {
+            "home": 1.53,
+            "away": 2.38
+          },
+          "0.5": {
+            "home": 1.49,
+            "away": 2.24
+          },
+          "-0.5": {
+            "home": 1.59,
+            "away": 2.49
+          },
+          "1.0": {
+            "home": 1.44,
+            "away": 2.13
+          },
+          "-1.0": {
+            "home": 1.65,
+            "away": 2.65
+          },
+          "2.0": {
+            "away": 1.86
+          },
+          "-2.0": {
+            "home": 1.86
+          },
+          "2.5": {
+            "away": 1.72
+          },
+          "-2.5": {
+            "home": 2.04
+          },
+          "3.0": {
+            "away": 1.55
+          },
+          "-3.0": {
+            "home": 2.32
+          },
+          "3.5": {
+            "away": 1.44
+          },
+          "-3.5": {
+            "home": 2.63
+          },
+          "4.0": {
+            "away": 1.27
+          },
+          "-4.0": {
+            "home": 3.48
+          },
+          "4.5": {
+            "away": 1.22
+          },
+          "-4.5": {
+            "home": 3.9
+          },
+          "5.0": {
+            "away": 1.09
+          },
+          "-5.0": {
+            "home": 6.2
+          },
+          "5.5": {
+            "away": 1.08
+          },
+          "-5.5": {
+            "home": 6.8
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Eastbourne (United Kingdom)",
+      "archived_at": "2026-06-26T19:21:58.733Z"
+    },
+    {
+      "event_id": "x03mVMcC",
+      "flashscore_id": "x03mVMcC",
+      "flashscore_sport_id": 2,
+      "home_team_id": "I1mux0lj",
+      "away_team_id": "0zQXLfz4",
+      "tournament_id": "sppot5u3",
+      "tournament_url": "/tennis/atp-singles/mallorca/",
+      "sport_key": "flashscore_tennis_atp_mallorca_spain",
+      "commence_time": "2026-06-26T15:30:00.000Z",
+      "time_display": "Ven. 17h30",
+      "home": "Marozsan F.",
+      "away": "Davidovich Fokina A.",
+      "match": "Marozsan F. vs Davidovich Fokina A.",
+      "prono": "win-home",
+      "pari": "Moins de 22.5 jeux",
+      "cote_retenue": 1.85,
+      "cotes": {
+        "domicile": 3,
+        "nul": null,
+        "exterieur": 1.39
+      },
+      "pick_category": "ou",
+      "analyse": "Ce quart de finale à Mallorca oppose deux joueurs en grande forme sur gazon cette semaine. Davidovich Fokina a enchaîné trois victoires convaincantes en deux sets face à Norrie, Moutet, Walton et Dimitrov, montrant une domination claire sur cette surface. Marozsan, de son côté, a remporté ses deux premiers matches à Mallorca contre Tabilo (2-0) et Molcan (2-1), après une défaite en demi-finale à Halle contre Fritz. Sur gazon, le service joue un rôle prépondérant : les échanges sont courts, les breaks rares, ce qui favorise mécaniquement des matchs ramassés en nombre de jeux. Les deux joueurs ont démontré une efficacité sur leur mise en jeu, Davidovich Fokina en particulier semblant expédier ses adversaires sans laisser la partie s'étirer. Avec Davidovich Fokina légèrement favori mais Marozsan très compétitif à domicile (il est né en Hongrie mais joue sur une surface qu'il maîtrise cette semaine), un match décidé en deux sets secs est très probable. Sur gazon, la surface la plus rapide du circuit, même un troisième set improbable ne dépasserait pas facilement 22 jeux au total.",
+      "confiance": 3,
+      "featured": false,
+      "score_prevu": null,
+      "status": "won",
+      "actual_score": "1-2",
+      "actual_result": "away",
+      "coup_de_coeur": true,
+      "stats": {
+        "recent_matches": [
+          {
+            "timestamp": 1782402000,
+            "tournament": "MAL",
+            "home": "Dimitrov G.",
+            "away": "Davidovich Fokina A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1782393900,
+            "tournament": "MAL",
+            "home": "Kecmanovic M.",
+            "away": "Marozsan F.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1782306300,
+            "tournament": "MAL",
+            "home": "Walton A.",
+            "away": "Davidovich Fokina A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1782209100,
+            "tournament": "MAL",
+            "home": "Marozsan F.",
+            "away": "Tabilo A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1782128700,
+            "tournament": "MAL",
+            "home": "Marozsan F.",
+            "away": "Molcan A.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1781887200,
+            "tournament": "LON",
+            "home": "Paul T.",
+            "away": "Davidovich Fokina A.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1781779200,
+            "tournament": "LON",
+            "home": "Moutet C.",
+            "away": "Davidovich Fokina A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781775600,
+            "tournament": "HAL",
+            "home": "Marozsan F.",
+            "away": "Fritz T.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781629500,
+            "tournament": "LON",
+            "home": "Norrie C.",
+            "away": "Davidovich Fokina A.",
+            "score": "0-2"
+          },
+          {
+            "timestamp": 1781616600,
+            "tournament": "HAL",
+            "home": "Marozsan F.",
+            "away": "Kecmanovic M.",
+            "score": "2-1"
+          },
+          {
+            "timestamp": 1780927800,
+            "tournament": "STU",
+            "home": "Onclin G.",
+            "away": "Marozsan F.",
+            "score": "2-0"
+          },
+          {
+            "timestamp": 1780909800,
+            "tournament": "STU",
+            "home": "Davidovich Fokina A.",
+            "away": "Bellucci M.",
+            "score": "1-2"
+          },
+          {
+            "timestamp": 1779873000,
+            "tournament": "FO",
+            "home": "Davidovich Fokina A.",
+            "away": "Tirante T. A.",
+            "score": "1-3"
+          },
+          {
+            "timestamp": 1779614100,
+            "tournament": "FO",
+            "home": "Davidovich Fokina A.",
+            "away": "Dzumhur D.",
+            "score": "3-2"
+          },
+          {
+            "timestamp": 1779613800,
+            "tournament": "FO",
+            "home": "Kecmanovic M.",
+            "away": "Marozsan F.",
+            "score": "3-0"
+          }
+        ]
+      },
+      "markets": {
+        "over_under": {
+          "19.5": {
+            "over": 1.27,
+            "under": 3.14
+          },
+          "20.0": {
+            "over": 1.32,
+            "under": 2.92
+          },
+          "20.5": {
+            "over": 1.46,
+            "under": 2.54
+          },
+          "21.0": {
+            "over": 1.48,
+            "under": 2.43
+          },
+          "21.5": {
+            "over": 1.6,
+            "under": 2.24
+          },
+          "22.0": {
+            "over": 1.7,
+            "under": 2.05
+          },
+          "22.5": {
+            "over": 1.86,
+            "under": 1.85
+          },
+          "23.0": {
+            "over": 1.99,
+            "under": 1.75
+          },
+          "23.5": {
+            "over": 2.11,
+            "under": 1.65
+          },
+          "24.0": {
+            "over": 2.13,
+            "under": 1.62
+          },
+          "24.5": {
+            "over": 2.18,
+            "under": 1.6
+          },
+          "25.0": {
+            "over": 2.22,
+            "under": 1.54
+          },
+          "25.5": {
+            "over": 2.34,
+            "under": 1.52
+          },
+          "2.5": {
+            "over": 2.49,
+            "under": 1.51
+          },
+          "26.5": {
+            "over": 2.75,
+            "under": 1.42
+          },
+          "27.5": {
+            "over": 2.95,
+            "under": 1.38
+          },
+          "28.5": {
+            "over": 3.35,
+            "under": 1.3
+          }
+        },
+        "handicap": {
+          "1.5": {
+            "home": 2.13,
+            "away": 1.13
+          },
+          "-1.5": {
+            "home": 5.15,
+            "away": 1.71
+          },
+          "0.0": {
+            "home": 2.94,
+            "away": 1.36
+          },
+          "0.5": {
+            "home": 2.85,
+            "away": 1.34
+          },
+          "-0.5": {
+            "home": 3.09,
+            "away": 1.4
+          },
+          "1.0": {
+            "home": 2.73
+          },
+          "-1.0": {
+            "away": 1.41
+          },
+          "2.0": {
+            "home": 2.38
+          },
+          "-2.0": {
+            "away": 1.53
+          },
+          "2.5": {
+            "home": 2.15
+          },
+          "-2.5": {
+            "away": 1.65
+          },
+          "3.0": {
+            "home": 1.95
+          },
+          "-3.0": {
+            "away": 1.78
+          },
+          "3.5": {
+            "home": 1.81
+          },
+          "-3.5": {
+            "away": 1.96
+          },
+          "4.0": {
+            "home": 1.53
+          },
+          "-4.0": {
+            "away": 2.36
+          },
+          "4.5": {
+            "home": 1.38
+          },
+          "-4.5": {
+            "away": 2.92
+          },
+          "5.0": {
+            "home": 1.25
+          },
+          "-5.0": {
+            "away": 3.62
+          },
+          "5.5": {
+            "home": 1.2
+          },
+          "-5.5": {
+            "away": 4.15
+          },
+          "6.0": {
+            "home": 1.09
+          },
+          "-6.0": {
+            "away": 6.35
+          },
+          "6.5": {
+            "home": 1.08
+          },
+          "-6.5": {
+            "away": 6.85
+          }
+        }
+      },
+      "sport_label": "🎾 Tennis",
+      "league_label": "ATP Mallorca (Spain)",
+      "archived_at": "2026-06-26T19:21:58.733Z"
     }
   ],
   "combos": [
