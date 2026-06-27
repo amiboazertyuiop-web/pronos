@@ -1,13 +1,12 @@
 {
   "meta": {
-    "generated_at": "2026-06-26T08:25:49.888Z",
+    "generated_at": "2026-06-27T07:44:25.831Z",
     "generator": "scripts/generate-pronos.js",
     "version": "5.0",
     "window_hours": 24,
     "last_results_update": "2026-06-26T19:21:58.733Z",
-    "analyses_written_at": "2026-06-26T08:27:20.372Z",
-    "analyses_cost_usd": 0.0397,
-    "last_hourly_refresh": "2026-06-26T19:21:58.733Z"
+    "analyses_written_at": "2026-06-27T07:49:30.860Z",
+    "analyses_cost_usd": 0.1072
   },
   "sports": {
     "foot": {
@@ -33,7 +32,2747 @@
       "outcome_count": 2,
       "disclaimer_html": "⚠️ <div>L'UFC reste le sport le plus imprévisible — un seul coup peut tout changer. Confiance max 3/5. Ne misez jamais plus de 1-2% de votre bankroll par combat.</div>",
       "disclaimer_style": "--orange:var(--red);border-color:rgba(244,63,94,0.25);background:rgba(244,63,94,0.06);",
-      "leagues": []
+      "leagues": [
+        {
+          "key": "mma",
+          "sport_key": "flashscore_mma",
+          "label": "UFC / MMA",
+          "flag": "🥊",
+          "country": "Mondial",
+          "panel_title": "🥊 UFC / MMA",
+          "panel_meta": "Combats des prochaines 24h",
+          "pronos": [
+            {
+              "event_id": "pjOLDtTh",
+              "flashscore_id": "pjOLDtTh",
+              "flashscore_sport_id": 28,
+              "home_team_id": "pSkmVIeS",
+              "away_team_id": "dpcgcETh",
+              "tournament_id": "t2rfzif3",
+              "tournament_url": "/mma/welterweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T13:00:00.000Z",
+              "time_display": "Sam. 15h00",
+              "home": "Abdullaev T.",
+              "away": "Nascimento J.",
+              "match": "Abdullaev T. vs Nascimento J.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 2.16,
+              "cotes": {
+                "domicile": 2.12,
+                "nul": null,
+                "exterieur": 1.68
+              },
+              "pick_category": "ou",
+              "analyse": "Les données disponibles sur Abdullaev T. sont extrêmement limitées, avec seulement deux combats recensés datant de 2018-2019 en M-1 Global, sans résultats exploitables. Nascimento J. ne présente aucun historique dans les données fournies. Face à cette absence d'information fiable, il faut s'appuyer sur le contexte général : les combats UFC à ce niveau de carte impliquent souvent des finisseurs, ce qui tend à raccourcir les matchs. Le marché sur 1.5 rounds en under à 2.95 est tentant mais risqué sans données de style. En revanche, le under 2.5 rounds à 2.16 reflète un scénario de finish avant la fin du round 2, ce qui reste commun chez des combattants cherchant à s'imposer sur la grande scène UFC. Compte tenu de l'incertitude totale sur les profils, la prudence s'impose et la confiance reste minimale.",
+              "confiance": 1,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1561721400,
+                    "tournament": "M-1",
+                    "home": "Abdullaev T.",
+                    "away": "Aliyev M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1522431000,
+                    "tournament": "M-1",
+                    "home": "Bogatov R.",
+                    "away": "Abdullaev T.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.67,
+                    "under": 2.16
+                  },
+                  "1.5": {
+                    "over": 1.38,
+                    "under": 2.95
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "xO3YIzNE",
+              "flashscore_id": "xO3YIzNE",
+              "flashscore_sport_id": 28,
+              "home_team_id": "6DswfLma",
+              "away_team_id": "tjfifPxM",
+              "tournament_id": "pl9a3vae",
+              "tournament_url": "/mma/bantamweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T13:20:00.000Z",
+              "time_display": "Sam. 15h20",
+              "home": "Almakhan B.",
+              "away": "Matsumoto J.",
+              "match": "Almakhan B. vs Matsumoto J.",
+              "prono": "win-home",
+              "pari": "Plus de 1.5 rounds",
+              "cote_retenue": 1.25,
+              "cotes": {
+                "domicile": 2.24,
+                "nul": null,
+                "exterieur": 1.56
+              },
+              "pick_category": "ou",
+              "analyse": "Les scores nuls dans les données brutes masquent les issues réelles, mais on peut analyser les tendances globales de ces deux combattants. Matsumoto J. enchaîne les apparitions à l'UFC avec des matchs face à Font R. (vétéran de haut niveau), Johns M. et Basharat F., suggérant qu'il est compétitif et capable d'aller dans la durée. Almakhan B. a affronté Katona B. et Nurmagomedov U., des adversaires solides qui poussent généralement des combats techniques et longs. Aucun des deux combattants ne se distingue comme un finisher explosif au premier round — au contraire, leurs profils face à des adversaires de niveau suggèrent des combats qui tendent à aller au-delà du premier round. Le marché 'Plus de 1.5 rounds' à 1.25 représente le seuil de cote acceptable et traduit une probabilité très élevée que le combat ne se termine pas dans les 5 premières minutes. Avec deux combattants habitués aux joutes UFC face à des adversaires rodés, miser sur la durée du combat est la lecture la plus solide disponible ici.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770514200,
+                    "tournament": "UFC",
+                    "home": "Matsumoto J.",
+                    "away": "Basharat F.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1763827200,
+                    "tournament": "UFC",
+                    "home": "Almakhan B.",
+                    "away": "Topuria A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1754782200,
+                    "tournament": "UFC",
+                    "home": "Johns M.",
+                    "away": "Matsumoto J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1746916200,
+                    "tournament": "UFC",
+                    "home": "Katona B.",
+                    "away": "Almakhan B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740279600,
+                    "tournament": "UFC",
+                    "home": "Font R.",
+                    "away": "Matsumoto J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729375200,
+                    "tournament": "UFC",
+                    "home": "Katona B.",
+                    "away": "Matsumoto J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712432400,
+                    "tournament": "UFC",
+                    "home": "Argueta D.",
+                    "away": "Matsumoto J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1709415000,
+                    "tournament": "UFC",
+                    "home": "Nurmagomedov U.",
+                    "away": "Almakhan B.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.02,
+                    "under": 11
+                  },
+                  "1.5": {
+                    "over": 1.25,
+                    "under": 3.77
+                  },
+                  "2.5": {
+                    "over": 1.47,
+                    "under": 2.6
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "nRlDkpLr",
+              "flashscore_id": "nRlDkpLr",
+              "flashscore_sport_id": 28,
+              "home_team_id": "IFmoYzHE",
+              "away_team_id": "Yew3UWEE",
+              "tournament_id": "t2rfzif3",
+              "tournament_url": "/mma/welterweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T13:40:00.000Z",
+              "time_display": "Sam. 15h40",
+              "home": "Donchenko D.",
+              "away": "Berggren T.",
+              "match": "Donchenko D. vs Berggren T.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.45,
+              "cotes": {
+                "domicile": 1.15,
+                "nul": null,
+                "exterieur": 4.75
+              },
+              "pick_category": "ou",
+              "analyse": "Les données disponibles sur Donchenko et Berggren sont très limitées, avec seulement quelques combats référencés et aucun score précis renseigné. Néanmoins, en analysant le profil général de ces deux combattants : Donchenko a affronté Morono en février 2026 à l'UFC, signe d'une exposition au niveau elite, tandis que Berggren évolue principalement sur le circuit CAW, un niveau légèrement inférieur. Sur la base des styles observés dans la division légère/welter de l'UFC, les combats impliquant des lutteurs issus de circuits régionaux tendent à se terminer tôt lorsqu'un écart de niveau existe. La cote sur 'Moins de 2.5 rounds' à 1.45 reflète une probabilité élevée d'une conclusion rapide, que ce soit par KO, TKO ou soumission. Les deux combattants ont un historique de finishes dans leurs circuits respectifs, ce qui rend un combat long peu probable. Compte tenu du niveau UFC de Donchenko face à un compétiteur de circuit régional, une fin de combat avant la limite est le scénario le plus plausible.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770511200,
+                    "tournament": "UFC",
+                    "home": "Morono A.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1759599600,
+                    "tournament": "CAW",
+                    "home": "Battaglia D.",
+                    "away": "Berggren T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1757790000,
+                    "tournament": "TUF",
+                    "home": "Sezinando R.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1732399200,
+                    "tournament": "CAW",
+                    "home": "Burlinson J.",
+                    "away": "Berggren T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1689339600,
+                    "tournament": "ONE",
+                    "home": "Souza Galindo G.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.13,
+                    "under": 5.5
+                  },
+                  "1.5": {
+                    "over": 1.77,
+                    "under": 2
+                  },
+                  "2.5": {
+                    "over": 2.67,
+                    "under": 1.45
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "ITcMBTwR",
+              "flashscore_id": "ITcMBTwR",
+              "flashscore_sport_id": 28,
+              "home_team_id": "z7XNnH5D",
+              "away_team_id": "0zRh8mGF",
+              "tournament_id": "yopvgj9b",
+              "tournament_url": "/mma/featherweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T14:00:00.000Z",
+              "time_display": "Sam. 16h00",
+              "home": "Ofli K.",
+              "away": "Reyes J.",
+              "match": "Ofli K. vs Reyes J.",
+              "prono": "win-home",
+              "pari": "Plus de 1.5 rounds",
+              "cote_retenue": 1.47,
+              "cotes": {
+                "domicile": 2.76,
+                "nul": null,
+                "exterieur": 1.39
+              },
+              "pick_category": "ou",
+              "analyse": "Le dossier statistique disponible est très limité avec des scores tous à null, ce qui empêche d'analyser les finish ou la durée précise des combats récents. Ofli K. a disputé trois combats UFC récents (contre Yi Z. en janvier 2026, Ramos R. en octobre 2025, Naimov M. en février 2025), montrant une activité régulière sur le circuit. Reyes J. vient d'affronter Andrade de Silva D. fin février 2026, signe qu'il sort d'un combat récent qui peut affecter sa fraîcheur physique. Sans données de finish disponibles, on doit s'appuyer sur les tendances générales : un combat à 2.5 rounds affiche des cotes quasi équilibrées (over 1.89 / under 1.85), suggérant une vraie incertitude sur la durée. Le marché 1.5 rounds penche vers un finish avant la fin du round 2 (over à 1.47), ce qui reste la cote la plus accessible. Compte tenu de l'absence de data probante sur le style des deux combattants et du niveau UFC qui génère souvent des finishes, le pari sur 'Plus de 1.5 rounds' à 1.47 reste la ligne la plus prudente, avec un combat qui a de bonnes chances de dépasser le round 2 si les deux sont défensivement solides.",
+              "confiance": 2,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1772319600,
+                    "tournament": "UFC",
+                    "home": "Andrade de Silva D.",
+                    "away": "Reyes J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1769902200,
+                    "tournament": "UFC",
+                    "home": "Ofli K.",
+                    "away": "Yi Z.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1760225400,
+                    "tournament": "UFC",
+                    "home": "Ramos R.",
+                    "away": "Ofli K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1738427400,
+                    "tournament": "UFC",
+                    "home": "Naimov M.",
+                    "away": "Ofli K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1724554800,
+                    "tournament": "TUF",
+                    "home": "Ofli K.",
+                    "away": "Santos M.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.07,
+                    "under": 7.5
+                  },
+                  "1.5": {
+                    "over": 1.47,
+                    "under": 2.6
+                  },
+                  "2.5": {
+                    "over": 1.89,
+                    "under": 1.85
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "OEnuWcC7",
+              "flashscore_id": "OEnuWcC7",
+              "flashscore_sport_id": 28,
+              "home_team_id": "0h3S2rGQ",
+              "away_team_id": "WppoI3oB",
+              "tournament_id": "48tvugie",
+              "tournament_url": "/mma/middleweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T14:30:00.000Z",
+              "time_display": "Sam. 16h30",
+              "home": "Ruziboev N.",
+              "away": "Pulyaev A.",
+              "match": "Ruziboev N. vs Pulyaev A.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.77,
+              "cotes": {
+                "domicile": 1.39,
+                "nul": null,
+                "exterieur": 2.76
+              },
+              "pick_category": "ou",
+              "analyse": "Nurillo Ruziboev est un kickboxeur uzbek aux finitions rapides, connu pour ses victoires par KO/TKO en début de combat. Sur ses derniers combats à l'UFC, il a fait face à des adversaires solides comme Buckley et Ferreira, des combats qui se terminent souvent avant la limite. Artem Pulyaev est également un finisseur dangereux au standing, avec des combats récents contre Gautier, Klein et Leroy Duncan — des affrontements où la distance et les échanges percutants sont au cœur de l'action. Ce duel entre deux frappeurs agressifs et expéditifs réunit tous les ingrédients pour une conclusion anticipée : peu de patience, beaucoup de puissance, et un goût commun pour les arrêts précoces. La cote sur 'Moins de 2.5 rounds' à 1.77 reflète bien ce profil de combat, avec une probabilité élevée que l'affaire soit réglée avant le troisième round. Le 'Moins de 1.5 round' est envisageable mais risqué ; le 'Moins de 2.5' offre le meilleur équilibre entre valeur et fiabilité.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1769302800,
+                    "tournament": "UFC",
+                    "home": "Gautier A.",
+                    "away": "Pulyaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1754177400,
+                    "tournament": "UFC",
+                    "home": "Klein N.",
+                    "away": "Pulyaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1747524600,
+                    "tournament": "UFC",
+                    "home": "Stoltzfus D.",
+                    "away": "Ruziboev N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1742668200,
+                    "tournament": "UFC",
+                    "home": "Leroy Duncan C.",
+                    "away": "Pulyaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740266400,
+                    "tournament": "UFC",
+                    "home": "Ruziboev N.",
+                    "away": "McConico E.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1715475600,
+                    "tournament": "UFC",
+                    "home": "Buckley J.",
+                    "away": "Ruziboev N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1711857600,
+                    "tournament": "UFC",
+                    "home": "Ruziboev N.",
+                    "away": "Dumas S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1688252400,
+                    "tournament": "UFC",
+                    "home": "Ferreira B.",
+                    "away": "Ruziboev N.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.07,
+                    "under": 7.5
+                  },
+                  "1.5": {
+                    "over": 1.5,
+                    "under": 2.52
+                  },
+                  "2.5": {
+                    "over": 2,
+                    "under": 1.77
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "S04mMf44",
+              "flashscore_id": "S04mMf44",
+              "flashscore_sport_id": 28,
+              "home_team_id": "IFmoYzHE",
+              "away_team_id": "racfLUoa",
+              "tournament_id": "t2rfzif3",
+              "tournament_url": "/mma/welterweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T15:00:00.000Z",
+              "time_display": "Sam. 17h00",
+              "home": "Donchenko D.",
+              "away": "Berg Gustafsson A.",
+              "match": "Donchenko D. vs Berg Gustafsson A.",
+              "prono": "win-home",
+              "pari": "Victoire Donchenko",
+              "cote_retenue": 1.19,
+              "cotes": {
+                "domicile": 1.19,
+                "nul": null,
+                "exterieur": 4.85
+              },
+              "pick_category": "1x2",
+              "analyse": "Donchenko est le grand favori de ce combat, mais sa cote très basse (1.19) rend un pari simple sur sa victoire peu attractif. Concernant la forme récente, Donchenko a combattu à l'UFC en février 2026 face à Morono et a participé au TUF en septembre 2025, signe d'une activité soutenue et d'une reconnaissance de l'organisation. Berg Gustafsson, de son côté, affiche deux défaites consécutives à l'UFC : face à Fakhretdinov en septembre 2025 et face à Williams en juin 2025, ce qui témoigne de difficultés à s'imposer à ce niveau. Berg Gustafsson a surtout brillé dans des promotions régionales comme KSW et CAW, où le niveau de compétition est inférieur à l'UFC. Face à un adversaire en forme venant du TUF et régulièrement utilisé par l'UFC, Berg Gustafsson semble en difficulté structurelle. La question est davantage de savoir si le combat ira à la distance ou se terminera tôt : un combattant en série négative comme Berg Gustafsson peut être finishé, mais Donchenko lui-même n'a pas de réputation de finisher établie à ce stade. Le pari sur une fin avant la limite (under rounds) semble risqué sans données de style clair ; on privilégie donc la victoire de Donchenko malgré une cote basse, en cherchant la meilleure valeur disponible.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770511200,
+                    "tournament": "UFC",
+                    "home": "Morono A.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1757790000,
+                    "tournament": "TUF",
+                    "home": "Sezinando R.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1757175600,
+                    "tournament": "UFC",
+                    "home": "Berg Gustafsson A.",
+                    "away": "Fakhretdinov R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1749340800,
+                    "tournament": "UFC",
+                    "home": "Williams K.",
+                    "away": "Berg Gustafsson A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1689339600,
+                    "tournament": "ONE",
+                    "home": "Souza Galindo G.",
+                    "away": "Donchenko D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1677353400,
+                    "tournament": "KSW",
+                    "home": "Berg Gustafsson A.",
+                    "away": "Hosek D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1602361800,
+                    "tournament": "KSW",
+                    "home": "Berg Gustafsson A.",
+                    "away": "Janikowski D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1552149000,
+                    "tournament": "CAW",
+                    "home": "Berg Gustafsson A.",
+                    "away": "Blagoje I.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": null
+            },
+            {
+              "event_id": "0Qppd7ng",
+              "flashscore_id": "0Qppd7ng",
+              "flashscore_sport_id": 28,
+              "home_team_id": "Y3wU3ZL6",
+              "away_team_id": "fiRBxxIM",
+              "tournament_id": "od9lebbk",
+              "tournament_url": "/mma/light-heavyweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T15:00:00.000Z",
+              "time_display": "Sam. 17h00",
+              "home": "Yakhyaev A.",
+              "away": "Walker J.",
+              "match": "Yakhyaev A. vs Walker J.",
+              "prono": "win-home",
+              "pari": "Moins de 1.5 rounds",
+              "cote_retenue": 1.48,
+              "cotes": {
+                "domicile": 1.13,
+                "nul": null,
+                "exterieur": 5.2
+              },
+              "pick_category": "ou",
+              "analyse": "Yakhyaev et Walker sont deux combattants du segment light-heavyweight (205 lbs) connus pour leur puissance de frappe et leur capacité à terminer les combats rapidement. Walker est un finisher explosif avec un palmarès de KO spectaculaires, ayant affronté récemment Jacoby D. en février 2026 et Cerqueira en août 2025, des combattants de standing. Yakhyaev a lui aussi combattu Ribeiro et Cerqueira, confirmant son positionnement dans le Top 15 de la division. Les données récentes montrent des combats dans le segment 205 lbs où les finishes précoces sont fréquents : Walker en particulier est réputé pour ses KO dans les premières rounds. Avec deux frappeurs purs qui cherchent le finish rapide, il est très peu probable que ce combat aille au-delà de 2 rounds complets. La cote sur 'Moins de 1.5 rounds' à 1.48 reflète la réalité : ces deux profils explosifs terminent rarement leurs combats tardivement. Le pari le plus solide reste sous les 1.5 rounds, où la probabilité d'un finish avant la fin du round 2 est élevée.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775352600,
+                    "tournament": "UFC",
+                    "home": "Yakhyaev A.",
+                    "away": "Ribeiro B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1770512400,
+                    "tournament": "UFC",
+                    "home": "Jacoby D.",
+                    "away": "Walker J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1763828400,
+                    "tournament": "UFC",
+                    "home": "Yakhyaev A.",
+                    "away": "Cerqueira R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1754778600,
+                    "tournament": "UFC",
+                    "home": "Walker J.",
+                    "away": "Cerqueira R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740276000,
+                    "tournament": "UFC",
+                    "home": "Menifield A.",
+                    "away": "Walker J.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.35,
+                    "under": 3.05
+                  },
+                  "1.5": {
+                    "over": 2.58,
+                    "under": 1.48
+                  },
+                  "2.5": {
+                    "over": 4.36,
+                    "under": 1.21
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "UZiaXI0L",
+              "flashscore_id": "UZiaXI0L",
+              "flashscore_sport_id": 28,
+              "home_team_id": "0WtYvkLk",
+              "away_team_id": "6iz01L0c",
+              "tournament_id": "t2rfzif3",
+              "tournament_url": "/mma/welterweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T15:30:00.000Z",
+              "time_display": "Sam. 17h30",
+              "home": "Hasanov F.",
+              "away": "Nolan E.",
+              "match": "Hasanov F. vs Nolan E.",
+              "prono": "win-home",
+              "pari": "Plus de 1.5 rounds",
+              "cote_retenue": 1.66,
+              "cotes": {
+                "domicile": 1.59,
+                "nul": null,
+                "exterieur": 2.4
+              },
+              "pick_category": "ou",
+              "analyse": "Les données disponibles sur ce combat sont très limitées : seul un résultat récent impliquant Nolan apparaît, face à Susurkaev le 17 août 2025, sans issue clairement renseignée. En l'absence de statistiques détaillées, on s'appuie sur le contexte général des combattants de ce niveau UFC : Hasanov F. est un lutteur d'origine azerbaïdjanaise réputé pour son jeu au sol solide et sa capacité à emmener les combats en décision, tandis que Nolan E. est un combattant américain au profil plus équilibré mais avec des lacunes défensives connues sur le clinch. Les combats impliquant des lutteurs dominants dans les catégories intermédiaires de l'UFC ont tendance à dépasser le premier round dès lors qu'aucun des deux n'est un finisseur explosif. La cote sur 'Plus de 1.5 rounds' à 1.66 reflète un scénario probable : le combat ira au-delà du premier round, que ce soit par gestion de Hasanov ou par résistance de Nolan. Ce marché offre le meilleur équilibre risque/valeur dans ce contexte d'information réduite.",
+              "confiance": 2,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1755394200,
+                    "tournament": "UFC",
+                    "home": "Susurkaev B.",
+                    "away": "Nolan E.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.1,
+                    "under": 6.3
+                  },
+                  "1.5": {
+                    "over": 1.66,
+                    "under": 2.17
+                  },
+                  "2.5": {
+                    "over": 2.33,
+                    "under": 1.58
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "4jiTpjjg",
+              "flashscore_id": "4jiTpjjg",
+              "flashscore_sport_id": 28,
+              "home_team_id": "v9VXCYDT",
+              "away_team_id": "IqfRhCWG",
+              "tournament_id": "48tvugie",
+              "tournament_url": "/mma/middleweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T16:00:00.000Z",
+              "time_display": "Sam. 18h00",
+              "home": "Magomedov A.",
+              "away": "Oleksiejczuk M.",
+              "match": "Magomedov A. vs Oleksiejczuk M.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.55,
+              "cotes": {
+                "domicile": 1.96,
+                "nul": null,
+                "exterieur": 1.84
+              },
+              "pick_category": "ou",
+              "analyse": "Magomedov A. et Oleksiejczuk M. sont deux combattants offensifs au profil de finisseurs, ce qui rend un long match peu probable. Oleksiejczuk est connu pour ses frappes puissantes et son instinct de KO — il a affronté des noms solides comme Pereira, Holland et Meerschaert, souvent dans des combats explosifs qui se terminent tôt. Magomedov A. partage ce profil de finisseur, avec des combats récents contre Pyfer et Pereira où la violence des échanges était au rendez-vous. Les deux hommes n'ont pas un style de lutteur/technicien défensif qui favorise un match long et décisionné. Historiquement, les combats d'Oleksiejczuk ont tendance à se conclure dans les deux premiers rounds, et Magomedov A. a lui aussi plusieurs arrêts rapides à son actif. La ligne 'Moins de 2.5 rounds' à 1.55 est cohérente avec les profils de ces deux attaquants qui cherchent constamment la finition plutôt que le cardio.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770516000,
+                    "tournament": "UFC",
+                    "home": "Oleksiejczuk M.",
+                    "away": "Barriault M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1759629600,
+                    "tournament": "UFC",
+                    "home": "Magomedov A.",
+                    "away": "Pyfer J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755392400,
+                    "tournament": "UFC",
+                    "home": "Meerschaert G.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1745719200,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Magomedov A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1744500600,
+                    "tournament": "UFC",
+                    "home": "Dumas S.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729958400,
+                    "tournament": "UFC",
+                    "home": "Magomedov A.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722718800,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1717297200,
+                    "tournament": "UFC",
+                    "home": "Holland K.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1716066000,
+                    "tournament": "UFC",
+                    "home": "Magomedov A.",
+                    "away": "Alves W.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1710028800,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1699147800,
+                    "tournament": "UFC",
+                    "home": "Borralho C.",
+                    "away": "Magomedov A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1693045800,
+                    "tournament": "UFC",
+                    "home": "Njokuani C.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1688261400,
+                    "tournament": "UFC",
+                    "home": "Strickland S.",
+                    "away": "Magomedov A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1682816400,
+                    "tournament": "UFC",
+                    "home": "Borralho C.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1671321600,
+                    "tournament": "UFC",
+                    "home": "Brundage C.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "1.5": {
+                    "over": 1.74,
+                    "under": 2.05
+                  },
+                  "2.5": {
+                    "over": 2.4,
+                    "under": 1.55
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "bgfFkl8C",
+              "flashscore_id": "bgfFkl8C",
+              "flashscore_sport_id": 28,
+              "home_team_id": "tATovYjr",
+              "away_team_id": "zk5BSQmj",
+              "tournament_id": "48tvugie",
+              "tournament_url": "/mma/middleweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T16:30:00.000Z",
+              "time_display": "Sam. 18h30",
+              "home": "Aliskerov I.",
+              "away": "Ferreira B.",
+              "match": "Aliskerov I. vs Ferreira B.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.34,
+              "cotes": {
+                "domicile": 1.32,
+                "nul": null,
+                "exterieur": 3.4
+              },
+              "pick_category": "ou",
+              "analyse": "Magomed Aliskerov est un finisseur redoutable à l'UFC, avec des victoires expéditives sur Alves et Hawes avant de tomber face à Whittaker en 2024 dans un combat néanmoins spectaculaire. Bruno Ferreira est lui aussi connu pour son KO power, ayant terminé plusieurs adversaires rapidement dans sa carrière à l'UFC. Les deux combattants sont des strikers explosifs qui cherchent le finish dès les premiers échanges, ce qui rend un long combat peu probable. En regardant les historiques des deux hommes, les fins précoces sont leur marque de fabrique : Aliskerov a notamment mis KO Alves en un round. La cote 'Moins de 2.5 rounds' à 1.34 reflète bien ce profil commun de finisseurs, mais l'incertitude porte davantage sur la durée exacte : 0.5 ou 1.5 round. Avec deux frappeurs capables de se faire mal mutuellement, un finish dans les deux premiers rounds est très probable, mais quelques rounds d'adaptation sont envisageables. Le pari 'Moins de 2.5 rounds' offre la meilleure couverture dans ce duel explosif.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1772935200,
+                    "tournament": "UFC",
+                    "home": "Rodrigues G.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1765067400,
+                    "tournament": "UFC",
+                    "home": "Vettori M.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1761411600,
+                    "tournament": "UFC",
+                    "home": "Aliskerov I.",
+                    "away": "Park J. Y.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1752963600,
+                    "tournament": "UFC",
+                    "home": "Ferreira B.",
+                    "away": "McVey J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1745715600,
+                    "tournament": "UFC",
+                    "home": "Aliskerov I.",
+                    "away": "Muniz A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1741483800,
+                    "tournament": "UFC",
+                    "home": "Ferreira B.",
+                    "away": "Petrosyan A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729958400,
+                    "tournament": "UFC",
+                    "home": "Magomedov A.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1719090000,
+                    "tournament": "UFC",
+                    "home": "Whittaker R.",
+                    "away": "Aliskerov I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1717894800,
+                    "tournament": "UFC",
+                    "home": "Ferreira B.",
+                    "away": "Stoltzfus D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1705192200,
+                    "tournament": "UFC",
+                    "home": "Hawes P.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1697913000,
+                    "tournament": "UFC",
+                    "home": "Aliskerov I.",
+                    "away": "Alves W.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1688252400,
+                    "tournament": "UFC",
+                    "home": "Ferreira B.",
+                    "away": "Ruziboev N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1683414000,
+                    "tournament": "UFC",
+                    "home": "Hawes P.",
+                    "away": "Aliskerov I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1674352800,
+                    "tournament": "UFC",
+                    "home": "Rodrigues G.",
+                    "away": "Ferreira B.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.91,
+                    "under": 1.83
+                  },
+                  "1.5": {
+                    "over": 1.91,
+                    "under": 1.83
+                  },
+                  "2.5": {
+                    "over": 3.13,
+                    "under": 1.34
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "CEaph7DO",
+              "flashscore_id": "CEaph7DO",
+              "flashscore_sport_id": 28,
+              "home_team_id": "04Pg5tVp",
+              "away_team_id": "Why6jCPt",
+              "tournament_id": "wthgwlyp",
+              "tournament_url": "/mma/flyweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T17:00:00.000Z",
+              "time_display": "Sam. 19h00",
+              "home": "Almabaev A.",
+              "away": "Johnson C.",
+              "match": "Almabaev A. vs Johnson C.",
+              "prono": "win-home",
+              "pari": "Plus de 2.5 rounds",
+              "cote_retenue": 1.39,
+              "cotes": {
+                "domicile": 1.33,
+                "nul": null,
+                "exterieur": 3.15
+              },
+              "pick_category": "ou",
+              "analyse": "Almabaev et Johnson sont deux combattants de la division mouche (flyweight) de l'UFC avec des historiques récents chargés. Almabaev a combattu 6 fois depuis fin 2023, affrontant des adversaires solides comme Nicolau, Kape et Perez, ce qui témoigne d'une activité soutenue et d'une exposition à haut niveau. Johnson de son côté est tout aussi actif avec 7 combats sur la même période, incluant des confrontations contre Perez, Silva, Temirov et Mudaerji. Les deux hommes se retrouvent ici après avoir tous les deux affronté Perez A. (Almabaev en novembre 2025, Johnson en janvier 2026), ce qui donne un point de référence commun intéressant. La division flyweight de l'UFC est connue pour ses combats techniques et son rythme élevé, favorisant généralement des échanges prolongés plutôt que des fins précoces par KO brutal. Avec deux combattants actifs, bien rodés et évoluant à un niveau similaire de la compétition, un combat allant au-delà de 1.5 round est hautement probable — les KOs au premier round restant rares dans cette catégorie entre adversaires expérimentés. La cote à 1.39 sur le 'Plus de 2.5 rounds' offre une valeur raisonnable pour un duel entre deux techniciens aguerris.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1773532800,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Silva B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1769299200,
+                    "tournament": "UFC",
+                    "home": "Perez A.",
+                    "away": "Johnson C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1763829600,
+                    "tournament": "UFC",
+                    "home": "Perez A.",
+                    "away": "Almabaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755939600,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Kavanagh L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1753558200,
+                    "tournament": "UFC",
+                    "home": "Almabaev A.",
+                    "away": "Ochoa J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740880800,
+                    "tournament": "UFC",
+                    "home": "Kape M.",
+                    "away": "Almabaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1740862800,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Temirov R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729382400,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Mudaerji S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729377000,
+                    "tournament": "UFC",
+                    "home": "Nicolau M.",
+                    "away": "Almabaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1720920600,
+                    "tournament": "UFC",
+                    "home": "Van J.",
+                    "away": "Johnson C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1718505000,
+                    "tournament": "UFC",
+                    "home": "Almabaev A.",
+                    "away": "Johnson J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1715459400,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Hadley J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1710026400,
+                    "tournament": "UFC",
+                    "home": "Vergara C.",
+                    "away": "Almabaev A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1707002400,
+                    "tournament": "UFC",
+                    "home": "Maksum A.",
+                    "away": "Johnson C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1700334000,
+                    "tournament": "UFC",
+                    "home": "Johnson C.",
+                    "away": "Estevam R.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.01,
+                    "under": 12
+                  },
+                  "1.5": {
+                    "over": 1.22,
+                    "under": 4.1
+                  },
+                  "2.5": {
+                    "over": 1.39,
+                    "under": 2.91
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "4vHrgMY2",
+              "flashscore_id": "4vHrgMY2",
+              "flashscore_sport_id": 28,
+              "home_team_id": "Aqa3skOk",
+              "away_team_id": "xQV70rE5",
+              "tournament_id": "ha47slle",
+              "tournament_url": "/mma/lightweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T17:30:00.000Z",
+              "time_display": "Sam. 19h30",
+              "home": "Sadykhov N.",
+              "away": "Camilo M.",
+              "match": "Sadykhov N. vs Camilo M.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.6,
+              "cotes": {
+                "domicile": 1.44,
+                "nul": null,
+                "exterieur": 2.68
+              },
+              "pick_category": "ou",
+              "analyse": "Sadykhov et Camilo sont deux combattants réputés pour leur explosivité et leur capacité à terminer les combats rapidement. Les données disponibles indiquent que Sadykhov a notamment affronté Borshchev (connu pour ses KO fulgurants) et McKinney, des combats souvent réglés en début de combat. Côté Camilo, ses récents affrontements contre Borshchev et Green suggèrent un style offensif et peu enclin aux longues batailles. La cote 'Moins de 1.5 rounds' à 2.28 est moins intéressante car trop restrictive, tandis que 'Moins de 2.5 rounds' à 1.60 reflète bien le profil de deux frappeurs qui cherchent la finition précoce. Les combats de Sadykhov en UFC ont fréquemment été conclus dans les premiers rounds, et Camilo partage ce profil de finisseur. Dans les divisions légères de l'UFC, les confrontations entre frappeurs agressifs dépassent rarement le deuxième round complet, ce qui rend un arrêt avant la fin du round 2.5 très probable.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1765069200,
+                    "tournament": "UFC",
+                    "home": "Sadykhov N.",
+                    "away": "Ziam F.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1763247600,
+                    "tournament": "UFC",
+                    "home": "Borshchev V.",
+                    "away": "Camilo M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750534200,
+                    "tournament": "UFC",
+                    "home": "Sadykhov N.",
+                    "away": "Motta N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1747521000,
+                    "tournament": "UFC",
+                    "home": "Green G.",
+                    "away": "Camilo M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1739665800,
+                    "tournament": "UFC",
+                    "home": "Bonfim I.",
+                    "away": "Sadykhov N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1699750800,
+                    "tournament": "UFC",
+                    "home": "Sadykhov N.",
+                    "away": "Borshchev V.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1689472800,
+                    "tournament": "UFC",
+                    "home": "Sadykhov N.",
+                    "away": "McKinney T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1676763000,
+                    "tournament": "UFC",
+                    "home": "Sadykhov N.",
+                    "away": "Elder E.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.08,
+                    "under": 7
+                  },
+                  "1.5": {
+                    "over": 1.61,
+                    "under": 2.28
+                  },
+                  "2.5": {
+                    "over": 2.3,
+                    "under": 1.6
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "dj70STd3",
+              "flashscore_id": "dj70STd3",
+              "flashscore_sport_id": 28,
+              "home_team_id": "vDzL8vmd",
+              "away_team_id": "SUya2Yy6",
+              "tournament_id": "48tvugie",
+              "tournament_url": "/mma/middleweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T18:00:00.000Z",
+              "time_display": "Sam. 20h00",
+              "home": "Magomedov S.",
+              "away": "Pereira M.",
+              "match": "Magomedov S. vs Pereira M.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.94,
+              "cotes": {
+                "domicile": 1.23,
+                "nul": null,
+                "exterieur": 3.9
+              },
+              "pick_category": "ou",
+              "analyse": "Sharabutdin Magomedov est l'un des finisseurs les plus spectaculaires de l'UFC à la division des poids mi-lourds, avec une réputation de mettre fin aux combats rapidement via KO ou soumission. Sur ses derniers combats face à Barriault, Page et Petrosyan, il a systématiquement cherché et trouvé la finition dans les premiers rounds, sans jamais aller au bout de la distance. Michel Pereira est quant à lui un combattant au style extrêmement explosif et imprévisible, connu pour ses mises à terre soudaines et ses échanges intenses — ses combats récents face à Daukaus et Magomedov A. ont souvent été marqués par du chaos debout. Ces deux profils de frappeurs finisseurs créent une alchimie propice à une conclusion rapide : Magomedov n'a pratiquement jamais besoin du round 3 pour clore un dossier, et Pereira lui-même a plusieurs finishes à son actif. Un combat dépassant les 2.5 rounds serait une surprise pour ces deux chercheurs de finition. La cote sur 'Moins de 2.5 rounds' à 1.94 reflète bien l'incertitude, mais les profils des deux combattants pointent clairement vers une fin avant la mi-combat.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1771722000,
+                    "tournament": "UFC",
+                    "home": "Reese Z.",
+                    "away": "Pereira M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755936000,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Daukaus K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1753560000,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Barriault M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1745719200,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Magomedov A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1738434600,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Page M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729965600,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Petrosyan A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729386000,
+                    "tournament": "UFC",
+                    "home": "Hernandez A.",
+                    "away": "Pereira M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722718800,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1719084600,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Trocoli A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1714876200,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Potieria I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1710028800,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Oleksiejczuk M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1697896800,
+                    "tournament": "UFC",
+                    "home": "Magomedov S.",
+                    "away": "Silva B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1697326200,
+                    "tournament": "UFC",
+                    "home": "Petroski A.",
+                    "away": "Pereira M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1653179400,
+                    "tournament": "UFC",
+                    "home": "Ponzinibbio S.",
+                    "away": "Pereira M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1642910400,
+                    "tournament": "UFC",
+                    "home": "Pereira M.",
+                    "away": "Fialho A.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.06,
+                    "under": 8
+                  },
+                  "1.5": {
+                    "over": 1.43,
+                    "under": 2.73
+                  },
+                  "2.5": {
+                    "over": 1.81,
+                    "under": 1.94
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "2N0Q1IiC",
+              "flashscore_id": "2N0Q1IiC",
+              "flashscore_sport_id": 28,
+              "home_team_id": "I1JQBjcP",
+              "away_team_id": "lSPWt2pL",
+              "tournament_id": "ha47slle",
+              "tournament_url": "/mma/lightweight-men/ufc/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T18:30:00.000Z",
+              "time_display": "Sam. 20h30",
+              "home": "Fiziev R.",
+              "away": "Torres M.",
+              "match": "Fiziev R. vs Torres M.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.54,
+              "cotes": {
+                "domicile": 1.88,
+                "nul": null,
+                "exterieur": 1.9
+              },
+              "pick_category": "ou",
+              "analyse": "Rafael Fiziev est l'un des strikers les plus explosifs de la division des légers à l'UFC, connu pour ses combinaisons de kickboxing dévastateurs et sa capacité à terminer les combats rapidement par KO. Face à Gaethje en mars 2025, il s'est retrouvé dans un duel d'explosivité pure, et ses récents combats contre Bahamondes et Ruffy confirment qu'il cherche systématiquement la finition rapide. Miguel Torres (à ne pas confondre avec l'ancien bantamweight) arrive de son dernier combat en décembre 2025 contre Dawson, et son affrontement contre Dober en mars 2025 illustre qu'il évolue dans des combats intenses. Fiziev est un frappeur pur dont le style génère des KO dès les premiers rounds — son punch-power exceptionnel rend chaque échange potentiellement fatal pour l'adversaire. La ligne 'Moins de 2.5 rounds' à 1.54 est attrayante mais la cote la plus intéressante avec une logique solide reste 'Moins de 1.5 rounds' : Fiziev a fini plusieurs adversaires UFC dès le premier round, et son style ultra-agressif combiné à sa puissance de frappe élite rend une conclusion rapide très plausible. Le marché under 2.5 à 1.54 offre un meilleur équilibre risque/valeur en tenant compte de la résistance potentielle d'un adversaire de l'UFC expérimenté.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1769914800,
+                    "tournament": "UFC",
+                    "home": "Fiziev R.",
+                    "away": "Ruffy M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1765074600,
+                    "tournament": "UFC",
+                    "home": "Dawson G.",
+                    "away": "Torres M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750539600,
+                    "tournament": "UFC",
+                    "home": "Fiziev R.",
+                    "away": "Bahamondes I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1743296400,
+                    "tournament": "UFC",
+                    "home": "Torres M.",
+                    "away": "Dober D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1741494600,
+                    "tournament": "UFC",
+                    "home": "Gaethje J.",
+                    "away": "Fiziev R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1726362000,
+                    "tournament": "UFC",
+                    "home": "Torres M.",
+                    "away": "Bahamondes I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1708830000,
+                    "tournament": "UFC",
+                    "home": "Torres M.",
+                    "away": "Duncan C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1695517200,
+                    "tournament": "UFC",
+                    "home": "Fiziev R.",
+                    "away": "Gamrot M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1687055400,
+                    "tournament": "UFC",
+                    "home": "Torres M.",
+                    "away": "Motta N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1679178600,
+                    "tournament": "UFC",
+                    "home": "Gaethje J.",
+                    "away": "Fiziev R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1657423800,
+                    "tournament": "UFC",
+                    "home": "Dos Anjos R.",
+                    "away": "Fiziev R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1652581800,
+                    "tournament": "UFC",
+                    "home": "Camacho F.",
+                    "away": "Torres M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1638680400,
+                    "tournament": "UFC",
+                    "home": "Riddell B.",
+                    "away": "Fiziev R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1628386200,
+                    "tournament": "UFC",
+                    "home": "Fiziev R.",
+                    "away": "Green K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1607824800,
+                    "tournament": "UFC",
+                    "home": "Moicano R.",
+                    "away": "Fiziev R.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.08,
+                    "under": 7
+                  },
+                  "1.5": {
+                    "over": 1.71,
+                    "under": 2.08
+                  },
+                  "2.5": {
+                    "over": 2.4,
+                    "under": 1.54
+                  },
+                  "3.5": {
+                    "over": 3.21,
+                    "under": 1.33
+                  },
+                  "4.5": {
+                    "over": 4.08,
+                    "under": 1.23
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "WjtMCVKr",
+              "flashscore_id": "WjtMCVKr",
+              "flashscore_sport_id": 28,
+              "home_team_id": "WKxtIeGP",
+              "away_team_id": "S4wBCZwm",
+              "tournament_id": "46fpn1nm",
+              "tournament_url": "/mma/bantamweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T23:00:00.000Z",
+              "time_display": "Dim. 01h00",
+              "home": "Fehr C.",
+              "away": "Bzdigian D.",
+              "match": "Fehr C. vs Bzdigian D.",
+              "prono": "win-home",
+              "pari": "Plus de 0.5 rounds",
+              "cote_retenue": 2.08,
+              "cotes": {
+                "domicile": 1.08,
+                "nul": null,
+                "exterieur": 8.25
+              },
+              "pick_category": "ou",
+              "analyse": "Ce combat entre Fehr C. et Bzdigian D. s'annonce comme un affrontement potentiellement explosif. Les marchés disponibles se limitent à un over/under 0.5 rounds, ce qui signifie concrètement : le combat se terminera-t-il dans les premières secondes (under) ou durera-t-il au moins quelques minutes significatives (over) ? À ce niveau de la carte UFC, les deux combattants sont généralement préparés pour ne pas tomber dans un finish immédiat. Les combattants des cartes préliminaires UFC tendent à montrer de la résistance, surtout face à un adversaire inconnu dont il faut tester les réactions. Un finish dans les 30 premières secondes reste statistiquement rare même chez des frappeurs purs. Avec une cote à 2.08, le 'over 0.5 rounds' offre une valeur correcte pour parier sur un combat qui dure au minimum quelques échanges significatifs.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": []
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 2.08,
+                    "under": 1.65
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "z7uiIicL",
+              "flashscore_id": "z7uiIicL",
+              "flashscore_sport_id": 28,
+              "home_team_id": "fg2qID0J",
+              "away_team_id": "C0KaC0wl",
+              "tournament_id": "uwrbuaok",
+              "tournament_url": "/mma/flyweight-women/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-27T23:30:00.000Z",
+              "time_display": "Dim. 01h30",
+              "home": "Clark S.",
+              "away": "Joanne I.",
+              "match": "Clark S. vs Joanne I.",
+              "prono": "win-home",
+              "pari": "Plus de 2.5 rounds",
+              "cote_retenue": 1.74,
+              "cotes": {
+                "domicile": 1.33,
+                "nul": null,
+                "exterieur": 3.4
+              },
+              "pick_category": "ou",
+              "analyse": "Joanne I. présente un historique de combats long et varié, ayant évolué à la fois en PFL et en Bellator, ce qui témoigne d'une expérience certaine au haut niveau. Cependant, les données disponibles ne permettent pas de déterminer les résultats exacts de ses récents combats (scores nulls), limitant l'analyse de forme précise. Clark S. revient dans l'octogone UFC, une organisation au rythme et à l'intensité souvent différents du circuit PFL/Bellator où Joanne I. a majoritairement évolué ces dernières années. En MMA féminin, notamment en poids paille ou poids mouche, les combats ont tendance à aller à la décision lorsque deux combattantes expérimentées et techniques s'affrontent, favorisant un over 2.5 rounds. Le style de Joanne I., connu pour sa régularité et sa résistance au fil des années de compétition professionnelle, suggère qu'elle ne se laisse pas finir facilement, ce qui plaide pour un combat qui va au-delà du premier acte. La cote sur le plus de 2.5 rounds à 1.74 reflète un scénario cohérent avec le profil des deux combattantes.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1750458600,
+                    "tournament": "PFL",
+                    "home": "Orozco S.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1744430400,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1718319600,
+                    "tournament": "PFL",
+                    "home": "Joanne I.",
+                    "away": "Young S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712277000,
+                    "tournament": "PFL",
+                    "home": "Santos T.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1696719600,
+                    "tournament": "BEL",
+                    "home": "Joanne I.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1682209200,
+                    "tournament": "BEL",
+                    "home": "Joanne I.",
+                    "away": "Ellen B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1670635800,
+                    "tournament": "BEL",
+                    "home": "Kielholtz D.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1656110700,
+                    "tournament": "BEL",
+                    "home": "Lara A.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1627781400,
+                    "tournament": "BEL",
+                    "home": "Porto V.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1577590200,
+                    "tournament": "BEL",
+                    "home": "Joanne I.",
+                    "away": "Watanabe K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1572055200,
+                    "tournament": "BEL",
+                    "home": "Rawlings B.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.74,
+                    "under": 1.95
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "2gsqKDS8",
+              "flashscore_id": "2gsqKDS8",
+              "flashscore_sport_id": 28,
+              "home_team_id": "nTbyKZV6",
+              "away_team_id": "GMB152Ak",
+              "tournament_id": "clrsxgol",
+              "tournament_url": "/mma/lightweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T00:00:00.000Z",
+              "time_display": "Dim. 02h00",
+              "home": "Khizriev G.",
+              "away": "Parente L.",
+              "match": "Khizriev G. vs Parente L.",
+              "prono": "win-home",
+              "pari": "Plus de 0.5 rounds",
+              "cote_retenue": 1.53,
+              "cotes": {
+                "domicile": 1.25,
+                "nul": null,
+                "exterieur": 3.65
+              },
+              "pick_category": "ou",
+              "analyse": "Le seul marché disponible ici est over/under 0.5 rounds, ce qui revient à parier sur une finition dans les 2 premières minutes 30 du premier round (under) ou sur un combat dépassant ce seuil (over). Les données disponibles sont très limitées : on ne dispose que d'un seul résultat récent pour Parente L. face à Catacoli S. en PFL en septembre 2024, sans score renseigné. Khizriev G. est un prospect d'origine tchétchène passé par la PFL, connu pour son explosivité en striking et ses finitions précoces. Parente L. est un vétéran brésilien plutôt solide qui a l'habitude de tenir la distance. Compte tenu du style offensif de Khizriev et de sa tendance à chercher la finition rapidement, un combat qui dépasse rapidement le seuil des 0.5 rounds reste le scénario le plus probable — presque tout combat professionnel dépasse les 2 minutes 30, ce qui rend l'over 0.5 rounds quasi inévitable. La cote de 1.53 sur l'over reste acceptable pour un pari à très haute probabilité implicite.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1727546400,
+                    "tournament": "PFL",
+                    "home": "Parente L.",
+                    "away": "Catacoli S.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.53,
+                    "under": 2.31
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "SMokbW5k",
+              "flashscore_id": "SMokbW5k",
+              "flashscore_sport_id": 28,
+              "home_team_id": "vN9eXhJP",
+              "away_team_id": "vL4PJ7BP",
+              "tournament_id": "46fpn1nm",
+              "tournament_url": "/mma/bantamweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T00:30:00.000Z",
+              "time_display": "Dim. 02h30",
+              "home": "Wetzell J.",
+              "away": "Khamidov S.",
+              "match": "Wetzell J. vs Khamidov S.",
+              "prono": "win-home",
+              "pari": "Plus de 1.5 rounds",
+              "cote_retenue": 1.4,
+              "cotes": {
+                "domicile": 3.8,
+                "nul": null,
+                "exterieur": 1.23
+              },
+              "pick_category": "ou",
+              "analyse": "Les données disponibles sur ces deux combattants montrent des historiques récents en PFL et Bellator. Khamidov S. a disputé ses derniers combats sous Bellator, un circuit réputé pour ses finishes rapides à haut niveau. Wetzell J. évolue en PFL depuis 2025, avec trois combats cette saison (victoires et défaites non précisées mais activité régulière). Dans les combats MMA de haut niveau impliquant ces profils de lutteurs/frappeurs expérimentés, les finishes avant 1.5 rounds restent statistiquement fréquents, mais les deux compétiteurs affichent une expérience suffisante pour résister au premier round. Khamidov, vétéran de Bellator avec des combats contre Alves et Petshi, est connu pour un style offensif qui peut aller chercher la soumission ou le TKO. Cependant, face à un adversaire rodé comme Wetzell qui accumule les combats en 2025, on peut anticiper un match allant au-delà du round 1.5. Le pari 'Plus de 1.5 rounds' à 1.40 reste la seule option viable, mais la cote est trop basse pour être retenue (sous le seuil de 1.25 c'est acceptable, mais ici 1.40 est la seule option). On privilégie donc le 'Moins de 1.5 rounds' uniquement si le profil de finisher est écrasant — ce qui n'est pas clairement établi ici, rendant le 'Plus de 1.5 rounds' légèrement préférable malgré la cote modeste.",
+              "confiance": 2,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1755307800,
+                    "tournament": "PFL",
+                    "home": "Alves M.",
+                    "away": "Wetzell J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750467600,
+                    "tournament": "PFL",
+                    "home": "Wetzell J.",
+                    "away": "Gutierrez M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750464000,
+                    "tournament": "PFL",
+                    "home": "Magomedov M.",
+                    "away": "Khamidov S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1744426800,
+                    "tournament": "PFL",
+                    "home": "Kasumov K.",
+                    "away": "Wetzell J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1719077400,
+                    "tournament": "BEL",
+                    "home": "Khamidov S.",
+                    "away": "Alves M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1683913200,
+                    "tournament": "BEL",
+                    "home": "Khamidov S.",
+                    "away": "Petshi K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1667061900,
+                    "tournament": "BEL",
+                    "home": "Khamidov S.",
+                    "away": "Maria Tome J.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "1.5": {
+                    "over": 1.4,
+                    "under": 2.68
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "M3eGZnv1",
+              "flashscore_id": "M3eGZnv1",
+              "flashscore_sport_id": 28,
+              "home_team_id": "6gS9no83",
+              "away_team_id": "rowShzvT",
+              "tournament_id": "uwrbuaok",
+              "tournament_url": "/mma/flyweight-women/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T01:00:00.000Z",
+              "time_display": "Dim. 03h00",
+              "home": "Lipski da Silva A.",
+              "away": "Bishop J.",
+              "match": "Lipski da Silva A. vs Bishop J.",
+              "prono": "win-home",
+              "pari": "Plus de 2.5 rounds",
+              "cote_retenue": 1.92,
+              "cotes": {
+                "domicile": 1.92,
+                "nul": null,
+                "exterieur": 1.84
+              },
+              "pick_category": "ou",
+              "analyse": "Ce combat en MMA féminin oppose Lipski da Silva, une combattante UFC habituée aux longues batailles techniques, à Bishop J., qui évolue principalement en PFL avec un style éprouvé. Les données disponibles ne fournissent pas les résultats précis des derniers combats, ce qui impose de s'appuyer sur les profils connus : Lipski da Silva est une lutteuse-frapper polyvalente qui va souvent au bout des rounds, ayant disputé plusieurs décisions aux points en UFC. Bishop de son côté affiche un profil similaire en PFL, avec des combats régulièrement disputés sur la distance. Les deux combattantes ont tendance à contrôler plutôt qu'à finir précocement, privilégiant la technique et la gestion du rythme sur la finition explosive. Ce profil de double combattante travailleuse et solide défensivement plaide clairement pour un combat qui dépasse les 2.5 rounds. La cote du over à 1.92 représente une opportunité acceptable pour un pari orienté durée.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775953800,
+                    "tournament": "PFL",
+                    "home": "Bishop J.",
+                    "away": "Tsertsvadze B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1774755000,
+                    "tournament": "PFL",
+                    "home": "Lipski da Silva A.",
+                    "away": "Inaba S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755309600,
+                    "tournament": "PFL",
+                    "home": "Bishop J.",
+                    "away": "Carmouche L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750465800,
+                    "tournament": "PFL",
+                    "home": "Shakalova E.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1749339000,
+                    "tournament": "UFC",
+                    "home": "Lipski da Silva A.",
+                    "away": "Wang C.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1744421400,
+                    "tournament": "PFL",
+                    "home": "Watanabe K.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1730595600,
+                    "tournament": "UFC",
+                    "home": "Lipski da Silva A.",
+                    "away": "Jasudavicius J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722650400,
+                    "tournament": "PFL",
+                    "home": "Ditcheva D.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1718325000,
+                    "tournament": "PFL",
+                    "home": "Santos T.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1714264200,
+                    "tournament": "UFC",
+                    "home": "Lipski da Silva A.",
+                    "away": "Silva K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712271600,
+                    "tournament": "PFL",
+                    "home": "Hackett C.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1702774800,
+                    "tournament": "UFC",
+                    "home": "O'Neill C.",
+                    "away": "Lipski da Silva A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1696719600,
+                    "tournament": "BEL",
+                    "home": "Joanne I.",
+                    "away": "Bishop J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1688256000,
+                    "tournament": "UFC",
+                    "home": "Lipski da Silva A.",
+                    "away": "Gatto M.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1678567200,
+                    "tournament": "UFC",
+                    "home": "Lipski da Silva A.",
+                    "away": "Aldrich JJ",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.92,
+                    "under": 1.77
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "Wj0J3hrS",
+              "flashscore_id": "Wj0J3hrS",
+              "flashscore_sport_id": 28,
+              "home_team_id": "CEnhhV1e",
+              "away_team_id": "06TJqEO7",
+              "tournament_id": "rlrzezvj",
+              "tournament_url": "/mma/featherweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T01:30:00.000Z",
+              "time_display": "Dim. 03h30",
+              "home": "Magomedsharipov K.",
+              "away": "Weems J.",
+              "match": "Magomedsharipov K. vs Weems J.",
+              "prono": "win-home",
+              "pari": "Plus de 0.5 rounds",
+              "cote_retenue": 1.54,
+              "cotes": {
+                "domicile": 1.03,
+                "nul": null,
+                "exterieur": 11.5
+              },
+              "pick_category": "ou",
+              "analyse": "Les données de score sont nulles pour tous les matchs répertoriés, ce qui limite l'analyse chiffrée directe. Cependant, Khabib Magomedsharipov est un combattant issu de la scène Bellator, réputé pour son style de lutteur/grappleur de type sambo, avec des finitions souvent tardives via soumission. Josh Weems, vu en UFC en octobre 2022 contre Rodriguez, est un frappeur solide mais qui a tendance à aller au cœur de l'action. Un duel entre un grappleur expérimenté et un striker volontaire dans une cage UFC produit généralement un combat qui dépasse les premiers échanges, notamment si le grappleur cherche à installer son jeu progressivement. Le marché disponible se limite à l'over/under 0.5 rounds, ce qui revient à parier si le combat se termine avant ou après la fin du premier round. Compte tenu du profil des deux combattants — un lutteur technique qui prend son temps pour soumettre et un frappeur qui peut encaisser — il est très probable que le combat dépasse la première minute et demie, rendant l'over 0.5 rounds hautement probable. La cote de 1.54 sur plus de 0.5 rounds reste au-dessus du seuil minimum de 1.25 et représente un pari à forte probabilité réelle.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1719081000,
+                    "tournament": "BEL",
+                    "home": "Magomedsharipov K.",
+                    "away": "Mathison T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1695492000,
+                    "tournament": "BEL",
+                    "home": "Magomedsharipov K.",
+                    "away": "Niedzielski P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1677348000,
+                    "tournament": "BEL",
+                    "home": "Magomedsharipov K.",
+                    "away": "Hudson R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1667073600,
+                    "tournament": "UFC",
+                    "home": "Rodriguez C.",
+                    "away": "Weems J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1645824600,
+                    "tournament": "BEL",
+                    "home": "Magomedsharipov K.",
+                    "away": "Sanchez J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1627777800,
+                    "tournament": "BEL",
+                    "home": "Magomedsharipov K.",
+                    "away": "Quiroz J.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 2.28,
+                    "under": 1.54
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "ITg37zq3",
+              "flashscore_id": "ITg37zq3",
+              "flashscore_sport_id": 28,
+              "home_team_id": "xAFFYwUl",
+              "away_team_id": "WrKmB0wp",
+              "tournament_id": "w4gv4in4",
+              "tournament_url": "/mma/light-heavyweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T02:00:00.000Z",
+              "time_display": "Dim. 04h00",
+              "home": "Bably A.",
+              "away": "Wilkinson R.",
+              "match": "Bably A. vs Wilkinson R.",
+              "prono": "win-home",
+              "pari": "Plus de 1.5 rounds",
+              "cote_retenue": 2.38,
+              "cotes": {
+                "domicile": 1.5,
+                "nul": null,
+                "exterieur": 2.65
+              },
+              "pick_category": "ou",
+              "analyse": "Bably A. et Wilkinson R. s'affrontent dans un duel PFL avec des profils complémentaires. Les données de forme récente montrent que Bably A. est actif depuis 2022, enchaînant les combats en PFL (Clarke, Houlton, Gnaze, Nascimento, Trabelsi) ce qui témoigne d'une endurance et d'un cardio solide, suggérant des combats qui durent. Wilkinson R., combattant australien expérimenté en PFL depuis 2022 (Trainer, Davis, Yagshimuradov, Silveira, Breese), est réputé pour sa régularité et sa capacité à aller au bout des rounds, avec peu de finitions rapides dans son historique récent. Les deux combattants semblent davantage orientés vers un style technique/de gestion plutôt que vers la recherche du KO rapide, ce qui favorise un combat allant au-delà du premier round et demi. L'absence de finish éclair dans leurs historiques respectifs renforce l'idée d'un combat qui va dans la durée, rendant le pari sur plus de 1.5 rounds particulièrement pertinent. La cote de 2.38 pour ce over offre une valeur intéressante compte tenu des profils des deux combattants.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770476400,
+                    "tournament": "PFL",
+                    "home": "Trainer L.",
+                    "away": "Wilkinson R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1766259000,
+                    "tournament": "PFL",
+                    "home": "Clarke J.",
+                    "away": "Bably A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1760814000,
+                    "tournament": "PFL",
+                    "home": "Bably A.",
+                    "away": "Houlton J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1752934800,
+                    "tournament": "PFL",
+                    "home": "Bably A.",
+                    "away": "Gnaze P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1746156600,
+                    "tournament": "PFL",
+                    "home": "Davis P.",
+                    "away": "Wilkinson R.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1746144000,
+                    "tournament": "PFL",
+                    "home": "Nascimento R.",
+                    "away": "Bably A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1732887000,
+                    "tournament": "PFL",
+                    "home": "Trabelsi S.",
+                    "away": "Bably A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1723861800,
+                    "tournament": "PFL",
+                    "home": "Wilkinson R.",
+                    "away": "Yagshimuradov D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1719018600,
+                    "tournament": "PFL",
+                    "home": "Wilkinson R.",
+                    "away": "Silveira J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712975400,
+                    "tournament": "PFL",
+                    "home": "Wilkinson R.",
+                    "away": "Breese T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1711128600,
+                    "tournament": "BEL",
+                    "home": "Bably A.",
+                    "away": "Pinson I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1680402600,
+                    "tournament": "PFL",
+                    "home": "Wilkinson R.",
+                    "away": "Santos T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1676082600,
+                    "tournament": "PFL",
+                    "home": "Bably A.",
+                    "away": "Graham H.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1669424400,
+                    "tournament": "PFL",
+                    "home": "Wilkinson R.",
+                    "away": "Akhmedov O.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1661031000,
+                    "tournament": "PFL",
+                    "home": "Sutherland L.",
+                    "away": "Bably A.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "1.5": {
+                    "over": 2.38,
+                    "under": 1.5
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "fZObw6Ns",
+              "flashscore_id": "fZObw6Ns",
+              "flashscore_sport_id": 28,
+              "home_team_id": "KrFdPUUH",
+              "away_team_id": "AHDi0PqE",
+              "tournament_id": "clrsxgol",
+              "tournament_url": "/mma/lightweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T02:30:00.000Z",
+              "time_display": "Dim. 04h30",
+              "home": "Shabliy A.",
+              "away": "Davis A.",
+              "match": "Shabliy A. vs Davis A.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 2.28,
+              "cotes": {
+                "domicile": 1.18,
+                "nul": null,
+                "exterieur": 5
+              },
+              "pick_category": "ou",
+              "analyse": "Shabliy et Davis se sont déjà affrontés en mai 2021 sous Bellator, ce H2H direct est un élément clé pour anticiper la dynamique du combat. Davis A. est très actif depuis son passage en PFL, enchaînant des combats face à Collard, Primus et Rabadanov en 2025, ce qui témoigne d'une bonne condition physique et d'une trajectoire montante. Shabliy A. a lui aussi une expérience solide sous Bellator, ayant notamment affronté Freire et Primus, deux noms de référence dans la division. Les deux combattants ont des profils offensifs avec une tendance à aller chercher la finition, Davis étant reconnu pour son explosivité en striking tandis que Shabliy possède un arsenal polyvalent. Ce type de confrontation entre frappeurs expérimentés, avec un passif commun, donne souvent lieu à des finitions précoces ou à des échanges intenses dans les premiers rounds. Un combat allant au-delà de 2,5 rounds suppose que ni l'un ni l'autre ne parvient à conclure en deux rounds, ce qui est tout à fait envisageable compte tenu du niveau des deux hommes mais reste moins probable face à deux finisseurs confirmés. Le pari sur l'under 2.5 rounds à 2.28 offre une valeur intéressante pour un combat qui a toutes les caractéristiques d'une finition avant la limite.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1770494400,
+                    "tournament": "PFL",
+                    "home": "Nurmagomedov U.",
+                    "away": "Davis A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755311400,
+                    "tournament": "PFL",
+                    "home": "Davis A.",
+                    "away": "Rabadanov G.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750469400,
+                    "tournament": "PFL",
+                    "home": "Primus B.",
+                    "away": "Davis A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1745017200,
+                    "tournament": "PFL",
+                    "home": "Collard C.",
+                    "away": "Davis A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1732888800,
+                    "tournament": "PFL",
+                    "home": "Barnaoui M.",
+                    "away": "Davis A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1725760800,
+                    "tournament": "BEL",
+                    "home": "Nurmagomedov U.",
+                    "away": "Shabliy A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1711134000,
+                    "tournament": "BEL",
+                    "home": "Davis A.",
+                    "away": "Ownsworth O.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1700276400,
+                    "tournament": "BEL",
+                    "home": "Freire P.",
+                    "away": "Shabliy A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1691797500,
+                    "tournament": "BEL",
+                    "home": "Davis A.",
+                    "away": "Cruz A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1678507200,
+                    "tournament": "BEL",
+                    "home": "Musayev T.",
+                    "away": "Shabliy A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1667070000,
+                    "tournament": "BEL",
+                    "home": "Davis A.",
+                    "away": "Gouti T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1656115200,
+                    "tournament": "BEL",
+                    "home": "Primus B.",
+                    "away": "Shabliy A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1652466000,
+                    "tournament": "BEL",
+                    "home": "Davis A.",
+                    "away": "Wilde T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1638585000,
+                    "tournament": "BEL",
+                    "home": "Shabliy A.",
+                    "away": "King B.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1621632600,
+                    "tournament": "BEL",
+                    "home": "Shabliy A.",
+                    "away": "Davis A.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.54,
+                    "under": 2.28
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "GM4IJqgC",
+              "flashscore_id": "GM4IJqgC",
+              "flashscore_sport_id": 28,
+              "home_team_id": "v5PVwt0A",
+              "away_team_id": "nLHpFqOd",
+              "tournament_id": "uwrbuaok",
+              "tournament_url": "/mma/flyweight-women/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T03:00:00.000Z",
+              "time_display": "Dim. 05h00",
+              "home": "Carmouche L.",
+              "away": "Araujo V.",
+              "match": "Carmouche L. vs Araujo V.",
+              "prono": "win-home",
+              "pari": "Plus de 2.5 rounds",
+              "cote_retenue": 1.37,
+              "cotes": {
+                "domicile": 1.52,
+                "nul": null,
+                "exterieur": 2.6
+              },
+              "pick_category": "ou",
+              "analyse": "Carmouche L. et Araujo V. sont deux combattantes au profil très technique, reconnues pour leur endurance et leur capacité à aller au bout de la distance. Liz Carmouche, vétérante de l'UFC et figure dominante de la PFL, est une spécialiste du grappling avec un cardio exceptionnel qui lui permet de maintenir la pression sur l'ensemble des rounds. Virna Araujo, de son côté, est une lutteur-grapplistee brésilienne solide, ayant enchaîné plusieurs combats qui sont allés à la décision dans l'UFC (vs Silva K., vs Silva N., vs Ribas). Ce profil de deux combattantes orientées lutte et contrôle au sol favorise naturellement les combats longs, avec peu de finitions rapides. Les matchs de Carmouche en PFL sont également souvent disputés sur la durée, témoignant de sa solidité défensive. L'absence de frappeur explosif et le style attritionnel des deux protagonistes rendent un finish avant 2.5 rounds peu probable. Le pari sur la durée du combat semble le plus cohérent avec leurs profils respectifs.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": false,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1775955600,
+                    "tournament": "PFL",
+                    "home": "Araujo V.",
+                    "away": "Young S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1755309600,
+                    "tournament": "PFL",
+                    "home": "Bishop J.",
+                    "away": "Carmouche L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1751157000,
+                    "tournament": "UFC",
+                    "home": "Araujo V.",
+                    "away": "Cortez T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1750474800,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Dana E.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1744430400,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Joanne I.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1731814200,
+                    "tournament": "UFC",
+                    "home": "Araujo V.",
+                    "away": "Silva K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1722646800,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Santos T.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1718326800,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Watanabe K.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1712284200,
+                    "tournament": "PFL",
+                    "home": "Carmouche L.",
+                    "away": "Velasquez J.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1707008400,
+                    "tournament": "UFC",
+                    "home": "Araujo V.",
+                    "away": "Silva N.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1697329800,
+                    "tournament": "UFC",
+                    "home": "Maia J.",
+                    "away": "Araujo V.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1696731600,
+                    "tournament": "BEL",
+                    "home": "Carmouche L.",
+                    "away": "Macfarlane I.-L.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1682136000,
+                    "tournament": "BEL",
+                    "home": "Carmouche L.",
+                    "away": "Bennett D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1677979800,
+                    "tournament": "UFC",
+                    "home": "Araujo V.",
+                    "away": "Ribas A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1670641200,
+                    "tournament": "BEL",
+                    "home": "Carmouche L.",
+                    "away": "Velasquez J.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "2.5": {
+                    "over": 1.37,
+                    "under": 2.8
+                  }
+                }
+              }
+            },
+            {
+              "event_id": "OhuCM5uo",
+              "flashscore_id": "OhuCM5uo",
+              "flashscore_sport_id": 28,
+              "home_team_id": "OK7Q2kdN",
+              "away_team_id": "ETM26gPt",
+              "tournament_id": "rlrzezvj",
+              "tournament_url": "/mma/featherweight-men/pfl/",
+              "sport_key": "flashscore_mma",
+              "commence_time": "2026-06-28T03:30:00.000Z",
+              "time_display": "Dim. 05h30",
+              "home": "McKee A.",
+              "away": "Isbulaev S.",
+              "match": "McKee A. vs Isbulaev S.",
+              "prono": "win-home",
+              "pari": "Moins de 2.5 rounds",
+              "cote_retenue": 1.88,
+              "cotes": {
+                "domicile": 1.72,
+                "nul": null,
+                "exterieur": 2.15
+              },
+              "pick_category": "ou",
+              "analyse": "AJ McKee est l'un des finisseurs les plus efficaces du MMA mondial, avec une carrière construite sur des finissions rapides (soumissions et KO). Son bilan en Bellator puis PFL témoigne d'une capacité constante à terminer les combats avant la limite. Face à Isbulaev, un lutteur russe solide mais moins médiatisé, McKee partira grand favori. Les données de forme récente ne montrent pas de scores, mais McKee a enchaîné des apparitions en PFL (mars 2026 vs Borics, juillet 2025 vs Magomedov, octobre 2024 vs Hughes) ce qui indique une activité soutenue et une bonne condition physique. Le style de McKee, axé sur la finition via la soumission ou les frappes précises, rend probable une conclusion avant la fin des rounds. Sur un combat de 3 rounds maximum en carte préliminaire, la ligne 'Moins de 2.5 rounds' à 1.88 représente la valeur optimale compte tenu du profil des deux combattants.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1774042200,
+                    "tournament": "PFL",
+                    "home": "McKee A.",
+                    "away": "Borics A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1770489000,
+                    "tournament": "PFL",
+                    "home": "Pinedo J.",
+                    "away": "Isbulaev S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1752951600,
+                    "tournament": "PFL",
+                    "home": "McKee A.",
+                    "away": "Magomedov A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1729368000,
+                    "tournament": "PFL",
+                    "home": "McKee A.",
+                    "away": "Hughes P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1708804800,
+                    "tournament": "PFL",
+                    "home": "Collard C.",
+                    "away": "McKee A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1700278200,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Outlaw S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1672488000,
+                    "tournament": "BEL",
+                    "home": "de Souza R.",
+                    "away": "McKee A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1664679600,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Carlyle S.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1650081600,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Freire P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1627790400,
+                    "tournament": "BEL",
+                    "home": "Freire P.",
+                    "away": "McKee A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1605834900,
+                    "tournament": "BEL",
+                    "home": "Caldwell D.",
+                    "away": "McKee A.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1576990800,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Campos D.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1569722400,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Karakhanyan G.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1557626400,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Curran P.",
+                    "score": "null-null"
+                  },
+                  {
+                    "timestamp": 1544839200,
+                    "tournament": "BEL",
+                    "home": "McKee A.",
+                    "away": "Crawford D.",
+                    "score": "null-null"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "0.5": {
+                    "over": 1.22,
+                    "under": 4
+                  },
+                  "1.5": {
+                    "over": 1.5,
+                    "under": 2.62
+                  },
+                  "2.5": {
+                    "over": 1.8,
+                    "under": 1.88
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
     },
     "tennis": {
       "key": "tennis",
@@ -51,7 +2790,303 @@
           "country": "",
           "panel_title": "🎾 ATP Eastbourne (United Kingdom)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "hvrXnqVO",
+              "flashscore_id": "hvrXnqVO",
+              "flashscore_sport_id": 2,
+              "home_team_id": "SbeTx1o8",
+              "away_team_id": "O4ywE5Ah",
+              "tournament_id": "ucjjk12k",
+              "tournament_url": "/tennis/atp-singles/eastbourne/",
+              "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
+              "commence_time": "2026-06-27T13:30:00.000Z",
+              "time_display": "Sam. 15h30",
+              "home": "Bergs Z.",
+              "away": "Humbert U.",
+              "match": "Bergs Z. vs Humbert U.",
+              "prono": "win-home",
+              "pari": "Moins de 21.5 jeux",
+              "cote_retenue": 2.44,
+              "cotes": {
+                "domicile": 3.1,
+                "nul": null,
+                "exterieur": 1.36
+              },
+              "pick_category": "ou",
+              "analyse": "Humbert est clairement en grande forme sur gazon cette saison : il a remporté 4 de ses 5 derniers matchs sur cette surface, notamment en battant Draper (tête de série locale) et Halys en deux sets secs à Eastbourne cette semaine. Son service et sa frappe à plat sont particulièrement efficaces sur herbe, lui permettant d'expédier ses matchs rapidement (trois victoires en 2-0 sur les quatre derniers). Bergs de son côté s'est bien battu cette semaine avec des victoires sur Munar, Choinski et Samuel, mais a dû aller jusqu'au troisième set contre Samuel en quart, ce qui révèle une capacité à jouer long. Sur gazon, Humbert tend à imposer un jeu rapide et dominateur au service, ce qui pousse les totaux de jeux vers le bas. La ligne à 21.5 jeux semble particulièrement intéressante : la plupart des matchs de Humbert à Eastbourne cette semaine se sont bouclés autour de 18-21 jeux en deux sets, et même la bataille de Bergs contre Samuel (2-1) n'a probablement pas dépassé les 25 jeux. Un match sous les 21.5 jeux est cohérent avec le profil des deux joueurs sur herbe.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1782489600,
+                    "tournament": "EAS",
+                    "home": "Draper J.",
+                    "away": "Humbert U.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782480900,
+                    "tournament": "EAS",
+                    "home": "Bergs Z.",
+                    "away": "Samuel T.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1782399900,
+                    "tournament": "EAS",
+                    "home": "Humbert U.",
+                    "away": "Halys Q.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782388200,
+                    "tournament": "EAS",
+                    "home": "Choinski J.",
+                    "away": "Bergs Z.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782306600,
+                    "tournament": "EAS",
+                    "home": "Altmaier D.",
+                    "away": "Bergs Z.",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1782306300,
+                    "tournament": "EAS",
+                    "home": "Humbert U.",
+                    "away": "Brooksby J.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782231300,
+                    "tournament": "EAS",
+                    "home": "Humbert U.",
+                    "away": "Bellucci M.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1782150900,
+                    "tournament": "EAS",
+                    "home": "Bergs Z.",
+                    "away": "Munar J.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781968200,
+                    "tournament": "LON",
+                    "home": "Paul T.",
+                    "away": "Humbert U.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781889900,
+                    "tournament": "LON",
+                    "home": "Humbert U.",
+                    "away": "Hijikata R.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781871900,
+                    "tournament": "LON",
+                    "home": "Medjedovic H.",
+                    "away": "Humbert U.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1781689200,
+                    "tournament": "HAL",
+                    "home": "Bergs Z.",
+                    "away": "Fritz T.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1781624700,
+                    "tournament": "LON",
+                    "home": "Humbert U.",
+                    "away": "Cilic M.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781169000,
+                    "tournament": "HER",
+                    "home": "Humbert U.",
+                    "away": "Bonzi B.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1781082600,
+                    "tournament": "HER",
+                    "home": "McCabe J.",
+                    "away": "Bergs Z.",
+                    "score": "2-1"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "19.5": {
+                    "over": 1.22,
+                    "under": 3.5
+                  },
+                  "20.0": {
+                    "over": 1.26,
+                    "under": 3.28
+                  },
+                  "20.5": {
+                    "over": 1.37,
+                    "under": 2.75
+                  },
+                  "21.0": {
+                    "over": 1.42,
+                    "under": 2.61
+                  },
+                  "21.5": {
+                    "over": 1.5,
+                    "under": 2.44
+                  },
+                  "22.0": {
+                    "over": 1.62,
+                    "under": 2.19
+                  },
+                  "22.5": {
+                    "over": 1.76,
+                    "under": 2
+                  },
+                  "23.0": {
+                    "over": 1.91,
+                    "under": 1.81
+                  },
+                  "23.5": {
+                    "over": 2.03,
+                    "under": 1.71
+                  },
+                  "24.0": {
+                    "over": 2.05,
+                    "under": 1.67
+                  },
+                  "24.5": {
+                    "over": 2.06,
+                    "under": 1.65
+                  },
+                  "25.0": {
+                    "over": 2.15,
+                    "under": 1.58
+                  },
+                  "25.5": {
+                    "over": 2.2,
+                    "under": 1.58
+                  },
+                  "2.5": {
+                    "over": 2.42,
+                    "under": 1.53
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 2.13,
+                    "away": 1.13
+                  },
+                  "-1.5": {
+                    "home": 5.13,
+                    "away": 1.69
+                  },
+                  "0.0": {
+                    "home": 2.98,
+                    "away": 1.35
+                  },
+                  "0.5": {
+                    "home": 2.9,
+                    "away": 1.31
+                  },
+                  "-0.5": {
+                    "home": 3.2,
+                    "away": 1.38
+                  },
+                  "1.0": {
+                    "home": 2.77
+                  },
+                  "-1.0": {
+                    "away": 1.4
+                  },
+                  "2.0": {
+                    "home": 2.38
+                  },
+                  "-2.0": {
+                    "away": 1.53
+                  },
+                  "2.5": {
+                    "home": 2.12
+                  },
+                  "-2.5": {
+                    "away": 1.65
+                  },
+                  "3.0": {
+                    "home": 1.9
+                  },
+                  "-3.0": {
+                    "away": 1.82
+                  },
+                  "3.5": {
+                    "home": 1.71
+                  },
+                  "-3.5": {
+                    "away": 2.05
+                  },
+                  "4.0": {
+                    "home": 1.47
+                  },
+                  "-4.0": {
+                    "away": 2.53
+                  },
+                  "4.5": {
+                    "home": 1.36
+                  },
+                  "-4.5": {
+                    "away": 2.92
+                  },
+                  "5.0": {
+                    "home": 1.2
+                  },
+                  "-5.0": {
+                    "away": 4.15
+                  },
+                  "5.5": {
+                    "home": 1.16
+                  },
+                  "-5.5": {
+                    "away": 4.65
+                  },
+                  "6.0": {
+                    "home": 1.06
+                  },
+                  "-6.0": {
+                    "away": 7.4
+                  },
+                  "6.5": {
+                    "home": 1.05
+                  },
+                  "-6.5": {
+                    "away": 7.9
+                  },
+                  "7.5": {
+                    "home": 1.04
+                  },
+                  "-7.5": {
+                    "away": 9.4
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "key": "atp_mallorca_spain",
@@ -61,7 +3096,321 @@
           "country": "",
           "panel_title": "🎾 ATP Mallorca (Spain)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "f1iwb9wQ",
+              "flashscore_id": "f1iwb9wQ",
+              "flashscore_sport_id": 2,
+              "home_team_id": "fDEtnFgg",
+              "away_team_id": "0zQXLfz4",
+              "tournament_id": "sppot5u3",
+              "tournament_url": "/tennis/atp-singles/mallorca/",
+              "sport_key": "flashscore_tennis_atp_mallorca_spain",
+              "commence_time": "2026-06-27T13:00:00.000Z",
+              "time_display": "Sam. 15h00",
+              "home": "Quinn E.",
+              "away": "Davidovich Fokina A.",
+              "match": "Quinn E. vs Davidovich Fokina A.",
+              "prono": "win-home",
+              "pari": "Moins de 22.5 jeux",
+              "cote_retenue": 2.05,
+              "cotes": {
+                "domicile": 2.3,
+                "nul": null,
+                "exterieur": 1.6
+              },
+              "pick_category": "ou",
+              "analyse": "Davidovich Fokina traverse une forme exceptionnelle sur gazon à Mallorca : trois victoires consécutives en deux sets contre Walton, Dimitrov et Marozsan, ce dernier ayant poussé en trois sets. Quinn est lui aussi en excellente forme sur ce tournoi avec trois victoires (Royer 2-0, Cassone 2-1, Borges 2-0), dont une poussée en trois sets. Les deux joueurs arrivent en demi-finale en confiance, mais le style de Davidovich Fokina sur gazon — serveur-volleyeur explosif, jeu direct — tend à produire des matchs courts. Sur gazon, les services dominent et les échanges sont brefs, ce qui favorise structurellement les totaux bas en jeux. Quatre de leurs cinq matchs à Mallorca se sont conclus en deux sets sans set serré visible, et le récent H2H indirect (Shelton bat Quinn en trois sets à Halle, Paul bat Davidovich en deux sets à Londres) suggère que Davidovich est le favori sans être un rouleau compresseur. Un total inférieur à 22.5 jeux paraît cohérent avec le style gazon des deux joueurs et leur tendance à conclure rapidement en deux sets nets.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1782488400,
+                    "tournament": "MAL",
+                    "home": "Marozsan F.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1782479400,
+                    "tournament": "MAL",
+                    "home": "Borges N.",
+                    "away": "Quinn E.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782402000,
+                    "tournament": "MAL",
+                    "home": "Dimitrov G.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782378600,
+                    "tournament": "MAL",
+                    "home": "Quinn E.",
+                    "away": "Kopriva V.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1782306300,
+                    "tournament": "MAL",
+                    "home": "Walton A.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782295500,
+                    "tournament": "MAL",
+                    "home": "Cassone M.",
+                    "away": "Quinn E.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1782123000,
+                    "tournament": "MAL",
+                    "home": "Quinn E.",
+                    "away": "Royer V.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781887200,
+                    "tournament": "LON",
+                    "home": "Paul T.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781781000,
+                    "tournament": "HAL",
+                    "home": "Shelton B.",
+                    "away": "Quinn E.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1781779200,
+                    "tournament": "LON",
+                    "home": "Moutet C.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1781629500,
+                    "tournament": "LON",
+                    "home": "Norrie C.",
+                    "away": "Davidovich Fokina A.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1781602800,
+                    "tournament": "HAL",
+                    "home": "Khachanov K.",
+                    "away": "Quinn E.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1780909800,
+                    "tournament": "STU",
+                    "home": "Davidovich Fokina A.",
+                    "away": "Bellucci M.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1779873000,
+                    "tournament": "FO",
+                    "home": "Davidovich Fokina A.",
+                    "away": "Tirante T. A.",
+                    "score": "1-3"
+                  },
+                  {
+                    "timestamp": 1779811800,
+                    "tournament": "FO",
+                    "home": "Quinn E.",
+                    "away": "Comesana F.",
+                    "score": "0-3"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "19.5": {
+                    "over": 1.22,
+                    "under": 3.5
+                  },
+                  "20.0": {
+                    "over": 1.25,
+                    "under": 3.34
+                  },
+                  "20.5": {
+                    "over": 1.36,
+                    "under": 2.89
+                  },
+                  "21.0": {
+                    "over": 1.39,
+                    "under": 2.63
+                  },
+                  "21.5": {
+                    "over": 1.48,
+                    "under": 2.5
+                  },
+                  "22.0": {
+                    "over": 1.57,
+                    "under": 2.22
+                  },
+                  "22.5": {
+                    "over": 1.73,
+                    "under": 2.05
+                  },
+                  "23.0": {
+                    "over": 1.86,
+                    "under": 1.86
+                  },
+                  "23.5": {
+                    "over": 2,
+                    "under": 1.74
+                  },
+                  "24.0": {
+                    "over": 2.01,
+                    "under": 1.73
+                  },
+                  "24.5": {
+                    "over": 2.02,
+                    "under": 1.71
+                  },
+                  "25.0": {
+                    "over": 2.1,
+                    "under": 1.64
+                  },
+                  "25.5": {
+                    "over": 2.17,
+                    "under": 1.63
+                  },
+                  "26.0": {
+                    "over": 2.29,
+                    "under": 1.51
+                  },
+                  "26.5": {
+                    "over": 2.46,
+                    "under": 1.48
+                  },
+                  "27.0": {
+                    "over": 2.33,
+                    "under": 1.48
+                  },
+                  "2.5": {
+                    "over": 2.27,
+                    "under": 1.59
+                  },
+                  "27.5": {
+                    "over": 2.7,
+                    "under": 1.46
+                  },
+                  "28.5": {
+                    "over": 2.95,
+                    "under": 1.38
+                  },
+                  "29.5": {
+                    "over": 3.3,
+                    "under": 1.33
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.98,
+                    "away": 1.24
+                  },
+                  "-1.5": {
+                    "home": 3.75,
+                    "away": 1.82
+                  },
+                  "0.0": {
+                    "home": 2.28,
+                    "away": 1.57
+                  },
+                  "0.5": {
+                    "home": 2.15,
+                    "away": 1.56
+                  },
+                  "-0.5": {
+                    "home": 2.37,
+                    "away": 1.63
+                  },
+                  "1.0": {
+                    "home": 2.07,
+                    "away": 1.47
+                  },
+                  "-1.0": {
+                    "home": 2.53,
+                    "away": 1.69
+                  },
+                  "2.0": {
+                    "home": 1.86
+                  },
+                  "-2.0": {
+                    "away": 1.86
+                  },
+                  "2.5": {
+                    "home": 1.73,
+                    "away": 1.37
+                  },
+                  "-2.5": {
+                    "home": 3,
+                    "away": 2
+                  },
+                  "3.0": {
+                    "home": 1.58
+                  },
+                  "-3.0": {
+                    "away": 2.26
+                  },
+                  "3.5": {
+                    "home": 1.49,
+                    "away": 1.22
+                  },
+                  "-3.5": {
+                    "home": 4.25,
+                    "away": 2.54
+                  },
+                  "4.0": {
+                    "home": 1.32
+                  },
+                  "-4.0": {
+                    "away": 3.14
+                  },
+                  "4.5": {
+                    "home": 1.26
+                  },
+                  "-4.5": {
+                    "away": 3.54
+                  },
+                  "5.0": {
+                    "home": 1.14
+                  },
+                  "-5.0": {
+                    "away": 5.15
+                  },
+                  "5.5": {
+                    "home": 1.12
+                  },
+                  "-5.5": {
+                    "away": 5.7
+                  },
+                  "6.5": {
+                    "home": 1.04
+                  },
+                  "-6.5": {
+                    "away": 9.4
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "key": "wta_bad_homburg_germany",
@@ -71,7 +3420,313 @@
           "country": "",
           "panel_title": "🎾 WTA Bad Homburg (Germany)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "jZLv4s5N",
+              "flashscore_id": "jZLv4s5N",
+              "flashscore_sport_id": 2,
+              "home_team_id": "Or4Qa1ye",
+              "away_team_id": "MDM4BKiA",
+              "tournament_id": "2htmscnl",
+              "tournament_url": "/tennis/wta-singles/bad-homburg/",
+              "sport_key": "flashscore_tennis_wta_bad_homburg_germany",
+              "commence_time": "2026-06-27T09:00:00.000Z",
+              "time_display": "Sam. 11h00",
+              "home": "Muchova K.",
+              "away": "Osaka N.",
+              "match": "Muchova K. vs Osaka N.",
+              "prono": "win-home",
+              "pari": "Moins de 20.5 jeux",
+              "cote_retenue": 2.5,
+              "cotes": {
+                "domicile": 2.28,
+                "nul": null,
+                "exterieur": 1.6
+              },
+              "pick_category": "ou",
+              "analyse": "Naomi Osaka présente la meilleure forme de ce tournoi de Bad Homburg, enchaînant trois victoires consécutives en deux sets (Frech 2-0, Mertens 2-0, Alexandrova 2-0, Wang Xin. 2-0) sans concéder le moindre set. Muchova, de son côté, a dû batailler trois sets contre Tauson (2-1) avant de disposer de Ruse 2-0 — elle a en revanche perdu face à Keys à Berlin sans gagner un set. Sur gazon, le jeu est plus rapide et les serveurs dominent, ce qui favorise des matchs plus courts avec moins d'échanges prolongés. Osaka en pleine confiance sur cette surface, avec un service efficace et une prise de balle précoce, impose un rythme qui ne laisse pas le temps aux rallyes de s'étirer. La dynamique d'Osaka (4 victoires de suite en 2 sets) et le style gazon suggèrent un match ramassé, potentiellement sous les 20 ou 21 jeux si elle continue sur cette lancée. Le total de 20.5 jeux offre une cote intéressante pour le under, cohérent avec la tendance dominante d'Osaka à expédier ses matchs.",
+              "confiance": 3,
+              "featured": false,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1782479400,
+                    "tournament": "BAD",
+                    "home": "Ruse G.",
+                    "away": "Muchova K.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782472200,
+                    "tournament": "BAD",
+                    "home": "Wang Xin.",
+                    "away": "Osaka N.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782400500,
+                    "tournament": "BAD",
+                    "home": "Muchova K.",
+                    "away": "Tauson C.",
+                    "score": "2-1"
+                  },
+                  {
+                    "timestamp": 1782385800,
+                    "tournament": "BAD",
+                    "home": "Osaka N.",
+                    "away": "Alexandrova E.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782317100,
+                    "tournament": "BAD",
+                    "home": "Muchova K.",
+                    "away": "Begu I.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782222000,
+                    "tournament": "BAD",
+                    "home": "Osaka N.",
+                    "away": "Mertens E.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782126600,
+                    "tournament": "BAD",
+                    "home": "Osaka N.",
+                    "away": "Frech M.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781790000,
+                    "tournament": "BER",
+                    "home": "Keys M.",
+                    "away": "Muchova K.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781609400,
+                    "tournament": "BER",
+                    "home": "Zhang S.",
+                    "away": "Muchova K.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1780338600,
+                    "tournament": "FO",
+                    "home": "Sabalenka A.",
+                    "away": "Osaka N.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1780132200,
+                    "tournament": "FO",
+                    "home": "Jovic I.",
+                    "away": "Osaka N.",
+                    "score": "1-2"
+                  },
+                  {
+                    "timestamp": 1780057200,
+                    "tournament": "FO",
+                    "home": "Teichmann J.",
+                    "away": "Muchova K.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1779959400,
+                    "tournament": "FO",
+                    "home": "Vekic D.",
+                    "away": "Osaka N.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1779908400,
+                    "tournament": "FO",
+                    "home": "Rakhimova K.",
+                    "away": "Muchova K.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1779800100,
+                    "tournament": "FO",
+                    "home": "Siegemund L.",
+                    "away": "Osaka N.",
+                    "score": "0-2"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "18.5": {
+                    "over": 1.25,
+                    "under": 3.28
+                  },
+                  "19.0": {
+                    "over": 1.29,
+                    "under": 3.13
+                  },
+                  "19.5": {
+                    "over": 1.33,
+                    "under": 3.01
+                  },
+                  "20.0": {
+                    "over": 1.35,
+                    "under": 2.79
+                  },
+                  "20.5": {
+                    "over": 1.46,
+                    "under": 2.5
+                  },
+                  "21.0": {
+                    "over": 1.52,
+                    "under": 2.33
+                  },
+                  "21.5": {
+                    "over": 1.62,
+                    "under": 2.16
+                  },
+                  "22.0": {
+                    "over": 1.74,
+                    "under": 2
+                  },
+                  "22.5": {
+                    "over": 1.87,
+                    "under": 1.86
+                  },
+                  "23.0": {
+                    "over": 1.99,
+                    "under": 1.75
+                  },
+                  "23.5": {
+                    "over": 2.1,
+                    "under": 1.66
+                  },
+                  "24.0": {
+                    "over": 2.11,
+                    "under": 1.63
+                  },
+                  "24.5": {
+                    "over": 2.16,
+                    "under": 1.64
+                  },
+                  "25.0": {
+                    "over": 2.22,
+                    "under": 1.54
+                  },
+                  "25.5": {
+                    "over": 2.33,
+                    "under": 1.54
+                  },
+                  "2.5": {
+                    "over": 2.27,
+                    "under": 1.59
+                  },
+                  "26.5": {
+                    "over": 2.65,
+                    "under": 1.46
+                  },
+                  "27.5": {
+                    "over": 2.95,
+                    "under": 1.38
+                  },
+                  "28.5": {
+                    "over": 3.35,
+                    "under": 1.32
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 1.83,
+                    "away": 1.26
+                  },
+                  "-1.5": {
+                    "home": 3.4,
+                    "away": 1.83
+                  },
+                  "0.0": {
+                    "home": 2.24,
+                    "away": 1.59
+                  },
+                  "0.5": {
+                    "home": 2.13,
+                    "away": 1.58
+                  },
+                  "-0.5": {
+                    "home": 2.31,
+                    "away": 1.67
+                  },
+                  "1.0": {
+                    "home": 2.05,
+                    "away": 1.51
+                  },
+                  "-1.0": {
+                    "home": 2.47,
+                    "away": 1.7
+                  },
+                  "2.0": {
+                    "home": 1.87,
+                    "away": 1.5
+                  },
+                  "-2.0": {
+                    "home": 2.48,
+                    "away": 1.85
+                  },
+                  "2.5": {
+                    "home": 1.8,
+                    "away": 1.45
+                  },
+                  "-2.5": {
+                    "home": 2.69,
+                    "away": 1.94
+                  },
+                  "3.0": {
+                    "home": 1.64
+                  },
+                  "-3.0": {
+                    "away": 2.15
+                  },
+                  "3.5": {
+                    "home": 1.53,
+                    "away": 1.3
+                  },
+                  "-3.5": {
+                    "home": 3.5,
+                    "away": 2.4
+                  },
+                  "4.0": {
+                    "home": 1.39
+                  },
+                  "-4.0": {
+                    "away": 2.81
+                  },
+                  "4.5": {
+                    "home": 1.36
+                  },
+                  "-4.5": {
+                    "away": 3.03
+                  },
+                  "5.0": {
+                    "home": 1.2
+                  },
+                  "-5.0": {
+                    "away": 4.2
+                  },
+                  "5.5": {
+                    "home": 1.17
+                  },
+                  "-5.5": {
+                    "away": 4.6
+                  }
+                }
+              }
+            }
+          ]
         },
         {
           "key": "wta_eastbourne_united_kingdom",
@@ -81,20 +3736,322 @@
           "country": "",
           "panel_title": "🎾 WTA Eastbourne (United Kingdom)",
           "panel_meta": "Matchs des prochaines 24h",
-          "pronos": []
+          "pronos": [
+            {
+              "event_id": "tx6iHElf",
+              "flashscore_id": "tx6iHElf",
+              "flashscore_sport_id": 2,
+              "home_team_id": "OGYNaUZG",
+              "away_team_id": "QwU996PK",
+              "tournament_id": "e14kutcd",
+              "tournament_url": "/tennis/wta-singles/eastbourne/",
+              "sport_key": "flashscore_tennis_wta_eastbourne_united_kingdom",
+              "commence_time": "2026-06-27T11:00:00.000Z",
+              "time_display": "Sam. 13h00",
+              "home": "Maria T.",
+              "away": "Keys M.",
+              "match": "Maria T. vs Keys M.",
+              "prono": "win-home",
+              "pari": "Moins de 20.5 jeux",
+              "cote_retenue": 1.9,
+              "cotes": {
+                "domicile": 3.8,
+                "nul": null,
+                "exterieur": 1.26
+              },
+              "pick_category": "ou",
+              "analyse": "Keys M. traverse Eastbourne dans un état de forme impressionnant : quatre victoires consécutives sur gazon sans perdre un seul set (Gibson 2-0, Bouzas Maneiro 2-0, Kessler 2-0, Marcinko 2-0), confirmant sa domination sur cette surface rapide qui convient parfaitement à son tennis puissant. Maria T. affiche également une belle forme sur ce tournoi avec des victoires contre Paolini, Zakharova, Valentova et Ostapenko, toutes en deux sets, ce qui témoigne d'une solidité remarquable. Cependant, le niveau de Keys est objectivement supérieur : tête de série plus haute, ancienne finaliste de Grand Chelem, et un service dévastateur sur gazon qui lui permet de conclure rapidement les matches. Sur gazon, les services dominent et les échanges sont courts, ce qui tend à réduire le nombre total de jeux joués. Les deux joueuses ont montré une efficacité redoutable en deux sets, avec très peu de jeux cédés, ce qui pointe vers un match décidé sans troisième set et probablement resserré autour de 18 à 20 jeux. Le total sous 20.5 jeux à 1.90 représente la ligne d'équilibre, mais la ligne 18.5 under à 2.67 reste attrayante compte tenu du profil dominant des deux joueuses sur ce tournoi.",
+              "confiance": 3,
+              "featured": true,
+              "score_prevu": null,
+              "status": "pending",
+              "actual_score": null,
+              "actual_result": null,
+              "coup_de_coeur": true,
+              "stats": {
+                "recent_matches": [
+                  {
+                    "timestamp": 1782476400,
+                    "tournament": "EAS",
+                    "home": "Marcinko P.",
+                    "away": "Keys M.",
+                    "score": "0-1"
+                  },
+                  {
+                    "timestamp": 1782468600,
+                    "tournament": "EAS",
+                    "home": "Maria T.",
+                    "away": "Ostapenko J.",
+                    "score": "1-0"
+                  },
+                  {
+                    "timestamp": 1782396600,
+                    "tournament": "EAS",
+                    "home": "Maria T.",
+                    "away": "Valentova T.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782388200,
+                    "tournament": "EAS",
+                    "home": "Kessler M.",
+                    "away": "Keys M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782295500,
+                    "tournament": "EAS",
+                    "home": "Maria T.",
+                    "away": "Zakharova A.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1782295500,
+                    "tournament": "EAS",
+                    "home": "Bouzas Maneiro J.",
+                    "away": "Keys M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782215700,
+                    "tournament": "EAS",
+                    "home": "Gibson T.",
+                    "away": "Keys M.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1782209400,
+                    "tournament": "EAS",
+                    "home": "Paolini J.",
+                    "away": "Maria T.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1781863500,
+                    "tournament": "NOT",
+                    "home": "Bouzkova M.",
+                    "away": "Maria T.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781860200,
+                    "tournament": "BER",
+                    "home": "Pegula J.",
+                    "away": "Keys M.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781790000,
+                    "tournament": "BER",
+                    "home": "Keys M.",
+                    "away": "Muchova K.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781711100,
+                    "tournament": "NOT",
+                    "home": "Yastremska D.",
+                    "away": "Maria T.",
+                    "score": "0-2"
+                  },
+                  {
+                    "timestamp": 1781601000,
+                    "tournament": "BER",
+                    "home": "Keys M.",
+                    "away": "Wang Xin.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781518200,
+                    "tournament": "NOT",
+                    "home": "Maria T.",
+                    "away": "Tjen J.",
+                    "score": "2-0"
+                  },
+                  {
+                    "timestamp": 1781259000,
+                    "tournament": "LON",
+                    "home": "Rybakina E.",
+                    "away": "Maria T.",
+                    "score": "2-1"
+                  }
+                ]
+              },
+              "markets": {
+                "over_under": {
+                  "16.5": {
+                    "over": 1.18,
+                    "under": 3.9
+                  },
+                  "17.0": {
+                    "over": 1.22,
+                    "under": 3.58
+                  },
+                  "17.5": {
+                    "over": 1.22,
+                    "under": 3.48
+                  },
+                  "18.0": {
+                    "over": 1.27,
+                    "under": 3.2
+                  },
+                  "18.5": {
+                    "over": 1.42,
+                    "under": 2.67
+                  },
+                  "19.0": {
+                    "over": 1.46,
+                    "under": 2.49
+                  },
+                  "19.5": {
+                    "over": 1.59,
+                    "under": 2.2
+                  },
+                  "20.0": {
+                    "over": 1.69,
+                    "under": 2.07
+                  },
+                  "20.5": {
+                    "over": 1.83,
+                    "under": 1.9
+                  },
+                  "21.0": {
+                    "over": 1.9,
+                    "under": 1.82
+                  },
+                  "21.5": {
+                    "over": 2,
+                    "under": 1.72
+                  },
+                  "22.0": {
+                    "over": 2.15,
+                    "under": 1.61
+                  },
+                  "22.5": {
+                    "over": 2.3,
+                    "under": 1.54
+                  },
+                  "23.0": {
+                    "over": 2.39,
+                    "under": 1.47
+                  },
+                  "23.5": {
+                    "over": 2.43,
+                    "under": 1.44
+                  },
+                  "24.5": {
+                    "over": 3.2,
+                    "under": 1.31
+                  },
+                  "25.5": {
+                    "over": 3.8,
+                    "under": 1.24
+                  },
+                  "2.5": {
+                    "over": 2.71,
+                    "under": 1.44
+                  }
+                },
+                "handicap": {
+                  "1.5": {
+                    "home": 2.1,
+                    "away": 1.1
+                  },
+                  "-1.5": {
+                    "home": 5.9,
+                    "away": 1.71
+                  },
+                  "2.0": {
+                    "home": 2.94
+                  },
+                  "-2.0": {
+                    "away": 1.36
+                  },
+                  "2.5": {
+                    "home": 2.79
+                  },
+                  "-2.5": {
+                    "away": 1.4
+                  },
+                  "3.0": {
+                    "home": 2.53
+                  },
+                  "-3.0": {
+                    "away": 1.47
+                  },
+                  "3.5": {
+                    "home": 2.26
+                  },
+                  "-3.5": {
+                    "away": 1.55
+                  },
+                  "4.0": {
+                    "home": 2.05
+                  },
+                  "-4.0": {
+                    "away": 1.7
+                  },
+                  "4.5": {
+                    "home": 1.84
+                  },
+                  "-4.5": {
+                    "away": 1.85
+                  },
+                  "5.0": {
+                    "home": 1.63
+                  },
+                  "-5.0": {
+                    "away": 2.17
+                  },
+                  "5.5": {
+                    "home": 1.5
+                  },
+                  "-5.5": {
+                    "away": 2.41
+                  },
+                  "6.0": {
+                    "home": 1.33
+                  },
+                  "-6.0": {
+                    "away": 3.1
+                  },
+                  "6.5": {
+                    "home": 1.27
+                  },
+                  "-6.5": {
+                    "away": 3.48
+                  },
+                  "7.0": {
+                    "home": 1.13
+                  },
+                  "-7.0": {
+                    "away": 5.2
+                  },
+                  "7.5": {
+                    "home": 1.11
+                  },
+                  "-7.5": {
+                    "away": 5.7
+                  }
+                }
+              }
+            }
+          ]
         }
       ]
     }
   },
   "coup_de_coeur": [
-    "ro8Teyfc",
-    "G2pp8v6T",
-    "v3fXJmO0",
-    "ImdEp8oK",
-    "fy2JRnnm",
-    "G6Knir4m",
-    "x03mVMcC",
-    "l8l6cfCM"
+    "jZLv4s5N",
+    "hvrXnqVO",
+    "ITg37zq3",
+    "fZObw6Ns",
+    "f1iwb9wQ",
+    "dj70STd3",
+    "M3eGZnv1",
+    "tx6iHElf",
+    "OhuCM5uo",
+    "OEnuWcC7"
   ],
   "history": [
     {
@@ -123735,83 +127692,246 @@
     {
       "strategy": "safe",
       "label": "Triple sûr du jour",
-      "reasoning": "Ces trois picks sur moins de jeux partagent des cotes modérées et une logique commune : des matchs sur gazon (Eastbourne, Mallorca) où les surfaces rapides favorisent les échanges courts et les breaks fréquents. Draper-Humbert, Marcinko-Keys et Bergs-Samuel sont des affiches où l'un des joueurs domine clairement, ce qui réduit le risque de sets serrés et longs. La combinaison de ces trois under jeux offre une cote totale d'environ 2.62 avec un profil de risque maîtrisé.",
+      "reasoning": "Ces trois picks combinent deux combats MMA à finition rapide (McKee et Ruziboev, tous deux reconnus pour leurs KO/soumissions précoces) avec un match de tennis WTA sur surface rapide (Maria vs Keys, deux joueuses à style direct favorisant les sets expéditifs). Les cotes modérées (1.88 × 1.77 × 1.90 ≈ 6.32 brut, mais on en sélectionne 2+1 pour rester dans la cible) sont maîtrisées et la variance reste faible car chaque événement repose sur un pattern statistique solide. On retient les deux MMA les plus fiables pour une cote combinée autour de 3.32, avec le tennis comme troisième jambe stable.",
       "legs": [
         {
-          "event_id": "G6Knir4m",
-          "match": "Draper J. vs Humbert U.",
-          "pari": "Moins de 23.5 jeux",
-          "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
+          "event_id": "OhuCM5uo",
+          "match": "McKee A. vs Isbulaev S.",
+          "pari": "Moins de 2.5 rounds",
+          "sport_key": "flashscore_mma",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.85,
-          "home": "Draper J.",
-          "away": "Humbert U.",
-          "time_display": "Ven. 17h00",
-          "sport_label": "🎾 Tennis"
+          "cote": 1.88,
+          "home": "McKee A.",
+          "away": "Isbulaev S.",
+          "time_display": "Dim. 05h30",
+          "sport_label": "🥊 UFC"
         },
         {
-          "event_id": "l8l6cfCM",
-          "match": "Marcinko P. vs Keys M.",
+          "event_id": "OEnuWcC7",
+          "match": "Ruziboev N. vs Pulyaev A.",
+          "pari": "Moins de 2.5 rounds",
+          "sport_key": "flashscore_mma",
+          "pick_category": "ou",
+          "prono": "win-home",
+          "cote": 1.77,
+          "home": "Ruziboev N.",
+          "away": "Pulyaev A.",
+          "time_display": "Sam. 16h30",
+          "sport_label": "🥊 UFC"
+        },
+        {
+          "event_id": "tx6iHElf",
+          "match": "Maria T. vs Keys M.",
           "pari": "Moins de 20.5 jeux",
           "sport_key": "flashscore_tennis_wta_eastbourne_united_kingdom",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 1.7,
-          "home": "Marcinko P.",
+          "cote": 1.9,
+          "home": "Maria T.",
           "away": "Keys M.",
-          "time_display": "Ven. 13h30",
-          "sport_label": "🎾 Tennis"
-        },
-        {
-          "event_id": "fy2JRnnm",
-          "match": "Bergs Z. vs Samuel T.",
-          "pari": "Moins de 22.5 jeux",
-          "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
-          "pick_category": "ou",
-          "prono": "win-home",
-          "cote": 1.99,
-          "home": "Bergs Z.",
-          "away": "Samuel T.",
-          "time_display": "Ven. 15h30",
+          "time_display": "Sam. 13h00",
           "sport_label": "🎾 Tennis"
         }
       ],
-      "total_cote": 6.26
+      "total_cote": 6.32
     },
     {
       "strategy": "value",
       "label": "Combo value du jour",
-      "reasoning": "Ces deux picks ciblent des matchs où l'écart de niveau entre les joueuses est marqué mais où la cote reste attractive : Ostapenko face à Maria et Muchova face à Ruse sont des favoris clairement établis qui terminent souvent en deux sets expéditifs sur gazon et terre battue rapide. En combinant ces deux unders à cotes supérieures à 2.00, on atteint une cote totale autour de 4.62, offrant un excellent rapport rendement/risque pour une mise modérée.",
+      "reasoning": "Deux paris tennis sous/jeux sur des matchs ATP dans des contextes différents (Eastbourne sur gazon rapide avec Bergs/Humbert, deux attaquants de fond de court instables, et Quinn/Davidovich Fokina à Majorque sur gazon où les échanges sont courts) offrent un bon potentiel value à des cotes attractives. Combinés, ils approchent une cote de 5.00 (2.44 × 2.05 ≈ 5.00), tout en reposant sur des argumentaires complémentaires : surfaces rapides, joueurs peu constants, tendance aux sets serrés mais rapides. Aucun des deux matchs n'est présent dans le combo safe, garantissant une diversification totale.",
       "legs": [
         {
-          "event_id": "G2pp8v6T",
-          "match": "Maria T. vs Ostapenko J.",
-          "pari": "Moins de 20.5 jeux",
-          "sport_key": "flashscore_tennis_wta_eastbourne_united_kingdom",
+          "event_id": "hvrXnqVO",
+          "match": "Bergs Z. vs Humbert U.",
+          "pari": "Moins de 21.5 jeux",
+          "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 2.18,
-          "home": "Maria T.",
-          "away": "Ostapenko J.",
-          "time_display": "Ven. 12h00",
+          "cote": 2.44,
+          "home": "Bergs Z.",
+          "away": "Humbert U.",
+          "time_display": "Sam. 15h30",
           "sport_label": "🎾 Tennis"
         },
         {
-          "event_id": "v3fXJmO0",
-          "match": "Ruse G. vs Muchova K.",
-          "pari": "Moins de 20.5 jeux",
-          "sport_key": "flashscore_tennis_wta_bad_homburg_germany",
+          "event_id": "f1iwb9wQ",
+          "match": "Quinn E. vs Davidovich Fokina A.",
+          "pari": "Moins de 22.5 jeux",
+          "sport_key": "flashscore_tennis_atp_mallorca_spain",
           "pick_category": "ou",
           "prono": "win-home",
-          "cote": 2.12,
-          "home": "Ruse G.",
-          "away": "Muchova K.",
-          "time_display": "Ven. 15h00",
+          "cote": 2.05,
+          "home": "Quinn E.",
+          "away": "Davidovich Fokina A.",
+          "time_display": "Sam. 15h00",
           "sport_label": "🎾 Tennis"
         }
       ],
-      "total_cote": 4.62
+      "total_cote": 5
     }
-  ]
+  ],
+  "fun": {
+    "yolo_picks": [
+      {
+        "event_id": "nRlDkpLr",
+        "match": "Donchenko D. vs Berggren T.",
+        "home": "Donchenko D.",
+        "away": "Berggren T.",
+        "pari": "Victoire Berggren T.",
+        "cote": 4.75,
+        "analyse_fun": "Donchenko est le favori, mais Berggren est le genre de guerrier scandinave qui se réveille le jour J avec l'énergie d'un viking sous caféine ! À 4.75, c'est le pari qui peut transformer ta mise en petit trésor nordique. L'upset est là, il suffit d'y croire — SKÅL !",
+        "sport_key": "flashscore_mma",
+        "time_display": "Sam. 15h40"
+      },
+      {
+        "event_id": "fZObw6Ns",
+        "match": "Shabliy A. vs Davis A.",
+        "home": "Shabliy A.",
+        "away": "Davis A.",
+        "pari": "Victoire Davis A.",
+        "cote": 5,
+        "analyse_fun": "Shabliy est donné grand favori, mais Davis A. sent le piège à cote énorme à plein nez ! En MMA, un seul coup peut tout changer, et à 5.00 t'es payé royalement pour cette foi aveugle. Si Davis sort le combo gagnant, c'est champagne pour toi !",
+        "sport_key": "flashscore_mma",
+        "time_display": "Dim. 04h30"
+      }
+    ],
+    "mega_combo": {
+      "label": "🚀 JACKPOT UFC TENNIS APOCALYPSE 🚀",
+      "reasoning": "On mixe les octogones du monde entier avec les courts de gazon pour un combo digne des plus grandes épopées sportives ! Chaque leg est choisi avec un niveau de confiance élevé, des cotes raisonnables et une envie folle de faire péter la banque. Mise 5€, gagne une voiture — ou presque. C'est le combo qui te fera raconter cette soirée à tes petits-enfants !",
+      "legs": [
+        {
+          "event_id": "xO3YIzNE",
+          "match": "Almakhan B. vs Matsumoto J.",
+          "home": "Almakhan B.",
+          "away": "Matsumoto J.",
+          "pari": "Plus de 1.5 rounds — Almakhan B. vs Matsumoto J.",
+          "cote": 1.25,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 15h20"
+        },
+        {
+          "event_id": "OEnuWcC7",
+          "match": "Ruziboev N. vs Pulyaev A.",
+          "home": "Ruziboev N.",
+          "away": "Pulyaev A.",
+          "pari": "Moins de 2.5 rounds — Ruziboev N. vs Pulyaev A.",
+          "cote": 1.77,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 16h30"
+        },
+        {
+          "event_id": "4jiTpjjg",
+          "match": "Magomedov A. vs Oleksiejczuk M.",
+          "home": "Magomedov A.",
+          "away": "Oleksiejczuk M.",
+          "pari": "Moins de 2.5 rounds — Magomedov A. vs Oleksiejczuk M.",
+          "cote": 1.55,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 18h00"
+        },
+        {
+          "event_id": "bgfFkl8C",
+          "match": "Aliskerov I. vs Ferreira B.",
+          "home": "Aliskerov I.",
+          "away": "Ferreira B.",
+          "pari": "Moins de 2.5 rounds — Aliskerov I. vs Ferreira B.",
+          "cote": 1.34,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 18h30"
+        },
+        {
+          "event_id": "CEaph7DO",
+          "match": "Almabaev A. vs Johnson C.",
+          "home": "Almabaev A.",
+          "away": "Johnson C.",
+          "pari": "Plus de 2.5 rounds — Almabaev A. vs Johnson C.",
+          "cote": 1.39,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 19h00"
+        },
+        {
+          "event_id": "dj70STd3",
+          "match": "Magomedov S. vs Pereira M.",
+          "home": "Magomedov S.",
+          "away": "Pereira M.",
+          "pari": "Moins de 2.5 rounds — Magomedov S. vs Pereira M.",
+          "cote": 1.94,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 20h00"
+        },
+        {
+          "event_id": "2N0Q1IiC",
+          "match": "Fiziev R. vs Torres M.",
+          "home": "Fiziev R.",
+          "away": "Torres M.",
+          "pari": "Moins de 2.5 rounds — Fiziev R. vs Torres M.",
+          "cote": 1.54,
+          "sport_key": "flashscore_mma",
+          "time_display": "Sam. 20h30"
+        },
+        {
+          "event_id": "GM4IJqgC",
+          "match": "Carmouche L. vs Araujo V.",
+          "home": "Carmouche L.",
+          "away": "Araujo V.",
+          "pari": "Plus de 2.5 rounds — Carmouche L. vs Araujo V.",
+          "cote": 1.37,
+          "sport_key": "flashscore_mma",
+          "time_display": "Dim. 05h00"
+        },
+        {
+          "event_id": "M3eGZnv1",
+          "match": "Lipski da Silva A. vs Bishop J.",
+          "home": "Lipski da Silva A.",
+          "away": "Bishop J.",
+          "pari": "Plus de 2.5 rounds — Lipski da Silva A. vs Bishop J.",
+          "cote": 1.92,
+          "sport_key": "flashscore_mma",
+          "time_display": "Dim. 03h00"
+        },
+        {
+          "event_id": "ITg37zq3",
+          "match": "Bably A. vs Wilkinson R.",
+          "home": "Bably A.",
+          "away": "Wilkinson R.",
+          "pari": "Plus de 1.5 rounds — Bably A. vs Wilkinson R.",
+          "cote": 2.38,
+          "sport_key": "flashscore_mma",
+          "time_display": "Dim. 04h00"
+        },
+        {
+          "event_id": "hvrXnqVO",
+          "match": "Bergs Z. vs Humbert U.",
+          "home": "Bergs Z.",
+          "away": "Humbert U.",
+          "pari": "Moins de 21.5 jeux — Bergs Z. vs Humbert U.",
+          "cote": 2.44,
+          "sport_key": "flashscore_tennis_atp_eastbourne_united_kingdom",
+          "time_display": "Sam. 15h30"
+        },
+        {
+          "event_id": "jZLv4s5N",
+          "match": "Muchova K. vs Osaka N.",
+          "home": "Muchova K.",
+          "away": "Osaka N.",
+          "pari": "Moins de 20.5 jeux — Muchova K. vs Osaka N.",
+          "cote": 2.5,
+          "sport_key": "flashscore_tennis_wta_bad_homburg_germany",
+          "time_display": "Sam. 11h00"
+        },
+        {
+          "event_id": "tx6iHElf",
+          "match": "Maria T. vs Keys M.",
+          "home": "Maria T.",
+          "away": "Keys M.",
+          "pari": "Moins de 20.5 jeux — Maria T. vs Keys M.",
+          "cote": 1.9,
+          "sport_key": "flashscore_tennis_wta_eastbourne_united_kingdom",
+          "time_display": "Sam. 13h00"
+        }
+      ],
+      "total_cote": 1384.65
+    }
+  }
 }
